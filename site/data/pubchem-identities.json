@@ -1,0 +1,31 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 176,
+        "MolecularFormula": "C2H4O2",
+        "Title": "Acetic Acid"
+      },
+      {
+        "CID": 702,
+        "MolecularFormula": "C2H6O",
+        "Title": "Ethanol"
+      },
+      {
+        "CID": 8857,
+        "MolecularFormula": "C4H8O2",
+        "Title": "Ethyl Acetate"
+      },
+      {
+        "CID": 962,
+        "MolecularFormula": "H2O",
+        "Title": "Water"
+      },
+      {
+        "CID": 8254,
+        "MolecularFormula": "C2H6O",
+        "Title": "Dimethyl Ether"
+      }
+    ]
+  }
+}

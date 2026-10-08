@@ -1,0 +1,533 @@
+{
+  "schema": "oc-sensible-heat-reference-1",
+  "scope": "offline reference calculation; not ProcessHeat, EU, plant design, or experimental measurement",
+  "pressure": "not modeled; property table pressure limits do not establish phase stability",
+  "phaseAssumption": "liquid component heat capacities; no phase stability validation",
+  "source": {
+    "file": "research/process-engine/property-provenance.json",
+    "sha256": "f13c3db3c115956b981906516ec200603b8adc3dc2ea101b6c2f3909dfd033cd",
+    "cas": [
+      "64-19-7",
+      "64-17-5",
+      "141-78-6",
+      "7732-18-5"
+    ],
+    "cpMethods": [
+      "ROWLINSON_POLING",
+      "HEOS_FIT",
+      "ROWLINSON_POLING",
+      "HEOS_FIT"
+    ],
+    "temperatureK": [
+      298.15,
+      380.0
+    ],
+    "software": {
+      "thermo": "0.6.0",
+      "chemicals": "1.5.2",
+      "fluids": "1.3.1",
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "rdkit": "2025.9.1"
+    },
+    "grid": [
+      {
+        "T": 298.15,
+        "cp": [
+          137.58797965639957,
+          112.15275615538572,
+          177.47110249955477,
+          75.32753127987698
+        ]
+      },
+      {
+        "T": 300.0,
+        "cp": [
+          137.6733129806696,
+          112.82667675688907,
+          177.68463483333602,
+          75.31528903729206
+        ]
+      },
+      {
+        "T": 302.0,
+        "cp": [
+          137.7702686191418,
+          113.56578246496228,
+          177.92692279029595,
+          75.30511301442776
+        ]
+      },
+      {
+        "T": 304.0,
+        "cp": [
+          137.87203080410828,
+          114.31574208571155,
+          178.18089793166928,
+          75.2977847427382
+        ]
+      },
+      {
+        "T": 306.0,
+        "cp": [
+          137.9785205842062,
+          115.07644080765567,
+          178.44635830230519,
+          75.29300925546845
+        ]
+      },
+      {
+        "T": 308.0,
+        "cp": [
+          138.08966221409065,
+          115.84775313425214,
+          178.72310630804668,
+          75.29053083313951
+        ]
+      },
+      {
+        "T": 310.0,
+        "cp": [
+          138.2053831008957,
+          116.6295450557409,
+          179.0109489949438,
+          75.29012830075399
+        ]
+      },
+      {
+        "T": 312.0,
+        "cp": [
+          138.32561375431436,
+          117.42167623651277,
+          179.3096983193281,
+          75.29161096611494
+        ]
+      },
+      {
+        "T": 314.0,
+        "cp": [
+          138.4502877402365,
+          118.22400216783754,
+          179.6191714097818,
+          75.29481511949375
+        ]
+      },
+      {
+        "T": 316.0,
+        "cp": [
+          138.57934163789403,
+          119.036376252434,
+          179.9391908220492,
+          75.29960102342335
+        ]
+      },
+      {
+        "T": 318.0,
+        "cp": [
+          138.71271500046927,
+          119.85865180542825,
+          180.2695847879629,
+          75.30585032548379
+        ]
+      },
+      {
+        "T": 320.0,
+        "cp": [
+          138.85035031913148,
+          120.69068397410996,
+          180.61018745946924,
+          75.31346382931196
+        ]
+      },
+      {
+        "T": 322.0,
+        "cp": [
+          138.99219299047343,
+          121.53233159491708,
+          180.96083914884974,
+          75.32235956154798
+        ]
+      },
+      {
+        "T": 324.0,
+        "cp": [
+          139.1381912873295,
+          122.38345901870909,
+          181.3213865662752,
+          75.33247107611886
+        ]
+      },
+      {
+        "T": 326.0,
+        "cp": [
+          139.28829633296272,
+          123.24393794330724,
+          181.69168305583753,
+          75.34374594263738
+        ]
+      },
+      {
+        "T": 328.0,
+        "cp": [
+          139.44246207861818,
+          124.11364929448816,
+          182.0715888312475,
+          75.35614437277229
+        ]
+      },
+      {
+        "T": 330.0,
+        "cp": [
+          139.60064528444784,
+          124.99248519254176,
+          182.4609712124196,
+          75.36963794689896
+        ]
+      },
+      {
+        "T": 332.0,
+        "cp": [
+          139.76280550381887,
+          125.88035103104666,
+          182.85970486419131,
+          75.38420841263299
+        ]
+      },
+      {
+        "T": 334.0,
+        "cp": [
+          139.92890507102808,
+          126.77716767809038,
+          183.26767203849323,
+          75.39984653634825
+        ]
+      },
+      {
+        "T": 336.0,
+        "cp": [
+          140.09890909245274,
+          127.6828737886824,
+          183.68476282131877,
+          75.4165509978423
+        ]
+      },
+      {
+        "T": 338.0,
+        "cp": [
+          140.27278544117613,
+          128.59742819195537,
+          184.11087538590363,
+          75.43432732635961
+        ]
+      },
+      {
+        "T": 340.0,
+        "cp": [
+          140.45050475513742,
+          129.52081228968436,
+          184.54591625360555,
+          75.45318688275667
+        ]
+      },
+      {
+        "T": 342.0,
+        "cp": [
+          140.63204043886327,
+          130.45303237571403,
+          184.98980056402738,
+          75.47314589737874
+        ]
+      },
+      {
+        "T": 344.0,
+        "cp": [
+          140.8173686688491,
+          131.39412176125273,
+          185.44245235603248,
+          75.49422457606715
+        ]
+      },
+      {
+        "T": 346.0,
+        "cp": [
+          141.00646840266847,
+          132.34414257084035,
+          185.90380486137911,
+          75.51644628763162
+        ]
+      },
+      {
+        "T": 348.0,
+        "cp": [
+          141.19932139189956,
+          133.303187060134,
+          186.37380081282356,
+          75.53983684525652
+        ]
+      },
+      {
+        "T": 350.0,
+        "cp": [
+          141.3959121989693,
+          134.27137830116214,
+          186.8523927686479,
+          75.56442389192607
+        ]
+      },
+      {
+        "T": 352.0,
+        "cp": [
+          141.5962282180273,
+          135.24887008459314,
+          187.3395434557095,
+          75.59023639640473
+        ]
+      },
+      {
+        "T": 354.0,
+        "cp": [
+          141.80025969997493,
+          136.23584590248348,
+          187.8352261332672,
+          75.61730426199787
+        ]
+      },
+      {
+        "T": 356.0,
+        "cp": [
+          142.00799978178742,
+          137.23251689887857,
+          188.33942497999217,
+          75.6456580456663
+        ]
+      },
+      {
+        "T": 358.0,
+        "cp": [
+          142.21944452028174,
+          138.23911870879516,
+          188.85213550678318,
+          75.67532878048225
+        ]
+      },
+      {
+        "T": 360.0,
+        "cp": [
+          142.43459293049816,
+          139.25590714707454,
+          189.37336499819963,
+          75.70634789026094
+        ]
+      },
+      {
+        "T": 362.0,
+        "cp": [
+          142.6534470288774,
+          140.28315275527842,
+          189.90313298558024,
+          75.7387471817835
+        ]
+      },
+      {
+        "T": 364.0,
+        "cp": [
+          142.87601188143606,
+          141.32113426458778,
+          190.44147175517304,
+          75.7725588975676
+        ]
+      },
+      {
+        "T": 366.0,
+        "cp": [
+          143.1022956571572,
+          142.37013108258213,
+          190.98842689490934,
+          75.80781581078199
+        ]
+      },
+      {
+        "T": 368.0,
+        "cp": [
+          143.33230968683577,
+          143.4304149586682,
+          191.54405788379435,
+          75.84455134368609
+        ]
+      },
+      {
+        "T": 370.0,
+        "cp": [
+          143.56606852763713,
+          144.50224102371251,
+          192.1084387282553,
+          75.88279969187522
+        ]
+      },
+      {
+        "T": 372.0,
+        "cp": [
+          143.80359003365126,
+          145.58583843133314,
+          192.68165865023047,
+          75.92259593851112
+        ]
+      },
+      {
+        "T": 374.0,
+        "cp": [
+          144.0448954327485,
+          146.6814008491061,
+          193.26382283224848,
+          75.96397614544807
+        ]
+      },
+      {
+        "T": 376.0,
+        "cp": [
+          144.29000941006842,
+          147.78907705620128,
+          193.8550532252985,
+          76.0069774115055
+        ]
+      },
+      {
+        "T": 378.0,
+        "cp": [
+          144.5389601985035,
+          148.90896189921233,
+          194.45548942589028,
+          76.05163789184505
+        ]
+      },
+      {
+        "T": 380.0,
+        "cp": [
+          144.79177967656688,
+          150.04108784079642,
+          195.06528962940143,
+          76.09799677622584
+        ]
+      }
+    ],
+    "methodDocumentation": "https://thermo.readthedocs.io/thermo.heat_capacity.html"
+  },
+  "units": {
+    "amount": "mol",
+    "temperature": "K",
+    "heat": "J",
+    "cp": "J/(mol*K)"
+  },
+  "scenarios": [
+    {
+      "id": "acid-ethanol-298-to-345K",
+      "label": "1 mol 乙酸 + 1 mol 乙醇升温",
+      "moles": [
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "startK": 298.15,
+      "endK": 345.0,
+      "Q_sensible_J": 12210.50261073592,
+      "status": "calculated_reference",
+      "basis": "sum(n_i * integral Cp_i dT), piecewise-linear frozen Cp grid; fixed composition, no reaction, liquid path assumed",
+      "componentContributionsJ": [
+        6514.855845042708,
+        5695.646765693213,
+        0.0,
+        0.0
+      ],
+      "compositionStatus": "illustrative fixed composition, not measured stream"
+    },
+    {
+      "id": "reaction-reference-mixture-298-to-345K",
+      "label": "酯化教学参考四组分混合物升温",
+      "moles": [
+        0.48987859204130557,
+        0.48987859204130557,
+        0.5101214079586944,
+        0.5101214079586944
+      ],
+      "startK": 298.15,
+      "endK": 345.0,
+      "Q_sensible_J": 12110.974264862121,
+      "status": "calculated_reference",
+      "basis": "sum(n_i * integral Cp_i dT), piecewise-linear frozen Cp grid; fixed composition, no reaction, liquid path assumed",
+      "componentContributionsJ": [
+        3191.488408721592,
+        2790.175418342407,
+        4328.485471521438,
+        1800.8249662766855
+      ],
+      "compositionStatus": "illustrative fixed composition, not measured stream"
+    },
+    {
+      "id": "wash-reference-345-to-298K",
+      "label": "洗涤参考物流冷却",
+      "moles": [
+        0.1,
+        0.1,
+        0.22,
+        2.5
+      ],
+      "startK": 345.0,
+      "endK": 298.15,
+      "Q_sensible_J": -11913.268102415546,
+      "status": "calculated_reference",
+      "basis": "sum(n_i * integral Cp_i dT), piecewise-linear frozen Cp grid; fixed composition, no reaction, liquid path assumed",
+      "componentContributionsJ": [
+        -651.4855845042708,
+        -569.5646765693213,
+        -1866.7454234969557,
+        -8825.472417844998
+      ],
+      "compositionStatus": "illustrative fixed composition, not measured stream"
+    },
+    {
+      "id": "small-stream-310-to-340K",
+      "label": "小物流升温（缩放检查）",
+      "moles": [
+        0.25,
+        0.75,
+        0.1,
+        1.0
+      ],
+      "startK": 310.0,
+      "endK": 340.0,
+      "Q_sensible_J": 6614.914833922309,
+      "status": "calculated_reference",
+      "basis": "sum(n_i * integral Cp_i dT), piecewise-linear frozen Cp grid; fixed composition, no reaction, liquid path assumed",
+      "componentContributionsJ": [
+        1044.3857227311848,
+        2765.26537926416,
+        544.7911498694805,
+        2260.472582057484
+      ],
+      "compositionStatus": "illustrative fixed composition, not measured stream"
+    }
+  ],
+  "checks": [
+    "zero temperature interval",
+    "linear composition scaling",
+    "positive heating and signed cooling",
+    "unsupported temperature rejection",
+    "negative, nonfinite, wrong-length and out-of-domain zero-path rejection"
+  ],
+  "excluded": [
+    "reaction enthalpy",
+    "mixing or excess enthalpy",
+    "latent heat and phase changes",
+    "mechanical entrainment",
+    "equipment efficiency and heat loss",
+    "EU conversion"
+  ],
+  "promotionPolicy": "Only an operation with server-committed inlet/outlet temperatures and composition may cite this calculation, and only after an explicit phase/pressure/mixing review; ProcessHeat remains unknown until then.",
+  "assumptions": [
+    "composition is fixed over the temperature interval",
+    "no reaction, mixing or dilution occurs during the interval",
+    "all listed material remains in the modeled liquid state",
+    "the Cp correlations are used only inside their frozen numerical support domain"
+  ]
+}

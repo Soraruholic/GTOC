@@ -1,0 +1,2273 @@
+{
+  "passed": true,
+  "states": 112,
+  "branches": 33,
+  "policy": "bond length 0.70..1.30 covalent radius sum; 1,3 distance >=0.85 A; other nonbonded >=0.65 vdW sum (0.58 when H involved); fragments packed separately; 3D transitions discrete",
+  "limits": "Screen rejects grossly implausible endpoints. It does not validate free energy, force-field applicability, solvent structure, optimized intermediates or a collision-free chemical reaction trajectory. 2D projection overlap is not a 3D collision.",
+  "hashes": {
+    "data/fischer-mechanism.json": "148f085c4b518cd888fac4b1281ba771743b742b133dac9abe59386fa91549a1",
+    "data/vitamin-a/acetylation-lesson.json": "85f95345f74fd9514675cfbb6ce92cdafe778ffa35d66caa0dfd2131c659ea88",
+    "data/vitamin-a/carbon-lesson.json": "de447946c239baca087f650ecbeb3ff3fdbe46f3d85df86bc7123542733ef046",
+    "data/vitamin-a/chain-lesson.json": "43141c5312492bd06b5d0efe8bcbd49172fd617e868c47b80e063105bf8be011",
+    "data/vitamin-a/coupling-lesson.json": "7f2114e93d06d871eb8b09f81f1ab1e3999ee80090bdb8bed4fc1d5c712adad4",
+    "data/vitamin-a/darzens-lesson.json": "a25bab04fca1635aa47459b11fe33d4fe1f4c9984700564d2df51d7b3bb479f2",
+    "data/vitamin-a/ionone-lesson.json": "0132f4600c45a9b8aa703544f5feb436e6cb17c35f928d2703466889d3f4e9ed",
+    "data/vitamin-a/supply-lesson.json": "98b2244f9574fbdb30f6bbc19cf92815a6b948b1127a3958533b2c468bf265a7",
+    "data/vitamin-a/upstream-lesson.json": "b1ad11ac57cf7fe61e82f8a40e7ecf5d7ad9854f986cb1b2a0f0751cc87ab2d4"
+  },
+  "frames": [
+    {
+      "file": "data/fischer-mechanism.json",
+      "branch": "fischer-acetic-ethanol-water-v1",
+      "state": 0,
+      "atoms": 21,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.80501,
+      "nearestNonbondedPair": [
+        "Ho",
+        "O1",
+        2.21379
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/fischer-mechanism.json",
+      "branch": "fischer-acetic-ethanol-water-v1",
+      "state": 1,
+      "atoms": 21,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.85206,
+      "nearestNonbondedPair": [
+        "Hc",
+        "Cm",
+        2.47097
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/fischer-mechanism.json",
+      "branch": "fischer-acetic-ethanol-water-v1",
+      "state": 2,
+      "atoms": 21,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.76635,
+      "nearestNonbondedPair": [
+        "Ha",
+        "O2",
+        2.10746
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/fischer-mechanism.json",
+      "branch": "fischer-acetic-ethanol-water-v1",
+      "state": 3,
+      "atoms": 21,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.78732,
+      "nearestNonbondedPair": [
+        "Hc",
+        "O2",
+        2.16512
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/fischer-mechanism.json",
+      "branch": "fischer-acetic-ethanol-water-v1",
+      "state": 4,
+      "atoms": 21,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.71794,
+      "nearestNonbondedPair": [
+        "Ho",
+        "O1",
+        1.97434
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/fischer-mechanism.json",
+      "branch": "fischer-acetic-ethanol-water-v1",
+      "state": 5,
+      "atoms": 21,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.8197,
+      "nearestNonbondedPair": [
+        "Ce1",
+        "O1",
+        2.66402
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/fischer-mechanism.json",
+      "branch": "fischer-acetic-ethanol-water-v1",
+      "state": 6,
+      "atoms": 21,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.83572,
+      "nearestNonbondedPair": [
+        "Ce1",
+        "O1",
+        2.71609
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/acetylation-lesson.json",
+      "branch": "E01",
+      "state": 0,
+      "atoms": 78,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.80225,
+      "nearestNonbondedPair": [
+        72,
+        69,
+        2.72764
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/acetylation-lesson.json",
+      "branch": "E01",
+      "state": 1,
+      "atoms": 78,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.80586,
+      "nearestNonbondedPair": [
+        72,
+        69,
+        2.73992
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/acetylation-lesson.json",
+      "branch": "E01",
+      "state": 2,
+      "atoms": 78,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.80592,
+      "nearestNonbondedPair": [
+        72,
+        69,
+        2.74014
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/acetylation-lesson.json",
+      "branch": "E01",
+      "state": 3,
+      "atoms": 78,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.64021,
+      "nearestNonbondedPair": [
+        56,
+        53,
+        1.76059
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/acetylation-lesson.json",
+      "branch": "E01",
+      "state": 4,
+      "atoms": 78,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.58992,
+      "nearestNonbondedPair": [
+        53,
+        5,
+        1.62227
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/acetylation-lesson.json",
+      "branch": "E01",
+      "state": 5,
+      "atoms": 78,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.80225,
+      "nearestNonbondedPair": [
+        72,
+        69,
+        2.72763
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/acetylation-lesson.json",
+      "branch": "E02",
+      "state": 0,
+      "atoms": 83,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.80225,
+      "nearestNonbondedPair": [
+        76,
+        73,
+        2.72764
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/acetylation-lesson.json",
+      "branch": "E02",
+      "state": 1,
+      "atoms": 83,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.80586,
+      "nearestNonbondedPair": [
+        77,
+        74,
+        2.73992
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/acetylation-lesson.json",
+      "branch": "E02",
+      "state": 2,
+      "atoms": 83,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.80592,
+      "nearestNonbondedPair": [
+        77,
+        74,
+        2.74014
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/acetylation-lesson.json",
+      "branch": "E02",
+      "state": 3,
+      "atoms": 83,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.63121,
+      "nearestNonbondedPair": [
+        61,
+        37,
+        1.73582
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/acetylation-lesson.json",
+      "branch": "E02",
+      "state": 4,
+      "atoms": 83,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.80225,
+      "nearestNonbondedPair": [
+        77,
+        74,
+        2.72764
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/acetylation-lesson.json",
+      "branch": "E02",
+      "state": 5,
+      "atoms": 83,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.80225,
+      "nearestNonbondedPair": [
+        77,
+        74,
+        2.72763
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/carbon-lesson.json",
+      "branch": "U03",
+      "state": 0,
+      "atoms": 28,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.82128,
+      "nearestNonbondedPair": [
+        4,
+        0,
+        2.66917
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/carbon-lesson.json",
+      "branch": "U03",
+      "state": 1,
+      "atoms": 28,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.82128,
+      "nearestNonbondedPair": [
+        15,
+        11,
+        2.66917
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/carbon-lesson.json",
+      "branch": "U03",
+      "state": 2,
+      "atoms": 28,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.81405,
+      "nearestNonbondedPair": [
+        4,
+        0,
+        2.64565
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/carbon-lesson.json",
+      "branch": "U03",
+      "state": 3,
+      "atoms": 28,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.81963,
+      "nearestNonbondedPair": [
+        4,
+        0,
+        2.66381
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/carbon-lesson.json",
+      "branch": "U03",
+      "state": 4,
+      "atoms": 28,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.82145,
+      "nearestNonbondedPair": [
+        4,
+        0,
+        2.66971
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/carbon-lesson.json",
+      "branch": "U03-acid",
+      "state": 0,
+      "atoms": 21,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.82436,
+      "nearestNonbondedPair": [
+        3,
+        0,
+        2.67917
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/carbon-lesson.json",
+      "branch": "U03-acid",
+      "state": 1,
+      "atoms": 21,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.81963,
+      "nearestNonbondedPair": [
+        3,
+        0,
+        2.66381
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/carbon-lesson.json",
+      "branch": "U04",
+      "state": 0,
+      "atoms": 32,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.81963,
+      "nearestNonbondedPair": [
+        3,
+        0,
+        2.66381
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/carbon-lesson.json",
+      "branch": "U04",
+      "state": 1,
+      "atoms": 32,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.87264,
+      "nearestNonbondedPair": [
+        18,
+        3,
+        2.83606
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/carbon-lesson.json",
+      "branch": "U04",
+      "state": 2,
+      "atoms": 32,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.63682,
+      "nearestNonbondedPair": [
+        11,
+        7,
+        1.75125
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/carbon-lesson.json",
+      "branch": "U04",
+      "state": 3,
+      "atoms": 32,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.80111,
+      "nearestNonbondedPair": [
+        21,
+        11,
+        2.20305
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/carbon-lesson.json",
+      "branch": "U04",
+      "state": 4,
+      "atoms": 32,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.85738,
+      "nearestNonbondedPair": [
+        16,
+        7,
+        2.78647
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/carbon-lesson.json",
+      "branch": "U05",
+      "state": 0,
+      "atoms": 34,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.85738,
+      "nearestNonbondedPair": [
+        8,
+        6,
+        2.78647
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/carbon-lesson.json",
+      "branch": "U05",
+      "state": 1,
+      "atoms": 34,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.85738,
+      "nearestNonbondedPair": [
+        8,
+        6,
+        2.78647
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/carbon-lesson.json",
+      "branch": "U05",
+      "state": 2,
+      "atoms": 34,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.8862,
+      "nearestNonbondedPair": [
+        22,
+        18,
+        2.12687
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/carbon-lesson.json",
+      "branch": "U05",
+      "state": 3,
+      "atoms": 34,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.83887,
+      "nearestNonbondedPair": [
+        31,
+        0,
+        2.43274
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/carbon-lesson.json",
+      "branch": "U06-net",
+      "state": 0,
+      "atoms": 27,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.83887,
+      "nearestNonbondedPair": [
+        15,
+        1,
+        2.43274
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/carbon-lesson.json",
+      "branch": "U06-net",
+      "state": 1,
+      "atoms": 27,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.8916,
+      "nearestNonbondedPair": [
+        24,
+        18,
+        2.13984
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/carbon-lesson.json",
+      "branch": "C10-EZ",
+      "state": 0,
+      "atoms": 27,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.87268,
+      "nearestNonbondedPair": [
+        26,
+        24,
+        2.09444
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/carbon-lesson.json",
+      "branch": "C10-EZ",
+      "state": 1,
+      "atoms": 27,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.8916,
+      "nearestNonbondedPair": [
+        18,
+        14,
+        2.13985
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/chain-lesson.json",
+      "branch": "C02-side",
+      "state": 0,
+      "atoms": 46,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.84402,
+      "nearestNonbondedPair": [
+        11,
+        7,
+        2.86968
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/chain-lesson.json",
+      "branch": "C02-side",
+      "state": 1,
+      "atoms": 46,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.84279,
+      "nearestNonbondedPair": [
+        11,
+        7,
+        2.86549
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/chain-lesson.json",
+      "branch": "D01",
+      "state": 0,
+      "atoms": 54,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.83035,
+      "nearestNonbondedPair": [
+        26,
+        3,
+        2.40801
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/chain-lesson.json",
+      "branch": "D01",
+      "state": 1,
+      "atoms": 54,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.83132,
+      "nearestNonbondedPair": [
+        26,
+        3,
+        2.41083
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/chain-lesson.json",
+      "branch": "D01",
+      "state": 2,
+      "atoms": 54,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.83806,
+      "nearestNonbondedPair": [
+        26,
+        6,
+        2.43036
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/chain-lesson.json",
+      "branch": "D02",
+      "state": 0,
+      "atoms": 56,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.84388,
+      "nearestNonbondedPair": [
+        15,
+        11,
+        2.86919
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/chain-lesson.json",
+      "branch": "D02",
+      "state": 1,
+      "atoms": 56,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.84289,
+      "nearestNonbondedPair": [
+        15,
+        11,
+        2.86582
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/chain-lesson.json",
+      "branch": "E03-net",
+      "state": 0,
+      "atoms": 59,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.83927,
+      "nearestNonbondedPair": [
+        4,
+        2,
+        2.72763
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/chain-lesson.json",
+      "branch": "E03-net",
+      "state": 1,
+      "atoms": 59,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.82074,
+      "nearestNonbondedPair": [
+        4,
+        2,
+        2.66741
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/chain-lesson.json",
+      "branch": "EZ-identity",
+      "state": 0,
+      "atoms": 56,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.82074,
+      "nearestNonbondedPair": [
+        4,
+        2,
+        2.66741
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/chain-lesson.json",
+      "branch": "EZ-identity",
+      "state": 1,
+      "atoms": 56,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.82071,
+      "nearestNonbondedPair": [
+        4,
+        2,
+        2.6673
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/coupling-lesson.json",
+      "branch": "Q01",
+      "state": 0,
+      "atoms": 12,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.97561,
+      "nearestNonbondedPair": [
+        11,
+        10,
+        4.0
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/coupling-lesson.json",
+      "branch": "Q01",
+      "state": 1,
+      "atoms": 12,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.97561,
+      "nearestNonbondedPair": [
+        11,
+        10,
+        4.0
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/coupling-lesson.json",
+      "branch": "C01a",
+      "state": 0,
+      "atoms": 24,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.8629,
+      "nearestNonbondedPair": [
+        14,
+        4,
+        2.50242
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/coupling-lesson.json",
+      "branch": "C01a",
+      "state": 1,
+      "atoms": 24,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.89714,
+      "nearestNonbondedPair": [
+        5,
+        1,
+        3.05029
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/coupling-lesson.json",
+      "branch": "C01b",
+      "state": 0,
+      "atoms": 25,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.89714,
+      "nearestNonbondedPair": [
+        5,
+        1,
+        3.05029
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/coupling-lesson.json",
+      "branch": "C01b",
+      "state": 1,
+      "atoms": 25,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.8934,
+      "nearestNonbondedPair": [
+        5,
+        1,
+        3.03757
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/coupling-lesson.json",
+      "branch": "C02",
+      "state": 0,
+      "atoms": 54,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.84396,
+      "nearestNonbondedPair": [
+        24,
+        20,
+        2.86945
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/coupling-lesson.json",
+      "branch": "C02",
+      "state": 1,
+      "atoms": 54,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.84201,
+      "nearestNonbondedPair": [
+        24,
+        20,
+        2.86284
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/coupling-lesson.json",
+      "branch": "C03",
+      "state": 0,
+      "atoms": 67,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.84309,
+      "nearestNonbondedPair": [
+        24,
+        20,
+        2.86649
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/coupling-lesson.json",
+      "branch": "C03",
+      "state": 1,
+      "atoms": 67,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.84318,
+      "nearestNonbondedPair": [
+        24,
+        20,
+        2.86681
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/coupling-lesson.json",
+      "branch": "C03",
+      "state": 2,
+      "atoms": 67,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.8216,
+      "nearestNonbondedPair": [
+        55,
+        0,
+        2.38264
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/darzens-lesson.json",
+      "branch": "A02",
+      "state": 0,
+      "atoms": 51,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.81671,
+      "nearestNonbondedPair": [
+        3,
+        0,
+        2.65429
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/darzens-lesson.json",
+      "branch": "A02",
+      "state": 1,
+      "atoms": 51,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.82349,
+      "nearestNonbondedPair": [
+        3,
+        0,
+        2.67633
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/darzens-lesson.json",
+      "branch": "A02",
+      "state": 2,
+      "atoms": 51,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.81187,
+      "nearestNonbondedPair": [
+        3,
+        0,
+        2.63858
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/darzens-lesson.json",
+      "branch": "A02",
+      "state": 3,
+      "atoms": 51,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.82315,
+      "nearestNonbondedPair": [
+        3,
+        0,
+        2.67524
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/darzens-lesson.json",
+      "branch": "A03",
+      "state": 0,
+      "atoms": 46,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.82318,
+      "nearestNonbondedPair": [
+        3,
+        0,
+        2.67532
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/darzens-lesson.json",
+      "branch": "A03",
+      "state": 1,
+      "atoms": 46,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.66253,
+      "nearestNonbondedPair": [
+        44,
+        3,
+        1.82195
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/darzens-lesson.json",
+      "branch": "A03",
+      "state": 2,
+      "atoms": 46,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.81304,
+      "nearestNonbondedPair": [
+        44,
+        3,
+        2.23586
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/darzens-lesson.json",
+      "branch": "A03",
+      "state": 3,
+      "atoms": 46,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.84394,
+      "nearestNonbondedPair": [
+        15,
+        11,
+        2.8694
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/darzens-lesson.json",
+      "branch": "A04a",
+      "state": 0,
+      "atoms": 45,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.84425,
+      "nearestNonbondedPair": [
+        15,
+        1,
+        2.87044
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/darzens-lesson.json",
+      "branch": "A04a",
+      "state": 1,
+      "atoms": 45,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.81304,
+      "nearestNonbondedPair": [
+        40,
+        10,
+        2.23586
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/darzens-lesson.json",
+      "branch": "A04b-net",
+      "state": 0,
+      "atoms": 40,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.81324,
+      "nearestNonbondedPair": [
+        18,
+        0,
+        2.23641
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/darzens-lesson.json",
+      "branch": "A04b-net",
+      "state": 1,
+      "atoms": 40,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.84442,
+      "nearestNonbondedPair": [
+        14,
+        10,
+        2.87103
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/darzens-lesson.json",
+      "branch": "A04c-net",
+      "state": 0,
+      "atoms": 37,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.84433,
+      "nearestNonbondedPair": [
+        11,
+        7,
+        2.87073
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/darzens-lesson.json",
+      "branch": "A04c-net",
+      "state": 1,
+      "atoms": 37,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.84396,
+      "nearestNonbondedPair": [
+        11,
+        7,
+        2.86946
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/ionone-lesson.json",
+      "branch": "U07",
+      "state": 0,
+      "atoms": 40,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.88759,
+      "nearestNonbondedPair": [
+        36,
+        31,
+        2.13021
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/ionone-lesson.json",
+      "branch": "U07",
+      "state": 1,
+      "atoms": 40,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.89161,
+      "nearestNonbondedPair": [
+        28,
+        25,
+        2.13985
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/ionone-lesson.json",
+      "branch": "U07",
+      "state": 2,
+      "atoms": 40,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.88972,
+      "nearestNonbondedPair": [
+        18,
+        6,
+        2.5802
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/ionone-lesson.json",
+      "branch": "U07",
+      "state": 3,
+      "atoms": 40,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.84458,
+      "nearestNonbondedPair": [
+        18,
+        4,
+        2.44928
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/ionone-lesson.json",
+      "branch": "U07",
+      "state": 4,
+      "atoms": 40,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.86318,
+      "nearestNonbondedPair": [
+        18,
+        4,
+        2.50322
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/ionone-lesson.json",
+      "branch": "U07",
+      "state": 5,
+      "atoms": 40,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.86704,
+      "nearestNonbondedPair": [
+        19,
+        3,
+        2.81788
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/supply-lesson.json",
+      "branch": "B01a",
+      "state": 0,
+      "atoms": 17,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.91595,
+      "nearestNonbondedPair": [
+        9,
+        3,
+        2.51886
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/supply-lesson.json",
+      "branch": "B01a",
+      "state": 1,
+      "atoms": 17,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.90059,
+      "nearestNonbondedPair": [
+        9,
+        0,
+        2.6117
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/supply-lesson.json",
+      "branch": "B01a",
+      "state": 2,
+      "atoms": 17,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.89939,
+      "nearestNonbondedPair": [
+        5,
+        3,
+        2.47331
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/supply-lesson.json",
+      "branch": "B01a",
+      "state": 3,
+      "atoms": 17,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.8507,
+      "nearestNonbondedPair": [
+        12,
+        3,
+        2.76479
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/supply-lesson.json",
+      "branch": "B01b",
+      "state": 0,
+      "atoms": 17,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.79109,
+      "nearestNonbondedPair": [
+        13,
+        2,
+        2.17551
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/supply-lesson.json",
+      "branch": "B01b",
+      "state": 1,
+      "atoms": 17,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.86478,
+      "nearestNonbondedPair": [
+        4,
+        2,
+        2.81053
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/supply-lesson.json",
+      "branch": "B01b",
+      "state": 2,
+      "atoms": 17,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.88481,
+      "nearestNonbondedPair": [
+        4,
+        0,
+        3.00835
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/supply-lesson.json",
+      "branch": "B02",
+      "state": 0,
+      "atoms": 18,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.88481,
+      "nearestNonbondedPair": [
+        3,
+        0,
+        3.00835
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/supply-lesson.json",
+      "branch": "B02",
+      "state": 1,
+      "atoms": 18,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.8867,
+      "nearestNonbondedPair": [
+        3,
+        0,
+        3.01477
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/supply-lesson.json",
+      "branch": "B02",
+      "state": 2,
+      "atoms": 18,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.8379,
+      "nearestNonbondedPair": [
+        15,
+        11,
+        2.42991
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/supply-lesson.json",
+      "branch": "B03",
+      "state": 0,
+      "atoms": 25,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.75921,
+      "nearestNonbondedPair": [
+        24,
+        21,
+        2.08784
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/supply-lesson.json",
+      "branch": "B03",
+      "state": 1,
+      "atoms": 25,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.75921,
+      "nearestNonbondedPair": [
+        24,
+        23,
+        2.08784
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/supply-lesson.json",
+      "branch": "B03",
+      "state": 2,
+      "atoms": 25,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.75921,
+      "nearestNonbondedPair": [
+        24,
+        23,
+        2.08784
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/supply-lesson.json",
+      "branch": "B03",
+      "state": 3,
+      "atoms": 25,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.75921,
+      "nearestNonbondedPair": [
+        24,
+        23,
+        2.08784
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/supply-lesson.json",
+      "branch": "B03",
+      "state": 4,
+      "atoms": 25,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.75921,
+      "nearestNonbondedPair": [
+        24,
+        23,
+        2.08784
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/supply-lesson.json",
+      "branch": "B03",
+      "state": 5,
+      "atoms": 25,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.75921,
+      "nearestNonbondedPair": [
+        24,
+        21,
+        2.08784
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/upstream-lesson.json",
+      "branch": "U01",
+      "state": 0,
+      "atoms": 21,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.91595,
+      "nearestNonbondedPair": [
+        9,
+        6,
+        2.51886
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/upstream-lesson.json",
+      "branch": "U01",
+      "state": 1,
+      "atoms": 21,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.91595,
+      "nearestNonbondedPair": [
+        12,
+        6,
+        2.51886
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/upstream-lesson.json",
+      "branch": "U01",
+      "state": 2,
+      "atoms": 21,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.94335,
+      "nearestNonbondedPair": [
+        11,
+        0,
+        2.73573
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/upstream-lesson.json",
+      "branch": "U01",
+      "state": 3,
+      "atoms": 21,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.8382,
+      "nearestNonbondedPair": [
+        18,
+        0,
+        2.43079
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/upstream-lesson.json",
+      "branch": "U02-net",
+      "state": 0,
+      "atoms": 16,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.8382,
+      "nearestNonbondedPair": [
+        13,
+        1,
+        2.43079
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/upstream-lesson.json",
+      "branch": "U02-net",
+      "state": 1,
+      "atoms": 16,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.84749,
+      "nearestNonbondedPair": [
+        13,
+        1,
+        2.45771
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/upstream-lesson.json",
+      "branch": "U02-over-net",
+      "state": 0,
+      "atoms": 18,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.84749,
+      "nearestNonbondedPair": [
+        15,
+        1,
+        2.45771
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/upstream-lesson.json",
+      "branch": "U02-over-net",
+      "state": 1,
+      "atoms": 18,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.88175,
+      "nearestNonbondedPair": [
+        15,
+        3,
+        2.55707
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/upstream-lesson.json",
+      "branch": "A01",
+      "state": 0,
+      "atoms": 19,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.79577,
+      "nearestNonbondedPair": [
+        5,
+        0,
+        2.18836
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/upstream-lesson.json",
+      "branch": "A01",
+      "state": 1,
+      "atoms": 19,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.71896,
+      "nearestNonbondedPair": [
+        15,
+        4,
+        2.15687
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/upstream-lesson.json",
+      "branch": "A01",
+      "state": 2,
+      "atoms": 19,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.76274,
+      "nearestNonbondedPair": [
+        13,
+        0,
+        2.09753
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/upstream-lesson.json",
+      "branch": "A01",
+      "state": 3,
+      "atoms": 19,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.7765,
+      "nearestNonbondedPair": [
+        5,
+        0,
+        2.13538
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/upstream-lesson.json",
+      "branch": "A01",
+      "state": 4,
+      "atoms": 19,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.70659,
+      "nearestNonbondedPair": [
+        13,
+        0,
+        1.94313
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/upstream-lesson.json",
+      "branch": "A01",
+      "state": 5,
+      "atoms": 19,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.71631,
+      "nearestNonbondedPair": [
+        15,
+        4,
+        2.14893
+      ],
+      "violations": []
+    },
+    {
+      "file": "data/vitamin-a/upstream-lesson.json",
+      "branch": "A01",
+      "state": 6,
+      "atoms": 19,
+      "passed": true,
+      "minimumNonbondedVdwRatio": 0.81671,
+      "nearestNonbondedPair": [
+        8,
+        0,
+        2.65429
+      ],
+      "violations": []
+    }
+  ],
+  "before": {
+    "states": 57,
+    "failedStates": 28,
+    "E01": {
+      "file": "data/vitamin-a/acetylation-lesson.json",
+      "branch": "E01",
+      "state": 1,
+      "atoms": 78,
+      "passed": false,
+      "minimumNonbondedVdwRatio": 0.10572,
+      "nearestNonbondedPair": [
+        61,
+        50,
+        0.25372
+      ],
+      "violations": [
+        {
+          "type": "nonbonded",
+          "atoms": [
+            54,
+            0
+          ],
+          "distanceA": 2.14262,
+          "ratio": 0.63018
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            54,
+            1
+          ],
+          "distanceA": 2.02754,
+          "ratio": 0.59633
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            54,
+            19
+          ],
+          "distanceA": 1.54963,
+          "ratio": 0.45577
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            54,
+            50
+          ],
+          "distanceA": 1.13957,
+          "ratio": 0.39295
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            55,
+            0
+          ],
+          "distanceA": 1.26663,
+          "ratio": 0.37254
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            55,
+            1
+          ],
+          "distanceA": 1.21746,
+          "ratio": 0.35808
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            55,
+            19
+          ],
+          "distanceA": 1.88905,
+          "ratio": 0.5556
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            55,
+            23
+          ],
+          "distanceA": 1.22132,
+          "ratio": 0.42115
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            56,
+            0
+          ],
+          "distanceA": 1.55979,
+          "ratio": 0.47994
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            56,
+            1
+          ],
+          "distanceA": 0.57202,
+          "ratio": 0.17601
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            56,
+            2
+          ],
+          "distanceA": 1.09466,
+          "ratio": 0.33682
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            56,
+            3
+          ],
+          "distanceA": 1.98511,
+          "ratio": 0.6108
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            56,
+            19
+          ],
+          "distanceA": 1.87373,
+          "ratio": 0.57653
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            57,
+            0
+          ],
+          "distanceA": 1.91465,
+          "ratio": 0.58912
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            57,
+            23
+          ],
+          "distanceA": 0.89806,
+          "ratio": 0.32657
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            58,
+            27
+          ],
+          "distanceA": 1.56447,
+          "ratio": 0.53947
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            60,
+            3
+          ],
+          "distanceA": 1.83559,
+          "ratio": 0.5648
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            60,
+            4
+          ],
+          "distanceA": 1.27957,
+          "ratio": 0.39371
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            60,
+            27
+          ],
+          "distanceA": 0.81949,
+          "ratio": 0.298
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            61,
+            19
+          ],
+          "distanceA": 0.8718,
+          "ratio": 0.30062
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            61,
+            50
+          ],
+          "distanceA": 0.25372,
+          "ratio": 0.10572
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            64,
+            32
+          ],
+          "distanceA": 1.13341,
+          "ratio": 0.47225
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            67,
+            1
+          ],
+          "distanceA": 1.70912,
+          "ratio": 0.50268
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            67,
+            2
+          ],
+          "distanceA": 1.87991,
+          "ratio": 0.55291
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            67,
+            55
+          ],
+          "distanceA": 1.30068,
+          "ratio": 0.38255
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            67,
+            56
+          ],
+          "distanceA": 1.44009,
+          "ratio": 0.44311
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            67,
+            57
+          ],
+          "distanceA": 1.77739,
+          "ratio": 0.54689
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            68,
+            0
+          ],
+          "distanceA": 1.97288,
+          "ratio": 0.58026
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            68,
+            1
+          ],
+          "distanceA": 2.15706,
+          "ratio": 0.63443
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            68,
+            23
+          ],
+          "distanceA": 1.33946,
+          "ratio": 0.46188
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            68,
+            55
+          ],
+          "distanceA": 1.55054,
+          "ratio": 0.45604
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            68,
+            56
+          ],
+          "distanceA": 1.72724,
+          "ratio": 0.53146
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            68,
+            57
+          ],
+          "distanceA": 1.11594,
+          "ratio": 0.34337
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            68,
+            58
+          ],
+          "distanceA": 1.01828,
+          "ratio": 0.2995
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            68,
+            60
+          ],
+          "distanceA": 1.24838,
+          "ratio": 0.38412
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            69,
+            0
+          ],
+          "distanceA": 1.16748,
+          "ratio": 0.34338
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            69,
+            22
+          ],
+          "distanceA": 1.53822,
+          "ratio": 0.53042
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            69,
+            23
+          ],
+          "distanceA": 0.47786,
+          "ratio": 0.16478
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            69,
+            56
+          ],
+          "distanceA": 2.11171,
+          "ratio": 0.64976
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            69,
+            57
+          ],
+          "distanceA": 1.20175,
+          "ratio": 0.36977
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            69,
+            58
+          ],
+          "distanceA": 1.63342,
+          "ratio": 0.48042
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            69,
+            60
+          ],
+          "distanceA": 2.10931,
+          "ratio": 0.64902
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            70,
+            0
+          ],
+          "distanceA": 0.84573,
+          "ratio": 0.25628
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            70,
+            1
+          ],
+          "distanceA": 2.07958,
+          "ratio": 0.63018
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            70,
+            23
+          ],
+          "distanceA": 1.11958,
+          "ratio": 0.39985
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            70,
+            24
+          ],
+          "distanceA": 0.66227,
+          "ratio": 0.23652
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            70,
+            62
+          ],
+          "distanceA": 1.61502,
+          "ratio": 0.57679
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            71,
+            0
+          ],
+          "distanceA": 1.58619,
+          "ratio": 0.46653
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            71,
+            1
+          ],
+          "distanceA": 1.66741,
+          "ratio": 0.49041
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            71,
+            19
+          ],
+          "distanceA": 1.47551,
+          "ratio": 0.43397
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            71,
+            24
+          ],
+          "distanceA": 1.27203,
+          "ratio": 0.43863
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            71,
+            50
+          ],
+          "distanceA": 1.15352,
+          "ratio": 0.39776
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            71,
+            54
+          ],
+          "distanceA": 0.61343,
+          "ratio": 0.18042
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            71,
+            56
+          ],
+          "distanceA": 2.06618,
+          "ratio": 0.63575
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            71,
+            61
+          ],
+          "distanceA": 1.15419,
+          "ratio": 0.398
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            71,
+            62
+          ],
+          "distanceA": 1.13121,
+          "ratio": 0.39007
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            72,
+            1
+          ],
+          "distanceA": 1.41994,
+          "ratio": 0.41763
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            72,
+            19
+          ],
+          "distanceA": 1.2712,
+          "ratio": 0.37388
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            72,
+            20
+          ],
+          "distanceA": 2.20763,
+          "ratio": 0.6493
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            72,
+            54
+          ],
+          "distanceA": 1.24242,
+          "ratio": 0.36542
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            72,
+            55
+          ],
+          "distanceA": 1.13604,
+          "ratio": 0.33413
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            72,
+            56
+          ],
+          "distanceA": 1.65722,
+          "ratio": 0.50991
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            72,
+            61
+          ],
+          "distanceA": 1.60137,
+          "ratio": 0.5522
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            72,
+            63
+          ],
+          "distanceA": 1.52814,
+          "ratio": 0.52695
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            74,
+            58
+          ],
+          "distanceA": 0.83868,
+          "ratio": 0.2892
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            74,
+            60
+          ],
+          "distanceA": 0.74445,
+          "ratio": 0.27071
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            76,
+            50
+          ],
+          "distanceA": 0.74007,
+          "ratio": 0.30836
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            76,
+            54
+          ],
+          "distanceA": 1.11028,
+          "ratio": 0.38286
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            76,
+            61
+          ],
+          "distanceA": 0.96532,
+          "ratio": 0.40222
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            76,
+            62
+          ],
+          "distanceA": 1.0739,
+          "ratio": 0.44746
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            77,
+            19
+          ],
+          "distanceA": 1.42256,
+          "ratio": 0.49054
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            77,
+            20
+          ],
+          "distanceA": 1.52679,
+          "ratio": 0.52648
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            77,
+            21
+          ],
+          "distanceA": 1.41221,
+          "ratio": 0.51353
+        },
+        {
+          "type": "nonbonded",
+          "atoms": [
+            77,
+            53
+          ],
+          "distanceA": 1.01099,
+          "ratio": 0.42125
+        }
+      ]
+    }
+  }
+}

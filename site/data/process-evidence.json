@@ -1,0 +1,67 @@
+{
+  "version": "0.3.0-process-alpha1",
+  "jarSha256": "b1446488e23284bf005f80c1156b71c1cdd85f0c3d7f7b10a5c1522f9083f2ad",
+  "tests": 48,
+  "failures": 0,
+  "date": "2026-10-03",
+  "passedScopedPilot": true,
+  "originalM5M6Gate": "OPEN",
+  "referenceChecks": {
+    "activityCoefficientPoints": 24,
+    "independentSeparationPoints": 20,
+    "processCases": 20,
+    "onSpecCases": 16,
+    "reactionCases": 40,
+    "rdkitPositiveGraphs": 20
+  },
+  "defaultBatch": {
+    "productMol": [
+      0.003071429819946308,
+      0.01243281940551708,
+      0.22019268855419938,
+      0.0
+    ],
+    "esterMassFraction": 0.9624351659687771,
+    "freshAcidBasedEsterYield": 0.22019268855419938,
+    "heaterJ": 58522.91729323397,
+    "coolerJ": 60563.40196747352,
+    "washWaterMol": 4.72856763302925,
+    "maxCaseComponentBalanceMol": 1.3100631690576847e-14
+  },
+  "serverChecks": [
+    "full player inventory unchanged",
+    "other owner refused",
+    "corrupt NBT quarantined and retained",
+    "real ChunkProviderServer save/unload/load exact state",
+    "whole process state equal through normal service restart",
+    "actual GT Materials.Ethanol maps to bioethanol; no ethylacetate mapping"
+  ],
+  "runtimeMapping": {
+    "aceticacid": "aceticacid; id=456; mol/mB=0.017394935985436615",
+    "ethanol": "bioethanol; id=59; mol/mB=0.017040950377308194",
+    "ethylacetate": "MISSING",
+    "water": "water; id=1; mol/mB=0.0553446851783597",
+    "relatedRegistryNames": {
+      "methylacetate": 577,
+      "methanol": 576,
+      "molten.ethylcyanoacetate": 1123,
+      "bioethanol": 59,
+      "calciumacetatesolution": 544,
+      "polyvinylacetate": 584,
+      "ethanol gasoline": 1360,
+      "vinylacetate": 607
+    }
+  },
+  "history": {
+    "liveFlowBuildSha256": "70569f3b2ba166bfcfa0cc207e1b0f913944414258f515fb0b6cb6b1df9f1220",
+    "finalBuildVerification": "added overflow/stage guards and property license; 48 tests rerun; live saved state, lifecycle and restart verified on final build"
+  },
+  "pending": [
+    "manual real client and GT pipe acceptance",
+    "independent chemistry review",
+    "cross-storage crash atomicity",
+    "GT MTE/EU and survival progression",
+    "continuous CSTR, multistage distillation, full VLLE and experimental calibration"
+  ],
+  "chemistryBoundary": "Predictive UNIFAC with numerical cross-checks; teaching reaction and dryer parameters; not experimentally validated plant design"
+}

@@ -1,0 +1,10 @@
+{
+  "version": "0.3.1-machine-ui-alpha1",
+  "jarSha256": "f39854a814f7d0517aee5decd71cf7d4c625d9f303dbfd7ce63a285685df8c2e",
+  "tests": 51,
+  "failures": 0,
+  "server": "Ubuntu / Java 17：八面板、61 点轨迹包、真实样品取出、请求重放与身份/窗口/距离拒绝通过；玩家存档原字段保持一致",
+  "client": "独立新版 Prism 实例已准备，未启动；实际 GUI 渲染与缩放待人工验收",
+  "expertReview": "未指定独立审核人；未声称已审核",
+  "gate": "有限批式产线与八设备 GUI；原 M5/M6 完整 gate 仍开放"
+}

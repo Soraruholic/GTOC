@@ -1,0 +1,26 @@
+{
+  "schema": "oc-compound-extension-upstream-1",
+  "compounds": [
+    {
+      "slug": "methyl-butanol",
+      "name": "2-甲基-2-丁醇（过还原）",
+      "smiles": "CCC(C)(C)O",
+      "formula": "C5H12O",
+      "kind": "molecular",
+      "charge": 0,
+      "capability": "va-upstream-teaching",
+      "stereo": "achiral",
+      "elements": {
+        "C": 5,
+        "H": 12,
+        "O": 1
+      },
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:e6707d036dfbeea3f1b0439ff5702551e44720f914759a494b3eafa5690abda6"
+    }
+  ]
+}

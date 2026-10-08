@@ -1,0 +1,98 @@
+{
+  "passed": true,
+  "method": "SciPy DOP853 independent five-species concentration-rate equations",
+  "toleranceMol": 1e-07,
+  "conditions": "V=10L, dtJava=1s, imposed isothermal/isobaric, uncalibrated teaching constants",
+  "cases": [
+    {
+      "temperatureK": 303.0,
+      "maxAbsTraceMol": 5.482503340203948e-12,
+      "referenceFinalMol": [
+        0.02316634599212161,
+        0.6937608988196453,
+        0.2780727551882328,
+        0.04359359080388892,
+        1.2499064091961112
+      ],
+      "stepConvergence": [
+        {
+          "dtSeconds": 4.0,
+          "maxAbsFinalMol": 6.763034576806604e-11
+        },
+        {
+          "dtSeconds": 2.0,
+          "maxAbsFinalMol": 4.0637493370354605e-12
+        },
+        {
+          "dtSeconds": 1.0,
+          "maxAbsFinalMol": 2.488009798184976e-13
+        },
+        {
+          "dtSeconds": 0.5,
+          "maxAbsFinalMol": 1.2989609388114332e-14
+        }
+      ],
+      "teachingOnly": true
+    },
+    {
+      "temperatureK": 323.0,
+      "maxAbsTraceMol": 5.974171157774322e-11,
+      "referenceFinalMol": [
+        0.016547345374181486,
+        0.672786729830491,
+        0.3056659247953278,
+        0.00938142057885379,
+        1.2841185794211465
+      ],
+      "stepConvergence": [
+        {
+          "dtSeconds": 4.0,
+          "maxAbsFinalMol": 5.279426895654638e-10
+        },
+        {
+          "dtSeconds": 2.0,
+          "maxAbsFinalMol": 3.056588315786257e-11
+        },
+        {
+          "dtSeconds": 1.0,
+          "maxAbsFinalMol": 1.8368639942423215e-12
+        },
+        {
+          "dtSeconds": 0.5,
+          "maxAbsFinalMol": 1.0969003483296547e-13
+        }
+      ],
+      "teachingOnly": true
+    },
+    {
+      "temperatureK": 343.0,
+      "maxAbsTraceMol": 3.9656034012125474e-10,
+      "referenceFinalMol": [
+        0.015157893112132309,
+        0.6671251658136275,
+        0.3127169410742401,
+        0.0009409520378923686,
+        1.2925590479621083
+      ],
+      "stepConvergence": [
+        {
+          "dtSeconds": 4.0,
+          "maxAbsFinalMol": 4.234520067925018e-09
+        },
+        {
+          "dtSeconds": 2.0,
+          "maxAbsFinalMol": 2.318121250510785e-10
+        },
+        {
+          "dtSeconds": 1.0,
+          "maxAbsFinalMol": 1.3522960529144257e-11
+        },
+        {
+          "dtSeconds": 0.5,
+          "maxAbsFinalMol": 8.203437928955282e-13
+        }
+      ],
+      "teachingOnly": true
+    }
+  ]
+}

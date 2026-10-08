@@ -1,0 +1,197 @@
+{
+  "schema": "oc-compound-extension-carbon-1",
+  "compounds": [
+    {
+      "slug": "sodium-methyl-acetoacetate",
+      "name": "乙酰乙酸甲酯钠盐净组分",
+      "smiles": null,
+      "formula": "C5H7NaO3",
+      "kind": "formal-component",
+      "charge": 0,
+      "capability": "va-carbon-teaching",
+      "stereo": "No new stereochemical assignment",
+      "elements": {
+        "C": 5,
+        "H": 7,
+        "Na": 1,
+        "O": 3
+      },
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:15ae4138c15f1e5c98e532ab08957f5ce0d6f86f2b305990808c01ddfa7053be"
+    },
+    {
+      "slug": "ethylene-carbonate",
+      "name": "碳酸乙烯酯",
+      "smiles": "O=C1OCCO1",
+      "formula": "C3H4O3",
+      "kind": "molecular",
+      "charge": 0,
+      "capability": "va-carbon-teaching",
+      "stereo": "No new stereochemical assignment",
+      "elements": {
+        "C": 3,
+        "H": 4,
+        "O": 3
+      },
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:32b3852dff7bff61c52dbe502dd05ae5c95f1b90b65c971b3ab7d45de832abc7"
+    },
+    {
+      "slug": "aluminium-isopropoxide",
+      "name": "异丙醇铝形式催化组分",
+      "smiles": null,
+      "formula": "C9H21AlO3",
+      "kind": "formal-component",
+      "charge": 0,
+      "capability": "va-carbon-teaching",
+      "stereo": "No new stereochemical assignment",
+      "elements": {
+        "C": 9,
+        "H": 21,
+        "Al": 1,
+        "O": 3
+      },
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:6d7e41b0955bcaeb6671e2f94652944ccd45867b3b06e3afcd46ff6f450eec1d"
+    },
+    {
+      "slug": "molybdenyl-acetylacetonate",
+      "name": "MoO2(acac)2 形式催化组分",
+      "smiles": null,
+      "formula": "C10H14MoO6",
+      "kind": "formal-component",
+      "charge": 0,
+      "capability": "va-carbon-teaching",
+      "stereo": "No new stereochemical assignment",
+      "elements": {
+        "C": 10,
+        "H": 14,
+        "Mo": 1,
+        "O": 6
+      },
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:c2e44645ca79002764ef7c8f068f8934702d7d1b1092d3a42c34af80d21c93d1"
+    },
+    {
+      "slug": "triphenylphosphine-oxide",
+      "name": "三苯基氧化膦",
+      "smiles": "O=P(c1ccccc1)(c1ccccc1)c1ccccc1",
+      "formula": "C18H15OP",
+      "kind": "molecular",
+      "charge": 0,
+      "capability": "va-carbon-teaching",
+      "stereo": "No new stereochemical assignment",
+      "elements": {
+        "C": 18,
+        "H": 15,
+        "O": 1,
+        "P": 1
+      },
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:284203673a8a8f66ed89214912ee2c54826e04418837f3b4989b22667a9e2caf"
+    },
+    {
+      "slug": "tert-butylbenzoic-acid",
+      "name": "4-叔丁基苯甲酸",
+      "smiles": "CC(C)(C)c1ccc(C(=O)O)cc1",
+      "formula": "C11H14O2",
+      "kind": "molecular",
+      "charge": 0,
+      "capability": "va-carbon-teaching",
+      "stereo": "No new stereochemical assignment",
+      "elements": {
+        "C": 11,
+        "H": 14,
+        "O": 2
+      },
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:c1310d7798691494cd583b662347df33d6ca915d1048c2ec11a8d881bb3fa08c"
+    },
+    {
+      "slug": "toluene",
+      "name": "甲苯",
+      "smiles": "Cc1ccccc1",
+      "formula": "C7H8",
+      "kind": "molecular",
+      "charge": 0,
+      "capability": "va-carbon-teaching",
+      "stereo": "No new stereochemical assignment",
+      "elements": {
+        "C": 7,
+        "H": 8
+      },
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:2686cc2c4af1b6f49f09c574b4106f5be8cdac730c9959b7bab0195697e72082"
+    },
+    {
+      "slug": "geranial",
+      "name": "香叶醛 / (2E)-柠檬醛",
+      "smiles": "CC(C)=CCC/C(C)=C/C=O",
+      "formula": "C10H16O",
+      "kind": "molecular",
+      "charge": 0,
+      "capability": "va-carbon-teaching; resolved citral isomers are identity-only, not assigned production fractions",
+      "stereo": "specified 2E",
+      "elements": {
+        "C": 10,
+        "H": 16,
+        "O": 1
+      },
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:9ff621c1f4902489f64334c129cf705f28a07dee8234a9445428cbc275da614b"
+    },
+    {
+      "slug": "neral",
+      "name": "橙花醛 / (2Z)-柠檬醛",
+      "smiles": "CC(C)=CCC/C(C)=C\\C=O",
+      "formula": "C10H16O",
+      "kind": "molecular",
+      "charge": 0,
+      "capability": "va-carbon-teaching; resolved citral isomers are identity-only, not assigned production fractions",
+      "stereo": "specified 2Z",
+      "elements": {
+        "C": 10,
+        "H": 16,
+        "O": 1
+      },
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:052b615077280eac0dd567774d00404c7b912ec51285ed6075a9fb8522ecd1be"
+    }
+  ]
+}

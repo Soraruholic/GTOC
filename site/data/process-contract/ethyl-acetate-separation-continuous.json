@@ -1,0 +1,305 @@
+{
+  "schema": "oc-separation-reference-2",
+  "scope": "offline independent numerical reference, not game yield or experimental validation",
+  "source": {
+    "file": "research/process-engine/property-provenance.json",
+    "sha256": "f13c3db3c115956b981906516ec200603b8adc3dc2ea101b6c2f3909dfd033cd",
+    "solverSha256": "b60f6a9187c173cefb7b0ae37419349436fcf529db4f6401530418240d67cb12"
+  },
+  "conditions": {
+    "temperatureK": 298.15,
+    "supportedNumericalTemperatureK": [
+      298.15,
+      380
+    ],
+    "pressure": "not modeled in incompressible LLE objective",
+    "components": [
+      "acetic-acid",
+      "ethanol",
+      "ethyl-acetate",
+      "water"
+    ],
+    "washWaterMolPerStage": 2,
+    "initialMoles": [
+      0.48987859204130557,
+      0.48987859204130557,
+      0.5101214079586944,
+      0.5101214079586944
+    ],
+    "reactionEquilibriumConstant": "teaching K(345K)=4"
+  },
+  "acceptance": {
+    "materialBalanceMol": 1e-11,
+    "chemicalPotentialLogResidual": 2e-06,
+    "globalStabilityProven": false,
+    "experimentallyCalibrated": false,
+    "gameYieldConnected": false
+  },
+  "rows": [
+    {
+      "wash": 1,
+      "feedMol": [
+        0.48987859204130557,
+        0.48987859204130557,
+        0.5101214079586944,
+        2.510121407958694
+      ],
+      "retainedMol": [
+        0.48987859204130557,
+        0.48987859204130557,
+        0.5101214079586944,
+        2.510121407958694
+      ],
+      "withdrawnMol": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cumulativeWithdrawnMol": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "state": "SINGLE_CANDIDATE",
+      "phaseLabels": [
+        "unresolved-liquid"
+      ],
+      "assignment": "no split accepted",
+      "rawSolverOrderSwapped": null,
+      "chemicalPotentialResidual": null,
+      "deltaGOverRT": 0.0,
+      "deltaGOverRTUnit": "mol",
+      "starts": 9,
+      "esterMassFraction": 0.3161730871375735,
+      "esterRecovery": 1.0,
+      "waterInRetainedEquilibriumPhaseMol": 2.510121407958694,
+      "mechanicalWaterEntrainmentMol": "unknown"
+    },
+    {
+      "wash": 2,
+      "feedMol": [
+        0.48987859204130557,
+        0.48987859204130557,
+        0.5101214079586944,
+        4.510121407958694
+      ],
+      "retainedMol": [
+        0.12131599762736997,
+        0.12312169655721719,
+        0.18613325261769192,
+        0.6669642753676819
+      ],
+      "withdrawnMol": [
+        0.36856259441393563,
+        0.3667568954840884,
+        0.3239881553410025,
+        3.8431571325910117
+      ],
+      "cumulativeWithdrawnMol": [
+        0.36856259441393563,
+        0.3667568954840884,
+        0.3239881553410025,
+        3.8431571325910117
+      ],
+      "state": "TWO_PHASE_NUMERICAL",
+      "phaseLabels": [
+        "L_org_lineage",
+        "L_aq_lineage"
+      ],
+      "assignment": "initial aqueous identity by water mole fraction, not vertical position",
+      "rawSolverOrderSwapped": false,
+      "chemicalPotentialResidual": 4.107825191113079e-15,
+      "deltaGOverRT": -0.0007753929392272374,
+      "deltaGOverRTUnit": "mol",
+      "starts": 9,
+      "esterMassFraction": 0.39638503240217987,
+      "esterRecovery": 0.3648803004808681,
+      "waterInRetainedEquilibriumPhaseMol": 0.6669642753676819,
+      "mechanicalWaterEntrainmentMol": "unknown"
+    },
+    {
+      "wash": 3,
+      "feedMol": [
+        0.12131599762736997,
+        0.12312169655721719,
+        0.18613325261769192,
+        2.6669642753676817
+      ],
+      "retainedMol": [
+        0.021585025529732082,
+        0.02234733815341311,
+        0.09973886147386034,
+        0.08892979463636484
+      ],
+      "withdrawnMol": [
+        0.09973097209763788,
+        0.10077435840380407,
+        0.0863943911438316,
+        2.5780344807313167
+      ],
+      "cumulativeWithdrawnMol": [
+        0.4682935665115735,
+        0.46753125388789246,
+        0.4103825464848341,
+        6.421191613322328
+      ],
+      "state": "TWO_PHASE_NUMERICAL",
+      "phaseLabels": [
+        "L_org_lineage",
+        "L_aq_lineage"
+      ],
+      "assignment": "minimum paired composition distance to last accepted two-phase state",
+      "rawSolverOrderSwapped": false,
+      "chemicalPotentialResidual": 4.996003610813204e-16,
+      "deltaGOverRT": -0.011982801824301824,
+      "deltaGOverRTUnit": "mol",
+      "starts": 17,
+      "esterMassFraction": 0.6910952866361244,
+      "esterRecovery": 0.19551985060375351,
+      "waterInRetainedEquilibriumPhaseMol": 0.08892979463636484,
+      "mechanicalWaterEntrainmentMol": "unknown"
+    },
+    {
+      "wash": 4,
+      "feedMol": [
+        0.021585025529732082,
+        0.02234733815341311,
+        0.09973886147386034,
+        2.088929794636365
+      ],
+      "retainedMol": [
+        0.0022453171130660905,
+        0.0025713038250302985,
+        0.0633508920325394,
+        0.01850441493192738
+      ],
+      "withdrawnMol": [
+        0.019339708416665994,
+        0.01977603432838281,
+        0.036387969441320944,
+        2.070425379704438
+      ],
+      "cumulativeWithdrawnMol": [
+        0.4876332749282395,
+        0.4873072882162753,
+        0.446770515926155,
+        8.491616993026767
+      ],
+      "state": "TWO_PHASE_NUMERICAL",
+      "phaseLabels": [
+        "L_org_lineage",
+        "L_aq_lineage"
+      ],
+      "assignment": "minimum paired composition distance to last accepted two-phase state",
+      "rawSolverOrderSwapped": false,
+      "chemicalPotentialResidual": 2.581268532253489e-15,
+      "deltaGOverRT": -0.018953636973593115,
+      "deltaGOverRTUnit": "mol",
+      "starts": 17,
+      "esterMassFraction": 0.9048904632472476,
+      "esterRecovery": 0.12418787183632381,
+      "waterInRetainedEquilibriumPhaseMol": 0.01850441493192738,
+      "mechanicalWaterEntrainmentMol": "unknown"
+    },
+    {
+      "wash": 5,
+      "feedMol": [
+        0.0022453171130660905,
+        0.0025713038250302985,
+        0.0633508920325394,
+        2.0185044149319276
+      ],
+      "retainedMol": [
+        0.00011949951851940373,
+        0.0001639018633772152,
+        0.035048325211195226,
+        0.007294197544349975
+      ],
+      "withdrawnMol": [
+        0.0021258175945466865,
+        0.0024074019616530835,
+        0.028302566821344164,
+        2.0112102173875774
+      ],
+      "cumulativeWithdrawnMol": [
+        0.48975909252278615,
+        0.48971469017792835,
+        0.4750730827474992,
+        10.502827210414345
+      ],
+      "state": "TWO_PHASE_NUMERICAL",
+      "phaseLabels": [
+        "L_org_lineage",
+        "L_aq_lineage"
+      ],
+      "assignment": "minimum paired composition distance to last accepted two-phase state",
+      "rawSolverOrderSwapped": false,
+      "chemicalPotentialResidual": 1.6653345369377348e-15,
+      "deltaGOverRT": -0.009741012283743758,
+      "deltaGOverRTUnit": "mol",
+      "starts": 17,
+      "esterMassFraction": 0.9548142561034573,
+      "esterRecovery": 0.06870585053751196,
+      "waterInRetainedEquilibriumPhaseMol": 0.007294197544349975,
+      "mechanicalWaterEntrainmentMol": "unknown"
+    },
+    {
+      "wash": 6,
+      "feedMol": [
+        0.00011949951851940373,
+        0.0001639018633772152,
+        0.035048325211195226,
+        2.00729419754435
+      ],
+      "retainedMol": [
+        1.421887673311832e-06,
+        2.3845183963330873e-06,
+        0.007650797348871292,
+        0.0015257409415971078
+      ],
+      "withdrawnMol": [
+        0.00011807763084609189,
+        0.0001615173449808821,
+        0.027397527862323936,
+        2.0057684566027527
+      ],
+      "cumulativeWithdrawnMol": [
+        0.48987717015363225,
+        0.4898762075229092,
+        0.5024706106098231,
+        12.508595667017097
+      ],
+      "state": "TWO_PHASE_NUMERICAL",
+      "phaseLabels": [
+        "L_org_lineage",
+        "L_aq_lineage"
+      ],
+      "assignment": "minimum paired composition distance to last accepted two-phase state",
+      "rawSolverOrderSwapped": false,
+      "chemicalPotentialResidual": 1.7763568394002505e-15,
+      "deltaGOverRT": -0.0006681059034969114,
+      "deltaGOverRTUnit": "mol",
+      "starts": 17,
+      "esterMassFraction": 0.9605534169345683,
+      "esterRecovery": 0.01499799308460074,
+      "waterInRetainedEquilibriumPhaseMol": 0.0015257409415971078,
+      "mechanicalWaterEntrainmentMol": "unknown"
+    }
+  ],
+  "checks": [
+    "six stages, continuous labels",
+    "raw phase permutation invariant",
+    "sixth-stage seed permutation",
+    "nearby water perturbation",
+    "unsupported temperature rejection"
+  ],
+  "correction": "The old sixth result contained the entire feed and zero withdrawn phase. This was a failed/missed split candidate, not evidence of a physical phase-label inversion. Labels alone cannot fix solver failure.",
+  "limitations": [
+    "UNIFAC prediction; parameter bounds are numerical support, not measured validity",
+    "Multiple starts plus chemical potential/Gibbs checks do not prove global stability",
+    "No phase-height/density claim, kinetics, settling time or entrainment correlation",
+    "No VLLE, electrolytes, acid vapor association or experimental yield calibration"
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "schema": "oc-quality-certificate-1",
+  "policy": "retinyl-acetate-export-contract-1",
+  "world": "beaaf46b-fd2e-4e6f-9676-b39125dfc678",
+  "product": "67de247e-d4a4-44bd-8b5c-0288ca80ca02",
+  "batch": "5779dfda-7880-4e82-828c-6387a85ce23a",
+  "owner": "9d7ddc73-6ad0-42de-84d0-0eae0dac6948",
+  "root": "5779dfda-7880-4e82-828c-6387a85ce23a",
+  "catalog": "oc-compound-catalog-2.1",
+  "digest": "4101800c334ef0019104dd6c68da37b7e84d6fcafdb106dcbbc2532178abdc1b",
+  "materialDigest": "bf3a0ce6ef13315aa74dd5d54f3c6463862f6e966c7c0f9c8244bbaa1a284450",
+  "sourceDigest": "c2401bcc86ef5f7ee4b4abe196eaec1118cbd5f07bf4a319e79ad0d45db43a76",
+  "sequence": 0,
+  "purityBasis": "wet whole stream mass fraction, using catalog molar masses",
+  "wetMassFraction": 0.9972299168975069252077562326869806,
+  "targetMol": 0.02589196025001630230645760000,
+  "liquid": {},
+  "solid": {
+    "retinyl-acetate": 0.02589196025001630230645760000,
+    "retinyl-acetate-one-z": 0.00007192211180560083974016000
+  },
+  "residualMol": {
+    "retinyl-acetate-one-z": 0.00007192211180560083974016000
+  },
+  "structuralStereo": {
+    "retinyl-acetate": "All four side-chain double bonds E; PubChem CID 638034",
+    "retinyl-acetate-one-z": "Explicit E/Z only where specified; new alcohol centres unspecified"
+  },
+  "sourceLedger": {
+    "C14:b3f9ca5e-1232-43e6-b42c-093d27a5a474": {
+      "beta-ionone-unresolved": 0.128120937142060800000000,
+      "hydrogen-chloride": 0.1409330308562668800000000,
+      "methanol": 0.256241874284121600000000,
+      "methyl-chloroacetate": 0.1409330308562668800000000,
+      "sodium-hydroxide": 0.128120937142060800000000,
+      "sodium-methoxide": 0.1537451245704729600000000,
+      "water": 0.384362811426182400000000
+    },
+    "C6:df4f5c69-3620-4c64-b90e-368574eaa050": {
+      "acetone": 1,
+      "acetylene": 1,
+      "formaldehyde": 1,
+      "sodium-amide": 1,
+      "sodium-hydroxide": 0.02,
+      "sulfuric-acid": 0.01,
+      "water": 3
+    },
+    "acetylation:6c67be26-38cd-47e3-b0dc-cbfe11be0a13": {
+      "acetic-anhydride": 0.09436194471927117005020000,
+      "hydroxenin": 0.0725861113225162846540000,
+      "p-xylene": 0.7258611132251628465400000,
+      "pyridine": 0.05806888905801302772320000
+    },
+    "chain:5779dfda-7880-4e82-828c-6387a85ce23a": {
+      "acetic-acid": 0.00100750042955514614760,
+      "acetic-anhydride": 0.094773717210836422089663702699000000,
+      "c20-ynediol": 0.0795568856425133000,
+      "calcium-carbonate": 0.00795568856425133000,
+      "diethyl-ether": 0.00899506875940,
+      "hydrogen": 0.09546826277101596000,
+      "hydroxenin": 0.0023521699358079397650284823000000,
+      "hydroxenin-diacetate": 0.00027775178168032032080,
+      "hydroxenin-monoacetate": 0.03995672878088935541120,
+      "lead": 0.0000795568856425133000,
+      "p-xylene": 0.73290359558164611664202848230000000,
+      "palladium": 0.0000795568856425133000,
+      "pyridine": 0.059195686235050350939524557168000000,
+      "quinoline": 0.000795568856425133000,
+      "water": 0.00449753437970
+    },
+    "coupling:333559ae-fb47-4ea9-aa85-863b8f5548dc": {
+      "c14-aldehyde": 0.089950687594,
+      "c6-z": 0.089950687594,
+      "diethyl-ether": 0.899506875940,
+      "ethylmagnesium-bromide": 0.1978915127068,
+      "sulfuric-acid": 0.1349260313910,
+      "water": 0.449753437970
+    },
+    "native-credit:456db4ec-bd68-48da-ba6d-e8773d72347a": {
+      "acetone": 2,
+      "acetylene": 2,
+      "chloroacetic-acid": 1,
+      "hydrogen": 1,
+      "hydrogen-chloride": 3,
+      "methanol": 4,
+      "methyl-acetate": 2,
+      "sodium-hydroxide": 1,
+      "sodium-methoxide": 3,
+      "sulfuric-acid": 1,
+      "water": 5
+    },
+    "upstream:456db4ec-bd68-48da-ba6d-e8773d72347a": {
+      "acetone": 2,
+      "acetylene": 2,
+      "aluminium-isopropoxide": 0.01,
+      "calcium-carbonate": 0.1,
+      "chloroacetic-acid": 1,
+      "ethylene-carbonate": 2,
+      "hydrogen": 1,
+      "hydrogen-chloride": 3,
+      "lead": 0.001,
+      "methanol": 4,
+      "methyl-acetate": 2,
+      "molybdenyl-acetylacetonate": 0.01,
+      "palladium": 0.001,
+      "sodium-amide": 2,
+      "sodium-hydroxide": 1,
+      "sodium-methoxide": 3,
+      "sulfuric-acid": 1,
+      "tert-butylbenzoic-acid": 0.2,
+      "toluene": 2,
+      "triphenylphosphine-oxide": 0.2,
+      "water": 5
+    }
+  },
+  "nativeReceipts": [
+    "0b09c3f4-027c-4f0d-9c70-d9da128d5ea9:30878995c2ff5bcf038f3fef9cc175c23fc11ed07ea125a63c97c81e361a9a1f:CREDITED",
+    "4b4de4d9-2a0c-4ccf-805d-0b96bbcddf01:846b01abea2cae37203d271c9db2bd7e098f7e859113349b07842d101f36a23e:CREDITED",
+    "78cbd727-4e74-4468-9a87-023f94392f88:b4fab6f6c280270152e973f5dc89ad9880661a9f7db7ec3bb3706dcab63c9607:CREDITED",
+    "0fcf5592-56bf-4926-a5b7-18cd88c43705:d08df172250e788d2d6a6d7bc1077bcd1db504d0030fb71abe9a17c2b5769a95:CREDITED",
+    "2e6e5254-87c2-4492-99f2-17767a2b8bb2:a345a1b280fd7b3fa6542b3a4dc7bd9ce81105457e7e6f15736e004ba1a1f10b:CREDITED",
+    "2f799cce-9647-44d7-8dcf-f6876ebbfb8c:b54fafc053ca4c396915efa14c835d99edd21d8e7e95a9a6a8e37bca55803a16:CREDITED",
+    "32bcb6a6-209d-4ac9-a3a9-19105c7686b0:253cbaeef0842277a23c8c19704a05000eb68d41e7ea0760c2a57ab2c5a5b040:CREDITED",
+    "42f5600d-fc6e-4db7-bbd5-848047c46402:ca9a41d1a465a6dc13b3ef71c641671c372faf1176da3ca2af03d928d25a7223:CREDITED",
+    "4374f62a-c373-4610-b9a0-a3e0782e40e1:de0180bc3acd31e533b3a850139f7462bfb55cf78568a5eac37ec23270c5570b:CREDITED",
+    "5de6240d-5baf-4835-b28a-e75c6ed1868a:211fb93b62688134f60cc641f7747f6a6920044a428de6a44ad5c63058aaafe2:CREDITED",
+    "71fe7f13-6213-48e6-9553-5e96d0efc81a:abcf75d356ebafc08f22ef4c584e7f77c35ddd7324e5bee9bf22fe3c2b51f65a:CREDITED",
+    "77ceaf6c-d3a4-4057-8b3c-e4cb14475ac8:dd21916cca53a8bb3ac9f2341053059278b6d1582c9cfb3f7e721cdc8d8880de:CREDITED",
+    "8306dba7-1126-4c76-8dff-687e266ee3d7:10a330798cfc140a478cb11e034c9e731443fc8118605565a47bd4f848e4f9bc:CREDITED",
+    "8882c9de-0f08-4eae-b748-148ca9df538d:ab309b61dd3e92f6c4b5e3f18dd1ecd7494dad6446696afc39c70847e800c21e:CREDITED",
+    "8d919796-2567-4c49-a342-65aa3fd321eb:f24e19de69dedb4395f50429ec7fb618d6db98f8072f193949f93d8dea53caff:CREDITED",
+    "9844a34c-167f-46e5-8f8d-64fc938532bb:6eab15896167f6e561a3f215772dabaf9abe7886d98695cb88611f400d436329:CREDITED",
+    "9df0cc0a-6253-4055-a50e-7553d5637596:fecf0019501d0a129ccf7283b46afc6f7975aa0cb0086ceebf8720c2959590f7:CREDITED",
+    "b1337028-14f4-405f-9ef2-a06c0ee8a6f7:3a9b25ae316963a19acbbc72400954b48fe0b7c924f4b9fd036c32e150904e15:CREDITED",
+    "baf8323d-433d-447f-bc78-5a20e3f9d90f:6e903eba8e6da7d1d9f6245cfad7c70f44bf26d68d742d9686c7a9e66567db8b:CREDITED",
+    "bb8bb0c2-01ac-4c51-a4d4-e38614c7bb64:dfd099a2013f0ecce964b34b0d2a38afd3a585d3497e72fc14c7f309d92c75a8:CREDITED",
+    "d39baf6f-8ba1-4e26-b9c5-e678f97890b2:54f8f189c1387393280df6bc3afca3acccc8a29ffe022fa44ded4948bd2bd945:CREDITED",
+    "e4cde0b6-2b5e-4bf8-abb2-7fab13d92fe7:3ac451ad590961e6561c56cbbc46646ec12e61f17773646eef598cbc9940eb40:CREDITED",
+    "e7742e7b-8829-4e4f-abce-777ae615d0fd:d0f7609f20e0e9ddd5c30c528a8ce7bde5bf1816b98401535dee2f8f4dc5be56:CREDITED",
+    "e7dcbf16-8483-4107-8492-a5a7f9ef4d69:1983476478e2b508e1e41b66ee077a363cf2327b81231d096a0ad0a7292a38df:CREDITED",
+    "eecfc2d5-a7ca-4a67-bae2-f82ffb922fe5:91ea8b3eed251e00d45375bcd8db026c34f54f8efcd16e19421d8281fae5c66b:CREDITED",
+    "f3c3e45a-15b0-4718-aaed-af5f0f8377f1:88b373ba996995e85f5448af12fed210b3b0d14394025291de6de3af81c51e78:CREDITED",
+    "f627e7cf-ba62-4366-9f4b-25bdeb4fc881:e89db7376d0771a7a85939c13935d152a1b39ee86c661b8d955d51b7b8b04da5:CREDITED",
+    "f7f90b70-55b9-4c95-b41c-d62d5192ef20:2ed847f27fa7eb7327d69932470090c7f05c3730a56d2a42f0c167b02094ffc2:CREDITED"
+  ],
+  "sourceModels": [
+    "va-chain-dosed-teaching-1",
+    "va-coupling-dual-source-1",
+    "va-acetylation-teaching-1",
+    "va-c14-native-ionone-1",
+    "va-ionone-teaching-1"
+  ],
+  "stereoEvidence": "model_assigned_unverified",
+  "sourceCompleteness": "native receipts plus explicit model/fixture sources",
+  "fixturePresent": true,
+  "nativeGtExportEligible": false,
+  "reasons": [
+    "STEREO_EVIDENCE_UNVERIFIED: catalog all-trans identity is not a measured process certificate",
+    "GT_MAPPING_NOT_APPROVED: exact registry identity and mol-per-unit require separate approved policy",
+    "RESIDUAL_SPEC_NOT_APPROVED: no medicinal or industrial product grade is implied"
+  ]
+}

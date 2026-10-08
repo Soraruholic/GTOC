@@ -1,0 +1,8 @@
+(()=>{'use strict';const $=id=>document.getElementById(id),en=document.documentElement.lang.startsWith('en');
+function run(){const vals=['feed','base','conversion','recovery'].map(id=>$('ret-'+id).value),[n,b,c,r]=vals.map(Number),status=$('ret-status');
+ if(vals.some(v=>!v.trim())||[n,b,c,r].some(v=>!Number.isFinite(v)||v<0)||n>1000||b>1000||c>100||r>100){status.textContent=en?'Enter finite, nonnegative values within the stated limits.':'请输入范围内的有限非负数值。';$('ret-balance').replaceChildren();window.__retinol={valid:false};return;}
+ const reacted=n*c/100;if(reacted>b+1e-12){status.textContent=en?'MISSING_BASE: the assumed extent exceeds the supplied NaOH. No implicit top-up.':'MISSING_BASE：假定进度超过 NaOH 供应，不隐式补料。';$('ret-balance').replaceChildren();window.__retinol={valid:false};return;}
+ const rows=[['Unreacted ester','未反应酯',n-reacted],['Retinol in target pool','目标池视黄醇',reacted*r/100],['Retinol retained in residue','残余中视黄醇',reacted*(1-r/100)],['Sodium acetate','乙酸钠',reacted],['Excess NaOH','剩余 NaOH',b-reacted]];
+ $('ret-balance').innerHTML='<table><thead><tr><th>'+(en?'Component destination':'组分去向')+'</th><th>mol</th></tr></thead><tbody>'+rows.map(x=>'<tr><td>'+x[en?0:1]+'</td><td>'+x[2].toFixed(6)+'</td></tr>').join('')+'</tbody></table>';
+ status.textContent=en?'Balanced stated components. Phase assignment, stereochemical qualification and real recovery remain unverified.':'已声明组分守恒；相态分配、立体资格与实际回收仍未验证。';window.__retinol={valid:true,feed:n,base:b,reacted,rows:rows.map(x=>x[2]),gameInventoryChanged:false};}
+ ['feed','base','conversion','recovery'].forEach(id=>$('ret-'+id).addEventListener('input',run));run();})();

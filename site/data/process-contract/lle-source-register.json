@@ -1,0 +1,2871 @@
+{
+  "schema": "oc-public-lle-validation-1",
+  "scope": "53 public ternary tie-lines parsed from NIST/TRC ThermoML; no four-component tie-line claimed",
+  "retrievedFrom": "https://trc.nist.gov/ThermoML/",
+  "sourceFiles": [
+    {
+      "doi": "10.1016/j.fluid.2014.04.013",
+      "rawJson": "research/industrial-review/sources/10.1016__j.fluid.2014.04.013.thermoml.json",
+      "sha256": "e2afd9cf0b33b93f2d585ff464357c23979e1515deca356b5a4ddb866d03d1cd",
+      "citation": {
+        "sPage": "72-79",
+        "sVol": "373",
+        "eType": "journal",
+        "dateCit": "2020-09-29",
+        "yrPubYr": "2014",
+        "sPubName": "Fluid Phase Equilib.",
+        "sDOI": "10.1016/j.fluid.2014.04.013",
+        "sTitle": "Solubility, liquid-liquid equilibrium and critical states for the quaternary system acetic acid-ethanol-ethyl acetate-water at 303.15 K and 313.15 K",
+        "TRCRefID": {
+          "yrYrPub": "2014",
+          "sAuthor1": "toi",
+          "sAuthor2": "sam",
+          "tml_elements": [
+            "yrYrPub",
+            "sAuthor1",
+            "sAuthor2",
+            "nAuthorn"
+          ],
+          "nAuthorn": "0"
+        },
+        "sAbstract": "Solubility, critical states and liquid liquid equilibrium (LLE) data for the quaternary system acetic acid ethanol ethyl acetate water and for the ternary subsystems acetic acid ethyl acetate water and ethanol ethyl acetate water were studied at 303.15 K and 313.15 K and atmospheric pressure. Binodal surfaces, binodal curves, tie-lines and compositions of critical points were determined. In order to construct the binodal surfaces and critical curves of the quaternary system, five quaternary sectional planes with several different ratios of concentration of acetic acid to ethanol were studied. Experimental LLE data were compared with the values calculated by UNIFAC and NRTL models, and it was found that the experimental and calculated data are in good agreement.",
+        "sKeyword": [
+          "Liquid-liquid equilibria",
+          "Ethyl acetate",
+          "Esterification",
+          "Quaternary reacting systems",
+          "Critical states"
+        ],
+        "sAuthor": [
+          "Toikka, M.[Maria]",
+          "Samarov, A. A.[Artemiy A.]",
+          "Trofimova, M.[Maya]",
+          "Golikova, A.[Alexandra]",
+          "Tsvetov, N.[Nikita]"
+        ],
+        "tml_elements": [
+          "TRCRefID",
+          "eType",
+          "eSourceType",
+          "sAuthor",
+          "sPubName",
+          "yrPubYr",
+          "dateCit",
+          "sTitle",
+          "sAbstract",
+          "sKeyword",
+          "sDOI",
+          "sVol",
+          "sPage"
+        ],
+        "eSourceType": "Original"
+      },
+      "nistUrl": "https://trc.nist.gov/ThermoML/10.1016/j.fluid.2014.04.013.json",
+      "originalArticleTableNumber": "unknown; publisher table not visually inspected",
+      "pmds": [
+        2,
+        4
+      ]
+    },
+    {
+      "doi": "10.1016/j.fluid.2019.112321",
+      "rawJson": "research/industrial-review/sources/10.1016__j.fluid.2019.112321.thermoml.json",
+      "sha256": "c6659e540ef6ca7d942708c589529475a339b2a30a53b1a5784fb4ae5509c66d",
+      "citation": {
+        "TRCRefID": {
+          "nAuthorn": "0",
+          "yrYrPub": "2020",
+          "sAuthor2": "sad",
+          "sAuthor1": "tro",
+          "tml_elements": [
+            "yrYrPub",
+            "sAuthor1",
+            "sAuthor2",
+            "nAuthorn"
+          ]
+        },
+        "sAbstract": "A brief review of data on solubility and liquid-liquid equilibrium (LLE) in the acetic acid - ethanol - ethyl acetate - water system is presented. A new set of experimental data on solubility, LLE, and critical phases in this quaternary system, ternary subsystems (acetic acid - ethyl acetate - water, ethanol - ethyl acetate - water) and binary subsystem ethyl acetate - water are presented for 323.15 K and 333.15 K at atmospheric pressure. The gas chromatography and the cloud point technique were used to obtain experimental data. Binodal curves, surfaces, and critical manifolds are presented including 3D phase diagrams in composition tetrahedron. Experimental LLE data were correlated using the NRTL model.",
+        "sKeyword": [
+          "Solubility",
+          "Liquid-liquid equilibrium",
+          "Critical state",
+          "Quaternary system",
+          "Ethyl acetate."
+        ],
+        "sPubName": "Fluid Phase Equilib.",
+        "yrPubYr": "2020",
+        "eSourceType": "Original",
+        "sPage": "112321",
+        "tml_elements": [
+          "TRCRefID",
+          "eType",
+          "eSourceType",
+          "sAuthor",
+          "sPubName",
+          "yrPubYr",
+          "dateCit",
+          "sTitle",
+          "sAbstract",
+          "sKeyword",
+          "sDOI",
+          "sVol",
+          "sPage"
+        ],
+        "sAuthor": [
+          "Trofimova, Maya",
+          "Sadaev, Alexey",
+          "Samarov, Artemiy",
+          "Golikova, Alexandra",
+          "Tsvetov, Nikita",
+          "Toikka, Maria",
+          "Toikka, Alexander"
+        ],
+        "sTitle": "Liquid-liquid equilibrium of acetic acid - ethanol - ethyl acetate - water quaternary system: Data review and new results at 323.15 K and 333.15 K",
+        "sVol": "503",
+        "sDOI": "10.1016/j.fluid.2019.112321",
+        "eType": "journal",
+        "dateCit": "2021-08-10"
+      },
+      "nistUrl": "https://trc.nist.gov/ThermoML/10.1016/j.fluid.2019.112321.json",
+      "originalArticleTableNumber": "unknown; publisher table not visually inspected",
+      "pmds": [
+        10,
+        12
+      ]
+    }
+  ],
+  "componentOrder": [
+    "acetic-acid",
+    "ethanol",
+    "ethyl-acetate",
+    "water"
+  ],
+  "rows": [
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 2,
+      "row": 1,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=2]/NumValues[1]",
+      "temperatureK": 303.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 1",
+        "Liquid mixture 2"
+      ],
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 1": [
+          0.0,
+          0.032,
+          0.968
+        ],
+        "Liquid mixture 2": [
+          0.0,
+          0.858,
+          0.14200000000000002
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.01,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.4609248518461841,
+        "rms": 0.3319896422679881,
+        "componentsCompared": [
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 2,
+      "row": 2,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=2]/NumValues[2]",
+      "temperatureK": 313.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 1",
+        "Liquid mixture 2"
+      ],
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 1": [
+          0.036,
+          0.026,
+          0.938
+        ],
+        "Liquid mixture 2": [
+          0.084,
+          0.606,
+          0.31000000000000005
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.01,
+          "level": 95
+        },
+        "Liquid mixture 2:ethanol": {
+          "expanded95": 0.011,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.24449648316646733,
+        "rms": 0.1553827524697237,
+        "componentsCompared": [
+          "ethanol",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 2,
+      "row": 3,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=2]/NumValues[3]",
+      "temperatureK": 313.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 1",
+        "Liquid mixture 2"
+      ],
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 1": [
+          0.042,
+          0.021,
+          0.937
+        ],
+        "Liquid mixture 2": [
+          0.106,
+          0.564,
+          0.33000000000000007
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.01,
+          "level": 95
+        },
+        "Liquid mixture 2:ethanol": {
+          "expanded95": 0.011,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.21287456671923177,
+        "rms": 0.14119884104899574,
+        "componentsCompared": [
+          "ethanol",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 2,
+      "row": 4,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=2]/NumValues[4]",
+      "temperatureK": 313.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 1",
+        "Liquid mixture 2"
+      ],
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 1": [
+          0.051,
+          0.026,
+          0.923
+        ],
+        "Liquid mixture 2": [
+          0.123,
+          0.512,
+          0.365
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.01,
+          "level": 95
+        },
+        "Liquid mixture 2:ethanol": {
+          "expanded95": 0.01,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.19772067355423162,
+        "rms": 0.12240727158264589,
+        "componentsCompared": [
+          "ethanol",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 2,
+      "row": 5,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=2]/NumValues[5]",
+      "temperatureK": 313.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 1",
+        "Liquid mixture 2"
+      ],
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 1": [
+          0.063,
+          0.032,
+          0.905
+        ],
+        "Liquid mixture 2": [
+          0.149,
+          0.41,
+          0.44100000000000006
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.011,
+          "level": 95
+        },
+        "Liquid mixture 2:ethanol": {
+          "expanded95": 0.01,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.15261875492360444,
+        "rms": 0.09593592077582125,
+        "componentsCompared": [
+          "ethanol",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 2,
+      "row": 6,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=2]/NumValues[6]",
+      "temperatureK": 313.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 1",
+        "Liquid mixture 2"
+      ],
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 1": [
+          0.078,
+          0.037,
+          0.885
+        ],
+        "Liquid mixture 2": [
+          0.153,
+          0.294,
+          0.553
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.014,
+          "level": 95
+        },
+        "Liquid mixture 2:ethanol": {
+          "expanded95": 0.01,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.21437215944829968,
+        "rms": 0.12910694179104337,
+        "componentsCompared": [
+          "ethanol",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 2,
+      "row": 7,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=2]/NumValues[7]",
+      "temperatureK": 313.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 1",
+        "Liquid mixture 2"
+      ],
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 1": [
+          0.111,
+          0.074,
+          0.815
+        ],
+        "Liquid mixture 2": [
+          0.16,
+          0.209,
+          0.631
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.015,
+          "level": 95
+        },
+        "Liquid mixture 2:ethanol": {
+          "expanded95": 0.01,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.10239167188024423,
+        "rms": 0.06761037472988725,
+        "componentsCompared": [
+          "ethanol",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 2,
+      "row": 8,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=2]/NumValues[8]",
+      "temperatureK": 303.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 1",
+        "Liquid mixture 2"
+      ],
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 1": [
+          0.01,
+          0.027,
+          0.963
+        ],
+        "Liquid mixture 2": [
+          0.018,
+          0.825,
+          0.15700000000000003
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.01,
+          "level": 95
+        },
+        "Liquid mixture 2:ethanol": {
+          "expanded95": 0.012,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.35678676072210447,
+        "rms": 0.26940874483595345,
+        "componentsCompared": [
+          "ethanol",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 2,
+      "row": 9,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=2]/NumValues[9]",
+      "temperatureK": 303.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 1",
+        "Liquid mixture 2"
+      ],
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 1": [
+          0.026,
+          0.029,
+          0.945
+        ],
+        "Liquid mixture 2": [
+          0.042,
+          0.788,
+          0.16999999999999993
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.01,
+          "level": 95
+        },
+        "Liquid mixture 2:ethanol": {
+          "expanded95": 0.011,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.3847366932800407,
+        "rms": 0.249305489237049,
+        "componentsCompared": [
+          "ethanol",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 2,
+      "row": 10,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=2]/NumValues[10]",
+      "temperatureK": 303.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 1",
+        "Liquid mixture 2"
+      ],
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 1": [
+          0.04,
+          0.033,
+          0.927
+        ],
+        "Liquid mixture 2": [
+          0.068,
+          0.736,
+          0.19599999999999995
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.01,
+          "level": 95
+        },
+        "Liquid mixture 2:ethanol": {
+          "expanded95": 0.011,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.28474437166325073,
+        "rms": 0.18604923970968748,
+        "componentsCompared": [
+          "ethanol",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 2,
+      "row": 11,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=2]/NumValues[11]",
+      "temperatureK": 303.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 1",
+        "Liquid mixture 2"
+      ],
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 1": [
+          0.061,
+          0.033,
+          0.906
+        ],
+        "Liquid mixture 2": [
+          0.102,
+          0.667,
+          0.23099999999999998
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.01,
+          "level": 95
+        },
+        "Liquid mixture 2:ethanol": {
+          "expanded95": 0.011,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.27183377055873104,
+        "rms": 0.15738368221313548,
+        "componentsCompared": [
+          "ethanol",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 2,
+      "row": 12,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=2]/NumValues[12]",
+      "temperatureK": 303.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 1",
+        "Liquid mixture 2"
+      ],
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 1": [
+          0.08,
+          0.044,
+          0.876
+        ],
+        "Liquid mixture 2": [
+          0.135,
+          0.57,
+          0.29500000000000004
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.012,
+          "level": 95
+        },
+        "Liquid mixture 2:ethanol": {
+          "expanded95": 0.011,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.19948590169234892,
+        "rms": 0.11824147761901799,
+        "componentsCompared": [
+          "ethanol",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 2,
+      "row": 13,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=2]/NumValues[13]",
+      "temperatureK": 303.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 1",
+        "Liquid mixture 2"
+      ],
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 1": [
+          0.095,
+          0.053,
+          0.852
+        ],
+        "Liquid mixture 2": [
+          0.159,
+          0.496,
+          0.345
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.012,
+          "level": 95
+        },
+        "Liquid mixture 2:ethanol": {
+          "expanded95": 0.01,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.1517756822259797,
+        "rms": 0.09400854276356306,
+        "componentsCompared": [
+          "ethanol",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 2,
+      "row": 14,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=2]/NumValues[14]",
+      "temperatureK": 303.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 1",
+        "Liquid mixture 2"
+      ],
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 1": [
+          0.107,
+          0.06,
+          0.833
+        ],
+        "Liquid mixture 2": [
+          0.174,
+          0.419,
+          0.40700000000000003
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.012,
+          "level": 95
+        },
+        "Liquid mixture 2:ethanol": {
+          "expanded95": 0.01,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.14307903470656247,
+        "rms": 0.09034702525193507,
+        "componentsCompared": [
+          "ethanol",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 2,
+      "row": 15,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=2]/NumValues[15]",
+      "temperatureK": 313.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 1",
+        "Liquid mixture 2"
+      ],
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 1": [
+          0.0,
+          0.017,
+          0.983
+        ],
+        "Liquid mixture 2": [
+          0.0,
+          0.838,
+          0.16200000000000003
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.01,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.078800733700376,
+        "rms": 0.0664156236054829,
+        "componentsCompared": [
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 4,
+      "row": 1,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=4]/NumValues[1]",
+      "temperatureK": 303.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 1",
+        "Liquid mixture 2"
+      ],
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 1": [
+          0.0,
+          0.032,
+          0.968
+        ],
+        "Liquid mixture 2": [
+          0.0,
+          0.858,
+          0.14200000000000002
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.01,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.4609248518461841,
+        "rms": 0.3319896422679881,
+        "componentsCompared": [
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 4,
+      "row": 2,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=4]/NumValues[2]",
+      "temperatureK": 313.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 1",
+        "Liquid mixture 2"
+      ],
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 1": [
+          0.027,
+          0.023,
+          0.95
+        ],
+        "Liquid mixture 2": [
+          0.087,
+          0.504,
+          0.40900000000000003
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.011,
+          "level": 95
+        },
+        "Liquid mixture 2:acetic-acid": {
+          "expanded95": 0.01,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.1126435484998379,
+        "rms": 0.09180176136621836,
+        "componentsCompared": [
+          "acetic-acid",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 4,
+      "row": 3,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=4]/NumValues[3]",
+      "temperatureK": 313.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 1",
+        "Liquid mixture 2"
+      ],
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 1": [
+          0.036,
+          0.031,
+          0.933
+        ],
+        "Liquid mixture 2": [
+          0.103,
+          0.454,
+          0.44299999999999995
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.012,
+          "level": 95
+        },
+        "Liquid mixture 2:acetic-acid": {
+          "expanded95": 0.01,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.20550485753544473,
+        "rms": 0.13502220251370403,
+        "componentsCompared": [
+          "acetic-acid",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 4,
+      "row": 4,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=4]/NumValues[4]",
+      "temperatureK": 313.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 1",
+        "Liquid mixture 2"
+      ],
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 1": [
+          0.043,
+          0.032,
+          0.925
+        ],
+        "Liquid mixture 2": [
+          0.115,
+          0.381,
+          0.504
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.016,
+          "level": 95
+        },
+        "Liquid mixture 2:acetic-acid": {
+          "expanded95": 0.01,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.16746371508770871,
+        "rms": 0.11999256300622124,
+        "componentsCompared": [
+          "acetic-acid",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 4,
+      "row": 5,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=4]/NumValues[5]",
+      "temperatureK": 313.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 1",
+        "Liquid mixture 2"
+      ],
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 1": [
+          0.052,
+          0.038,
+          0.91
+        ],
+        "Liquid mixture 2": [
+          0.123,
+          0.319,
+          0.558
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.016,
+          "level": 95
+        },
+        "Liquid mixture 2:acetic-acid": {
+          "expanded95": 0.01,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.17326249031236624,
+        "rms": 0.12314749022296193,
+        "componentsCompared": [
+          "acetic-acid",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 4,
+      "row": 6,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=4]/NumValues[6]",
+      "temperatureK": 313.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 1",
+        "Liquid mixture 2"
+      ],
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 1": [
+          0.082,
+          0.086,
+          0.8320000000000001
+        ],
+        "Liquid mixture 2": [
+          0.105,
+          0.17,
+          0.725
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.019,
+          "level": 95
+        },
+        "Liquid mixture 2:acetic-acid": {
+          "expanded95": 0.01,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.10114322634341777,
+        "rms": 0.08130652192699513,
+        "componentsCompared": [
+          "acetic-acid",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 4,
+      "row": 7,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=4]/NumValues[7]",
+      "temperatureK": 303.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 1",
+        "Liquid mixture 2"
+      ],
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 1": [
+          0.014,
+          0.029,
+          0.957
+        ],
+        "Liquid mixture 2": [
+          0.016,
+          0.815,
+          0.16900000000000004
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.01,
+          "level": 95
+        },
+        "Liquid mixture 2:acetic-acid": {
+          "expanded95": 0.011,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.6348080841926382,
+        "rms": 0.4040730807555489,
+        "componentsCompared": [
+          "acetic-acid",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 4,
+      "row": 8,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=4]/NumValues[8]",
+      "temperatureK": 303.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 1",
+        "Liquid mixture 2"
+      ],
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 1": [
+          0.025,
+          0.032,
+          0.943
+        ],
+        "Liquid mixture 2": [
+          0.039,
+          0.769,
+          0.19199999999999995
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.01,
+          "level": 95
+        },
+        "Liquid mixture 2:acetic-acid": {
+          "expanded95": 0.011,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.34851589914221837,
+        "rms": 0.24868372149782353,
+        "componentsCompared": [
+          "acetic-acid",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 4,
+      "row": 9,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=4]/NumValues[9]",
+      "temperatureK": 303.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 1",
+        "Liquid mixture 2"
+      ],
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 1": [
+          0.037,
+          0.035,
+          0.9279999999999999
+        ],
+        "Liquid mixture 2": [
+          0.066,
+          0.697,
+          0.2370000000000001
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.011,
+          "level": 95
+        },
+        "Liquid mixture 2:acetic-acid": {
+          "expanded95": 0.011,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.2713008292998613,
+        "rms": 0.19933431210234945,
+        "componentsCompared": [
+          "acetic-acid",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 4,
+      "row": 10,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=4]/NumValues[10]",
+      "temperatureK": 303.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 1",
+        "Liquid mixture 2"
+      ],
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 1": [
+          0.057,
+          0.043,
+          0.9
+        ],
+        "Liquid mixture 2": [
+          0.099,
+          0.592,
+          0.30900000000000005
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.011,
+          "level": 95
+        },
+        "Liquid mixture 2:acetic-acid": {
+          "expanded95": 0.01,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.296777001558437,
+        "rms": 0.20025622009670785,
+        "componentsCompared": [
+          "acetic-acid",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 4,
+      "row": 11,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=4]/NumValues[11]",
+      "temperatureK": 303.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 1",
+        "Liquid mixture 2"
+      ],
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 1": [
+          0.069,
+          0.049,
+          0.882
+        ],
+        "Liquid mixture 2": [
+          0.129,
+          0.47,
+          0.401
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.011,
+          "level": 95
+        },
+        "Liquid mixture 2:acetic-acid": {
+          "expanded95": 0.01,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.22004953314485176,
+        "rms": 0.16645570613112246,
+        "componentsCompared": [
+          "acetic-acid",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 4,
+      "row": 12,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=4]/NumValues[12]",
+      "temperatureK": 313.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 1",
+        "Liquid mixture 2"
+      ],
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 1": [
+          0.0,
+          0.017,
+          0.983
+        ],
+        "Liquid mixture 2": [
+          0.0,
+          0.838,
+          0.16200000000000003
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.01,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.078800733700376,
+        "rms": 0.0664156236054829,
+        "componentsCompared": [
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 4,
+      "row": 13,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=4]/NumValues[13]",
+      "temperatureK": 313.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 1",
+        "Liquid mixture 2"
+      ],
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 1": [
+          0.022,
+          0.02,
+          0.958
+        ],
+        "Liquid mixture 2": [
+          0.063,
+          0.631,
+          0.30600000000000005
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.011,
+          "level": 95
+        },
+        "Liquid mixture 2:acetic-acid": {
+          "expanded95": 0.01,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.09544764471507117,
+        "rms": 0.07703507318919983,
+        "componentsCompared": [
+          "acetic-acid",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 4,
+      "row": 14,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=4]/NumValues[14]",
+      "temperatureK": 313.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 1",
+        "Liquid mixture 2"
+      ],
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 1": [
+          0.02,
+          0.022,
+          0.958
+        ],
+        "Liquid mixture 2": [
+          0.075,
+          0.572,
+          0.3530000000000001
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.011,
+          "level": 95
+        },
+        "Liquid mixture 2:acetic-acid": {
+          "expanded95": 0.01,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.1418949117012343,
+        "rms": 0.12189998137685655,
+        "componentsCompared": [
+          "acetic-acid",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 10,
+      "row": 1,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=10]/NumValues[1]",
+      "temperatureK": 323.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 2",
+        "Liquid mixture 1"
+      ],
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 2": [
+          0.033,
+          0.687,
+          0.2799999999999999
+        ],
+        "Liquid mixture 1": [
+          0.02,
+          0.022,
+          0.958
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 2:acetic-acid": {
+          "expanded95": 0.004,
+          "level": 95
+        },
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.005,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.554601232664687,
+        "rms": 0.3270069649440264,
+        "componentsCompared": [
+          "acetic-acid",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 10,
+      "row": 2,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=10]/NumValues[2]",
+      "temperatureK": 323.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 2",
+        "Liquid mixture 1"
+      ],
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 2": [
+          0.064,
+          0.587,
+          0.349
+        ],
+        "Liquid mixture 1": [
+          0.04,
+          0.036,
+          0.924
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 2:acetic-acid": {
+          "expanded95": 0.004,
+          "level": 95
+        },
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.005,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.4974014411246084,
+        "rms": 0.3101443419628627,
+        "componentsCompared": [
+          "acetic-acid",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 10,
+      "row": 3,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=10]/NumValues[3]",
+      "temperatureK": 323.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 2",
+        "Liquid mixture 1"
+      ],
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 2": [
+          0.099,
+          0.453,
+          0.44799999999999995
+        ],
+        "Liquid mixture 1": [
+          0.053,
+          0.047,
+          0.9
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 2:acetic-acid": {
+          "expanded95": 0.004,
+          "level": 95
+        },
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.006,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.28330086732850157,
+        "rms": 0.2108625859348529,
+        "componentsCompared": [
+          "acetic-acid",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 10,
+      "row": 4,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=10]/NumValues[4]",
+      "temperatureK": 323.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 2",
+        "Liquid mixture 1"
+      ],
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 2": [
+          0.114,
+          0.347,
+          0.539
+        ],
+        "Liquid mixture 1": [
+          0.07,
+          0.066,
+          0.864
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 2:acetic-acid": {
+          "expanded95": 0.004,
+          "level": 95
+        },
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.007,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.2372849353651847,
+        "rms": 0.18390503597000973,
+        "componentsCompared": [
+          "acetic-acid",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 10,
+      "row": 5,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=10]/NumValues[5]",
+      "temperatureK": 323.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 2",
+        "Liquid mixture 1"
+      ],
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 2": [
+          0.118,
+          0.234,
+          0.648
+        ],
+        "Liquid mixture 1": [
+          0.083,
+          0.09,
+          0.827
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 2:acetic-acid": {
+          "expanded95": 0.004,
+          "level": 95
+        },
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.006,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.14908399689098079,
+        "rms": 0.10865341006996473,
+        "componentsCompared": [
+          "acetic-acid",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 10,
+      "row": 6,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=10]/NumValues[6]",
+      "temperatureK": 323.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 2",
+        "Liquid mixture 1"
+      ],
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 2": [
+          0.0,
+          0.768,
+          0.23199999999999998
+        ],
+        "Liquid mixture 1": [
+          0.0,
+          0.013,
+          0.987
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.004,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.11861903109802618,
+        "rms": 0.10535625592223646,
+        "componentsCompared": [
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 10,
+      "row": 7,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=10]/NumValues[7]",
+      "temperatureK": 333.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 2",
+        "Liquid mixture 1"
+      ],
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 2": [
+          0.028,
+          0.691,
+          0.281
+        ],
+        "Liquid mixture 1": [
+          0.019,
+          0.021,
+          0.96
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 2:acetic-acid": {
+          "expanded95": 0.004,
+          "level": 95
+        },
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.005,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.6574442639281548,
+        "rms": 0.38355060568651295,
+        "componentsCompared": [
+          "acetic-acid",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 10,
+      "row": 8,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=10]/NumValues[8]",
+      "temperatureK": 333.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 2",
+        "Liquid mixture 1"
+      ],
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 2": [
+          0.063,
+          0.6,
+          0.33699999999999997
+        ],
+        "Liquid mixture 1": [
+          0.038,
+          0.038,
+          0.924
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 2:acetic-acid": {
+          "expanded95": 0.004,
+          "level": 95
+        },
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.006,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.41458709713349595,
+        "rms": 0.26547177193277255,
+        "componentsCompared": [
+          "acetic-acid",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 10,
+      "row": 9,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=10]/NumValues[9]",
+      "temperatureK": 333.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 2",
+        "Liquid mixture 1"
+      ],
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 2": [
+          0.091,
+          0.496,
+          0.41300000000000003
+        ],
+        "Liquid mixture 1": [
+          0.052,
+          0.054,
+          0.894
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 2:acetic-acid": {
+          "expanded95": 0.004,
+          "level": 95
+        },
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.006,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.2679528741570203,
+        "rms": 0.2102359984965285,
+        "componentsCompared": [
+          "acetic-acid",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 10,
+      "row": 10,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=10]/NumValues[10]",
+      "temperatureK": 333.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 2",
+        "Liquid mixture 1"
+      ],
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 2": [
+          0.109,
+          0.393,
+          0.498
+        ],
+        "Liquid mixture 1": [
+          0.067,
+          0.066,
+          0.867
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 2:acetic-acid": {
+          "expanded95": 0.004,
+          "level": 95
+        },
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.005,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.24393838202622797,
+        "rms": 0.1873349270817296,
+        "componentsCompared": [
+          "acetic-acid",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 10,
+      "row": 11,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=10]/NumValues[11]",
+      "temperatureK": 333.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 2",
+        "Liquid mixture 1"
+      ],
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 2": [
+          0.0,
+          0.755,
+          0.245
+        ],
+        "Liquid mixture 1": [
+          0.0,
+          0.013,
+          0.987
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.004,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.15947004014301475,
+        "rms": 0.12956378265970686,
+        "componentsCompared": [
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 12,
+      "row": 1,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=12]/NumValues[1]",
+      "temperatureK": 323.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 2",
+        "Liquid mixture 1"
+      ],
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 2": [
+          0.14,
+          0.426,
+          0.43399999999999994
+        ],
+        "Liquid mixture 1": [
+          0.058,
+          0.054,
+          0.888
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 2:ethanol": {
+          "expanded95": 0.004,
+          "level": 95
+        },
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.005,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.2530178003161478,
+        "rms": 0.15099456040592216,
+        "componentsCompared": [
+          "ethanol",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 12,
+      "row": 2,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=12]/NumValues[2]",
+      "temperatureK": 323.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 2",
+        "Liquid mixture 1"
+      ],
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 2": [
+          0.155,
+          0.332,
+          0.513
+        ],
+        "Liquid mixture 1": [
+          0.074,
+          0.066,
+          0.86
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 2:ethanol": {
+          "expanded95": 0.004,
+          "level": 95
+        },
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.006,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.21816396969476756,
+        "rms": 0.12953203351078263,
+        "componentsCompared": [
+          "ethanol",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 12,
+      "row": 3,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=12]/NumValues[3]",
+      "temperatureK": 323.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 2",
+        "Liquid mixture 1"
+      ],
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 2": [
+          0.16,
+          0.279,
+          0.5609999999999999
+        ],
+        "Liquid mixture 1": [
+          0.091,
+          0.09,
+          0.819
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 2:ethanol": {
+          "expanded95": 0.004,
+          "level": 95
+        },
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.007,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.1903467060678597,
+        "rms": 0.11419688372862276,
+        "componentsCompared": [
+          "ethanol",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 12,
+      "row": 4,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=12]/NumValues[4]",
+      "temperatureK": 333.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 2",
+        "Liquid mixture 1"
+      ],
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 2": [
+          0.032,
+          0.697,
+          0.271
+        ],
+        "Liquid mixture 1": [
+          0.017,
+          0.024,
+          0.959
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 2:ethanol": {
+          "expanded95": 0.005,
+          "level": 95
+        },
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.005,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.5113061984743643,
+        "rms": 0.30422459338736624,
+        "componentsCompared": [
+          "ethanol",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 12,
+      "row": 5,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=12]/NumValues[5]",
+      "temperatureK": 333.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 2",
+        "Liquid mixture 1"
+      ],
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 2": [
+          0.091,
+          0.585,
+          0.32400000000000007
+        ],
+        "Liquid mixture 1": [
+          0.042,
+          0.035,
+          0.923
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 2:ethanol": {
+          "expanded95": 0.005,
+          "level": 95
+        },
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.005,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.2180211577459048,
+        "rms": 0.14801616351429436,
+        "componentsCompared": [
+          "ethanol",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 12,
+      "row": 6,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=12]/NumValues[6]",
+      "temperatureK": 333.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 2",
+        "Liquid mixture 1"
+      ],
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 2": [
+          0.131,
+          0.489,
+          0.38
+        ],
+        "Liquid mixture 1": [
+          0.059,
+          0.049,
+          0.892
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 2:ethanol": {
+          "expanded95": 0.004,
+          "level": 95
+        },
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.005,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.172791986977354,
+        "rms": 0.11152965516157319,
+        "componentsCompared": [
+          "ethanol",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 12,
+      "row": 7,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=12]/NumValues[7]",
+      "temperatureK": 333.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 2",
+        "Liquid mixture 1"
+      ],
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 2": [
+          0.145,
+          0.394,
+          0.46099999999999997
+        ],
+        "Liquid mixture 1": [
+          0.076,
+          0.064,
+          0.86
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 2:ethanol": {
+          "expanded95": 0.004,
+          "level": 95
+        },
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.006,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.1684846226317114,
+        "rms": 0.11445219766668775,
+        "componentsCompared": [
+          "ethanol",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 12,
+      "row": 8,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=12]/NumValues[8]",
+      "temperatureK": 333.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 2",
+        "Liquid mixture 1"
+      ],
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 2": [
+          0.154,
+          0.284,
+          0.562
+        ],
+        "Liquid mixture 1": [
+          0.089,
+          0.085,
+          0.8260000000000001
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 2:ethanol": {
+          "expanded95": 0.004,
+          "level": 95
+        },
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.008,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.16880878180976416,
+        "rms": 0.10028199190470731,
+        "componentsCompared": [
+          "ethanol",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 12,
+      "row": 9,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=12]/NumValues[9]",
+      "temperatureK": 323.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 2",
+        "Liquid mixture 1"
+      ],
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 2": [
+          0.051,
+          0.674,
+          0.2749999999999999
+        ],
+        "Liquid mixture 1": [
+          0.019,
+          0.022,
+          0.959
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 2:ethanol": {
+          "expanded95": 0.004,
+          "level": 95
+        },
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.004,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.18876548151990669,
+        "rms": 0.12538339445293684,
+        "componentsCompared": [
+          "ethanol",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 12,
+      "row": 10,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=12]/NumValues[10]",
+      "temperatureK": 323.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 2",
+        "Liquid mixture 1"
+      ],
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 2": [
+          0.094,
+          0.575,
+          0.33100000000000007
+        ],
+        "Liquid mixture 1": [
+          0.038,
+          0.031,
+          0.931
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 2:ethanol": {
+          "expanded95": 0.004,
+          "level": 95
+        },
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.005,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.15535401401228488,
+        "rms": 0.12434084342879803,
+        "componentsCompared": [
+          "ethanol",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 12,
+      "row": 11,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=12]/NumValues[11]",
+      "temperatureK": 323.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 2",
+        "Liquid mixture 1"
+      ],
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 2": [
+          0.12,
+          0.507,
+          0.373
+        ],
+        "Liquid mixture 1": [
+          0.048,
+          0.044,
+          0.908
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 2:ethanol": {
+          "expanded95": 0.004,
+          "level": 95
+        },
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.006,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.23224214086413947,
+        "rms": 0.14124379104556903,
+        "componentsCompared": [
+          "ethanol",
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 12,
+      "row": 12,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=12]/NumValues[12]",
+      "temperatureK": 333.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 2",
+        "Liquid mixture 1"
+      ],
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 2": [
+          0.0,
+          0.755,
+          0.245
+        ],
+        "Liquid mixture 1": [
+          0.0,
+          0.013,
+          0.987
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.004,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.15947004014301475,
+        "rms": 0.12956378265970686,
+        "componentsCompared": [
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 12,
+      "row": 13,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=12]/NumValues[13]",
+      "temperatureK": 323.15,
+      "pressureKPa": 101.0,
+      "phases": [
+        "Liquid mixture 2",
+        "Liquid mixture 1"
+      ],
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "moleFractions": {
+        "Liquid mixture 2": [
+          0.0,
+          0.768,
+          0.23199999999999998
+        ],
+        "Liquid mixture 1": [
+          0.0,
+          0.013,
+          0.987
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.004,
+          "level": 95
+        }
+      },
+      "model": "thermo.UNIFAC version=0, no fit",
+      "logActivityResidual": {
+        "maxAbs": 0.11861903109802618,
+        "rms": 0.10535625592223646,
+        "componentsCompared": [
+          "ethyl-acetate",
+          "water"
+        ]
+      }
+    }
+  ],
+  "jsonXmlCrosschecks": [
+    {
+      "doi": "10.1016/j.fluid.2014.04.013",
+      "xmlSha256": "a7bb6ebef47ff5658598cdea9a928bd4411f23863a7bfc280a0d5ed92459cfd3",
+      "jsonXmlNumericCellsEqual": true,
+      "comparedNumericCells": 145
+    },
+    {
+      "doi": "10.1016/j.fluid.2019.112321",
+      "xmlSha256": "38edd3fa538cb697eda6cfbf0153f31e055541ae50ca5bc2ae9ad05cc41fe56c",
+      "jsonXmlNumericCellsEqual": true,
+      "comparedNumericCells": 120
+    }
+  ],
+  "searchedButUnavailableNistDoi": [
+    "10.1016/j.fluid.2011.09.035",
+    "10.1016/j.molliq.2017.01.092",
+    "10.1252/jcej.32.440",
+    "10.36953/ecj.2015.se1673"
+  ],
+  "solverSha256": "b60f6a9187c173cefb7b0ae37419349436fcf529db4f6401530418240d67cb12",
+  "summary": {
+    "tieLineCount": 53,
+    "systems": [
+      [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ]
+    ],
+    "temperaturesK": [
+      303.15,
+      313.15,
+      323.15,
+      333.15
+    ],
+    "pressureKPa": [
+      101.0
+    ],
+    "maxModelLogActivityResidual": 0.6574442639281548,
+    "medianModelLogActivityResidual": 0.21287456671923177,
+    "uncertaintyFieldsPresent": 53,
+    "groupStats": [
+      {
+        "sourceDoi": "10.1016/j.fluid.2014.04.013",
+        "sourcePmd": 2,
+        "temperatureK": 303.15,
+        "components": [
+          "ethanol",
+          "ethyl-acetate",
+          "water"
+        ],
+        "count": 8,
+        "maxAbsLogActivityResidual": 0.4609248518461841,
+        "medianAbsLogActivityResidual": 0.2782890711109909,
+        "meanAbsLogActivityResidual": 0.28167088333690027
+      },
+      {
+        "sourceDoi": "10.1016/j.fluid.2014.04.013",
+        "sourcePmd": 2,
+        "temperatureK": 313.15,
+        "components": [
+          "ethanol",
+          "ethyl-acetate",
+          "water"
+        ],
+        "count": 7,
+        "maxAbsLogActivityResidual": 0.24449648316646733,
+        "medianAbsLogActivityResidual": 0.19772067355423162,
+        "meanAbsLogActivityResidual": 0.17189643477035071
+      },
+      {
+        "sourceDoi": "10.1016/j.fluid.2014.04.013",
+        "sourcePmd": 4,
+        "temperatureK": 303.15,
+        "components": [
+          "acetic-acid",
+          "ethyl-acetate",
+          "water"
+        ],
+        "count": 6,
+        "maxAbsLogActivityResidual": 0.6348080841926382,
+        "medianAbsLogActivityResidual": 0.3226464503503277,
+        "meanAbsLogActivityResidual": 0.3720626998640318
+      },
+      {
+        "sourceDoi": "10.1016/j.fluid.2014.04.013",
+        "sourcePmd": 4,
+        "temperatureK": 313.15,
+        "components": [
+          "acetic-acid",
+          "ethyl-acetate",
+          "water"
+        ],
+        "count": 8,
+        "maxAbsLogActivityResidual": 0.20550485753544473,
+        "medianAbsLogActivityResidual": 0.1272692301005361,
+        "meanAbsLogActivityResidual": 0.1345201409869321
+      },
+      {
+        "sourceDoi": "10.1016/j.fluid.2019.112321",
+        "sourcePmd": 10,
+        "temperatureK": 323.15,
+        "components": [
+          "acetic-acid",
+          "ethyl-acetate",
+          "water"
+        ],
+        "count": 6,
+        "maxAbsLogActivityResidual": 0.554601232664687,
+        "medianAbsLogActivityResidual": 0.26029290134684313,
+        "meanAbsLogActivityResidual": 0.30671525074533146
+      },
+      {
+        "sourceDoi": "10.1016/j.fluid.2019.112321",
+        "sourcePmd": 10,
+        "temperatureK": 333.15,
+        "components": [
+          "acetic-acid",
+          "ethyl-acetate",
+          "water"
+        ],
+        "count": 5,
+        "maxAbsLogActivityResidual": 0.6574442639281548,
+        "medianAbsLogActivityResidual": 0.2679528741570203,
+        "meanAbsLogActivityResidual": 0.34867853147758276
+      },
+      {
+        "sourceDoi": "10.1016/j.fluid.2019.112321",
+        "sourcePmd": 12,
+        "temperatureK": 323.15,
+        "components": [
+          "ethanol",
+          "ethyl-acetate",
+          "water"
+        ],
+        "count": 7,
+        "maxAbsLogActivityResidual": 0.2530178003161478,
+        "medianAbsLogActivityResidual": 0.1903467060678597,
+        "meanAbsLogActivityResidual": 0.19378702051044747
+      },
+      {
+        "sourceDoi": "10.1016/j.fluid.2019.112321",
+        "sourcePmd": 12,
+        "temperatureK": 333.15,
+        "components": [
+          "ethanol",
+          "ethyl-acetate",
+          "water"
+        ],
+        "count": 6,
+        "maxAbsLogActivityResidual": 0.5113061984743643,
+        "medianAbsLogActivityResidual": 0.1708003843935591,
+        "meanAbsLogActivityResidual": 0.23314713129701892
+      }
+    ]
+  },
+  "boundary": [
+    "NIST JSON is a TRC transcription of the cited article, not independent raw lab notebooks",
+    "53 rows are ternary tie-lines: 29 from 2014 PMD 2/4 and 24 from 2020 PMD 10/12",
+    "the articles are quaternary-system papers, but these archived PMDs contain three components; no four-component tie-line was counted",
+    "UNIFAC values are evaluated at reported phases without fitting and are not a prediction of game yield",
+    "expanded uncertainty fields are archived data compiler values at 95% confidence where present; closure-derived component uncertainty is not fabricated"
+  ]
+}

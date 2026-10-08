@@ -1,0 +1,110 @@
+[
+  {
+    "slug": "water",
+    "method": "RHF",
+    "basis": "def2-SVP",
+    "geometry": "PubChem 3D SDF, frozen, not optimized here",
+    "charge": 0,
+    "spin": 0,
+    "pyscf": "2.8.0",
+    "python": "3.10.12",
+    "threads": 2,
+    "converged": true,
+    "conv_tol": 1e-09,
+    "total_energy_hartree": -75.96012442858269,
+    "electron_count": 10,
+    "input_sha256": "eb963e64ed9dacfc5986646d6f3accaf8993299cb12b4e672b92f707b4d8e470",
+    "orbitals": [
+      {
+        "label": "HOMO",
+        "index_zero_based": 4,
+        "occupation": 2.0,
+        "energy_hartree": -0.49741569812166186,
+        "energy_ev": -13.535370686406308,
+        "cube": "water-homo.cube",
+        "sha256": "54c90cea15d03a837de96b9c1a522805982c54c0f18fda19a6d6bbe92217f46a",
+        "grid": [
+          36,
+          36,
+          36
+        ]
+      },
+      {
+        "label": "LUMO",
+        "index_zero_based": 5,
+        "occupation": 0.0,
+        "energy_hartree": 0.17430503957904275,
+        "energy_ev": 4.743081756607558,
+        "cube": "water-lumo.cube",
+        "sha256": "f1e14fe29034d4733096d3296dafa8de76c2e403a6d6ee61cd726a60cde9cd2d",
+        "grid": [
+          36,
+          36,
+          36
+        ]
+      }
+    ],
+    "limitations": [
+      "Gas phase closed-shell single determinant",
+      "Unoptimized geometry; illustrative single-point calculation",
+      "Virtual HF eigenvalues are not electron affinities or excitation energies",
+      "Orbital sign colors are wavefunction phase, not positive/negative charge",
+      "No reaction barriers, solvent, kinetics or yield are computed"
+    ],
+    "wall_seconds": 0.10438370704650879
+  },
+  {
+    "slug": "ethyl-acetate",
+    "method": "RHF",
+    "basis": "def2-SVP",
+    "geometry": "PubChem 3D SDF, frozen, not optimized here",
+    "charge": 0,
+    "spin": 0,
+    "pyscf": "2.8.0",
+    "python": "3.10.12",
+    "threads": 2,
+    "converged": true,
+    "conv_tol": 1e-09,
+    "total_energy_hartree": -305.64102146671325,
+    "electron_count": 48,
+    "input_sha256": "c54a426ff18c12cfcc7c7061e27fb39ec6cda731d22da1ec6b8d2c0ab242a273",
+    "orbitals": [
+      {
+        "label": "HOMO",
+        "index_zero_based": 23,
+        "occupation": 2.0,
+        "energy_hartree": -0.4473231020002191,
+        "energy_ev": -12.172281705281447,
+        "cube": "ethyl-acetate-homo.cube",
+        "sha256": "c030cd8da3d18d61c16805ad202e707016d39c01de453249b8f0ed19cf6ec1d9",
+        "grid": [
+          36,
+          36,
+          36
+        ]
+      },
+      {
+        "label": "LUMO",
+        "index_zero_based": 24,
+        "occupation": 0.0,
+        "energy_hartree": 0.17393750098100316,
+        "energy_ev": 4.733080521855993,
+        "cube": "ethyl-acetate-lumo.cube",
+        "sha256": "ea35b923134f504563469e987a48ffa8cee4d7ceaf701d3ef58e9194ebb4be16",
+        "grid": [
+          36,
+          36,
+          36
+        ]
+      }
+    ],
+    "limitations": [
+      "Gas phase closed-shell single determinant",
+      "Unoptimized geometry; illustrative single-point calculation",
+      "Virtual HF eigenvalues are not electron affinities or excitation energies",
+      "Orbital sign colors are wavefunction phase, not positive/negative charge",
+      "No reaction barriers, solvent, kinetics or yield are computed"
+    ],
+    "wall_seconds": 2.879572868347168
+  }
+]

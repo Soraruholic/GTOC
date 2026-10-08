@@ -1,0 +1,13 @@
+{
+  "version": "0.4.1-process-contract-alpha1",
+  "jarSha256": "2f9d718eb1dd170dcc39f897520aa9cad457d7a382e0f7be706e50dbf920a06a",
+  "exactAuthorityBytesEqual": true,
+  "authoritySha256": "8542a0614734743c3966d43428e2f93eff5b3d359014b039b7fb7344661ff746",
+  "legacySchema": "oc-unit-world-2.8",
+  "sequence": 1414,
+  "archives": 3,
+  "startupWallSeconds": 42.1,
+  "freshPlayersBeforeStop": 0,
+  "humanUiAcceptance": false,
+  "verifiedOfflineBackup": true
+}

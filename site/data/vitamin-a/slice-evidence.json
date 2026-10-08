@@ -1,0 +1,193 @@
+{
+  "schema": "oc-va-slice-evidence-1",
+  "version": "0.4.0-va-slice-alpha1",
+  "jarSha256": "a9aa431f1cd98e0c9135fdb7e8a11ebdebe230019b5e9e742ff382398c65a2be",
+  "junitTests": 64,
+  "legacyChemistrySteps": 360000,
+  "summary": "D1–D10 的有限域乙酰化教学切片已实现并部署。64 项 JUnit、独立数值参照、服务器批次/界面/满背包/重放与重启恢复通过。实际客户端画面与独立化学审核仍待验收；原生全线未完成。",
+  "runtimeAudit": {
+    "fluids": 1476,
+    "recipeMaps": 171,
+    "selectedRecipes": 2339,
+    "errors": 0,
+    "nativeSurvivalClosure": false,
+    "fingerprintValidation": {
+      "passed": true,
+      "orderedFingerprintsAllEqual": false,
+      "unchangedUniqueFingerprints": 2287,
+      "reorderedOnly": {
+        "gt.recipe.eyeofharmony": 41
+      },
+      "materialSetsAndAmountsEqual": true,
+      "scope": "content fingerprints preserve slot order; GT Eye of Harmony reorders output lists on startup. All other exported recipe fingerprints are stable in these two runs; do not use fingerprint as a permanent native recipe UID."
+    }
+  },
+  "catalogRecords": 37,
+  "machines": 6,
+  "netReactions": [
+    "E01",
+    "E02"
+  ],
+  "chemicalModel": "va-acetylation-teaching-1",
+  "scientificallyCalibrated": false,
+  "reference": {
+    "method": "SciPy DOP853 independent five-species concentration-rate equations",
+    "temperaturesK": [
+      303.0,
+      323.0,
+      343.0
+    ],
+    "maxAbsTraceMol": 3.9656034012125474e-10
+  },
+  "durability": {
+    "faultWindows": 5,
+    "singleWriter": true,
+    "exactRestartLineEquality": true,
+    "sameLedgerOcTransfers": true,
+    "nativeGtDrainFillEnabled": false,
+    "externalIsolation": "durable contract tested with simulated before/during/after external-call states; no native interface exposed"
+  },
+  "liveForge": {
+    "initialChecks": [
+      "real player identity, nonce, window, stale revision refusals",
+      "six machine views and 61-point trace encoded through bounded Forge packets",
+      "feed, charge, auto/pause, acceleration, reaction, cake/filter liquid, separation, package, recycle completed with element/energy validation",
+      "full inventory retains ledger sample; dropped/lost reference may be reissued without duplicating matter",
+      "closed/reopened sessions and distance rejected"
+    ],
+    "finalChecks": [
+      "six machine views and 61-point trace encoded through bounded Forge packets",
+      "feed, charge, auto/pause, acceleration, reaction, cake/filter liquid, separation, package, recycle completed with element/energy validation",
+      "full inventory retains ledger sample; dropped/lost reference may be reissued without duplicating matter",
+      "closed/reopened sessions and distance rejected",
+      "actual chunk save/unload/load preserves six bindings and exact ledger quantities"
+    ],
+    "initialJarSha256": "750b761b26ee577443d7d93f30d9292d727ad995d0afae8601cd03100ccafcb3",
+    "finalJarSha256": "a9aa431f1cd98e0c9135fdb7e8a11ebdebe230019b5e9e742ff382398c65a2be",
+    "provenance": "Initial full physical batch and control refusals used the preceding build of this version; final build adds binding repair and explicit chunk lifecycle checks, then confirms the same durable batch after real service restart. Core chemistry and protocol code are identical between these builds."
+  },
+  "coreBytecodeEquivalence": {
+    "passed": true,
+    "oldJarSha256": "750b761b26ee577443d7d93f30d9292d727ad995d0afae8601cd03100ccafcb3",
+    "newJarSha256": "a9aa431f1cd98e0c9135fdb7e8a11ebdebe230019b5e9e742ff382398c65a2be",
+    "identicalClassCount": 30,
+    "identicalClasses": [
+      "org/gtnhoc/VaContainer$View.class",
+      "org/gtnhoc/VaContainer.class",
+      "org/gtnhoc/VaNetwork$Pending.class",
+      "org/gtnhoc/VaNetwork$Request.class",
+      "org/gtnhoc/VaNetwork$RequestHandler.class",
+      "org/gtnhoc/VaNetwork$View.class",
+      "org/gtnhoc/VaNetwork$ViewHandler.class",
+      "org/gtnhoc/VaNetwork.class",
+      "org/gtnhoc/chem/process/v2/CompoundCatalog$Compound.class",
+      "org/gtnhoc/chem/process/v2/CompoundCatalog$Data.class",
+      "org/gtnhoc/chem/process/v2/CompoundCatalog.class",
+      "org/gtnhoc/chem/process/v2/ExternalBoundary$Entry.class",
+      "org/gtnhoc/chem/process/v2/ExternalBoundary$Phase.class",
+      "org/gtnhoc/chem/process/v2/ExternalBoundary.class",
+      "org/gtnhoc/chem/process/v2/LegacyEthylAcetateAdapter.class",
+      "org/gtnhoc/chem/process/v2/UnitPort$Kind.class",
+      "org/gtnhoc/chem/process/v2/UnitPort.class",
+      "org/gtnhoc/chem/process/v2/UnitService$Change.class",
+      "org/gtnhoc/chem/process/v2/UnitService$Outcome.class",
+      "org/gtnhoc/chem/process/v2/UnitService.class",
+      "org/gtnhoc/chem/process/v2/UnitStore.class",
+      "org/gtnhoc/chem/process/v2/VaProcess$Candidate.class",
+      "org/gtnhoc/chem/process/v2/VaProcess$Inventory.class",
+      "org/gtnhoc/chem/process/v2/VaProcess$Line.class",
+      "org/gtnhoc/chem/process/v2/VaProcess$Quality.class",
+      "org/gtnhoc/chem/process/v2/VaProcess$Sample.class",
+      "org/gtnhoc/chem/process/v2/VaProcess$Trace.class",
+      "org/gtnhoc/chem/process/v2/VaProcess$WorldState.class",
+      "org/gtnhoc/chem/process/v2/VaProcess.class",
+      "org/gtnhoc/client/VaGui.class"
+    ],
+    "scope": "all v2 core chemistry/storage classes, network/container protocol and client GUI bytecode"
+  },
+  "load": {
+    "lines": 16,
+    "packedWorldBytes": 252711,
+    "full3600SecondSolveMs": [
+      14.7918,
+      14.2444,
+      13.9679,
+      14.3509,
+      13.1998,
+      10.4128,
+      11.0581,
+      10.2968,
+      10.8677,
+      12.035,
+      10.6834,
+      10.8709,
+      11.0305,
+      10.1316,
+      11.2704,
+      10.3831
+    ],
+    "scope": "serial bounded-core load, not concurrent client TPS benchmark"
+  },
+  "lessonValidation": [
+    {
+      "states": 6,
+      "atoms": 78,
+      "elementAndChargeConservation": true,
+      "valence": true,
+      "arrowsMatchBondChanges": true,
+      "finalProductGraphMatchesCatalog": true
+    },
+    {
+      "states": 6,
+      "atoms": 83,
+      "elementAndChargeConservation": true,
+      "valence": true,
+      "arrowsMatchBondChanges": true,
+      "finalProductGraphMatchesCatalog": true
+    }
+  ],
+  "browserChecks": {
+    "va-lab": 9,
+    "vitamin-a": 13,
+    "wiki": 15,
+    "process": 15
+  },
+  "gates": {
+    "D1RuntimeAudit": "delivered-with-explicit-blockers",
+    "D2D7Software": "automated-checks-passed",
+    "D8Lesson": "automatic-checks-passed-independent-review-pending",
+    "D9Engineering": "bounded-checks-passed",
+    "D10TestRelease": "deployed-client-prepared",
+    "clientRendering": "manual-pending",
+    "independentChemicalReview": "pending",
+    "nativeWholeLine": false,
+    "vitaminAFinalProduct": false
+  },
+  "nextDays": [
+    {
+      "day": "D11",
+      "goal": "干燥 / 含水量与失活域；在库存中区分水、有效载体与失活盐",
+      "exit": "干料 / 痕量水 / 超域水三类输入，元素与电荷账闭合"
+    },
+    {
+      "day": "D12",
+      "goal": "C6 双活化与可记录气体边界；先把乙烷计入库存 / 收集",
+      "exit": "两处质子消耗、乙烷和残余试剂都守恒；未建 EOS 的压力不伪造"
+    },
+    {
+      "day": "D13",
+      "goal": "C14/C6 偶联与酸性后处理的有限域模型",
+      "exit": "C20 炔二醇及 Mg/Br/Cl 废物流都有明确身份；参数未标定时明示"
+    },
+    {
+      "day": "D14",
+      "goal": "给干燥、活化、偶联、后处理增加同模式右键 UI 与逐步机理课",
+      "exit": "真实库存与气体 / 盐轨迹、错误原因和完整原子映射可查"
+    },
+    {
+      "day": "D15",
+      "goal": "以中间体夹具串接一批，更新成本 / 原生供给清单和集中人工手册",
+      "exit": "故障恢复与重启保持守恒；保留原生供给 gate，复盘 D16–D18"
+    }
+  ]
+}

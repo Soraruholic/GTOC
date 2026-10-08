@@ -1,0 +1,117 @@
+{
+  "version": "0.4.0-va-coupling-alpha1",
+  "jarSha256": "3ad71f7b64713c1e874630204aefc44c05f329fe4817bd25ac379362fc1e4bdd",
+  "jarBytes": 10084604,
+  "junitTests": 72,
+  "failures": 0,
+  "build": "spotlessApply build",
+  "legacyChemistrySteps": 360000,
+  "schema": "oc-coupling-evidence-1",
+  "summary": "72 项 JUnit、五个写盘故障窗口、旧存档升级、实际 Forge 八机批次和协议拒绝通过；真实服务重启后权威文件逐字节一致；网页 9 组检查通过。客户端渲染与独立化学审核待完成。",
+  "preservation": {
+    "oldAcetylationLinesExactlyEqual": true,
+    "worldIdentityPreserved": true,
+    "oldReceiptsPreserved": true,
+    "externalBoundaryPreserved": true,
+    "oldSchema": "oc-unit-world-2.1",
+    "newSchema": "oc-unit-world-2.2"
+  },
+  "deployment": {
+    "serverAndIsolatedClientHashEqual": true,
+    "verifiedOfflineBackup": true,
+    "protocolStatusPassed": true,
+    "clientLaunchedByAutomation": false
+  },
+  "liveForge": {
+    "firstBatchChecks": [
+      "actor, owner, nonce, window, stale revision and wrong-role requests refused",
+      "complete dry batch: product 0.931 mol, ethane 2.2 mol, exact global elemental balance",
+      "all eight machine views, bounded serialized payloads, closed sessions rejected",
+      "lost tile repair preserves complete authority byte content"
+    ],
+    "afterRestartChecks": [
+      "complete dry batch: product 0.931 mol, ethane 2.2 mol, exact global elemental balance",
+      "all eight machine views, bounded serialized payloads, closed sessions rejected",
+      "lost tile repair preserves complete authority byte content"
+    ],
+    "sameJarForAllLiveChecks": true,
+    "scope": "Live Forge FakePlayer, eight anchored machines, shared authority, real containers and packet codec; client rendering manual"
+  },
+  "restart": {
+    "passed": true,
+    "exactAuthorityBytesEqual": true,
+    "schema": "oc-unit-world-2.2",
+    "sequence": 81,
+    "couplingLines": 1,
+    "acetylationLines": 1,
+    "beforeSha256": "22f60806ac6448b9b3216dee65648b199ff136984aa81091941c0cf8344acbaf",
+    "afterSha256": "22f60806ac6448b9b3216dee65648b199ff136984aa81091941c0cf8344acbaf",
+    "restartWallSeconds": 42.1
+  },
+  "unitCoverage": [
+    "dry,trace,wet elemental/charge balance",
+    "separate OH and terminal alkyne proton consumption",
+    "over-domain water and exhausted dryer",
+    "legacy world without extension migration",
+    "owner,conflicting request,stale revision,durable replay",
+    "binding loss between solve and write",
+    "all five durable-write fault windows",
+    "negative quantity and gas-capacity rejection",
+    "packet bounds"
+  ],
+  "webChecks": [
+    {
+      "name": "Vendored 3Dmol works under Pages subdirectory without external requests",
+      "passed": true
+    },
+    {
+      "name": "Five mechanisms and all 11 states: full atoms, selectable centers, wrong/correct learning feedback",
+      "passed": true
+    },
+    {
+      "name": "Play/pause, hydrogen toggle, camera reset and keyboard controls",
+      "passed": true
+    },
+    {
+      "name": "Three actual Java cases, all event sliders, 3 curve groups and eight phase-separated final inventories",
+      "passed": true
+    },
+    {
+      "name": "Nine additive compounds searchable with formal-component boundaries",
+      "passed": true
+    },
+    {
+      "name": "All lesson, manual, review, source and evidence links resolve",
+      "passed": true
+    },
+    {
+      "name": "390px mobile lesson and ten-section manual have no body overflow",
+      "passed": true
+    },
+    {
+      "name": "No-JavaScript fallback includes all 11 states and nine new compounds",
+      "passed": true
+    },
+    {
+      "name": "WebGL unavailable retains complete 2D and interactive electron-pair learning",
+      "passed": true
+    }
+  ],
+  "chemicalReview": "pending",
+  "clientRendering": "manual-pending",
+  "modelLimits": [
+    "uncalibrated stoichiometric extent, not kinetics",
+    "fixed teaching partition, not LLE/VLE",
+    "pressure and heat unmodelled",
+    "residual EtMgBr competitive carbonyl addition omitted",
+    "ionic limiting teaching notation is not actual Grignard speciation",
+    "connectivity validation does not establish complete product stereochemistry",
+    "native GT import/export closed",
+    "partial hydrogenation and cross-slice handoff not implemented"
+  ],
+  "next": [
+    "D16 partial hydrogenation and catalyst inventory; review residual-base competing reaction",
+    "D17 same-authority handoff to acetylation and chained batch",
+    "D18 dehydration/rearrangement, isomer/mother-liquor quality gates, native feedstock dependency list"
+  ]
+}

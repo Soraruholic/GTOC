@@ -1,0 +1,90 @@
+{
+  "version": "0.4.0-va-darzens-alpha1",
+  "jarSha256": "ee5d6c8302ad1badde304f5304f2dd154b70c923236bde519a34ed5f53a2c1fe",
+  "jarBytes": 10263313,
+  "junitTests": 92,
+  "failures": 0,
+  "legacyChemistrySteps": 360000,
+  "build": "spotlessApply build",
+  "schema": "oc-darzens-evidence-1",
+  "summary": "D25–D28 已交付：92 项测试、真实 Forge C14/C6 双来源至晶体批次及重启复验通过；旧世界记录保留。新增 5 课 / 14 帧，全站 22 分支 / 71 帧几何筛查通过。",
+  "preservedOldRecordsExactly": {
+    "lines": 4,
+    "coupling": 4,
+    "chain": 3,
+    "handoffs": 9,
+    "supply": 2,
+    "supplyTransfers": 2,
+    "ingress": 6,
+    "receipts": 357
+  },
+  "sameWorldIdentityAndExternalBoundary": true,
+  "worldSchemaUpgrade": "2.4 -> 2.5, old models preserved",
+  "deployment": {
+    "serverAndClientHashEqual": true,
+    "verifiedOfflineBackup": true,
+    "statusProbe": true,
+    "clientRendering": "manual-pending"
+  },
+  "liveForge": {
+    "passed": true,
+    "sameBatchAfterRestart": true,
+    "scope": "Synthetic player; real registered GT cells, saved debit receipts, real C14/Supply/Chain container actions and retained residuals. Not survival acquisition or client desktop acceptance."
+  },
+  "restart": {
+    "passed": true,
+    "exactAuthorityBytesEqual": true,
+    "beforeSha256": "c4aeef3249d7a67a68cf0082feb7bb8015a0248f20dc23ec31495304b84d9b5d",
+    "afterSha256": "c4aeef3249d7a67a68cf0082feb7bb8015a0248f20dc23ec31495304b84d9b5d",
+    "sequence": 461,
+    "restartWallSeconds": 42.1
+  },
+  "geometry": {
+    "branches": 22,
+    "states": 71,
+    "currentPassed": true,
+    "transition": "discrete screened conformers; not quantum optimized intermediates or TS/IRC"
+  },
+  "browser": [
+    {
+      "name": "5 lessons / 14 screened states; mapped full skeletal animation, electron and net boundaries, atom feedback",
+      "passed": true
+    },
+    {
+      "name": "All 32 unit inventories, event curves, five internal handoffs and actual Java crystal batch",
+      "passed": true
+    },
+    {
+      "name": "Playback pause, searchable catalog, mobile manual, WebGL unavailable 2D fallback",
+      "passed": true
+    }
+  ],
+  "legacyMechanismBrowserRegression": true,
+  "results": {
+    "c14ProducedMol": 0.70207641,
+    "jointTransferMol": 0.4737120161193,
+    "retainedC14Mol": 0.2283643938807,
+    "co2Mol": 0.796005,
+    "transCrystalMol": 0.16443418572357243
+  },
+  "resourceAccounting": {
+    "inputMassG": 1872.7364655112012,
+    "finalInventoryMassG": 1872.7364655112012,
+    "residualG": 0.0,
+    "scope": "Fresh external input mass counted once; retained material includes recyclable inventories; not monetary cost, EU or full upstream survival cost."
+  },
+  "D28": {
+    "candidateFrozen": "staged U01-U08; U01/U02 first, A01 and utility bridge next",
+    "nativeAudit": "darzens-feedstocks.json",
+    "repeatBatchExportRecovery": "planned D31-D33, not implemented"
+  },
+  "chemicalReview": "pending",
+  "limits": [
+    "beta-ionone, methyl chloroacetate and utility feeds still explicit fixtures",
+    "uncalibrated stage extents and ideal component splits",
+    "C14 E/Z and new epoxide centres unspecified",
+    "A04 decarboxylation and conjugation are NET endpoint lessons",
+    "fixed 10 L acetylation volume remains unchanged",
+    "continuous batches, product export and recovery loop not yet implemented"
+  ]
+}

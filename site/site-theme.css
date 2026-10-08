@@ -1,0 +1,39 @@
+/* Independent presentation layer: no chemistry state or data changes. */
+.site-theme-control{display:flex;align-items:center;gap:8px;font:12px/1.5 system-ui,"Microsoft YaHei",sans-serif;white-space:nowrap;color:var(--muted,#58716b);flex:none}
+.site-theme-control label{font:inherit;margin:0;display:inline;color:inherit}
+.site-theme-control select{width:auto;min-width:0;max-width:155px;padding:7px 26px 7px 10px;margin:0;border:1px solid var(--line,#d7e1d5);border-radius:8px;background:var(--panel,#fffef9);color:var(--ink,#183f39);font:inherit;cursor:pointer}
+.site-theme-floating{position:fixed;right:15px;top:12px;padding:9px 12px;background:var(--panel,#fffef9);border:1px solid var(--line,#d7e1d5);border-radius:10px;z-index:100}
+@media screen{
+ html[data-theme="dark"]{color-scheme:dark;--ink:#deebe4;--muted:#adbfba;--paper:#101c21;--panel:#192a30;--white:#192a30;--line:#39534f;--green:#8bd8b7;--gold:#e1b77f;--pale:#263c39;--soft:#263c39;--rust:#efa98e;--clay:#e5b38b;--lime:#d5e5aa;background:#101c21}
+ html[data-theme="dark"] body{background:var(--paper)!important;color:var(--ink)!important}
+ html[data-theme="dark"] #site-header{background:#14252a!important;border-color:var(--line)!important}
+ html[data-theme="dark"] :is(h1,h2,h3,h4,th,strong){color:inherit}
+ html[data-theme="dark"] :is(a,.eyebrow){color:var(--green)}
+ html[data-theme="dark"] :is(button,input,select,textarea){color:var(--ink);background-color:var(--panel);border-color:var(--line);accent-color:var(--green)}
+ html[data-theme="dark"] :is(input,textarea)::placeholder{color:#afc2b9;opacity:1}
+ html[data-theme="dark"] :is(button[aria-pressed="true"],.learn-button.primary,.button.primary,.primary,.site-mark,.brand-mark){background:#8bd8b7!important;color:#102b23!important;border-color:#8bd8b7!important}
+ html[data-theme="dark"] :is(button[aria-pressed="true"],.primary,.site-mark,.brand-mark) :is(strong,small,span){color:inherit!important;background-color:transparent!important}
+ html[data-theme="dark"] .learning-cover{background:#173b33!important;color:#e4eee5!important}
+ html[data-theme="dark"] .learning-cover :is(h2,p,small,span){color:inherit}
+ html[data-theme="dark"] :is(pre,code){background-color:#22363b;color:#dbe9dd}
+ html[data-theme="dark"] pre code{background:transparent;color:inherit}
+ html[data-theme="dark"] :is(.site-theme-control select,.site-theme-floating){background:#192a30!important;color:#deebe4!important;border-color:#476660!important}
+ html[data-theme="dark"] :focus-visible{outline:3px solid #edc484!important;outline-offset:4px}
+ html[data-theme="dark"] ::selection{background:#496b61;color:#fff}
+ html[data-theme="dark"]{scrollbar-color:#5c796f #15272c}
+ /* Scientific plates preserve the original sign/element palette. No invert or hue rotation. */
+ html[data-theme="dark"] :is(svg,[data-motion-canvas]){background-color:#cad5ce;color:#183f39;--ink:#183f39;--green:#1d6c58;--muted:#486259;--paper:#cad5ce;--white:#d5dfd7;--line:#869e90;border-radius:6px}
+ html[data-theme="dark"] svg>rect:first-of-type[style*="fill:#FFFFFF"],html[data-theme="dark"] svg>rect:first-of-type[fill="#FFFFFF"],html[data-theme="dark"] svg>rect:first-of-type[fill="white"]{fill:#cad5ce!important}
+ html[data-theme="dark"] :is(.viewer-column,.viewer-wrap,.mech-view-wrap,.orbital-view-wrap,#knowledge-3d,#mechanism-viewer,#mech-3d,#orbital-view,#process-molecule,#molecule-view,#viewer){background-color:#b8c7bf!important;color:#183f39}
+ html[data-theme="dark"] :is(.view-bottom,.mech-frame-foot,.panel-footer,.geometry-note){background:#223831;color:#d3e7d9}
+ html[data-theme="dark"] .viewer-hint{color:#183f39!important}
+ html[data-theme="dark"] :is(#viewer-fallback,#mech-fallback,#webgl-fallback){background:#233936!important;color:#deebe4!important}
+ html[data-theme="dark"] img{filter:brightness(.86);border-radius:5px}
+ html[data-theme="dark"] img:hover{filter:none}
+ html[data-theme="dark"] [data-oc-night-color]{color:var(--oc-night-color)!important}
+ html[data-theme="dark"] [data-oc-night-bg]{background-color:var(--oc-night-bg)!important}
+}
+@media(max-width:700px){#site-header .site-theme-control{margin-left:auto}.site-theme-floating{position:relative;top:auto;right:auto;width:max-content;max-width:100%;margin:12px}.site-theme-control select{min-height:38px}.site-theme-control{gap:6px}}
+@media print{.site-theme-control{display:none!important}html{color-scheme:light!important}body{background:white!important;color:#17352f!important}img{filter:none!important}}
+
+@media screen{html[data-theme="dark"] .lesson-nav [aria-current="step"]{background:#8bd8b7!important;color:#102b23!important;border-color:#8bd8b7!important}}

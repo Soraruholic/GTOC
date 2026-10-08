@@ -1,0 +1,109 @@
+{
+  "schema": "oc-compound-extension-supply-1",
+  "compounds": [
+    {
+      "slug": "hydroxybutanone",
+      "name": "4-羟基丁-2-酮",
+      "smiles": "CC(=O)CCO",
+      "formula": "C4H8O2",
+      "kind": "molecular",
+      "charge": 0,
+      "capability": "va-supply-teaching",
+      "stereo": "Unspecified centres remain unspecified",
+      "elements": {
+        "C": 4,
+        "H": 8,
+        "O": 2
+      },
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:0b18000a6618e882333dafcb5ea1bb3f9a5125ad8364cf54fddcc54fd593b25f"
+    },
+    {
+      "slug": "diacetone-alcohol",
+      "name": "双丙酮醇",
+      "smiles": "CC(=O)CC(C)(C)O",
+      "formula": "C6H12O2",
+      "kind": "molecular",
+      "charge": 0,
+      "capability": "va-supply-teaching",
+      "stereo": "Unspecified centres remain unspecified",
+      "elements": {
+        "C": 6,
+        "H": 12,
+        "O": 2
+      },
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:5f9361adc682b1c7e1e8ced935012db83d9f6e13c8e1e14597eda491f27401e5"
+    },
+    {
+      "slug": "c6-michael-adduct",
+      "name": "1,4 加成竞争体：己-5-炔-2-酮",
+      "smiles": "C#CCCC(C)=O",
+      "formula": "C6H8O",
+      "kind": "molecular",
+      "charge": 0,
+      "capability": "va-supply-teaching",
+      "stereo": "Unspecified centres remain unspecified",
+      "elements": {
+        "C": 6,
+        "H": 8,
+        "O": 1
+      },
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:b011f24fb11f359512645a1fcb94e3b0ffc35eb5b1b2be5b916a632b487ce895"
+    },
+    {
+      "slug": "ammonia",
+      "name": "氨",
+      "smiles": "N",
+      "formula": "H3N",
+      "kind": "molecular",
+      "charge": 0,
+      "capability": "va-supply-teaching",
+      "stereo": "Unspecified centres remain unspecified",
+      "elements": {
+        "H": 3,
+        "N": 1
+      },
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:b5fde04b056cef8cdc081286d07e75734860b3ec5c238e402ad1ad714c3766a0"
+    },
+    {
+      "slug": "sodium-amide",
+      "name": "氨基钠形式组分",
+      "smiles": null,
+      "formula": "H2NNa",
+      "kind": "formal-component",
+      "charge": 0,
+      "capability": "va-supply-teaching",
+      "stereo": "Unspecified centres remain unspecified",
+      "elements": {
+        "H": 2,
+        "N": 1,
+        "Na": 1
+      },
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:d49ba19f643ac2f7d7b6424432c2ff3dad9ca70b5e6220f7beb6082fdc08a9f4"
+    }
+  ]
+}

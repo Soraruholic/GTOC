@@ -1,0 +1,134 @@
+{
+  "version": "0.4.0-va-supply-alpha1",
+  "jarSha256": "d87fc2446284895d3c71c1049f096aac60249f402c2c92246bdcc3a1871ac854",
+  "jarBytes": 10201030,
+  "junitTests": 84,
+  "failures": 0,
+  "build": "spotlessApply build",
+  "schema": "oc-supply-evidence-1",
+  "summary": "84 项 JUnit 及旧 36 条数值轨迹通过；实际 Forge 消费三种注册单元并运行二十六机串联批次。重启前后账本逐字节一致，三项进料凭证与同一已完成批次保留；网页 9 组交互、手机和回退检查通过。C14/辅料仍为夹具，工业标定、独立化学审核和客户端图形验收待完成。",
+  "preservation": {
+    "oldRecordsPreservedExactly": {
+      "lines": 2,
+      "coupling": 2,
+      "chain": 1,
+      "handoffs": 3,
+      "receipts": 165
+    },
+    "worldIdentityPreserved": true,
+    "externalBoundaryPreserved": true,
+    "oldSchema": "oc-unit-world-2.3",
+    "newSchema": "oc-unit-world-2.4"
+  },
+  "deployment": {
+    "serverAndIsolatedClientHashEqual": true,
+    "verifiedOfflineBackup": true,
+    "protocolStatusPassed": true,
+    "clientLaunchedByAutomation": false
+  },
+  "liveForge": {
+    "firstBatchChecks": [
+      "three registered 1000 mB GT cells actually consumed and empty containers returned",
+      "player debit markers saved, fsynced and independently read before OC credit",
+      "real SupplyContainer packets, replay refused and six bounded UI views",
+      "native C6 carbon -> coupled C20 -> acetylation -> retinyl acetate crystal",
+      "C14, strong base and other utilities remain explicit fixtures; candidate extents uncalibrated"
+    ],
+    "afterRestartChecks": [
+      "three registered 1000 mB GT cells actually consumed and empty containers returned",
+      "player debit markers saved, fsynced and independently read before OC credit",
+      "real SupplyContainer packets, replay refused and six bounded UI views",
+      "native C6 carbon -> coupled C20 -> acetylation -> retinyl acetate crystal",
+      "C14, strong base and other utilities remain explicit fixtures; candidate extents uncalibrated"
+    ],
+    "sameCompletedSupplyChainAndIngress": true,
+    "scope": "actual registered GT cell consumption and persisted player receipts through real Forge containers and packets using a synthetic player; excludes survival acquisition and client rendering"
+  },
+  "restart": {
+    "passed": true,
+    "exactAuthorityBytesEqual": true,
+    "schema": "oc-unit-world-2.4",
+    "sequence": 261,
+    "couplingLines": 3,
+    "supplyLines": 1,
+    "acetylationLines": 3,
+    "beforeSha256": "dbeca08ccf039f498150592f993aa1f44751fd0a7fd4a2c67841e448b4396924",
+    "afterSha256": "dbeca08ccf039f498150592f993aa1f44751fd0a7fd4a2c67841e448b4396924",
+    "restartWallSeconds": 42.1
+  },
+  "baseline": {
+    "nativeCellsEach": 1,
+    "cellVolumeMb": 1000,
+    "declaredTeachingMolPerCell": 1,
+    "c6DeliveredMol": 0.4737120161193,
+    "allTransCrystalMol": 0.049861775301904596,
+    "oneZCrystalMol": 0.00013850493139417943
+  },
+  "unitCoverage": [
+    "native receipt required before OC credit",
+    "one receipt per feed species per line",
+    "full native C6 to crystal element balance including wastes",
+    "capacity check before debit",
+    "all five durable-write failure windows for native credit",
+    "owner, schema and tampering refusal",
+    "same-authority C6 source export and coupling import",
+    "old 36 trajectories and 360000-step regression"
+  ],
+  "webChecks": [
+    {
+      "name": "Vendored 3Dmol works under Pages subdirectory without external requests",
+      "passed": true
+    },
+    {
+      "name": "Four candidate mechanism lessons and 16 states: complete mapped atoms, selectable centers, wrong/correct feedback",
+      "passed": true
+    },
+    {
+      "name": "Play/pause, hydrogen toggle, camera reset and keyboard controls",
+      "passed": true
+    },
+    {
+      "name": "Actual Java native C6 to crystal case: all 26 inventories, 3 curve groups, 4 material handoffs",
+      "passed": true
+    },
+    {
+      "name": "Five additive catalog entries searchable with stereochemical and formal-material boundaries",
+      "passed": true
+    },
+    {
+      "name": "All lesson, manual, review, execution, catalog and evidence links resolve",
+      "passed": true
+    },
+    {
+      "name": "390px mobile teaching and ten-section manual have no body overflow",
+      "passed": true
+    },
+    {
+      "name": "No-JavaScript fallback includes all 16 teaching states and 5 new compounds",
+      "passed": true
+    },
+    {
+      "name": "WebGL unavailable retains full 2D structures, atom selection and explicit endpoint limits",
+      "passed": true
+    }
+  ],
+  "chemicalReview": "pending",
+  "clientRendering": "manual-pending",
+  "modelLimits": [
+    "C14, strong base, solvents and other utilities still use explicit fixtures",
+    "1000 mB = 1 teaching mol is a declared game unit policy, not physical density conversion",
+    "candidate extents, competing selectivity and ideal partitions are not calibrated kinetics or phase equilibria",
+    "B03 candidate acid-mediated allylic pathway is pending review; resonance frames are one delocalized cation",
+    "schematic conformers and coordinate interpolation are not optimized intermediates or TS/IRC",
+    "player save and OC authority are separate save domains; independent historical rollback is unsupported",
+    "downstream utilities remain fixed; final product cannot be estimated by simply scaling the old baseline",
+    "E03 elementary pathway, full native survival supply, continuous batches and GT product export remain open"
+  ],
+  "next": [
+    "D24 proportional reagent dosing and resource accounting",
+    "D25 beta-ionone to C14 Darzens front slice with explicit beta-ionone fixture",
+    "D26 hydrolysis, acidification and decarboxylation with all coproducts",
+    "D27 combine C14 and C6 supply without coupling-generated C14 fixture",
+    "D28 audit native beta-ionone route and prioritize repeat batches and solvent recovery"
+  ]
+}

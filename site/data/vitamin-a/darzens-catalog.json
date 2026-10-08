@@ -1,0 +1,152 @@
+{
+  "schema": "oc-compound-extension-darzens-1",
+  "compounds": [
+    {
+      "slug": "methyl-chloroacetate",
+      "name": "氯乙酸甲酯",
+      "smiles": "COC(=O)CCl",
+      "formula": "C3H5ClO2",
+      "kind": "molecular",
+      "charge": 0,
+      "capability": "va-darzens-teaching",
+      "stereo": "Known starting alkene retained; new epoxide centres unspecified; C14 E/Z not assigned.",
+      "elements": {
+        "C": 3,
+        "H": 5,
+        "Cl": 1,
+        "O": 2
+      },
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:a446238b861036cd706a0e751bde8315ca21c55de95faf5435f31b136e043404"
+    },
+    {
+      "slug": "ionone-glycidate",
+      "name": "β-紫罗兰酮来源环氧酸甲酯",
+      "smiles": "COC(=O)C1OC1(C)/C=C/C1=C(C)CCCC1(C)C",
+      "formula": "C16H24O3",
+      "kind": "molecular",
+      "charge": 0,
+      "capability": "va-darzens-teaching",
+      "stereo": "Known starting alkene retained; new epoxide centres unspecified; C14 E/Z not assigned.",
+      "elements": {
+        "C": 16,
+        "H": 24,
+        "O": 3
+      },
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:4d1f8cbfc1de5a9761af182a765dc7f06a87d80bc6d589554e183b509978d2c5"
+    },
+    {
+      "slug": "ionone-glycidic-acid",
+      "name": "β-紫罗兰酮来源环氧酸",
+      "smiles": "CC1=C(/C=C/C2(C)OC2C(=O)O)C(C)(C)CCC1",
+      "formula": "C15H22O3",
+      "kind": "molecular",
+      "charge": 0,
+      "capability": "va-darzens-teaching",
+      "stereo": "Known starting alkene retained; new epoxide centres unspecified; C14 E/Z not assigned.",
+      "elements": {
+        "C": 15,
+        "H": 22,
+        "O": 3
+      },
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:639c6d7af88b26dd82fad23b80684e8050e284114877b6d1c3881e3823d1e75b"
+    },
+    {
+      "slug": "sodium-ionone-glycidate",
+      "name": "环氧羧酸钠有效组分",
+      "smiles": null,
+      "formula": "C15H21NaO3",
+      "kind": "formal-component",
+      "charge": 0,
+      "capability": "va-darzens-teaching",
+      "stereo": "Known starting alkene retained; new epoxide centres unspecified; C14 E/Z not assigned.",
+      "elements": {
+        "C": 15,
+        "H": 21,
+        "Na": 1,
+        "O": 3
+      },
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:a7af8b6a2272185dc34314acb11a639141899ee26a9674db628438c19566308c"
+    },
+    {
+      "slug": "c14-unconjugated",
+      "name": "C14 非共轭醛教学端点",
+      "smiles": "CC1=C(/C=C/C(C)C=O)C(C)(C)CCC1",
+      "formula": "C14H22O",
+      "kind": "molecular",
+      "charge": 0,
+      "capability": "va-darzens-teaching",
+      "stereo": "Known starting alkene retained; new epoxide centres unspecified; C14 E/Z not assigned.",
+      "elements": {
+        "C": 14,
+        "H": 22,
+        "O": 1
+      },
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:a149a50325c9fd3a254a65831d15e8ce4b580615e71e0e5129e9c045a489ddc0"
+    },
+    {
+      "slug": "hydrogen-chloride",
+      "name": "氯化氢净当量",
+      "smiles": null,
+      "formula": "HCl",
+      "kind": "formal-component",
+      "charge": 0,
+      "capability": "va-darzens-teaching",
+      "stereo": "Known starting alkene retained; new epoxide centres unspecified; C14 E/Z not assigned.",
+      "elements": {
+        "H": 1,
+        "Cl": 1
+      },
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:2a3c85a86a1862caae0486573d80a169f08d35ba1c6bd323ff4465990fb97e3f"
+    },
+    {
+      "slug": "carbon-dioxide",
+      "name": "二氧化碳",
+      "smiles": "O=C=O",
+      "formula": "CO2",
+      "kind": "molecular",
+      "charge": 0,
+      "capability": "va-darzens-teaching",
+      "stereo": "Known starting alkene retained; new epoxide centres unspecified; C14 E/Z not assigned.",
+      "elements": {
+        "C": 1,
+        "O": 2
+      },
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:17c1e52b3d373656772ed624cd164c7834646e8affdd64bfc22587b3c6f74d4e"
+    }
+  ]
+}

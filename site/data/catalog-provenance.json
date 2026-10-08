@@ -1,0 +1,8 @@
+{
+  "version": "0.2.0-alpha1",
+  "jarSha256": "7db52b295908a4df7d34a9087739cf8a5662402008e6b1cac5030b693952defd",
+  "catalogSha256": "44253179f080f55b72e0238dac6b4d1cef09f837384d6af346982ca061355f9c",
+  "encoding": "UTF-8",
+  "exporter": "org.gtnhoc.chem.identity.CatalogExport",
+  "policy": "oc-identity-v1-cdk2.9-inchi1.06"
+}

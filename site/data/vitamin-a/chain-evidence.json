@@ -1,0 +1,121 @@
+{
+  "version": "0.4.0-va-chain-alpha1",
+  "jarSha256": "f36fe67bb79750bbac7fe8b07b03dac3d4f0e61bdc9047e2b30cfb4a3c8a9425",
+  "jarBytes": 10139073,
+  "junitTests": 78,
+  "failures": 0,
+  "build": "spotlessApply build",
+  "schema": "oc-chain-evidence-1",
+  "summary": "78 项 JUnit、三案例串联、五个写盘故障窗口和实际 Forge 二十机关联批次通过；真实重启账本逐字节一致。网页 9 组交互/回退检查通过。客户端渲染、独立化学审核、E03 微观路径和原生供应仍待完成。",
+  "preservation": {
+    "oldAcetylationAndCouplingFieldsPreserved": true,
+    "onlyAddedZeroOrEmptyExportFields": true,
+    "addedFieldCount": 4,
+    "oldReceiptsPreserved": true,
+    "worldIdentityPreserved": true,
+    "externalBoundaryPreserved": true,
+    "oldSchema": "oc-unit-world-2.2",
+    "newSchema": "oc-unit-world-2.3"
+  },
+  "deployment": {
+    "serverAndIsolatedClientHashEqual": true,
+    "verifiedOfflineBackup": true,
+    "protocolStatusPassed": true,
+    "clientLaunchedByAutomation": false
+  },
+  "liveForge": {
+    "firstBatchChecks": [
+      "real container nonce and stale inventory refusals",
+      "complete revised coupling -> partial hydrogenation -> existing 3600 model-second acetylation -> rearrangement -> crystal batch",
+      "all three atomic handoffs, retained gas/catalyst/overreduction/mother liquor, global validation and >=99% teaching gate",
+      "six live right-click container views, bounded packets, replay and closed session refusals"
+    ],
+    "afterRestartChecks": [
+      "complete revised coupling -> partial hydrogenation -> existing 3600 model-second acetylation -> rearrangement -> crystal batch",
+      "all three atomic handoffs, retained gas/catalyst/overreduction/mother liquor, global validation and >=99% teaching gate",
+      "six live right-click container views, bounded packets, replay and closed session refusals"
+    ],
+    "sameCompletedLineAndHandoffs": true,
+    "scope": "real Forge containers and packets with synthetic player; excludes client rendering"
+  },
+  "restart": {
+    "passed": true,
+    "exactAuthorityBytesEqual": true,
+    "schema": "oc-unit-world-2.3",
+    "sequence": 165,
+    "couplingLines": 2,
+    "chainLines": 1,
+    "acetylationLines": 2,
+    "beforeSha256": "ea2f23ebf3d03ed911fbea449841c03bd03564afce23999c49258a55119f4c56",
+    "afterSha256": "ea2f23ebf3d03ed911fbea449841c03bd03564afce23999c49258a55119f4c56",
+    "restartWallSeconds": 42.1
+  },
+  "unitCoverage": [
+    "legacy v1 and new v2 competition balance",
+    "selective,overreduction,wet full linked scenarios",
+    "three atomic same-authority handoffs",
+    "distinct configured E/Z and overhydrogenated identities",
+    "retained catalyst,H2,waste,mother liquor",
+    "source export and target import validation",
+    "all five durable-write failure windows for coupling handoff",
+    "ownership,stale revision,closed session and binding guard",
+    "old 36 trajectories and 360000-step regression"
+  ],
+  "webChecks": [
+    {
+      "name": "Vendored 3Dmol works under Pages subdirectory without external requests",
+      "passed": true
+    },
+    {
+      "name": "Five teaching branches and 11 states: complete mapped atoms, selectable centers, wrong/correct feedback",
+      "passed": true
+    },
+    {
+      "name": "Play/pause, hydrogen toggle, camera reset and keyboard controls",
+      "passed": true
+    },
+    {
+      "name": "Three actual Java linked cases, all 20 final inventories, 3 curve groups and 3 atomic handoffs",
+      "passed": true
+    },
+    {
+      "name": "Eight additive catalog entries searchable with stereochemical and formal-material boundaries",
+      "passed": true
+    },
+    {
+      "name": "All lesson, manual, review, execution, catalog and evidence links resolve",
+      "passed": true
+    },
+    {
+      "name": "390px mobile teaching and ten-section manual have no body overflow",
+      "passed": true
+    },
+    {
+      "name": "No-JavaScript fallback includes all 11 teaching states and 8 new compounds",
+      "passed": true
+    },
+    {
+      "name": "WebGL unavailable retains full 2D structures, atom selection and explicit endpoint limits",
+      "passed": true
+    }
+  ],
+  "chemicalReview": "pending",
+  "clientRendering": "manual-pending",
+  "modelLimits": [
+    "C14/C6 and utility fixtures; native GT import/export closed",
+    "uncalibrated sequential competing extents; not predictive kinetics",
+    "fixed ideal separation and crystallization splits; no measured LLE/VLE/solubility",
+    "hydrogenation is a surface concept with net atom accounting, not a resolved adsorption mechanism",
+    "E03 is composite net endpoint conversion; elementary mechanism unresolved",
+    "99% gate covers only two registered isomers, not pharmacopoeial quality",
+    "reaction heat and pressure unmodelled; exported sensible heat uses old teaching convention",
+    "no continuous recycle, catalyst regeneration or full native supply"
+  ],
+  "next": [
+    "D19 freeze native C6 supply and units",
+    "D20 one controlled native feed boundary",
+    "D21 acetone/formaldehyde to MVK",
+    "D22 ethynylation and C6 rearrangement candidate",
+    "D23 connect native C6 branch with explicit C14 fixture and review"
+  ]
+}

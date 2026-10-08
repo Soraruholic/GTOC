@@ -1,0 +1,52 @@
+{
+  "schema": "oc-retinol-proposal-1",
+  "implementedInGame": false,
+  "units": "mol",
+  "model": "assumed_extent_and_component_recovery",
+  "stoichiometry": {
+    "retinyl-acetate": -1,
+    "sodium-hydroxide": -1,
+    "retinol": 1,
+    "sodium-acetate": 1
+  },
+  "formulas": {
+    "retinyl-acetate": {
+      "C": 22,
+      "H": 32,
+      "O": 2
+    },
+    "sodium-hydroxide": {
+      "Na": 1,
+      "O": 1,
+      "H": 1
+    },
+    "retinol": {
+      "C": 20,
+      "H": 30,
+      "O": 1
+    },
+    "sodium-acetate": {
+      "C": 2,
+      "H": 3,
+      "Na": 1,
+      "O": 2
+    }
+  },
+  "unknown": [
+    "kinetics",
+    "solvent_quantity",
+    "water_quantity",
+    "partition_coefficients",
+    "reaction_enthalpy",
+    "separation_heat",
+    "light_oxidation_rates"
+  ],
+  "game": {
+    "policy": "oc-nightvision-draft-1",
+    "retinolMolPerCartridge": 0.003,
+    "potionsPerCartridge": 3,
+    "durationTicks": 14400,
+    "amplifier": 0,
+    "implemented": false
+  }
+}

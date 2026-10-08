@@ -1,0 +1,260 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="ESTER" name="ESTER / 独立源仓与缓冲">
+    <mxGraphModel page="1" pageWidth="1250" pageHeight="1000">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="note" value="实线：当前源仓到缓冲调度；虚线：待接入工艺；右侧为去向设计，无模拟产出。" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="20" y="10" width="1100" height="60" />
+        </mxCell>
+        <mxCell id="aceticacid-source" value="乙酸源仓&#10;aceticacid" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="20" y="110" width="185" height="60" />
+        </mxCell>
+        <mxCell id="aceticacid-buffer" value="独立缓冲&#10;10000 mB" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="320" y="110" width="185" height="60" />
+        </mxCell>
+        <mxCell id="aceticacid-inlet" value="乙酸专用工艺入口&#10;尚未接入完整工艺" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="610" y="110" width="185" height="60" />
+        </mxCell>
+        <mxCell id="aceticacid-route" source="aceticacid-source" target="aceticacid-buffer" value="1000 mB/周期" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="aceticacid-handoff" source="aceticacid-buffer" target="aceticacid-inlet" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;dashed=1;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="ethanol-source" value="乙醇源仓&#10;bioethanol" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="20" y="230" width="185" height="60" />
+        </mxCell>
+        <mxCell id="ethanol-buffer" value="独立缓冲&#10;10000 mB" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="320" y="230" width="185" height="60" />
+        </mxCell>
+        <mxCell id="ethanol-inlet" value="乙醇专用工艺入口&#10;尚未接入完整工艺" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="610" y="230" width="185" height="60" />
+        </mxCell>
+        <mxCell id="ethanol-route" source="ethanol-source" target="ethanol-buffer" value="1000 mB/周期" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="ethanol-handoff" source="ethanol-buffer" target="ethanol-inlet" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;dashed=1;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="water-source" value="水源仓&#10;water" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="20" y="350" width="185" height="60" />
+        </mxCell>
+        <mxCell id="water-buffer" value="独立缓冲&#10;10000 mB" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="320" y="350" width="185" height="60" />
+        </mxCell>
+        <mxCell id="water-inlet" value="水专用工艺入口&#10;尚未接入完整工艺" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="610" y="350" width="185" height="60" />
+        </mxCell>
+        <mxCell id="water-route" source="water-source" target="water-buffer" value="1000 mB/周期" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="water-handoff" source="water-buffer" target="water-inlet" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;dashed=1;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="output-0" value="产品隔离&#10;独立接收节点" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#f2e5d3;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="920" y="110" width="185" height="60" />
+        </mxCell>
+        <mxCell id="output-1" value="残余 / 未反应料&#10;独立接收节点" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#f2e5d3;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="920" y="230" width="185" height="60" />
+        </mxCell>
+        <mxCell id="output-2" value="废水&#10;独立接收节点" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#f2e5d3;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="920" y="350" width="185" height="60" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="VITAMIN_A" name="VITAMIN_A / 独立源仓与缓冲">
+    <mxGraphModel page="1" pageWidth="1250" pageHeight="1000">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="note" value="实线：当前源仓到缓冲调度；虚线：待接入工艺；右侧为去向设计，无模拟产出。" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="20" y="10" width="1100" height="60" />
+        </mxCell>
+        <mxCell id="acetone-source" value="丙酮源仓&#10;acetone" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="20" y="110" width="185" height="60" />
+        </mxCell>
+        <mxCell id="acetone-buffer" value="独立缓冲&#10;10000 mB" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="320" y="110" width="185" height="60" />
+        </mxCell>
+        <mxCell id="acetone-inlet" value="丙酮专用工艺入口&#10;尚未接入完整工艺" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="610" y="110" width="185" height="60" />
+        </mxCell>
+        <mxCell id="acetone-route" source="acetone-source" target="acetone-buffer" value="1000 mB/周期" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="acetone-handoff" source="acetone-buffer" target="acetone-inlet" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;dashed=1;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="formaldehyde-source" value="甲醛源仓&#10;fluid.formaldehyde" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="20" y="230" width="185" height="60" />
+        </mxCell>
+        <mxCell id="formaldehyde-buffer" value="独立缓冲&#10;10000 mB" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="320" y="230" width="185" height="60" />
+        </mxCell>
+        <mxCell id="formaldehyde-inlet" value="甲醛专用工艺入口&#10;尚未接入完整工艺" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="610" y="230" width="185" height="60" />
+        </mxCell>
+        <mxCell id="formaldehyde-route" source="formaldehyde-source" target="formaldehyde-buffer" value="1000 mB/周期" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="formaldehyde-handoff" source="formaldehyde-buffer" target="formaldehyde-inlet" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;dashed=1;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="acetylene-source" value="乙炔源仓&#10;acetylene" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="20" y="350" width="185" height="60" />
+        </mxCell>
+        <mxCell id="acetylene-buffer" value="独立缓冲&#10;10000 mB" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="320" y="350" width="185" height="60" />
+        </mxCell>
+        <mxCell id="acetylene-inlet" value="乙炔专用工艺入口&#10;尚未接入完整工艺" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="610" y="350" width="185" height="60" />
+        </mxCell>
+        <mxCell id="acetylene-route" source="acetylene-source" target="acetylene-buffer" value="1000 mB/周期" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="acetylene-handoff" source="acetylene-buffer" target="acetylene-inlet" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;dashed=1;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="hydrogen-source" value="氢气源仓&#10;hydrogen" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="20" y="470" width="185" height="60" />
+        </mxCell>
+        <mxCell id="hydrogen-buffer" value="独立缓冲&#10;10000 mB" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="320" y="470" width="185" height="60" />
+        </mxCell>
+        <mxCell id="hydrogen-inlet" value="氢气专用工艺入口&#10;尚未接入完整工艺" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="610" y="470" width="185" height="60" />
+        </mxCell>
+        <mxCell id="hydrogen-route" source="hydrogen-source" target="hydrogen-buffer" value="1000 mB/周期" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="hydrogen-handoff" source="hydrogen-buffer" target="hydrogen-inlet" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;dashed=1;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="acetic-anhydride-source" value="乙酸酐源仓&#10;molten.aceticanhydride" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="20" y="590" width="185" height="60" />
+        </mxCell>
+        <mxCell id="acetic-anhydride-buffer" value="独立缓冲&#10;10000 mB" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="320" y="590" width="185" height="60" />
+        </mxCell>
+        <mxCell id="acetic-anhydride-inlet" value="乙酸酐专用工艺入口&#10;尚未接入完整工艺" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="610" y="590" width="185" height="60" />
+        </mxCell>
+        <mxCell id="acetic-anhydride-route" source="acetic-anhydride-source" target="acetic-anhydride-buffer" value="1000 mB/周期" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="acetic-anhydride-handoff" source="acetic-anhydride-buffer" target="acetic-anhydride-inlet" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;dashed=1;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="catalyst-core-source" value="OC 催化核心源仓&#10;OC 物品，非原生工业催化剂" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="20" y="710" width="185" height="60" />
+        </mxCell>
+        <mxCell id="catalyst-core-buffer" value="独立缓冲&#10;64 物品计数" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="320" y="710" width="185" height="60" />
+        </mxCell>
+        <mxCell id="catalyst-core-inlet" value="OC 催化核心专用工艺入口&#10;尚未接入完整工艺" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="610" y="710" width="185" height="60" />
+        </mxCell>
+        <mxCell id="catalyst-core-route" source="catalyst-core-source" target="catalyst-core-buffer" value="64 物品计数/周期" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="catalyst-core-handoff" source="catalyst-core-buffer" target="catalyst-core-inlet" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;dashed=1;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="output-0" value="成品隔离&#10;独立接收节点" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#f2e5d3;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="920" y="110" width="185" height="60" />
+        </mxCell>
+        <mxCell id="output-1" value="残余 / 母液&#10;独立接收节点" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#f2e5d3;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="920" y="230" width="185" height="60" />
+        </mxCell>
+        <mxCell id="output-2" value="废液&#10;独立接收节点" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#f2e5d3;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="920" y="350" width="185" height="60" />
+        </mxCell>
+        <mxCell id="output-3" value="尾气&#10;独立接收节点" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#f2e5d3;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="920" y="470" width="185" height="60" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="wood" name="第三线 / 木材干馏与分馏候选">
+    <mxGraphModel page="1" pageWidth="1250" pageHeight="1000">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="note" value="冻结 GT 净配方；尚未实装 OC 自动整线。GT mB 不等于化学计量或物理收率。" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="20" y="10" width="1100" height="60" />
+        </mxCell>
+        <mxCell id="logs" value="木材仓&#10;16 个 / 批" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="20" y="120" width="185" height="60" />
+        </mxCell>
+        <mxCell id="nitrogen" value="氮气仓&#10;1000 mB / 批" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="20" y="240" width="185" height="60" />
+        </mxCell>
+        <mxCell id="coke" value="GT++ cokeoven&#10;电路 8" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="285" y="180" width="185" height="60" />
+        </mxCell>
+        <mxCell id="charcoal" value="木炭仓&#10;20 个 / 批" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="545" y="100" width="185" height="60" />
+        </mxCell>
+        <mxCell id="intermediate" value="木醋液缓冲&#10;3000 mB / 干馏批" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="545" y="250" width="185" height="60" />
+        </mxCell>
+        <mxCell id="tower" value="蒸馏塔&#10;电路 1；1000 mB / 次" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="545" y="420" width="185" height="60" />
+        </mxCell>
+        <mxCell id="a" source="logs" target="coke" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="b" source="nitrogen" target="coke" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="c" source="coke" target="charcoal" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="d" source="coke" target="intermediate" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e" source="intermediate" target="tower" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="fraction-0" value="aceticacid&#10;100 mB / 分馏次" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="895" y="100" width="185" height="60" />
+        </mxCell>
+        <mxCell id="f0" source="tower" target="fraction-0" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="fraction-1" value="water&#10;500 mB / 分馏次" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="895" y="200" width="185" height="60" />
+        </mxCell>
+        <mxCell id="f1" source="tower" target="fraction-1" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="fraction-2" value="bioethanol&#10;10 mB / 分馏次" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="895" y="300" width="185" height="60" />
+        </mxCell>
+        <mxCell id="f2" source="tower" target="fraction-2" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="fraction-3" value="methanol&#10;300 mB / 分馏次" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="895" y="400" width="185" height="60" />
+        </mxCell>
+        <mxCell id="f3" source="tower" target="fraction-3" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="fraction-4" value="acetone&#10;50 mB / 分馏次" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="895" y="500" width="185" height="60" />
+        </mxCell>
+        <mxCell id="f4" source="tower" target="fraction-4" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="fraction-5" value="methylacetate&#10;10 mB / 分馏次" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=12;fillColor=#e1efe8;strokeColor=#42675b;">
+          <mxGeometry as="geometry" x="895" y="600" width="185" height="60" />
+        </mxCell>
+        <mxCell id="f5" source="tower" target="fraction-5" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

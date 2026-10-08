@@ -1,0 +1,215 @@
+{
+  "schema": 1,
+  "timestamp": "2026-10-02T09:32:37.827840+00:00",
+  "version": "0.2.0-alpha2-dev",
+  "jarSha256": "1c7d9af4f767ce22271dee354bff0b04699a126a6b7704451ca9a4ea6a9a98de",
+  "filesystem": "ext4",
+  "durability": "FILE_AND_DIRECTORY_SYNC",
+  "initialMol": "10000000000.000000000000000000009",
+  "transferMol": "0.000000000000000000009",
+  "totalEnergyJ": "100.000000000000000000001",
+  "stages": [
+    {
+      "stage": "PARTIAL_WRITE",
+      "exitCode": 73,
+      "before": {
+        "sequence": 0,
+        "replay": false,
+        "sourceMol": "10000000000.000000000000000000009",
+        "sampleMol": "0",
+        "totalEnergyJ": "100.000000000000000000001"
+      },
+      "recovered": {
+        "sequence": 0,
+        "replay": false,
+        "sourceMol": "10000000000.000000000000000000009",
+        "sampleMol": "0",
+        "totalEnergyJ": "100.000000000000000000001"
+      },
+      "retry": {
+        "sequence": 1,
+        "replay": false,
+        "sourceMol": "10000000000.000000000000000000000",
+        "sampleMol": "0.000000000000000000009",
+        "totalEnergyJ": "100.000000000000000000001"
+      },
+      "replayed": {
+        "sequence": 1,
+        "replay": true,
+        "sourceMol": "10000000000",
+        "sampleMol": "0.000000000000000000009",
+        "totalEnergyJ": "100.000000000000000000001"
+      },
+      "beforeSha256": "f947981cf67bb9ae3c52a72ad6830e13acd286d336b4b5b1faba77f514c94db1",
+      "recoveredSha256": "f947981cf67bb9ae3c52a72ad6830e13acd286d336b4b5b1faba77f514c94db1",
+      "finalSha256": "56763700ba2f19debc3d677161698ea4d71ad81c8396ca38de2b179ab27d584e",
+      "pendingFiles": 1,
+      "passed": true
+    },
+    {
+      "stage": "FILE_SYNCED",
+      "exitCode": 73,
+      "before": {
+        "sequence": 0,
+        "replay": false,
+        "sourceMol": "10000000000.000000000000000000009",
+        "sampleMol": "0",
+        "totalEnergyJ": "100.000000000000000000001"
+      },
+      "recovered": {
+        "sequence": 0,
+        "replay": false,
+        "sourceMol": "10000000000.000000000000000000009",
+        "sampleMol": "0",
+        "totalEnergyJ": "100.000000000000000000001"
+      },
+      "retry": {
+        "sequence": 1,
+        "replay": false,
+        "sourceMol": "10000000000.000000000000000000000",
+        "sampleMol": "0.000000000000000000009",
+        "totalEnergyJ": "100.000000000000000000001"
+      },
+      "replayed": {
+        "sequence": 1,
+        "replay": true,
+        "sourceMol": "10000000000",
+        "sampleMol": "0.000000000000000000009",
+        "totalEnergyJ": "100.000000000000000000001"
+      },
+      "beforeSha256": "f947981cf67bb9ae3c52a72ad6830e13acd286d336b4b5b1faba77f514c94db1",
+      "recoveredSha256": "f947981cf67bb9ae3c52a72ad6830e13acd286d336b4b5b1faba77f514c94db1",
+      "finalSha256": "56763700ba2f19debc3d677161698ea4d71ad81c8396ca38de2b179ab27d584e",
+      "pendingFiles": 1,
+      "passed": true
+    },
+    {
+      "stage": "RENAMED",
+      "exitCode": 73,
+      "before": {
+        "sequence": 0,
+        "replay": false,
+        "sourceMol": "10000000000.000000000000000000009",
+        "sampleMol": "0",
+        "totalEnergyJ": "100.000000000000000000001"
+      },
+      "recovered": {
+        "sequence": 1,
+        "replay": false,
+        "sourceMol": "10000000000",
+        "sampleMol": "0.000000000000000000009",
+        "totalEnergyJ": "100.000000000000000000001"
+      },
+      "retry": {
+        "sequence": 1,
+        "replay": true,
+        "sourceMol": "10000000000",
+        "sampleMol": "0.000000000000000000009",
+        "totalEnergyJ": "100.000000000000000000001"
+      },
+      "replayed": {
+        "sequence": 1,
+        "replay": true,
+        "sourceMol": "10000000000",
+        "sampleMol": "0.000000000000000000009",
+        "totalEnergyJ": "100.000000000000000000001"
+      },
+      "beforeSha256": "f947981cf67bb9ae3c52a72ad6830e13acd286d336b4b5b1faba77f514c94db1",
+      "recoveredSha256": "56763700ba2f19debc3d677161698ea4d71ad81c8396ca38de2b179ab27d584e",
+      "finalSha256": "56763700ba2f19debc3d677161698ea4d71ad81c8396ca38de2b179ab27d584e",
+      "pendingFiles": 0,
+      "passed": true
+    },
+    {
+      "stage": "DIRECTORY_SYNCED",
+      "exitCode": 73,
+      "before": {
+        "sequence": 0,
+        "replay": false,
+        "sourceMol": "10000000000.000000000000000000009",
+        "sampleMol": "0",
+        "totalEnergyJ": "100.000000000000000000001"
+      },
+      "recovered": {
+        "sequence": 1,
+        "replay": false,
+        "sourceMol": "10000000000",
+        "sampleMol": "0.000000000000000000009",
+        "totalEnergyJ": "100.000000000000000000001"
+      },
+      "retry": {
+        "sequence": 1,
+        "replay": true,
+        "sourceMol": "10000000000",
+        "sampleMol": "0.000000000000000000009",
+        "totalEnergyJ": "100.000000000000000000001"
+      },
+      "replayed": {
+        "sequence": 1,
+        "replay": true,
+        "sourceMol": "10000000000",
+        "sampleMol": "0.000000000000000000009",
+        "totalEnergyJ": "100.000000000000000000001"
+      },
+      "beforeSha256": "f947981cf67bb9ae3c52a72ad6830e13acd286d336b4b5b1faba77f514c94db1",
+      "recoveredSha256": "56763700ba2f19debc3d677161698ea4d71ad81c8396ca38de2b179ab27d584e",
+      "finalSha256": "56763700ba2f19debc3d677161698ea4d71ad81c8396ca38de2b179ab27d584e",
+      "pendingFiles": 0,
+      "passed": true
+    },
+    {
+      "stage": "BEFORE_ACK",
+      "exitCode": 73,
+      "before": {
+        "sequence": 0,
+        "replay": false,
+        "sourceMol": "10000000000.000000000000000000009",
+        "sampleMol": "0",
+        "totalEnergyJ": "100.000000000000000000001"
+      },
+      "recovered": {
+        "sequence": 1,
+        "replay": false,
+        "sourceMol": "10000000000",
+        "sampleMol": "0.000000000000000000009",
+        "totalEnergyJ": "100.000000000000000000001"
+      },
+      "retry": {
+        "sequence": 1,
+        "replay": true,
+        "sourceMol": "10000000000",
+        "sampleMol": "0.000000000000000000009",
+        "totalEnergyJ": "100.000000000000000000001"
+      },
+      "replayed": {
+        "sequence": 1,
+        "replay": true,
+        "sourceMol": "10000000000",
+        "sampleMol": "0.000000000000000000009",
+        "totalEnergyJ": "100.000000000000000000001"
+      },
+      "beforeSha256": "f947981cf67bb9ae3c52a72ad6830e13acd286d336b4b5b1faba77f514c94db1",
+      "recoveredSha256": "56763700ba2f19debc3d677161698ea4d71ad81c8396ca38de2b179ab27d584e",
+      "finalSha256": "56763700ba2f19debc3d677161698ea4d71ad81c8396ca38de2b179ab27d584e",
+      "pendingFiles": 0,
+      "passed": true
+    }
+  ],
+  "rejectionChecks": [
+    {
+      "case": "corrupt-authority-with-valid-pending",
+      "passed": true,
+      "exitCode": 1,
+      "preservedSha256": "cdc50a117500ef2ac28d5df799b9aa16b18323e0979b61f197b30e63726ebe62"
+    },
+    {
+      "case": "missing-authority-with-valid-pending",
+      "passed": true,
+      "exitCode": 1
+    }
+  ],
+  "passed": true,
+  "sourceReportSha256": "ce438144cf4e2283e36ddf4ecbb20f245badb8c651db31a2a1e95f238a6d7d6d",
+  "javaVersion": "17.0.20.1",
+  "boundary": "独立 Java 存档核心的实际进程中断记录；未接入游戏物品/槽位；未进行机器断电测试。极微量只验证账本精度，不代表连续介质或动力学模型的物理有效域。"
+}

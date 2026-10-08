@@ -1,0 +1,172 @@
+{
+  "schema": "oc-compound-extension-chain-1",
+  "compounds": [
+    {
+      "slug": "quinoline",
+      "name": "喹啉",
+      "smiles": "c1ccc2ncccc2c1",
+      "formula": "C9H7N",
+      "kind": "molecular",
+      "charge": 0,
+      "capability": "va-chain-teaching",
+      "stereo": "Explicit E/Z only where specified; new alcohol centres unspecified",
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "elements": {
+        "C": 9,
+        "H": 7,
+        "N": 1
+      },
+      "recordId": "ocv2:f194313c76acc10a21d78a09a56b40d7f3207705ee0815d9dacb5571cdef0871"
+    },
+    {
+      "slug": "c16-ethyl-adduct",
+      "name": "C14/乙基竞争加成醇",
+      "smiles": "CCC(O)C(C)=CCC1=C(C)CCCC1(C)C",
+      "formula": "C16H28O",
+      "kind": "molecular",
+      "charge": 0,
+      "capability": "va-chain-teaching",
+      "stereo": "Explicit E/Z only where specified; new alcohol centres unspecified",
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "elements": {
+        "C": 16,
+        "H": 28,
+        "O": 1
+      },
+      "recordId": "ocv2:10e04e55d1d84cc883ccc95af223ed3796749c05e8d2b6e2605c68efb9fffc82"
+    },
+    {
+      "slug": "c20-overhydrogenated",
+      "name": "原炔位完全氢化二醇",
+      "smiles": "CC(=CCO)CCC(O)C(C)=CCC1=C(C)CCCC1(C)C",
+      "formula": "C20H34O2",
+      "kind": "molecular",
+      "charge": 0,
+      "capability": "va-chain-teaching",
+      "stereo": "Explicit E/Z only where specified; new alcohol centres unspecified",
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "elements": {
+        "C": 20,
+        "H": 34,
+        "O": 2
+      },
+      "recordId": "ocv2:a37d6a5494f261d5987716ec7b8fab4bd0892a2e3877e2dfbc2c77298442e517"
+    },
+    {
+      "slug": "retinyl-acetate-one-z",
+      "name": "视黄醇乙酸酯单Z比较体",
+      "smiles": "CC(=O)OC/C=C(C)\\C=C\\C=C(C)\\C=C\\C1=C(C)CCCC1(C)C",
+      "formula": "C22H32O2",
+      "kind": "molecular",
+      "isomerPolicy": "Exactly one sidechain C=C changed from catalog E to Z; not a named positional isomer claim.",
+      "charge": 0,
+      "capability": "va-chain-teaching",
+      "stereo": "Explicit E/Z only where specified; new alcohol centres unspecified",
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "elements": {
+        "C": 22,
+        "H": 32,
+        "O": 2
+      },
+      "recordId": "ocv2:29f6e7b0fd46c773d448650b7e24993561795459f94fe802c64ef18d702b757b"
+    },
+    {
+      "slug": "c16-magnesium",
+      "name": "C16 镁醇盐有效组分",
+      "smiles": null,
+      "formula": "C16H27MgBrO",
+      "kind": "formal-component",
+      "charge": 0,
+      "capability": "va-chain-teaching",
+      "stereo": "Explicit E/Z only where specified; new alcohol centres unspecified",
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "elements": {
+        "C": 16,
+        "H": 27,
+        "Mg": 1,
+        "Br": 1,
+        "O": 1
+      },
+      "recordId": "ocv2:98b4a79d37d4a95b77189bfd0b2bbdb625594a8fa8fed51948ff80080d9ee97a"
+    },
+    {
+      "slug": "palladium",
+      "name": "钯位材料",
+      "smiles": null,
+      "formula": "Pd",
+      "kind": "formal-component",
+      "charge": 0,
+      "capability": "va-chain-teaching",
+      "stereo": "Explicit E/Z only where specified; new alcohol centres unspecified",
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "elements": {
+        "Pd": 1
+      },
+      "recordId": "ocv2:68b540c78472491893d0333ccd15d42eb93dcea08fefca3e3b381374c3d26e8d"
+    },
+    {
+      "slug": "calcium-carbonate",
+      "name": "碳酸钙载体",
+      "smiles": null,
+      "formula": "CaCO3",
+      "kind": "formal-component",
+      "charge": 0,
+      "capability": "va-chain-teaching",
+      "stereo": "Explicit E/Z only where specified; new alcohol centres unspecified",
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "elements": {
+        "Ca": 1,
+        "C": 1,
+        "O": 3
+      },
+      "recordId": "ocv2:200d45995c08a9b374d67076c67cd0682b7560a1ea2f0c786541cdb4314bce0d"
+    },
+    {
+      "slug": "lead",
+      "name": "铅修饰组分",
+      "smiles": null,
+      "formula": "Pb",
+      "kind": "formal-component",
+      "charge": 0,
+      "capability": "va-chain-teaching",
+      "stereo": "Explicit E/Z only where specified; new alcohol centres unspecified",
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "elements": {
+        "Pb": 1
+      },
+      "recordId": "ocv2:369b52f492ec5ed18a83c92b3379603c3d4a9e4e8d5d718a9521ebc6b8594600"
+    }
+  ]
+}

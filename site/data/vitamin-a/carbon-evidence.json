@@ -1,0 +1,121 @@
+{
+  "version": "0.4.0-va-carbon-alpha1",
+  "jarSha256": "22c1b8d40d3db715b6d07dcf527fad4ac68307fb94023730150091f303c8ec23",
+  "jarBytes": 10363560,
+  "junitTests": 106,
+  "failures": 0,
+  "legacyChemistrySteps": 360000,
+  "build": "spotlessApply build",
+  "schema": "oc-carbon-evidence-1",
+  "summary": "D34–D38 软件范围已交付：106 项测试、真实 Forge 连续两批及重启复验通过；旧记录原有字段保留。6 课 / 20 帧新增；全站 32 分支 / 106 帧几何筛查通过。客户端桌面与独立化学审核待人工验收。",
+  "preservedOldRecordFields": {
+    "lines": 6,
+    "coupling": 6,
+    "chain": 5,
+    "handoffs": 15,
+    "supply": 4,
+    "supplyTransfers": 4,
+    "darzens": 2,
+    "darzensTransfers": 2,
+    "ingress": 12,
+    "receipts": 748,
+    "upstream": 1,
+    "upstreamIngress": 18,
+    "archives": 1,
+    "batches": 1
+  },
+  "preservationPolicy": "Existing fields unchanged; new empty Chain.products default permitted.",
+  "sameWorldIdentityAndExternalBoundary": true,
+  "worldSchemaUpgrade": "2.6 -> 2.7; historical process models retained",
+  "deployment": {
+    "serverAndClientHashEqual": true,
+    "verifiedOfflineBackup": true,
+    "statusProbe": true,
+    "clientRendering": "manual-pending"
+  },
+  "liveForge": {
+    "passed": true,
+    "batches": 2,
+    "nativeInputItems": [
+      {
+        "upstreamItems": 24,
+        "c6Cells": 3
+      },
+      {
+        "upstreamItems": 24,
+        "c6Cells": 3
+      }
+    ],
+    "sameReportAfterRestart": true,
+    "allSixStageQuantitiesEqualJavaReference": true,
+    "sameEquipmentIdsAndOwners": true,
+    "scope": "Synthetic player on actual Forge server; real registered GT cells/dust, durable debit markers, container requests, whole-stream product references and archive retention. Not survival acquisition or client desktop acceptance."
+  },
+  "restart": {
+    "passed": true,
+    "exactAuthorityBytesEqual": true,
+    "beforeSha256": "2581f12c1d523efe4eef752b9a50544f2e32b00283896b010cf6a36a60735754",
+    "afterSha256": "2581f12c1d523efe4eef752b9a50544f2e32b00283896b010cf6a36a60735754",
+    "sequence": 1073,
+    "restartWallSeconds": 44.1
+  },
+  "geometry": {
+    "branches": 32,
+    "states": 106,
+    "currentPassed": true,
+    "transition": "Discrete screened conformers; not optimized intermediates or TS/IRC."
+  },
+  "browser": [
+    {
+      "name": "6 lessons / 20 states: 2D mapped bond/charge/electron playback, 3D screened keyframes and atom feedback",
+      "passed": true
+    },
+    {
+      "name": "132 inventory views across reference, second batch and retained first batch; impurity split endpoints and recurrence",
+      "passed": true
+    },
+    {
+      "name": "76 searchable compounds; mobile page and all manuals; no-WebGL 2D fallback",
+      "passed": true
+    }
+  ],
+  "previousMechanismBrowserRegression": true,
+  "results": {
+    "c8ProducedMol": "0.66348",
+    "c8TransferredMol": "0.630306",
+    "c10AlkynolProducedMol": "0.5672754",
+    "citralUnresolvedMol": "0.333557935200000",
+    "carrollCO2Mol": "0.6634800",
+    "claisenSaltMol": "1.0",
+    "transProductMolPerBatch": "0.16443418572357244808276160000"
+  },
+  "resourceAccounting": {
+    "batches": [
+      {
+        "inputMassG": "2971.57163549620124766543908799000000000000000000",
+        "retainedMassG": "2971.57163549620124766543908799000000000000000000000",
+        "absoluteResidualG": "0E-47"
+      },
+      {
+        "inputMassG": "2971.57163549620124766543908799000000000000000000",
+        "retainedMassG": "2971.57163549620124766543908799000000000000000000000",
+        "absoluteResidualG": "0E-47"
+      }
+    ],
+    "scope": "Count external inputs including fixtures once, subtract internal handoffs, retain all residual and packaged components. Not physical-density conversion or survival cost."
+  },
+  "chemistryEvidence": "US5874635A direct Carroll; CN108299171B Saucy-Marbet distinguished; CN113248357B conditional citral patent NMR yields; independent review pending.",
+  "nextStage": "D39-D43: U07 pseudoionone, U08 ionone branches, replace C14 beta-ionone fixture, full-chain two-batch/restart acceptance.",
+  "limits": [
+    "C5 connects to C8/C10; U07/U08 not yet connected to beta-ionone",
+    "beta-ionone, NaNH2/catalysts and several downstream utility feeds remain explicit fixtures",
+    "one standard 1000 mB cell or dust unit equals one teaching mol; not density conversion",
+    "stage extents and ideal splits uncalibrated; no reactor kinetics or separation-equilibrium prediction",
+    "citral E/Z ratio is unassigned; geranial/neral are separate identity-only records",
+    "Carroll uses patent-listed catalyst/solvent classes, not an exact Example 1 reproduction",
+    "whole product stream remains OC ledger inventory; reference is not a GT recipe product or fluid export",
+    "bounded virtual archive, maximum 16, not physical draining or cleaning",
+    "recovery is a read-only all-component split; no in-game recycle injection",
+    "client desktop, independent chemistry review, multi-player endurance and hard power-loss testing pending"
+  ]
+}

@@ -1,0 +1,385 @@
+{
+  "identityChecks": [
+    {
+      "id": "alpha-ionone-unresolved",
+      "formula": "C13H20O",
+      "pubchemCID": 5282108,
+      "pubchemIUPAC": "(E)-4-(2,6,6-trimethylcyclohex-2-en-1-yl)but-3-en-2-one",
+      "canonicalConnectivity": "CC(=O)C=CC1C(C)=CCCC1(C)C",
+      "equalsPubchemConnectivity": true,
+      "ringAttachmentAtomZeroBased": 5,
+      "ringDoubleBonds": [
+        [
+          6,
+          8
+        ]
+      ],
+      "potentialStereo": [
+        {
+          "type": "Atom_Tetrahedral",
+          "center": 5,
+          "specified": "Unspecified"
+        },
+        {
+          "type": "Bond_Double",
+          "center": 3,
+          "specified": "Unspecified"
+        }
+      ]
+    },
+    {
+      "id": "beta-ionone-unresolved",
+      "formula": "C13H20O",
+      "pubchemCID": 638014,
+      "pubchemIUPAC": "(E)-4-(2,6,6-trimethylcyclohexen-1-yl)but-3-en-2-one",
+      "canonicalConnectivity": "CC(=O)C=CC1=C(C)CCCC1(C)C",
+      "equalsPubchemConnectivity": true,
+      "ringAttachmentAtomZeroBased": 5,
+      "ringDoubleBonds": [
+        [
+          5,
+          6
+        ]
+      ],
+      "potentialStereo": [
+        {
+          "type": "Bond_Double",
+          "center": 3,
+          "specified": "Unspecified"
+        }
+      ]
+    }
+  ],
+  "lessonStates": [
+    {
+      "index": 0,
+      "title": "识别两种羰基的角色",
+      "formula": "C13H23NaO3",
+      "charge": 0,
+      "atoms": 40,
+      "bondChanges": [],
+      "arrowsToNext": [
+        {
+          "kind": "pair",
+          "source": [
+            37
+          ],
+          "target": [
+            4
+          ],
+          "bond": [
+            4,
+            37
+          ],
+          "delta": 1,
+          "caption": "OH⁻ 接受丙酮 α-H"
+        },
+        {
+          "kind": "bond",
+          "source": [
+            0,
+            4
+          ],
+          "target": [
+            0
+          ],
+          "bond": [
+            0,
+            4
+          ],
+          "delta": -1,
+          "caption": "C–H 电子留在 α 碳：烯醇盐共振极限式"
+        }
+      ],
+      "fragments": [
+        "CC(C)=O",
+        "CC(C)=CCCC(C)=CC=O",
+        "[OH-]",
+        "[Na+]"
+      ]
+    },
+    {
+      "index": 1,
+      "title": "烯醇盐的碳负离子极限式",
+      "formula": "C13H23NaO3",
+      "charge": 0,
+      "atoms": 40,
+      "bondChanges": [
+        {
+          "bond": [
+            0,
+            4
+          ],
+          "delta": -1.0
+        },
+        {
+          "bond": [
+            4,
+            37
+          ],
+          "delta": 1.0
+        }
+      ],
+      "arrowsToNext": [
+        {
+          "kind": "pair",
+          "source": [
+            0
+          ],
+          "target": [
+            19
+          ],
+          "bond": [
+            0,
+            19
+          ],
+          "delta": 1,
+          "caption": "丙酮 α 碳进攻柠檬醛羰基碳"
+        },
+        {
+          "kind": "bond",
+          "source": [
+            19,
+            20
+          ],
+          "target": [
+            20
+          ],
+          "bond": [
+            19,
+            20
+          ],
+          "delta": -1,
+          "caption": "羰基 π 电子转向氧"
+        }
+      ],
+      "fragments": [
+        "[CH2-]C(C)=O",
+        "O",
+        "CC(C)=CCCC(C)=CC=O",
+        "[Na+]"
+      ]
+    },
+    {
+      "index": 2,
+      "title": "羟醛加成形成 C13 骨架",
+      "formula": "C13H23NaO3",
+      "charge": 0,
+      "atoms": 40,
+      "bondChanges": [
+        {
+          "bond": [
+            0,
+            19
+          ],
+          "delta": 1.0
+        },
+        {
+          "bond": [
+            19,
+            20
+          ],
+          "delta": -1.0
+        }
+      ],
+      "arrowsToNext": [
+        {
+          "kind": "pair",
+          "source": [
+            20
+          ],
+          "target": [
+            4
+          ],
+          "bond": [
+            4,
+            20
+          ],
+          "delta": 1,
+          "caption": "醇盐由介质水质子化"
+        },
+        {
+          "kind": "bond",
+          "source": [
+            37,
+            4
+          ],
+          "target": [
+            37
+          ],
+          "bond": [
+            4,
+            37
+          ],
+          "delta": -1,
+          "caption": "介质再生 OH⁻"
+        }
+      ],
+      "fragments": [
+        "CC(=O)CC([O-])C=C(C)CCC=C(C)C",
+        "O",
+        "[Na+]"
+      ]
+    },
+    {
+      "index": 3,
+      "title": "β-羟基酮",
+      "formula": "C13H23NaO3",
+      "charge": 0,
+      "atoms": 40,
+      "bondChanges": [
+        {
+          "bond": [
+            4,
+            20
+          ],
+          "delta": 1.0
+        },
+        {
+          "bond": [
+            4,
+            37
+          ],
+          "delta": -1.0
+        }
+      ],
+      "arrowsToNext": [
+        {
+          "kind": "pair",
+          "source": [
+            37
+          ],
+          "target": [
+            5
+          ],
+          "bond": [
+            5,
+            37
+          ],
+          "delta": 1,
+          "caption": "OH⁻ 再接受相邻羰基的 α-H"
+        },
+        {
+          "kind": "bond",
+          "source": [
+            0,
+            5
+          ],
+          "target": [
+            0
+          ],
+          "bond": [
+            0,
+            5
+          ],
+          "delta": -1,
+          "caption": "生成可发生 E1cb 消除的共振极限式"
+        }
+      ],
+      "fragments": [
+        "CC(=O)CC(O)C=C(C)CCC=C(C)C",
+        "[OH-]",
+        "[Na+]"
+      ]
+    },
+    {
+      "index": 4,
+      "title": "为消除准备电子对",
+      "formula": "C13H23NaO3",
+      "charge": 0,
+      "atoms": 40,
+      "bondChanges": [
+        {
+          "bond": [
+            0,
+            5
+          ],
+          "delta": -1.0
+        },
+        {
+          "bond": [
+            5,
+            37
+          ],
+          "delta": 1.0
+        }
+      ],
+      "arrowsToNext": [
+        {
+          "kind": "pair",
+          "source": [
+            0
+          ],
+          "target": [
+            19
+          ],
+          "bond": [
+            0,
+            19
+          ],
+          "delta": 1,
+          "caption": "碳上电子对形成共轭 C=C"
+        },
+        {
+          "kind": "bond",
+          "source": [
+            19,
+            20
+          ],
+          "target": [
+            20
+          ],
+          "bond": [
+            19,
+            20
+          ],
+          "delta": -1,
+          "caption": "C–O 键电子随 OH⁻ 离去"
+        }
+      ],
+      "fragments": [
+        "CC(=O)[CH-]C(O)C=C(C)CCC=C(C)C",
+        "O",
+        "[Na+]"
+      ]
+    },
+    {
+      "index": 5,
+      "title": "假紫罗兰酮骨架与水",
+      "formula": "C13H23NaO3",
+      "charge": 0,
+      "atoms": 40,
+      "bondChanges": [
+        {
+          "bond": [
+            0,
+            19
+          ],
+          "delta": 1.0
+        },
+        {
+          "bond": [
+            19,
+            20
+          ],
+          "delta": -1.0
+        }
+      ],
+      "arrowsToNext": [],
+      "fragments": [
+        "CC(=O)C=CC=C(C)CCC=C(C)C",
+        "[OH-]",
+        "O",
+        "[Na+]"
+      ]
+    }
+  ],
+  "summary": {
+    "connectivityPass": true,
+    "allStateFormulaeEqual": true,
+    "allChargesZero": true,
+    "allAtoms40": true,
+    "allArrowEditsMatchNextState": true,
+    "conclusion": "Discrete graph audit only; no kinetics, pathway, selectivity, or quantum validation."
+  }
+}

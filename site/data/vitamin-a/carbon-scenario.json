@@ -1,0 +1,3058 @@
+{
+  "schema": "oc-unit-world-2.7",
+  "catalog": "oc-compound-catalog-2.1",
+  "identity": "62f404c8-93a1-4ff1-a1d2-d5cd138f1cfa",
+  "sequence": 0,
+  "upstream": {
+    "17537eb5-a9fa-4b2f-ade0-89366fa7f50f": {
+      "id": "17537eb5-a9fa-4b2f-ade0-89366fa7f50f",
+      "owner": "8cc708e6-ec92-4051-8466-417bea99aac1",
+      "darzens": "9ef43ff0-2a60-4075-b115-bf71b9be4e64",
+      "model": "va-carbon-teaching-1",
+      "stage": "SENT",
+      "last": "U06 条件化净重排",
+      "carbonStage": "CITRAL",
+      "dimension": 0,
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "revision": 36,
+      "fixture": true,
+      "units": {
+        "0": {
+          "liquid": {
+            "acetone": 0.1,
+            "acetylene": 0.1,
+            "hydrogen": 0.11935,
+            "hydrogen-chloride": 1.1670000000000000008,
+            "methanol": 1.485454545454545456,
+            "sodium-hydroxide": 0.242727272727272728,
+            "sodium-methoxide": 1.0912727272727272736,
+            "sulfuric-acid": 0.99,
+            "water": 0.728181818181818184
+          },
+          "gas": {},
+          "solid": {},
+          "capacityMol": 32
+        },
+        "1": {
+          "liquid": {
+            "methyl-butynol": 0.045
+          },
+          "gas": {},
+          "solid": {},
+          "capacityMol": 32
+        },
+        "10": {
+          "liquid": {
+            "citral": 0.333557935200000,
+            "dehydrolinalool": 0.222371956800000,
+            "molybdenyl-acetylacetonate": 0.01,
+            "tert-butylbenzoic-acid": 0.2,
+            "toluene": 2,
+            "triphenylphosphine-oxide": 0.2
+          },
+          "gas": {},
+          "solid": {},
+          "capacityMol": 32
+        },
+        "11": {
+          "liquid": {
+            "sodium-hydroxide": 1
+          },
+          "gas": {
+            "ammonia": 1,
+            "carbon-dioxide": 0.6634800
+          },
+          "solid": {
+            "sodium-chloride": 1.0
+          },
+          "capacityMol": 32
+        },
+        "2": {
+          "liquid": {
+            "methyl-butanol": 0.02565
+          },
+          "gas": {},
+          "solid": {},
+          "capacityMol": 32
+        },
+        "3": {
+          "liquid": {
+            "chloroacetic-acid": 0.15,
+            "methanol": 0.15,
+            "methyl-chloroacetate": 0.0170,
+            "sulfuric-acid": 0.01,
+            "water": 0.85
+          },
+          "gas": {},
+          "solid": {},
+          "capacityMol": 32
+        },
+        "4": {
+          "liquid": {
+            "methyl-chloroacetate": 8E-19
+          },
+          "gas": {},
+          "solid": {},
+          "capacityMol": 32
+        },
+        "5": {
+          "liquid": {
+            "sodium-hydroxide": 1
+          },
+          "gas": {
+            "ammonia": 1
+          },
+          "solid": {
+            "calcium-carbonate": 0.1,
+            "lead": 0.001,
+            "palladium": 0.001
+          },
+          "capacityMol": 32
+        },
+        "6": {
+          "liquid": {
+            "methanol": 1.9,
+            "methyl-acetate": 0.2
+          },
+          "gas": {},
+          "solid": {},
+          "capacityMol": 32
+        },
+        "7": {
+          "liquid": {
+            "aluminium-isopropoxide": 0.01,
+            "ethylene-carbonate": 2,
+            "methanol": 0.6634800,
+            "methyl-acetoacetate": 0.2365200,
+            "methyl-butenol": 0.1658700,
+            "methyl-heptenone": 0.033174000
+          },
+          "gas": {},
+          "solid": {},
+          "capacityMol": 32
+        },
+        "8": {
+          "liquid": {},
+          "gas": {},
+          "solid": {},
+          "capacityMol": 32
+        },
+        "9": {
+          "liquid": {
+            "acetylene": 0.43272460000,
+            "dehydrolinalool": 0.0113455080000,
+            "methyl-heptenone": 0.06303060000
+          },
+          "gas": {},
+          "solid": {},
+          "capacityMol": 32
+        }
+      },
+      "imported": {
+        "acetone": 1,
+        "acetylene": 2,
+        "aluminium-isopropoxide": 0.01,
+        "calcium-carbonate": 0.1,
+        "chloroacetic-acid": 1,
+        "ethylene-carbonate": 2,
+        "hydrogen": 1,
+        "hydrogen-chloride": 3,
+        "lead": 0.001,
+        "methanol": 4,
+        "methyl-acetate": 2,
+        "molybdenyl-acetylacetonate": 0.01,
+        "palladium": 0.001,
+        "sodium-amide": 2,
+        "sodium-hydroxide": 1,
+        "sodium-methoxide": 3,
+        "sulfuric-acid": 1,
+        "tert-butylbenzoic-acid": 0.2,
+        "toluene": 2,
+        "triphenylphosphine-oxide": 0.2,
+        "water": 5
+      },
+      "exported": {
+        "hydrogen-chloride": 0.8329999999999999992,
+        "methanol": 1.514545454545454544,
+        "methyl-chloroacetate": 0.8329999999999999992,
+        "sodium-hydroxide": 0.757272727272727272,
+        "sodium-methoxide": 0.9087272727272727264,
+        "water": 2.271818181818181816
+      },
+      "nativeFeed": {
+        "acetone": 1,
+        "acetylene": 2,
+        "chloroacetic-acid": 1,
+        "hydrogen": 1,
+        "hydrogen-chloride": 3,
+        "methanol": 4,
+        "methyl-acetate": 2,
+        "sodium-hydroxide": 1,
+        "sodium-methoxide": 3,
+        "sulfuric-acid": 1,
+        "water": 5
+      },
+      "trace": [
+        {
+          "step": 1,
+          "operation": "原生消费确认：acetone / 1 教学 mol；接收缓冲为物料账，不推断物态",
+          "amounts": {
+            "acetone": 1
+          }
+        },
+        {
+          "step": 2,
+          "operation": "原生消费确认：acetylene / 1 教学 mol；接收缓冲为物料账，不推断物态",
+          "amounts": {
+            "acetone": 1,
+            "acetylene": 1
+          }
+        },
+        {
+          "step": 3,
+          "operation": "原生消费确认：acetylene / 1 教学 mol；接收缓冲为物料账，不推断物态",
+          "amounts": {
+            "acetone": 1,
+            "acetylene": 2
+          }
+        },
+        {
+          "step": 4,
+          "operation": "原生消费确认：sodium-hydroxide / 1 教学 mol；接收缓冲为物料账，不推断物态",
+          "amounts": {
+            "acetone": 1,
+            "acetylene": 2,
+            "sodium-hydroxide": 1
+          }
+        },
+        {
+          "step": 5,
+          "operation": "原生消费确认：sodium-methoxide / 1 教学 mol；接收缓冲为物料账，不推断物态",
+          "amounts": {
+            "acetone": 1,
+            "acetylene": 2,
+            "sodium-hydroxide": 1,
+            "sodium-methoxide": 1
+          }
+        },
+        {
+          "step": 6,
+          "operation": "原生消费确认：sodium-methoxide / 1 教学 mol；接收缓冲为物料账，不推断物态",
+          "amounts": {
+            "acetone": 1,
+            "acetylene": 2,
+            "sodium-hydroxide": 1,
+            "sodium-methoxide": 2
+          }
+        },
+        {
+          "step": 7,
+          "operation": "原生消费确认：sodium-methoxide / 1 教学 mol；接收缓冲为物料账，不推断物态",
+          "amounts": {
+            "acetone": 1,
+            "acetylene": 2,
+            "sodium-hydroxide": 1,
+            "sodium-methoxide": 3
+          }
+        },
+        {
+          "step": 8,
+          "operation": "原生消费确认：hydrogen / 1 教学 mol；接收缓冲为物料账，不推断物态",
+          "amounts": {
+            "acetone": 1,
+            "acetylene": 2,
+            "hydrogen": 1,
+            "sodium-hydroxide": 1,
+            "sodium-methoxide": 3
+          }
+        },
+        {
+          "step": 9,
+          "operation": "原生消费确认：hydrogen-chloride / 1 教学 mol；接收缓冲为物料账，不推断物态",
+          "amounts": {
+            "acetone": 1,
+            "acetylene": 2,
+            "hydrogen": 1,
+            "hydrogen-chloride": 1,
+            "sodium-hydroxide": 1,
+            "sodium-methoxide": 3
+          }
+        },
+        {
+          "step": 10,
+          "operation": "原生消费确认：hydrogen-chloride / 1 教学 mol；接收缓冲为物料账，不推断物态",
+          "amounts": {
+            "acetone": 1,
+            "acetylene": 2,
+            "hydrogen": 1,
+            "hydrogen-chloride": 2,
+            "sodium-hydroxide": 1,
+            "sodium-methoxide": 3
+          }
+        },
+        {
+          "step": 11,
+          "operation": "原生消费确认：hydrogen-chloride / 1 教学 mol；接收缓冲为物料账，不推断物态",
+          "amounts": {
+            "acetone": 1,
+            "acetylene": 2,
+            "hydrogen": 1,
+            "hydrogen-chloride": 3,
+            "sodium-hydroxide": 1,
+            "sodium-methoxide": 3
+          }
+        },
+        {
+          "step": 12,
+          "operation": "原生消费确认：methanol / 1 教学 mol；接收缓冲为物料账，不推断物态",
+          "amounts": {
+            "acetone": 1,
+            "acetylene": 2,
+            "hydrogen": 1,
+            "hydrogen-chloride": 3,
+            "methanol": 1,
+            "sodium-hydroxide": 1,
+            "sodium-methoxide": 3
+          }
+        },
+        {
+          "step": 13,
+          "operation": "原生消费确认：methanol / 1 教学 mol；接收缓冲为物料账，不推断物态",
+          "amounts": {
+            "acetone": 1,
+            "acetylene": 2,
+            "hydrogen": 1,
+            "hydrogen-chloride": 3,
+            "methanol": 2,
+            "sodium-hydroxide": 1,
+            "sodium-methoxide": 3
+          }
+        },
+        {
+          "step": 14,
+          "operation": "原生消费确认：methanol / 1 教学 mol；接收缓冲为物料账，不推断物态",
+          "amounts": {
+            "acetone": 1,
+            "acetylene": 2,
+            "hydrogen": 1,
+            "hydrogen-chloride": 3,
+            "methanol": 3,
+            "sodium-hydroxide": 1,
+            "sodium-methoxide": 3
+          }
+        },
+        {
+          "step": 15,
+          "operation": "原生消费确认：methanol / 1 教学 mol；接收缓冲为物料账，不推断物态",
+          "amounts": {
+            "acetone": 1,
+            "acetylene": 2,
+            "hydrogen": 1,
+            "hydrogen-chloride": 3,
+            "methanol": 4,
+            "sodium-hydroxide": 1,
+            "sodium-methoxide": 3
+          }
+        },
+        {
+          "step": 16,
+          "operation": "原生消费确认：methyl-acetate / 1 教学 mol；接收缓冲为物料账，不推断物态",
+          "amounts": {
+            "acetone": 1,
+            "acetylene": 2,
+            "hydrogen": 1,
+            "hydrogen-chloride": 3,
+            "methanol": 4,
+            "methyl-acetate": 1,
+            "sodium-hydroxide": 1,
+            "sodium-methoxide": 3
+          }
+        },
+        {
+          "step": 17,
+          "operation": "原生消费确认：methyl-acetate / 1 教学 mol；接收缓冲为物料账，不推断物态",
+          "amounts": {
+            "acetone": 1,
+            "acetylene": 2,
+            "hydrogen": 1,
+            "hydrogen-chloride": 3,
+            "methanol": 4,
+            "methyl-acetate": 2,
+            "sodium-hydroxide": 1,
+            "sodium-methoxide": 3
+          }
+        },
+        {
+          "step": 18,
+          "operation": "原生消费确认：chloroacetic-acid / 1 教学 mol；接收缓冲为物料账，不推断物态",
+          "amounts": {
+            "acetone": 1,
+            "acetylene": 2,
+            "chloroacetic-acid": 1,
+            "hydrogen": 1,
+            "hydrogen-chloride": 3,
+            "methanol": 4,
+            "methyl-acetate": 2,
+            "sodium-hydroxide": 1,
+            "sodium-methoxide": 3
+          }
+        },
+        {
+          "step": 19,
+          "operation": "原生消费确认：sulfuric-acid / 1 教学 mol；接收缓冲为物料账，不推断物态",
+          "amounts": {
+            "acetone": 1,
+            "acetylene": 2,
+            "chloroacetic-acid": 1,
+            "hydrogen": 1,
+            "hydrogen-chloride": 3,
+            "methanol": 4,
+            "methyl-acetate": 2,
+            "sodium-hydroxide": 1,
+            "sodium-methoxide": 3,
+            "sulfuric-acid": 1
+          }
+        },
+        {
+          "step": 20,
+          "operation": "原生消费确认：water / 1 教学 mol；接收缓冲为物料账，不推断物态",
+          "amounts": {
+            "acetone": 1,
+            "acetylene": 2,
+            "chloroacetic-acid": 1,
+            "hydrogen": 1,
+            "hydrogen-chloride": 3,
+            "methanol": 4,
+            "methyl-acetate": 2,
+            "sodium-hydroxide": 1,
+            "sodium-methoxide": 3,
+            "sulfuric-acid": 1,
+            "water": 1
+          }
+        },
+        {
+          "step": 21,
+          "operation": "原生消费确认：water / 1 教学 mol；接收缓冲为物料账，不推断物态",
+          "amounts": {
+            "acetone": 1,
+            "acetylene": 2,
+            "chloroacetic-acid": 1,
+            "hydrogen": 1,
+            "hydrogen-chloride": 3,
+            "methanol": 4,
+            "methyl-acetate": 2,
+            "sodium-hydroxide": 1,
+            "sodium-methoxide": 3,
+            "sulfuric-acid": 1,
+            "water": 2
+          }
+        },
+        {
+          "step": 22,
+          "operation": "原生消费确认：water / 1 教学 mol；接收缓冲为物料账，不推断物态",
+          "amounts": {
+            "acetone": 1,
+            "acetylene": 2,
+            "chloroacetic-acid": 1,
+            "hydrogen": 1,
+            "hydrogen-chloride": 3,
+            "methanol": 4,
+            "methyl-acetate": 2,
+            "sodium-hydroxide": 1,
+            "sodium-methoxide": 3,
+            "sulfuric-acid": 1,
+            "water": 3
+          }
+        },
+        {
+          "step": 23,
+          "operation": "原生消费确认：water / 1 教学 mol；接收缓冲为物料账，不推断物态",
+          "amounts": {
+            "acetone": 1,
+            "acetylene": 2,
+            "chloroacetic-acid": 1,
+            "hydrogen": 1,
+            "hydrogen-chloride": 3,
+            "methanol": 4,
+            "methyl-acetate": 2,
+            "sodium-hydroxide": 1,
+            "sodium-methoxide": 3,
+            "sulfuric-acid": 1,
+            "water": 4
+          }
+        },
+        {
+          "step": 24,
+          "operation": "原生消费确认：water / 1 教学 mol；接收缓冲为物料账，不推断物态",
+          "amounts": {
+            "acetone": 1,
+            "acetylene": 2,
+            "chloroacetic-acid": 1,
+            "hydrogen": 1,
+            "hydrogen-chloride": 3,
+            "methanol": 4,
+            "methyl-acetate": 2,
+            "sodium-hydroxide": 1,
+            "sodium-methoxide": 3,
+            "sulfuric-acid": 1,
+            "water": 5
+          }
+        },
+        {
+          "step": 25,
+          "operation": "装载强碱与催化剂夹具",
+          "amounts": {
+            "acetone": 1,
+            "acetylene": 2,
+            "calcium-carbonate": 0.1,
+            "chloroacetic-acid": 1,
+            "hydrogen": 1,
+            "hydrogen-chloride": 3,
+            "lead": 0.001,
+            "methanol": 4,
+            "methyl-acetate": 2,
+            "palladium": 0.001,
+            "sodium-amide": 1,
+            "sodium-hydroxide": 1,
+            "sodium-methoxide": 3,
+            "sulfuric-acid": 1,
+            "water": 5
+          }
+        },
+        {
+          "step": 26,
+          "operation": "U01 乙炔化净工序",
+          "amounts": {
+            "acetone": 0.1,
+            "acetylene": 1.1,
+            "ammonia": 1,
+            "calcium-carbonate": 0.1,
+            "chloroacetic-acid": 1,
+            "hydrogen": 1,
+            "hydrogen-chloride": 3,
+            "lead": 0.001,
+            "methanol": 4,
+            "methyl-acetate": 2,
+            "methyl-butynol": 0.9,
+            "palladium": 0.001,
+            "sodium-hydroxide": 2,
+            "sodium-methoxide": 3,
+            "sulfuric-acid": 1,
+            "water": 4
+          }
+        },
+        {
+          "step": 27,
+          "operation": "U02 半加氢 / 过还原",
+          "amounts": {
+            "acetone": 0.1,
+            "acetylene": 1.1,
+            "ammonia": 1,
+            "calcium-carbonate": 0.1,
+            "chloroacetic-acid": 1,
+            "hydrogen": 0.11935,
+            "hydrogen-chloride": 3,
+            "lead": 0.001,
+            "methanol": 4,
+            "methyl-acetate": 2,
+            "methyl-butanol": 0.02565,
+            "methyl-butenol": 0.82935,
+            "methyl-butynol": 0.045,
+            "palladium": 0.001,
+            "sodium-hydroxide": 2,
+            "sodium-methoxide": 3,
+            "sulfuric-acid": 1,
+            "water": 4
+          }
+        },
+        {
+          "step": 28,
+          "operation": "A01 酯化 / 分离",
+          "amounts": {
+            "acetone": 0.1,
+            "acetylene": 1.1,
+            "ammonia": 1,
+            "calcium-carbonate": 0.1,
+            "chloroacetic-acid": 0.15,
+            "hydrogen": 0.11935,
+            "hydrogen-chloride": 3,
+            "lead": 0.001,
+            "methanol": 3.15,
+            "methyl-acetate": 2,
+            "methyl-butanol": 0.02565,
+            "methyl-butenol": 0.82935,
+            "methyl-butynol": 0.045,
+            "methyl-chloroacetate": 0.8500,
+            "palladium": 0.001,
+            "sodium-hydroxide": 2,
+            "sodium-methoxide": 3,
+            "sulfuric-acid": 1.00,
+            "water": 4.85
+          }
+        },
+        {
+          "step": 29,
+          "operation": "交接 A01 与原生辅料",
+          "amounts": {
+            "acetone": 0.1,
+            "acetylene": 1.1,
+            "ammonia": 1,
+            "calcium-carbonate": 0.1,
+            "chloroacetic-acid": 0.15,
+            "hydrogen": 0.11935,
+            "hydrogen-chloride": 2.1670000000000000008,
+            "lead": 0.001,
+            "methanol": 1.635454545454545456,
+            "methyl-acetate": 2,
+            "methyl-butanol": 0.02565,
+            "methyl-butenol": 0.82935,
+            "methyl-butynol": 0.045,
+            "methyl-chloroacetate": 0.0170000000000000008,
+            "palladium": 0.001,
+            "sodium-hydroxide": 1.242727272727272728,
+            "sodium-methoxide": 2.0912727272727272736,
+            "sulfuric-acid": 1.00,
+            "water": 2.578181818181818184
+          }
+        },
+        {
+          "step": 30,
+          "operation": "装载碳链催化包夹具",
+          "amounts": {
+            "acetone": 0.1,
+            "acetylene": 1.1,
+            "aluminium-isopropoxide": 0.01,
+            "ammonia": 1,
+            "calcium-carbonate": 0.1,
+            "chloroacetic-acid": 0.15,
+            "ethylene-carbonate": 2,
+            "hydrogen": 0.11935,
+            "hydrogen-chloride": 2.1670000000000000008,
+            "lead": 0.001,
+            "methanol": 1.635454545454545456,
+            "methyl-acetate": 2,
+            "methyl-butanol": 0.02565,
+            "methyl-butenol": 0.82935,
+            "methyl-butynol": 0.045,
+            "methyl-chloroacetate": 0.0170000000000000008,
+            "molybdenyl-acetylacetonate": 0.01,
+            "palladium": 0.001,
+            "sodium-amide": 1,
+            "sodium-hydroxide": 1.242727272727272728,
+            "sodium-methoxide": 2.0912727272727272736,
+            "sulfuric-acid": 1.00,
+            "tert-butylbenzoic-acid": 0.2,
+            "toluene": 2,
+            "triphenylphosphine-oxide": 0.2,
+            "water": 2.578181818181818184
+          }
+        },
+        {
+          "step": 31,
+          "operation": "U03 Claisen 生成盐",
+          "amounts": {
+            "acetone": 0.1,
+            "acetylene": 1.1,
+            "aluminium-isopropoxide": 0.01,
+            "ammonia": 1,
+            "calcium-carbonate": 0.1,
+            "chloroacetic-acid": 0.15,
+            "ethylene-carbonate": 2,
+            "hydrogen": 0.11935,
+            "hydrogen-chloride": 2.1670000000000000008,
+            "lead": 0.001,
+            "methanol": 3.435454545454545456,
+            "methyl-acetate": 0.2,
+            "methyl-butanol": 0.02565,
+            "methyl-butenol": 0.82935,
+            "methyl-butynol": 0.045,
+            "methyl-chloroacetate": 0.0170000000000000008,
+            "molybdenyl-acetylacetonate": 0.01,
+            "palladium": 0.001,
+            "sodium-amide": 1,
+            "sodium-hydroxide": 1.242727272727272728,
+            "sodium-methoxide": 1.1912727272727272736,
+            "sodium-methyl-acetoacetate": 0.9,
+            "sulfuric-acid": 1.00,
+            "tert-butylbenzoic-acid": 0.2,
+            "toluene": 2,
+            "triphenylphosphine-oxide": 0.2,
+            "water": 2.578181818181818184
+          }
+        },
+        {
+          "step": 32,
+          "operation": "U03 酸化 / 盐分离",
+          "amounts": {
+            "acetone": 0.1,
+            "acetylene": 1.1,
+            "aluminium-isopropoxide": 0.01,
+            "ammonia": 1,
+            "calcium-carbonate": 0.1,
+            "chloroacetic-acid": 0.15,
+            "ethylene-carbonate": 2,
+            "hydrogen": 0.11935,
+            "hydrogen-chloride": 1.1670000000000000008,
+            "lead": 0.001,
+            "methanol": 3.535454545454545456,
+            "methyl-acetate": 0.2,
+            "methyl-acetoacetate": 0.9,
+            "methyl-butanol": 0.02565,
+            "methyl-butenol": 0.82935,
+            "methyl-butynol": 0.045,
+            "methyl-chloroacetate": 0.0170000000000000008,
+            "molybdenyl-acetylacetonate": 0.01,
+            "palladium": 0.001,
+            "sodium-amide": 1,
+            "sodium-chloride": 1.0,
+            "sodium-hydroxide": 1.242727272727272728,
+            "sodium-methoxide": 1.0912727272727272736,
+            "sulfuric-acid": 1.00,
+            "tert-butylbenzoic-acid": 0.2,
+            "toluene": 2,
+            "triphenylphosphine-oxide": 0.2,
+            "water": 2.578181818181818184
+          }
+        },
+        {
+          "step": 33,
+          "operation": "U04 Carroll 净工序",
+          "amounts": {
+            "acetone": 0.1,
+            "acetylene": 1.1,
+            "aluminium-isopropoxide": 0.01,
+            "ammonia": 1,
+            "calcium-carbonate": 0.1,
+            "carbon-dioxide": 0.6634800,
+            "chloroacetic-acid": 0.15,
+            "ethylene-carbonate": 2,
+            "hydrogen": 0.11935,
+            "hydrogen-chloride": 1.1670000000000000008,
+            "lead": 0.001,
+            "methanol": 4.198934545454545456,
+            "methyl-acetate": 0.2,
+            "methyl-acetoacetate": 0.2365200,
+            "methyl-butanol": 0.02565,
+            "methyl-butenol": 0.1658700,
+            "methyl-butynol": 0.045,
+            "methyl-chloroacetate": 0.0170000000000000008,
+            "methyl-heptenone": 0.6634800,
+            "molybdenyl-acetylacetonate": 0.01,
+            "palladium": 0.001,
+            "sodium-amide": 1,
+            "sodium-chloride": 1.0,
+            "sodium-hydroxide": 1.242727272727272728,
+            "sodium-methoxide": 1.0912727272727272736,
+            "sulfuric-acid": 1.00,
+            "tert-butylbenzoic-acid": 0.2,
+            "toluene": 2,
+            "triphenylphosphine-oxide": 0.2,
+            "water": 2.578181818181818184
+          }
+        },
+        {
+          "step": 34,
+          "operation": "C8 理想分配",
+          "amounts": {
+            "acetone": 0.1,
+            "acetylene": 1.1,
+            "aluminium-isopropoxide": 0.01,
+            "ammonia": 1,
+            "calcium-carbonate": 0.1,
+            "carbon-dioxide": 0.6634800,
+            "chloroacetic-acid": 0.15,
+            "ethylene-carbonate": 2,
+            "hydrogen": 0.11935,
+            "hydrogen-chloride": 1.1670000000000000008,
+            "lead": 0.001,
+            "methanol": 4.198934545454545456,
+            "methyl-acetate": 0.2,
+            "methyl-acetoacetate": 0.2365200,
+            "methyl-butanol": 0.02565,
+            "methyl-butenol": 0.1658700,
+            "methyl-butynol": 0.045,
+            "methyl-chloroacetate": 0.0170000000000000008,
+            "methyl-heptenone": 0.663480000,
+            "molybdenyl-acetylacetonate": 0.01,
+            "palladium": 0.001,
+            "sodium-amide": 1,
+            "sodium-chloride": 1.0,
+            "sodium-hydroxide": 1.242727272727272728,
+            "sodium-methoxide": 1.0912727272727272736,
+            "sulfuric-acid": 1.00,
+            "tert-butylbenzoic-acid": 0.2,
+            "toluene": 2,
+            "triphenylphosphine-oxide": 0.2,
+            "water": 2.578181818181818184
+          }
+        },
+        {
+          "step": 35,
+          "operation": "U05 乙炔化 / 后处理",
+          "amounts": {
+            "acetone": 0.1,
+            "acetylene": 0.53272460000,
+            "aluminium-isopropoxide": 0.01,
+            "ammonia": 2,
+            "calcium-carbonate": 0.1,
+            "carbon-dioxide": 0.6634800,
+            "chloroacetic-acid": 0.15,
+            "dehydrolinalool": 0.5672754000000,
+            "ethylene-carbonate": 2,
+            "hydrogen": 0.11935,
+            "hydrogen-chloride": 1.1670000000000000008,
+            "lead": 0.001,
+            "methanol": 4.198934545454545456,
+            "methyl-acetate": 0.2,
+            "methyl-acetoacetate": 0.2365200,
+            "methyl-butanol": 0.02565,
+            "methyl-butenol": 0.1658700,
+            "methyl-butynol": 0.045,
+            "methyl-chloroacetate": 0.0170000000000000008,
+            "methyl-heptenone": 0.09620460000,
+            "molybdenyl-acetylacetonate": 0.01,
+            "palladium": 0.001,
+            "sodium-chloride": 1.0,
+            "sodium-hydroxide": 2.242727272727272728,
+            "sodium-methoxide": 1.0912727272727272736,
+            "sulfuric-acid": 1.00,
+            "tert-butylbenzoic-acid": 0.2,
+            "toluene": 2,
+            "triphenylphosphine-oxide": 0.2,
+            "water": 1.578181818181818184
+          }
+        },
+        {
+          "step": 36,
+          "operation": "U06 条件化净重排",
+          "amounts": {
+            "acetone": 0.1,
+            "acetylene": 0.53272460000,
+            "aluminium-isopropoxide": 0.01,
+            "ammonia": 2,
+            "calcium-carbonate": 0.1,
+            "carbon-dioxide": 0.6634800,
+            "chloroacetic-acid": 0.15,
+            "citral": 0.333557935200000,
+            "dehydrolinalool": 0.233717464800000,
+            "ethylene-carbonate": 2,
+            "hydrogen": 0.11935,
+            "hydrogen-chloride": 1.1670000000000000008,
+            "lead": 0.001,
+            "methanol": 4.198934545454545456,
+            "methyl-acetate": 0.2,
+            "methyl-acetoacetate": 0.2365200,
+            "methyl-butanol": 0.02565,
+            "methyl-butenol": 0.1658700,
+            "methyl-butynol": 0.045,
+            "methyl-chloroacetate": 0.0170000000000000008,
+            "methyl-heptenone": 0.09620460000,
+            "molybdenyl-acetylacetonate": 0.01,
+            "palladium": 0.001,
+            "sodium-chloride": 1.0,
+            "sodium-hydroxide": 2.242727272727272728,
+            "sodium-methoxide": 1.0912727272727272736,
+            "sulfuric-acid": 1.00,
+            "tert-butylbenzoic-acid": 0.2,
+            "toluene": 2,
+            "triphenylphosphine-oxide": 0.2,
+            "water": 1.578181818181818184
+          }
+        }
+      ],
+      "history": [
+        "原生消费确认：acetone / 1 教学 mol；接收缓冲为物料账，不推断物态",
+        "原生消费确认：acetylene / 1 教学 mol；接收缓冲为物料账，不推断物态",
+        "原生消费确认：acetylene / 1 教学 mol；接收缓冲为物料账，不推断物态",
+        "原生消费确认：sodium-hydroxide / 1 教学 mol；接收缓冲为物料账，不推断物态",
+        "原生消费确认：sodium-methoxide / 1 教学 mol；接收缓冲为物料账，不推断物态",
+        "原生消费确认：sodium-methoxide / 1 教学 mol；接收缓冲为物料账，不推断物态",
+        "原生消费确认：sodium-methoxide / 1 教学 mol；接收缓冲为物料账，不推断物态",
+        "原生消费确认：hydrogen / 1 教学 mol；接收缓冲为物料账，不推断物态",
+        "原生消费确认：hydrogen-chloride / 1 教学 mol；接收缓冲为物料账，不推断物态",
+        "原生消费确认：hydrogen-chloride / 1 教学 mol；接收缓冲为物料账，不推断物态",
+        "原生消费确认：hydrogen-chloride / 1 教学 mol；接收缓冲为物料账，不推断物态",
+        "原生消费确认：methanol / 1 教学 mol；接收缓冲为物料账，不推断物态",
+        "原生消费确认：methanol / 1 教学 mol；接收缓冲为物料账，不推断物态",
+        "原生消费确认：methanol / 1 教学 mol；接收缓冲为物料账，不推断物态",
+        "原生消费确认：methanol / 1 教学 mol；接收缓冲为物料账，不推断物态",
+        "原生消费确认：methyl-acetate / 1 教学 mol；接收缓冲为物料账，不推断物态",
+        "原生消费确认：methyl-acetate / 1 教学 mol；接收缓冲为物料账，不推断物态",
+        "原生消费确认：chloroacetic-acid / 1 教学 mol；接收缓冲为物料账，不推断物态",
+        "原生消费确认：sulfuric-acid / 1 教学 mol；接收缓冲为物料账，不推断物态",
+        "原生消费确认：water / 1 教学 mol；接收缓冲为物料账，不推断物态",
+        "原生消费确认：water / 1 教学 mol；接收缓冲为物料账，不推断物态",
+        "原生消费确认：water / 1 教学 mol；接收缓冲为物料账，不推断物态",
+        "原生消费确认：water / 1 教学 mol；接收缓冲为物料账，不推断物态",
+        "原生消费确认：water / 1 教学 mol；接收缓冲为物料账，不推断物态",
+        "装载强碱与催化剂夹具",
+        "U01 乙炔化净工序",
+        "U02 半加氢 / 过还原",
+        "A01 酯化 / 分离",
+        "交接 A01 与原生辅料",
+        "装载碳链催化包夹具",
+        "U03 Claisen 生成盐",
+        "U03 酸化 / 盐分离",
+        "U04 Carroll 净工序",
+        "C8 理想分配",
+        "U05 乙炔化 / 后处理",
+        "U06 条件化净重排"
+      ]
+    }
+  },
+  "upstreamIngress": {
+    "005f134a-1543-4347-a379-3fde7e0f305c": {
+      "id": "005f134a-1543-4347-a379-3fde7e0f305c",
+      "line": "17537eb5-a9fa-4b2f-ade0-89366fa7f50f",
+      "owner": "8cc708e6-ec92-4051-8466-417bea99aac1",
+      "fluid": "hydrogenchloride",
+      "species": "hydrogen-chloride",
+      "beforeHash": "9d2a19609b8667f5e270ce9846169ec2a9c121e74a60697537fe5fb7e9ab31bb",
+      "marker": "30b78e33b5826d3b6a612c8852c9fa5caddb1c2359890a77d21270e50d735c87",
+      "phase": "CREDITED",
+      "slot": 0,
+      "mb": 1000
+    },
+    "03c9af6a-cd97-4cfa-8a1b-8ae791408736": {
+      "id": "03c9af6a-cd97-4cfa-8a1b-8ae791408736",
+      "line": "17537eb5-a9fa-4b2f-ade0-89366fa7f50f",
+      "owner": "8cc708e6-ec92-4051-8466-417bea99aac1",
+      "fluid": "water",
+      "species": "water",
+      "beforeHash": "0f4168490e38b8447e11ba4bd656aa11b925bd22af30bac464bc153fdb608501",
+      "marker": "0b5e88cab03d3e67d9d8b604b30671111820dc010c3b14ec771f5813fb8fb847",
+      "phase": "CREDITED",
+      "slot": 0,
+      "mb": 1000
+    },
+    "0912c90c-97bd-4c1c-b4aa-d6bb63abd9ef": {
+      "id": "0912c90c-97bd-4c1c-b4aa-d6bb63abd9ef",
+      "line": "17537eb5-a9fa-4b2f-ade0-89366fa7f50f",
+      "owner": "8cc708e6-ec92-4051-8466-417bea99aac1",
+      "fluid": "water",
+      "species": "water",
+      "beforeHash": "0f4168490e38b8447e11ba4bd656aa11b925bd22af30bac464bc153fdb608501",
+      "marker": "f90c5012fc6a08c22bd0c2cb31683410a567048b90e5b7ce2eb34159f5b0d407",
+      "phase": "CREDITED",
+      "slot": 0,
+      "mb": 1000
+    },
+    "0df218cb-7f25-44c8-b510-b19f2176d599": {
+      "id": "0df218cb-7f25-44c8-b510-b19f2176d599",
+      "line": "17537eb5-a9fa-4b2f-ade0-89366fa7f50f",
+      "owner": "8cc708e6-ec92-4051-8466-417bea99aac1",
+      "fluid": "dustSodiumHydroxide",
+      "species": "sodium-hydroxide",
+      "beforeHash": "c78e61c780ebec7692acf42cc4d6f2ef627896b2b5946dca7001786324cd06d2",
+      "marker": "80528be6b49cc67ff7f8f74b17401da26c98ad4a009133bb20f5987c8058b8d4",
+      "phase": "CREDITED",
+      "slot": 0,
+      "mb": 1000
+    },
+    "1646fb5f-60a3-4cad-9891-442b66bb333d": {
+      "id": "1646fb5f-60a3-4cad-9891-442b66bb333d",
+      "line": "17537eb5-a9fa-4b2f-ade0-89366fa7f50f",
+      "owner": "8cc708e6-ec92-4051-8466-417bea99aac1",
+      "fluid": "dustSodiumMethoxide",
+      "species": "sodium-methoxide",
+      "beforeHash": "3bc69f8ed8219fe5fac32429b75eff9e4430fc3e28fa3b56263ccc23e3768de4",
+      "marker": "b411f31e152481b0ae943c5b0b5aacd0650a673c9ad8bdcfd9503dbe051a42e5",
+      "phase": "CREDITED",
+      "slot": 0,
+      "mb": 1000
+    },
+    "44b75236-30b5-49bf-b829-c2a5604590a3": {
+      "id": "44b75236-30b5-49bf-b829-c2a5604590a3",
+      "line": "17537eb5-a9fa-4b2f-ade0-89366fa7f50f",
+      "owner": "8cc708e6-ec92-4051-8466-417bea99aac1",
+      "fluid": "water",
+      "species": "water",
+      "beforeHash": "0f4168490e38b8447e11ba4bd656aa11b925bd22af30bac464bc153fdb608501",
+      "marker": "7e30707a7a76cefec145cbf3d914cb08945b8e79e46949bdfa42a26c1dd0c585",
+      "phase": "CREDITED",
+      "slot": 0,
+      "mb": 1000
+    },
+    "4ae1b1c8-ce24-4919-be39-1798ae7a5ff9": {
+      "id": "4ae1b1c8-ce24-4919-be39-1798ae7a5ff9",
+      "line": "17537eb5-a9fa-4b2f-ade0-89366fa7f50f",
+      "owner": "8cc708e6-ec92-4051-8466-417bea99aac1",
+      "fluid": "methanol",
+      "species": "methanol",
+      "beforeHash": "fe8001858c58a8f784e2c1d8ef89bd2f31fc22152df72923a8307fdd84c7bb4d",
+      "marker": "0dc30c1ef49d0167ccbd96774abe57b9085be6db66d0e45918356bb38d66c935",
+      "phase": "CREDITED",
+      "slot": 0,
+      "mb": 1000
+    },
+    "4e55335e-6d07-4674-a5d5-b8633a866236": {
+      "id": "4e55335e-6d07-4674-a5d5-b8633a866236",
+      "line": "17537eb5-a9fa-4b2f-ade0-89366fa7f50f",
+      "owner": "8cc708e6-ec92-4051-8466-417bea99aac1",
+      "fluid": "methanol",
+      "species": "methanol",
+      "beforeHash": "fe8001858c58a8f784e2c1d8ef89bd2f31fc22152df72923a8307fdd84c7bb4d",
+      "marker": "bce68f795331068724404bd0745f346d2cc3724ac66a5d1f27e723921df78280",
+      "phase": "CREDITED",
+      "slot": 0,
+      "mb": 1000
+    },
+    "648d3e7f-1a6e-42de-89a2-3de598f3e04e": {
+      "id": "648d3e7f-1a6e-42de-89a2-3de598f3e04e",
+      "line": "17537eb5-a9fa-4b2f-ade0-89366fa7f50f",
+      "owner": "8cc708e6-ec92-4051-8466-417bea99aac1",
+      "fluid": "methylacetate",
+      "species": "methyl-acetate",
+      "beforeHash": "795a00c667bff39f62c87eb6ad78f69feb4877c6ec838d5d9ab287f5d0eadb6f",
+      "marker": "881ef7c674619d664bc5742c882ba6af5db1813be8d21dc1ef59fe133043c617",
+      "phase": "CREDITED",
+      "slot": 0,
+      "mb": 1000
+    },
+    "7098c652-de45-46d8-9121-08d13f8d1c22": {
+      "id": "7098c652-de45-46d8-9121-08d13f8d1c22",
+      "line": "17537eb5-a9fa-4b2f-ade0-89366fa7f50f",
+      "owner": "8cc708e6-ec92-4051-8466-417bea99aac1",
+      "fluid": "water",
+      "species": "water",
+      "beforeHash": "0f4168490e38b8447e11ba4bd656aa11b925bd22af30bac464bc153fdb608501",
+      "marker": "59c576083e573877ae5243d178fadccba3ec4d941f3e7a67bd14480bedc62230",
+      "phase": "CREDITED",
+      "slot": 0,
+      "mb": 1000
+    },
+    "70cced07-ecdd-49d8-9414-536385b74bbc": {
+      "id": "70cced07-ecdd-49d8-9414-536385b74bbc",
+      "line": "17537eb5-a9fa-4b2f-ade0-89366fa7f50f",
+      "owner": "8cc708e6-ec92-4051-8466-417bea99aac1",
+      "fluid": "hydrogenchloride",
+      "species": "hydrogen-chloride",
+      "beforeHash": "9d2a19609b8667f5e270ce9846169ec2a9c121e74a60697537fe5fb7e9ab31bb",
+      "marker": "bdc8e376fe163e61aa461bc11668b6c3e7ed34e1934594f345aa77f1469b230b",
+      "phase": "CREDITED",
+      "slot": 0,
+      "mb": 1000
+    },
+    "71e39e15-aef6-46f4-bda3-443382e8b717": {
+      "id": "71e39e15-aef6-46f4-bda3-443382e8b717",
+      "line": "17537eb5-a9fa-4b2f-ade0-89366fa7f50f",
+      "owner": "8cc708e6-ec92-4051-8466-417bea99aac1",
+      "fluid": "acetylene",
+      "species": "acetylene",
+      "beforeHash": "d7af02c9c4ab0470918f328e7fc1df123ccc514f310621361cfae23809b5c353",
+      "marker": "42db0d429044f27596abf87d36ea215e09177c5c442235a0bf6e5e7b5edf4b01",
+      "phase": "CREDITED",
+      "slot": 0,
+      "mb": 1000
+    },
+    "7a5d5a7b-ad5e-46fa-a91f-158fb8a73a37": {
+      "id": "7a5d5a7b-ad5e-46fa-a91f-158fb8a73a37",
+      "line": "17537eb5-a9fa-4b2f-ade0-89366fa7f50f",
+      "owner": "8cc708e6-ec92-4051-8466-417bea99aac1",
+      "fluid": "water",
+      "species": "water",
+      "beforeHash": "0f4168490e38b8447e11ba4bd656aa11b925bd22af30bac464bc153fdb608501",
+      "marker": "5de194d79adc7333c26fc617a5c9006e246ae6b18e6634042ba16159ab18207c",
+      "phase": "CREDITED",
+      "slot": 0,
+      "mb": 1000
+    },
+    "86dec845-cf2a-429b-b629-ad2b50fb8908": {
+      "id": "86dec845-cf2a-429b-b629-ad2b50fb8908",
+      "line": "17537eb5-a9fa-4b2f-ade0-89366fa7f50f",
+      "owner": "8cc708e6-ec92-4051-8466-417bea99aac1",
+      "fluid": "hydrogenchloride",
+      "species": "hydrogen-chloride",
+      "beforeHash": "9d2a19609b8667f5e270ce9846169ec2a9c121e74a60697537fe5fb7e9ab31bb",
+      "marker": "f3f1ec19d6ecf1357dfa55af6a66c19736e84413cc58e38f24ed66e445471784",
+      "phase": "CREDITED",
+      "slot": 0,
+      "mb": 1000
+    },
+    "86e1258d-693b-46c3-9367-b9e49685b435": {
+      "id": "86e1258d-693b-46c3-9367-b9e49685b435",
+      "line": "17537eb5-a9fa-4b2f-ade0-89366fa7f50f",
+      "owner": "8cc708e6-ec92-4051-8466-417bea99aac1",
+      "fluid": "acetone",
+      "species": "acetone",
+      "beforeHash": "6910dd86e5e374cc56296e0d3d8081a32a24e22312093bf1e159542ba58b088a",
+      "marker": "fd9dd431c2860e5e6ae7e8bf3722c870e0d01fd7623320cbcea7499bbb207580",
+      "phase": "CREDITED",
+      "slot": 0,
+      "mb": 1000
+    },
+    "89beaa59-26a6-480e-9f1f-19c664f36918": {
+      "id": "89beaa59-26a6-480e-9f1f-19c664f36918",
+      "line": "17537eb5-a9fa-4b2f-ade0-89366fa7f50f",
+      "owner": "8cc708e6-ec92-4051-8466-417bea99aac1",
+      "fluid": "sulfuricacid",
+      "species": "sulfuric-acid",
+      "beforeHash": "73c35623beaf55d638ea6d7058239fd4be024d956fe538e6558105a8c2443a9c",
+      "marker": "78e9531de3bf9b27b957c32b57ebcb56c4270edd5c3442d13f59da72b64cd843",
+      "phase": "CREDITED",
+      "slot": 0,
+      "mb": 1000
+    },
+    "8be21d39-3d62-4922-9199-2507bcf20fa3": {
+      "id": "8be21d39-3d62-4922-9199-2507bcf20fa3",
+      "line": "17537eb5-a9fa-4b2f-ade0-89366fa7f50f",
+      "owner": "8cc708e6-ec92-4051-8466-417bea99aac1",
+      "fluid": "methylacetate",
+      "species": "methyl-acetate",
+      "beforeHash": "795a00c667bff39f62c87eb6ad78f69feb4877c6ec838d5d9ab287f5d0eadb6f",
+      "marker": "0afc3501ab2266657c5ff028aabd838983fe550b34ad10de0bb320c67385bc0f",
+      "phase": "CREDITED",
+      "slot": 0,
+      "mb": 1000
+    },
+    "8c205d53-f76e-43a7-9e26-46b01703a631": {
+      "id": "8c205d53-f76e-43a7-9e26-46b01703a631",
+      "line": "17537eb5-a9fa-4b2f-ade0-89366fa7f50f",
+      "owner": "8cc708e6-ec92-4051-8466-417bea99aac1",
+      "fluid": "dustSodiumMethoxide",
+      "species": "sodium-methoxide",
+      "beforeHash": "3bc69f8ed8219fe5fac32429b75eff9e4430fc3e28fa3b56263ccc23e3768de4",
+      "marker": "7fd5d7e068d522c0993e51a702e28d481cbb324ea547729b9a050c36d4099d3b",
+      "phase": "CREDITED",
+      "slot": 0,
+      "mb": 1000
+    },
+    "8f6e23d6-499d-477d-a5cc-634f9a786a2c": {
+      "id": "8f6e23d6-499d-477d-a5cc-634f9a786a2c",
+      "line": "17537eb5-a9fa-4b2f-ade0-89366fa7f50f",
+      "owner": "8cc708e6-ec92-4051-8466-417bea99aac1",
+      "fluid": "acetylene",
+      "species": "acetylene",
+      "beforeHash": "d7af02c9c4ab0470918f328e7fc1df123ccc514f310621361cfae23809b5c353",
+      "marker": "558c68684be736795378e1a98d05461c6f2b421b3f602c2ed91adb118d313f25",
+      "phase": "CREDITED",
+      "slot": 0,
+      "mb": 1000
+    },
+    "95ca8e2e-94d3-4166-810b-f963aaef7b61": {
+      "id": "95ca8e2e-94d3-4166-810b-f963aaef7b61",
+      "line": "17537eb5-a9fa-4b2f-ade0-89366fa7f50f",
+      "owner": "8cc708e6-ec92-4051-8466-417bea99aac1",
+      "fluid": "molten.chloroaceticacid",
+      "species": "chloroacetic-acid",
+      "beforeHash": "68b21289d0029aae5a65436e377e1edb3abad41b8f559a2639ab5bc22e3a56aa",
+      "marker": "eaba6a3fea8677fe8f4f97dacc69bc295a3148bf116fb5db591e85e14f10535e",
+      "phase": "CREDITED",
+      "slot": 0,
+      "mb": 1000
+    },
+    "960d52df-ef05-417f-95d7-fbb052b30159": {
+      "id": "960d52df-ef05-417f-95d7-fbb052b30159",
+      "line": "17537eb5-a9fa-4b2f-ade0-89366fa7f50f",
+      "owner": "8cc708e6-ec92-4051-8466-417bea99aac1",
+      "fluid": "dustSodiumMethoxide",
+      "species": "sodium-methoxide",
+      "beforeHash": "3bc69f8ed8219fe5fac32429b75eff9e4430fc3e28fa3b56263ccc23e3768de4",
+      "marker": "dbed6471642f413d2a47c2ff15ef547c5958cc971bd7f679219d71a0c8a9cac1",
+      "phase": "CREDITED",
+      "slot": 0,
+      "mb": 1000
+    },
+    "9ef7e329-0117-41b5-8f43-74a8c6924765": {
+      "id": "9ef7e329-0117-41b5-8f43-74a8c6924765",
+      "line": "17537eb5-a9fa-4b2f-ade0-89366fa7f50f",
+      "owner": "8cc708e6-ec92-4051-8466-417bea99aac1",
+      "fluid": "hydrogen",
+      "species": "hydrogen",
+      "beforeHash": "e7f90b0310363d697e83711832881d3aabd37e3e8c25efe3883ed8de0c4c29fb",
+      "marker": "870cef8d0dc2537e504158ed5272fac403d50bf8f66f888b4dd3c3ec4594d33f",
+      "phase": "CREDITED",
+      "slot": 0,
+      "mb": 1000
+    },
+    "a5f7ba59-a027-4811-a723-5c18b2e2eee9": {
+      "id": "a5f7ba59-a027-4811-a723-5c18b2e2eee9",
+      "line": "17537eb5-a9fa-4b2f-ade0-89366fa7f50f",
+      "owner": "8cc708e6-ec92-4051-8466-417bea99aac1",
+      "fluid": "methanol",
+      "species": "methanol",
+      "beforeHash": "fe8001858c58a8f784e2c1d8ef89bd2f31fc22152df72923a8307fdd84c7bb4d",
+      "marker": "0f8eafea639901d47554ad16a69067dd5882dcf20ab30b12399bf8b9c1d49fa1",
+      "phase": "CREDITED",
+      "slot": 0,
+      "mb": 1000
+    },
+    "ffc42405-83e7-4352-848e-a5905c117c04": {
+      "id": "ffc42405-83e7-4352-848e-a5905c117c04",
+      "line": "17537eb5-a9fa-4b2f-ade0-89366fa7f50f",
+      "owner": "8cc708e6-ec92-4051-8466-417bea99aac1",
+      "fluid": "methanol",
+      "species": "methanol",
+      "beforeHash": "fe8001858c58a8f784e2c1d8ef89bd2f31fc22152df72923a8307fdd84c7bb4d",
+      "marker": "304a6bc09d7e29f749405571166f0bc3912ceaa73832be1df98b866337afbfb8",
+      "phase": "CREDITED",
+      "slot": 0,
+      "mb": 1000
+    }
+  },
+  "archives": {},
+  "batches": {},
+  "lines": {
+    "0756fff2-ae6c-4d34-9453-458b1549b0ff": {
+      "id": "0756fff2-ae6c-4d34-9453-458b1549b0ff",
+      "owner": "8cc708e6-ec92-4051-8466-417bea99aac1",
+      "stage": "SEPARATED",
+      "model": "va-acetylation-teaching-1",
+      "last": "乙酰化中间料已交接，显热进入下游冷却边界",
+      "uncertainty": "",
+      "dimension": 0,
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "speed": 300,
+      "revision": 5,
+      "fixture": true,
+      "auto": false,
+      "seconds": 3600.0,
+      "volumeLiters": 10.0,
+      "units": {
+        "0": {
+          "liquid": {
+            "acetic-anhydride": 0.0024847162525128679240459500000000,
+            "hydroxenin": 0.001911320194240667633881500000000,
+            "p-xylene": 0.019113201942406676338815000000000,
+            "pyridine": 0.0015290561553925341071052000000000
+          },
+          "solid": {},
+          "capacityMol": 32,
+          "energyJ": 0.000,
+          "port": "OC_MATERIAL_LIQUID_SOLID",
+          "pressureModel": "open-isobaric-teaching",
+          "revision": 1,
+          "pressurePa": 101325.0
+        },
+        "1": {
+          "liquid": {
+            "acetic-acid": 0.0021517603161551265,
+            "acetic-anhydride": 0.0003205323550951770844257202500000000,
+            "hydroxenin": 0.000118719455772963295712092500000000,
+            "hydroxenin-diacetate": 0.0003687161786586255,
+            "hydroxenin-monoacetate": 0.0014143279588378755,
+            "p-xylene": 0.019017635932694642957120925000000000,
+            "pyridine": 0.0015214108746155714365696740000000000
+          },
+          "solid": {},
+          "capacityMol": 32,
+          "energyJ": 24.165709979675082805613559397500000000000,
+          "port": "OC_MATERIAL_LIQUID_SOLID",
+          "pressureModel": "open-isobaric-teaching",
+          "revision": 15,
+          "pressurePa": 101325.0
+        },
+        "2": {
+          "liquid": {
+            "acetic-acid": 0.008564006058297403470,
+            "acetic-anhydride": 0.001275718773278804796014366595000000000,
+            "hydroxenin": 0.00047250343397639391693412815000000000,
+            "hydroxenin-diacetate": 0.001467490391061329490,
+            "hydroxenin-monoacetate": 0.005629025276174744490,
+            "p-xylene": 0.07569019101212467896934128150000000000,
+            "pyridine": 0.006055215280969974317547302520000000000
+          },
+          "solid": {},
+          "capacityMol": 32,
+          "energyJ": 96.179525719106829566341966102500000000000,
+          "port": "OC_MATERIAL_LIQUID_SOLID",
+          "pressureModel": "open-isobaric-teaching",
+          "revision": 2,
+          "pressurePa": 101325.0
+        },
+        "3": {
+          "liquid": {
+            "acetic-acid": 0.00205621785459720657314700,
+            "acetic-anhydride": 0.00030942558845877410327328461761725000000000,
+            "hydroxenin": 0.000104187007191794858683975257075000000000,
+            "hydroxenin-diacetate": 0.00033077233414522366704600,
+            "hydroxenin-monoacetate": 0.00011032889541302499200400,
+            "p-xylene": 0.0183586558299908408840137278278250000000000,
+            "pyridine": 0.00145385718896089083364310733505200000000000
+          },
+          "solid": {},
+          "capacityMol": 32,
+          "energyJ": 22.041741357795023234456762190,
+          "port": "OC_MATERIAL_LIQUID_SOLID",
+          "pressureModel": "open-isobaric-teaching",
+          "revision": 3,
+          "pressurePa": 101325.0
+        },
+        "4": {
+          "liquid": {},
+          "solid": {},
+          "capacityMol": 32,
+          "energyJ": 0,
+          "port": "OC_MATERIAL_LIQUID_SOLID",
+          "pressureModel": "open-isobaric-teaching",
+          "revision": 2,
+          "pressurePa": 101325.0
+        },
+        "5": {
+          "liquid": {
+            "acetic-acid": 0.40918735306484410805625300,
+            "acetic-anhydride": 0.06157569210329604655138363890583275000000000,
+            "hydroxenin": 0.020733214431167176878111076157925000000000,
+            "hydroxenin-diacetate": 0.06582369449489950974215400,
+            "hydroxenin-monoacetate": 0.02195545018719197340879600,
+            "p-xylene": 3.6533725101681773359187318377371750000000000,
+            "pyridine": 0.28931758060321727589497835967534800000000000
+          },
+          "solid": {},
+          "capacityMol": 32,
+          "energyJ": 4386.306530201209623656895675810,
+          "port": "OC_MATERIAL_LIQUID_SOLID",
+          "pressureModel": "open-isobaric-teaching",
+          "revision": 1,
+          "pressurePa": 101325.0
+        }
+      },
+      "samples": {},
+      "imported": {
+        "acetic-anhydride": 0.4969432505025735848091900000000,
+        "hydroxenin": 0.382264038848133526776300000000,
+        "p-xylene": 3.822640388481335267763000000000,
+        "pyridine": 0.3058112310785068214210400000000
+      },
+      "exported": {
+        "acetic-acid": 0.00839272593713145540060,
+        "acetic-anhydride": 0.00062510219890661435004703963155000000000,
+        "hydroxenin": 0.002315266826484330192977227935000000000,
+        "hydroxenin-diacetate": 0.00575256233296041160080,
+        "hydroxenin-monoacetate": 0.25375645944995748160920,
+        "p-xylene": 0.0370881935959410926949772279350000000000,
+        "pyridine": 0.00593411097535057483119635646960000000000
+      },
+      "exportedEnergyJ": 304.448488677230001859403916,
+      "utilityJ": 4833.141995935016561122711879500000000000,
+      "reactionReleaseJ": 5164.2247587723036000,
+      "heatRemovedJ": 5164.2247587723036000,
+      "extent1": 0.3566088274993002,
+      "extent2": 0.0737432357317251,
+      "trace": [
+        {
+          "t": 0.0,
+          "h": 0.38035271865389286,
+          "mono": 0.0,
+          "di": 0.0,
+          "anhydride": 0.4944585342500607,
+          "acid": 0.0,
+          "temperature": 303.0,
+          "heatRemovedJ": 0.0
+        },
+        {
+          "t": 60.0,
+          "h": 0.3304955432129962,
+          "mono": 0.0494294576770889,
+          "di": 4.277177638078E-4,
+          "anhydride": 0.4441736410453562,
+          "acid": 0.0502848932047045,
+          "temperature": 303.0,
+          "heatRemovedJ": 603.418718456454
+        },
+        {
+          "t": 120.0,
+          "h": 0.2910856250342931,
+          "mono": 0.0877868931014851,
+          "di": 0.0014802005181147,
+          "anhydride": 0.4037112401123462,
+          "acid": 0.0907472941377145,
+          "temperature": 303.0,
+          "heatRemovedJ": 1088.967529652574
+        },
+        {
+          "t": 180.0,
+          "h": 0.25921401325564997,
+          "mono": 0.1182203702501962,
+          "di": 0.0029183351480467,
+          "anhydride": 0.3704014937037711,
+          "acid": 0.1240570405462896,
+          "temperature": 303.0,
+          "heatRemovedJ": 1488.6844865554751
+        },
+        {
+          "t": 240.0,
+          "h": 0.23295399491061397,
+          "mono": 0.1428042069536332,
+          "di": 0.0045945167896457,
+          "anhydride": 0.34246529371713613,
+          "acid": 0.1519932405329246,
+          "temperature": 303.0,
+          "heatRemovedJ": 1823.9188863950951
+        },
+        {
+          "t": 300.0,
+          "h": 0.21097967722600236,
+          "mono": 0.1629584477787376,
+          "di": 0.0064145936491529,
+          "anhydride": 0.31867089917301733,
+          "acid": 0.1757876350770434,
+          "temperature": 303.0,
+          "heatRemovedJ": 2109.4516209245207
+        },
+        {
+          "t": 360.0,
+          "h": 0.19234931120435245,
+          "mono": 0.1796864244997606,
+          "di": 0.0083169829497798,
+          "anhydride": 0.2981381438507405,
+          "acid": 0.1963203903993202,
+          "temperature": 303.0,
+          "heatRemovedJ": 2355.8446847918426
+        },
+        {
+          "t": 420.0,
+          "h": 0.17637596440392975,
+          "mono": 0.1937161125788379,
+          "di": 0.0102606416711252,
+          "anhydride": 0.28022113832897244,
+          "acid": 0.2142373959210883,
+          "temperature": 303.0,
+          "heatRemovedJ": 2570.8487510530595
+        },
+        {
+          "t": 480.0,
+          "h": 0.16254707430564785,
+          "mono": 0.2055877905426683,
+          "di": 0.0122178538055767,
+          "anhydride": 0.26443503609623903,
+          "acid": 0.2300234981538217,
+          "temperature": 303.0,
+          "heatRemovedJ": 2760.28197784586
+        },
+        {
+          "t": 540.0,
+          "h": 0.15047262165721895,
+          "mono": 0.2157103399460375,
+          "di": 0.0141697570506364,
+          "anhydride": 0.2504086802027504,
+          "acid": 0.2440498540473103,
+          "temperature": 303.0,
+          "heatRemovedJ": 2928.5982485677237
+        },
+        {
+          "t": 600.0,
+          "h": 0.13985071981974415,
+          "mono": 0.2243985111797073,
+          "di": 0.0161034876544414,
+          "anhydride": 0.23785304776147062,
+          "acid": 0.2566054864885901,
+          "temperature": 303.0,
+          "heatRemovedJ": 3079.2658378630813
+        },
+        {
+          "t": 660.0,
+          "h": 0.13044416072641177,
+          "mono": 0.2318982453011728,
+          "di": 0.0180103126263083,
+          "anhydride": 0.22653966369627132,
+          "acid": 0.2679188705537894,
+          "temperature": 303.0,
+          "heatRemovedJ": 3215.026446645473
+        },
+        {
+          "t": 720.0,
+          "h": 0.12206405668503846,
+          "mono": 0.2384042803617669,
+          "di": 0.0198843816070875,
+          "anhydride": 0.2162854906741188,
+          "acid": 0.2781730435759419,
+          "temperature": 303.0,
+          "heatRemovedJ": 3338.0765229113026
+        },
+        {
+          "t": 780.0,
+          "h": 0.11455819652078315,
+          "mono": 0.2440726448269856,
+          "di": 0.0217218773061241,
+          "anhydride": 0.2069421348108269,
+          "acid": 0.2875163994392338,
+          "temperature": 303.0,
+          "heatRemovedJ": 3450.1967932708058
+        },
+        {
+          "t": 840.0,
+          "h": 0.10780260559263526,
+          "mono": 0.2490296851645796,
+          "di": 0.023520427896678,
+          "anhydride": 0.19838799329212511,
+          "acid": 0.2960705409579356,
+          "temperature": 303.0,
+          "heatRemovedJ": 3552.8464914952274
+        },
+        {
+          "t": 900.0,
+          "h": 0.10169532767982446,
+          "mono": 0.2533786960697126,
+          "di": 0.0252786949043558,
+          "anhydride": 0.1905224483716365,
+          "acid": 0.3039360858784242,
+          "temperature": 303.0,
+          "heatRemovedJ": 3647.2330305410906
+        },
+        {
+          "t": 960.0,
+          "h": 0.09615177601111687,
+          "mono": 0.2572048619688714,
+          "di": 0.0269960806739046,
+          "anhydride": 0.1832615109333801,
+          "acid": 0.3111970233166806,
+          "temperature": 303.0,
+          "heatRemovedJ": 3734.3642798001674
+        },
+        {
+          "t": 1020.0,
+          "h": 0.09110121083792856,
+          "mono": 0.2605789892609451,
+          "di": 0.0286725185550192,
+          "anhydride": 0.1765345078790772,
+          "acid": 0.3179240263709835,
+          "temperature": 303.0,
+          "heatRemovedJ": 3815.088316451802
+        },
+        {
+          "t": 1080.0,
+          "h": 0.08648403796676386,
+          "mono": 0.2635603596009738,
+          "di": 0.0303083210861552,
+          "anhydride": 0.17028153247677652,
+          "acid": 0.3241770017732842,
+          "temperature": 303.0,
+          "heatRemovedJ": 3890.1240212794105
+        },
+        {
+          "t": 1140.0,
+          "h": 0.08224971377071616,
+          "mono": 0.2661989355471226,
+          "di": 0.0319040693360541,
+          "anhydride": 0.16445146003082992,
+          "acid": 0.3300070742192308,
+          "temperature": 303.0,
+          "heatRemovedJ": 3960.0848906307697
+        },
+        {
+          "t": 1200.0,
+          "h": 0.07835510386568746,
+          "mono": 0.2685370830199396,
+          "di": 0.0334605317682658,
+          "anhydride": 0.1590003876935895,
+          "acid": 0.3354581465564712,
+          "temperature": 303.0,
+          "heatRemovedJ": 4025.4977586776545
+        },
+        {
+          "t": 1260.0,
+          "h": 0.07476318506278826,
+          "mono": 0.2706109291041872,
+          "di": 0.0349786044869174,
+          "anhydride": 0.15389039617203873,
+          "acid": 0.340568138078022,
+          "temperature": 303.0,
+          "heatRemovedJ": 4086.817656936264
+        },
+        {
+          "t": 1320.0,
+          "h": 0.07144200983746826,
+          "mono": 0.2724514417168054,
+          "di": 0.0364592670996192,
+          "anhydride": 0.1490885583340169,
+          "acid": 0.3453699759160438,
+          "temperature": 303.0,
+          "heatRemovedJ": 4144.439710992526
+        },
+        {
+          "t": 1380.0,
+          "h": 0.06836387353569376,
+          "mono": 0.2740852950448864,
+          "di": 0.0379035500733127,
+          "anhydride": 0.14456613905854893,
+          "acid": 0.3498923951915118,
+          "temperature": 303.0,
+          "heatRemovedJ": 4198.708742298141
+        },
+        {
+          "t": 1440.0,
+          "h": 0.06550463958379515,
+          "mono": 0.2755355684664905,
+          "di": 0.0393125106036072,
+          "anhydride": 0.1402979445763558,
+          "acid": 0.3541605896737049,
+          "temperature": 303.0,
+          "heatRemovedJ": 4249.927076084458
+        },
+        {
+          "t": 1500.0,
+          "h": 0.06284318888810696,
+          "mono": 0.2768223149395911,
+          "di": 0.0406872148261948,
+          "anhydride": 0.13626178965808003,
+          "acid": 0.3581967445919807,
+          "temperature": 303.0,
+          "heatRemovedJ": 4298.3609351037685
+        },
+        {
+          "t": 1560.0,
+          "h": 0.06036096762291806,
+          "mono": 0.2779630262558053,
+          "di": 0.0420287247751695,
+          "anhydride": 0.13243805844391643,
+          "acid": 0.3620204758061443,
+          "temperature": 303.0,
+          "heatRemovedJ": 4344.245709673732
+        },
+        {
+          "t": 1620.0,
+          "h": 0.058041613545253556,
+          "mono": 0.2789730162007735,
+          "di": 0.0433380889078658,
+          "anhydride": 0.1288093402335556,
+          "acid": 0.3656491940165051,
+          "temperature": 303.0,
+          "heatRemovedJ": 4387.790328198062
+        },
+        {
+          "t": 1680.0,
+          "h": 0.05587064542116126,
+          "mono": 0.2798657379156785,
+          "di": 0.0446163353170531,
+          "anhydride": 0.12536012570027602,
+          "acid": 0.3690984085497847,
+          "temperature": 303.0,
+          "heatRemovedJ": 4429.180902597416
+        },
+        {
+          "t": 1740.0,
+          "h": 0.05383520350628676,
+          "mono": 0.2806530481757938,
+          "di": 0.0458644669718123,
+          "anhydride": 0.12207655213064232,
+          "acid": 0.3723819821194184,
+          "temperature": 303.0,
+          "heatRemovedJ": 4468.583785433021
+        },
+        {
+          "t": 1800.0,
+          "h": 0.05192383158136306,
+          "mono": 0.2813454285815169,
+          "di": 0.0470834584910129,
+          "anhydride": 0.11894618868651802,
+          "acid": 0.3755123455635427,
+          "temperature": 303.0,
+          "heatRemovedJ": 4506.148146762513
+        },
+        {
+          "t": 1860.0,
+          "h": 0.05012629300713196,
+          "mono": 0.2819521715727091,
+          "di": 0.0482742540740518,
+          "anhydride": 0.11595785452924802,
+          "acid": 0.3785006797208127,
+          "temperature": 303.0,
+          "heatRemovedJ": 4542.008156649752
+        },
+        {
+          "t": 1920.0,
+          "h": 0.04843341478237276,
+          "mono": 0.2824815375677931,
+          "di": 0.049437766303727,
+          "anhydride": 0.11310146407481361,
+          "acid": 0.3813570701752471,
+          "temperature": 303.0,
+          "heatRemovedJ": 4576.284842102965
+        },
+        {
+          "t": 1980.0,
+          "h": 0.046836954772250756,
+          "mono": 0.2829408882777253,
+          "di": 0.0505748756039168,
+          "anhydride": 0.11036789476450182,
+          "acid": 0.3840906394855589,
+          "temperature": 303.0,
+          "heatRemovedJ": 4609.087673826707
+        },
+        {
+          "t": 2040.0,
+          "h": 0.04532948820242546,
+          "mono": 0.2833368002655101,
+          "di": 0.0516864301859573,
+          "anhydride": 0.10774887361263602,
+          "acid": 0.3867096606374247,
+          "temperature": 303.0,
+          "heatRemovedJ": 4640.515927649097
+        },
+        {
+          "t": 2100.0,
+          "h": 0.04390431024698946,
+          "mono": 0.2836751620503958,
+          "di": 0.0527732463565076,
+          "anhydride": 0.10523687948664971,
+          "acid": 0.389221654763411,
+          "temperature": 303.0,
+          "heatRemovedJ": 4670.659857160932
+        },
+        {
+          "t": 2160.0,
+          "h": 0.04255535212006266,
+          "mono": 0.2839612574444901,
+          "di": 0.0538361090893401,
+          "anhydride": 0.10282505862689041,
+          "acid": 0.3916334756231703,
+          "temperature": 303.0,
+          "heatRemovedJ": 4699.601707478044
+        },
+        {
+          "t": 2220.0,
+          "h": 0.04127710854544346,
+          "mono": 0.2841998373222526,
+          "di": 0.0548757727861968,
+          "anhydride": 0.10050715135541452,
+          "acid": 0.3939513828946462,
+          "temperature": 303.0,
+          "heatRemovedJ": 4727.416594735754
+        },
+        {
+          "t": 2280.0,
+          "h": 0.04006457485174996,
+          "mono": 0.2843951816328531,
+          "di": 0.0558929621692898,
+          "anhydride": 0.09827742827862802,
+          "acid": 0.3961811059714327,
+          "temperature": 303.0,
+          "heatRemovedJ": 4754.173271657192
+        },
+        {
+          "t": 2340.0,
+          "h": 0.038913192241573656,
+          "mono": 0.2845511531508537,
+          "di": 0.0568883732614655,
+          "anhydride": 0.09613063457627602,
+          "acid": 0.3983278996737847,
+          "temperature": 303.0,
+          "heatRemovedJ": 4779.934796085417
+        },
+        {
+          "t": 2400.0,
+          "h": 0.03781880002737246,
+          "mono": 0.2846712442060965,
+          "di": 0.0578626744204239,
+          "anhydride": 0.09406194120311642,
+          "acid": 0.4003965930469443,
+          "temperature": 303.0,
+          "heatRemovedJ": 4804.759116563331
+        },
+        {
+          "t": 2460.0,
+          "h": 0.03677759382584596,
+          "mono": 0.2847586174266167,
+          "di": 0.0588165074014302,
+          "anhydride": 0.09206690202058361,
+          "acid": 0.4023916322294771,
+          "temperature": 303.0,
+          "heatRemovedJ": 4828.699586753725
+        },
+        {
+          "t": 2520.0,
+          "h": 0.03578608886545876,
+          "mono": 0.284816141359251,
+          "di": 0.0597504884291831,
+          "anhydride": 0.09014141603244352,
+          "acid": 0.4043171182176172,
+          "temperature": 303.0,
+          "heatRemovedJ": 4851.805418611407
+        },
+        {
+          "t": 2580.0,
+          "h": 0.03484108769571006,
+          "mono": 0.2848464216938499,
+          "di": 0.0606652092643329,
+          "anhydride": 0.08828169402754502,
+          "acid": 0.4061768402225157,
+          "temperature": 303.0,
+          "heatRemovedJ": 4874.122082670188
+        },
+        {
+          "t": 2640.0,
+          "h": 0.03393965169732996,
+          "mono": 0.2848518287026484,
+          "di": 0.0615612382539145,
+          "anhydride": 0.08648422903958332,
+          "acid": 0.4079743052104774,
+          "temperature": 303.0,
+          "heatRemovedJ": 4895.691662525729
+        },
+        {
+          "t": 2700.0,
+          "h": 0.03307907588422406,
+          "mono": 0.2848345214118112,
+          "di": 0.0624391213578576,
+          "anhydride": 0.08474577012253431,
+          "acid": 0.4097127641275264,
+          "temperature": 303.0,
+          "heatRemovedJ": 4916.553169530317
+        },
+        {
+          "t": 2760.0,
+          "h": 0.03225686656422626,
+          "mono": 0.2847964689436491,
+          "di": 0.0632993831460175,
+          "anhydride": 0.08306329901437662,
+          "acid": 0.4113952352356841,
+          "temperature": 303.0,
+          "heatRemovedJ": 4936.742822828209
+        },
+        {
+          "t": 2820.0,
+          "h": 0.03147072148939496,
+          "mono": 0.2847394694025968,
+          "di": 0.0641425277619011,
+          "anhydride": 0.08143400932366171,
+          "acid": 0.413024524926399,
+          "temperature": 303.0,
+          "heatRemovedJ": 4956.294299116788
+        },
+        {
+          "t": 2880.0,
+          "h": 0.03071851217991286,
+          "mono": 0.2846651666233479,
+          "di": 0.0649690398506321,
+          "anhydride": 0.07985528792544862,
+          "acid": 0.4146032463246121,
+          "temperature": 303.0,
+          "heatRemovedJ": 4975.2389558953455
+        },
+        {
+          "t": 2940.0,
+          "h": 0.02999826815050936,
+          "mono": 0.284575065053656,
+          "di": 0.0657793854497275,
+          "anhydride": 0.07832469829694971,
+          "acid": 0.416133835953111,
+          "temperature": 303.0,
+          "heatRemovedJ": 4993.606031437332
+        },
+        {
+          "t": 3000.0,
+          "h": 0.02930816280614976,
+          "mono": 0.2844705430056858,
+          "di": 0.0665740128420573,
+          "anhydride": 0.07683996556026032,
+          "acid": 0.4176185686898004,
+          "temperature": 303.0,
+          "heatRemovedJ": 5011.422824277604
+        },
+        {
+          "t": 3060.0,
+          "h": 0.02864650080572916,
+          "mono": 0.2843528644772029,
+          "di": 0.0673533533709608,
+          "anhydride": 0.07539896303093621,
+          "acid": 0.4190595712191245,
+          "temperature": 303.0,
+          "heatRemovedJ": 5028.714854629494
+        },
+        {
+          "t": 3120.0,
+          "h": 0.02801170671967406,
+          "mono": 0.2842231897162809,
+          "di": 0.0681178222179379,
+          "anhydride": 0.07399970009790402,
+          "acid": 0.4204588341521567,
+          "temperature": 303.0,
+          "heatRemovedJ": 5045.50600982588
+        },
+        {
+          "t": 3180.0,
+          "h": 0.02740231483046676,
+          "mono": 0.2840825846797469,
+          "di": 0.0688678191436792,
+          "anhydride": 0.07264031128295542,
+          "acid": 0.4218182229671053,
+          "temperature": 303.0,
+          "heatRemovedJ": 5061.818675605264
+        },
+        {
+          "t": 3240.0,
+          "h": 0.02681695994483856,
+          "mono": 0.2839320295156207,
+          "di": 0.0696037291934336,
+          "anhydride": 0.07131904634757281,
+          "acid": 0.4231394879024879,
+          "temperature": 303.0,
+          "heatRemovedJ": 5077.6738548298545
+        },
+        {
+          "t": 3300.0,
+          "h": 0.02625436910324096,
+          "mono": 0.2837724261827761,
+          "di": 0.0703259233678758,
+          "anhydride": 0.07003426133153302,
+          "acid": 0.4244242729185277,
+          "temperature": 303.0,
+          "heatRemovedJ": 5093.091275022332
+        },
+        {
+          "t": 3360.0,
+          "h": 0.02571335408671526,
+          "mono": 0.2836046053064173,
+          "di": 0.0710347592607603,
+          "anhydride": 0.06878441042212281,
+          "acid": 0.4256741238279379,
+          "temperature": 303.0,
+          "heatRemovedJ": 5108.089485935255
+        },
+        {
+          "t": 3420.0,
+          "h": 0.02519280463371056,
+          "mono": 0.2834293323554695,
+          "di": 0.0717305816647128,
+          "anhydride": 0.06756803856516562,
+          "acid": 0.4268904956848951,
+          "temperature": 303.0,
+          "heatRemovedJ": 5122.685948218741
+        },
+        {
+          "t": 3480.0,
+          "h": 0.024691682290161058,
+          "mono": 0.2832473132171885,
+          "di": 0.0724137231465433,
+          "anhydride": 0.06638377473978561,
+          "acid": 0.4280747595102751,
+          "temperature": 303.0,
+          "heatRemovedJ": 5136.897114123301
+        },
+        {
+          "t": 3540.0,
+          "h": 0.02420901482540756,
+          "mono": 0.2830591992350026,
+          "di": 0.0730845045934827,
+          "anhydride": 0.06523032582809271,
+          "acid": 0.429228208421968,
+          "temperature": 303.0,
+          "heatRemovedJ": 5150.738501063616
+        },
+        {
+          "t": 3600.0,
+          "h": 0.023743891154592658,
+          "mono": 0.2828655917675751,
+          "di": 0.0737432357317251,
+          "anhydride": 0.06410647101903541,
+          "acid": 0.4303520632310253,
+          "temperature": 303.0,
+          "heatRemovedJ": 5164.224758772303
+        }
+      ],
+      "history": [
+        "收到部分加氢工段进料",
+        "2: 计量入釜 @ 0.0 model s",
+        "3: 出釜并过滤 @ 3600.0 model s",
+        "4: 分离中间料 @ 3600.0 model s",
+        "乙酰化中间料已交接，显热进入下游冷却边界"
+      ]
+    }
+  },
+  "coupling": {
+    "e98eb096-21fb-43fe-bd6e-9e5577c32df1": {
+      "id": "e98eb096-21fb-43fe-bd6e-9e5577c32df1",
+      "owner": "8cc708e6-ec92-4051-8466-417bea99aac1",
+      "model": "va-coupling-dual-source-1",
+      "stage": "SEPARATED",
+      "last": "已交接 C20 至 a496474a-d0c3-40c4-8df2-a598e66a871e",
+      "dimension": 0,
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "revision": 10,
+      "fixture": true,
+      "units": {
+        "0": {
+          "liquid": {},
+          "gas": {},
+          "adsorbed": {},
+          "capacityMol": 32,
+          "gasCapacityMol": 4,
+          "adsorbCapacityMol": 0.5,
+          "boundary": "flexible-gas-buffer; reaction heat and pressure unmodelled"
+        },
+        "1": {
+          "liquid": {},
+          "gas": {},
+          "adsorbed": {},
+          "capacityMol": 32,
+          "gasCapacityMol": 4,
+          "adsorbCapacityMol": 0.5,
+          "boundary": "flexible-gas-buffer; reaction heat and pressure unmodelled"
+        },
+        "2": {
+          "liquid": {},
+          "gas": {
+            "ethane": 1.01848083465649500000
+          },
+          "adsorbed": {},
+          "capacityMol": 32,
+          "gasCapacityMol": 4,
+          "adsorbCapacityMol": 0.5,
+          "boundary": "flexible-gas-buffer; reaction heat and pressure unmodelled"
+        },
+        "3": {
+          "liquid": {},
+          "gas": {},
+          "adsorbed": {},
+          "capacityMol": 32,
+          "gasCapacityMol": 4,
+          "adsorbCapacityMol": 0.5,
+          "boundary": "flexible-gas-buffer; reaction heat and pressure unmodelled"
+        },
+        "4": {
+          "liquid": {},
+          "gas": {},
+          "adsorbed": {},
+          "capacityMol": 32,
+          "gasCapacityMol": 4,
+          "adsorbCapacityMol": 0.5,
+          "boundary": "flexible-gas-buffer; reaction heat and pressure unmodelled"
+        },
+        "5": {
+          "liquid": {},
+          "gas": {},
+          "adsorbed": {},
+          "capacityMol": 32,
+          "gasCapacityMol": 4,
+          "adsorbCapacityMol": 0.5,
+          "boundary": "flexible-gas-buffer; reaction heat and pressure unmodelled"
+        },
+        "6": {
+          "liquid": {},
+          "gas": {},
+          "adsorbed": {},
+          "capacityMol": 32,
+          "gasCapacityMol": 4,
+          "adsorbCapacityMol": 0.5,
+          "boundary": "flexible-gas-buffer; reaction heat and pressure unmodelled"
+        },
+        "7": {
+          "liquid": {
+            "c14-aldehyde": 0.0225013207656667500000,
+            "c16-ethyl-adduct": 0.02368560080596500000,
+            "c20-ynediol": 0.008550501890953365000000,
+            "c6-z": 0.0461869215716317500000,
+            "diethyl-ether": 4.6897489595810700000,
+            "magnesium-bromide": 0.5210832177312300000000,
+            "magnesium-sulfate": 0.5210832177312300000000,
+            "sulfuric-acid": 0.1894848064477200000000,
+            "water": 2.3448744797905350000
+          },
+          "gas": {},
+          "adsorbed": {},
+          "capacityMol": 32,
+          "gasCapacityMol": 4,
+          "adsorbCapacityMol": 0.5,
+          "boundary": "flexible-gas-buffer; reaction heat and pressure unmodelled"
+        }
+      },
+      "imported": {
+        "c14-aldehyde": 0.47371201611930000,
+        "c6-z": 0.47371201611930000,
+        "diethyl-ether": 4.73712016119300000,
+        "ethylmagnesium-bromide": 1.042166435462460000,
+        "sulfuric-acid": 0.710568024178950000,
+        "water": 2.36856008059650000
+      },
+      "exported": {
+        "c20-ynediol": 0.418974592656714885000000,
+        "diethyl-ether": 0.0473712016119300000,
+        "water": 0.0236856008059650000
+      },
+      "wastedBase": 0,
+      "extent": 0.4275250945476682500000,
+      "acidUsed": 0.5210832177312300000000,
+      "sideExtent": 0.02368560080596500000,
+      "trace": [
+        {
+          "step": 1,
+          "operation": "两支线真实 C14/C6 库存交接；格氏/溶剂/后处理仍夹具",
+          "mobileWater": 2.36856008059650000,
+          "adsorbedWater": 0,
+          "base": 1.042166435462460000,
+          "mono": 0,
+          "di": 0,
+          "adduct": 0,
+          "product": 0,
+          "ethane": 0,
+          "dead": 0,
+          "bromide": 0,
+          "sulfate": 0
+        },
+        {
+          "step": 2,
+          "operation": "C6 入活化釜",
+          "mobileWater": 2.36856008059650000,
+          "adsorbedWater": 0,
+          "base": 1.042166435462460000,
+          "mono": 0,
+          "di": 0,
+          "adduct": 0,
+          "product": 0,
+          "ethane": 0,
+          "dead": 0,
+          "bromide": 0,
+          "sulfate": 0
+        },
+        {
+          "step": 3,
+          "operation": "双活化",
+          "mobileWater": 2.36856008059650000,
+          "adsorbedWater": 0,
+          "base": 0.094742403223860000,
+          "mono": 0,
+          "di": 0.47371201611930000,
+          "adduct": 0,
+          "product": 0,
+          "ethane": 0.94742403223860000,
+          "dead": 0,
+          "bromide": 0,
+          "sulfate": 0
+        },
+        {
+          "step": 4,
+          "operation": "收集乙烷",
+          "mobileWater": 2.36856008059650000,
+          "adsorbedWater": 0,
+          "base": 0.094742403223860000,
+          "mono": 0,
+          "di": 0.47371201611930000,
+          "adduct": 0,
+          "product": 0,
+          "ethane": 0.94742403223860000,
+          "dead": 0,
+          "bromide": 0,
+          "sulfate": 0
+        },
+        {
+          "step": 5,
+          "operation": "合并偶联进料",
+          "mobileWater": 2.36856008059650000,
+          "adsorbedWater": 0,
+          "base": 0.094742403223860000,
+          "mono": 0,
+          "di": 0.47371201611930000,
+          "adduct": 0,
+          "product": 0,
+          "ethane": 0.94742403223860000,
+          "dead": 0,
+          "bromide": 0,
+          "sulfate": 0
+        },
+        {
+          "step": 6,
+          "operation": "偶联 95% 进度",
+          "mobileWater": 2.36856008059650000,
+          "adsorbedWater": 0,
+          "base": 0.07105680241789500000,
+          "mono": 0,
+          "di": 0.0461869215716317500000,
+          "adduct": 0.4275250945476682500000,
+          "product": 0,
+          "ethane": 0.94742403223860000,
+          "dead": 0,
+          "bromide": 0,
+          "sulfate": 0
+        },
+        {
+          "step": 7,
+          "operation": "酸性后处理",
+          "mobileWater": 2.36856008059650000,
+          "adsorbedWater": 0,
+          "base": 0,
+          "mono": 0,
+          "di": 0,
+          "adduct": 0,
+          "product": 0.4275250945476682500000,
+          "ethane": 1.01848083465649500000,
+          "dead": 0,
+          "bromide": 0.5210832177312300000000,
+          "sulfate": 0.5210832177312300000000
+        },
+        {
+          "step": 8,
+          "operation": "收集乙烷",
+          "mobileWater": 2.36856008059650000,
+          "adsorbedWater": 0,
+          "base": 0,
+          "mono": 0,
+          "di": 0,
+          "adduct": 0,
+          "product": 0.4275250945476682500000,
+          "ethane": 1.01848083465649500000,
+          "dead": 0,
+          "bromide": 0.5210832177312300000000,
+          "sulfate": 0.5210832177312300000000
+        },
+        {
+          "step": 9,
+          "operation": "教学分离",
+          "mobileWater": 2.3685600805965000000,
+          "adsorbedWater": 0,
+          "base": 0,
+          "mono": 0,
+          "di": 0,
+          "adduct": 0,
+          "product": 0.427525094547668250000000,
+          "ethane": 1.01848083465649500000,
+          "dead": 0,
+          "bromide": 0.5210832177312300000000,
+          "sulfate": 0.5210832177312300000000
+        }
+      ],
+      "history": [
+        "两支线真实 C14/C6 库存交接；格氏/溶剂/后处理仍夹具",
+        "2 · C6 入活化釜",
+        "3 · 双活化",
+        "4 · 收集乙烷",
+        "5 · 合并偶联进料",
+        "6 · 偶联 95% 进度",
+        "7 · 酸性后处理",
+        "8 · 收集乙烷",
+        "9 · 教学分离",
+        "已交接 C20 至 a496474a-d0c3-40c4-8df2-a598e66a871e"
+      ]
+    }
+  },
+  "chain": {
+    "a496474a-d0c3-40c4-8df2-a598e66a871e": {
+      "id": "a496474a-d0c3-40c4-8df2-a598e66a871e",
+      "owner": "8cc708e6-ec92-4051-8466-417bea99aac1",
+      "coupling": "e98eb096-21fb-43fe-bd6e-9e5577c32df1",
+      "acetylation": "0756fff2-ae6c-4d34-9453-458b1549b0ff",
+      "model": "va-chain-dosed-teaching-1",
+      "stage": "CRYSTALLIZED",
+      "last": "结晶分配 / 质检",
+      "dimension": 0,
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "revision": 8,
+      "fixture": true,
+      "reagentBasisY": 0.418974592656714885000000,
+      "reagentBasisH": 0.382264038848133526776300000000,
+      "products": {},
+      "units": {
+        "0": {
+          "liquid": {},
+          "gas": {},
+          "solid": {},
+          "capacityMol": 32,
+          "gasCapacityMol": 4
+        },
+        "1": {
+          "liquid": {},
+          "gas": {
+            "hydrogen": 0.0967831309037011384350000000
+          },
+          "solid": {},
+          "capacityMol": 32,
+          "gasCapacityMol": 4
+        },
+        "2": {
+          "liquid": {},
+          "gas": {},
+          "solid": {},
+          "capacityMol": 32,
+          "gasCapacityMol": 4
+        },
+        "3": {
+          "liquid": {},
+          "gas": {},
+          "solid": {},
+          "capacityMol": 32,
+          "gasCapacityMol": 4
+        },
+        "4": {
+          "liquid": {},
+          "gas": {},
+          "solid": {
+            "retinyl-acetate": 0.16443418572357244808276160000,
+            "retinyl-acetate-one-z": 0.00045676162700992346689656000
+          },
+          "capacityMol": 32,
+          "gasCapacityMol": 4
+        },
+        "5": {
+          "liquid": {
+            "acetic-acid": 0.00839272593713145540060,
+            "acetic-anhydride": 0.00062510219890661435004703963155000000000,
+            "c20-overhydrogenated": 0.0079605172604775828150000000,
+            "c20-ynediol": 0.02094872963283574425000000,
+            "diethyl-ether": 0.0473712016119300000,
+            "hydroxenin": 0.010116573741752361351677227935000000000,
+            "hydroxenin-diacetate": 0.00575256233296041160080,
+            "hydroxenin-monoacetate": 0.0253756459449957481609200,
+            "p-xylene": 0.0370881935959410926949772279350000000000,
+            "pyridine": 0.00593411097535057483119635646960000000000,
+            "quinoline": 0.00418974592656714885000000,
+            "retinyl-acetate": 0.01827046508039693867586240000,
+            "retinyl-acetate-one-z": 0.04521940107398242322275944000,
+            "water": 0.2520664143109267334482800
+          },
+          "gas": {},
+          "solid": {
+            "calcium-carbonate": 0.0418974592656714885000000,
+            "lead": 0.000418974592656714885000000,
+            "palladium": 0.000418974592656714885000000
+          },
+          "capacityMol": 32,
+          "gasCapacityMol": 4
+        }
+      },
+      "imported": {
+        "acetic-acid": 0.00839272593713145540060,
+        "acetic-anhydride": 0.49756835270148019915923703963155000000000,
+        "c20-ynediol": 0.418974592656714885000000,
+        "calcium-carbonate": 0.0418974592656714885000000,
+        "diethyl-ether": 0.0473712016119300000,
+        "hydrogen": 0.5027695111880578620000000,
+        "hydroxenin": 0.002315266826484330192977227935000000000,
+        "hydroxenin-diacetate": 0.00575256233296041160080,
+        "hydroxenin-monoacetate": 0.25375645944995748160920,
+        "lead": 0.000418974592656714885000000,
+        "p-xylene": 3.8597285820772763604579772279350000000000,
+        "palladium": 0.000418974592656714885000000,
+        "pyridine": 0.31174534205385739625223635646960000000000,
+        "quinoline": 0.00418974592656714885000000,
+        "water": 0.0236856008059650000
+      },
+      "exported": {
+        "acetic-anhydride": 0.4969432505025735848091900000000,
+        "hydroxenin": 0.382264038848133526776300000000,
+        "p-xylene": 3.822640388481335267763000000000,
+        "pyridine": 0.3058112310785068214210400000000
+      },
+      "hydrogenUsed": 0.4059863802843567235650000000,
+      "overExtent": 0.0079605172604775828150000000,
+      "catalystActivity": 0.9,
+      "importedSensibleJ": 304.448488677230001859403916,
+      "coolingBoundaryJ": 304.448488677230001859403916,
+      "trace": [
+        {
+          "step": 1,
+          "operation": "按进料配辅料",
+          "amounts": {
+            "calcium-carbonate": 0.0418974592656714885000000,
+            "hydrogen": 0.5027695111880578620000000,
+            "lead": 0.000418974592656714885000000,
+            "palladium": 0.000418974592656714885000000,
+            "quinoline": 0.00418974592656714885000000
+          }
+        },
+        {
+          "step": 2,
+          "operation": "接收 C20 物流",
+          "amounts": {
+            "c20-ynediol": 0.418974592656714885000000,
+            "calcium-carbonate": 0.0418974592656714885000000,
+            "diethyl-ether": 0.0473712016119300000,
+            "hydrogen": 0.5027695111880578620000000,
+            "lead": 0.000418974592656714885000000,
+            "palladium": 0.000418974592656714885000000,
+            "quinoline": 0.00418974592656714885000000,
+            "water": 0.0236856008059650000
+          }
+        },
+        {
+          "step": 3,
+          "operation": "选择性部分加氢",
+          "amounts": {
+            "c20-overhydrogenated": 0.0079605172604775828150000000,
+            "c20-ynediol": 0.02094872963283574425000000,
+            "calcium-carbonate": 0.0418974592656714885000000,
+            "diethyl-ether": 0.0473712016119300000,
+            "hydrogen": 0.0967831309037011384350000000,
+            "hydroxenin": 0.3900653457634015579350000000,
+            "lead": 0.000418974592656714885000000,
+            "palladium": 0.000418974592656714885000000,
+            "quinoline": 0.00418974592656714885000000,
+            "water": 0.0236856008059650000
+          }
+        },
+        {
+          "step": 4,
+          "operation": "过滤并分配中间料",
+          "amounts": {
+            "c20-overhydrogenated": 0.0079605172604775828150000000,
+            "c20-ynediol": 0.02094872963283574425000000,
+            "calcium-carbonate": 0.0418974592656714885000000,
+            "diethyl-ether": 0.0473712016119300000,
+            "hydrogen": 0.0967831309037011384350000000,
+            "hydroxenin": 0.390065345763401557935000000000,
+            "lead": 0.000418974592656714885000000,
+            "palladium": 0.000418974592656714885000000,
+            "quinoline": 0.00418974592656714885000000,
+            "water": 0.0236856008059650000
+          }
+        },
+        {
+          "step": 5,
+          "operation": "交接乙酰化进料",
+          "amounts": {
+            "c20-overhydrogenated": 0.0079605172604775828150000000,
+            "c20-ynediol": 0.02094872963283574425000000,
+            "calcium-carbonate": 0.0418974592656714885000000,
+            "diethyl-ether": 0.0473712016119300000,
+            "hydrogen": 0.0967831309037011384350000000,
+            "hydroxenin": 0.007801306915268031158700000000,
+            "lead": 0.000418974592656714885000000,
+            "palladium": 0.000418974592656714885000000,
+            "quinoline": 0.00418974592656714885000000,
+            "water": 0.0236856008059650000
+          }
+        },
+        {
+          "step": 6,
+          "operation": "接收乙酰化中间料",
+          "amounts": {
+            "acetic-acid": 0.00839272593713145540060,
+            "acetic-anhydride": 0.00062510219890661435004703963155000000000,
+            "c20-overhydrogenated": 0.0079605172604775828150000000,
+            "c20-ynediol": 0.02094872963283574425000000,
+            "calcium-carbonate": 0.0418974592656714885000000,
+            "diethyl-ether": 0.0473712016119300000,
+            "hydrogen": 0.0967831309037011384350000000,
+            "hydroxenin": 0.010116573741752361351677227935000000000,
+            "hydroxenin-diacetate": 0.00575256233296041160080,
+            "hydroxenin-monoacetate": 0.25375645944995748160920,
+            "lead": 0.000418974592656714885000000,
+            "p-xylene": 0.0370881935959410926949772279350000000000,
+            "palladium": 0.000418974592656714885000000,
+            "pyridine": 0.00593411097535057483119635646960000000000,
+            "quinoline": 0.00418974592656714885000000,
+            "water": 0.0236856008059650000
+          }
+        },
+        {
+          "step": 7,
+          "operation": "脱水重排净工序",
+          "amounts": {
+            "acetic-acid": 0.00839272593713145540060,
+            "acetic-anhydride": 0.00062510219890661435004703963155000000000,
+            "c20-overhydrogenated": 0.0079605172604775828150000000,
+            "c20-ynediol": 0.02094872963283574425000000,
+            "calcium-carbonate": 0.0418974592656714885000000,
+            "diethyl-ether": 0.0473712016119300000,
+            "hydrogen": 0.0967831309037011384350000000,
+            "hydroxenin": 0.010116573741752361351677227935000000000,
+            "hydroxenin-diacetate": 0.00575256233296041160080,
+            "hydroxenin-monoacetate": 0.0253756459449957481609200,
+            "lead": 0.000418974592656714885000000,
+            "p-xylene": 0.0370881935959410926949772279350000000000,
+            "palladium": 0.000418974592656714885000000,
+            "pyridine": 0.00593411097535057483119635646960000000000,
+            "quinoline": 0.00418974592656714885000000,
+            "retinyl-acetate": 0.182704650803969386758624000,
+            "retinyl-acetate-one-z": 0.045676162700992346689656000,
+            "water": 0.2520664143109267334482800
+          }
+        },
+        {
+          "step": 8,
+          "operation": "结晶分配 / 质检",
+          "amounts": {
+            "acetic-acid": 0.00839272593713145540060,
+            "acetic-anhydride": 0.00062510219890661435004703963155000000000,
+            "c20-overhydrogenated": 0.0079605172604775828150000000,
+            "c20-ynediol": 0.02094872963283574425000000,
+            "calcium-carbonate": 0.0418974592656714885000000,
+            "diethyl-ether": 0.0473712016119300000,
+            "hydrogen": 0.0967831309037011384350000000,
+            "hydroxenin": 0.010116573741752361351677227935000000000,
+            "hydroxenin-diacetate": 0.00575256233296041160080,
+            "hydroxenin-monoacetate": 0.0253756459449957481609200,
+            "lead": 0.000418974592656714885000000,
+            "p-xylene": 0.0370881935959410926949772279350000000000,
+            "palladium": 0.000418974592656714885000000,
+            "pyridine": 0.00593411097535057483119635646960000000000,
+            "quinoline": 0.00418974592656714885000000,
+            "retinyl-acetate": 0.18270465080396938675862400000,
+            "retinyl-acetate-one-z": 0.04567616270099234668965600000,
+            "water": 0.2520664143109267334482800
+          }
+        }
+      ],
+      "history": [
+        "1 · 按进料配辅料",
+        "2 · 接收 C20 物流",
+        "3 · 选择性部分加氢",
+        "4 · 过滤并分配中间料",
+        "5 · 交接乙酰化进料",
+        "6 · 接收乙酰化中间料",
+        "7 · 脱水重排净工序",
+        "8 · 结晶分配 / 质检"
+      ]
+    }
+  },
+  "handoffs": {
+    "236ec397-3c57-4d8d-bc2b-b870c28ff744": {
+      "id": "236ec397-3c57-4d8d-bc2b-b870c28ff744",
+      "from": "0756fff2-ae6c-4d34-9453-458b1549b0ff",
+      "to": "a496474a-d0c3-40c4-8df2-a598e66a871e",
+      "route": "FROM_VA",
+      "fixture": true,
+      "energyJ": 304.448488677230001859403916,
+      "amounts": {
+        "acetic-acid": 0.00839272593713145540060,
+        "acetic-anhydride": 0.00062510219890661435004703963155000000000,
+        "hydroxenin": 0.002315266826484330192977227935000000000,
+        "hydroxenin-diacetate": 0.00575256233296041160080,
+        "hydroxenin-monoacetate": 0.25375645944995748160920,
+        "p-xylene": 0.0370881935959410926949772279350000000000,
+        "pyridine": 0.00593411097535057483119635646960000000000
+      }
+    },
+    "6766276d-1a4f-4d63-bc11-faf3846ba6bb": {
+      "id": "6766276d-1a4f-4d63-bc11-faf3846ba6bb",
+      "from": "a496474a-d0c3-40c4-8df2-a598e66a871e",
+      "to": "0756fff2-ae6c-4d34-9453-458b1549b0ff",
+      "route": "TO_VA",
+      "fixture": true,
+      "energyJ": 0,
+      "amounts": {
+        "acetic-anhydride": 0.4969432505025735848091900000000,
+        "hydroxenin": 0.382264038848133526776300000000,
+        "p-xylene": 3.822640388481335267763000000000,
+        "pyridine": 0.3058112310785068214210400000000
+      }
+    },
+    "bafc9c36-613a-450e-9a47-06a9f085fd55": {
+      "id": "bafc9c36-613a-450e-9a47-06a9f085fd55",
+      "from": "e98eb096-21fb-43fe-bd6e-9e5577c32df1",
+      "to": "a496474a-d0c3-40c4-8df2-a598e66a871e",
+      "route": "FROM_C20",
+      "fixture": true,
+      "energyJ": 0,
+      "amounts": {
+        "c20-ynediol": 0.418974592656714885000000,
+        "diethyl-ether": 0.0473712016119300000,
+        "water": 0.0236856008059650000
+      }
+    }
+  },
+  "darzens": {
+    "9ef43ff0-2a60-4075-b115-bf71b9be4e64": {
+      "id": "9ef43ff0-2a60-4075-b115-bf71b9be4e64",
+      "owner": "8cc708e6-ec92-4051-8466-417bea99aac1",
+      "coupling": "e98eb096-21fb-43fe-bd6e-9e5577c32df1",
+      "supply": "4748bf2f-d37a-4336-8ba6-b11d865f2694",
+      "model": "va-c14-darzens-teaching-1",
+      "stage": "SENT",
+      "last": "C14 + C6 联合交接",
+      "dimension": 0,
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "revision": 8,
+      "fixture": true,
+      "units": {
+        "0": {
+          "liquid": {},
+          "gas": {},
+          "solid": {},
+          "capacityMol": 32
+        },
+        "1": {
+          "liquid": {},
+          "gas": {},
+          "solid": {},
+          "capacityMol": 32
+        },
+        "2": {
+          "liquid": {},
+          "gas": {},
+          "solid": {},
+          "capacityMol": 32
+        },
+        "3": {
+          "liquid": {},
+          "gas": {},
+          "solid": {},
+          "capacityMol": 32
+        },
+        "4": {
+          "liquid": {
+            "c14-aldehyde": 0.0579513016352454540348535200
+          },
+          "gas": {},
+          "solid": {},
+          "capacityMol": 32
+        },
+        "5": {
+          "liquid": {
+            "beta-ionone": 0.0757272727272727272,
+            "c14-aldehyde": 0.0108502717909090908986704800,
+            "c14-unconjugated": 0.06027928772727272721483600,
+            "hydrogen-chloride": 0.07572727272727272720000,
+            "ionone-glycidate": 0.04702663636363636359120,
+            "ionone-glycidic-acid": 0.0317259409090909090604400,
+            "methanol": 2.83060972727272727000880,
+            "methyl-chloroacetate": 0.1514545454545454544,
+            "sodium-chloride": 1.43881818181818181680000,
+            "sodium-methoxide": 0.2271818181818181816,
+            "water": 2.39457209090909090679120
+          },
+          "gas": {
+            "carbon-dioxide": 0.6027928772727272721483600
+          },
+          "solid": {},
+          "capacityMol": 32
+        }
+      },
+      "imported": {
+        "beta-ionone": 0.757272727272727272,
+        "hydrogen-chloride": 0.8329999999999999992,
+        "methanol": 1.514545454545454544,
+        "methyl-chloroacetate": 0.8329999999999999992,
+        "sodium-hydroxide": 0.757272727272727272,
+        "sodium-methoxide": 0.9087272727272727264,
+        "water": 2.271818181818181816
+      },
+      "exported": {
+        "c14-aldehyde": 0.47371201611930000
+      },
+      "trace": [
+        {
+          "step": 2,
+          "operation": "Darzens / 分配环氧酯",
+          "amounts": {
+            "beta-ionone": 0.0757272727272727272,
+            "hydrogen-chloride": 0.8329999999999999992,
+            "ionone-glycidate": 0.681545454545454544800,
+            "methanol": 2.1960909090909090888,
+            "methyl-chloroacetate": 0.1514545454545454544,
+            "sodium-chloride": 0.6815454545454545448,
+            "sodium-hydroxide": 0.757272727272727272,
+            "sodium-methoxide": 0.2271818181818181816,
+            "water": 2.271818181818181816
+          }
+        },
+        {
+          "step": 3,
+          "operation": "皂化环氧酯",
+          "amounts": {
+            "beta-ionone": 0.0757272727272727272,
+            "hydrogen-chloride": 0.8329999999999999992,
+            "ionone-glycidate": 0.04702663636363636359120,
+            "methanol": 2.83060972727272727000880,
+            "methyl-chloroacetate": 0.1514545454545454544,
+            "sodium-chloride": 0.6815454545454545448,
+            "sodium-hydroxide": 0.12275390909090909079120,
+            "sodium-ionone-glycidate": 0.63451881818181818120880,
+            "sodium-methoxide": 0.2271818181818181816,
+            "water": 2.271818181818181816
+          }
+        },
+        {
+          "step": 4,
+          "operation": "酸化 / 中和残碱",
+          "amounts": {
+            "beta-ionone": 0.0757272727272727272,
+            "hydrogen-chloride": 0.07572727272727272720000,
+            "ionone-glycidate": 0.04702663636363636359120,
+            "ionone-glycidic-acid": 0.63451881818181818120880,
+            "methanol": 2.83060972727272727000880,
+            "methyl-chloroacetate": 0.1514545454545454544,
+            "sodium-chloride": 1.43881818181818181680000,
+            "sodium-methoxide": 0.2271818181818181816,
+            "water": 2.39457209090909090679120
+          }
+        },
+        {
+          "step": 5,
+          "operation": "脱羧净工序",
+          "amounts": {
+            "beta-ionone": 0.0757272727272727272,
+            "c14-unconjugated": 0.6027928772727272721483600,
+            "carbon-dioxide": 0.6027928772727272721483600,
+            "hydrogen-chloride": 0.07572727272727272720000,
+            "ionone-glycidate": 0.04702663636363636359120,
+            "ionone-glycidic-acid": 0.0317259409090909090604400,
+            "methanol": 2.83060972727272727000880,
+            "methyl-chloroacetate": 0.1514545454545454544,
+            "sodium-chloride": 1.43881818181818181680000,
+            "sodium-methoxide": 0.2271818181818181816,
+            "water": 2.39457209090909090679120
+          }
+        },
+        {
+          "step": 6,
+          "operation": "共轭化净工序",
+          "amounts": {
+            "beta-ionone": 0.0757272727272727272,
+            "c14-aldehyde": 0.54251358954545454493352400,
+            "c14-unconjugated": 0.06027928772727272721483600,
+            "carbon-dioxide": 0.6027928772727272721483600,
+            "hydrogen-chloride": 0.07572727272727272720000,
+            "ionone-glycidate": 0.04702663636363636359120,
+            "ionone-glycidic-acid": 0.0317259409090909090604400,
+            "methanol": 2.83060972727272727000880,
+            "methyl-chloroacetate": 0.1514545454545454544,
+            "sodium-chloride": 1.43881818181818181680000,
+            "sodium-methoxide": 0.2271818181818181816,
+            "water": 2.39457209090909090679120
+          }
+        },
+        {
+          "step": 7,
+          "operation": "分配 C14",
+          "amounts": {
+            "beta-ionone": 0.0757272727272727272,
+            "c14-aldehyde": 0.5425135895454545449335240000,
+            "c14-unconjugated": 0.06027928772727272721483600,
+            "carbon-dioxide": 0.6027928772727272721483600,
+            "hydrogen-chloride": 0.07572727272727272720000,
+            "ionone-glycidate": 0.04702663636363636359120,
+            "ionone-glycidic-acid": 0.0317259409090909090604400,
+            "methanol": 2.83060972727272727000880,
+            "methyl-chloroacetate": 0.1514545454545454544,
+            "sodium-chloride": 1.43881818181818181680000,
+            "sodium-methoxide": 0.2271818181818181816,
+            "water": 2.39457209090909090679120
+          }
+        },
+        {
+          "step": 8,
+          "operation": "C14 + C6 联合交接",
+          "amounts": {
+            "beta-ionone": 0.0757272727272727272,
+            "c14-aldehyde": 0.0688015734261545449335240000,
+            "c14-unconjugated": 0.06027928772727272721483600,
+            "carbon-dioxide": 0.6027928772727272721483600,
+            "hydrogen-chloride": 0.07572727272727272720000,
+            "ionone-glycidate": 0.04702663636363636359120,
+            "ionone-glycidic-acid": 0.0317259409090909090604400,
+            "methanol": 2.83060972727272727000880,
+            "methyl-chloroacetate": 0.1514545454545454544,
+            "sodium-chloride": 1.43881818181818181680000,
+            "sodium-methoxide": 0.2271818181818181816,
+            "water": 2.39457209090909090679120
+          }
+        }
+      ],
+      "history": [
+        "A01 与辅料实账交接；β-紫罗兰酮仍夹具",
+        "2 · Darzens / 分配环氧酯",
+        "3 · 皂化环氧酯",
+        "4 · 酸化 / 中和残碱",
+        "5 · 脱羧净工序",
+        "6 · 共轭化净工序",
+        "7 · 分配 C14",
+        "8 · C14 + C6 联合交接"
+      ]
+    }
+  },
+  "darzensTransfers": {
+    "9ef43ff0-2a60-4075-b115-bf71b9be4e64": {
+      "darzens": "9ef43ff0-2a60-4075-b115-bf71b9be4e64",
+      "supply": "4748bf2f-d37a-4336-8ba6-b11d865f2694",
+      "coupling": "e98eb096-21fb-43fe-bd6e-9e5577c32df1",
+      "amount": 0.47371201611930000
+    }
+  },
+  "supply": {
+    "4748bf2f-d37a-4336-8ba6-b11d865f2694": {
+      "id": "4748bf2f-d37a-4336-8ba6-b11d865f2694",
+      "owner": "8cc708e6-ec92-4051-8466-417bea99aac1",
+      "coupling": "e98eb096-21fb-43fe-bd6e-9e5577c32df1",
+      "model": "va-c6-supply-teaching-1",
+      "stage": "SENT",
+      "last": "真实 C6 库存与 C14 库存联合交接；多余物料保留",
+      "dimension": 0,
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "revision": 10,
+      "fixture": true,
+      "units": {
+        "0": {
+          "liquid": {
+            "water": 1
+          },
+          "gas": {
+            "acetylene": 0.32130100
+          },
+          "solid": {},
+          "capacityMol": 32
+        },
+        "1": {
+          "liquid": {},
+          "gas": {},
+          "solid": {},
+          "capacityMol": 32
+        },
+        "2": {
+          "liquid": {},
+          "gas": {},
+          "solid": {},
+          "capacityMol": 32
+        },
+        "3": {
+          "liquid": {},
+          "gas": {},
+          "solid": {},
+          "capacityMol": 32
+        },
+        "4": {
+          "liquid": {},
+          "gas": {},
+          "solid": {},
+          "capacityMol": 32
+        },
+        "5": {
+          "liquid": {
+            "acetone": 0.0950,
+            "c6-e": 0.085302283815000,
+            "c6-michael-adduct": 0.0339349500,
+            "c6-tertiary": 0.0760821579000,
+            "c6-z": 0.00966759216570000,
+            "diacetone-alcohol": 0.025,
+            "formaldehyde": 0.1450,
+            "hydroxybutanone": 0.08550,
+            "mvk": 0.09080100,
+            "sodium-hydroxide": 1.02,
+            "sulfuric-acid": 0.01,
+            "water": 1.76950
+          },
+          "gas": {
+            "ammonia": 1
+          },
+          "solid": {},
+          "capacityMol": 32
+        }
+      },
+      "imported": {
+        "acetone": 1,
+        "acetylene": 1,
+        "formaldehyde": 1,
+        "sodium-amide": 1,
+        "sodium-hydroxide": 0.02,
+        "sulfuric-acid": 0.01,
+        "water": 3
+      },
+      "exported": {
+        "c6-z": 0.47371201611930000
+      },
+      "nativeFeed": {
+        "acetone": 1,
+        "acetylene": 1,
+        "formaldehyde": 1
+      },
+      "trace": [
+        {
+          "step": 1,
+          "operation": "原生单元：acetone 1000 mB \u003d 1 教学 mol",
+          "amounts": {
+            "acetone": 1
+          }
+        },
+        {
+          "step": 2,
+          "operation": "原生单元：formaldehyde 1000 mB \u003d 1 教学 mol",
+          "amounts": {
+            "acetone": 1,
+            "formaldehyde": 1
+          }
+        },
+        {
+          "step": 3,
+          "operation": "原生单元：acetylene 1000 mB \u003d 1 教学 mol",
+          "amounts": {
+            "acetone": 1,
+            "acetylene": 1,
+            "formaldehyde": 1
+          }
+        },
+        {
+          "step": 4,
+          "operation": "装载辅助夹具",
+          "amounts": {
+            "acetone": 1,
+            "acetylene": 1,
+            "formaldehyde": 1,
+            "sodium-amide": 1,
+            "sodium-hydroxide": 0.02,
+            "sulfuric-acid": 0.01,
+            "water": 3
+          }
+        },
+        {
+          "step": 5,
+          "operation": "羟醛加成",
+          "amounts": {
+            "acetone": 0.0950,
+            "acetylene": 1,
+            "diacetone-alcohol": 0.025,
+            "formaldehyde": 0.1450,
+            "hydroxybutanone": 0.8550,
+            "sodium-amide": 1,
+            "sodium-hydroxide": 0.02,
+            "sulfuric-acid": 0.01,
+            "water": 3
+          }
+        },
+        {
+          "step": 6,
+          "operation": "脱水并分配 MVK",
+          "amounts": {
+            "acetone": 0.0950,
+            "acetylene": 1,
+            "diacetone-alcohol": 0.025,
+            "formaldehyde": 0.1450,
+            "hydroxybutanone": 0.08550,
+            "mvk": 0.7695000,
+            "sodium-amide": 1,
+            "sodium-hydroxide": 0.02,
+            "sulfuric-acid": 0.01,
+            "water": 3.76950
+          }
+        },
+        {
+          "step": 7,
+          "operation": "乙炔化 / 水解净工序",
+          "amounts": {
+            "acetone": 0.0950,
+            "acetylene": 0.32130100,
+            "ammonia": 1,
+            "c6-michael-adduct": 0.0339349500,
+            "c6-tertiary": 0.644764050000,
+            "diacetone-alcohol": 0.025,
+            "formaldehyde": 0.1450,
+            "hydroxybutanone": 0.08550,
+            "mvk": 0.09080100,
+            "sodium-hydroxide": 1.02,
+            "sulfuric-acid": 0.01,
+            "water": 2.76950
+          }
+        },
+        {
+          "step": 8,
+          "operation": "烯丙基重排净工序",
+          "amounts": {
+            "acetone": 0.0950,
+            "acetylene": 0.32130100,
+            "ammonia": 1,
+            "c6-e": 0.085302283815000,
+            "c6-michael-adduct": 0.0339349500,
+            "c6-tertiary": 0.0760821579000,
+            "c6-z": 0.483379608285000,
+            "diacetone-alcohol": 0.025,
+            "formaldehyde": 0.1450,
+            "hydroxybutanone": 0.08550,
+            "mvk": 0.09080100,
+            "sodium-hydroxide": 1.02,
+            "sulfuric-acid": 0.01,
+            "water": 2.76950
+          }
+        },
+        {
+          "step": 9,
+          "operation": "分配 Z-C6",
+          "amounts": {
+            "acetone": 0.0950,
+            "acetylene": 0.32130100,
+            "ammonia": 1,
+            "c6-e": 0.085302283815000,
+            "c6-michael-adduct": 0.0339349500,
+            "c6-tertiary": 0.0760821579000,
+            "c6-z": 0.48337960828500000,
+            "diacetone-alcohol": 0.025,
+            "formaldehyde": 0.1450,
+            "hydroxybutanone": 0.08550,
+            "mvk": 0.09080100,
+            "sodium-hydroxide": 1.02,
+            "sulfuric-acid": 0.01,
+            "water": 2.76950
+          }
+        },
+        {
+          "step": 10,
+          "operation": "真实 C6 库存与 C14 库存联合交接；多余物料保留",
+          "amounts": {
+            "acetone": 0.0950,
+            "acetylene": 0.32130100,
+            "ammonia": 1,
+            "c6-e": 0.085302283815000,
+            "c6-michael-adduct": 0.0339349500,
+            "c6-tertiary": 0.0760821579000,
+            "c6-z": 0.00966759216570000,
+            "diacetone-alcohol": 0.025,
+            "formaldehyde": 0.1450,
+            "hydroxybutanone": 0.08550,
+            "mvk": 0.09080100,
+            "sodium-hydroxide": 1.02,
+            "sulfuric-acid": 0.01,
+            "water": 2.76950
+          }
+        }
+      ],
+      "history": [
+        "1 · 原生单元：acetone 1000 mB \u003d 1 教学 mol",
+        "2 · 原生单元：formaldehyde 1000 mB \u003d 1 教学 mol",
+        "3 · 原生单元：acetylene 1000 mB \u003d 1 教学 mol",
+        "4 · 装载辅助夹具",
+        "5 · 羟醛加成",
+        "6 · 脱水并分配 MVK",
+        "7 · 乙炔化 / 水解净工序",
+        "8 · 烯丙基重排净工序",
+        "9 · 分配 Z-C6",
+        "10 · 真实 C6 库存与 C14 库存联合交接；多余物料保留"
+      ]
+    }
+  },
+  "ingress": {
+    "05585a98-0e44-4e46-8f62-942f2d451a53": {
+      "id": "05585a98-0e44-4e46-8f62-942f2d451a53",
+      "line": "4748bf2f-d37a-4336-8ba6-b11d865f2694",
+      "owner": "8cc708e6-ec92-4051-8466-417bea99aac1",
+      "fluid": "fluid.formaldehyde",
+      "species": "formaldehyde",
+      "beforeHash": "87fea9ffb8faaeb185805499547d469efe258e144ca69d4e2de599693906e29c",
+      "marker": "0e4e091bfbbe36fc9dba8e2c6b1dc433e1edf51c01de6e43f5014ea9fd0f5211",
+      "phase": "CREDITED",
+      "slot": 0,
+      "mb": 1000
+    },
+    "774d680e-27dc-441a-ad4e-b26feb83cc4d": {
+      "id": "774d680e-27dc-441a-ad4e-b26feb83cc4d",
+      "line": "4748bf2f-d37a-4336-8ba6-b11d865f2694",
+      "owner": "8cc708e6-ec92-4051-8466-417bea99aac1",
+      "fluid": "acetylene",
+      "species": "acetylene",
+      "beforeHash": "7ea5aec30000c0632ac46c21440424fa1341f34f84d147e8a493d70bfe9251b4",
+      "marker": "2d54374164433198f48627bc437610440a552b784158f7d0ba063de8c67c55ae",
+      "phase": "CREDITED",
+      "slot": 0,
+      "mb": 1000
+    },
+    "d6b97bf7-e827-4ae0-9992-679b59b70be3": {
+      "id": "d6b97bf7-e827-4ae0-9992-679b59b70be3",
+      "line": "4748bf2f-d37a-4336-8ba6-b11d865f2694",
+      "owner": "8cc708e6-ec92-4051-8466-417bea99aac1",
+      "fluid": "acetone",
+      "species": "acetone",
+      "beforeHash": "419b4ccf2ce1ac81f243ffcf389f9778751226a5714b9ded0140a2f44326674c",
+      "marker": "115bee47b7b2c4980792cac350f686e2180fddf8a17701e79d9e498258363384",
+      "phase": "CREDITED",
+      "slot": 0,
+      "mb": 1000
+    }
+  },
+  "supplyTransfers": {
+    "4748bf2f-d37a-4336-8ba6-b11d865f2694": {
+      "supply": "4748bf2f-d37a-4336-8ba6-b11d865f2694",
+      "coupling": "e98eb096-21fb-43fe-bd6e-9e5577c32df1",
+      "c6": 0.47371201611930000
+    }
+  },
+  "receipts": {},
+  "external": {}
+}

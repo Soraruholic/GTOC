@@ -1,0 +1,37 @@
+{
+  "schema": "oc-durable-receiver-1",
+  "status": "diagnostic_prototype_not_installed_gt_endpoint",
+  "purpose": "Persist an idempotent receiver-side receipt for a future GT bridge.",
+  "authority": "separate OC receiver journal with its own writer lock and CURRENT.receiver checksum",
+  "receiptFields": [
+    "receiver",
+    "world",
+    "request",
+    "product",
+    "owner",
+    "batch",
+    "mappingDigest",
+    "certificateDigest",
+    "registryName",
+    "kind",
+    "species",
+    "damage",
+    "units",
+    "molPerUnit",
+    "amountMol",
+    "receiverSequence",
+    "payloadDigest",
+    "durableDigest"
+  ],
+  "idempotency": "same request UUID and exact payload returns the original durable receipt; a conflicting payload is rejected",
+  "failurePolicy": "partial write, rename, directory sync and pre-ack faults fence the writer; reopen reads only CURRENT.receiver and never guesses from pending files",
+  "custody": "STAGED_NONSPENDABLE; the receipt does not create GT inventory, clear OC reservation, or authorize CONFIRM",
+  "promotionGate": [
+    "real Forge registry identity and unit conversion reviewed",
+    "receiver is installed in the actual server world and its save authority is identified",
+    "OC-side ProductExport and receiver receipt are explicitly reconciled",
+    "rollback and uncertain call policy is tested on the real deployment"
+  ],
+  "gameConnected": false,
+  "gameYieldConnected": false
+}

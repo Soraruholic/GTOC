@@ -1,0 +1,45 @@
+{
+  "schema": "oc-preheat-record-1",
+  "status": "saved-model-inlet-reference",
+  "compositionMol": [
+    1.0,
+    1.0,
+    0.0,
+    0.0
+  ],
+  "startK": 298.15,
+  "endK": 345.0,
+  "startTemperatureEvidence": "assumed reference temperature, not sensor measurement",
+  "endTemperatureEvidence": "saved process-model setpoint, not sensor measurement",
+  "phaseAssumption": "fixed composition liquid path; stability at process pressure not validated",
+  "savedProcessPressurePa": 80000.0,
+  "heatReferenceJ": 12210.50261073592,
+  "contributionsJ": [
+    6514.855845042708,
+    5695.646765693213,
+    0.0,
+    0.0
+  ],
+  "sourceSnapshot": "data/process-baseline.json",
+  "sourceSnapshotSha256": "f8ad4e7d255177cc17acb9ba4cd6f1d7e3456e61d608b0d3f78c3fbf35ef310f",
+  "cpReference": "data/process-contract/sensible-heat-reference.json",
+  "cpReferenceSha256": "9e643ae05eb9ce5201b1006d93aacb78660b15fdbcc39080e5cd714a74265c01",
+  "eventLocator": "history[0], R-101: 600 s, inlet",
+  "serverOperationId": "unknown",
+  "measuredHeatJ": "unknown",
+  "eu": "unknown",
+  "requiredBeforePromotion": [
+    "committed separate preheat operation id",
+    "observed inlet/outlet temperatures or explicitly versioned simulated thermal path",
+    "pressure and phase validity",
+    "mixing and reaction isolation"
+  ],
+  "excluded": [
+    "reaction enthalpy",
+    "mixing or excess enthalpy",
+    "latent heat and phase changes",
+    "mechanical entrainment",
+    "equipment efficiency and heat loss",
+    "EU conversion"
+  ]
+}

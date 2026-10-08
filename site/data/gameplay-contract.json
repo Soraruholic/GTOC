@@ -1,0 +1,101 @@
+{
+  "schema": "oc-gameplay-contract-1",
+  "version": "0.1.0",
+  "status": "website-playable-prototype-and-local-readonly-game-ui",
+  "purpose": "将过程化学转换为可理解、可规划、可恢复的 GTNH-OC 游戏循环；不替换服务器反应模型或质量凭证。",
+  "playerGoal": "在资源、时间、风险和库存容量之间做出选择，完成一批并保留可追溯的产品与残余。",
+  "loop": [
+    {
+      "id": "PREPARE",
+      "label": "准备",
+      "playerQuestion": "我缺什么？",
+      "systemFeedback": "显示缺料、身份、容量和当前阶段；缺料不会隐式补料。",
+      "failure": "拒绝并说明缺少的精确物料或权限。"
+    },
+    {
+      "id": "RUN",
+      "label": "运行",
+      "playerQuestion": "现在值得启动吗？",
+      "systemFeedback": "显示已提交阶段与组成；模型时间和服务器等待分开。无时延测量时显示处理中而非伪造 ETA。",
+      "failure": "已完成的提交保留；未提交计算按具体引擎的卸载/恢复规则处理，不承诺中途撤销或一定完成。"
+    },
+    {
+      "id": "SEPARATE",
+      "label": "分离",
+      "playerQuestion": "我要纯度还是回收率？",
+      "systemFeedback": "显示纯度、回收量、废液和适用范围；连续相标签属于独立研究参考。",
+      "failure": "无解保留物料的目标必须按具体引擎实现验证，不能把研究行为写成现服承诺。"
+    },
+    {
+      "id": "CERTIFY",
+      "label": "质检",
+      "playerQuestion": "这批够资格交接吗？",
+      "systemFeedback": "乙酸乙酯检查湿基质量分数和残余；维生素 A 还需要来源账、E/Z 身份与单独质量契约。",
+      "failure": "当前先保留库存并显示具体拒绝；通用返工和报废接口尚未开放。"
+    },
+    {
+      "id": "PACKAGE",
+      "label": "收集",
+      "playerQuestion": "我要开始下一批吗？",
+      "systemFeedback": "乙酸乙酯：取出整股带组成记录的样品，需一个空槽；本版未开放回注和 GT 使用。维生素 A：封装凭证引用其唯一世界库存。",
+      "failure": "旧乙酸乙酯样品保存于物品 NBT，未证明与机器跨存档原子性；v2 的 outbox 隔离恢复不能套用到此接口。"
+    }
+  ],
+  "choices": {
+    "kind": "deterministic frozen engine comparisons",
+    "dataset": "data/gameplay-comparison.json",
+    "randomQualificationProbability": false
+  },
+  "failurePolicy": [
+    {
+      "event": "missing_input",
+      "playerAction": "补齐白名单物料后重试",
+      "inventoryEffect": "不扣料"
+    },
+    {
+      "event": "full_slot",
+      "playerAction": "清出槽位后重试",
+      "inventoryEffect": "不掉落、不扣料"
+    },
+    {
+      "event": "duplicate_request",
+      "playerAction": "读取原回执",
+      "inventoryEffect": "不重复消费",
+      "scope": "v2 唯一世界服务；旧产线 GUI 仅有会话内序号防重复，不宣称跨重启同等协议"
+    },
+    {
+      "event": "disconnect_or_unload",
+      "playerAction": "重连后查看恢复状态",
+      "inventoryEffect": "先按实际阶段查账；进入不确定跨存档调用后保持隔离，不自动重发或退款",
+      "scope": "v2 不确定外部调用；乙酸乙酯需按旧接口手册核对机器和样品"
+    },
+    {
+      "event": "quality_reject",
+      "playerAction": "保留并查原因；乙酸乙酯 WASHED 阶段可补芯或追加水洗，通用返工/报废未开放",
+      "inventoryEffect": "残余和来源账继续保留"
+    }
+  ],
+  "progression": [
+    {
+      "tier": "T1",
+      "title": "乙酸乙酯基础线",
+      "unlocks": "先完成一批并找到产品、废液、釜底；网页目标不授予游戏物品"
+    },
+    {
+      "tier": "T2",
+      "title": "C5/C6/C14 支线",
+      "unlocks": "下一阶段目标：并行支线、交接、辅料成本和第二批；不是已注册科技解锁"
+    },
+    {
+      "tier": "T3",
+      "title": "维生素 A 乙酸酯",
+      "unlocks": "下一阶段目标：内部合格物流与可消费用途；GT 通用成品出口仍未开放"
+    }
+  ],
+  "boundaries": [
+    "性能、时间、EU 和配方成本必须按 game_balance 版本化；不得改写实测数据或把未知物性写为零",
+    "AI and quantum candidates cannot alter choice outcomes or mint inventory",
+    "a failed batch remains inspectable and recoverable where the server contract permits",
+    "网页比较基于旧 oc-pilot-v1 冻结场景，不是新的连续 LLE 参考；本批目标面板为本地代码，部署前不可在现服使用"
+  ]
+}

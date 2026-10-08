@@ -1,0 +1,21 @@
+{
+  "receiver": "8c62bfe8-027d-4796-ae60-e34925cac8d6",
+  "world": "a4c73f07-8d02-4fd0-85fa-3742adf53f74",
+  "request": "53b3df71-8f1a-4b33-9d8e-128693cce5b0",
+  "product": "fd0753cd-8de4-4803-a676-da13e103c119",
+  "owner": "83bfba52-f733-4635-90cc-c98fbc271d86",
+  "batch": "50c13800-f554-40e9-9624-3a163d5f11ab",
+  "mappingDigest": "2d6f1fc5f6ec9593b5baa55b3885039effe352457dcc4faa77cf94a6edda3e7e",
+  "certificateDigest": "3e41fd6d0d4d25b6908358a6c2b9d20326f7c80ead4cc1f34f8dde82d32c353c",
+  "registryName": "test:retinyl",
+  "kind": "item",
+  "species": "retinyl-acetate",
+  "payloadDigest": "d096ea05444b8b355c019ce9aa2fa8d4c0cffb5808b0006d683b5b7bd2d4761e",
+  "durableDigest": "a068f9a8ef653392440814b5bb176a909901117ab0814e8d48b622e58e7f1900",
+  "status": "STAGED_NONSPENDABLE",
+  "damage": 0,
+  "units": 1,
+  "amountMol": 0.001,
+  "molPerUnit": 0.001,
+  "receiverSequence": 1
+}

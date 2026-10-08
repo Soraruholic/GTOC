@@ -1,0 +1,644 @@
+{
+  "schema": "oc-lle-calibration-plan-1",
+  "status": "pre_registered_design_no_parameters_fitted",
+  "target": {
+    "components": [
+      "ethanol",
+      "ethyl-acetate",
+      "water"
+    ],
+    "temperatureK": 303.15,
+    "pressureKPa": 101.0,
+    "phaseData": "NIST/TRC reported equilibrium endpoints",
+    "reason": "largest single-temperature exact ternary target slice in current register (8 rows before global duplicate exclusion)"
+  },
+  "inputs": {
+    "register": "research/industrial-review/lle-source-register.json",
+    "registerSha256": "6c7eda544498ef2009f4826c56fae12c6ee0080ca5777651874603d6c31ed772",
+    "endpointComparison": "research/lle-validation/endpoint-comparison.json",
+    "endpointComparisonSha256": "ffb71de3ec8b768846896ef7d86ad51e379298ecf9d0e3f6db3158ebca582366",
+    "solverSha256": "b60f6a9187c173cefb7b0ae37419349436fcf529db4f6401530418240d67cb12"
+  },
+  "deduplication": {
+    "key": "temperatureK + sorted canonical four-component phase endpoint vectors rounded to 12 decimals",
+    "originalRecordCount": 53,
+    "uniqueEndpointPairs": 49,
+    "groupsWithDuplicates": 4,
+    "duplicateGroups": [
+      {
+        "key": [
+          303.15,
+          [
+            [
+              0.0,
+              0.0,
+              0.032,
+              0.968
+            ],
+            [
+              0.0,
+              0.0,
+              0.858,
+              0.142
+            ]
+          ]
+        ],
+        "records": [
+          {
+            "doi": "10.1016/j.fluid.2014.04.013",
+            "pmd": 2,
+            "row": 1,
+            "components": [
+              "ethanol",
+              "ethyl-acetate",
+              "water"
+            ]
+          },
+          {
+            "doi": "10.1016/j.fluid.2014.04.013",
+            "pmd": 4,
+            "row": 1,
+            "components": [
+              "acetic-acid",
+              "ethyl-acetate",
+              "water"
+            ]
+          }
+        ]
+      },
+      {
+        "key": [
+          313.15,
+          [
+            [
+              0.0,
+              0.0,
+              0.017,
+              0.983
+            ],
+            [
+              0.0,
+              0.0,
+              0.838,
+              0.162
+            ]
+          ]
+        ],
+        "records": [
+          {
+            "doi": "10.1016/j.fluid.2014.04.013",
+            "pmd": 2,
+            "row": 15,
+            "components": [
+              "ethanol",
+              "ethyl-acetate",
+              "water"
+            ]
+          },
+          {
+            "doi": "10.1016/j.fluid.2014.04.013",
+            "pmd": 4,
+            "row": 12,
+            "components": [
+              "acetic-acid",
+              "ethyl-acetate",
+              "water"
+            ]
+          }
+        ]
+      },
+      {
+        "key": [
+          323.15,
+          [
+            [
+              0.0,
+              0.0,
+              0.013,
+              0.987
+            ],
+            [
+              0.0,
+              0.0,
+              0.768,
+              0.232
+            ]
+          ]
+        ],
+        "records": [
+          {
+            "doi": "10.1016/j.fluid.2019.112321",
+            "pmd": 10,
+            "row": 6,
+            "components": [
+              "acetic-acid",
+              "ethyl-acetate",
+              "water"
+            ]
+          },
+          {
+            "doi": "10.1016/j.fluid.2019.112321",
+            "pmd": 12,
+            "row": 13,
+            "components": [
+              "ethanol",
+              "ethyl-acetate",
+              "water"
+            ]
+          }
+        ]
+      },
+      {
+        "key": [
+          333.15,
+          [
+            [
+              0.0,
+              0.0,
+              0.013,
+              0.987
+            ],
+            [
+              0.0,
+              0.0,
+              0.755,
+              0.245
+            ]
+          ]
+        ],
+        "records": [
+          {
+            "doi": "10.1016/j.fluid.2019.112321",
+            "pmd": 10,
+            "row": 11,
+            "components": [
+              "acetic-acid",
+              "ethyl-acetate",
+              "water"
+            ]
+          },
+          {
+            "doi": "10.1016/j.fluid.2019.112321",
+            "pmd": 12,
+            "row": 12,
+            "components": [
+              "ethanol",
+              "ethyl-acetate",
+              "water"
+            ]
+          }
+        ]
+      }
+    ],
+    "excludedDuplicateRecords": [
+      {
+        "doi": "10.1016/j.fluid.2014.04.013",
+        "pmd": 4,
+        "row": 1,
+        "reason": "duplicate canonical phase pair"
+      },
+      {
+        "doi": "10.1016/j.fluid.2014.04.013",
+        "pmd": 4,
+        "row": 12,
+        "reason": "duplicate canonical phase pair"
+      },
+      {
+        "doi": "10.1016/j.fluid.2019.112321",
+        "pmd": 12,
+        "row": 13,
+        "reason": "duplicate canonical phase pair"
+      },
+      {
+        "doi": "10.1016/j.fluid.2019.112321",
+        "pmd": 12,
+        "row": 12,
+        "reason": "duplicate canonical phase pair"
+      }
+    ],
+    "policy": "deduplicate before split; retain exact target-system record when the same binary endpoint appears in another ternary PMD. No uncertainty-nearby points merged."
+  },
+  "candidateRows": [
+    {
+      "split": "calibration",
+      "rank": 1,
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 2,
+      "sourceRow": 1,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=2]/NumValues[1]",
+      "temperatureK": 303.15,
+      "pressureKPa": 101.0,
+      "meanEndpointEthanolMoleFraction": 0.0,
+      "moleFractions": {
+        "Liquid mixture 1": [
+          0.0,
+          0.032,
+          0.968
+        ],
+        "Liquid mixture 2": [
+          0.0,
+          0.858,
+          0.14200000000000002
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.01,
+          "level": 95
+        }
+      },
+      "noFitEndpointRmseMoleFraction": 0.019389080053156416,
+      "noFitMaximumAbsoluteEndpointError": 0.028305921048029203
+    },
+    {
+      "split": "calibration",
+      "rank": 2,
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 2,
+      "sourceRow": 8,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=2]/NumValues[8]",
+      "temperatureK": 303.15,
+      "pressureKPa": 101.0,
+      "meanEndpointEthanolMoleFraction": 0.013999999999999999,
+      "moleFractions": {
+        "Liquid mixture 1": [
+          0.01,
+          0.027,
+          0.963
+        ],
+        "Liquid mixture 2": [
+          0.018,
+          0.825,
+          0.15700000000000003
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.01,
+          "level": 95
+        },
+        "Liquid mixture 2:ethanol": {
+          "expanded95": 0.012,
+          "level": 95
+        }
+      },
+      "noFitEndpointRmseMoleFraction": 0.018612008156399778,
+      "noFitMaximumAbsoluteEndpointError": 0.030334077910569635
+    },
+    {
+      "split": "validation",
+      "rank": 3,
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 2,
+      "sourceRow": 9,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=2]/NumValues[9]",
+      "temperatureK": 303.15,
+      "pressureKPa": 101.0,
+      "meanEndpointEthanolMoleFraction": 0.034,
+      "moleFractions": {
+        "Liquid mixture 1": [
+          0.026,
+          0.029,
+          0.945
+        ],
+        "Liquid mixture 2": [
+          0.042,
+          0.788,
+          0.16999999999999993
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.01,
+          "level": 95
+        },
+        "Liquid mixture 2:ethanol": {
+          "expanded95": 0.011,
+          "level": 95
+        }
+      },
+      "noFitEndpointRmseMoleFraction": 0.02586821276487657,
+      "noFitMaximumAbsoluteEndpointError": 0.04371956491640194
+    },
+    {
+      "split": "calibration",
+      "rank": 4,
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 2,
+      "sourceRow": 10,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=2]/NumValues[10]",
+      "temperatureK": 303.15,
+      "pressureKPa": 101.0,
+      "meanEndpointEthanolMoleFraction": 0.054000000000000006,
+      "moleFractions": {
+        "Liquid mixture 1": [
+          0.04,
+          0.033,
+          0.927
+        ],
+        "Liquid mixture 2": [
+          0.068,
+          0.736,
+          0.19599999999999995
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.01,
+          "level": 95
+        },
+        "Liquid mixture 2:ethanol": {
+          "expanded95": 0.011,
+          "level": 95
+        }
+      },
+      "noFitEndpointRmseMoleFraction": 0.0269232943565758,
+      "noFitMaximumAbsoluteEndpointError": 0.04365494062710784
+    },
+    {
+      "split": "calibration",
+      "rank": 5,
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 2,
+      "sourceRow": 11,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=2]/NumValues[11]",
+      "temperatureK": 303.15,
+      "pressureKPa": 101.0,
+      "meanEndpointEthanolMoleFraction": 0.08149999999999999,
+      "moleFractions": {
+        "Liquid mixture 1": [
+          0.061,
+          0.033,
+          0.906
+        ],
+        "Liquid mixture 2": [
+          0.102,
+          0.667,
+          0.23099999999999998
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.01,
+          "level": 95
+        },
+        "Liquid mixture 2:ethanol": {
+          "expanded95": 0.011,
+          "level": 95
+        }
+      },
+      "noFitEndpointRmseMoleFraction": 0.029875567434384707,
+      "noFitMaximumAbsoluteEndpointError": 0.0486341838466664
+    },
+    {
+      "split": "validation",
+      "rank": 6,
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 2,
+      "sourceRow": 12,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=2]/NumValues[12]",
+      "temperatureK": 303.15,
+      "pressureKPa": 101.0,
+      "meanEndpointEthanolMoleFraction": 0.10750000000000001,
+      "moleFractions": {
+        "Liquid mixture 1": [
+          0.08,
+          0.044,
+          0.876
+        ],
+        "Liquid mixture 2": [
+          0.135,
+          0.57,
+          0.29500000000000004
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.012,
+          "level": 95
+        },
+        "Liquid mixture 2:ethanol": {
+          "expanded95": 0.011,
+          "level": 95
+        }
+      },
+      "noFitEndpointRmseMoleFraction": 0.02581195383883106,
+      "noFitMaximumAbsoluteEndpointError": 0.042475145862934105
+    },
+    {
+      "split": "calibration",
+      "rank": 7,
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 2,
+      "sourceRow": 13,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=2]/NumValues[13]",
+      "temperatureK": 303.15,
+      "pressureKPa": 101.0,
+      "meanEndpointEthanolMoleFraction": 0.127,
+      "moleFractions": {
+        "Liquid mixture 1": [
+          0.095,
+          0.053,
+          0.852
+        ],
+        "Liquid mixture 2": [
+          0.159,
+          0.496,
+          0.345
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.012,
+          "level": 95
+        },
+        "Liquid mixture 2:ethanol": {
+          "expanded95": 0.01,
+          "level": 95
+        }
+      },
+      "noFitEndpointRmseMoleFraction": 0.026803671089630273,
+      "noFitMaximumAbsoluteEndpointError": 0.04957325022156989
+    },
+    {
+      "split": "calibration",
+      "rank": 8,
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 2,
+      "sourceRow": 14,
+      "sourceLocator": "PureOrMixtureData[nPureOrMixtureDataNumber=2]/NumValues[14]",
+      "temperatureK": 303.15,
+      "pressureKPa": 101.0,
+      "meanEndpointEthanolMoleFraction": 0.14049999999999999,
+      "moleFractions": {
+        "Liquid mixture 1": [
+          0.107,
+          0.06,
+          0.833
+        ],
+        "Liquid mixture 2": [
+          0.174,
+          0.419,
+          0.40700000000000003
+        ]
+      },
+      "uncertainty95": {
+        "Liquid mixture 1:ethyl-acetate": {
+          "expanded95": 0.012,
+          "level": 95
+        },
+        "Liquid mixture 2:ethanol": {
+          "expanded95": 0.01,
+          "level": 95
+        }
+      },
+      "noFitEndpointRmseMoleFraction": 0.030096099484125068,
+      "noFitMaximumAbsoluteEndpointError": 0.05257521415328947
+    }
+  ],
+  "split": {
+    "rule": "sort by mean endpoint ethanol mole fraction; validation ranks 3 and 6 (1-indexed); no random reshuffling",
+    "calibrationCount": 6,
+    "validationCount": 2,
+    "validationRanks": [
+      3,
+      6
+    ]
+  },
+  "baselineNoFit": {
+    "calibration": {
+      "count": 6,
+      "rmse": 0.025703334963574697,
+      "maxRowRmse": 0.030096099484125068,
+      "medianRowRmse": 0.026863482723103037,
+      "maxComponentError": 0.05257521415328947
+    },
+    "validation": {
+      "count": 2,
+      "rmse": 0.025840098612687882,
+      "maxRowRmse": 0.02586821276487657,
+      "medianRowRmse": 0.025840083301853813,
+      "maxComponentError": 0.04371956491640194
+    },
+    "overall": {
+      "count": 8,
+      "rmse": 0.025737594006931763,
+      "maxRowRmse": 0.030096099484125068,
+      "medianRowRmse": 0.02633594192725342,
+      "maxComponentError": 0.05257521415328947
+    }
+  },
+  "preRegisteredGates": {
+    "candidateThresholdsOnly": true,
+    "calibrationRmseMoleFractionMax": 0.04,
+    "calibrationMaxComponentErrorMax": 0.12,
+    "validationRmseMoleFractionMax": 0.05,
+    "validationMaxComponentErrorMax": 0.15,
+    "validationCannotWorsenBaselineRmseByMoreThan": 0.01,
+    "constraints": [
+      "every predicted phase composition nonnegative and sums to 1 within 1e-6",
+      "no game yield/selection parameter change",
+      "validation rows and source hashes frozen before fitting"
+    ]
+  },
+  "dataExposure": {
+    "all53RecordsPreviouslyAudited": true,
+    "allBaselineErrorsPreviouslyComputed": true,
+    "splitBlind": false,
+    "thresholdsIndependentOfPreviousResults": false,
+    "purpose": "prospectively freeze future fitting protocol; not a retrospectively invented blind holdout",
+    "validationEndpointsVisibleToReviewers": true,
+    "futureParameterFitterMayReadValidation": false
+  },
+  "parameterEvidencePolicy": {
+    "currentFittingAuthorized": false,
+    "beforeAnyFit": [
+      "Identify and cite the exact NRTL/UNIQUAC equation convention, interaction units, and pair direction",
+      "Obtain traceable fixed nonrandomness alpha or UNIQUAC r/q with temperature/domain applicability; do not invent constants",
+      "Freeze parameter provenance, free parameter count, physically justified bounds, regularizer and objective before fitting",
+      "Assess Jacobian rank and profile sensitivity using only calibration rows; six tie-lines cannot establish general ternary identifiability",
+      "Fit only physically interpretable pair parameters; no per-row coefficients or fitted phase labels"
+    ],
+    "temperatureParametersAllowed": false,
+    "parameterScope": "isothermal at 303.15 K only; no fitted temperature derivative"
+  },
+  "executionProtocol": [
+    "Keep the existing no-fit UNIFAC baseline fixed, including its model hash.",
+    "Use the six calibration rows only for parameter estimation. Select regularization/model capacity within calibration-only leave-one-tie-line-out; both endpoints stay together.",
+    "Choose candidate model and hyperparameters before final validation. Evaluate the two frozen validation tie-lines once as the final model-selection check.",
+    "Keep all baseline and candidate failures in the denominator; if a solver does not accept two phases, report failure rather than drop the row.",
+    "Report raw endpoint mole-fraction RMSE over the two phases and all three components, maximum absolute component error, and log-activity residual separately.",
+    "Absolute thresholds are numerical screening limits, not experimental uncertainty acceptance. Do not label within-source-uncertainty without covariance and missing-component uncertainty.",
+    "Require at least 10% validation RMSE reduction from frozen UNIFAC before describing extra fitted parameters as beneficial, in addition to absolute gates. Two holdout points only support descriptive evidence.",
+    "If validation is used to retune the model, label it consumed/development and reserve a new external dataset; do not reuse its blind-test claim.",
+    "Other temperatures and acid-containing systems stay outside fitting; label any later check as already-seen extrapolation audit, never hidden external validation."
+  ],
+  "modelBenefitGate": {
+    "validationRmseRelativeToBaselineMax": 0.9,
+    "benefitStatus": "not_run",
+    "inference": "descriptive only; validation n=2"
+  },
+  "gameplayPolicy": {
+    "physicalConstraints": [
+      "species/element and charge balances",
+      "nonnegative inventory and stream amounts",
+      "all loss routed to traceable residue",
+      "recorded temperature, phase and model domain",
+      "phase-label continuity and no-candidate remains unresolved",
+      "no fictional purity or E/Z certification"
+    ],
+    "tunableWithExplicitPolicy": [
+      "processing ticks",
+      "equipment capacity",
+      "EU per operation",
+      "device tier cost",
+      "wash-water dose with recomputed mass/phase balance",
+      "finite-stage efficiency and tracked residue routing",
+      "acceptance/purity specification threshold without changing measured purity"
+    ],
+    "notEquivalentToIndustrialData": [
+      "EU-to-J conversion",
+      "mixing/settling time",
+      "separation stage efficiency",
+      "industrial yield",
+      "calorimetry"
+    ]
+  },
+  "modelComparison": [
+    {
+      "id": "UNIFAC-v0-fixed",
+      "role": "no-fit baseline",
+      "parameters": "none",
+      "status": "evaluated; not calibrated"
+    },
+    {
+      "id": "NRTL-binary-fit",
+      "role": "candidate",
+      "parameters": "binary interaction parameters only, with declared bounds and regularization",
+      "fitData": "calibration rows only",
+      "status": "not fitted"
+    },
+    {
+      "id": "UNIQUAC-binary-fit",
+      "role": "candidate",
+      "parameters": "binary interaction parameters only, with declared bounds and regularization",
+      "fitData": "calibration rows only",
+      "status": "not fitted"
+    },
+    {
+      "id": "UNIFAC-plus-correction",
+      "role": "candidate only if a source-backed correction is defined",
+      "parameters": "must be pre-registered; no ad-hoc free correction",
+      "fitData": "calibration rows only",
+      "status": "not fitted"
+    }
+  ],
+  "limitations": [
+    "All rows were already inspected during source audit; this is not a blind test",
+    "Only 303.15 K and one ternary subsystem; no temperature extrapolation",
+    "Four duplicate binary endpoints remain recorded but excluded from independent fit rows",
+    "No uncertainty-weighted chi-square because closure-derived component uncertainty is unavailable and source uncertainties are heterogeneous",
+    "No global stability, phase amount, entrainment, kinetics or heat validation",
+    "A passing numerical gate would not authorize game yield or EU mapping"
+  ]
+}

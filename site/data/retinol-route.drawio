@@ -1,0 +1,73 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="retinol" name="Retinol terminal branch">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n0" value="Qualified ester store" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#dcebe3;">
+          <mxGeometry as="geometry" x="0" y="0" width="220" height="70" />
+        </mxCell>
+        <mxCell id="n1" value="Alkali store" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#dcebe3;">
+          <mxGeometry as="geometry" x="260" y="0" width="220" height="70" />
+        </mxCell>
+        <mxCell id="n2" value="Solvent / water stores" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#dcebe3;">
+          <mxGeometry as="geometry" x="520" y="0" width="220" height="70" />
+        </mxCell>
+        <mxCell id="n3" value="Hydrolysis reactor" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#dcebe3;">
+          <mxGeometry as="geometry" x="0" y="130" width="220" height="70" />
+        </mxCell>
+        <mxCell id="n4" value="Workup / separation" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#dcebe3;">
+          <mxGeometry as="geometry" x="260" y="130" width="220" height="70" />
+        </mxCell>
+        <mxCell id="n5" value="Retinol finishing / QC" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#dcebe3;">
+          <mxGeometry as="geometry" x="520" y="130" width="220" height="70" />
+        </mxCell>
+        <mxCell id="n6" value="Salt / alkaline waste" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#dcebe3;">
+          <mxGeometry as="geometry" x="0" y="260" width="220" height="70" />
+        </mxCell>
+        <mxCell id="n7" value="Solvent / organic residue" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#dcebe3;">
+          <mxGeometry as="geometry" x="260" y="260" width="220" height="70" />
+        </mxCell>
+        <mxCell id="n8" value="Sealed retinol cartridge" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#dcebe3;">
+          <mxGeometry as="geometry" x="520" y="260" width="220" height="70" />
+        </mxCell>
+        <mxCell id="n9" value="OC brewing candidate" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#dcebe3;">
+          <mxGeometry as="geometry" x="0" y="390" width="220" height="70" />
+        </mxCell>
+        <mxCell id="n10" value="Collected offgas / media" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#dcebe3;">
+          <mxGeometry as="geometry" x="260" y="390" width="220" height="70" />
+        </mxCell>
+        <mxCell id="e0" source="n0" target="n3" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e1" source="n1" target="n3" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e2" source="n2" target="n3" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e3" source="n3" target="n4" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e4" source="n4" target="n5" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e5" source="n4" target="n6" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e6" source="n4" target="n7" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e7" source="n5" target="n8" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e8" source="n8" target="n9" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e9" source="n5" target="n10" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

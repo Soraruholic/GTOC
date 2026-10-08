@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-02",
+  "decision": "复用站内 3Dmol.js 2.5.3，开发原创 atom-map 机理数据层与步骤播放器；当前不引入第二套三维依赖。",
+  "systems": [
+    {
+      "name": "ChemTube3D",
+      "url": "https://www.chemtube3d.com/nucleophilic-substitution-at-the-carbonyl-group-acid-catalysed-ester-hydrolysis-and-transesterification/",
+      "verified": "有可点击结构/反应箭头的酯形成、水解及酯交换三维教学页面，支持机理讲解与练习。",
+      "fit": "最贴近本项目的教学先例；它是内容站点，不是可直接驱动游戏库存的反应预测引擎。",
+      "license": "页面标注 CC BY-NC-SA 2.0 UK；本项目仅外链，不复制动画、坐标或图片。"
+    },
+    {
+      "name": "Jmol / JSmol",
+      "url": "https://jmol.sourceforge.net/",
+      "verified": "官方列出 HTML5 页面组件、脚本、动画、轨道、振动与测量能力。",
+      "fit": "成熟化学教学工具；引入另一套脚本和加载体系的成本较高，保留为更复杂量化数据展示的备选。",
+      "license": "官方声明 LGPL；采用时须对所选分发版本另核对。"
+    },
+    {
+      "name": "3Dmol.js",
+      "url": "https://3dmol.org/doc/GLViewer.html",
+      "verified": "GLViewer 支持原子/几何形状/标签及帧动画；已有站内 BSD 许可的 2.5.3 分发。",
+      "fit": "本轮选择；在固定版本实测所用 API，以自编关键帧/键编辑/电子箭头层补足机理语义。它不会自动判断机理正确性。",
+      "license": "站内 vendor/3Dmol-LICENSE.txt 保留 BSD 及所附第三方声明。在线最新文档不保证等于已安装 2.5.3 API。"
+    },
+    {
+      "name": "Mol*",
+      "url": "https://molstar.org/",
+      "verified": "官方展示大型分子、轨迹及注释场景。",
+      "fit": "大型结构与轨迹生态强；本次 21 原子教学案例无需新增另一渲染栈。未完成专门机理编辑能力评测。",
+      "license": "本轮没有下载或集成分发，许可未作再分发审计。"
+    }
+  ],
+  "scientificReference": {
+    "title": "OpenStax Organic Chemistry 21.3, Figure 21.5",
+    "url": "https://openstax.org/books/organic-chemistry/pages/21-3-reactions-of-carboxylic-acids",
+    "use": "机理与同位素依据参考；自写讲解与坐标，不复用教材图片。页面目前声明 CC BY-NC-SA 4.0，不假定全站所有教材许可相同。"
+  },
+  "tiers": [
+    {
+      "tier": "已实现：教学关键帧",
+      "requires": "固定原子身份、键级、电荷、孤对、电子箭头及守恒检查",
+      "claims": "可解释一条人工组织的反应路径；无物理时间/能量意义"
+    },
+    {
+      "tier": "后续：计算验证路径",
+      "requires": "几何优化、频率（极小点无虚频、TS 一个相关虚频）、IRC/路径连接、溶剂/方法敏感性、完整计算 provenance",
+      "claims": "只在给定计算方法与模型域中讨论路径与势垒；未经这些验证不能改贴为真实反应动画"
+    },
+    {
+      "tier": "后续：作者编辑器",
+      "requires": "拖拽原子映射、协同多箭头图编辑、价态反馈、审核发布与反例",
+      "claims": "机理教学验证独立于游戏产率/库存；不把自动原子映射当机理证据"
+    }
+  ],
+  "nextSteps": [
+    "对现有教学坐标做清晰度评审，保留非物理插值标识。",
+    "将结构路径与量化研究分别版本化；先做端点/中间体优化和频率，再决定是否建立 TS/IRC 支线。",
+    "未来 M4 游戏二维 widget 可消费相同原子 ID/图编辑；网页三维保持独立。"
+  ]
+}

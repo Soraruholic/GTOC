@@ -1,0 +1,141 @@
+{
+  "schema": "oc-ai-physical-review-1",
+  "date": "2026-10-04",
+  "reviewer": "independent AI physical chemistry and process engineering reviewer",
+  "humanExpertSignoff": false,
+  "experimentalValidation": false,
+  "verdict": "conditional acceptance for offline reference and explicit heat-evidence ledger only",
+  "scope": [
+    "continuous LLE labels",
+    "sixth-stage missed split",
+    "independent TPD search",
+    "scale tolerance",
+    "U07 neutralization reference and unknown heat terms"
+  ],
+  "evidence": "research/industrial-review/physical-independent-check.json",
+  "reproduce": "research/process-engine/.venv/Scripts/python.exe research/industrial-review/physical-independent-check.py",
+  "numericalSnapshot": {
+    "solverSha256": "b60f6a9187c173cefb7b0ae37419349436fcf529db4f6401530418240d67cb12",
+    "referenceSha256": "3324356c635e8045ee9c2a534af321a389a1fd6067d2fb8b6a17e21e04f8bb37",
+    "stages": 6,
+    "maxMaterialResidualMol": 8.881784197001252e-16,
+    "maxChemicalPotentialLogResidual": 3.774758283725532e-15,
+    "minimumTpdFound": -1.2176252017942153e-15,
+    "globalStabilityProven": false,
+    "oldSixthStageMissedSplitConfirmed": true,
+    "phaseSwapInvariant": true,
+    "scaleInvariantObserved": [
+      1e-06,
+      0.001,
+      1.0,
+      1000.0
+    ],
+    "initialScaleIssue": {
+      "scale": 1e-06,
+      "initialState": "SINGLE_CANDIDATE",
+      "resolution": "normalized 1 mol minimization; restored extensive amounts",
+      "finalState": "TWO_PHASE_NUMERICAL",
+      "finalScaledErrorMol": 6.938893903907228e-18,
+      "status": "resolved_and_independently_retested"
+    },
+    "acceptance": {
+      "allMaterialResidualsBelow1e-11": true,
+      "allTwoPhaseMuResidualsBelow2e-6": true,
+      "allTwoPhaseGibbsDecreases": true,
+      "sampledTpdNotBelowMinus1e-7": true,
+      "scaleInvariantIncluding1eMinus6": true,
+      "referenceMatchesReviewedSolver": true,
+      "gibbsUnitExplicit": true,
+      "entrainmentRemainsUnknown": true
+    }
+  },
+  "findings": [
+    {
+      "id": "PC-01",
+      "priority": "P1",
+      "issue": "Numerical no-candidate state is not thermodynamic single-phase certification",
+      "action": "Implemented 1 mol normalized solve; scales 1e-6,1e-3,1,1e3 now agree; no-candidate still does not imply stable single phase",
+      "status": "resolved_and_independently_retested"
+    },
+    {
+      "id": "PC-02",
+      "priority": "P1",
+      "issue": "Retained equilibrium water is not mechanical entrainment",
+      "action": "Implemented waterInRetainedEquilibriumPhaseMol and mechanicalWaterEntrainmentMol unknown; first unresolved row remains bulk water, not certified organic-phase water",
+      "status": "resolved_and_independently_retested"
+    },
+    {
+      "id": "PC-03",
+      "priority": "P2",
+      "issue": "deltaGOverRT uses mol amounts",
+      "action": "Implemented explicit deltaGOverRTUnit mol; not separation heat",
+      "status": "resolved_and_independently_retested"
+    },
+    {
+      "id": "PC-04",
+      "priority": "P2",
+      "issue": "Temperature guard and professional library do not establish measured domain validity",
+      "action": "Retain numerical domain, no global stability, no VLLE, no electrolyte, no calibration claims",
+      "status": "boundary_retained"
+    },
+    {
+      "id": "PC-05",
+      "priority": "P2",
+      "issue": "Exact -57.3 kJ/mol primary calorimetric provenance not established",
+      "action": "Nominal teaching value in a cited -57 to -58 kJ/mol range; actual organic-mixture heat unknown",
+      "status": "boundary_retained"
+    }
+  ],
+  "heatContract": {
+    "u07NeutralizedMol": 0.01,
+    "neutralizationReferenceJ": {
+      "status": "reference_only",
+      "value": -573,
+      "basis": "nominal -57.3 kJ/mol; dilute aqueous HCl/NaOH only"
+    },
+    "releasedHeatMagnitudeJ": 573,
+    "actualNeutralizationHeat": "unknown",
+    "sensibleHeat": "unknown",
+    "reactionEnthalpy": "unknown",
+    "mixingDilutionHeat": "unknown",
+    "separationHeat": "unknown",
+    "mechanicalWaterEntrainmentMol": "unknown",
+    "totalHeat": "unknown",
+    "eu": "unknown",
+    "automaticEuConversionAllowed": false,
+    "unknownMayBeSerializedAsZero": false
+  },
+  "sources": [
+    {
+      "id": "neutralization",
+      "url": "https://www.chemguide.co.uk/physical/energetics/neutralisation.html",
+      "checked": "2026-10-04",
+      "evidence": "-57 to -58 kJ/mol range, per mol water, dilute aqueous strong acid/base and weak-acid differences"
+    },
+    {
+      "id": "neutralization-republication",
+      "url": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplemental_Modules_(Physical_and_Theoretical_Chemistry)/Thermodynamics/Energies_and_Potentials/Enthalpy/Enthalpy_Change_of_Neutralization",
+      "checked": "2026-10-04",
+      "independentOfChemguide": false
+    },
+    {
+      "id": "unifac",
+      "doi": "10.1002/aic.690210607",
+      "metadataVerifiedViaCrossref": true,
+      "fullTextReviewed": false
+    },
+    {
+      "id": "tpd",
+      "doi": "10.1016/0378-3812(82)85001-2",
+      "metadataVerifiedViaCrossref": true,
+      "fullTextReviewed": false
+    }
+  ],
+  "prohibitions": [
+    "reference cannot set game yield",
+    "lineage cannot set phase height",
+    "Gibbs decrease cannot set heat duty",
+    "AI candidates cannot create inventory or set selectivity"
+  ],
+  "humanReviewState": "pending external human review if desired"
+}

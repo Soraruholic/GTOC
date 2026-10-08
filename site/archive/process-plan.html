@@ -1,0 +1,117 @@
+<!doctype html><html lang="zh-CN"><!-- OC_THEME_EARLY --><script data-oc-theme>/* Runs before page styles/players. Theme preferences never change lesson or simulation state. */
+(()=>{'use strict';
+const KEY='oc-site-theme-v1',root=document.documentElement,system=matchMedia('(prefers-color-scheme: dark)'),printing=matchMedia('print'),viewers=new Set();
+const valid=v=>['system','light','dark'].includes(v);let preference='system';
+try{const saved=localStorage.getItem(KEY);if(valid(saved))preference=saved;}catch{}
+const dark=()=>!printing.matches&&(preference==='dark'||preference==='system'&&system.matches);
+function apply(){root.dataset.theme=dark()?'dark':'light';root.dataset.themePreference=preference;const select=document.getElementById('site-theme-select');if(select)select.value=preference;for(const item of viewers){if(!item.host?.isConnected){viewers.delete(item);continue;}item.viewer.setBackgroundColor(dark()?'#b8c7bf':item.background);}window.dispatchEvent(new CustomEvent('oc-theme-change',{detail:{preference,resolved:root.dataset.theme}}));}
+function choose(value){if(!valid(value))return;preference=value;try{localStorage.setItem(KEY,value);}catch{}apply();}
+system.addEventListener('change',apply);printing.addEventListener('change',apply);
+window.addEventListener('storage',e=>{if(e.key===KEY||e.key===null){preference=valid(e.newValue)?e.newValue:'system';apply();}});
+window.OCTheme={choose,getState:()=>({preference,resolved:root.dataset.theme,viewers:viewers.size}),createViewer(element,options={}){
+ const host=typeof element==='string'?document.getElementById(element):element?.nodeType?element:element?.[0],background=options.backgroundColor??'#ffffff';
+ const viewer=window.$3Dmol.createViewer(element,{...options,backgroundColor:dark()?'#b8c7bf':background});viewers.add({viewer,background,host});return viewer;
+}};
+apply();
+// Older classrooms contain literal colours. Derive dark overrides without rewriting their source.
+function rgb(value){if(/^#[\da-f]{3,8}$/i.test(value)){let v=value.slice(1);if(v.length===3)v=v.split('').map(x=>x+x).join('');if(v.length===6)return [0,2,4].map(i=>parseInt(v.slice(i,i+2),16));}if(/^rgba?\(/.test(value)){const p=value.match(/[\d.]+/g)?.map(Number);if(p?.length>=3)return p;}return value==='white'?[255,255,255]:value==='black'?[0,0,0]:null;}
+const luminance=c=>c.slice(0,3).map(x=>{x/=255;return x<=.04045?x/12.92:((x+.055)/1.055)**2.4;}).reduce((s,v,i)=>s+v*[.2126,.7152,.0722][i],0);
+function colour(value,kind){if(kind==='text'&&value.includes('--white'))return '#deebe4';const c=rgb(value.trim());if(!c||c[3]===0)return null;let out;
+ if(kind==='border')out=[68,96,87];
+ else if(kind==='background'){if(luminance(c)<.14)return null;out=luminance(c)>.88?[25,42,48]:[35,57,54];}
+ else{out=c.slice(0,3);while((luminance(out)+.05)/(.035+.05)<5.5&&out.some(x=>x<250))out=out.map(x=>Math.round(x+(255-x)*.12));}
+ return 'rgba('+out.join(',')+','+(c[3]??1)+')';}
+function adaptRules(rules){let css='';for(const rule of rules){if(rule.selectorText&&rule.style){const declarations=[];for(const prop of ['color','background-color','border-top-color','border-right-color','border-bottom-color','border-left-color']){const value=rule.style.getPropertyValue(prop),mapped=colour(value,prop==='color'?'text':prop==='background-color'?'background':'border');if(mapped)declarations.push(prop+':'+mapped+'!important');}if(declarations.length)css+='html[data-theme="dark"] :where('+rule.selectorText+'):not(svg,svg *){'+declarations.join(';')+'}\n';}else if(rule.cssRules&&rule.conditionText&&!/print/.test(rule.conditionText)){css+=(rule.type===4?'@media ':'@supports ')+rule.conditionText+'{'+adaptRules(rule.cssRules)+'}';}}return css;}
+function inline(scope){const nodes=[];if(scope.nodeType!==1||scope.closest('svg')||scope.tagName==='CANVAS')return;if(scope.hasAttribute('style'))nodes.push(scope);nodes.push(...scope.querySelectorAll('[style]'));for(const el of nodes){if(el.closest('svg')||el.tagName==='CANVAS')continue;for(const [prop,kind,attr] of [['color','text','color'],['background-color','background','bg']]){const original=el.style.getPropertyValue(prop),mapped=colour(original,kind);if(mapped){el.style.setProperty('--oc-night-'+attr,mapped);el.setAttribute('data-oc-night-'+attr,'');}}}}
+function ready(){
+ const en=root.lang.startsWith('en'),control=document.createElement('div');control.className='site-theme-control';control.innerHTML='<label for="site-theme-select">◐ '+(en?'Appearance':'外观')+'</label><select id="site-theme-select" aria-label="'+(en?'Website appearance':'网站外观')+'"><option value="system">'+(en?'System':'跟随系统')+'</option><option value="light">'+(en?'Light':'浅色')+'</option><option value="dark">'+(en?'Dark':'深色')+'</option></select>';
+ const header=document.getElementById('site-header');if(header)header.append(control);else{control.classList.add('site-theme-floating');document.body.prepend(control);}control.querySelector('select').addEventListener('change',e=>choose(e.target.value));
+ const css=document.createElement('style');css.id='oc-theme-adapted';css.media='screen';css.textContent=Array.from(document.styleSheets).filter(s=>!s.ownerNode?.hasAttribute('data-oc-theme')).map(s=>{try{return adaptRules(s.cssRules);}catch{return '';}}).join('\n');
+ // Explicit theme rules follow generated legacy overrides and retain selected-control contrast.
+ document.head.insertBefore(css,document.querySelector('style[data-oc-theme]'));
+ inline(document.body);const observer=new MutationObserver(records=>{for(const r of records)for(const n of r.addedNodes)inline(n);});observer.observe(document.body,{childList:true,subtree:true});apply();
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',ready,{once:true});else ready();
+})();
+</script><!-- /OC_THEME --><base href="../"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>M6 复盘与后续计划 · GTNH-OC</title><style>body{max-width:980px;margin:35px auto;padding:0 25px 60px;background:#f5f2e8;color:#243b37;font:16px/1.85 system-ui,sans-serif}h1{font-size:34px;line-height:1.3}h2{margin-top:45px;border-top:1px solid #bdc9b6;padding-top:25px}a{color:#276a58}table{border-collapse:collapse;font-size:14px;width:100%;min-width:620px;background:#fffdf6}td,th{padding:14px;border:1px solid #d1d9c7;text-align:left}.table-scroll{overflow-x:auto}code{font-size:14px;overflow-wrap:anywhere;background:#e7ecdf;padding:2px 4px}pre{overflow-x:auto;padding:20px;background:#e7ecdf}li{margin:12px 0}.check{list-style:none}input{accent-color:#276a58;width:18px;height:18px;vertical-align:middle}nav{display:flex;gap:20px;flex-wrap:wrap;margin-bottom:30px}.progress{padding:12px 18px;background:#e1e9d7;border-radius:6px}@media print{nav,.progress{display:none}body{background:white;font-size:11pt}h2{break-after:avoid}tr{break-inside:avoid}}h3{margin-top:34px;scroll-margin-top:20px}h2{scroll-margin-top:20px}.command{display:flex;align-items:start;gap:16px;margin:8px 0;white-space:normal}.command-text{flex:1;min-width:0;overflow-wrap:anywhere;white-space:pre-wrap}.copy-command{flex:none;border:1px solid #839d88;background:#fffdf6;color:#275c4c;border-radius:4px;padding:4px 9px;cursor:pointer}.copy-command:focus-visible{outline:3px solid #327b66;outline-offset:3px}.jump{padding:12px 18px;background:#fffdf6;border:1px solid #d1d9c7}.copy-status{font-size:14px;color:#275c4c}@media print{.copy-command,.copy-status,.jump{display:none}}</style><!-- OC_THEME_STYLE --><style data-oc-theme>/* Independent presentation layer: no chemistry state or data changes. */
+.site-theme-control{display:flex;align-items:center;gap:8px;font:12px/1.5 system-ui,"Microsoft YaHei",sans-serif;white-space:nowrap;color:var(--muted,#58716b);flex:none}
+.site-theme-control label{font:inherit;margin:0;display:inline;color:inherit}
+.site-theme-control select{width:auto;min-width:0;max-width:155px;padding:7px 26px 7px 10px;margin:0;border:1px solid var(--line,#d7e1d5);border-radius:8px;background:var(--panel,#fffef9);color:var(--ink,#183f39);font:inherit;cursor:pointer}
+.site-theme-floating{position:fixed;right:15px;top:12px;padding:9px 12px;background:var(--panel,#fffef9);border:1px solid var(--line,#d7e1d5);border-radius:10px;z-index:100}
+@media screen{
+ html[data-theme="dark"]{color-scheme:dark;--ink:#deebe4;--muted:#adbfba;--paper:#101c21;--panel:#192a30;--white:#192a30;--line:#39534f;--green:#8bd8b7;--gold:#e1b77f;--pale:#263c39;--soft:#263c39;--rust:#efa98e;--clay:#e5b38b;--lime:#d5e5aa;background:#101c21}
+ html[data-theme="dark"] body{background:var(--paper)!important;color:var(--ink)!important}
+ html[data-theme="dark"] #site-header{background:#14252a!important;border-color:var(--line)!important}
+ html[data-theme="dark"] :is(h1,h2,h3,h4,th,strong){color:inherit}
+ html[data-theme="dark"] :is(a,.eyebrow){color:var(--green)}
+ html[data-theme="dark"] :is(button,input,select,textarea){color:var(--ink);background-color:var(--panel);border-color:var(--line);accent-color:var(--green)}
+ html[data-theme="dark"] :is(input,textarea)::placeholder{color:#afc2b9;opacity:1}
+ html[data-theme="dark"] :is(button[aria-pressed="true"],.learn-button.primary,.button.primary,.primary,.site-mark,.brand-mark){background:#8bd8b7!important;color:#102b23!important;border-color:#8bd8b7!important}
+ html[data-theme="dark"] :is(button[aria-pressed="true"],.primary,.site-mark,.brand-mark) :is(strong,small,span){color:inherit!important;background-color:transparent!important}
+ html[data-theme="dark"] .learning-cover{background:#173b33!important;color:#e4eee5!important}
+ html[data-theme="dark"] .learning-cover :is(h2,p,small,span){color:inherit}
+ html[data-theme="dark"] :is(pre,code){background-color:#22363b;color:#dbe9dd}
+ html[data-theme="dark"] pre code{background:transparent;color:inherit}
+ html[data-theme="dark"] :is(.site-theme-control select,.site-theme-floating){background:#192a30!important;color:#deebe4!important;border-color:#476660!important}
+ html[data-theme="dark"] :focus-visible{outline:3px solid #edc484!important;outline-offset:4px}
+ html[data-theme="dark"] ::selection{background:#496b61;color:#fff}
+ html[data-theme="dark"]{scrollbar-color:#5c796f #15272c}
+ /* Scientific plates preserve the original sign/element palette. No invert or hue rotation. */
+ html[data-theme="dark"] :is(svg,[data-motion-canvas]){background-color:#cad5ce;color:#183f39;--ink:#183f39;--green:#1d6c58;--muted:#486259;--paper:#cad5ce;--white:#d5dfd7;--line:#869e90;border-radius:6px}
+ html[data-theme="dark"] svg>rect:first-of-type[style*="fill:#FFFFFF"],html[data-theme="dark"] svg>rect:first-of-type[fill="#FFFFFF"],html[data-theme="dark"] svg>rect:first-of-type[fill="white"]{fill:#cad5ce!important}
+ html[data-theme="dark"] :is(.viewer-column,.viewer-wrap,.mech-view-wrap,.orbital-view-wrap,#knowledge-3d,#mechanism-viewer,#mech-3d,#orbital-view,#process-molecule,#molecule-view,#viewer){background-color:#b8c7bf!important;color:#183f39}
+ html[data-theme="dark"] :is(.view-bottom,.mech-frame-foot,.panel-footer,.geometry-note){background:#223831;color:#d3e7d9}
+ html[data-theme="dark"] .viewer-hint{color:#183f39!important}
+ html[data-theme="dark"] :is(#viewer-fallback,#mech-fallback,#webgl-fallback){background:#233936!important;color:#deebe4!important}
+ html[data-theme="dark"] img{filter:brightness(.86);border-radius:5px}
+ html[data-theme="dark"] img:hover{filter:none}
+ html[data-theme="dark"] [data-oc-night-color]{color:var(--oc-night-color)!important}
+ html[data-theme="dark"] [data-oc-night-bg]{background-color:var(--oc-night-bg)!important}
+}
+@media(max-width:700px){#site-header .site-theme-control{margin-left:auto}.site-theme-floating{position:relative;top:auto;right:auto;width:max-content;max-width:100%;margin:12px}.site-theme-control select{min-height:38px}.site-theme-control{gap:6px}}
+@media print{.site-theme-control{display:none!important}html{color-scheme:light!important}body{background:white!important;color:#17352f!important}img{filter:none!important}}
+
+@media screen{html[data-theme="dark"] .lesson-nav [aria-current="step"]{background:#8bd8b7!important;color:#102b23!important;border-color:#8bd8b7!important}}
+</style><!-- /OC_THEME --><nav><a href="process.html">← 产线实验室</a><a href="wiki.html#wiki-reactions">三维机理 Wiki</a><a href="process-plan.md">下载 Markdown</a></nav><div id="progress" class="progress" aria-live="polite"></div><p id="copy-status" class="copy-status" role="status"></p><main><h1>从 M2 到首条产线：范围复盘与下一轮计划</h1><p>本轮把交付中心从存档细节调整为可运行的乙酸乙酯批式产线，并推进了 M3、M4、M5、M6 的关键部分。版本为 <code>0.3.0-process-alpha1</code>。版本号表示流程原型可测试，不表示原路线全部 gate 已通过。</p><h2>本轮实际能力与原路线的差额</h2><div class="table-scroll"><table><tbody><tr><th>阶段</th><th>本轮实际完成</th><th>仍未达到的原始要求</th></tr><tr><td>M3 反应族</td><td>CDK 饱和直链羧酸/一级醇酯化及水解；20 正例、20 域外/条件反例；RDKit 独立产物图交叉检查；游戏 candidate 命令</td><td>更多实验审核数据；定量动力学标定；并非任意有机反应预测器</td></tr><tr><td>M4 机理</td><td>7 状态、21 原子、12 支箭头的三维教学；原子选择练习；双箭头协同提交与电子/八隅体反馈</td><td>独立专家署名审核；游戏内完整 ModularUI2 编辑器与客户端渲染矩阵</td></tr><tr><td>M5 GT 接入</td><td>运行时精确流体名白名单；GT/Forge 进料；8 个设备块；有限燃料/干燥容量；带完整组成的产品、废液容器；所有者限制</td><td>GT MTE 多方块、EU、NEI/BQ、生存配方、10–20 种物料、标准 GT 纯产品出口；跨管道/玩家/世界的崩溃原子性</td></tr><tr><td>M6 流程</td><td>UNIFAC 原始模型；限定纯物性；批釜、Rayleigh 间歇蒸馏、冷凝、液液分相水洗、容量干燥、回收/排污；20 分离参考工况与20产线工况</td><td>四组分实验校准；酸蒸气缔合；全局 VLLE；真实连续 CSTR、液位/控制器、冷却故障动态；多级精馏及工业负荷</td></tr></tbody></table></div><p>因此原始 <strong>M5/M6 完整 gate 仍开放</strong>。本轮建立了“从真实进料到可分析成品”的可玩纵向原型。接下来应该沿这条产线升级，不再先扩充数百条反应。</p><h2>数据与方法取舍</h2><p>ChemSep NRTL 参数覆盖不完整，尤其不能把缺失的乙酸相关对当成理想混合。本版冻结 <code>thermo 0.6.0</code> 提供的原始 UNIFAC 分组/交互项，覆盖所选四种分子；Java 独立实现与 Python 的 24 个活度系数点对照。酸的蒸气压选 Antoine Poling，酸/酯液相比热选 Rowlinson Poling，避免默认关联在导出网格低温或高温端发生隐式外推。运行域为 298.15–380 K、20–120 kPa，但只有已验工况获得当前数值验证，范围边界不等于实验有效域。</p><p>平衡模型与数值实现验证是两回事。8 个液液参考点使用独立 SLSQP Gibbs 最小化；12 个汽液参考点使用连续纯物性与 UNIFAC 求泡点。Java 的插值与求解误差单独比较；它们共享参数来源，不能称为实验验证。一般闪蒸明确拒绝识别到的液液体系，不用不收敛结果继续生产；液液求解的多种初值与 Gibbs 比较仍不能保证全局稳定性。</p><p>K(345 K)=4、0.025 的速率尺度、标准反应焓 −4 kJ/mol、600 s 批时、干燥芯的理想选择性和容量、煤→热量均是明确的教学参数。热账使用相同组分焓基准闭合，但混合过剩焓、吸附热、真实催化剂与传热系数尚未纳入。浏览器工况图显示的是已计算结果，不声称调用在线专业模拟服务。</p><h2>为什么当前收率偏低</h2><p>默认工况每批新加入酸、醇各 1 mol。反应形成约 0.510 mol 酯，最终产品中只有约 0.220 mol 酯。釜底保留约 0.141 mol，洗涤废液带走约 0.149 mol。多次水洗确实提高了纯度，却让单批产品收率降到约 22%。这恰好给下一阶段提供可量化的优化目标：<strong>在相同原料、95 wt% 成品规格和相同守恒要求下，提高总回收率并降低水耗/热耗。</strong></p><p>不能只用“反应转化率”代表整条产线的收率，也不能把所有循环中间物流都算作新产量。每轮优化都报告 fresh feed 基准的累计产品、残余、废液、干燥水和净能耗。</p><h2>接下来五个工程日</h2><div class="table-scroll"><table><tbody><tr><th>日程</th><th>可独立验收的目标</th><th>完成条件</th></tr><tr><td>P1</td><td>接收本次手动验收，固化第一条可玩基线；优先修进料、取料与重启问题</td><td>用户手册核心项通过；失败能从版本、命令和前后数量复现</td></tr><tr><td>P2</td><td>产线库存进入统一世界服务；把 GT 输入/样品输出的保存边界补成受控中转协议</td><td>模拟断电点位结果可解释；重复请求不重复兑付；不使用简单 NBT 标志冒充原子事务</td></tr><tr><td>P3</td><td>物性校准小包：乙醇/水/酯相平衡与酸缔合影响；比较 UNIFAC/NRTL/Hayden–O&#x27;Connell 的适用性</td><td>每一参数有来源/单位/温度域/许可；至少一个公开实验数据集可复现误差</td></tr><tr><td>P4</td><td>产线效率升级试验：洗涤级数、水比、釜底回收和废液中酯回收</td><td>Pareto 图报告产品收率、纯度、水耗、热耗；拒绝不可收敛或域外点，不填虚构结果</td></tr><tr><td>P5</td><td>选定下一工业单元与 GT MTE 接入方案，形成端到端验收脚本</td><td>选择一个目标：多级分离或连续釜；用现有管线证明必要性，冻结下轮范围</td></tr></tbody></table></div><h2>后续方向优先级</h2><ol><li><strong>生产可用性</strong>：受控中转账本、GT EU/多方块、存档与真实管道验收。优先于新增反应族。</li><li><strong>分离效率</strong>：先回收废液/釜底中的酯，再讨论精馏塔；验证热力学，随后加入真实级间回流、持液与传热。目标是改进这一条产线，而不是再做一条不相干演示。</li><li><strong>连续化</strong>：CSTR/PFR、液位、流量、热惯性、温控与冷却失效。以同一组分包和同一参考基准接入，不能把网页一级不可逆 CSTR 示意直接当作酯化模拟。</li><li><strong>高质量教学</strong>：请有机化学教师/研究者审阅当前 Fischer 路径和措辞；添加反向水解练习、氧同位素追踪，保留当前原子 ID。</li><li><strong>现代分析支线</strong>：先做端点/中间体构型优化、频率与溶剂敏感性；轨道图用于解释 donor/acceptor，不能单凭 HOMO/LUMO 图给出势垒。TS/IRC 仍需独立资源与验证；AI 候选只进入审核队列。</li></ol><p>停止条件：任一改动出现质量门删除杂质、跨接口增殖、无法说明来源的参数，先关闭该接口或收窄适用域；不通过扩大反应库掩盖问题。独立化学审阅与量化研究并行进行，不让它们阻塞这条产线的工程改进。</p></main><script>const boxes=[...document.querySelectorAll('[data-check]')];const key='oc-pilot-manual-v4';let state={};try{state=JSON.parse(localStorage.getItem(key)||'{}')}catch(e){}function update(){document.querySelector('#progress').textContent='已核对 '+boxes.filter(b=>b.checked).length+' / '+boxes.length+' 项 · 仅保存在本浏览器，勾选不是服务器验证记录';try{localStorage.setItem(key,JSON.stringify(Object.fromEntries(boxes.map(b=>[b.dataset.check,b.checked]))))}catch(e){}}boxes.forEach(b=>{b.checked=!!state[b.dataset.check];b.addEventListener('change',update)});if(boxes.length)update();else document.querySelector('#progress').hidden=true;
+document.querySelectorAll('.copy-command').forEach(button=>button.addEventListener('click',async()=>{const text=button.previousElementSibling.textContent;let copied=false;try{await navigator.clipboard.writeText(text);copied=true}catch(e){const area=document.createElement('textarea');area.value=text;area.style.position='fixed';area.style.opacity='0';document.body.append(area);area.select();try{copied=document.execCommand('copy')}catch(e){}area.remove();button.focus()}document.querySelector('#copy-status').textContent=copied?'已复制这一行，回到游戏聊天栏粘贴后执行。':'自动复制不可用，请选中这条命令手动复制。';button.textContent=copied?'已复制':'手动复制';}));</script></html><!-- OC_LANGUAGE --><style>.site-language-control{display:flex;align-items:center;gap:8px;font:12px/1.5 system-ui,sans-serif;white-space:nowrap;flex:none;color:var(--muted,#536b62)}.site-language-control a{display:inline-block;text-decoration:none;padding:7px 11px;border:1px solid var(--line,#d5dfd1);border-radius:8px;background:var(--panel,#fffef8);color:var(--green,#246b54)}.site-language-control a:focus-visible{outline:3px solid var(--gold,#967444);outline-offset:3px}.site-language-floating{margin:12px;position:relative;width:max-content;z-index:10}@media print{.site-language-control{display:none!important}}
+</style><script>window.OC_LANGUAGE_LESSONS=[{"id":"Fischer","page":"fischer-lab.html","branch":null},{"id":"E01","page":"va-lab.html","branch":0},{"id":"E02","page":"va-lab.html","branch":1},{"id":"Q01","page":"coupling-lab.html","branch":0},{"id":"C01a","page":"coupling-lab.html","branch":1},{"id":"C01b","page":"coupling-lab.html","branch":2},{"id":"C02","page":"coupling-lab.html","branch":3},{"id":"C03","page":"coupling-lab.html","branch":4},{"id":"C02-side","page":"chain-lab.html","branch":0},{"id":"D01","page":"chain-lab.html","branch":1},{"id":"D02","page":"chain-lab.html","branch":2},{"id":"E03-net","page":"chain-lab.html","branch":3},{"id":"EZ-identity","page":"chain-lab.html","branch":4},{"id":"B01a","page":"supply-lab.html","branch":0},{"id":"B01b","page":"supply-lab.html","branch":1},{"id":"B02","page":"supply-lab.html","branch":2},{"id":"B03","page":"supply-lab.html","branch":3},{"id":"A02","page":"darzens-lab.html","branch":0},{"id":"A03","page":"darzens-lab.html","branch":1},{"id":"A04a","page":"darzens-lab.html","branch":2},{"id":"A04b-net","page":"darzens-lab.html","branch":3},{"id":"A04c-net","page":"darzens-lab.html","branch":4},{"id":"U01","page":"campaign-lab.html","branch":0},{"id":"U02-net","page":"campaign-lab.html","branch":1},{"id":"U02-over-net","page":"campaign-lab.html","branch":2},{"id":"A01","page":"campaign-lab.html","branch":3},{"id":"U03","page":"carbon-lab.html","branch":0},{"id":"U03-acid","page":"carbon-lab.html","branch":1},{"id":"U04","page":"carbon-lab.html","branch":2},{"id":"U05","page":"carbon-lab.html","branch":3},{"id":"U06-net","page":"carbon-lab.html","branch":4},{"id":"C10-EZ","page":"carbon-lab.html","branch":5},{"id":"U07","page":"ionone-lab.html","branch":0}];
+/* Explicit navigation preserves user context. Preference storage is optional, never required. */
+(()=>{'use strict';
+const KEY='oc-site-language-v1',english=document.documentElement.lang.startsWith('en');
+function ready(){
+ if(document.getElementById('site-language-switch'))return;
+ const control=document.createElement('div');control.className='site-language-control';control.id='site-language-switch';
+ const label=document.createElement('span');label.textContent=english?'Language':'语言';
+ const link=document.createElement('a');link.lang=english?'zh-Hans':'en';link.hreflang=link.lang;link.textContent=english?'中文':'English';
+ control.append(label,link);const header=document.getElementById('site-header');if(header)header.append(control);else{control.classList.add('site-language-floating');document.body.prepend(control);}
+ const page=location.pathname.split('/').pop()||'index.html',archive=location.pathname.includes('/archive/');
+ const currentPages=['ester-guide','vitamin-a-guide','factory-services','factory-design','storage-logistics','process-quality','gameplay','next-line','ui-acceptance','process-manual','modular-plant','retinol-guide'];
+ const root=new URL(english||archive?'../':'./',location.href),lessons=window.OC_LANGUAGE_LESSONS||[],toChinese={index:'index',learning:'learning',wiki:'wiki',mechanisms:'mechanisms',plants:'plants',play:'play',glossary:'learning'};
+ function update(){
+  const hash=location.hash;let destination;
+  if(english){
+   if(page==='lesson.html'){
+    const l=lessons.find(x=>x.id===new URLSearchParams(location.search).get('id'))||lessons[0];
+    destination=l?l.page+(l.branch===null?'#wiki-reactions':'?branch='+l.branch+'#lesson'):'mechanisms.html';
+   }else if(page==='wiki.html')destination='wiki.html'+hash.replace(/^#compound-/,'#molecule-').replace(/^#sources$/,'');
+   else if(currentPages.includes(page.replace('.html','')))destination=page+hash;
+   else destination=(toChinese[page.replace('.html','')]||'index')+'.html';
+  }else{
+   const branch=document.getElementById('branch')?.value??new URLSearchParams(location.search).get('branch')??'0';
+   const l=lessons.find(x=>x.page===page&&(x.branch===null||String(x.branch)===String(branch)));
+   if(l)destination='en/lesson.html?id='+encodeURIComponent(l.id);
+   else if(page==='wiki.html')destination=hash.startsWith('#mechanism-')?'en/mechanisms.html':'en/wiki.html'+hash.replace(/^#molecule-/,'#compound-');
+   else if(currentPages.includes(page.replace('.html','')))destination='en/'+page+hash;
+   else {const mapping={'index.html':'index','learning.html':'learning','mechanisms.html':'mechanisms','plants.html':'plants','play.html':'play','process-manual.html':'play','process.html':'plants','ionone-manual.html':'plants','ester-guide.html':'plants','vitamin-a-guide.html':'plants'};destination='en/'+(mapping[page]||'index')+'.html';}
+  }
+  link.href=new URL(destination,root).href;
+  link.title=english?'Read the corresponding Chinese content':page==='wiki.html'&&location.hash.startsWith('#mechanism-')?'打开英文机理课程索引':'阅读对应英文内容';
+ }
+ link.addEventListener('click',()=>{try{localStorage.setItem(KEY,english?'zh':'en');}catch{}});
+ // Do not redirect explicit deep links based on preference: a linked original must stay readable.
+ try{control.dataset.preferredLanguage=localStorage.getItem(KEY)||document.documentElement.lang;}catch{}
+ window.addEventListener('hashchange',update);document.addEventListener('change',e=>{if(e.target.id==='branch')update();});update();
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',ready,{once:true});else ready();
+})();
+</script><!-- /OC_LANGUAGE -->

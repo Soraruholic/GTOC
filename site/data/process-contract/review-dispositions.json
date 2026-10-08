@@ -1,0 +1,26 @@
+{
+  "schema": "oc-review-dispositions-1",
+  "reviewKind": "AI专项审阅；非真人专家签核",
+  "humanExpertSignoff": false,
+  "implemented": [
+    "ORG-01: U08净工序与微观机理状态分开",
+    "ORG-02: β主式标为单端点，另列α与未反应量",
+    "ORG-03: 质量凭证保留model_assigned_unverified；严格GT出口拒绝",
+    "ORG-04: 80% / 30:70 / 95%保留未标定教学假设",
+    "ORG-05: 逐条挂接已读专利；OrgSyn仍未读",
+    "ORG-06: 纯函数与世界服务注释更正",
+    "ORG-07: 573 J参考与真实热unknown分列",
+    "ORG-08: 显示未建模γ及其他副产物",
+    "PC-01: 求解归一化并复核1e-6至1e3尺度",
+    "PC-02: 平衡相水与机械夹带分开",
+    "PC-03: ΔG/RT单位mol"
+  ],
+  "remaining": [
+    "U08完整微观箭推与动力学",
+    "实测LLE与量热标定",
+    "E/Z测定/过程选择性证据",
+    "GT精确身份和计量换算审核",
+    "GT接收端独立持久化与幂等回执",
+    "真人客户端验收"
+  ]
+}

@@ -1,0 +1,191 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="aqueous" name="水相调节与待检收集">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="aqueous-IN1" value="分批废水接收罐" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e4eee5;">
+          <mxGeometry as="geometry" x="15" y="20" width="180" height="55" />
+        </mxCell>
+        <mxCell id="aqueous-IN2" value="碱液计量罐" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e4eee5;">
+          <mxGeometry as="geometry" x="275" y="20" width="180" height="55" />
+        </mxCell>
+        <mxCell id="aqueous-IN3" value="酸液计量罐" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e4eee5;">
+          <mxGeometry as="geometry" x="535" y="20" width="180" height="55" />
+        </mxCell>
+        <mxCell id="aqueous-IN4" value="冷却/电源机组" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e4eee5;">
+          <mxGeometry as="geometry" x="795" y="20" width="180" height="55" />
+        </mxCell>
+        <mxCell id="aqueous-R" value="检测后酸碱调节釜" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e4eee5;">
+          <mxGeometry as="geometry" x="405" y="190" width="180" height="55" />
+        </mxCell>
+        <mxCell id="aqueous-OUT1" value="待检出水罐" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e4eee5;">
+          <mxGeometry as="geometry" x="15" y="390" width="180" height="55" />
+        </mxCell>
+        <mxCell id="aqueous-OUT2" value="高盐/不合格隔离罐" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e4eee5;">
+          <mxGeometry as="geometry" x="275" y="390" width="180" height="55" />
+        </mxCell>
+        <mxCell id="aqueous-OUT3" value="固相/污泥容器" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e4eee5;">
+          <mxGeometry as="geometry" x="535" y="390" width="180" height="55" />
+        </mxCell>
+        <mxCell id="aqueous-OUT4" value="尾气与冷凝液接收" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e4eee5;">
+          <mxGeometry as="geometry" x="795" y="390" width="180" height="55" />
+        </mxCell>
+        <mxCell id="e0" source="aqueous-IN1" target="aqueous-R" value="feed" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e1" source="aqueous-IN2" target="aqueous-R" value="feed" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e2" source="aqueous-IN3" target="aqueous-R" value="feed" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e3" source="aqueous-IN4" target="aqueous-R" value="utility" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e4" source="aqueous-R" target="aqueous-OUT1" value="residual" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e5" source="aqueous-R" target="aqueous-OUT2" value="residual" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e6" source="aqueous-R" target="aqueous-OUT3" value="residual" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e7" source="aqueous-R" target="aqueous-OUT4" value="residual" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e8" source="aqueous-R" target="aqueous-IN4" value="utility" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="organic" name="有机母液回收候选">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="organic-IN1" value="分批有机料罐" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e4eee5;">
+          <mxGeometry as="geometry" x="15" y="20" width="180" height="55" />
+        </mxCell>
+        <mxCell id="organic-IN2" value="新鲜溶剂/洗液罐" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e4eee5;">
+          <mxGeometry as="geometry" x="275" y="20" width="180" height="55" />
+        </mxCell>
+        <mxCell id="organic-IN3" value="热媒/电源机组" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e4eee5;">
+          <mxGeometry as="geometry" x="535" y="20" width="180" height="55" />
+        </mxCell>
+        <mxCell id="organic-IN4" value="冷却循环机组" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e4eee5;">
+          <mxGeometry as="geometry" x="795" y="20" width="180" height="55" />
+        </mxCell>
+        <mxCell id="organic-R" value="鉴定后分离/冷凝成套装置" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e4eee5;">
+          <mxGeometry as="geometry" x="405" y="190" width="180" height="55" />
+        </mxCell>
+        <mxCell id="organic-OUT1" value="回收溶剂待检罐" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e4eee5;">
+          <mxGeometry as="geometry" x="15" y="390" width="180" height="55" />
+        </mxCell>
+        <mxCell id="organic-OUT2" value="釜底/重残余罐" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e4eee5;">
+          <mxGeometry as="geometry" x="275" y="390" width="180" height="55" />
+        </mxCell>
+        <mxCell id="organic-OUT3" value="不凝气密闭接收" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e4eee5;">
+          <mxGeometry as="geometry" x="535" y="390" width="180" height="55" />
+        </mxCell>
+        <mxCell id="organic-OUT4" value="清洗/废介质容器" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e4eee5;">
+          <mxGeometry as="geometry" x="795" y="390" width="180" height="55" />
+        </mxCell>
+        <mxCell id="e0" source="organic-IN1" target="organic-R" value="feed" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e1" source="organic-IN2" target="organic-R" value="feed" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e2" source="organic-IN3" target="organic-R" value="utility" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e3" source="organic-IN4" target="organic-R" value="utility" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e4" source="organic-R" target="organic-OUT1" value="residual" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e5" source="organic-R" target="organic-OUT2" value="residual" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e6" source="organic-R" target="organic-OUT3" value="residual" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e7" source="organic-R" target="organic-OUT4" value="residual" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e8" source="organic-R" target="organic-IN3" value="utility" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e9" source="organic-R" target="organic-IN4" value="utility" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="ammonia" name="NH₃ 尾气吸收候选">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ammonia-IN1" value="氨尾气独立缓冲" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e4eee5;">
+          <mxGeometry as="geometry" x="15" y="20" width="180" height="55" />
+        </mxCell>
+        <mxCell id="ammonia-IN2" value="吸收液/水补充罐" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e4eee5;">
+          <mxGeometry as="geometry" x="275" y="20" width="180" height="55" />
+        </mxCell>
+        <mxCell id="ammonia-IN3" value="酸液计量罐" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e4eee5;">
+          <mxGeometry as="geometry" x="535" y="20" width="180" height="55" />
+        </mxCell>
+        <mxCell id="ammonia-IN4" value="冷却/循环泵/电源" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e4eee5;">
+          <mxGeometry as="geometry" x="795" y="20" width="180" height="55" />
+        </mxCell>
+        <mxCell id="ammonia-R" value="独立吸收塔与循环液槽" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e4eee5;">
+          <mxGeometry as="geometry" x="405" y="190" width="180" height="55" />
+        </mxCell>
+        <mxCell id="ammonia-OUT1" value="含铵盐吸收液罐" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e4eee5;">
+          <mxGeometry as="geometry" x="15" y="390" width="180" height="55" />
+        </mxCell>
+        <mxCell id="ammonia-OUT2" value="未吸收气接收" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e4eee5;">
+          <mxGeometry as="geometry" x="275" y="390" width="180" height="55" />
+        </mxCell>
+        <mxCell id="ammonia-OUT3" value="除雾液接收罐" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e4eee5;">
+          <mxGeometry as="geometry" x="535" y="390" width="180" height="55" />
+        </mxCell>
+        <mxCell id="ammonia-OUT4" value="清洗/排空隔离罐" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e4eee5;">
+          <mxGeometry as="geometry" x="795" y="390" width="180" height="55" />
+        </mxCell>
+        <mxCell id="e0" source="ammonia-IN1" target="ammonia-R" value="feed" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e1" source="ammonia-IN2" target="ammonia-R" value="feed" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e2" source="ammonia-IN3" target="ammonia-R" value="feed" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e3" source="ammonia-IN4" target="ammonia-R" value="utility" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e4" source="ammonia-R" target="ammonia-OUT1" value="residual" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e5" source="ammonia-R" target="ammonia-OUT2" value="residual" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e6" source="ammonia-R" target="ammonia-OUT3" value="residual" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e7" source="ammonia-R" target="ammonia-OUT4" value="residual" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e8" source="ammonia-R" target="ammonia-IN4" value="utility" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

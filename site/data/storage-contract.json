@@ -1,0 +1,118 @@
+{
+  "schema": "oc-storage-teaching-2",
+  "implementation": "local-source-not-deployed-by-this-export",
+  "source": "mod/src/main/java/org/gtnhoc/chem/process/v2/StorageProcess.java",
+  "sourceSha256": "6a4b63d7ed7a67a0021f9c769fe105a8662681555e9b30b99285fc0c0acad214",
+  "boundary": "Only source-to-feed scheduling is simulated. No reaction, yield or output creation.",
+  "plans": {
+    "ESTER": {
+      "routes": [
+        {
+          "id": "aceticacid",
+          "name": "乙酸",
+          "phase": "LIQUID",
+          "basis": "MB",
+          "required": 1000,
+          "capacity": 10000,
+          "maxTransfer": 1000,
+          "registry": "aceticacid"
+        },
+        {
+          "id": "ethanol",
+          "name": "乙醇",
+          "phase": "LIQUID",
+          "basis": "MB",
+          "required": 1000,
+          "capacity": 10000,
+          "maxTransfer": 1000,
+          "registry": "bioethanol"
+        },
+        {
+          "id": "water",
+          "name": "水",
+          "phase": "LIQUID",
+          "basis": "MB",
+          "required": 5000,
+          "capacity": 10000,
+          "maxTransfer": 1000,
+          "registry": "water"
+        }
+      ],
+      "outputs": [
+        "产品隔离",
+        "残余 / 未反应料",
+        "废水"
+      ]
+    },
+    "VITAMIN_A": {
+      "routes": [
+        {
+          "id": "acetone",
+          "name": "丙酮",
+          "phase": "LIQUID",
+          "basis": "MB",
+          "required": 1000,
+          "capacity": 10000,
+          "maxTransfer": 1000,
+          "registry": "acetone"
+        },
+        {
+          "id": "formaldehyde",
+          "name": "甲醛",
+          "phase": "GAS",
+          "basis": "MB",
+          "required": 1000,
+          "capacity": 10000,
+          "maxTransfer": 1000,
+          "registry": "fluid.formaldehyde"
+        },
+        {
+          "id": "acetylene",
+          "name": "乙炔",
+          "phase": "GAS",
+          "basis": "MB",
+          "required": 1000,
+          "capacity": 10000,
+          "maxTransfer": 1000,
+          "registry": "acetylene"
+        },
+        {
+          "id": "hydrogen",
+          "name": "氢气",
+          "phase": "GAS",
+          "basis": "MB",
+          "required": 1000,
+          "capacity": 10000,
+          "maxTransfer": 1000,
+          "registry": "hydrogen"
+        },
+        {
+          "id": "acetic-anhydride",
+          "name": "乙酸酐",
+          "phase": "LIQUID",
+          "basis": "MB",
+          "required": 1000,
+          "capacity": 10000,
+          "maxTransfer": 1000,
+          "registry": "molten.aceticanhydride"
+        },
+        {
+          "id": "catalyst-core",
+          "name": "OC 催化核心",
+          "phase": "SOLID",
+          "basis": "ITEM_STACK",
+          "required": 1,
+          "capacity": 64,
+          "maxTransfer": 64,
+          "registry": "OC 物品，非原生工业催化剂"
+        }
+      ],
+      "outputs": [
+        "成品隔离",
+        "残余 / 母液",
+        "废液",
+        "尾气"
+      ]
+    }
+  }
+}

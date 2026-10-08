@@ -1,0 +1,677 @@
+{
+  "version": 1,
+  "scope": "真实正版客户端操作后的原子快照数值读回；不是网页驱动游戏，也不等同硬断电试验。每条记录保留实际构建哈希。",
+  "totalMol": "1.000000000000000000009",
+  "totalEnergyJ": "100.000000000000000000001",
+  "cases": [
+    {
+      "label": "第一次取样",
+      "sequence": 2,
+      "jarSha256": "b74ea8e163f2db98c1c9c7356a7ebc356e5e8bef2d4b968a0f5dbaef71c96c4f",
+      "batches": [
+        {
+          "revision": 1,
+          "mol": "0.75000000000000000000675",
+          "energyJ": "75.00000000000000000000075",
+          "receipts": 1,
+          "species": {
+            "oc1:73f2eab75cf8c7e16b78e1df703498ba418ffc2f16cca65fb0e37ef9fa4c4d24": "0.56250000000000000000675",
+            "oc1:c71f910aab89ad4cfb7517ab6e1e48a16a8281e84d28d1eaa70fddde4fec74be": "0.1875"
+          },
+          "role": "源批次"
+        },
+        {
+          "revision": 1,
+          "mol": "0.25000000000000000000225",
+          "energyJ": "25.00000000000000000000025",
+          "receipts": 1,
+          "species": {
+            "oc1:73f2eab75cf8c7e16b78e1df703498ba418ffc2f16cca65fb0e37ef9fa4c4d24": "0.18750000000000000000225",
+            "oc1:c71f910aab89ad4cfb7517ab6e1e48a16a8281e84d28d1eaa70fddde4fec74be": "0.0625"
+          },
+          "role": "样品"
+        }
+      ]
+    },
+    {
+      "label": "同一请求再次提交",
+      "sequence": 2,
+      "jarSha256": "b74ea8e163f2db98c1c9c7356a7ebc356e5e8bef2d4b968a0f5dbaef71c96c4f",
+      "batches": [
+        {
+          "revision": 1,
+          "mol": "0.75000000000000000000675",
+          "energyJ": "75.00000000000000000000075",
+          "receipts": 1,
+          "species": {
+            "oc1:73f2eab75cf8c7e16b78e1df703498ba418ffc2f16cca65fb0e37ef9fa4c4d24": "0.56250000000000000000675",
+            "oc1:c71f910aab89ad4cfb7517ab6e1e48a16a8281e84d28d1eaa70fddde4fec74be": "0.1875"
+          },
+          "role": "源批次"
+        },
+        {
+          "revision": 1,
+          "mol": "0.25000000000000000000225",
+          "energyJ": "25.00000000000000000000025",
+          "receipts": 1,
+          "species": {
+            "oc1:73f2eab75cf8c7e16b78e1df703498ba418ffc2f16cca65fb0e37ef9fa4c4d24": "0.18750000000000000000225",
+            "oc1:c71f910aab89ad4cfb7517ab6e1e48a16a8281e84d28d1eaa70fddde4fec74be": "0.0625"
+          },
+          "role": "样品"
+        }
+      ]
+    },
+    {
+      "label": "两次取样后：拒绝继续取样",
+      "sequence": 3,
+      "jarSha256": "b74ea8e163f2db98c1c9c7356a7ebc356e5e8bef2d4b968a0f5dbaef71c96c4f",
+      "batches": [
+        {
+          "revision": 2,
+          "mol": "0.5625000000000000000050625",
+          "energyJ": "56.2500000000000000000005625",
+          "receipts": 2,
+          "species": {
+            "oc1:73f2eab75cf8c7e16b78e1df703498ba418ffc2f16cca65fb0e37ef9fa4c4d24": "0.4218750000000000000050625",
+            "oc1:c71f910aab89ad4cfb7517ab6e1e48a16a8281e84d28d1eaa70fddde4fec74be": "0.140625"
+          },
+          "role": "源批次"
+        },
+        {
+          "revision": 2,
+          "mol": "0.4375000000000000000039375",
+          "energyJ": "43.7500000000000000000004375",
+          "receipts": 2,
+          "species": {
+            "oc1:73f2eab75cf8c7e16b78e1df703498ba418ffc2f16cca65fb0e37ef9fa4c4d24": "0.3281250000000000000039375",
+            "oc1:c71f910aab89ad4cfb7517ab6e1e48a16a8281e84d28d1eaa70fddde4fec74be": "0.109375"
+          },
+          "role": "样品"
+        }
+      ]
+    },
+    {
+      "label": "全部回注",
+      "sequence": 4,
+      "jarSha256": "b74ea8e163f2db98c1c9c7356a7ebc356e5e8bef2d4b968a0f5dbaef71c96c4f",
+      "batches": [
+        {
+          "revision": 3,
+          "mol": "1.000000000000000000009",
+          "energyJ": "100.000000000000000000001",
+          "receipts": 3,
+          "species": {
+            "oc1:73f2eab75cf8c7e16b78e1df703498ba418ffc2f16cca65fb0e37ef9fa4c4d24": "0.750000000000000000009",
+            "oc1:c71f910aab89ad4cfb7517ab6e1e48a16a8281e84d28d1eaa70fddde4fec74be": "0.25"
+          },
+          "role": "源批次"
+        },
+        {
+          "revision": 3,
+          "mol": "0",
+          "energyJ": "0",
+          "receipts": 3,
+          "species": {},
+          "role": "样品"
+        }
+      ]
+    },
+    {
+      "label": "有样品时关闭界面",
+      "sequence": 5,
+      "jarSha256": "b74ea8e163f2db98c1c9c7356a7ebc356e5e8bef2d4b968a0f5dbaef71c96c4f",
+      "batches": [
+        {
+          "revision": 4,
+          "mol": "0.75000000000000000000675",
+          "energyJ": "75.00000000000000000000075",
+          "receipts": 4,
+          "species": {
+            "oc1:73f2eab75cf8c7e16b78e1df703498ba418ffc2f16cca65fb0e37ef9fa4c4d24": "0.56250000000000000000675",
+            "oc1:c71f910aab89ad4cfb7517ab6e1e48a16a8281e84d28d1eaa70fddde4fec74be": "0.1875"
+          },
+          "role": "源批次"
+        },
+        {
+          "revision": 4,
+          "mol": "0.25000000000000000000225",
+          "energyJ": "25.00000000000000000000025",
+          "receipts": 4,
+          "species": {
+            "oc1:73f2eab75cf8c7e16b78e1df703498ba418ffc2f16cca65fb0e37ef9fa4c4d24": "0.18750000000000000000225",
+            "oc1:c71f910aab89ad4cfb7517ab6e1e48a16a8281e84d28d1eaa70fddde4fec74be": "0.0625"
+          },
+          "role": "样品"
+        }
+      ]
+    },
+    {
+      "label": "重启后权威文件",
+      "sequence": 5,
+      "jarSha256": "3553757a08cd943a8e25b93849d9f6cce547536b72ed72090204b78f07dde8ba",
+      "batches": [
+        {
+          "revision": 4,
+          "mol": "0.75000000000000000000675",
+          "energyJ": "75.00000000000000000000075",
+          "receipts": 4,
+          "species": {
+            "oc1:73f2eab75cf8c7e16b78e1df703498ba418ffc2f16cca65fb0e37ef9fa4c4d24": "0.56250000000000000000675",
+            "oc1:c71f910aab89ad4cfb7517ab6e1e48a16a8281e84d28d1eaa70fddde4fec74be": "0.1875"
+          },
+          "role": "源批次"
+        },
+        {
+          "revision": 4,
+          "mol": "0.25000000000000000000225",
+          "energyJ": "25.00000000000000000000025",
+          "receipts": 4,
+          "species": {
+            "oc1:73f2eab75cf8c7e16b78e1df703498ba418ffc2f16cca65fb0e37ef9fa4c4d24": "0.18750000000000000000225",
+            "oc1:c71f910aab89ad4cfb7517ab6e1e48a16a8281e84d28d1eaa70fddde4fec74be": "0.0625"
+          },
+          "role": "样品"
+        }
+      ]
+    },
+    {
+      "label": "背包满：引用留在原槽",
+      "sequence": 6,
+      "jarSha256": "b8ba1e76b04c2a8114299fa3370be35cee5337960db20f472a35d517a6f98d2f",
+      "batches": [
+        {
+          "revision": 5,
+          "mol": "1.000000000000000000009",
+          "energyJ": "100.000000000000000000001",
+          "receipts": 5,
+          "species": {
+            "oc1:73f2eab75cf8c7e16b78e1df703498ba418ffc2f16cca65fb0e37ef9fa4c4d24": "0.750000000000000000009",
+            "oc1:c71f910aab89ad4cfb7517ab6e1e48a16a8281e84d28d1eaa70fddde4fec74be": "0.25"
+          },
+          "role": "源批次"
+        },
+        {
+          "revision": 5,
+          "mol": "0",
+          "energyJ": "0",
+          "receipts": 5,
+          "species": {},
+          "role": "样品"
+        }
+      ]
+    },
+    {
+      "label": "写入暂停：关闭界面仍是旧快照",
+      "sequence": 6,
+      "jarSha256": "a4daf385d711c988fdc5d106e3fd175257adc4c1e8012b0f611f4f016e704e69",
+      "batches": [
+        {
+          "revision": 5,
+          "mol": "1.000000000000000000009",
+          "energyJ": "100.000000000000000000001",
+          "receipts": 5,
+          "species": {
+            "oc1:73f2eab75cf8c7e16b78e1df703498ba418ffc2f16cca65fb0e37ef9fa4c4d24": "0.750000000000000000009",
+            "oc1:c71f910aab89ad4cfb7517ab6e1e48a16a8281e84d28d1eaa70fddde4fec74be": "0.25"
+          },
+          "role": "源批次"
+        },
+        {
+          "revision": 5,
+          "mol": "0",
+          "energyJ": "0",
+          "receipts": 5,
+          "species": {},
+          "role": "样品"
+        }
+      ]
+    },
+    {
+      "label": "关闭后提交完成",
+      "sequence": 7,
+      "jarSha256": "a4daf385d711c988fdc5d106e3fd175257adc4c1e8012b0f611f4f016e704e69",
+      "batches": [
+        {
+          "revision": 6,
+          "mol": "0.75000000000000000000675",
+          "energyJ": "75.00000000000000000000075",
+          "receipts": 6,
+          "species": {
+            "oc1:73f2eab75cf8c7e16b78e1df703498ba418ffc2f16cca65fb0e37ef9fa4c4d24": "0.56250000000000000000675",
+            "oc1:c71f910aab89ad4cfb7517ab6e1e48a16a8281e84d28d1eaa70fddde4fec74be": "0.1875"
+          },
+          "role": "源批次"
+        },
+        {
+          "revision": 6,
+          "mol": "0.25000000000000000000225",
+          "energyJ": "25.00000000000000000000025",
+          "receipts": 6,
+          "species": {
+            "oc1:73f2eab75cf8c7e16b78e1df703498ba418ffc2f16cca65fb0e37ef9fa4c4d24": "0.18750000000000000000225",
+            "oc1:c71f910aab89ad4cfb7517ab6e1e48a16a8281e84d28d1eaa70fddde4fec74be": "0.0625"
+          },
+          "role": "样品"
+        }
+      ]
+    },
+    {
+      "label": "实际丢弃引用：数量仍保留",
+      "sequence": 7,
+      "jarSha256": "a4daf385d711c988fdc5d106e3fd175257adc4c1e8012b0f611f4f016e704e69",
+      "batches": [
+        {
+          "revision": 6,
+          "mol": "0.75000000000000000000675",
+          "energyJ": "75.00000000000000000000075",
+          "receipts": 6,
+          "species": {
+            "oc1:73f2eab75cf8c7e16b78e1df703498ba418ffc2f16cca65fb0e37ef9fa4c4d24": "0.56250000000000000000675",
+            "oc1:c71f910aab89ad4cfb7517ab6e1e48a16a8281e84d28d1eaa70fddde4fec74be": "0.1875"
+          },
+          "role": "源批次"
+        },
+        {
+          "revision": 6,
+          "mol": "0.25000000000000000000225",
+          "energyJ": "25.00000000000000000000025",
+          "receipts": 6,
+          "species": {
+            "oc1:73f2eab75cf8c7e16b78e1df703498ba418ffc2f16cca65fb0e37ef9fa4c4d24": "0.18750000000000000000225",
+            "oc1:c71f910aab89ad4cfb7517ab6e1e48a16a8281e84d28d1eaa70fddde4fec74be": "0.0625"
+          },
+          "role": "样品"
+        }
+      ]
+    },
+    {
+      "label": "补领引用：没有新增物料",
+      "sequence": 7,
+      "jarSha256": "a4daf385d711c988fdc5d106e3fd175257adc4c1e8012b0f611f4f016e704e69",
+      "batches": [
+        {
+          "revision": 6,
+          "mol": "0.75000000000000000000675",
+          "energyJ": "75.00000000000000000000075",
+          "receipts": 6,
+          "species": {
+            "oc1:73f2eab75cf8c7e16b78e1df703498ba418ffc2f16cca65fb0e37ef9fa4c4d24": "0.56250000000000000000675",
+            "oc1:c71f910aab89ad4cfb7517ab6e1e48a16a8281e84d28d1eaa70fddde4fec74be": "0.1875"
+          },
+          "role": "源批次"
+        },
+        {
+          "revision": 6,
+          "mol": "0.25000000000000000000225",
+          "energyJ": "25.00000000000000000000025",
+          "receipts": 6,
+          "species": {
+            "oc1:73f2eab75cf8c7e16b78e1df703498ba418ffc2f16cca65fb0e37ef9fa4c4d24": "0.18750000000000000000225",
+            "oc1:c71f910aab89ad4cfb7517ab6e1e48a16a8281e84d28d1eaa70fddde4fec74be": "0.0625"
+          },
+          "role": "样品"
+        }
+      ]
+    },
+    {
+      "label": "断线期间：尚未提交",
+      "sequence": 7,
+      "jarSha256": "a4daf385d711c988fdc5d106e3fd175257adc4c1e8012b0f611f4f016e704e69",
+      "batches": [
+        {
+          "revision": 6,
+          "mol": "0.75000000000000000000675",
+          "energyJ": "75.00000000000000000000075",
+          "receipts": 6,
+          "species": {
+            "oc1:73f2eab75cf8c7e16b78e1df703498ba418ffc2f16cca65fb0e37ef9fa4c4d24": "0.56250000000000000000675",
+            "oc1:c71f910aab89ad4cfb7517ab6e1e48a16a8281e84d28d1eaa70fddde4fec74be": "0.1875"
+          },
+          "role": "源批次"
+        },
+        {
+          "revision": 6,
+          "mol": "0.25000000000000000000225",
+          "energyJ": "25.00000000000000000000025",
+          "receipts": 6,
+          "species": {
+            "oc1:73f2eab75cf8c7e16b78e1df703498ba418ffc2f16cca65fb0e37ef9fa4c4d24": "0.18750000000000000000225",
+            "oc1:c71f910aab89ad4cfb7517ab6e1e48a16a8281e84d28d1eaa70fddde4fec74be": "0.0625"
+          },
+          "role": "样品"
+        }
+      ]
+    },
+    {
+      "label": "离线提交完成",
+      "sequence": 8,
+      "jarSha256": "a4daf385d711c988fdc5d106e3fd175257adc4c1e8012b0f611f4f016e704e69",
+      "batches": [
+        {
+          "revision": 7,
+          "mol": "1.000000000000000000009",
+          "energyJ": "100.000000000000000000001",
+          "receipts": 7,
+          "species": {
+            "oc1:73f2eab75cf8c7e16b78e1df703498ba418ffc2f16cca65fb0e37ef9fa4c4d24": "0.750000000000000000009",
+            "oc1:c71f910aab89ad4cfb7517ab6e1e48a16a8281e84d28d1eaa70fddde4fec74be": "0.25"
+          },
+          "role": "源批次"
+        },
+        {
+          "revision": 7,
+          "mol": "0",
+          "energyJ": "0",
+          "receipts": 7,
+          "species": {},
+          "role": "样品"
+        }
+      ]
+    },
+    {
+      "label": "区块卸载时：尚未提交",
+      "sequence": 8,
+      "jarSha256": "a4daf385d711c988fdc5d106e3fd175257adc4c1e8012b0f611f4f016e704e69",
+      "batches": [
+        {
+          "revision": 7,
+          "mol": "1.000000000000000000009",
+          "energyJ": "100.000000000000000000001",
+          "receipts": 7,
+          "species": {
+            "oc1:73f2eab75cf8c7e16b78e1df703498ba418ffc2f16cca65fb0e37ef9fa4c4d24": "0.750000000000000000009",
+            "oc1:c71f910aab89ad4cfb7517ab6e1e48a16a8281e84d28d1eaa70fddde4fec74be": "0.25"
+          },
+          "role": "源批次"
+        },
+        {
+          "revision": 7,
+          "mol": "0",
+          "energyJ": "0",
+          "receipts": 7,
+          "species": {},
+          "role": "样品"
+        }
+      ]
+    },
+    {
+      "label": "卸载后提交完成",
+      "sequence": 9,
+      "jarSha256": "a4daf385d711c988fdc5d106e3fd175257adc4c1e8012b0f611f4f016e704e69",
+      "batches": [
+        {
+          "revision": 8,
+          "mol": "0.75000000000000000000675",
+          "energyJ": "75.00000000000000000000075",
+          "receipts": 8,
+          "species": {
+            "oc1:73f2eab75cf8c7e16b78e1df703498ba418ffc2f16cca65fb0e37ef9fa4c4d24": "0.56250000000000000000675",
+            "oc1:c71f910aab89ad4cfb7517ab6e1e48a16a8281e84d28d1eaa70fddde4fec74be": "0.1875"
+          },
+          "role": "源批次"
+        },
+        {
+          "revision": 8,
+          "mol": "0.25000000000000000000225",
+          "energyJ": "25.00000000000000000000025",
+          "receipts": 8,
+          "species": {
+            "oc1:73f2eab75cf8c7e16b78e1df703498ba418ffc2f16cca65fb0e37ef9fa4c4d24": "0.18750000000000000000225",
+            "oc1:c71f910aab89ad4cfb7517ab6e1e48a16a8281e84d28d1eaa70fddde4fec74be": "0.0625"
+          },
+          "role": "样品"
+        }
+      ]
+    },
+    {
+      "label": "确认前故障：从权威恢复已提交结果",
+      "sequence": 10,
+      "jarSha256": "a4daf385d711c988fdc5d106e3fd175257adc4c1e8012b0f611f4f016e704e69",
+      "batches": [
+        {
+          "revision": 9,
+          "mol": "1.000000000000000000009",
+          "energyJ": "100.000000000000000000001",
+          "receipts": 9,
+          "species": {
+            "oc1:73f2eab75cf8c7e16b78e1df703498ba418ffc2f16cca65fb0e37ef9fa4c4d24": "0.750000000000000000009",
+            "oc1:c71f910aab89ad4cfb7517ab6e1e48a16a8281e84d28d1eaa70fddde4fec74be": "0.25"
+          },
+          "role": "源批次"
+        },
+        {
+          "revision": 9,
+          "mol": "0",
+          "energyJ": "0",
+          "receipts": 9,
+          "species": {},
+          "role": "样品"
+        }
+      ]
+    },
+    {
+      "label": "重试已提交请求：不再扣料",
+      "sequence": 10,
+      "jarSha256": "a4daf385d711c988fdc5d106e3fd175257adc4c1e8012b0f611f4f016e704e69",
+      "batches": [
+        {
+          "revision": 9,
+          "mol": "1.000000000000000000009",
+          "energyJ": "100.000000000000000000001",
+          "receipts": 9,
+          "species": {
+            "oc1:73f2eab75cf8c7e16b78e1df703498ba418ffc2f16cca65fb0e37ef9fa4c4d24": "0.750000000000000000009",
+            "oc1:c71f910aab89ad4cfb7517ab6e1e48a16a8281e84d28d1eaa70fddde4fec74be": "0.25"
+          },
+          "role": "源批次"
+        },
+        {
+          "revision": 9,
+          "mol": "0",
+          "energyJ": "0",
+          "receipts": 9,
+          "species": {},
+          "role": "样品"
+        }
+      ]
+    },
+    {
+      "label": "提交前故障：未提交",
+      "sequence": 10,
+      "jarSha256": "a4daf385d711c988fdc5d106e3fd175257adc4c1e8012b0f611f4f016e704e69",
+      "batches": [
+        {
+          "revision": 9,
+          "mol": "1.000000000000000000009",
+          "energyJ": "100.000000000000000000001",
+          "receipts": 9,
+          "species": {
+            "oc1:73f2eab75cf8c7e16b78e1df703498ba418ffc2f16cca65fb0e37ef9fa4c4d24": "0.750000000000000000009",
+            "oc1:c71f910aab89ad4cfb7517ab6e1e48a16a8281e84d28d1eaa70fddde4fec74be": "0.25"
+          },
+          "role": "源批次"
+        },
+        {
+          "revision": 9,
+          "mol": "0",
+          "energyJ": "0",
+          "receipts": 9,
+          "species": {},
+          "role": "样品"
+        }
+      ]
+    },
+    {
+      "label": "原请求重试：成功一次",
+      "sequence": 11,
+      "jarSha256": "a4daf385d711c988fdc5d106e3fd175257adc4c1e8012b0f611f4f016e704e69",
+      "batches": [
+        {
+          "revision": 10,
+          "mol": "0.75000000000000000000675",
+          "energyJ": "75.00000000000000000000075",
+          "receipts": 10,
+          "species": {
+            "oc1:73f2eab75cf8c7e16b78e1df703498ba418ffc2f16cca65fb0e37ef9fa4c4d24": "0.56250000000000000000675",
+            "oc1:c71f910aab89ad4cfb7517ab6e1e48a16a8281e84d28d1eaa70fddde4fec74be": "0.1875"
+          },
+          "role": "源批次"
+        },
+        {
+          "revision": 10,
+          "mol": "0.25000000000000000000225",
+          "energyJ": "25.00000000000000000000025",
+          "receipts": 10,
+          "species": {
+            "oc1:73f2eab75cf8c7e16b78e1df703498ba418ffc2f16cca65fb0e37ef9fa4c4d24": "0.18750000000000000000225",
+            "oc1:c71f910aab89ad4cfb7517ab6e1e48a16a8281e84d28d1eaa70fddde4fec74be": "0.0625"
+          },
+          "role": "样品"
+        }
+      ]
+    },
+    {
+      "label": "最终构建：满背包拒绝移出引用",
+      "sequence": 11,
+      "jarSha256": "a4daf385d711c988fdc5d106e3fd175257adc4c1e8012b0f611f4f016e704e69",
+      "batches": [
+        {
+          "revision": 10,
+          "mol": "0.75000000000000000000675",
+          "energyJ": "75.00000000000000000000075",
+          "receipts": 10,
+          "species": {
+            "oc1:73f2eab75cf8c7e16b78e1df703498ba418ffc2f16cca65fb0e37ef9fa4c4d24": "0.56250000000000000000675",
+            "oc1:c71f910aab89ad4cfb7517ab6e1e48a16a8281e84d28d1eaa70fddde4fec74be": "0.1875"
+          },
+          "role": "源批次"
+        },
+        {
+          "revision": 10,
+          "mol": "0.25000000000000000000225",
+          "energyJ": "25.00000000000000000000025",
+          "receipts": 10,
+          "species": {
+            "oc1:73f2eab75cf8c7e16b78e1df703498ba418ffc2f16cca65fb0e37ef9fa4c4d24": "0.18750000000000000000225",
+            "oc1:c71f910aab89ad4cfb7517ab6e1e48a16a8281e84d28d1eaa70fddde4fec74be": "0.0625"
+          },
+          "role": "样品"
+        }
+      ]
+    },
+    {
+      "label": "最终构建：超容量拒绝 / 重启前",
+      "sequence": 12,
+      "jarSha256": "a4daf385d711c988fdc5d106e3fd175257adc4c1e8012b0f611f4f016e704e69",
+      "batches": [
+        {
+          "revision": 11,
+          "mol": "0.5625000000000000000050625",
+          "energyJ": "56.2500000000000000000005625",
+          "receipts": 11,
+          "species": {
+            "oc1:73f2eab75cf8c7e16b78e1df703498ba418ffc2f16cca65fb0e37ef9fa4c4d24": "0.4218750000000000000050625",
+            "oc1:c71f910aab89ad4cfb7517ab6e1e48a16a8281e84d28d1eaa70fddde4fec74be": "0.140625"
+          },
+          "role": "源批次"
+        },
+        {
+          "revision": 11,
+          "mol": "0.4375000000000000000039375",
+          "energyJ": "43.7500000000000000000004375",
+          "receipts": 11,
+          "species": {
+            "oc1:73f2eab75cf8c7e16b78e1df703498ba418ffc2f16cca65fb0e37ef9fa4c4d24": "0.3281250000000000000039375",
+            "oc1:c71f910aab89ad4cfb7517ab6e1e48a16a8281e84d28d1eaa70fddde4fec74be": "0.109375"
+          },
+          "role": "样品"
+        }
+      ]
+    },
+    {
+      "label": "最终构建：重启后完全一致",
+      "sequence": 12,
+      "jarSha256": "a4daf385d711c988fdc5d106e3fd175257adc4c1e8012b0f611f4f016e704e69",
+      "batches": [
+        {
+          "revision": 11,
+          "mol": "0.5625000000000000000050625",
+          "energyJ": "56.2500000000000000000005625",
+          "receipts": 11,
+          "species": {
+            "oc1:73f2eab75cf8c7e16b78e1df703498ba418ffc2f16cca65fb0e37ef9fa4c4d24": "0.4218750000000000000050625",
+            "oc1:c71f910aab89ad4cfb7517ab6e1e48a16a8281e84d28d1eaa70fddde4fec74be": "0.140625"
+          },
+          "role": "源批次"
+        },
+        {
+          "revision": 11,
+          "mol": "0.4375000000000000000039375",
+          "energyJ": "43.7500000000000000000004375",
+          "receipts": 11,
+          "species": {
+            "oc1:73f2eab75cf8c7e16b78e1df703498ba418ffc2f16cca65fb0e37ef9fa4c4d24": "0.3281250000000000000039375",
+            "oc1:c71f910aab89ad4cfb7517ab6e1e48a16a8281e84d28d1eaa70fddde4fec74be": "0.109375"
+          },
+          "role": "样品"
+        }
+      ]
+    },
+    {
+      "label": "重启后回执重放：不变",
+      "sequence": 12,
+      "jarSha256": "a4daf385d711c988fdc5d106e3fd175257adc4c1e8012b0f611f4f016e704e69",
+      "batches": [
+        {
+          "revision": 11,
+          "mol": "0.5625000000000000000050625",
+          "energyJ": "56.2500000000000000000005625",
+          "receipts": 11,
+          "species": {
+            "oc1:73f2eab75cf8c7e16b78e1df703498ba418ffc2f16cca65fb0e37ef9fa4c4d24": "0.4218750000000000000050625",
+            "oc1:c71f910aab89ad4cfb7517ab6e1e48a16a8281e84d28d1eaa70fddde4fec74be": "0.140625"
+          },
+          "role": "源批次"
+        },
+        {
+          "revision": 11,
+          "mol": "0.4375000000000000000039375",
+          "energyJ": "43.7500000000000000000004375",
+          "receipts": 11,
+          "species": {
+            "oc1:73f2eab75cf8c7e16b78e1df703498ba418ffc2f16cca65fb0e37ef9fa4c4d24": "0.3281250000000000000039375",
+            "oc1:c71f910aab89ad4cfb7517ab6e1e48a16a8281e84d28d1eaa70fddde4fec74be": "0.109375"
+          },
+          "role": "样品"
+        }
+      ]
+    },
+    {
+      "label": "最终回注：尾数全部归还",
+      "sequence": 13,
+      "jarSha256": "a4daf385d711c988fdc5d106e3fd175257adc4c1e8012b0f611f4f016e704e69",
+      "batches": [
+        {
+          "revision": 12,
+          "mol": "1.000000000000000000009",
+          "energyJ": "100.000000000000000000001",
+          "receipts": 12,
+          "species": {
+            "oc1:73f2eab75cf8c7e16b78e1df703498ba418ffc2f16cca65fb0e37ef9fa4c4d24": "0.750000000000000000009",
+            "oc1:c71f910aab89ad4cfb7517ab6e1e48a16a8281e84d28d1eaa70fddde4fec74be": "0.25"
+          },
+          "role": "源批次"
+        },
+        {
+          "revision": 12,
+          "mol": "0",
+          "energyJ": "0",
+          "receipts": 12,
+          "species": {},
+          "role": "样品"
+        }
+      ]
+    }
+  ]
+}

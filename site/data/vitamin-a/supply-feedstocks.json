@@ -1,0 +1,787 @@
+{
+  "schema": "oc-supply-feedstocks-1",
+  "sourceAudit": "bd6bf0fa4983cbc3ab20baa105b369f558f2b3612ef62f1e1092dcb3128e56d0",
+  "sourceVersion": "0.4.0-va-slice-alpha1",
+  "unitPolicy": "1000 mB registered pure teaching component = 1 model mol; game convention, not real density",
+  "feeds": [
+    {
+      "id": "acetone",
+      "name": "丙酮",
+      "fluid": "acetone",
+      "recipeSummary": "流体加热机：1000 mB 乙酸钙溶液 → 1000 mB 丙酮；80 tick，30 EU/t。另有木醋液分馏等路径。",
+      "recipes": [
+        {
+          "map": "gt.recipe.chemicalreactor",
+          "inputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 30688,
+              "count": 1,
+              "oreNames": [
+                "cellIsopropylbenzene"
+              ],
+              "tag": null
+            },
+            {
+              "item": "gregtech:gt.integrated_circuit",
+              "damage": 1,
+              "count": 0,
+              "oreNames": [],
+              "tag": null
+            }
+          ],
+          "outputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 30687,
+              "count": 1,
+              "oreNames": [
+                "cellPhenol"
+              ],
+              "tag": null
+            }
+          ],
+          "fluidInputs": [
+            {
+              "fluid": "oxygen",
+              "mB": 2000,
+              "tag": null
+            }
+          ],
+          "fluidOutputs": [
+            {
+              "fluid": "acetone",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "durationTicks": 160,
+          "EUt": 30,
+          "specialValue": 0,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {},
+          "recipeId": "430cb7fea73f83645bb32139b8ac0e032fe988836eb0b0c509d4d9de05b12ab3"
+        },
+        {
+          "map": "gt.recipe.chemicalreactor",
+          "inputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 30013,
+              "count": 2,
+              "oreNames": [
+                "cellOxygen"
+              ],
+              "tag": null
+            },
+            {
+              "item": "gregtech:gt.integrated_circuit",
+              "damage": 1,
+              "count": 0,
+              "oreNames": [],
+              "tag": null
+            }
+          ],
+          "outputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 30687,
+              "count": 1,
+              "oreNames": [
+                "cellPhenol"
+              ],
+              "tag": null
+            },
+            {
+              "item": "IC2:itemCellEmpty",
+              "damage": 0,
+              "count": 1,
+              "oreNames": [
+                "cellEmpty"
+              ],
+              "tag": null
+            }
+          ],
+          "fluidInputs": [
+            {
+              "fluid": "isopropylbenzene",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "fluidOutputs": [
+            {
+              "fluid": "acetone",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "durationTicks": 160,
+          "EUt": 30,
+          "specialValue": 0,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {},
+          "recipeId": "a1e501a2befa5051a84c6d03c253d93c1fc63cecac21cbbee1603313db19def1"
+        },
+        {
+          "map": "gt.recipe.fluidheater",
+          "inputs": [],
+          "outputs": [],
+          "fluidInputs": [
+            {
+              "fluid": "calciumacetatesolution",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "fluidOutputs": [
+            {
+              "fluid": "acetone",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "durationTicks": 80,
+          "EUt": 30,
+          "specialValue": 0,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {},
+          "recipeId": "8b5fc96b43fd200fd4f3fed78fd277c3fbd54270ef1dd57c3929c82c26ac3b95"
+        },
+        {
+          "map": "gt.recipe.largechemicalreactor",
+          "inputs": [
+            {
+              "item": "gregtech:gt.integrated_circuit",
+              "damage": 24,
+              "count": 0,
+              "oreNames": [],
+              "tag": null
+            }
+          ],
+          "outputs": [],
+          "fluidInputs": [
+            {
+              "fluid": "propene",
+              "mB": 1000,
+              "tag": null
+            },
+            {
+              "fluid": "benzene",
+              "mB": 1000,
+              "tag": null
+            },
+            {
+              "fluid": "phosphoricacid_gt5u",
+              "mB": 100,
+              "tag": null
+            },
+            {
+              "fluid": "oxygen",
+              "mB": 2000,
+              "tag": null
+            }
+          ],
+          "fluidOutputs": [
+            {
+              "fluid": "phenol",
+              "mB": 1000,
+              "tag": null
+            },
+            {
+              "fluid": "acetone",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "durationTicks": 480,
+          "EUt": 30,
+          "specialValue": 0,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {},
+          "recipeId": "33b9ca15861d7a77b790c2a2a2d4d9962263c9a2a8c90cf8012b775803aa4dea"
+        },
+        {
+          "map": "gt.recipe.largechemicalreactor",
+          "inputs": [
+            {
+              "item": "gregtech:gt.integrated_circuit",
+              "damage": 1,
+              "count": 0,
+              "oreNames": [],
+              "tag": null
+            }
+          ],
+          "outputs": [],
+          "fluidInputs": [
+            {
+              "fluid": "oxygen",
+              "mB": 2000,
+              "tag": null
+            },
+            {
+              "fluid": "isopropylbenzene",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "fluidOutputs": [
+            {
+              "fluid": "acetone",
+              "mB": 1000,
+              "tag": null
+            },
+            {
+              "fluid": "phenol",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "durationTicks": 160,
+          "EUt": 30,
+          "specialValue": 0,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {
+            "RecipeMetadataKey{clazz=java.lang.Boolean, identifier=cleanroom'}": false
+          },
+          "recipeId": "de774be29f16b23f890655e75634b2919478001f898d65c75fc014882c689d01"
+        },
+        {
+          "map": "gtpp.recipe.fluidchemicaleactor",
+          "inputs": [
+            {
+              "item": "miscutils:item.BasicAgrichemItem",
+              "damage": 6,
+              "count": 6,
+              "oreNames": [
+                "fiberCellulose",
+                "fiberGoldenBrownCellulose"
+              ],
+              "tag": null
+            },
+            {
+              "item": "miscutils:item.BasicAgrichemItem",
+              "damage": 7,
+              "count": 16,
+              "oreNames": [
+                "fiberCellulose",
+                "fiberRedCellulose"
+              ],
+              "tag": null
+            },
+            {
+              "item": "gregtech:gt.integrated_circuit",
+              "damage": 5,
+              "count": 0,
+              "oreNames": [],
+              "tag": null
+            }
+          ],
+          "outputs": [],
+          "fluidInputs": [
+            {
+              "fluid": "fermentation.base",
+              "mB": 48000,
+              "tag": null
+            }
+          ],
+          "fluidOutputs": [
+            {
+              "fluid": "butanol",
+              "mB": 18000,
+              "tag": null
+            },
+            {
+              "fluid": "acetone",
+              "mB": 9000,
+              "tag": null
+            },
+            {
+              "fluid": "bioethanol",
+              "mB": 3000,
+              "tag": null
+            }
+          ],
+          "durationTicks": 2000,
+          "EUt": 30,
+          "specialValue": 1,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {
+            "RecipeMetadataKey{clazz=java.lang.Integer, identifier=chemplant_casing_tier'}": 1
+          },
+          "recipeId": "03e2390401e24b1d91103bdff76687be090d7ce52b4f1421f7f42ff476066ca1"
+        },
+        {
+          "map": "gt.recipe.distillery",
+          "inputs": [
+            {
+              "item": "gregtech:gt.integrated_circuit",
+              "damage": 5,
+              "count": 0,
+              "oreNames": [],
+              "tag": null
+            }
+          ],
+          "outputs": [],
+          "fluidInputs": [
+            {
+              "fluid": "woodvinegar",
+              "mB": 500,
+              "tag": null
+            }
+          ],
+          "fluidOutputs": [
+            {
+              "fluid": "acetone",
+              "mB": 25,
+              "tag": null
+            }
+          ],
+          "durationTicks": 40,
+          "EUt": 64,
+          "specialValue": 0,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {},
+          "recipeId": "cb49aa97156ad2dcab302201a2d228370951c107f56e610ac4cc88d650c29498"
+        },
+        {
+          "map": "gt.recipe.distillery",
+          "inputs": [
+            {
+              "item": "gregtech:gt.integrated_circuit",
+              "damage": 1,
+              "count": 0,
+              "oreNames": [],
+              "tag": null
+            }
+          ],
+          "outputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 2622,
+              "count": 1,
+              "oreNames": [
+                "dustQuicklime"
+              ],
+              "tag": null
+            }
+          ],
+          "fluidInputs": [
+            {
+              "fluid": "calciumacetatesolution",
+              "mB": 500,
+              "tag": null
+            }
+          ],
+          "fluidOutputs": [
+            {
+              "fluid": "acetone",
+              "mB": 500,
+              "tag": null
+            }
+          ],
+          "durationTicks": 80,
+          "EUt": 120,
+          "specialValue": 0,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {},
+          "recipeId": "41ede401791abaec2f9746bc212716ec02c59e711737a8b58dd29c1fbf9f8fa6"
+        },
+        {
+          "map": "gt.recipe.fluidheater",
+          "inputs": [],
+          "outputs": [],
+          "fluidInputs": [
+            {
+              "fluid": "diluted acetone",
+              "mB": 50,
+              "tag": null
+            }
+          ],
+          "fluidOutputs": [
+            {
+              "fluid": "acetone",
+              "mB": 30,
+              "tag": null
+            }
+          ],
+          "durationTicks": 24,
+          "EUt": 120,
+          "specialValue": 0,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {},
+          "recipeId": "f8848958504512997b6a65b40af439274d87e1e2bb12b37f2ca1204cfab1ba01"
+        },
+        {
+          "map": "gt.recipe.distillationtower",
+          "inputs": [
+            {
+              "item": "gregtech:gt.integrated_circuit",
+              "damage": 1,
+              "count": 0,
+              "oreNames": [],
+              "tag": null
+            }
+          ],
+          "outputs": [],
+          "fluidInputs": [
+            {
+              "fluid": "woodvinegar",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "fluidOutputs": [
+            {
+              "fluid": "aceticacid",
+              "mB": 100,
+              "tag": null
+            },
+            {
+              "fluid": "water",
+              "mB": 500,
+              "tag": null
+            },
+            {
+              "fluid": "bioethanol",
+              "mB": 10,
+              "tag": null
+            },
+            {
+              "fluid": "methanol",
+              "mB": 300,
+              "tag": null
+            },
+            {
+              "fluid": "acetone",
+              "mB": 50,
+              "tag": null
+            },
+            {
+              "fluid": "methylacetate",
+              "mB": 10,
+              "tag": null
+            }
+          ],
+          "durationTicks": 40,
+          "EUt": 256,
+          "specialValue": 0,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {},
+          "recipeId": "56db66766d92f31753437c22f7b4bf1c129acbfa154167ea966f5513d6a73315"
+        },
+        {
+          "map": "gt.recipe.distillationtower",
+          "inputs": [],
+          "outputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 2622,
+              "count": 2,
+              "oreNames": [
+                "dustQuicklime"
+              ],
+              "tag": null
+            }
+          ],
+          "fluidInputs": [
+            {
+              "fluid": "calciumacetatesolution",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "fluidOutputs": [
+            {
+              "fluid": "acetone",
+              "mB": 1000,
+              "tag": null
+            },
+            {
+              "fluid": "carbondioxide",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "durationTicks": 80,
+          "EUt": 480,
+          "specialValue": 0,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {},
+          "recipeId": "f9ed686ae4e2a15b49ed1a8ce37a3705fc85733f8b9de2dddd1139e3381adc39"
+        },
+        {
+          "map": "gt.recipe.largechemicalreactor",
+          "inputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 2622,
+              "count": 0,
+              "oreNames": [
+                "dustQuicklime"
+              ],
+              "tag": null
+            },
+            {
+              "item": "gregtech:gt.integrated_circuit",
+              "damage": 3,
+              "count": 0,
+              "oreNames": [],
+              "tag": null
+            }
+          ],
+          "outputs": [],
+          "fluidInputs": [
+            {
+              "fluid": "aceticacid",
+              "mB": 2000,
+              "tag": null
+            }
+          ],
+          "fluidOutputs": [
+            {
+              "fluid": "acetone",
+              "mB": 1000,
+              "tag": null
+            },
+            {
+              "fluid": "carbondioxide",
+              "mB": 1000,
+              "tag": null
+            },
+            {
+              "fluid": "water",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "durationTicks": 400,
+          "EUt": 480,
+          "specialValue": 0,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {},
+          "recipeId": "602f46afb80f5fbaa5b237f74280abb55d1ee27b868afd46a417a3e5dfb87768"
+        }
+      ],
+      "survivalClosureVerified": false
+    },
+    {
+      "id": "acetylene",
+      "name": "乙炔",
+      "fluid": "acetylene",
+      "recipeSummary": "化学反应器：3 份电石粉 + 2000 mB 水 → 1000 mB 乙炔 + 5 份氢氧化钙粉；电路 1；300 tick，480 EU/t。",
+      "recipes": [
+        {
+          "map": "gt.recipe.chemicalreactor",
+          "inputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 2775,
+              "count": 3,
+              "oreNames": [
+                "dustCacliumCarbide"
+              ],
+              "tag": null
+            },
+            {
+              "item": "gregtech:gt.integrated_circuit",
+              "damage": 1,
+              "count": 0,
+              "oreNames": [],
+              "tag": null
+            }
+          ],
+          "outputs": [
+            {
+              "item": "miscutils:itemDustCalciumHydroxide",
+              "damage": 0,
+              "count": 5,
+              "oreNames": [
+                "dustCalciumHydroxide"
+              ],
+              "tag": null
+            }
+          ],
+          "fluidInputs": [
+            {
+              "fluid": "water",
+              "mB": 2000,
+              "tag": null
+            }
+          ],
+          "fluidOutputs": [
+            {
+              "fluid": "acetylene",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "durationTicks": 300,
+          "EUt": 480,
+          "specialValue": 0,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {},
+          "recipeId": "7d93b2a4fe535518ed91a07404522fdb9d5f6b992c0e3e0ac7859d3ae835a389"
+        },
+        {
+          "map": "gt.recipe.largechemicalreactor",
+          "inputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 2775,
+              "count": 3,
+              "oreNames": [
+                "dustCacliumCarbide"
+              ],
+              "tag": null
+            },
+            {
+              "item": "gregtech:gt.integrated_circuit",
+              "damage": 1,
+              "count": 0,
+              "oreNames": [],
+              "tag": null
+            }
+          ],
+          "outputs": [
+            {
+              "item": "miscutils:itemDustCalciumHydroxide",
+              "damage": 0,
+              "count": 5,
+              "oreNames": [
+                "dustCalciumHydroxide"
+              ],
+              "tag": null
+            }
+          ],
+          "fluidInputs": [
+            {
+              "fluid": "water",
+              "mB": 2000,
+              "tag": null
+            }
+          ],
+          "fluidOutputs": [
+            {
+              "fluid": "acetylene",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "durationTicks": 300,
+          "EUt": 480,
+          "specialValue": 0,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {
+            "RecipeMetadataKey{clazz=java.lang.Boolean, identifier=cleanroom'}": false
+          },
+          "recipeId": "cbef3cf795dbc4d2cca815696e93a9d21c9c4243888137060edfb47a40393138"
+        }
+      ],
+      "survivalClosureVerified": false
+    },
+    {
+      "id": "formaldehyde",
+      "name": "甲醛",
+      "fluid": "fluid.formaldehyde",
+      "recipeSummary": "GT++ 化工厂：甲醇/氧气各 32000 mB → 甲醛 32000 mB；甲醛催化剂，电路 21；1800 tick，120 EU/t，外壳等级 1。",
+      "recipes": [
+        {
+          "map": "gtpp.recipe.fluidchemicaleactor",
+          "inputs": [
+            {
+              "item": "miscutils:item.BasicGenericChemItem",
+              "damage": 13,
+              "count": 0,
+              "oreNames": [
+                "catalystFormaldehyde"
+              ],
+              "tag": null
+            },
+            {
+              "item": "gregtech:gt.integrated_circuit",
+              "damage": 21,
+              "count": 0,
+              "oreNames": [],
+              "tag": null
+            }
+          ],
+          "outputs": [],
+          "fluidInputs": [
+            {
+              "fluid": "oxygen",
+              "mB": 32000,
+              "tag": null
+            },
+            {
+              "fluid": "methanol",
+              "mB": 32000,
+              "tag": null
+            }
+          ],
+          "fluidOutputs": [
+            {
+              "fluid": "fluid.formaldehyde",
+              "mB": 32000,
+              "tag": null
+            }
+          ],
+          "durationTicks": 1800,
+          "EUt": 120,
+          "specialValue": 1,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {
+            "RecipeMetadataKey{clazz=java.lang.Integer, identifier=chemplant_casing_tier'}": 1
+          },
+          "recipeId": "58c9d97379f08544a830491d250f4686df34d0921592f6afe39d4dba12952e21"
+        }
+      ],
+      "survivalClosureVerified": false
+    }
+  ]
+}

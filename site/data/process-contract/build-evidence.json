@@ -1,0 +1,12 @@
+{
+  "version": "0.4.1-process-contract-alpha1",
+  "jarSha256": "2f9d718eb1dd170dcc39f897520aa9cad457d7a382e0f7be706e50dbf920a06a",
+  "tests": 122,
+  "failures": 0,
+  "errors": 0,
+  "chemistryTrajectories": 36,
+  "chemistryIntegrationSteps": 360000,
+  "checkstyle": true,
+  "spotless": true,
+  "humanUiAcceptance": false
+}

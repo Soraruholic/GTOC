@@ -1,0 +1,320 @@
+{
+  "14": {
+    "action": 14,
+    "operation": "U06 酸中和 / 理想分出",
+    "signConvention": "negative reaction enthalpy \u003d exothermic; not an EU credit",
+    "neutralizationReferenceJ": {
+      "status": "not_applicable",
+      "unit": "J",
+      "basis": "No transferable strong-acid/base reference for this operation",
+      "value": null
+    },
+    "neutralizationProcessJ": {
+      "status": "unknown",
+      "unit": "J",
+      "basis": "Concentrations, solvent state, dilution and actual neutralization enthalpy unavailable",
+      "value": null
+    },
+    "sensibleJ": {
+      "status": "unknown",
+      "unit": "J",
+      "basis": "No composition-resolved Cp, initial/final temperature and thermal path for this operation",
+      "value": null
+    },
+    "reactionEnthalpyJ": {
+      "status": "not_applicable",
+      "unit": "J",
+      "basis": "Chemical heat belongs to neutralization where applicable",
+      "value": null
+    },
+    "separationJ": {
+      "status": "unknown",
+      "unit": "J",
+      "basis": "Ideal material allocation has no physical separation work or heat model",
+      "value": null
+    },
+    "mixingJ": {
+      "status": "unknown",
+      "unit": "J",
+      "basis": "Excess/mixing and dilution enthalpies unavailable",
+      "value": null
+    },
+    "realWaterEntrainmentMol": {
+      "status": "unknown",
+      "unit": "mol",
+      "basis": "No measured entrainment/phase-split correlation",
+      "value": null
+    },
+    "waterBeforeMol": 3.85,
+    "waterAfterMol": 4.05,
+    "modeledWaterTransferredMol": 0,
+    "totalProcessHeat": "unknown",
+    "eu": "unknown",
+    "origin": "server-committed-operation"
+  },
+  "15": {
+    "action": 15,
+    "operation": "U07 羟醛净工序",
+    "signConvention": "negative reaction enthalpy \u003d exothermic; not an EU credit",
+    "neutralizationReferenceJ": {
+      "status": "not_applicable",
+      "unit": "J",
+      "basis": "No transferable strong-acid/base reference for this operation",
+      "value": null
+    },
+    "neutralizationProcessJ": {
+      "status": "not_applicable",
+      "unit": "J",
+      "basis": "No neutralization in this operation",
+      "value": null
+    },
+    "sensibleJ": {
+      "status": "unknown",
+      "unit": "J",
+      "basis": "No composition-resolved Cp, initial/final temperature and thermal path for this operation",
+      "value": null
+    },
+    "reactionEnthalpyJ": {
+      "status": "unknown",
+      "unit": "J",
+      "basis": "U07/U08 reaction enthalpy has not been calibrated",
+      "value": null
+    },
+    "separationJ": {
+      "status": "not_applicable",
+      "unit": "J",
+      "basis": "No separation in this operation",
+      "value": null
+    },
+    "mixingJ": {
+      "status": "unknown",
+      "unit": "J",
+      "basis": "Excess/mixing and dilution enthalpies unavailable",
+      "value": null
+    },
+    "realWaterEntrainmentMol": {
+      "status": "unknown",
+      "unit": "mol",
+      "basis": "No measured entrainment/phase-split correlation",
+      "value": null
+    },
+    "waterBeforeMol": 4.05,
+    "waterAfterMol": 4.303504030752000000,
+    "modeledWaterTransferredMol": null,
+    "totalProcessHeat": "unknown",
+    "eu": "unknown",
+    "origin": "server-committed-operation"
+  },
+  "16": {
+    "action": 16,
+    "operation": "U07 中和 / 理想分出",
+    "signConvention": "negative reaction enthalpy \u003d exothermic; not an EU credit",
+    "neutralizationReferenceJ": {
+      "status": "reference_only",
+      "unit": "J",
+      "basis": "nominal teaching value -57.3 kJ/mol within dilute aqueous reference range -57 to -58; not actual mixture heat",
+      "value": -573.00
+    },
+    "neutralizationProcessJ": {
+      "status": "unknown",
+      "unit": "J",
+      "basis": "Concentrations, solvent state, dilution and actual neutralization enthalpy unavailable",
+      "value": null
+    },
+    "sensibleJ": {
+      "status": "unknown",
+      "unit": "J",
+      "basis": "No composition-resolved Cp, initial/final temperature and thermal path for this operation",
+      "value": null
+    },
+    "reactionEnthalpyJ": {
+      "status": "not_applicable",
+      "unit": "J",
+      "basis": "Chemical heat belongs to neutralization where applicable",
+      "value": null
+    },
+    "separationJ": {
+      "status": "unknown",
+      "unit": "J",
+      "basis": "Ideal material allocation has no physical separation work or heat model",
+      "value": null
+    },
+    "mixingJ": {
+      "status": "unknown",
+      "unit": "J",
+      "basis": "Excess/mixing and dilution enthalpies unavailable",
+      "value": null
+    },
+    "realWaterEntrainmentMol": {
+      "status": "unknown",
+      "unit": "mol",
+      "basis": "No measured entrainment/phase-split correlation",
+      "value": null
+    },
+    "waterBeforeMol": 4.303504030752000000,
+    "waterAfterMol": 4.313504030752000000,
+    "modeledWaterTransferredMol": 0,
+    "totalProcessHeat": "unknown",
+    "eu": "unknown",
+    "origin": "server-committed-operation"
+  },
+  "17": {
+    "action": 17,
+    "operation": "U08 α/β 净分支",
+    "signConvention": "negative reaction enthalpy \u003d exothermic; not an EU credit",
+    "neutralizationReferenceJ": {
+      "status": "not_applicable",
+      "unit": "J",
+      "basis": "No transferable strong-acid/base reference for this operation",
+      "value": null
+    },
+    "neutralizationProcessJ": {
+      "status": "not_applicable",
+      "unit": "J",
+      "basis": "No neutralization in this operation",
+      "value": null
+    },
+    "sensibleJ": {
+      "status": "unknown",
+      "unit": "J",
+      "basis": "No composition-resolved Cp, initial/final temperature and thermal path for this operation",
+      "value": null
+    },
+    "reactionEnthalpyJ": {
+      "status": "unknown",
+      "unit": "J",
+      "basis": "U07/U08 reaction enthalpy has not been calibrated",
+      "value": null
+    },
+    "separationJ": {
+      "status": "not_applicable",
+      "unit": "J",
+      "basis": "No separation in this operation",
+      "value": null
+    },
+    "mixingJ": {
+      "status": "unknown",
+      "unit": "J",
+      "basis": "Excess/mixing and dilution enthalpies unavailable",
+      "value": null
+    },
+    "realWaterEntrainmentMol": {
+      "status": "unknown",
+      "unit": "mol",
+      "basis": "No measured entrainment/phase-split correlation",
+      "value": null
+    },
+    "waterBeforeMol": 4.313504030752000000,
+    "waterAfterMol": 4.313504030752000000,
+    "modeledWaterTransferredMol": null,
+    "totalProcessHeat": "unknown",
+    "eu": "unknown",
+    "origin": "server-committed-operation"
+  },
+  "18": {
+    "action": 18,
+    "operation": "U08 酸中和",
+    "signConvention": "negative reaction enthalpy \u003d exothermic; not an EU credit",
+    "neutralizationReferenceJ": {
+      "status": "not_applicable",
+      "unit": "J",
+      "basis": "No transferable strong-acid/base reference for this operation",
+      "value": null
+    },
+    "neutralizationProcessJ": {
+      "status": "unknown",
+      "unit": "J",
+      "basis": "Concentrations, solvent state, dilution and actual neutralization enthalpy unavailable",
+      "value": null
+    },
+    "sensibleJ": {
+      "status": "unknown",
+      "unit": "J",
+      "basis": "No composition-resolved Cp, initial/final temperature and thermal path for this operation",
+      "value": null
+    },
+    "reactionEnthalpyJ": {
+      "status": "not_applicable",
+      "unit": "J",
+      "basis": "Chemical heat belongs to neutralization where applicable",
+      "value": null
+    },
+    "separationJ": {
+      "status": "not_applicable",
+      "unit": "J",
+      "basis": "No separation in this operation",
+      "value": null
+    },
+    "mixingJ": {
+      "status": "unknown",
+      "unit": "J",
+      "basis": "Excess/mixing and dilution enthalpies unavailable",
+      "value": null
+    },
+    "realWaterEntrainmentMol": {
+      "status": "unknown",
+      "unit": "mol",
+      "basis": "No measured entrainment/phase-split correlation",
+      "value": null
+    },
+    "waterBeforeMol": 4.313504030752000000,
+    "waterAfterMol": 4.413504030752000000,
+    "modeledWaterTransferredMol": null,
+    "totalProcessHeat": "unknown",
+    "eu": "unknown",
+    "origin": "server-committed-operation"
+  },
+  "19": {
+    "action": 19,
+    "operation": "β 教学分配 / 资格检查",
+    "signConvention": "negative reaction enthalpy \u003d exothermic; not an EU credit",
+    "neutralizationReferenceJ": {
+      "status": "not_applicable",
+      "unit": "J",
+      "basis": "No transferable strong-acid/base reference for this operation",
+      "value": null
+    },
+    "neutralizationProcessJ": {
+      "status": "not_applicable",
+      "unit": "J",
+      "basis": "No neutralization in this operation",
+      "value": null
+    },
+    "sensibleJ": {
+      "status": "unknown",
+      "unit": "J",
+      "basis": "No composition-resolved Cp, initial/final temperature and thermal path for this operation",
+      "value": null
+    },
+    "reactionEnthalpyJ": {
+      "status": "not_applicable",
+      "unit": "J",
+      "basis": "Chemical heat belongs to neutralization where applicable",
+      "value": null
+    },
+    "separationJ": {
+      "status": "unknown",
+      "unit": "J",
+      "basis": "Ideal material allocation has no physical separation work or heat model",
+      "value": null
+    },
+    "mixingJ": {
+      "status": "unknown",
+      "unit": "J",
+      "basis": "Excess/mixing and dilution enthalpies unavailable",
+      "value": null
+    },
+    "realWaterEntrainmentMol": {
+      "status": "unknown",
+      "unit": "mol",
+      "basis": "No measured entrainment/phase-split correlation",
+      "value": null
+    },
+    "waterBeforeMol": 4.413504030752000000,
+    "waterAfterMol": 4.413504030752000000,
+    "modeledWaterTransferredMol": 0,
+    "totalProcessHeat": "unknown",
+    "eu": "unknown",
+    "origin": "server-committed-operation"
+  }
+}

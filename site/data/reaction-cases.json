@@ -1,0 +1,582 @@
+[
+  {
+    "inputs": [
+      "C(=O)O",
+      "CO"
+    ],
+    "supported": true,
+    "products": [
+      "COC=O",
+      "O"
+    ],
+    "atomBalanceCHOCharge": [
+      2,
+      6,
+      3,
+      0
+    ],
+    "independent": "RDKit SMARTS graph + formula/charge"
+  },
+  {
+    "inputs": [
+      "C(=O)O",
+      "CCO"
+    ],
+    "supported": true,
+    "products": [
+      "CCOC=O",
+      "O"
+    ],
+    "atomBalanceCHOCharge": [
+      3,
+      8,
+      3,
+      0
+    ],
+    "independent": "RDKit SMARTS graph + formula/charge"
+  },
+  {
+    "inputs": [
+      "C(=O)O",
+      "CCCO"
+    ],
+    "supported": true,
+    "products": [
+      "CCCOC=O",
+      "O"
+    ],
+    "atomBalanceCHOCharge": [
+      4,
+      10,
+      3,
+      0
+    ],
+    "independent": "RDKit SMARTS graph + formula/charge"
+  },
+  {
+    "inputs": [
+      "C(=O)O",
+      "CCCCO"
+    ],
+    "supported": true,
+    "products": [
+      "CCCCOC=O",
+      "O"
+    ],
+    "atomBalanceCHOCharge": [
+      5,
+      12,
+      3,
+      0
+    ],
+    "independent": "RDKit SMARTS graph + formula/charge"
+  },
+  {
+    "inputs": [
+      "CC(=O)O",
+      "CO"
+    ],
+    "supported": true,
+    "products": [
+      "CC(=O)OC",
+      "O"
+    ],
+    "atomBalanceCHOCharge": [
+      3,
+      8,
+      3,
+      0
+    ],
+    "independent": "RDKit SMARTS graph + formula/charge"
+  },
+  {
+    "inputs": [
+      "CC(=O)O",
+      "CCO"
+    ],
+    "supported": true,
+    "products": [
+      "CCOC(=O)C",
+      "O"
+    ],
+    "atomBalanceCHOCharge": [
+      4,
+      10,
+      3,
+      0
+    ],
+    "independent": "RDKit SMARTS graph + formula/charge"
+  },
+  {
+    "inputs": [
+      "CC(=O)O",
+      "CCCO"
+    ],
+    "supported": true,
+    "products": [
+      "CCCOC(=O)C",
+      "O"
+    ],
+    "atomBalanceCHOCharge": [
+      5,
+      12,
+      3,
+      0
+    ],
+    "independent": "RDKit SMARTS graph + formula/charge"
+  },
+  {
+    "inputs": [
+      "CC(=O)O",
+      "CCCCO"
+    ],
+    "supported": true,
+    "products": [
+      "CCCCOC(=O)C",
+      "O"
+    ],
+    "atomBalanceCHOCharge": [
+      6,
+      14,
+      3,
+      0
+    ],
+    "independent": "RDKit SMARTS graph + formula/charge"
+  },
+  {
+    "inputs": [
+      "CCC(=O)O",
+      "CO"
+    ],
+    "supported": true,
+    "products": [
+      "CCC(=O)OC",
+      "O"
+    ],
+    "atomBalanceCHOCharge": [
+      4,
+      10,
+      3,
+      0
+    ],
+    "independent": "RDKit SMARTS graph + formula/charge"
+  },
+  {
+    "inputs": [
+      "CCC(=O)O",
+      "CCO"
+    ],
+    "supported": true,
+    "products": [
+      "CCC(=O)OCC",
+      "O"
+    ],
+    "atomBalanceCHOCharge": [
+      5,
+      12,
+      3,
+      0
+    ],
+    "independent": "RDKit SMARTS graph + formula/charge"
+  },
+  {
+    "inputs": [
+      "CCC(=O)O",
+      "CCCO"
+    ],
+    "supported": true,
+    "products": [
+      "CCCOC(=O)CC",
+      "O"
+    ],
+    "atomBalanceCHOCharge": [
+      6,
+      14,
+      3,
+      0
+    ],
+    "independent": "RDKit SMARTS graph + formula/charge"
+  },
+  {
+    "inputs": [
+      "CCC(=O)O",
+      "CCCCO"
+    ],
+    "supported": true,
+    "products": [
+      "CCCCOC(=O)CC",
+      "O"
+    ],
+    "atomBalanceCHOCharge": [
+      7,
+      16,
+      3,
+      0
+    ],
+    "independent": "RDKit SMARTS graph + formula/charge"
+  },
+  {
+    "inputs": [
+      "CCCC(=O)O",
+      "CO"
+    ],
+    "supported": true,
+    "products": [
+      "CCCC(=O)OC",
+      "O"
+    ],
+    "atomBalanceCHOCharge": [
+      5,
+      12,
+      3,
+      0
+    ],
+    "independent": "RDKit SMARTS graph + formula/charge"
+  },
+  {
+    "inputs": [
+      "CCCC(=O)O",
+      "CCO"
+    ],
+    "supported": true,
+    "products": [
+      "CCCC(=O)OCC",
+      "O"
+    ],
+    "atomBalanceCHOCharge": [
+      6,
+      14,
+      3,
+      0
+    ],
+    "independent": "RDKit SMARTS graph + formula/charge"
+  },
+  {
+    "inputs": [
+      "CCCC(=O)O",
+      "CCCO"
+    ],
+    "supported": true,
+    "products": [
+      "CCCC(=O)OCCC",
+      "O"
+    ],
+    "atomBalanceCHOCharge": [
+      7,
+      16,
+      3,
+      0
+    ],
+    "independent": "RDKit SMARTS graph + formula/charge"
+  },
+  {
+    "inputs": [
+      "CCCC(=O)O",
+      "CCCCO"
+    ],
+    "supported": true,
+    "products": [
+      "CCCCOC(=O)CCC",
+      "O"
+    ],
+    "atomBalanceCHOCharge": [
+      8,
+      18,
+      3,
+      0
+    ],
+    "independent": "RDKit SMARTS graph + formula/charge"
+  },
+  {
+    "inputs": [
+      "CCCCC(=O)O",
+      "CO"
+    ],
+    "supported": true,
+    "products": [
+      "CCCCC(=O)OC",
+      "O"
+    ],
+    "atomBalanceCHOCharge": [
+      6,
+      14,
+      3,
+      0
+    ],
+    "independent": "RDKit SMARTS graph + formula/charge"
+  },
+  {
+    "inputs": [
+      "CCCCC(=O)O",
+      "CCO"
+    ],
+    "supported": true,
+    "products": [
+      "CCCCC(=O)OCC",
+      "O"
+    ],
+    "atomBalanceCHOCharge": [
+      7,
+      16,
+      3,
+      0
+    ],
+    "independent": "RDKit SMARTS graph + formula/charge"
+  },
+  {
+    "inputs": [
+      "CCCCC(=O)O",
+      "CCCO"
+    ],
+    "supported": true,
+    "products": [
+      "CCCCC(=O)OCCC",
+      "O"
+    ],
+    "atomBalanceCHOCharge": [
+      8,
+      18,
+      3,
+      0
+    ],
+    "independent": "RDKit SMARTS graph + formula/charge"
+  },
+  {
+    "inputs": [
+      "CCCCC(=O)O",
+      "CCCCO"
+    ],
+    "supported": true,
+    "products": [
+      "CCCCC(=O)OCCCC",
+      "O"
+    ],
+    "atomBalanceCHOCharge": [
+      9,
+      20,
+      3,
+      0
+    ],
+    "independent": "RDKit SMARTS graph + formula/charge"
+  },
+  {
+    "inputs": [
+      "CC(=O)O",
+      "CC(O)C"
+    ],
+    "supported": false,
+    "catalyst": true,
+    "temperatureK": 330.0,
+    "reason": "UNSUPPORTED: methanol or primary unbranched alcohol required",
+    "independent": "Domain policy negative; not an experimentally demonstrated no-reaction claim"
+  },
+  {
+    "inputs": [
+      "CC(=O)O",
+      "CC(C)(C)O"
+    ],
+    "supported": false,
+    "catalyst": true,
+    "temperatureK": 330.0,
+    "reason": "UNSUPPORTED: branched carbon skeleton",
+    "independent": "Domain policy negative; not an experimentally demonstrated no-reaction claim"
+  },
+  {
+    "inputs": [
+      "CC(=O)O",
+      "c1ccccc1O"
+    ],
+    "supported": false,
+    "catalyst": true,
+    "temperatureK": 330.0,
+    "reason": "UNSUPPORTED: cyclic",
+    "independent": "Domain policy negative; not an experimentally demonstrated no-reaction claim"
+  },
+  {
+    "inputs": [
+      "c1ccccc1C(=O)O",
+      "CCO"
+    ],
+    "supported": false,
+    "catalyst": true,
+    "temperatureK": 330.0,
+    "reason": "UNSUPPORTED: cyclic",
+    "independent": "Domain policy negative; not an experimentally demonstrated no-reaction claim"
+  },
+  {
+    "inputs": [
+      "CC(=O)O",
+      "C=CCO"
+    ],
+    "supported": false,
+    "catalyst": true,
+    "temperatureK": 330.0,
+    "reason": "UNSUPPORTED: unsaturation",
+    "independent": "Domain policy negative; not an experimentally demonstrated no-reaction claim"
+  },
+  {
+    "inputs": [
+      "C=CC(=O)O",
+      "CCO"
+    ],
+    "supported": false,
+    "catalyst": true,
+    "temperatureK": 330.0,
+    "reason": "UNSUPPORTED: unsaturation",
+    "independent": "Domain policy negative; not an experimentally demonstrated no-reaction claim"
+  },
+  {
+    "inputs": [
+      "CC(=O)O",
+      "OCCO"
+    ],
+    "supported": false,
+    "catalyst": true,
+    "temperatureK": 330.0,
+    "reason": "UNSUPPORTED: monohydric alcohol required",
+    "independent": "Domain policy negative; not an experimentally demonstrated no-reaction claim"
+  },
+  {
+    "inputs": [
+      "OC(=O)CC(=O)O",
+      "CCO"
+    ],
+    "supported": false,
+    "catalyst": true,
+    "temperatureK": 330.0,
+    "reason": "UNSUPPORTED: one carboxyl group required",
+    "independent": "Domain policy negative; not an experimentally demonstrated no-reaction claim"
+  },
+  {
+    "inputs": [
+      "CC(=O)O",
+      "CCOC"
+    ],
+    "supported": false,
+    "catalyst": true,
+    "temperatureK": 330.0,
+    "reason": "UNSUPPORTED: alcohol role",
+    "independent": "Domain policy negative; not an experimentally demonstrated no-reaction claim"
+  },
+  {
+    "inputs": [
+      "CC(=O)C",
+      "CCO"
+    ],
+    "supported": false,
+    "catalyst": true,
+    "temperatureK": 330.0,
+    "reason": "UNSUPPORTED: one carboxyl group required",
+    "independent": "Domain policy negative; not an experimentally demonstrated no-reaction claim"
+  },
+  {
+    "inputs": [
+      "CC(=O)[O-]",
+      "CCO"
+    ],
+    "supported": false,
+    "catalyst": true,
+    "temperatureK": 330.0,
+    "reason": "UNSUPPORTED: disconnected, explicit isotope/charge/stereo or size",
+    "independent": "Domain policy negative; not an experimentally demonstrated no-reaction claim"
+  },
+  {
+    "inputs": [
+      "CC(=O)O",
+      "[13CH3]CO"
+    ],
+    "supported": false,
+    "catalyst": true,
+    "temperatureK": 330.0,
+    "reason": "UNSUPPORTED: disconnected, explicit isotope/charge/stereo or size",
+    "independent": "Domain policy negative; not an experimentally demonstrated no-reaction claim"
+  },
+  {
+    "inputs": [
+      "CC(=O)O",
+      "CCO.O"
+    ],
+    "supported": false,
+    "catalyst": true,
+    "temperatureK": 330.0,
+    "reason": "UNSUPPORTED: disconnected, explicit isotope/charge/stereo or size",
+    "independent": "Domain policy negative; not an experimentally demonstrated no-reaction claim"
+  },
+  {
+    "inputs": [
+      "C1CCCCC1C(=O)O",
+      "CCO"
+    ],
+    "supported": false,
+    "catalyst": true,
+    "temperatureK": 330.0,
+    "reason": "UNSUPPORTED: cyclic",
+    "independent": "Domain policy negative; not an experimentally demonstrated no-reaction claim"
+  },
+  {
+    "inputs": [
+      "CC(=O)O",
+      "C1CCCCC1O"
+    ],
+    "supported": false,
+    "catalyst": true,
+    "temperatureK": 330.0,
+    "reason": "UNSUPPORTED: cyclic",
+    "independent": "Domain policy negative; not an experimentally demonstrated no-reaction claim"
+  },
+  {
+    "inputs": [
+      "CC(C)C(=O)O",
+      "CCO"
+    ],
+    "supported": false,
+    "catalyst": true,
+    "temperatureK": 330.0,
+    "reason": "UNSUPPORTED: branched carbon skeleton",
+    "independent": "Domain policy negative; not an experimentally demonstrated no-reaction claim"
+  },
+  {
+    "inputs": [
+      "CC(=O)O",
+      "CC(C)CO"
+    ],
+    "supported": false,
+    "catalyst": true,
+    "temperatureK": 330.0,
+    "reason": "UNSUPPORTED: branched carbon skeleton",
+    "independent": "Domain policy negative; not an experimentally demonstrated no-reaction claim"
+  },
+  {
+    "inputs": [
+      "CC(=O)O",
+      "CCN"
+    ],
+    "supported": false,
+    "catalyst": true,
+    "temperatureK": 330.0,
+    "reason": "UNSUPPORTED: neutral CHO only",
+    "independent": "Domain policy negative; not an experimentally demonstrated no-reaction claim"
+  },
+  {
+    "inputs": [
+      "CC(=O)O",
+      "CCO"
+    ],
+    "supported": false,
+    "catalyst": false,
+    "temperatureK": 330.0,
+    "reason": "UNSUPPORTED_CONDITIONS: acid catalyst and 290..380 K qualitative domain",
+    "independent": "Domain policy negative; not an experimentally demonstrated no-reaction claim"
+  },
+  {
+    "inputs": [
+      "CC(=O)O",
+      "CCO"
+    ],
+    "supported": false,
+    "catalyst": true,
+    "temperatureK": 500.0,
+    "reason": "UNSUPPORTED_CONDITIONS: acid catalyst and 290..380 K qualitative domain",
+    "independent": "Domain policy negative; not an experimentally demonstrated no-reaction claim"
+  }
+]

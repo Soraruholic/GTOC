@@ -1,0 +1,108 @@
+{
+  "reviewType": "independent AI numerical audit, not experimental validation",
+  "seed": 20261004,
+  "rows": [
+    {
+      "wash": 1,
+      "materialResidualMol": 0.0,
+      "tpdSearchStarts": 30,
+      "minimumTpdFound": -2.356427713578074e-16,
+      "globalStabilityProven": false
+    },
+    {
+      "wash": 2,
+      "materialResidualMol": 8.881784197001252e-16,
+      "muResidual": 3.774758283725532e-15,
+      "deltaGOverRTMol": -0.0007753929392260162,
+      "tpdSearchStarts": 31,
+      "minimumTpdFound": -1.0521610615349028e-15,
+      "globalStabilityProven": false
+    },
+    {
+      "wash": 3,
+      "materialResidualMol": 1.3877787807814457e-17,
+      "muResidual": 8.881784197001252e-16,
+      "deltaGOverRTMol": -0.011982801824300449,
+      "tpdSearchStarts": 31,
+      "minimumTpdFound": -4.171200757494873e-16,
+      "globalStabilityProven": false
+    },
+    {
+      "wash": 4,
+      "materialResidualMol": 4.440892098500626e-16,
+      "muResidual": 3.3861802251067274e-15,
+      "deltaGOverRTMol": -0.018953636973593313,
+      "tpdSearchStarts": 31,
+      "minimumTpdFound": -8.262250036200757e-16,
+      "globalStabilityProven": false
+    },
+    {
+      "wash": 5,
+      "materialResidualMol": 4.336808689942018e-19,
+      "muResidual": 1.6653345369377348e-15,
+      "deltaGOverRTMol": -0.009741012283743751,
+      "tpdSearchStarts": 31,
+      "minimumTpdFound": -1.2176252017942153e-15,
+      "globalStabilityProven": false
+    },
+    {
+      "wash": 6,
+      "materialResidualMol": 4.440892098500626e-16,
+      "muResidual": 1.7763568394002505e-15,
+      "deltaGOverRTMol": -0.0006681059034969079,
+      "tpdSearchStarts": 31,
+      "minimumTpdFound": -5.190726464745391e-16,
+      "globalStabilityProven": false
+    }
+  ],
+  "scaleChecks": [
+    {
+      "scale": 1e-06,
+      "state": "TWO_PHASE_NUMERICAL",
+      "retainedScaledErrorMol": 6.938893903907228e-18
+    },
+    {
+      "scale": 0.001,
+      "state": "TWO_PHASE_NUMERICAL",
+      "retainedScaledErrorMol": 2.6020852139652106e-18
+    },
+    {
+      "scale": 1.0,
+      "state": "TWO_PHASE_NUMERICAL",
+      "retainedScaledErrorMol": 0.0
+    },
+    {
+      "scale": 1000.0,
+      "state": "TWO_PHASE_NUMERICAL",
+      "retainedScaledErrorMol": 3.469446951953614e-18
+    }
+  ],
+  "oldSolverSameSixthFeed": {
+    "withdrawnMol": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "retainedMol": [
+      0.00011949951851940373,
+      0.0001639018633772152,
+      0.035048325211195226,
+      2.00729419754435
+    ],
+    "missedSplit": true
+  },
+  "phaseSwapInvariant": true,
+  "solverSha256": "b60f6a9187c173cefb7b0ae37419349436fcf529db4f6401530418240d67cb12",
+  "referenceSha256": "3324356c635e8045ee9c2a534af321a389a1fd6067d2fb8b6a17e21e04f8bb37",
+  "acceptance": {
+    "allMaterialResidualsBelow1e-11": true,
+    "allTwoPhaseMuResidualsBelow2e-6": true,
+    "allTwoPhaseGibbsDecreases": true,
+    "sampledTpdNotBelowMinus1e-7": true,
+    "scaleInvariantIncluding1eMinus6": true,
+    "referenceMatchesReviewedSolver": true,
+    "gibbsUnitExplicit": true,
+    "entrainmentRemainsUnknown": true
+  }
+}

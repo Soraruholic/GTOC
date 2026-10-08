@@ -1,0 +1,1408 @@
+{
+  "schema": "oc-campaign-catalog-1",
+  "compounds": [
+    {
+      "slug": "quinoline",
+      "name": "喹啉",
+      "smiles": "c1ccc2ncccc2c1",
+      "formula": "C9H7N",
+      "kind": "molecular",
+      "charge": 0,
+      "capability": "va-chain-teaching",
+      "stereo": "Explicit E/Z only where specified; new alcohol centres unspecified",
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "elements": {
+        "C": 9,
+        "H": 7,
+        "N": 1
+      },
+      "recordId": "ocv2:f194313c76acc10a21d78a09a56b40d7f3207705ee0815d9dacb5571cdef0871"
+    },
+    {
+      "slug": "c16-ethyl-adduct",
+      "name": "C14/乙基竞争加成醇",
+      "smiles": "CCC(O)C(C)=CCC1=C(C)CCCC1(C)C",
+      "formula": "C16H28O",
+      "kind": "molecular",
+      "charge": 0,
+      "capability": "va-chain-teaching",
+      "stereo": "Explicit E/Z only where specified; new alcohol centres unspecified",
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "elements": {
+        "C": 16,
+        "H": 28,
+        "O": 1
+      },
+      "recordId": "ocv2:10e04e55d1d84cc883ccc95af223ed3796749c05e8d2b6e2605c68efb9fffc82"
+    },
+    {
+      "slug": "c20-overhydrogenated",
+      "name": "原炔位完全氢化二醇",
+      "smiles": "CC(=CCO)CCC(O)C(C)=CCC1=C(C)CCCC1(C)C",
+      "formula": "C20H34O2",
+      "kind": "molecular",
+      "charge": 0,
+      "capability": "va-chain-teaching",
+      "stereo": "Explicit E/Z only where specified; new alcohol centres unspecified",
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "elements": {
+        "C": 20,
+        "H": 34,
+        "O": 2
+      },
+      "recordId": "ocv2:a37d6a5494f261d5987716ec7b8fab4bd0892a2e3877e2dfbc2c77298442e517"
+    },
+    {
+      "slug": "retinyl-acetate-one-z",
+      "name": "视黄醇乙酸酯单Z比较体",
+      "smiles": "CC(=O)OC/C=C(C)\\C=C\\C=C(C)\\C=C\\C1=C(C)CCCC1(C)C",
+      "formula": "C22H32O2",
+      "kind": "molecular",
+      "isomerPolicy": "Exactly one sidechain C=C changed from catalog E to Z; not a named positional isomer claim.",
+      "charge": 0,
+      "capability": "va-chain-teaching",
+      "stereo": "Explicit E/Z only where specified; new alcohol centres unspecified",
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "elements": {
+        "C": 22,
+        "H": 32,
+        "O": 2
+      },
+      "recordId": "ocv2:29f6e7b0fd46c773d448650b7e24993561795459f94fe802c64ef18d702b757b"
+    },
+    {
+      "slug": "c16-magnesium",
+      "name": "C16 镁醇盐有效组分",
+      "smiles": null,
+      "formula": "C16H27MgBrO",
+      "kind": "formal-component",
+      "charge": 0,
+      "capability": "va-chain-teaching",
+      "stereo": "Explicit E/Z only where specified; new alcohol centres unspecified",
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "elements": {
+        "C": 16,
+        "H": 27,
+        "Mg": 1,
+        "Br": 1,
+        "O": 1
+      },
+      "recordId": "ocv2:98b4a79d37d4a95b77189bfd0b2bbdb625594a8fa8fed51948ff80080d9ee97a"
+    },
+    {
+      "slug": "palladium",
+      "name": "钯位材料",
+      "smiles": null,
+      "formula": "Pd",
+      "kind": "formal-component",
+      "charge": 0,
+      "capability": "va-chain-teaching",
+      "stereo": "Explicit E/Z only where specified; new alcohol centres unspecified",
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "elements": {
+        "Pd": 1
+      },
+      "recordId": "ocv2:68b540c78472491893d0333ccd15d42eb93dcea08fefca3e3b381374c3d26e8d"
+    },
+    {
+      "slug": "calcium-carbonate",
+      "name": "碳酸钙载体",
+      "smiles": null,
+      "formula": "CaCO3",
+      "kind": "formal-component",
+      "charge": 0,
+      "capability": "va-chain-teaching",
+      "stereo": "Explicit E/Z only where specified; new alcohol centres unspecified",
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "elements": {
+        "Ca": 1,
+        "C": 1,
+        "O": 3
+      },
+      "recordId": "ocv2:200d45995c08a9b374d67076c67cd0682b7560a1ea2f0c786541cdb4314bce0d"
+    },
+    {
+      "slug": "lead",
+      "name": "铅修饰组分",
+      "smiles": null,
+      "formula": "Pb",
+      "kind": "formal-component",
+      "charge": 0,
+      "capability": "va-chain-teaching",
+      "stereo": "Explicit E/Z only where specified; new alcohol centres unspecified",
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "elements": {
+        "Pb": 1
+      },
+      "recordId": "ocv2:369b52f492ec5ed18a83c92b3379603c3d4a9e4e8d5d718a9521ebc6b8594600"
+    },
+    {
+      "slug": "ethane",
+      "name": "乙烷",
+      "smiles": "CC",
+      "formula": "C2H6",
+      "kind": "molecular",
+      "charge": 0,
+      "capability": "va-coupling-stoichiometric-teaching",
+      "stereo": "Formal Mg components track equivalents and provenance, not unique covalent structures or solution speciation",
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "elements": {
+        "C": 2,
+        "H": 6
+      },
+      "recordId": "ocv2:4e51ebeba4ebe2c7d2d81a1605b573a6fd9fd57094bd2f4055c40b249b35cb8c"
+    },
+    {
+      "slug": "diethyl-ether",
+      "name": "乙醚",
+      "smiles": "CCOCC",
+      "formula": "C4H10O",
+      "kind": "molecular",
+      "charge": 0,
+      "capability": "va-coupling-stoichiometric-teaching",
+      "stereo": "Formal Mg components track equivalents and provenance, not unique covalent structures or solution speciation",
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "elements": {
+        "C": 4,
+        "H": 10,
+        "O": 1
+      },
+      "recordId": "ocv2:9ed1810a5d42ad6ca4cbb7d7a55fe7ba639905c8f08efc55578b78540ac1da05"
+    },
+    {
+      "slug": "sulfuric-acid",
+      "name": "硫酸形式投料",
+      "smiles": "O=S(=O)(O)O",
+      "formula": "H2O4S",
+      "kind": "molecular",
+      "charge": 0,
+      "capability": "va-coupling-stoichiometric-teaching",
+      "stereo": "Formal Mg components track equivalents and provenance, not unique covalent structures or solution speciation",
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "elements": {
+        "H": 2,
+        "O": 4,
+        "S": 1
+      },
+      "recordId": "ocv2:dee6a1631d5133b166e4f604f4c49e23978726020df2ee1b94d13031851581f9"
+    },
+    {
+      "slug": "ethylmagnesium-bromide",
+      "name": "乙基溴化镁有效组分",
+      "smiles": null,
+      "formula": "C2H5MgBr",
+      "kind": "formal-component",
+      "charge": 0,
+      "capability": "va-coupling-stoichiometric-teaching",
+      "stereo": "Formal Mg components track equivalents and provenance, not unique covalent structures or solution speciation",
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "elements": {
+        "C": 2,
+        "H": 5,
+        "Mg": 1,
+        "Br": 1
+      },
+      "recordId": "ocv2:78ad4d412197cea738792c0004d7b511dc87a80655a1f7d51f1b0031c8ff3195"
+    },
+    {
+      "slug": "c6-mono-magnesium",
+      "name": "C6 羟氧镁化形式组分",
+      "smiles": null,
+      "formula": "C6H7MgBrO",
+      "kind": "formal-component",
+      "charge": 0,
+      "capability": "va-coupling-stoichiometric-teaching",
+      "stereo": "Formal Mg components track equivalents and provenance, not unique covalent structures or solution speciation",
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "elements": {
+        "C": 6,
+        "H": 7,
+        "Mg": 1,
+        "Br": 1,
+        "O": 1
+      },
+      "recordId": "ocv2:95bbf88b8dad6066c49af4ac8c34cfc6ba4e3c2dc50d5e7eff0a3f86407db1bf"
+    },
+    {
+      "slug": "c6-di-magnesium",
+      "name": "C6 双活化形式组分",
+      "smiles": null,
+      "formula": "C6H6Mg2Br2O",
+      "kind": "formal-component",
+      "charge": 0,
+      "capability": "va-coupling-stoichiometric-teaching",
+      "stereo": "Formal Mg components track equivalents and provenance, not unique covalent structures or solution speciation",
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "elements": {
+        "C": 6,
+        "H": 6,
+        "Mg": 2,
+        "Br": 2,
+        "O": 1
+      },
+      "recordId": "ocv2:ceb5476a7ce295b24ab5804574e888ab937211828f044e2aa873339ccaeb043e"
+    },
+    {
+      "slug": "c20-di-magnesium",
+      "name": "C20 双镁醇盐形式组分",
+      "smiles": null,
+      "formula": "C20H28Mg2Br2O2",
+      "kind": "formal-component",
+      "charge": 0,
+      "capability": "va-coupling-stoichiometric-teaching",
+      "stereo": "Formal Mg components track equivalents and provenance, not unique covalent structures or solution speciation",
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "elements": {
+        "C": 20,
+        "H": 28,
+        "Mg": 2,
+        "Br": 2,
+        "O": 2
+      },
+      "recordId": "ocv2:3855f28e4479982910019ef1f0649e14f5260edd20a3cfddbd04cb566af96c66"
+    },
+    {
+      "slug": "magnesium-hydroxy-bromide",
+      "name": "水失活 MgBrOH 形式组分",
+      "smiles": null,
+      "formula": "MgBrOH",
+      "kind": "formal-component",
+      "charge": 0,
+      "capability": "va-coupling-stoichiometric-teaching",
+      "stereo": "Formal Mg components track equivalents and provenance, not unique covalent structures or solution speciation",
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "elements": {
+        "Mg": 1,
+        "Br": 1,
+        "O": 1,
+        "H": 1
+      },
+      "recordId": "ocv2:e2b9911e2dc99966f7efef50e45b40cf66694bcf87f945b239479047ff47825b"
+    },
+    {
+      "slug": "magnesium-sulfate",
+      "name": "硫酸镁形式组分",
+      "smiles": null,
+      "formula": "MgSO4",
+      "kind": "formal-component",
+      "charge": 0,
+      "capability": "va-coupling-stoichiometric-teaching",
+      "stereo": "Formal Mg components track equivalents and provenance, not unique covalent structures or solution speciation",
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "elements": {
+        "Mg": 1,
+        "S": 1,
+        "O": 4
+      },
+      "recordId": "ocv2:9e511745e7aea45a618f8e6cd2290661f77c76d0ac0bca4cc86c4f6233ea7414"
+    },
+    {
+      "slug": "methyl-chloroacetate",
+      "name": "氯乙酸甲酯",
+      "smiles": "COC(=O)CCl",
+      "formula": "C3H5ClO2",
+      "kind": "molecular",
+      "charge": 0,
+      "capability": "va-darzens-teaching",
+      "stereo": "Known starting alkene retained; new epoxide centres unspecified; C14 E/Z not assigned.",
+      "elements": {
+        "C": 3,
+        "H": 5,
+        "Cl": 1,
+        "O": 2
+      },
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:a446238b861036cd706a0e751bde8315ca21c55de95faf5435f31b136e043404"
+    },
+    {
+      "slug": "ionone-glycidate",
+      "name": "β-紫罗兰酮来源环氧酸甲酯",
+      "smiles": "COC(=O)C1OC1(C)/C=C/C1=C(C)CCCC1(C)C",
+      "formula": "C16H24O3",
+      "kind": "molecular",
+      "charge": 0,
+      "capability": "va-darzens-teaching",
+      "stereo": "Known starting alkene retained; new epoxide centres unspecified; C14 E/Z not assigned.",
+      "elements": {
+        "C": 16,
+        "H": 24,
+        "O": 3
+      },
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:4d1f8cbfc1de5a9761af182a765dc7f06a87d80bc6d589554e183b509978d2c5"
+    },
+    {
+      "slug": "ionone-glycidic-acid",
+      "name": "β-紫罗兰酮来源环氧酸",
+      "smiles": "CC1=C(/C=C/C2(C)OC2C(=O)O)C(C)(C)CCC1",
+      "formula": "C15H22O3",
+      "kind": "molecular",
+      "charge": 0,
+      "capability": "va-darzens-teaching",
+      "stereo": "Known starting alkene retained; new epoxide centres unspecified; C14 E/Z not assigned.",
+      "elements": {
+        "C": 15,
+        "H": 22,
+        "O": 3
+      },
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:639c6d7af88b26dd82fad23b80684e8050e284114877b6d1c3881e3823d1e75b"
+    },
+    {
+      "slug": "sodium-ionone-glycidate",
+      "name": "环氧羧酸钠有效组分",
+      "smiles": null,
+      "formula": "C15H21NaO3",
+      "kind": "formal-component",
+      "charge": 0,
+      "capability": "va-darzens-teaching",
+      "stereo": "Known starting alkene retained; new epoxide centres unspecified; C14 E/Z not assigned.",
+      "elements": {
+        "C": 15,
+        "H": 21,
+        "Na": 1,
+        "O": 3
+      },
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:a7af8b6a2272185dc34314acb11a639141899ee26a9674db628438c19566308c"
+    },
+    {
+      "slug": "c14-unconjugated",
+      "name": "C14 非共轭醛教学端点",
+      "smiles": "CC1=C(/C=C/C(C)C=O)C(C)(C)CCC1",
+      "formula": "C14H22O",
+      "kind": "molecular",
+      "charge": 0,
+      "capability": "va-darzens-teaching",
+      "stereo": "Known starting alkene retained; new epoxide centres unspecified; C14 E/Z not assigned.",
+      "elements": {
+        "C": 14,
+        "H": 22,
+        "O": 1
+      },
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:a149a50325c9fd3a254a65831d15e8ce4b580615e71e0e5129e9c045a489ddc0"
+    },
+    {
+      "slug": "hydrogen-chloride",
+      "name": "氯化氢净当量",
+      "smiles": null,
+      "formula": "HCl",
+      "kind": "formal-component",
+      "charge": 0,
+      "capability": "va-darzens-teaching",
+      "stereo": "Known starting alkene retained; new epoxide centres unspecified; C14 E/Z not assigned.",
+      "elements": {
+        "H": 1,
+        "Cl": 1
+      },
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:2a3c85a86a1862caae0486573d80a169f08d35ba1c6bd323ff4465990fb97e3f"
+    },
+    {
+      "slug": "carbon-dioxide",
+      "name": "二氧化碳",
+      "smiles": "O=C=O",
+      "formula": "CO2",
+      "kind": "molecular",
+      "charge": 0,
+      "capability": "va-darzens-teaching",
+      "stereo": "Known starting alkene retained; new epoxide centres unspecified; C14 E/Z not assigned.",
+      "elements": {
+        "C": 1,
+        "O": 2
+      },
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:17c1e52b3d373656772ed624cd164c7834646e8affdd64bfc22587b3c6f74d4e"
+    },
+    {
+      "slug": "hydroxybutanone",
+      "name": "4-羟基丁-2-酮",
+      "smiles": "CC(=O)CCO",
+      "formula": "C4H8O2",
+      "kind": "molecular",
+      "charge": 0,
+      "capability": "va-supply-teaching",
+      "stereo": "Unspecified centres remain unspecified",
+      "elements": {
+        "C": 4,
+        "H": 8,
+        "O": 2
+      },
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:0b18000a6618e882333dafcb5ea1bb3f9a5125ad8364cf54fddcc54fd593b25f"
+    },
+    {
+      "slug": "diacetone-alcohol",
+      "name": "双丙酮醇",
+      "smiles": "CC(=O)CC(C)(C)O",
+      "formula": "C6H12O2",
+      "kind": "molecular",
+      "charge": 0,
+      "capability": "va-supply-teaching",
+      "stereo": "Unspecified centres remain unspecified",
+      "elements": {
+        "C": 6,
+        "H": 12,
+        "O": 2
+      },
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:5f9361adc682b1c7e1e8ced935012db83d9f6e13c8e1e14597eda491f27401e5"
+    },
+    {
+      "slug": "c6-michael-adduct",
+      "name": "1,4 加成竞争体：己-5-炔-2-酮",
+      "smiles": "C#CCCC(C)=O",
+      "formula": "C6H8O",
+      "kind": "molecular",
+      "charge": 0,
+      "capability": "va-supply-teaching",
+      "stereo": "Unspecified centres remain unspecified",
+      "elements": {
+        "C": 6,
+        "H": 8,
+        "O": 1
+      },
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:b011f24fb11f359512645a1fcb94e3b0ffc35eb5b1b2be5b916a632b487ce895"
+    },
+    {
+      "slug": "ammonia",
+      "name": "氨",
+      "smiles": "N",
+      "formula": "H3N",
+      "kind": "molecular",
+      "charge": 0,
+      "capability": "va-supply-teaching",
+      "stereo": "Unspecified centres remain unspecified",
+      "elements": {
+        "H": 3,
+        "N": 1
+      },
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:b5fde04b056cef8cdc081286d07e75734860b3ec5c238e402ad1ad714c3766a0"
+    },
+    {
+      "slug": "sodium-amide",
+      "name": "氨基钠形式组分",
+      "smiles": null,
+      "formula": "H2NNa",
+      "kind": "formal-component",
+      "charge": 0,
+      "capability": "va-supply-teaching",
+      "stereo": "Unspecified centres remain unspecified",
+      "elements": {
+        "H": 2,
+        "N": 1,
+        "Na": 1
+      },
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:d49ba19f643ac2f7d7b6424432c2ff3dad9ca70b5e6220f7beb6082fdc08a9f4"
+    },
+    {
+      "slug": "methyl-butanol",
+      "name": "2-甲基-2-丁醇（过还原）",
+      "smiles": "CCC(C)(C)O",
+      "formula": "C5H12O",
+      "kind": "molecular",
+      "charge": 0,
+      "capability": "va-upstream-teaching",
+      "stereo": "achiral",
+      "elements": {
+        "C": 5,
+        "H": 12,
+        "O": 1
+      },
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:e6707d036dfbeea3f1b0439ff5702551e44720f914759a494b3eafa5690abda6"
+    },
+    {
+      "slug": "acetone",
+      "name": "丙酮",
+      "smiles": "CC(C)=O",
+      "formula": "C3H6O",
+      "kind": "molecular",
+      "capability": "structure",
+      "stereo": "Unspecified centres/bonds remain unspecified",
+      "elements": {
+        "C": 3,
+        "H": 6,
+        "O": 1
+      },
+      "charge": 0,
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:2a8480169f294eff8a285e95459aac30c97b1f6d1a65d6f3a5b4180c393e39ee"
+    },
+    {
+      "slug": "acetylene",
+      "name": "乙炔",
+      "smiles": "C#C",
+      "formula": "C2H2",
+      "kind": "molecular",
+      "capability": "structure",
+      "stereo": "Unspecified centres/bonds remain unspecified",
+      "elements": {
+        "C": 2,
+        "H": 2
+      },
+      "charge": 0,
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:76a7682febc7984c303b318c5603076907db9df8195a32b48c6aa0a2f1630a15"
+    },
+    {
+      "slug": "methyl-butynol",
+      "name": "2-甲基丁-3-炔-2-醇",
+      "smiles": "C#CC(C)(C)O",
+      "formula": "C5H8O",
+      "kind": "molecular",
+      "capability": "structure",
+      "stereo": "Unspecified centres/bonds remain unspecified",
+      "elements": {
+        "C": 5,
+        "H": 8,
+        "O": 1
+      },
+      "charge": 0,
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:9540f3d25734e0108d306ec47a8c9cf6b56edaa19eedd954bbaf85f5ac691d7f"
+    },
+    {
+      "slug": "methyl-butenol",
+      "name": "2-甲基丁-3-烯-2-醇",
+      "smiles": "C=CC(C)(C)O",
+      "formula": "C5H10O",
+      "kind": "molecular",
+      "capability": "structure",
+      "stereo": "Unspecified centres/bonds remain unspecified",
+      "elements": {
+        "C": 5,
+        "H": 10,
+        "O": 1
+      },
+      "charge": 0,
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:6ba2aa3bced123e348c8cf655e695c869b6e99414636453d6e826f1de54a49ac"
+    },
+    {
+      "slug": "methyl-acetoacetate",
+      "name": "乙酰乙酸甲酯",
+      "smiles": "COC(=O)CC(C)=O",
+      "formula": "C5H8O3",
+      "kind": "molecular",
+      "capability": "structure",
+      "stereo": "Unspecified centres/bonds remain unspecified",
+      "elements": {
+        "C": 5,
+        "H": 8,
+        "O": 3
+      },
+      "charge": 0,
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:5586ed1f7e5a2aea6f464197633f90651224635998a795976e5232600e231c92"
+    },
+    {
+      "slug": "methyl-heptenone",
+      "name": "6-甲基庚-5-烯-2-酮",
+      "smiles": "CC(=O)CCC=C(C)C",
+      "formula": "C8H14O",
+      "kind": "molecular",
+      "capability": "structure",
+      "stereo": "Unspecified centres/bonds remain unspecified",
+      "elements": {
+        "C": 8,
+        "H": 14,
+        "O": 1
+      },
+      "charge": 0,
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:8a3f04c78b115c52712e102338d72459f4f7e9ee6eebd1a5bf28d581761a257b"
+    },
+    {
+      "slug": "dehydrolinalool",
+      "name": "脱氢芳樟醇",
+      "smiles": "C#CC(C)(O)CCC=C(C)C",
+      "formula": "C10H16O",
+      "kind": "molecular",
+      "capability": "structure",
+      "stereo": "Unspecified centres/bonds remain unspecified",
+      "elements": {
+        "C": 10,
+        "H": 16,
+        "O": 1
+      },
+      "charge": 0,
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:7fa1f10bd3200e2062af844ef25dc584056130404695339c50cd7f4564a8b366"
+    },
+    {
+      "slug": "citral",
+      "name": "柠檬醛骨架（几何异构未定）",
+      "smiles": "CC(C)=CCCC(C)=CC=O",
+      "formula": "C10H16O",
+      "kind": "molecular",
+      "capability": "structure",
+      "stereo": "Unspecified centres/bonds remain unspecified",
+      "elements": {
+        "C": 10,
+        "H": 16,
+        "O": 1
+      },
+      "charge": 0,
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:55e43f4eb970e72c93a24337fc534c566013bfaea59c1f1abd1a558ecf7bebb4"
+    },
+    {
+      "slug": "pseudoionone",
+      "name": "假紫罗兰酮骨架",
+      "smiles": "CC(=O)C=CC=C(C)CCC=C(C)C",
+      "formula": "C13H20O",
+      "kind": "molecular",
+      "capability": "structure",
+      "stereo": "Unspecified centres/bonds remain unspecified",
+      "elements": {
+        "C": 13,
+        "H": 20,
+        "O": 1
+      },
+      "charge": 0,
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:6cb14d6539951d29e7e074bf74a3797d9c1bdebbb77c24c5b73e1ed0551caae6"
+    },
+    {
+      "slug": "beta-ionone",
+      "name": "β-紫罗兰酮",
+      "smiles": "CC(=O)/C=C/C1=C(C)CCCC1(C)C",
+      "formula": "C13H20O",
+      "kind": "molecular",
+      "capability": "structure",
+      "stereo": "Unspecified centres/bonds remain unspecified",
+      "elements": {
+        "C": 13,
+        "H": 20,
+        "O": 1
+      },
+      "charge": 0,
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:e98d4ef764a78f70f033e4f648228fd9c135e40159ac5a1bd60ac52deee81d23"
+    },
+    {
+      "slug": "c14-aldehyde",
+      "name": "C14 共轭醛骨架",
+      "smiles": "CC(C=O)=CCC1=C(C)CCCC1(C)C",
+      "formula": "C14H22O",
+      "kind": "molecular",
+      "capability": "structure",
+      "stereo": "Unspecified centres/bonds remain unspecified",
+      "elements": {
+        "C": 14,
+        "H": 22,
+        "O": 1
+      },
+      "charge": 0,
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:f84fd3d83e3680ee98654c524098e9d78df992cd72a5a3777327b1ee234924e4"
+    },
+    {
+      "slug": "mvk",
+      "name": "甲基乙烯基酮 MVK",
+      "smiles": "C=CC(C)=O",
+      "formula": "C4H6O",
+      "kind": "molecular",
+      "capability": "structure",
+      "stereo": "Unspecified centres/bonds remain unspecified",
+      "elements": {
+        "C": 4,
+        "H": 6,
+        "O": 1
+      },
+      "charge": 0,
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:6a6d68b00dec1c429355db6f67a5b398b5d5a2aa254e624409cbfd80b76e1405"
+    },
+    {
+      "slug": "c6-tertiary",
+      "name": "C6 叔炔丙醇（尚未重排）",
+      "smiles": "C#CC(C)(O)C=C",
+      "formula": "C6H8O",
+      "kind": "molecular",
+      "capability": "structure",
+      "stereo": "Unspecified centres/bonds remain unspecified",
+      "elements": {
+        "C": 6,
+        "H": 8,
+        "O": 1
+      },
+      "charge": 0,
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:fccca0aecdf2d2a85998e9616a09a2cddf206a708c7fbf531947e3d6d6e11e04"
+    },
+    {
+      "slug": "c6-z",
+      "name": "(Z)-C6 伯烯炔醇",
+      "smiles": "C#C/C(C)=C\\CO",
+      "formula": "C6H8O",
+      "kind": "molecular",
+      "capability": "structure",
+      "stereo": "Unspecified centres/bonds remain unspecified",
+      "elements": {
+        "C": 6,
+        "H": 8,
+        "O": 1
+      },
+      "charge": 0,
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:062b155357778c395d52e0e097031738fd3d46724b296c7581d4077e8dbe6c46"
+    },
+    {
+      "slug": "c6-e",
+      "name": "(E)-C6 伯烯炔醇",
+      "smiles": "C#C/C(C)=C/CO",
+      "formula": "C6H8O",
+      "kind": "molecular",
+      "capability": "structure",
+      "stereo": "Unspecified centres/bonds remain unspecified",
+      "elements": {
+        "C": 6,
+        "H": 8,
+        "O": 1
+      },
+      "charge": 0,
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:7a458041a6ad4cd3a29e77022f43b3422f61415607bc91bccdeb4c0e2c365f9b"
+    },
+    {
+      "slug": "c20-ynediol",
+      "name": "C20 炔二醇骨架",
+      "smiles": "CC(C#CC(O)C(C)=CCC1=C(C)CCCC1(C)C)=CCO",
+      "formula": "C20H30O2",
+      "kind": "molecular",
+      "capability": "structure",
+      "stereo": "Unspecified centres/bonds remain unspecified",
+      "elements": {
+        "C": 20,
+        "H": 30,
+        "O": 2
+      },
+      "charge": 0,
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:faa48c910fdc71e1963a9733edf9e5677d38c4f57b80f236046cc1a37d34e8f6"
+    },
+    {
+      "slug": "hydroxenin",
+      "name": "Hydroxenin · C20 烯二醇骨架",
+      "smiles": "CC(C=CC(O)C(C)=CCC1=C(C)CCCC1(C)C)=CCO",
+      "formula": "C20H32O2",
+      "kind": "molecular",
+      "capability": "va-acetylation-teaching",
+      "stereo": "Unspecified centres/bonds remain unspecified",
+      "elements": {
+        "C": 20,
+        "H": 32,
+        "O": 2
+      },
+      "charge": 0,
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:ccffaee5823fb8274d79d3a9897ff50e897e61b3b050c3803f04fbee83a6c2f8"
+    },
+    {
+      "slug": "hydroxenin-monoacetate",
+      "name": "Hydroxenin 伯羟基单乙酸酯骨架",
+      "smiles": "CC(=O)OCC=C(C)C=CC(O)C(C)=CCC1=C(C)CCCC1(C)C",
+      "formula": "C22H34O3",
+      "kind": "molecular",
+      "capability": "va-acetylation-teaching",
+      "stereo": "Unspecified centres/bonds remain unspecified",
+      "elements": {
+        "C": 22,
+        "H": 34,
+        "O": 3
+      },
+      "charge": 0,
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:2341e9e64f47bd66fc6c8a49ff963b60ef9ad2a16bae1308f787073a812dcb93"
+    },
+    {
+      "slug": "retinyl-acetate",
+      "name": "全反式维生素 A 乙酸酯",
+      "smiles": "CC(=O)OC/C=C(C)/C=C/C=C(C)/C=C/C1=C(C)CCCC1(C)C",
+      "formula": "C22H32O2",
+      "kind": "molecular",
+      "capability": "structure",
+      "stereo": "All four side-chain double bonds E; PubChem CID 638034",
+      "elements": {
+        "C": 22,
+        "H": 32,
+        "O": 2
+      },
+      "charge": 0,
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:0db585fe7cc545beb253b0806e7d04bb4973471dc5012ecdb42fad7cfe4add19"
+    },
+    {
+      "slug": "hydroxenin-diacetate",
+      "name": "Hydroxenin 二乙酸酯",
+      "smiles": "CC(=O)OCC=C(C)C=CC(OC(C)=O)C(C)=CCC1=C(C)CCCC1(C)C",
+      "formula": "C24H36O4",
+      "kind": "molecular",
+      "capability": "va-acetylation-teaching",
+      "stereo": "Unspecified centres remain unspecified",
+      "elements": {
+        "C": 24,
+        "H": 36,
+        "O": 4
+      },
+      "charge": 0,
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:c3e010c17ef2ef634b7c568a2009a360f6553c1cd059f532c66597b38b5ddbae"
+    },
+    {
+      "slug": "acetic-anhydride",
+      "name": "乙酸酐",
+      "smiles": "CC(=O)OC(C)=O",
+      "formula": "C4H6O3",
+      "kind": "molecular",
+      "capability": "va-acetylation-teaching",
+      "stereo": "Unspecified centres remain unspecified",
+      "elements": {
+        "C": 4,
+        "H": 6,
+        "O": 3
+      },
+      "charge": 0,
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:b098ac66915727ddc8a54924b7fd9c0290d18666301fb56e6120d7fb9faeb266"
+    },
+    {
+      "slug": "acetic-acid",
+      "name": "乙酸",
+      "smiles": "CC(=O)O",
+      "formula": "C2H4O2",
+      "kind": "molecular",
+      "capability": "va-acetylation-teaching",
+      "stereo": "Unspecified centres remain unspecified",
+      "elements": {
+        "C": 2,
+        "H": 4,
+        "O": 2
+      },
+      "charge": 0,
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:001f124bfebffe2bb7d7c3c64911c1e7e9db5a9a2cad3c1e60752a5f1da60d50"
+    },
+    {
+      "slug": "pyridine",
+      "name": "吡啶",
+      "smiles": "c1ccncc1",
+      "formula": "C5H5N",
+      "kind": "molecular",
+      "capability": "transport-teaching",
+      "stereo": "Unspecified centres remain unspecified",
+      "elements": {
+        "C": 5,
+        "H": 5,
+        "N": 1
+      },
+      "charge": 0,
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:f5937e84feac33c2fbb87c53e0cd23cf27ba41ea9e45dd09662f6dba399c6548"
+    },
+    {
+      "slug": "p-xylene",
+      "name": "对二甲苯",
+      "smiles": "Cc1ccc(C)cc1",
+      "formula": "C8H10",
+      "kind": "molecular",
+      "capability": "transport-teaching",
+      "stereo": "Unspecified centres remain unspecified",
+      "elements": {
+        "C": 8,
+        "H": 10
+      },
+      "charge": 0,
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:bbeedd58af5b61b1038bcdedb63ece3e991300ec6359df69691c7957333368d0"
+    },
+    {
+      "slug": "water",
+      "name": "水",
+      "smiles": "O",
+      "formula": "H2O",
+      "kind": "molecular",
+      "capability": "transport-teaching",
+      "stereo": "Unspecified centres remain unspecified",
+      "elements": {
+        "H": 2,
+        "O": 1
+      },
+      "charge": 0,
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:66644eab23958774013be3687ff556aa5a7d98ba5251617aa51195aa4eb4e486"
+    },
+    {
+      "slug": "methanol",
+      "name": "甲醇",
+      "smiles": "CO",
+      "formula": "CH4O",
+      "kind": "molecular",
+      "capability": "structure",
+      "stereo": "Unspecified centres remain unspecified",
+      "elements": {
+        "C": 1,
+        "H": 4,
+        "O": 1
+      },
+      "charge": 0,
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:df1a5bd774ce6a5d8646306b999f985263039bbbc3f23141f12ef87480a98a12"
+    },
+    {
+      "slug": "ethanol",
+      "name": "乙醇",
+      "smiles": "CCO",
+      "formula": "C2H6O",
+      "kind": "molecular",
+      "capability": "structure",
+      "stereo": "Unspecified centres remain unspecified",
+      "elements": {
+        "C": 2,
+        "H": 6,
+        "O": 1
+      },
+      "charge": 0,
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:7a2b5db6823258909f25b1875abb7a0434fb462181163b6410f505f3b3160ba6"
+    },
+    {
+      "slug": "hydrogen",
+      "name": "氢气",
+      "smiles": "[H][H]",
+      "formula": "H2",
+      "kind": "molecular",
+      "capability": "structure",
+      "stereo": "Unspecified centres remain unspecified",
+      "elements": {
+        "H": 2
+      },
+      "charge": 0,
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:982159909351bfbbdd21e855ed64c2369e37e080d4536b7525ebe955b0c07480"
+    },
+    {
+      "slug": "bromine",
+      "name": "溴",
+      "smiles": "BrBr",
+      "formula": "Br2",
+      "kind": "molecular",
+      "capability": "structure",
+      "stereo": "Unspecified centres remain unspecified",
+      "elements": {
+        "Br": 2
+      },
+      "charge": 0,
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:01d87271e3aaa9e6148be6c1935533179393129f8e9e5cd67c24c21b6b2db2ec"
+    },
+    {
+      "slug": "methyl-acetate",
+      "name": "乙酸甲酯",
+      "smiles": "COC(C)=O",
+      "formula": "C3H6O2",
+      "kind": "molecular",
+      "capability": "structure",
+      "stereo": "Unspecified centres remain unspecified",
+      "elements": {
+        "C": 3,
+        "H": 6,
+        "O": 2
+      },
+      "charge": 0,
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:67533dea6d868ae8bec39c5bde8adb7e23b5c71a2ffe69f7ee1610cd195254e2"
+    },
+    {
+      "slug": "formaldehyde",
+      "name": "甲醛",
+      "smiles": "C=O",
+      "formula": "CH2O",
+      "kind": "molecular",
+      "capability": "structure",
+      "stereo": "Unspecified centres remain unspecified",
+      "elements": {
+        "C": 1,
+        "H": 2,
+        "O": 1
+      },
+      "charge": 0,
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:5be6d511f8eac7c97415a8d5611ae110aa5892de2e01fd37a809b7588fadc916"
+    },
+    {
+      "slug": "chloroacetic-acid",
+      "name": "氯乙酸",
+      "smiles": "O=C(O)CCl",
+      "formula": "C2H3ClO2",
+      "kind": "molecular",
+      "capability": "structure",
+      "stereo": "Unspecified centres remain unspecified",
+      "elements": {
+        "C": 2,
+        "H": 3,
+        "Cl": 1,
+        "O": 2
+      },
+      "charge": 0,
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:e9475cdd4ada564af54fc46e996b91fc9233ed11715b1fd732d276ee7925ad66"
+    },
+    {
+      "slug": "sodium-chloride",
+      "name": "氯化钠形式组分",
+      "smiles": null,
+      "formula": "NaCl",
+      "kind": "formal-component",
+      "capability": "transport-teaching",
+      "stereo": "Not an isolated covalent graph",
+      "elements": {
+        "Na": 1,
+        "Cl": 1
+      },
+      "charge": 0,
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:7a5ca2064fbb2148076b98424d812951769e1902a8ef0ba1ff9cb86bc942845e"
+    },
+    {
+      "slug": "magnesium",
+      "name": "镁",
+      "smiles": null,
+      "formula": "Mg",
+      "kind": "formal-component",
+      "capability": "structure",
+      "stereo": "Not an isolated covalent graph",
+      "elements": {
+        "Mg": 1
+      },
+      "charge": 0,
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:8dc5779403b4871195b5ef0b24bbbac8df30be3c16e749fa79eefe66e2136505"
+    },
+    {
+      "slug": "magnesium-bromide",
+      "name": "溴化镁形式组分",
+      "smiles": null,
+      "formula": "MgBr2",
+      "kind": "formal-component",
+      "capability": "structure",
+      "stereo": "Not an isolated covalent graph",
+      "elements": {
+        "Mg": 1,
+        "Br": 2
+      },
+      "charge": 0,
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:528db1c9f8ff008af3f25e85e7c4129f14e87a90df9acdcd627ce37edd04824d"
+    },
+    {
+      "slug": "sodium-hydroxide",
+      "name": "氢氧化钠形式组分",
+      "smiles": null,
+      "formula": "NaOH",
+      "kind": "formal-component",
+      "capability": "structure",
+      "stereo": "Not an isolated covalent graph",
+      "elements": {
+        "Na": 1,
+        "O": 1,
+        "H": 1
+      },
+      "charge": 0,
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:d2dbf92db95309662b94bc1d8fa755fad077e9dec6bb375eefc4c5fc307ba7a8"
+    },
+    {
+      "slug": "sodium-methoxide",
+      "name": "甲醇钠形式组分",
+      "smiles": null,
+      "formula": "CH3NaO",
+      "kind": "formal-component",
+      "capability": "structure",
+      "stereo": "Not an isolated covalent graph",
+      "elements": {
+        "C": 1,
+        "H": 3,
+        "Na": 1,
+        "O": 1
+      },
+      "charge": 0,
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "recordId": "ocv2:516104ae9a7693b616b945476c849331541c4d983ed880d5756c092c059545cf"
+    }
+  ]
+}

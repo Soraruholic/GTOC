@@ -1,0 +1,1009 @@
+{
+  "version": "GT5-Unofficial 5.09.54.20",
+  "scope": "431 selected material/recipe Java files including bundled GT++/BartWorks; not every installed mod or runtime registry",
+  "positive": [
+    {
+      "term": "Acetone",
+      "sourceHits": [
+        {
+          "path": "gregtech/api/enums/Materials.java",
+          "line": 416,
+          "text": "public static Materials Acetone;"
+        },
+        {
+          "path": "gregtech/api/enums/MaterialsIDMap.java",
+          "line": 483,
+          "text": "r(672, Materials.Acetone);"
+        },
+        {
+          "path": "gregtech/loaders/materials/MaterialsInit.java",
+          "line": 5434,
+          "text": "Materials.Acetone = loadAcetone();"
+        },
+        {
+          "path": "gregtech/loaders/materials/MaterialsInit.java",
+          "line": 5560,
+          "text": "private static Materials loadAcetone() {"
+        },
+        {
+          "path": "gregtech/loaders/materials/MaterialsInit.java",
+          "line": 5561,
+          "text": "return new MaterialBuilder().setName(\"Acetone\")"
+        },
+        {
+          "path": "gregtech/loaders/materials/MaterialsInit.java",
+          "line": 5562,
+          "text": ".setDefaultLocalName(\"Acetone\")"
+        },
+        {
+          "path": "gregtech/loaders/postload/recipes/ChemicalRecipes.java",
+          "line": 1960,
+          "text": ".fluidOutputs(Materials.Acetone.getFluid(1_000))"
+        },
+        {
+          "path": "gregtech/loaders/postload/recipes/ChemicalRecipes.java",
+          "line": 1970,
+          "text": ".fluidOutputs(Materials.Acetone.getFluid(1_000))"
+        },
+        {
+          "path": "gregtech/loaders/postload/recipes/ChemicalRecipes.java",
+          "line": 1978,
+          "text": ".itemOutputs(Materials.Acetone.getCells(1))"
+        },
+        {
+          "path": "gregtech/loaders/postload/recipes/ChemicalRecipes.java",
+          "line": 1988,
+          "text": ".itemOutputs(Materials.Acetone.getCells(1), Materials.Empty.getCells(1))"
+        }
+      ],
+      "runtimeRegistry": "not probed in this turn",
+      "survivalRecipeClosure": "not established by symbol presence"
+    },
+    {
+      "term": "Acetylene",
+      "sourceHits": [
+        {
+          "path": "gregtech/api/enums/Materials.java",
+          "line": 1013,
+          "text": "public static Materials Acetylene;"
+        },
+        {
+          "path": "gregtech/api/enums/MaterialsIDMap.java",
+          "line": 591,
+          "text": "r(781, Materials.Acetylene);"
+        },
+        {
+          "path": "gregtech/loaders/materials/MaterialsInit.java",
+          "line": 14717,
+          "text": "Materials.Acetylene = loadAcetylene();"
+        },
+        {
+          "path": "gregtech/loaders/materials/MaterialsInit.java",
+          "line": 14986,
+          "text": "private static Materials loadAcetylene() {"
+        },
+        {
+          "path": "gregtech/loaders/materials/MaterialsInit.java",
+          "line": 14988,
+          "text": "return new MaterialBuilder().setName(\"Acetylene\")"
+        },
+        {
+          "path": "gregtech/loaders/materials/MaterialsInit.java",
+          "line": 14989,
+          "text": ".setDefaultLocalName(\"Acetylene\")"
+        },
+        {
+          "path": "gregtech/loaders/postload/recipes/ChemicalRecipes.java",
+          "line": 3830,
+          "text": ".fluidOutputs(Materials.Acetylene.getGas(1_000))"
+        },
+        {
+          "path": "gregtech/loaders/postload/recipes/ChemicalRecipes.java",
+          "line": 6011,
+          "text": "Materials.Acetylene.getGas(1_000),"
+        },
+        {
+          "path": "gregtech/loaders/postload/recipes/ChemicalRecipes.java",
+          "line": 6027,
+          "text": "Materials.Acetylene.getGas(9_000),"
+        }
+      ],
+      "runtimeRegistry": "not probed in this turn",
+      "survivalRecipeClosure": "not established by symbol presence"
+    },
+    {
+      "term": "MethylAcetate",
+      "sourceHits": [
+        {
+          "path": "gregtech/api/enums/Materials.java",
+          "line": 598,
+          "text": "public static Materials MethylAcetate;"
+        },
+        {
+          "path": "gregtech/api/enums/MaterialsIDMap.java",
+          "line": 492,
+          "text": "r(681, Materials.MethylAcetate);"
+        },
+        {
+          "path": "gregtech/loaders/materials/MaterialsInit.java",
+          "line": 7991,
+          "text": "Materials.MethylAcetate = loadMethylAcetate();"
+        },
+        {
+          "path": "gregtech/loaders/materials/MaterialsInit.java",
+          "line": 8459,
+          "text": "private static Materials loadMethylAcetate() {"
+        },
+        {
+          "path": "gregtech/loaders/materials/MaterialsInit.java",
+          "line": 8460,
+          "text": "return new MaterialBuilder().setName(\"MethylAcetate\")"
+        },
+        {
+          "path": "gregtech/loaders/postload/recipes/ChemicalRecipes.java",
+          "line": 1131,
+          "text": ".fluidOutputs(Materials.MethylAcetate.getFluid(1_000))"
+        },
+        {
+          "path": "gregtech/loaders/postload/recipes/ChemicalRecipes.java",
+          "line": 1141,
+          "text": ".fluidOutputs(Materials.MethylAcetate.getFluid(1_000))"
+        },
+        {
+          "path": "gregtech/loaders/postload/recipes/ChemicalRecipes.java",
+          "line": 1151,
+          "text": ".fluidOutputs(Materials.MethylAcetate.getFluid(1_000))"
+        },
+        {
+          "path": "gregtech/loaders/postload/recipes/ChemicalRecipes.java",
+          "line": 1161,
+          "text": ".fluidOutputs(Materials.MethylAcetate.getFluid(1_000))"
+        },
+        {
+          "path": "gregtech/loaders/postload/recipes/ChemicalRecipes.java",
+          "line": 1169,
+          "text": ".itemOutputs(Materials.MethylAcetate.getCells(1))"
+        }
+      ],
+      "runtimeRegistry": "not probed in this turn",
+      "survivalRecipeClosure": "not established by symbol presence"
+    },
+    {
+      "term": "Methanol",
+      "sourceHits": [
+        {
+          "path": "bartworks/common/loaders/recipes/Autoclave.java",
+          "line": 18,
+          "text": "Materials[] sterilizers = { Materials.Ammonia, Materials.Chlorine, Materials.Ethanol, Materials.Methanol };"
+        },
+        {
+          "path": "gregtech/api/enums/Materials.java",
+          "line": 597,
+          "text": "public static Materials Methanol;"
+        },
+        {
+          "path": "gregtech/api/enums/MaterialsIDMap.java",
+          "line": 484,
+          "text": "r(673, Materials.Methanol);"
+        },
+        {
+          "path": "gregtech/loaders/materials/MaterialsInit.java",
+          "line": 7990,
+          "text": "Materials.Methanol = loadMethanol();"
+        },
+        {
+          "path": "gregtech/loaders/materials/MaterialsInit.java",
+          "line": 8443,
+          "text": "private static Materials loadMethanol() {"
+        },
+        {
+          "path": "gregtech/loaders/materials/MaterialsInit.java",
+          "line": 8444,
+          "text": "return new MaterialBuilder().setName(\"Methanol\")"
+        },
+        {
+          "path": "gregtech/loaders/materials/MaterialsInit.java",
+          "line": 8445,
+          "text": ".setDefaultLocalName(\"Methanol\")"
+        },
+        {
+          "path": "gregtech/loaders/postload/recipes/ChemicalRecipes.java",
+          "line": 1107,
+          "text": ".fluidOutputs(Materials.Methanol.getFluid(1_000))"
+        },
+        {
+          "path": "gregtech/loaders/postload/recipes/ChemicalRecipes.java",
+          "line": 1130,
+          "text": ".fluidInputs(Materials.Methanol.getFluid(1_000))"
+        },
+        {
+          "path": "gregtech/loaders/postload/recipes/ChemicalRecipes.java",
+          "line": 1137,
+          "text": ".itemInputs(Materials.Methanol.getCells(1))"
+        }
+      ],
+      "runtimeRegistry": "not probed in this turn",
+      "survivalRecipeClosure": "not established by symbol presence"
+    },
+    {
+      "term": "Ethanol",
+      "sourceHits": [
+        {
+          "path": "bartworks/common/loaders/recipes/Autoclave.java",
+          "line": 18,
+          "text": "Materials[] sterilizers = { Materials.Ammonia, Materials.Chlorine, Materials.Ethanol, Materials.Methanol };"
+        },
+        {
+          "path": "bartworks/system/material/processingLoaders/AdditionalRecipes.java",
+          "line": 95,
+          "text": "ItemStack EthanolCell = Materials.Ethanol.getCells(1);"
+        },
+        {
+          "path": "bartworks/system/material/processingLoaders/AdditionalRecipes.java",
+          "line": 97,
+          "text": ".itemInputs(BioCultureEnum.getPetriDish(culture.bioCulture), DNAFlask, Detergent, EthanolCell)"
+        },
+        {
+          "path": "goodgenerator/items/GGMaterial.java",
+          "line": 1111,
+          "text": "\"Ethanol Gasoline\","
+        },
+        {
+          "path": "goodgenerator/loader/NaquadahReworkRecipeLoader.java",
+          "line": 193,
+          "text": "Materials.Ethanol.getFluid(2_000))"
+        },
+        {
+          "path": "goodgenerator/loader/NaquadahReworkRecipeLoader.java",
+          "line": 539,
+          "text": ".fluidOutputs(Materials.Ethanol.getFluid(1_000))"
+        },
+        {
+          "path": "goodgenerator/loader/NaquadahReworkRecipeLoader.java",
+          "line": 548,
+          "text": ".itemOutputs(Materials.Ethanol.getCells(1))"
+        },
+        {
+          "path": "goodgenerator/loader/RecipeLoader.java",
+          "line": 491,
+          "text": ".fluidInputs(Materials.Ethanol.getFluid(1_000), Materials.SulfuricAcid.getFluid(1_000))"
+        },
+        {
+          "path": "goodgenerator/loader/RecipeLoader.java",
+          "line": 498,
+          "text": ".itemInputs(Materials.GasolineRaw.getCells(9), Materials.Ethanol.getCells(1))"
+        },
+        {
+          "path": "goodgenerator/loader/RecipeLoader2.java",
+          "line": 836,
+          "text": ".fluidInputs(Materials.Ethanol.getFluid(2_000))"
+        }
+      ],
+      "runtimeRegistry": "not probed in this turn",
+      "survivalRecipeClosure": "not established by symbol presence"
+    },
+    {
+      "term": "SodiumMethoxide",
+      "sourceHits": [
+        {
+          "path": "gregtech/api/enums/Materials.java",
+          "line": 1044,
+          "text": "public static Materials SodiumMethoxide;"
+        },
+        {
+          "path": "gregtech/api/enums/MaterialsIDMap.java",
+          "line": 559,
+          "text": "r(749, Materials.SodiumMethoxide);"
+        },
+        {
+          "path": "gregtech/loaders/materials/MaterialsInit.java",
+          "line": 14748,
+          "text": "Materials.SodiumMethoxide = loadSodiumMethoxide();"
+        },
+        {
+          "path": "gregtech/loaders/materials/MaterialsInit.java",
+          "line": 15425,
+          "text": "private static Materials loadSodiumMethoxide() {"
+        },
+        {
+          "path": "gregtech/loaders/materials/MaterialsInit.java",
+          "line": 15426,
+          "text": "return new MaterialBuilder().setName(\"SodiumMethoxide\")"
+        },
+        {
+          "path": "gregtech/loaders/postload/recipes/ChemicalRecipes.java",
+          "line": 1103,
+          "text": ".itemInputs(Materials.SodiumMethoxide.getDust(6))"
+        },
+        {
+          "path": "gregtech/loaders/postload/recipes/ChemicalRecipes.java",
+          "line": 5095,
+          "text": ".itemOutputs(Materials.SodiumBorohydride.getDust(6), Materials.SodiumMethoxide.getDust(18))"
+        },
+        {
+          "path": "gregtech/loaders/postload/recipes/ChemicalRecipes.java",
+          "line": 5106,
+          "text": "Materials.SodiumMethoxide.getDust(64),"
+        },
+        {
+          "path": "gregtech/loaders/postload/recipes/ChemicalRecipes.java",
+          "line": 5107,
+          "text": "Materials.SodiumMethoxide.getDust(64),"
+        },
+        {
+          "path": "gregtech/loaders/postload/recipes/ChemicalRecipes.java",
+          "line": 5108,
+          "text": "Materials.SodiumMethoxide.getDust(16))"
+        }
+      ],
+      "runtimeRegistry": "not probed in this turn",
+      "survivalRecipeClosure": "not established by symbol presence"
+    },
+    {
+      "term": "SodiumHydroxide",
+      "sourceHits": [
+        {
+          "path": "bartworks/system/material/WerkstoffLoader.java",
+          "line": 936,
+          "text": "Pair.of(Materials.SodiumHydroxide, 1),"
+        },
+        {
+          "path": "bartworks/system/material/gtenhancement/PlatinumSludgeOverHaul.java",
+          "line": 204,
+          "text": ".itemInputs(Materials.CarbonMonoxide.getCells(1), Materials.SodiumHydroxide.getDust(3))"
+        },
+        {
+          "path": "goodgenerator/loader/NaquadahReworkRecipeLoader.java",
+          "line": 250,
+          "text": ".itemInputs(GTOreDictUnificator.get(OrePrefixes.dust, Materials.SodiumHydroxide, 27))"
+        },
+        {
+          "path": "goodgenerator/loader/NaquadahReworkRecipeLoader.java",
+          "line": 271,
+          "text": ".itemInputs(GTOreDictUnificator.get(OrePrefixes.dust, Materials.SodiumHydroxide, 27))"
+        },
+        {
+          "path": "goodgenerator/loader/NaquadahReworkRecipeLoader.java",
+          "line": 308,
+          "text": ".itemInputs(GTOreDictUnificator.get(OrePrefixes.dust, Materials.SodiumHydroxide, 60))"
+        },
+        {
+          "path": "goodgenerator/loader/NaquadahReworkRecipeLoader.java",
+          "line": 372,
+          "text": "GTOreDictUnificator.get(OrePrefixes.dust, Materials.SodiumHydroxide, 9))"
+        },
+        {
+          "path": "goodgenerator/loader/RecipeLoader.java",
+          "line": 320,
+          "text": ".itemInputs(Materials.SodiumHydroxide.getDust(12))"
+        },
+        {
+          "path": "goodgenerator/loader/RecipeLoader2.java",
+          "line": 881,
+          "text": ".itemInputs(GGMaterial.ferrocene.get(OrePrefixes.dust, 4), Materials.SodiumHydroxide.getDust(8))"
+        },
+        {
+          "path": "gregtech/api/enums/Materials.java",
+          "line": 614,
+          "text": "public static Materials SodiumHydroxide;"
+        },
+        {
+          "path": "gregtech/api/enums/MaterialsIDMap.java",
+          "line": 496,
+          "text": "r(685, Materials.SodiumHydroxide);"
+        }
+      ],
+      "runtimeRegistry": "not probed in this turn",
+      "survivalRecipeClosure": "not established by symbol presence"
+    },
+    {
+      "term": "Toluene",
+      "sourceHits": [
+        {
+          "path": "goodgenerator/loader/RecipeLoader2.java",
+          "line": 765,
+          "text": "Materials.Toluene.getFluid(400),"
+        },
+        {
+          "path": "gregtech/api/enums/Materials.java",
+          "line": 622,
+          "text": "public static Materials Toluene;"
+        },
+        {
+          "path": "gregtech/api/enums/MaterialsIDMap.java",
+          "line": 458,
+          "text": "r(647, Materials.Toluene);"
+        },
+        {
+          "path": "gregtech/loaders/materials/MaterialsInit.java",
+          "line": 8015,
+          "text": "Materials.Toluene = loadToluene();"
+        },
+        {
+          "path": "gregtech/loaders/materials/MaterialsInit.java",
+          "line": 8825,
+          "text": "private static Materials loadToluene() {"
+        },
+        {
+          "path": "gregtech/loaders/materials/MaterialsInit.java",
+          "line": 8826,
+          "text": "return new MaterialBuilder().setName(\"Toluene\")"
+        },
+        {
+          "path": "gregtech/loaders/materials/MaterialsInit.java",
+          "line": 8827,
+          "text": ".setDefaultLocalName(\"Toluene\")"
+        },
+        {
+          "path": "gregtech/loaders/postload/recipes/ChemicalRecipes.java",
+          "line": 169,
+          "text": ".itemOutputs(ItemList.GelledToluene.get(16))"
+        },
+        {
+          "path": "gregtech/loaders/postload/recipes/ChemicalRecipes.java",
+          "line": 170,
+          "text": ".fluidInputs(new FluidStack(ItemList.sToluene, 1_000))"
+        },
+        {
+          "path": "gregtech/loaders/postload/recipes/ChemicalRecipes.java",
+          "line": 176,
+          "text": ".itemInputs(ItemList.GelledToluene.get(4))"
+        }
+      ],
+      "runtimeRegistry": "not probed in this turn",
+      "survivalRecipeClosure": "not established by symbol presence"
+    },
+    {
+      "term": "Magnesium",
+      "sourceHits": [
+        {
+          "path": "bartworks/common/loaders/recipes/Electrolyzer.java",
+          "line": 24,
+          "text": "GTOreDictUnificator.get(OrePrefixes.dust, Materials.Magnesium, 2L),"
+        },
+        {
+          "path": "bartworks/system/material/WerkstoffLoader.java",
+          "line": 466,
+          "text": "Arrays.asList(Materials.Magnesium, Materials.SiliconDioxide),"
+        },
+        {
+          "path": "bartworks/system/material/WerkstoffLoader.java",
+          "line": 467,
+          "text": "Pair.of(Materials.Magnesium, 2),"
+        },
+        {
+          "path": "bartworks/system/material/processingLoaders/AdditionalRecipes.java",
+          "line": 336,
+          "text": ".itemInputs(WerkstoffLoader.Thorianit.get(dust, 3), Materials.Magnesium.getDust(2))"
+        },
+        {
+          "path": "bartworks/system/material/processingLoaders/AdditionalRecipes.java",
+          "line": 449,
+          "text": "Materials.Magnesium.getDustTiny(1),"
+        },
+        {
+          "path": "goodgenerator/items/GGMaterial.java",
+          "line": 1461,
+          "text": "\"Magnesium Sulphate\","
+        },
+        {
+          "path": "goodgenerator/items/GGMaterial.java",
+          "line": 1469,
+          "text": "Pair.of(Magnesium, 1),"
+        },
+        {
+          "path": "goodgenerator/loader/NaquadahReworkRecipeLoader.java",
+          "line": 100,
+          "text": ".itemInputs(GGMaterial.naquadriaEarth.get(OrePrefixes.dust, 32), Materials.Magnesium.getDust(64))"
+        },
+        {
+          "path": "goodgenerator/loader/NaquadahReworkRecipeLoader.java",
+          "line": 431,
+          "text": "GTOreDictUnificator.get(OrePrefixes.dust, Materials.Magnesium, 2))"
+        },
+        {
+          "path": "gregtech/api/enums/Materials.java",
+          "line": 99,
+          "text": "public static Materials Magnesium;"
+        }
+      ],
+      "runtimeRegistry": "not probed in this turn",
+      "survivalRecipeClosure": "not established by symbol presence"
+    },
+    {
+      "term": "Hydrogen",
+      "sourceHits": [
+        {
+          "path": "bartworks/common/loaders/recipes/Electrolyzer.java",
+          "line": 77,
+          "text": "GTOreDictUnificator.get(OrePrefixes.cell, Materials.Hydrogen, 2))"
+        },
+        {
+          "path": "bartworks/common/loaders/recipes/Electrolyzer.java",
+          "line": 89,
+          "text": "GTOreDictUnificator.get(OrePrefixes.cell, Materials.Hydrogen, 2))"
+        },
+        {
+          "path": "bartworks/common/loaders/recipes/Electrolyzer.java",
+          "line": 103,
+          "text": "GTOreDictUnificator.get(OrePrefixes.cell, Materials.Hydrogen, 3))"
+        },
+        {
+          "path": "bartworks/common/loaders/recipes/Electrolyzer.java",
+          "line": 117,
+          "text": "GTOreDictUnificator.get(OrePrefixes.cell, Materials.Hydrogen, 3))"
+        },
+        {
+          "path": "bartworks/common/loaders/recipes/Electrolyzer.java",
+          "line": 144,
+          "text": "GTOreDictUnificator.get(OrePrefixes.cell, Materials.Hydrogen, 1))"
+        },
+        {
+          "path": "bartworks/system/material/WerkstoffLoader.java",
+          "line": 256,
+          "text": "Pair.of(Materials.Hydrogen, 3));"
+        },
+        {
+          "path": "bartworks/system/material/WerkstoffLoader.java",
+          "line": 274,
+          "text": "Pair.of(Materials.Hydrogen, 3));"
+        },
+        {
+          "path": "bartworks/system/material/WerkstoffLoader.java",
+          "line": 291,
+          "text": "Pair.of(Materials.Hydrogen, 1));"
+        },
+        {
+          "path": "bartworks/system/material/WerkstoffLoader.java",
+          "line": 523,
+          "text": "Pair.of(Materials.Hydrogen, 2));"
+        },
+        {
+          "path": "bartworks/system/material/WerkstoffLoader.java",
+          "line": 539,
+          "text": "Pair.of(Materials.Hydrogen, 2));"
+        }
+      ],
+      "runtimeRegistry": "not probed in this turn",
+      "survivalRecipeClosure": "not established by symbol presence"
+    },
+    {
+      "term": "Nitrogen",
+      "sourceHits": [
+        {
+          "path": "bartworks/system/material/WerkstoffLoader.java",
+          "line": 136,
+          "text": "* Was used to add Nitrogen, Xenon and Oganesson to blast furnace smelting recipe. Now it just adds all types of"
+        },
+        {
+          "path": "bartworks/system/material/WerkstoffLoader.java",
+          "line": 1258,
+          "text": "Pair.of(Materials.Nitrogen, 1),"
+        },
+        {
+          "path": "bartworks/system/material/WerkstoffLoader.java",
+          "line": 1799,
+          "text": "Materials.Nitrogen.add(WerkstoffLoader.ANAEROBE_GAS);"
+        },
+        {
+          "path": "bartworks/system/material/gtenhancement/PlatinumSludgeOverHaul.java",
+          "line": 400,
+          "text": "Materials.NitrogenDioxide.getCells(1),"
+        },
+        {
+          "path": "bartworks/system/material/gtenhancement/PlatinumSludgeOverHaul.java",
+          "line": 414,
+          "text": "Materials.NitrogenDioxide.getGas(1_000),"
+        },
+        {
+          "path": "bartworks/system/material/gtenhancement/PlatinumSludgeOverHaul.java",
+          "line": 426,
+          "text": "Materials.NitrogenDioxide.getGas(9_000),"
+        },
+        {
+          "path": "bartworks/system/material/processingLoaders/AdditionalRecipes.java",
+          "line": 411,
+          "text": "Materials.Nitrogen.getGas(78_084_000),"
+        },
+        {
+          "path": "goodgenerator/loader/RecipeLoader.java",
+          "line": 313,
+          "text": ".fluidOutputs(GGMaterial.thoriumNitrate.getFluidOrGas(1_000), Materials.NitrogenDioxide.getGas(4_000))"
+        },
+        {
+          "path": "goodgenerator/loader/RecipeLoader.java",
+          "line": 846,
+          "text": ".fluidOutputs(Materials.Nitrogen.getGas(1_000))"
+        },
+        {
+          "path": "goodgenerator/loader/RecipeLoader.java",
+          "line": 916,
+          "text": ".fluidInputs(Materials.LiquidOxygen.getGas(1_000), Materials.NitrogenDioxide.getGas(1_000))"
+        }
+      ],
+      "runtimeRegistry": "not probed in this turn",
+      "survivalRecipeClosure": "not established by symbol presence"
+    },
+    {
+      "term": "SulfuricAcid",
+      "sourceHits": [
+        {
+          "path": "bartworks/system/material/gtenhancement/PlatinumSludgeOverHaul.java",
+          "line": 171,
+          "text": "// DilutedSulfuricAcid"
+        },
+        {
+          "path": "bartworks/system/material/gtenhancement/PlatinumSludgeOverHaul.java",
+          "line": 174,
+          "text": ".itemInputs(Materials.SulfuricAcid.getCells(2), Materials.Water.getCells(1))"
+        },
+        {
+          "path": "bartworks/system/material/gtenhancement/PlatinumSludgeOverHaul.java",
+          "line": 176,
+          "text": ".itemOutputs(Materials.DilutedSulfuricAcid.getCells(3))"
+        },
+        {
+          "path": "bartworks/system/material/gtenhancement/PlatinumSludgeOverHaul.java",
+          "line": 185,
+          "text": ".fluidInputs(Materials.SulfuricAcid.getFluid(2_000))"
+        },
+        {
+          "path": "bartworks/system/material/gtenhancement/PlatinumSludgeOverHaul.java",
+          "line": 186,
+          "text": ".fluidOutputs(Materials.DilutedSulfuricAcid.getFluid(3_000))"
+        },
+        {
+          "path": "bartworks/system/material/gtenhancement/PlatinumSludgeOverHaul.java",
+          "line": 192,
+          "text": ".itemInputs(Materials.SulfuricAcid.getCells(2))"
+        },
+        {
+          "path": "bartworks/system/material/gtenhancement/PlatinumSludgeOverHaul.java",
+          "line": 196,
+          "text": ".fluidOutputs(Materials.DilutedSulfuricAcid.getFluid(3_000))"
+        },
+        {
+          "path": "bartworks/system/material/gtenhancement/PlatinumSludgeOverHaul.java",
+          "line": 215,
+          "text": ".fluidInputs(Materials.SulfuricAcid.getFluid(1_000))"
+        },
+        {
+          "path": "bartworks/system/material/gtenhancement/PlatinumSludgeOverHaul.java",
+          "line": 221,
+          "text": ".itemInputs(Materials.SulfuricAcid.getCells(1))"
+        },
+        {
+          "path": "bartworks/system/material/gtenhancement/PlatinumSludgeOverHaul.java",
+          "line": 545,
+          "text": ".fluidOutputs(Materials.SulfuricAcid.getFluid(1_000))"
+        }
+      ],
+      "runtimeRegistry": "not probed in this turn",
+      "survivalRecipeClosure": "not established by symbol presence"
+    },
+    {
+      "term": "HydrochloricAcid",
+      "sourceHits": [
+        {
+          "path": "bartworks/system/material/WerkstoffLoader.java",
+          "line": 861,
+          "text": "Pair.of(Materials.HydrochloricAcid, 1));"
+        },
+        {
+          "path": "bartworks/system/material/gtenhancement/PlatinumSludgeOverHaul.java",
+          "line": 232,
+          "text": ".itemInputs(Materials.HydrochloricAcid.getCells(3), Materials.NitricAcid.getCells(1))"
+        },
+        {
+          "path": "bartworks/system/material/gtenhancement/PlatinumSludgeOverHaul.java",
+          "line": 240,
+          "text": ".itemInputs(Materials.HydrochloricAcid.getCells(3), Materials.NitricAcid.getCells(1))"
+        },
+        {
+          "path": "bartworks/system/material/gtenhancement/PlatinumSludgeOverHaul.java",
+          "line": 252,
+          "text": ".fluidInputs(Materials.HydrochloricAcid.getFluid(3_000))"
+        },
+        {
+          "path": "bartworks/system/material/gtenhancement/PlatinumSludgeOverHaul.java",
+          "line": 259,
+          "text": ".itemInputs(Materials.HydrochloricAcid.getCells(3))"
+        },
+        {
+          "path": "bartworks/system/material/gtenhancement/PlatinumSludgeOverHaul.java",
+          "line": 274,
+          "text": ".fluidInputs(Materials.HydrochloricAcid.getFluid(1_000))"
+        },
+        {
+          "path": "bartworks/system/material/gtenhancement/PlatinumSludgeOverHaul.java",
+          "line": 280,
+          "text": ".itemInputs(Materials.HydrochloricAcid.getCells(1))"
+        },
+        {
+          "path": "bartworks/system/material/gtenhancement/PlatinumSludgeOverHaul.java",
+          "line": 291,
+          "text": ".fluidInputs(Materials.Ammonia.getGas(64_000), Materials.HydrochloricAcid.getFluid(64_000))"
+        },
+        {
+          "path": "bartworks/system/material/gtenhancement/PlatinumSludgeOverHaul.java",
+          "line": 401,
+          "text": "Materials.HydrochloricAcid.getCells(3))"
+        },
+        {
+          "path": "bartworks/system/material/gtenhancement/PlatinumSludgeOverHaul.java",
+          "line": 415,
+          "text": "Materials.HydrochloricAcid.getFluid(3_000))"
+        }
+      ],
+      "runtimeRegistry": "not probed in this turn",
+      "survivalRecipeClosure": "not established by symbol presence"
+    },
+    {
+      "term": "Ethylene",
+      "sourceHits": [
+        {
+          "path": "bartworks/system/material/gtenhancement/PlatinumSludgeOverHaul.java",
+          "line": 522,
+          "text": ".itemOutputs(Materials.Palladium.getDust(2), Materials.Ethylene.getCells(1))"
+        },
+        {
+          "path": "bartworks/system/material/gtenhancement/PlatinumSludgeOverHaul.java",
+          "line": 535,
+          "text": "Materials.Ethylene.getGas(1_000),"
+        },
+        {
+          "path": "goodgenerator/loader/NaquadahReworkRecipeLoader.java",
+          "line": 538,
+          "text": ".fluidInputs(Materials.Ethylene.getGas(1_000), Materials.Steam.getGas(2_000))"
+        },
+        {
+          "path": "goodgenerator/loader/NaquadahReworkRecipeLoader.java",
+          "line": 545,
+          "text": ".itemInputs(Materials.Ethylene.getCells(1))"
+        },
+        {
+          "path": "gregtech/api/enums/Materials.java",
+          "line": 588,
+          "text": "public static Materials Ethylene;"
+        },
+        {
+          "path": "gregtech/api/enums/Materials.java",
+          "line": 1005,
+          "text": "public static Materials EthyleneOxide;"
+        },
+        {
+          "path": "gregtech/api/enums/Materials.java",
+          "line": 1007,
+          "text": "public static Materials Ethyleneglycol;"
+        },
+        {
+          "path": "gregtech/api/enums/MaterialsIDMap.java",
+          "line": 488,
+          "text": "r(677, Materials.Ethylene);"
+        },
+        {
+          "path": "gregtech/api/enums/MaterialsIDMap.java",
+          "line": 597,
+          "text": "r(787, Materials.Ethyleneglycol);"
+        },
+        {
+          "path": "gregtech/api/enums/MaterialsIDMap.java",
+          "line": 599,
+          "text": "r(789, Materials.EthyleneOxide);"
+        }
+      ],
+      "runtimeRegistry": "not probed in this turn",
+      "survivalRecipeClosure": "not established by symbol presence"
+    },
+    {
+      "term": "ACETIC_ANHYDRIDE",
+      "sourceHits": [
+        {
+          "path": "gtPlusPlus/core/material/MaterialMisc.java",
+          "line": 301,
+          "text": "public static final Material ACETIC_ANHYDRIDE = new Material("
+        },
+        {
+          "path": "gtPlusPlus/core/recipe/RecipesGregTech.java",
+          "line": 1225,
+          "text": ".fluidOutputs(MaterialMisc.ACETIC_ANHYDRIDE.getFluidStack(1_000))"
+        },
+        {
+          "path": "gtPlusPlus/xmod/gregtech/loaders/recipe/RecipeLoaderGlueLine.java",
+          "line": 61,
+          "text": ".fluidOutputs(MaterialMisc.ACETIC_ANHYDRIDE.getFluidStack(1_000))"
+        },
+        {
+          "path": "gtPlusPlus/xmod/gregtech/loaders/recipe/RecipeLoaderGlueLine.java",
+          "line": 71,
+          "text": "MaterialMisc.ACETIC_ANHYDRIDE.getFluidStack(1_000))"
+        },
+        {
+          "path": "gtPlusPlus/xmod/gregtech/loaders/recipe/RecipeLoaderGlueLine.java",
+          "line": 74,
+          "text": "MaterialMisc.ACETIC_ANHYDRIDE.getFluidStack(950))"
+        }
+      ],
+      "runtimeRegistry": "not probed in this turn",
+      "survivalRecipeClosure": "not established by symbol presence"
+    },
+    {
+      "term": "CHLOROACETIC_ACID",
+      "sourceHits": [
+        {
+          "path": "gtPlusPlus/core/material/MaterialMisc.java",
+          "line": 317,
+          "text": "public static final Material CHLOROACETIC_ACID = new Material("
+        },
+        {
+          "path": "gtPlusPlus/core/material/MaterialMisc.java",
+          "line": 334,
+          "text": "public static final Material DICHLOROACETIC_ACID = new Material("
+        },
+        {
+          "path": "gtPlusPlus/core/material/MaterialMisc.java",
+          "line": 351,
+          "text": "public static final Material TRICHLOROACETIC_ACID = new Material("
+        },
+        {
+          "path": "gtPlusPlus/xmod/gregtech/loaders/recipe/RecipeLoaderGlueLine.java",
+          "line": 85,
+          "text": "MaterialMisc.CHLOROACETIC_ACID.getFluidStack(1_000),"
+        },
+        {
+          "path": "gtPlusPlus/xmod/gregtech/loaders/recipe/RecipeLoaderGlueLine.java",
+          "line": 216,
+          "text": "MaterialMisc.CHLOROACETIC_ACID.getFluidStack(100),"
+        },
+        {
+          "path": "gtPlusPlus/xmod/gregtech/loaders/recipe/RecipeLoaderGlueLine.java",
+          "line": 217,
+          "text": "MaterialMisc.DICHLOROACETIC_ACID.getFluidStack(450),"
+        },
+        {
+          "path": "gtPlusPlus/xmod/gregtech/loaders/recipe/RecipeLoaderGlueLine.java",
+          "line": 218,
+          "text": "MaterialMisc.TRICHLOROACETIC_ACID.getFluidStack(450))"
+        },
+        {
+          "path": "gtPlusPlus/xmod/gregtech/loaders/recipe/RecipeLoaderGlueLine.java",
+          "line": 237,
+          "text": ".itemInputs(MaterialMisc.DICHLOROACETIC_ACID.getCell(1))"
+        },
+        {
+          "path": "gtPlusPlus/xmod/gregtech/loaders/recipe/RecipeLoaderGlueLine.java",
+          "line": 240,
+          "text": ".fluidInputs(MaterialMisc.TRICHLOROACETIC_ACID.getFluidStack(1_000))"
+        }
+      ],
+      "runtimeRegistry": "not probed in this turn",
+      "survivalRecipeClosure": "not established by symbol presence"
+    },
+    {
+      "term": "Formaldehyde",
+      "sourceHits": [
+        {
+          "path": "gregtech/loaders/postload/chains/AcidRecipes.java",
+          "line": 216,
+          "text": "new FluidStack(GTPPFluids.Formaldehyde, 4000),"
+        },
+        {
+          "path": "gregtech/loaders/postload/recipes/ChemicalRecipes.java",
+          "line": 3797,
+          "text": "GameRegistry.findItemStack(GTPlusPlus.ID, \"Formaldehyde\", 4),"
+        },
+        {
+          "path": "gtPlusPlus/core/item/chemistry/RecipeLoaderGenericChem.java",
+          "line": 46,
+          "text": "recipeCatalystFormaldehyde();"
+        },
+        {
+          "path": "gtPlusPlus/core/item/chemistry/RecipeLoaderGenericChem.java",
+          "line": 341,
+          "text": "private static void recipeCatalystFormaldehyde() {"
+        },
+        {
+          "path": "gtPlusPlus/core/item/chemistry/RecipeLoaderGenericChem.java",
+          "line": 344,
+          "text": ".itemInputs(GregtechItemList.EmptyCatalystCarrier.get(4), GregtechItemList.FormaldehydeCatalystDust.get(8))"
+        },
+        {
+          "path": "gtPlusPlus/core/item/chemistry/RecipeLoaderGenericChem.java",
+          "line": 346,
+          "text": ".itemOutputs(GregtechItemList.FormaldehydeCatalyst.get(4))"
+        },
+        {
+          "path": "gtPlusPlus/core/item/chemistry/RecipeLoaderRocketFuels.java",
+          "line": 41,
+          "text": "createFormaldehyde();"
+        },
+        {
+          "path": "gtPlusPlus/core/item/chemistry/RecipeLoaderRocketFuels.java",
+          "line": 42,
+          "text": "createFormaldehydeCatalyst();"
+        },
+        {
+          "path": "gtPlusPlus/core/item/chemistry/RecipeLoaderRocketFuels.java",
+          "line": 139,
+          "text": "private static void createFormaldehyde() {"
+        },
+        {
+          "path": "gtPlusPlus/core/item/chemistry/RecipeLoaderRocketFuels.java",
+          "line": 142,
+          "text": ".itemInputs(GregtechItemList.FormaldehydeCatalyst.get(0))"
+        }
+      ],
+      "runtimeRegistry": "not probed in this turn",
+      "survivalRecipeClosure": "not established by symbol presence"
+    },
+    {
+      "term": "BROMINE",
+      "sourceHits": [
+        {
+          "path": "gregtech/loaders/postload/recipes/ChemicalRecipes.java",
+          "line": 3877,
+          "text": ".fluidInputs(new FluidStack(MaterialsElements.getInstance().BROMINE.getPlasma(), 29))"
+        },
+        {
+          "path": "gregtech/loaders/postload/recipes/ChemicalRecipes.java",
+          "line": 3919,
+          "text": ".fluidInputs(new FluidStack(MaterialsElements.getInstance().BROMINE.getPlasma(), 6))"
+        },
+        {
+          "path": "gtPlusPlus/core/material/MaterialsElements.java",
+          "line": 78,
+          "text": "public final Material BROMINE = new Material("
+        },
+        {
+          "path": "gtPlusPlus/core/material/MaterialsOres.java",
+          "line": 136,
+          "text": "new MaterialStack(MaterialsElements.getInstance().BROMINE, 34 / 4) });"
+        },
+        {
+          "path": "gtPlusPlus/core/material/MaterialsOres.java",
+          "line": 183,
+          "text": "new MaterialStack(MaterialsElements.getInstance().BROMINE, 1) });"
+        },
+        {
+          "path": "gtPlusPlus/core/material/MaterialsOres.java",
+          "line": 376,
+          "text": "new MaterialStack(MaterialsElements.getInstance().BROMINE, 1),"
+        },
+        {
+          "path": "gtPlusPlus/core/material/MaterialsOres.java",
+          "line": 514,
+          "text": "new MaterialStack(MaterialsElements.getInstance().BROMINE, 2),"
+        },
+        {
+          "path": "gtPlusPlus/xmod/gregtech/loaders/recipe/RecipeLoaderGTNH.java",
+          "line": 63,
+          "text": ".fluidOutputs(new FluidStack(MaterialsElements.getInstance().BROMINE.getPlasma(), 1 * INGOTS))"
+        },
+        {
+          "path": "tectech/loader/recipe/Godforge.java",
+          "line": 431,
+          "text": ".fluidInputs(MaterialsElements.getInstance().BROMINE.getFluidStack(500))"
+        },
+        {
+          "path": "tectech/loader/recipe/Godforge.java",
+          "line": 432,
+          "text": ".fluidOutputs(new FluidStack(MaterialsElements.getInstance().BROMINE.getPlasma(), 500))"
+        }
+      ],
+      "runtimeRegistry": "not probed in this turn",
+      "survivalRecipeClosure": "not established by symbol presence"
+    }
+  ],
+  "notFoundInScope": [
+    "ionone",
+    "retinol",
+    "retinyl",
+    "citral",
+    "dehydrolinalool",
+    "methylvinylketone",
+    "tetrahydrofuran",
+    "ethylbromide",
+    "diethylether",
+    "pyridine"
+  ]
+}

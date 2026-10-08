@@ -1,0 +1,171 @@
+{
+  "schema": "oc-site-content-audit-1",
+  "date": "2026-10-04",
+  "policy": "Topics in primary navigation; engineering schedules and exact historical pages under archive.",
+  "routes": [
+    {
+      "route": "campaign-execution.html",
+      "title": "工程记录与下一步",
+      "archive": "archive/campaign-execution.html"
+    },
+    {
+      "route": "campaign-lab.html",
+      "title": "原生上游与批次工场 · GTNH-OC",
+      "archive": "archive/campaign-lab.html"
+    },
+    {
+      "route": "campaign-manual.html",
+      "title": "可执行验收手册",
+      "archive": "archive/campaign-manual.html"
+    },
+    {
+      "route": "campaign-review.html",
+      "title": "化学支线证据审查",
+      "archive": "archive/campaign-review.html"
+    },
+    {
+      "route": "carbon-execution.html",
+      "title": "D34–D38 执行与下一阶段",
+      "archive": "archive/carbon-execution.html"
+    },
+    {
+      "route": "carbon-lab.html",
+      "title": "C5 → C8 → C10 · GTNH-OC",
+      "archive": "archive/carbon-lab.html"
+    },
+    {
+      "route": "carbon-manual.html",
+      "title": "C8/C10 可执行验收手册",
+      "archive": "archive/carbon-manual.html"
+    },
+    {
+      "route": "carbon-review.html",
+      "title": "C8/C10 化学依据",
+      "archive": "archive/carbon-review.html"
+    },
+    {
+      "route": "chain-lab.html",
+      "title": "维生素 A 串联工场 · GTNH-OC",
+      "archive": "archive/chain-lab.html"
+    },
+    {
+      "route": "chain-manual.html",
+      "title": "串联产线验收手册",
+      "archive": "archive/chain-manual.html"
+    },
+    {
+      "route": "coupling-lab.html",
+      "title": "C14/C6 偶联工场 · GTNH-OC",
+      "archive": "archive/coupling-lab.html"
+    },
+    {
+      "route": "coupling-manual.html",
+      "title": "C14/C6 工段验收手册",
+      "archive": "archive/coupling-manual.html"
+    },
+    {
+      "route": "darzens-lab.html",
+      "title": "C14 双支线机理工场 · GTNH-OC",
+      "archive": "archive/darzens-lab.html"
+    },
+    {
+      "route": "darzens-manual.html",
+      "title": "C14 双支线验收手册",
+      "archive": "archive/darzens-manual.html"
+    },
+    {
+      "route": "dosing-lab.html",
+      "title": "D24 按量配料与资源账",
+      "archive": "archive/dosing-lab.html"
+    },
+    {
+      "route": "geometry-quality.html",
+      "title": "机理几何修复与二维动画",
+      "archive": "archive/geometry-quality.html"
+    },
+    {
+      "route": "index.html",
+      "title": "GTNH-OC · 从分子到工厂",
+      "archive": "archive/index.html"
+    },
+    {
+      "route": "process-manual.html",
+      "title": "产线手动验收 · GTNH-OC",
+      "archive": "archive/process-manual.html"
+    },
+    {
+      "route": "process-plan.html",
+      "title": "M6 复盘与后续计划 · GTNH-OC",
+      "archive": "archive/process-plan.html"
+    },
+    {
+      "route": "process.html",
+      "title": "乙酸乙酯实验产线 · GTNH-OC",
+      "archive": "archive/process.html"
+    },
+    {
+      "route": "supply-lab.html",
+      "title": "C6 原生供应工场 · GTNH-OC",
+      "archive": "archive/supply-lab.html"
+    },
+    {
+      "route": "supply-manual.html",
+      "title": "C6 原生供应验收手册",
+      "archive": "archive/supply-manual.html"
+    },
+    {
+      "route": "va-lab.html",
+      "title": "乙酰化工场 · GTNH-OC Wiki",
+      "archive": "archive/va-lab.html"
+    },
+    {
+      "route": "va-manual.html",
+      "title": "乙酰化切片实机验收手册",
+      "archive": "archive/va-manual.html"
+    },
+    {
+      "route": "vitamin-a-spec.html",
+      "title": "维生素 A 产线与组件规格 · GTNH-OC",
+      "archive": "archive/vitamin-a-spec.html"
+    },
+    {
+      "route": "vitamin-a.html",
+      "title": "维生素 A · 从分子到产线 | GTNH-OC",
+      "archive": "archive/vitamin-a.html"
+    },
+    {
+      "route": "wiki.html",
+      "title": "GTNH-OC Wiki · 已支持的化学",
+      "archive": "archive/wiki.html"
+    }
+  ],
+  "coverage": {
+    "v2Registered": 81,
+    "v1Registered": 20,
+    "uniqueEntries": 102,
+    "researchOnly": 9,
+    "equipment": 60,
+    "vaEquipment": 48,
+    "esterEquipment": 8,
+    "otherDeviceOrConceptRecords": 4,
+    "lessons": 33,
+    "states": 112,
+    "molecular3d": 70,
+    "sourceHashes": {
+      "carbon-compounds-v1.json": "a404be721d12817f8bf2298b803630c16cd2845b34f665e9fbf42b57cf7ca682",
+      "chain-compounds-v1.json": "39548b05fb870e1ce93f54c13405739fbd34b05be33bb4e42d119392567db462",
+      "coupling-compounds-v1.json": "a416eb12f81f7d31b582f7d39964025515d986e4ec72230de411aef705d753cf",
+      "darzens-compounds-v1.json": "7c2477f656c509d8481c8d6e5fda2391dc07b607fde0693b64b8f30b96ab17fd",
+      "ionone-compounds-v1.json": "d3d6bfd1ce5bd1ba5d49956e3b1901a0c5de78e5555afdf449d3245a6be383fb",
+      "supply-compounds-v1.json": "afd7dffee7851a02861e3c0831ff489aef404cdbd326c4be945a0a0b39c3a557",
+      "upstream-compounds-v1.json": "2a8b324741675959926787cf42a44cb09b94724ce7bff89e67c56b7924fda5d2",
+      "va-compounds-v1.json": "ba9dd7b830629927a580043ea17c9e36f24d1cb055699c108e78ec6a8d19f9c6"
+    }
+  },
+  "sourceBoundaries": [
+    "Organic Syntheses cached pages contain access challenge, not retrieved procedure text",
+    "U07/U08 fractions and partition are teaching assumptions, not calibrated kinetics/VLE",
+    "E/Z remains unresolved; qualified beta gate is connectivity/purity teaching gate, not all-trans certification",
+    "GT dispatch, calibrated separation and human expert signoff remain pending; AI specialist review completed"
+  ]
+}

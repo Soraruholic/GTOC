@@ -1,0 +1,102 @@
+{
+  "schema": "oc-gameplay-comparison-1",
+  "engine": "oc-pilot-v1",
+  "source": "data/process-scenarios.json",
+  "sourceSha256": "8a7b3135953dd312ef1dfa7642a61eab3a4b0d8964e691cfc3e0bf37a40fbe75",
+  "temperatureK": 345,
+  "pressurePa": 80000,
+  "rows": [
+    {
+      "washes": 6,
+      "finished": false,
+      "status": "OFF_SPEC: increase washes or cartridge capacity",
+      "esterMol": 0.2323074879070378,
+      "purity": 0.876563697916926,
+      "recovery": 0.4553966826408304,
+      "waterMol": 4.069997912051413,
+      "wasteEsterMol": 0.13659318115294541,
+      "bottomEsterMol": 0.14122049949990714,
+      "stream": "vessel-before-drying",
+      "washOperations": 6
+    },
+    {
+      "washes": 7,
+      "finished": true,
+      "status": "FINISHED",
+      "esterMol": 0.2257892922662835,
+      "purity": 0.950582704629681,
+      "recovery": 0.4426189426792529,
+      "waterMol": 4.412268055646173,
+      "wasteEsterMol": 0.14311137679369973,
+      "bottomEsterMol": 0.14122049949990714,
+      "stream": "product",
+      "washOperations": 7
+    },
+    {
+      "washes": 8,
+      "finished": true,
+      "status": "FINISHED",
+      "esterMol": 0.22019268855419938,
+      "purity": 0.9624351659687771,
+      "recovery": 0.43164781648999134,
+      "waterMol": 4.72856763302925,
+      "wasteEsterMol": 0.14870798050578385,
+      "bottomEsterMol": 0.14122049949990714,
+      "stream": "product",
+      "washOperations": 8
+    },
+    {
+      "washes": 9,
+      "finished": true,
+      "status": "FINISHED",
+      "esterMol": 0.21523260404444972,
+      "purity": 0.9714103852566247,
+      "recovery": 0.4219244707136293,
+      "waterMol": 5.025600773781711,
+      "wasteEsterMol": 0.1536680650155335,
+      "bottomEsterMol": 0.14122049949990714,
+      "stream": "product",
+      "washOperations": 9
+    },
+    {
+      "washes": 10,
+      "finished": true,
+      "status": "FINISHED",
+      "esterMol": 0.21072902885240438,
+      "purity": 0.9782211290512022,
+      "recovery": 0.41309602863042927,
+      "waterMol": 5.307813042272116,
+      "wasteEsterMol": 0.15817164020757885,
+      "bottomEsterMol": 0.14122049949990714,
+      "stream": "product",
+      "washOperations": 10
+    }
+  ],
+  "scope": "Frozen legacy game engine; not experimental yield or the corrected continuous-LLE research model",
+  "goals": [
+    {
+      "id": "first",
+      "title": "完成首批",
+      "purity": 0.95,
+      "minEsterMol": 0.22,
+      "waterMaxMol": 5,
+      "text": "目标：95 wt% 以上、至少 0.22 mol 酯、洗水不超过 5 mol。先交付一批够用的产品。"
+    },
+    {
+      "id": "pure",
+      "title": "追求纯度",
+      "purity": 0.975,
+      "minEsterMol": 0.21,
+      "waterMaxMol": 6,
+      "text": "目标：97.5 wt% 以上、至少 0.21 mol 酯、洗水不超过 6 mol。查看纯度提升付出的代价。"
+    },
+    {
+      "id": "water",
+      "title": "节约洗水",
+      "purity": 0.95,
+      "minEsterMol": 0.22,
+      "waterMaxMol": 4.6,
+      "text": "目标：95 wt% 以上、至少 0.22 mol 酯、洗水不超过 4.6 mol。尝试减少操作次数。"
+    }
+  ]
+}

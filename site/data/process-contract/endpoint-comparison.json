@@ -1,0 +1,3065 @@
+{
+  "schema": "oc-lle-endpoint-challenge-1",
+  "scope": "unfitted original UNIFAC ternary-subdomain comparison; synthetic midpoint flash input",
+  "registerSha256": "6c7eda544498ef2009f4826c56fae12c6ee0080ca5777651874603d6c31ed772",
+  "solverSha256": "b60f6a9187c173cefb7b0ae37419349436fcf529db4f6401530418240d67cb12",
+  "method": "Feed = 0.5*x_phase1 + 0.5*x_phase2 with total 1 mol. Default solver seeds only. Match predicted endpoint order by minimum squared composition distance. No parameter fitting.",
+  "uncertaintyPolicy": "Do not fabricate missing closure-component uncertainties or claim a statistical chi-square fit. Endpoint RMSE has mole-fraction units.",
+  "rows": [
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 2,
+      "sourceRow": 1,
+      "temperatureK": 303.15,
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.0,
+          0.0,
+          0.032,
+          0.968
+        ],
+        [
+          0.0,
+          0.0,
+          0.858,
+          0.14200000000000002
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.0,
+        0.0,
+        0.445,
+        0.5549999999999999
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 2.55351295663786e-15,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.0,
+          0.0,
+          0.013928361735972544,
+          0.9860716382640274
+        ],
+        [
+          0.0,
+          0.0,
+          0.8296940789519708,
+          0.17030592104802922
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.019389080053156416,
+      "maximumAbsoluteEndpointError": 0.028305921048029203,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.5284257834898551,
+        0.4715742165101448
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 2,
+      "sourceRow": 2,
+      "temperatureK": 313.15,
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.0,
+          0.036,
+          0.026,
+          0.938
+        ],
+        [
+          0.0,
+          0.084,
+          0.606,
+          0.31000000000000005
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.0,
+        0.06,
+        0.316,
+        0.624
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 2.886579864025407e-15,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.0,
+          0.030891261117916593,
+          0.02165880685557182,
+          0.9474499320265116
+        ],
+        [
+          0.0,
+          0.09341158730944947,
+          0.6538506541747064,
+          0.25273775851584407
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.031068402401284303,
+      "maximumAbsoluteEndpointError": 0.057262241484155985,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.4655884038881678,
+        0.5344115961118321
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 2,
+      "sourceRow": 3,
+      "temperatureK": 313.15,
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.0,
+          0.042,
+          0.021,
+          0.937
+        ],
+        [
+          0.0,
+          0.106,
+          0.564,
+          0.33000000000000007
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.0,
+        0.074,
+        0.2925,
+        0.6335000000000001
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 2.3314683517128287e-15,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.0,
+          0.03922744670846634,
+          0.02382635290892112,
+          0.9369462003826126
+        ],
+        [
+          0.0,
+          0.1151487052242387,
+          0.6104396293675026,
+          0.2744116654082587
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.029849844060657486,
+      "maximumAbsoluteEndpointError": 0.055588334591741395,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.4580081254094304,
+        0.5419918745905696
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 2,
+      "sourceRow": 4,
+      "temperatureK": 313.15,
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.0,
+          0.051,
+          0.026,
+          0.923
+        ],
+        [
+          0.0,
+          0.123,
+          0.512,
+          0.365
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.0,
+        0.087,
+        0.269,
+        0.644
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 2.0608514894604468e-14,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.0,
+          0.04765538676295283,
+          0.026185036564935135,
+          0.926159576672112
+        ],
+        [
+          0.0,
+          0.13538060200065755,
+          0.5675804952504788,
+          0.29703890274886363
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.03624542522569422,
+      "maximumAbsoluteEndpointError": 0.06796109725113636,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.5515016619744164,
+        0.44849833802558364
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 2,
+      "sourceRow": 5,
+      "temperatureK": 313.15,
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.0,
+          0.063,
+          0.032,
+          0.905
+        ],
+        [
+          0.0,
+          0.149,
+          0.41,
+          0.44100000000000006
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.0,
+        0.106,
+        0.22099999999999997,
+        0.673
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 1.6077417175353048e-14,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.0,
+          0.06304280917230191,
+          0.030965472352660183,
+          0.905991718475038
+        ],
+        [
+          0.0,
+          0.16738990484277416,
+          0.4925773853999213,
+          0.34003270975730443
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.05377989473179583,
+      "maximumAbsoluteEndpointError": 0.10096729024269563,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.4116759604249718,
+        0.5883240395750282
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 2,
+      "sourceRow": 6,
+      "temperatureK": 313.15,
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.0,
+          0.078,
+          0.037,
+          0.885
+        ],
+        [
+          0.0,
+          0.153,
+          0.294,
+          0.553
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.0,
+        0.11549999999999999,
+        0.16549999999999998,
+        0.7190000000000001
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 1.7763568394002505e-15,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.0,
+          0.0777261214486432,
+          0.03616748468499867,
+          0.8861063938663581
+        ],
+        [
+          0.0,
+          0.1915080186950129,
+          0.4257409024154225,
+          0.38275107888956456
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.08927972913910408,
+      "maximumAbsoluteEndpointError": 0.1702489211104355,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.3319849595192261,
+        0.668015040480774
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 2,
+      "sourceRow": 7,
+      "temperatureK": 313.15,
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.0,
+          0.111,
+          0.074,
+          0.815
+        ],
+        [
+          0.0,
+          0.16,
+          0.209,
+          0.631
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.0,
+        0.1355,
+        0.1415,
+        0.723
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 2.942091015256665e-15,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.0,
+          0.09785227537207428,
+          0.04449763042363992,
+          0.8576500942042858
+        ],
+        [
+          0.0,
+          0.21378845391996845,
+          0.34321645473292517,
+          0.4429950913471064
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.0992600819253013,
+      "maximumAbsoluteEndpointError": 0.1880049086528936,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.32472801069920687,
+        0.6752719893007931
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 2,
+      "sourceRow": 8,
+      "temperatureK": 303.15,
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.0,
+          0.01,
+          0.027,
+          0.963
+        ],
+        [
+          0.0,
+          0.018,
+          0.825,
+          0.15700000000000003
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.0,
+        0.013999999999999999,
+        0.426,
+        0.56
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 1.7763568394002505e-15,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.0,
+          0.006427367370943848,
+          0.01513134175146292,
+          0.9784412908775932
+        ],
+        [
+          0.0,
+          0.020794802997961288,
+          0.7946659220894303,
+          0.18453927491260838
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.018612008156399778,
+      "maximumAbsoluteEndpointError": 0.030334077910569635,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.5270691879639321,
+        0.47293081203606796
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 2,
+      "sourceRow": 9,
+      "temperatureK": 303.15,
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.0,
+          0.026,
+          0.029,
+          0.945
+        ],
+        [
+          0.0,
+          0.042,
+          0.788,
+          0.16999999999999993
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.0,
+        0.034,
+        0.40850000000000003,
+        0.5574999999999999
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 6.467049118441537e-15,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.0,
+          0.01572363989414097,
+          0.017005055686884922,
+          0.9672713044189741
+        ],
+        [
+          0.0,
+          0.04967541097844077,
+          0.7442804350835981,
+          0.20604415393796113
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.02586821276487657,
+      "maximumAbsoluteEndpointError": 0.04371956491640194,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.5383035854147388,
+        0.46169641458526123
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 2,
+      "sourceRow": 10,
+      "temperatureK": 303.15,
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.0,
+          0.04,
+          0.033,
+          0.927
+        ],
+        [
+          0.0,
+          0.068,
+          0.736,
+          0.19599999999999995
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.0,
+        0.054000000000000006,
+        0.3845,
+        0.5615
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 7.013833958069426e-14,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.0,
+          0.025406051312285762,
+          0.01913507917450313,
+          0.955458869513211
+        ],
+        [
+          0.0,
+          0.07809236719164678,
+          0.6923450593728921,
+          0.22956257343546102
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.0269232943565758,
+      "maximumAbsoluteEndpointError": 0.04365494062710784,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.5427205947211702,
+        0.4572794052788299
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 2,
+      "sourceRow": 11,
+      "temperatureK": 303.15,
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.0,
+          0.061,
+          0.033,
+          0.906
+        ],
+        [
+          0.0,
+          0.102,
+          0.667,
+          0.23099999999999998
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.0,
+        0.08149999999999999,
+        0.35000000000000003,
+        0.5685
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 6.661338147750939e-16,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.0,
+          0.03947515547202475,
+          0.02258169799423242,
+          0.9379431465337428
+        ],
+        [
+          0.0,
+          0.11594533073251463,
+          0.6183658161533336,
+          0.26568885311415175
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.029875567434384707,
+      "maximumAbsoluteEndpointError": 0.0486341838466664,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.5495586270702372,
+        0.4504413729297629
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 2,
+      "sourceRow": 12,
+      "temperatureK": 303.15,
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.0,
+          0.08,
+          0.044,
+          0.876
+        ],
+        [
+          0.0,
+          0.135,
+          0.57,
+          0.29500000000000004
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.0,
+        0.10750000000000001,
+        0.307,
+        0.5855
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 1.8318679906315083e-15,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.0,
+          0.05469637310422677,
+          0.02682848103283919,
+          0.9184751458629341
+        ],
+        [
+          0.0,
+          0.1516298567090777,
+          0.5411492377103199,
+          0.3072209055806025
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.02581195383883106,
+      "maximumAbsoluteEndpointError": 0.042475145862934105,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.5447408360048946,
+        0.45525916399510535
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 2,
+      "sourceRow": 13,
+      "temperatureK": 303.15,
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.0,
+          0.095,
+          0.053,
+          0.852
+        ],
+        [
+          0.0,
+          0.159,
+          0.496,
+          0.345
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.0,
+        0.127,
+        0.2745,
+        0.5985
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 2.609024107869118e-15,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.0,
+          0.06754420383797405,
+          0.03088254594045614,
+          0.9015732502215699
+        ],
+        [
+          0.0,
+          0.1769137988996166,
+          0.479019548896918,
+          0.3440666522034654
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.026803671089630273,
+      "maximumAbsoluteEndpointError": 0.04957325022156989,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.5436227145992053,
+        0.45637728540079475
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 2,
+      "sourceRow": 14,
+      "temperatureK": 303.15,
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.0,
+          0.107,
+          0.06,
+          0.833
+        ],
+        [
+          0.0,
+          0.174,
+          0.419,
+          0.40700000000000003
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.0,
+        0.14049999999999999,
+        0.2395,
+        0.62
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 2.9976021664879227e-15,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.0,
+          0.07938006702122077,
+          0.03504471882548981,
+          0.8855752141532894
+        ],
+        [
+          0.0,
+          0.19590897246229128,
+          0.4248512674547886,
+          0.37923976008292
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.030096099484125068,
+      "maximumAbsoluteEndpointError": 0.05257521415328947,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.5245044802183265,
+        0.47549551978167354
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 2,
+      "sourceRow": 15,
+      "temperatureK": 313.15,
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.0,
+          0.0,
+          0.017,
+          0.983
+        ],
+        [
+          0.0,
+          0.0,
+          0.838,
+          0.16200000000000003
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.0,
+        0.0,
+        0.4275,
+        0.5725
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 3.0808688933348094e-15,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.0,
+          0.0,
+          0.01490057596818992,
+          0.9850994240318101
+        ],
+        [
+          0.0,
+          0.0,
+          0.820831219932738,
+          0.1791687800672619
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.00998623369549888,
+      "maximumAbsoluteEndpointError": 0.01716878006726197,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.5119540088488803,
+        0.48804599115111974
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 4,
+      "sourceRow": 1,
+      "temperatureK": 303.15,
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.0,
+          0.0,
+          0.032,
+          0.968
+        ],
+        [
+          0.0,
+          0.0,
+          0.858,
+          0.14200000000000002
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.0,
+        0.0,
+        0.445,
+        0.5549999999999999
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 2.55351295663786e-15,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.0,
+          0.0,
+          0.013928361735972544,
+          0.9860716382640274
+        ],
+        [
+          0.0,
+          0.0,
+          0.8296940789519708,
+          0.17030592104802922
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.019389080053156416,
+      "maximumAbsoluteEndpointError": 0.028305921048029203,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.5284257834898551,
+        0.4715742165101448
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 4,
+      "sourceRow": 2,
+      "temperatureK": 313.15,
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.027,
+          0.0,
+          0.023,
+          0.95
+        ],
+        [
+          0.087,
+          0.0,
+          0.504,
+          0.40900000000000003
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.056999999999999995,
+        0.0,
+        0.2635,
+        0.6795
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 9.228728892196614e-16,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.03300717041407231,
+          0.0,
+          0.022075440656469356,
+          0.9449173889294583
+        ],
+        [
+          0.09341209939718284,
+          0.0,
+          0.6298917596819712,
+          0.27669614092084605
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.07467366240672028,
+      "maximumAbsoluteEndpointError": 0.13230385907915398,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.397199864147447,
+        0.602800135852553
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 4,
+      "sourceRow": 3,
+      "temperatureK": 313.15,
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.036,
+          0.0,
+          0.031,
+          0.933
+        ],
+        [
+          0.103,
+          0.0,
+          0.454,
+          0.44299999999999995
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.06949999999999999,
+        0.0,
+        0.2425,
+        0.688
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 2.398081733190338e-14,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.040838317703652996,
+          0.0,
+          0.024052700748258913,
+          0.9351089815480881
+        ],
+        [
+          0.11424853385950884,
+          0.0,
+          0.5835545224112915,
+          0.3021969437291997
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.07832892881376308,
+      "maximumAbsoluteEndpointError": 0.14080305627080025,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.609568207298342,
+        0.39043179270165784
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 4,
+      "sourceRow": 4,
+      "temperatureK": 313.15,
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.043,
+          0.0,
+          0.032,
+          0.925
+        ],
+        [
+          0.115,
+          0.0,
+          0.381,
+          0.504
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.079,
+        0.0,
+        0.20650000000000002,
+        0.7145
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 1.3904155604649304e-13,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.04901217195469343,
+          0.0,
+          0.026241976965606872,
+          0.9247458510796996
+        ],
+        [
+          0.13404752472495074,
+          0.0,
+          0.5373928530890894,
+          0.3285596221859599
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.09632429988981434,
+      "maximumAbsoluteEndpointError": 0.1754403778140401,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.3526513040561568,
+        0.6473486959438433
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 4,
+      "sourceRow": 5,
+      "temperatureK": 313.15,
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.052,
+          0.0,
+          0.038,
+          0.91
+        ],
+        [
+          0.123,
+          0.0,
+          0.319,
+          0.558
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.0875,
+        0.0,
+        0.1785,
+        0.734
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 4.440892098500626e-16,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.05714043796700324,
+          0.0,
+          0.02855766267860018,
+          0.9143018993543965
+        ],
+        [
+          0.15146140829786264,
+          0.0,
+          0.4943979384526791,
+          0.35414065324945826
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.11050430610610018,
+      "maximumAbsoluteEndpointError": 0.2038593467505418,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.6781250030984479,
+        0.3218749969015521
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 4,
+      "sourceRow": 6,
+      "temperatureK": 313.15,
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.082,
+          0.0,
+          0.086,
+          0.8320000000000001
+        ],
+        [
+          0.105,
+          0.0,
+          0.17,
+          0.725
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.0935,
+        0.0,
+        0.128,
+        0.7785
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 2.6645352591003757e-15,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.06899485544479533,
+          0.0,
+          0.03221270167230348,
+          0.8987924428829012
+        ],
+        [
+          0.17265840581511982,
+          0.0,
+          0.4374195104981465,
+          0.38992208368673376
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.18068919085264987,
+      "maximumAbsoluteEndpointError": 0.3350779163132662,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.2363911371708112,
+        0.7636088628291888
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 4,
+      "sourceRow": 7,
+      "temperatureK": 303.15,
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.014,
+          0.0,
+          0.029,
+          0.957
+        ],
+        [
+          0.016,
+          0.0,
+          0.815,
+          0.16900000000000004
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.015,
+        0.0,
+        0.422,
+        0.563
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 8.409939411535561e-14,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.007780294229741879,
+          0.0,
+          0.015386025640938479,
+          0.9768336801293196
+        ],
+        [
+          0.021489639377828117,
+          0.0,
+          0.7874966204365715,
+          0.19101374018560036
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.01774155522146458,
+      "maximumAbsoluteEndpointError": 0.02750337956342841,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.47337340388822585,
+        0.5266265961117741
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 4,
+      "sourceRow": 8,
+      "temperatureK": 303.15,
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.025,
+          0.0,
+          0.032,
+          0.943
+        ],
+        [
+          0.039,
+          0.0,
+          0.769,
+          0.19199999999999995
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.032,
+        0.0,
+        0.4005,
+        0.5674999999999999
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 1.887379141862766e-15,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.016115244523839507,
+          0.0,
+          0.017050932683460022,
+          0.9668338227927005
+        ],
+        [
+          0.04599504168212359,
+          0.0,
+          0.7383324386623482,
+          0.2156725196555281
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.020084333512276464,
+      "maximumAbsoluteEndpointError": 0.030667561337651805,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.46837806856541875,
+        0.5316219314345813
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 4,
+      "sourceRow": 9,
+      "temperatureK": 303.15,
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.037,
+          0.0,
+          0.035,
+          0.9279999999999999
+        ],
+        [
+          0.066,
+          0.0,
+          0.697,
+          0.2370000000000001
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.051500000000000004,
+        0.0,
+        0.366,
+        0.5825
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 9.71445146547012e-16,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.02568217365053279,
+          0.0,
+          0.01909323950819348,
+          0.9552245868412738
+        ],
+        [
+          0.07478398999725815,
+          0.0,
+          0.6788603249529228,
+          0.24635568504981908
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.01641153804053387,
+      "maximumAbsoluteEndpointError": 0.027224586841273823,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.5258018596941176,
+        0.4741981403058823
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 4,
+      "sourceRow": 10,
+      "temperatureK": 303.15,
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.057,
+          0.0,
+          0.043,
+          0.9
+        ],
+        [
+          0.099,
+          0.0,
+          0.592,
+          0.30900000000000005
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.078,
+        0.0,
+        0.3175,
+        0.6045
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 3.3306690738754696e-15,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.039425012671733345,
+          0.0,
+          0.02228089338588003,
+          0.9382940939423866
+        ],
+        [
+          0.11407684991180954,
+          0.0,
+          0.593600554739824,
+          0.2923225953483665
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.021262675411767386,
+      "maximumAbsoluteEndpointError": 0.03829409394238659,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.5167319218710134,
+        0.48326807812898664
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 4,
+      "sourceRow": 11,
+      "temperatureK": 303.15,
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.069,
+          0.0,
+          0.049,
+          0.882
+        ],
+        [
+          0.129,
+          0.0,
+          0.47,
+          0.401
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.099,
+        0.0,
+        0.2595,
+        0.6415
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 1.0547118733938987e-15,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.05351127612857133,
+          0.0,
+          0.025891359773887852,
+          0.9205973640975408
+        ],
+        [
+          0.14837753878413606,
+          0.0,
+          0.513079760242939,
+          0.33854270097292494
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.037407519941897296,
+      "maximumAbsoluteEndpointError": 0.062457299027075086,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.47950369918741986,
+        0.5204963008125801
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 4,
+      "sourceRow": 12,
+      "temperatureK": 313.15,
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.0,
+          0.0,
+          0.017,
+          0.983
+        ],
+        [
+          0.0,
+          0.0,
+          0.838,
+          0.16200000000000003
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.0,
+        0.0,
+        0.4275,
+        0.5725
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 3.0808688933348094e-15,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.0,
+          0.0,
+          0.01490057596818992,
+          0.9850994240318101
+        ],
+        [
+          0.0,
+          0.0,
+          0.820831219932738,
+          0.1791687800672619
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.00998623369549888,
+      "maximumAbsoluteEndpointError": 0.01716878006726197,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.5119540088488803,
+        0.48804599115111974
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 4,
+      "sourceRow": 13,
+      "temperatureK": 313.15,
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.022,
+          0.0,
+          0.02,
+          0.958
+        ],
+        [
+          0.063,
+          0.0,
+          0.631,
+          0.30600000000000005
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.042499999999999996,
+        0.0,
+        0.3255,
+        0.632
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 9.159339953157541e-16,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.023178650999789614,
+          0.0,
+          0.019748413726864988,
+          0.9570729352733454
+        ],
+        [
+          0.06549302735941996,
+          0.0,
+          0.6893542313110592,
+          0.24515274132952086
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.03443867096707606,
+      "maximumAbsoluteEndpointError": 0.06084725867047919,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.4566142919370481,
+        0.5433857080629519
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2014.04.013",
+      "sourcePmd": 4,
+      "sourceRow": 14,
+      "temperatureK": 313.15,
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.02,
+          0.0,
+          0.022,
+          0.958
+        ],
+        [
+          0.075,
+          0.0,
+          0.572,
+          0.3530000000000001
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.0475,
+        0.0,
+        0.297,
+        0.6555
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 1.8041124150158794e-15,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.026650405339818523,
+          0.0,
+          0.02055137629127553,
+          0.952798218368906
+        ],
+        [
+          0.07550507181174852,
+          0.0,
+          0.6683244159133446,
+          0.25617051227490684
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.055868868531077545,
+      "maximumAbsoluteEndpointError": 0.09682948772509326,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.4267677207900057,
+        0.5732322792099943
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 10,
+      "sourceRow": 1,
+      "temperatureK": 323.15,
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.033,
+          0.0,
+          0.687,
+          0.2799999999999999
+        ],
+        [
+          0.02,
+          0.0,
+          0.022,
+          0.958
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.026500000000000003,
+        0.0,
+        0.35450000000000004,
+        0.619
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 2.403632848313464e-14,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.03990561104186656,
+          0.0,
+          0.7330203064951514,
+          0.22707408246298208
+        ],
+        [
+          0.01461742325240883,
+          0.0,
+          0.018984029977934615,
+          0.9663985467696565
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.029084109683136378,
+      "maximumAbsoluteEndpointError": 0.052925917537017836,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.46988644842889227,
+        0.5301135515711078
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 10,
+      "sourceRow": 2,
+      "temperatureK": 323.15,
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.064,
+          0.0,
+          0.587,
+          0.349
+        ],
+        [
+          0.04,
+          0.0,
+          0.036,
+          0.924
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.052000000000000005,
+        0.0,
+        0.3115,
+        0.6365000000000001
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 1.5515366769136563e-14,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.07935305245049694,
+          0.0,
+          0.6510629589029828,
+          0.26958398864652033
+        ],
+        [
+          0.02870571496782873,
+          0.0,
+          0.022322901196541334,
+          0.94897138383563
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.04394101292070019,
+      "maximumAbsoluteEndpointError": 0.07941601135347964,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.4599310879894269,
+        0.5400689120105732
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 10,
+      "sourceRow": 3,
+      "temperatureK": 323.15,
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.099,
+          0.0,
+          0.453,
+          0.44799999999999995
+        ],
+        [
+          0.053,
+          0.0,
+          0.047,
+          0.9
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.076,
+        0.0,
+        0.25,
+        0.6739999999999999
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 1.7763568394002505e-15,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.11988351137865283,
+          0.0,
+          0.5608013555127964,
+          0.3193151331085508
+        ],
+        [
+          0.04444244796328215,
+          0.0,
+          0.026496236478271182,
+          0.9290613155584467
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.0706579133833953,
+      "maximumAbsoluteEndpointError": 0.12868486689144915,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.41830735952070613,
+        0.5816926404792937
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 10,
+      "sourceRow": 4,
+      "temperatureK": 323.15,
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.114,
+          0.0,
+          0.347,
+          0.539
+        ],
+        [
+          0.07,
+          0.0,
+          0.066,
+          0.864
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.092,
+        0.0,
+        0.2065,
+        0.7015
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 7.489842079877462e-14,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.1480140787653778,
+          0.0,
+          0.49217830047956573,
+          0.3598076207550564
+        ],
+        [
+          0.057461147504488115,
+          0.0,
+          0.0303478450612132,
+          0.9121910074342987
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.09839908318938767,
+      "maximumAbsoluteEndpointError": 0.17919237924494363,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.3814216946329753,
+        0.6185783053670247
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 10,
+      "sourceRow": 5,
+      "temperatureK": 323.15,
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.118,
+          0.0,
+          0.234,
+          0.648
+        ],
+        [
+          0.083,
+          0.0,
+          0.09,
+          0.827
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.1005,
+        0.0,
+        0.162,
+        0.7375
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 1.27675647831893e-15,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.16826658156212712,
+          0.0,
+          0.4373922767521311,
+          0.3943411416857417
+        ],
+        [
+          0.06903317805341438,
+          0.0,
+          0.03412399477344785,
+          0.8968428271731378
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.13930373556163317,
+      "maximumAbsoluteEndpointError": 0.25365885831425833,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.3170990899634196,
+        0.6829009100365804
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 10,
+      "sourceRow": 6,
+      "temperatureK": 323.15,
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.0,
+          0.0,
+          0.768,
+          0.23199999999999998
+        ],
+        [
+          0.0,
+          0.0,
+          0.013,
+          0.987
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.0,
+        0.0,
+        0.3905,
+        0.6094999999999999
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 7.494005416219807e-16,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.0,
+          0.0,
+          0.811961847125388,
+          0.18803815287461198
+        ],
+        [
+          0.0,
+          0.0,
+          0.015890578124978103,
+          0.9841094218750219
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.025436191044602742,
+      "maximumAbsoluteEndpointError": 0.043961847125388004,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.4705727193815219,
+        0.5294272806184781
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 10,
+      "sourceRow": 7,
+      "temperatureK": 333.15,
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.028,
+          0.0,
+          0.691,
+          0.281
+        ],
+        [
+          0.019,
+          0.0,
+          0.021,
+          0.96
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.0235,
+        0.0,
+        0.356,
+        0.6205
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 3.017031069418863e-14,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.0351709949295581,
+          0.0,
+          0.733719764813602,
+          0.23110924025683985
+        ],
+        [
+          0.013111302789143733,
+          0.0,
+          0.01978048393574888,
+          0.9671082132751074
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.02724022776457483,
+      "maximumAbsoluteEndpointError": 0.04989075974316018,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.5290642704925289,
+        0.47093572950747115
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 10,
+      "sourceRow": 8,
+      "temperatureK": 333.15,
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.063,
+          0.0,
+          0.6,
+          0.33699999999999997
+        ],
+        [
+          0.038,
+          0.0,
+          0.038,
+          0.924
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.0505,
+        0.0,
+        0.319,
+        0.6305000000000001
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 1.4155343563970746e-15,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.07570337012602088,
+          0.0,
+          0.6497542337130178,
+          0.2745423961609613
+        ],
+        [
+          0.027978282679366816,
+          0.0,
+          0.02343820342119844,
+          0.9485835138994347
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.0352482660461082,
+      "maximumAbsoluteEndpointError": 0.062457603839038645,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.47190520804822844,
+        0.5280947919517717
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 10,
+      "sourceRow": 9,
+      "temperatureK": 333.15,
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.091,
+          0.0,
+          0.496,
+          0.41300000000000003
+        ],
+        [
+          0.052,
+          0.0,
+          0.054,
+          0.894
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.0715,
+        0.0,
+        0.275,
+        0.6535
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 2.6645352591003757e-15,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.10869992506510012,
+          0.0,
+          0.5768834755490738,
+          0.314416599385826
+        ],
+        [
+          0.04093841063521626,
+          0.0,
+          0.026987704287068003,
+          0.9320738850777158
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.05608884981992351,
+      "maximumAbsoluteEndpointError": 0.09858340061417403,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.4510169175219261,
+        0.5489830824780739
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 10,
+      "sourceRow": 10,
+      "temperatureK": 333.15,
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.109,
+          0.0,
+          0.393,
+          0.498
+        ],
+        [
+          0.067,
+          0.0,
+          0.066,
+          0.867
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.088,
+        0.0,
+        0.2295,
+        0.6825
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 7.049916206369744e-15,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.13666272335650123,
+          0.0,
+          0.5101568966810962,
+          0.35318037996240254
+        ],
+        [
+          0.0535477150982013,
+          0.0,
+          0.03080024180366778,
+          0.9156520430981309
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.08088128676756166,
+      "maximumAbsoluteEndpointError": 0.14481962003759746,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.41451340285896265,
+        0.5854865971410375
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 10,
+      "sourceRow": 11,
+      "temperatureK": 333.15,
+      "components": [
+        "acetic-acid",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.0,
+          0.0,
+          0.755,
+          0.245
+        ],
+        [
+          0.0,
+          0.0,
+          0.013,
+          0.987
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.0,
+        0.0,
+        0.384,
+        0.616
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 4.413136522884997e-15,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.0,
+          0.0,
+          0.8030886506563144,
+          0.19691134934368554
+        ],
+        [
+          0.0,
+          0.0,
+          0.016898081596850204,
+          0.9831019184031498
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.027855061551303698,
+      "maximumAbsoluteEndpointError": 0.04808865065631446,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.4669375757614611,
+        0.5330624242385389
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 12,
+      "sourceRow": 1,
+      "temperatureK": 323.15,
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.0,
+          0.14,
+          0.426,
+          0.43399999999999994
+        ],
+        [
+          0.0,
+          0.058,
+          0.054,
+          0.888
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.0,
+        0.099,
+        0.24,
+        0.661
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 1.3877787807814457e-15,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.0,
+          0.1542082476862758,
+          0.5142761122144034,
+          0.33151564009932066
+        ],
+        [
+          0.0,
+          0.056824166475416424,
+          0.030469284331219263,
+          0.9127065491933642
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.057246660822070555,
+      "maximumAbsoluteEndpointError": 0.10248435990067928,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.43308755394285636,
+        0.5669124460571437
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 12,
+      "sourceRow": 2,
+      "temperatureK": 323.15,
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.0,
+          0.155,
+          0.332,
+          0.513
+        ],
+        [
+          0.0,
+          0.074,
+          0.066,
+          0.86
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.0,
+        0.11449999999999999,
+        0.199,
+        0.6865
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 2.1094237467877974e-15,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.0,
+          0.18003595401284564,
+          0.4472695272257299,
+          0.3726945187614244
+        ],
+        [
+          0.0,
+          0.07134234772415934,
+          0.03550608146186117,
+          0.8931515708139794
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.07706648622740099,
+      "maximumAbsoluteEndpointError": 0.1403054812385756,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.6029421255817433,
+        0.3970578744182567
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 12,
+      "sourceRow": 3,
+      "temperatureK": 323.15,
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.0,
+          0.16,
+          0.279,
+          0.5609999999999999
+        ],
+        [
+          0.0,
+          0.091,
+          0.09,
+          0.819
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.0,
+        0.1255,
+        0.1845,
+        0.69
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 2.5172919304594643e-13,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.0,
+          0.1935413553216346,
+          0.4060874280169799,
+          0.4003712166613855
+        ],
+        [
+          0.0,
+          0.08087794325977476,
+          0.03918121939731062,
+          0.8799408373429146
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.09080806963432907,
+      "maximumAbsoluteEndpointError": 0.16062878333861447,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.3960651991946126,
+        0.6039348008053874
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 12,
+      "sourceRow": 4,
+      "temperatureK": 333.15,
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.0,
+          0.032,
+          0.697,
+          0.271
+        ],
+        [
+          0.0,
+          0.017,
+          0.024,
+          0.959
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.0,
+        0.0245,
+        0.3605,
+        0.615
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 2.3037127760972e-15,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.0,
+          0.03840524849745766,
+          0.7371822415278697,
+          0.22441250997467257
+        ],
+        [
+          0.0,
+          0.011911019406900262,
+          0.019474420397689124,
+          0.9686145601954107
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.025706200067114816,
+      "maximumAbsoluteEndpointError": 0.046587490025327444,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.47515934696837353,
+        0.5248406530316264
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 12,
+      "sourceRow": 5,
+      "temperatureK": 333.15,
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.0,
+          0.091,
+          0.585,
+          0.32400000000000007
+        ],
+        [
+          0.0,
+          0.042,
+          0.035,
+          0.923
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.0,
+        0.0665,
+        0.31,
+        0.6235
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 9.228728892196614e-16,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.0,
+          0.10158889586797107,
+          0.6187951345295946,
+          0.27961596960243434
+        ],
+        [
+          0.0,
+          0.03412250596377534,
+          0.025066194608498148,
+          0.9408112994277265
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.02484000730360629,
+      "maximumAbsoluteEndpointError": 0.04438403039756572,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.4799055364041512,
+        0.5200944635958489
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 12,
+      "sourceRow": 6,
+      "temperatureK": 333.15,
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.0,
+          0.131,
+          0.489,
+          0.38
+        ],
+        [
+          0.0,
+          0.059,
+          0.049,
+          0.892
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.0,
+        0.095,
+        0.269,
+        0.636
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 3.9968028886505635e-15,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.0,
+          0.1425884690379076,
+          0.5310753933965923,
+          0.32633613756550023
+        ],
+        [
+          0.0,
+          0.051657497021404826,
+          0.030307649761540933,
+          0.9180348532170541
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.031266519273739954,
+      "maximumAbsoluteEndpointError": 0.053663862434499776,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.4766528061607995,
+        0.5233471938392005
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 12,
+      "sourceRow": 7,
+      "temperatureK": 333.15,
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.0,
+          0.145,
+          0.394,
+          0.46099999999999997
+        ],
+        [
+          0.0,
+          0.076,
+          0.064,
+          0.86
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.0,
+        0.11049999999999999,
+        0.229,
+        0.6605
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 3.164135620181696e-15,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.0,
+          0.16738732151544178,
+          0.4701516389678257,
+          0.3624610395167326
+        ],
+        [
+          0.0,
+          0.0646757585342796,
+          0.03474597925275425,
+          0.9005782622129661
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.055738709699996974,
+      "maximumAbsoluteEndpointError": 0.09853896048326738,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.44614491431821346,
+        0.5538550856817865
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 12,
+      "sourceRow": 8,
+      "temperatureK": 333.15,
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.0,
+          0.154,
+          0.284,
+          0.562
+        ],
+        [
+          0.0,
+          0.089,
+          0.085,
+          0.8260000000000001
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.0,
+        0.1215,
+        0.1845,
+        0.6940000000000001
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 1.6653345369377348e-15,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.0,
+          0.1883253030210064,
+          0.40953753029919043,
+          0.4021371666798032
+        ],
+        [
+          0.0,
+          0.07861838320853207,
+          0.04009402349504065,
+          0.8812875932964273
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.08913946571136445,
+      "maximumAbsoluteEndpointError": 0.15986283332019685,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.3908743118917831,
+        0.609125688108217
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 12,
+      "sourceRow": 9,
+      "temperatureK": 323.15,
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.0,
+          0.051,
+          0.674,
+          0.2749999999999999
+        ],
+        [
+          0.0,
+          0.019,
+          0.022,
+          0.959
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.0,
+        0.034999999999999996,
+        0.34800000000000003,
+        0.617
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 1.7139067942650854e-15,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.0,
+          0.05484391100979908,
+          0.7168789670221459,
+          0.228277121968055
+        ],
+        [
+          0.0,
+          0.0173331339785643,
+          0.019590177697948012,
+          0.9630766883234877
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.02601798695093222,
+      "maximumAbsoluteEndpointError": 0.046722878031944914,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.4709810731653122,
+        0.5290189268346878
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 12,
+      "sourceRow": 10,
+      "temperatureK": 323.15,
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.0,
+          0.094,
+          0.575,
+          0.33100000000000007
+        ],
+        [
+          0.0,
+          0.038,
+          0.031,
+          0.931
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.0,
+        0.066,
+        0.303,
+        0.631
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 2.220446049250313e-15,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.0,
+          0.10259661038741501,
+          0.6263181307334789,
+          0.2710852588791061
+        ],
+        [
+          0.0,
+          0.03440134350908924,
+          0.02383702719517863,
+          0.9417616292957323
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.032856505263433325,
+      "maximumAbsoluteEndpointError": 0.059914741120893955,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.463355566117062,
+        0.5366444338829379
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 12,
+      "sourceRow": 11,
+      "temperatureK": 323.15,
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.0,
+          0.12,
+          0.507,
+          0.373
+        ],
+        [
+          0.0,
+          0.048,
+          0.044,
+          0.908
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.0,
+        0.08399999999999999,
+        0.2755,
+        0.6405000000000001
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 1.021405182655144e-14,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.0,
+          0.12969257947853863,
+          0.5700212895953927,
+          0.3002861309260689
+        ],
+        [
+          0.0,
+          0.04543801289935031,
+          0.02694046801781762,
+          0.927621519082832
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.04089729252527578,
+      "maximumAbsoluteEndpointError": 0.07271386907393113,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.4576842379742875,
+        0.5423157620257126
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 12,
+      "sourceRow": 12,
+      "temperatureK": 333.15,
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.0,
+          0.0,
+          0.755,
+          0.245
+        ],
+        [
+          0.0,
+          0.0,
+          0.013,
+          0.987
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.0,
+        0.0,
+        0.384,
+        0.616
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 4.413136522884997e-15,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.0,
+          0.0,
+          0.8030886506563144,
+          0.19691134934368554
+        ],
+        [
+          0.0,
+          0.0,
+          0.016898081596850204,
+          0.9831019184031498
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.027855061551303698,
+      "maximumAbsoluteEndpointError": 0.04808865065631446,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.4669375757614611,
+        0.5330624242385389
+      ]
+    },
+    {
+      "sourceDoi": "10.1016/j.fluid.2019.112321",
+      "sourcePmd": 12,
+      "sourceRow": 13,
+      "temperatureK": 323.15,
+      "components": [
+        "ethanol",
+        "ethyl-acetate",
+        "water"
+      ],
+      "observedEndpointsCanonical": [
+        [
+          0.0,
+          0.0,
+          0.768,
+          0.23199999999999998
+        ],
+        [
+          0.0,
+          0.0,
+          0.013,
+          0.987
+        ]
+      ],
+      "syntheticMidpointFeedMol": [
+        0.0,
+        0.0,
+        0.3905,
+        0.6094999999999999
+      ],
+      "predictedState": "TWO_PHASE_NUMERICAL",
+      "solverStarts": 9,
+      "solverResidual": 7.494005416219807e-16,
+      "experimentalPhaseFraction": "unknown",
+      "gameYieldConnected": false,
+      "predictedEndpointsCanonical": [
+        [
+          0.0,
+          0.0,
+          0.811961847125388,
+          0.18803815287461198
+        ],
+        [
+          0.0,
+          0.0,
+          0.015890578124978103,
+          0.9841094218750219
+        ]
+      ],
+      "endpointRmseMoleFraction": 0.025436191044602742,
+      "maximumAbsoluteEndpointError": 0.043961847125388004,
+      "endpointErrorIncluded": true,
+      "predictedMoles": [
+        0.4705727193815219,
+        0.5294272806184781
+      ]
+    }
+  ],
+  "summary": {
+    "records": 53,
+    "uniqueEndpointPairs": 49,
+    "duplicatedBoundaryRecords": [
+      {
+        "record": 16,
+        "duplicateOfRecord": 1
+      },
+      {
+        "record": 27,
+        "duplicateOfRecord": 15
+      },
+      {
+        "record": 52,
+        "duplicateOfRecord": 40
+      },
+      {
+        "record": 53,
+        "duplicateOfRecord": 35
+      }
+    ],
+    "twoPhasePredicted": 53,
+    "noTwoPhaseCandidate": 0,
+    "conditionalEndpointRmse": 0.05961057882455519,
+    "maxAbsoluteEndpointError": 0.3350779163132662
+  },
+  "limitations": [
+    "Three-component subdomains, not quaternary validation",
+    "303.15-333.15 K, not direct 298.15 K validation",
+    "No experimental phase amounts, settling, entrainment or heat duties",
+    "Original article tables not visually inspected; source is NIST/TRC transcription cross-checked against its XML",
+    "No global stability proof; two-phase solver can miss candidates",
+    "Failure rows never silently dropped from overall count"
+  ]
+}

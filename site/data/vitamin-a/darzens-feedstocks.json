@@ -1,0 +1,2172 @@
+{
+  "schema": "oc-darzens-supply-audit-1",
+  "ocVersion": "0.4.0-va-darzens-alpha1",
+  "sourceSha256": "a6d2647996267d21608de90c614326d4129837d0ca5e49acf935e81b22a1da41",
+  "scope": "Loaded Forge registries and all GT RecipeMaps; selected output material families. Presence does not prove survival closure; fake/disabled/special conditions retained.",
+  "fluidCount": 1476,
+  "recipeMaps": 171,
+  "selectedRecipes": 2339,
+  "materials": [
+    {
+      "term": "ionone",
+      "fluids": [],
+      "itemKeys": [],
+      "oreNames": {},
+      "selectedOutputRecipes": 0,
+      "enabledNonFuelRecipes": 0,
+      "examples": [],
+      "survivalClosureVerified": false
+    },
+    {
+      "term": "citral",
+      "fluids": [],
+      "itemKeys": [],
+      "oreNames": {},
+      "selectedOutputRecipes": 0,
+      "enabledNonFuelRecipes": 0,
+      "examples": [],
+      "survivalClosureVerified": false
+    },
+    {
+      "term": "linalool",
+      "fluids": [],
+      "itemKeys": [],
+      "oreNames": {},
+      "selectedOutputRecipes": 0,
+      "enabledNonFuelRecipes": 0,
+      "examples": [],
+      "survivalClosureVerified": false
+    },
+    {
+      "term": "butynol",
+      "fluids": [],
+      "itemKeys": [],
+      "oreNames": {},
+      "selectedOutputRecipes": 0,
+      "enabledNonFuelRecipes": 0,
+      "examples": [],
+      "survivalClosureVerified": false
+    },
+    {
+      "term": "butenol",
+      "fluids": [],
+      "itemKeys": [],
+      "oreNames": {},
+      "selectedOutputRecipes": 0,
+      "enabledNonFuelRecipes": 0,
+      "examples": [],
+      "survivalClosureVerified": false
+    },
+    {
+      "term": "acetoacetate",
+      "fluids": [],
+      "itemKeys": [],
+      "oreNames": {},
+      "selectedOutputRecipes": 0,
+      "enabledNonFuelRecipes": 0,
+      "examples": [],
+      "survivalClosureVerified": false
+    },
+    {
+      "term": "heptenone",
+      "fluids": [],
+      "itemKeys": [],
+      "oreNames": {},
+      "selectedOutputRecipes": 0,
+      "enabledNonFuelRecipes": 0,
+      "examples": [],
+      "survivalClosureVerified": false
+    },
+    {
+      "term": "methylacetate",
+      "fluids": [
+        {
+          "name": "methylacetate",
+          "id": 577,
+          "densityGame": 1000,
+          "temperatureGameK": 295,
+          "gaseous": false,
+          "relevant": true
+        }
+      ],
+      "itemKeys": [],
+      "oreNames": {
+        "cellMethylAcetate": [
+          {
+            "item": "gregtech:gt.metaitem.01",
+            "damage": 30681,
+            "count": 1,
+            "oreNames": [
+              "cellMethylAcetate"
+            ],
+            "tag": null
+          }
+        ],
+        "crushedMethylAcetate": [],
+        "crushedPurifiedMethylAcetate": [],
+        "dustImpureMethylAcetate": [],
+        "dustMethylAcetate": [],
+        "dustPureMethylAcetate": [],
+        "dustSmallMethylAcetate": [],
+        "dustTinyMethylAcetate": [],
+        "nuggetMethylAcetate": [],
+        "oreMethylAcetate": [],
+        "oreSmallMethylAcetate": [],
+        "rawOreMethylAcetate": []
+      },
+      "selectedOutputRecipes": 14,
+      "enabledNonFuelRecipes": 12,
+      "examples": [
+        {
+          "map": "gt.recipe.chemicalreactor",
+          "inputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 30670,
+              "count": 1,
+              "oreNames": [
+                "cellAceticAcid"
+              ],
+              "tag": null
+            },
+            {
+              "item": "gregtech:gt.integrated_circuit",
+              "damage": 1,
+              "count": 0,
+              "oreNames": [],
+              "tag": null
+            }
+          ],
+          "outputs": [
+            {
+              "item": "IC2:itemCellEmpty",
+              "damage": 1,
+              "count": 1,
+              "oreNames": [
+                "cellWater"
+              ],
+              "tag": null
+            }
+          ],
+          "fluidInputs": [
+            {
+              "fluid": "methanol",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "fluidOutputs": [
+            {
+              "fluid": "methylacetate",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "durationTicks": 240,
+          "EUt": 30,
+          "specialValue": 0,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {},
+          "recipeId": "9c493306e9a0305a296ed1d09cfffe545f3b5d0665e031c593481c6532bc5a30"
+        },
+        {
+          "map": "gt.recipe.chemicalreactor",
+          "inputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 30670,
+              "count": 1,
+              "oreNames": [
+                "cellAceticAcid"
+              ],
+              "tag": null
+            },
+            {
+              "item": "gregtech:gt.integrated_circuit",
+              "damage": 11,
+              "count": 0,
+              "oreNames": [],
+              "tag": null
+            }
+          ],
+          "outputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 30681,
+              "count": 1,
+              "oreNames": [
+                "cellMethylAcetate"
+              ],
+              "tag": null
+            }
+          ],
+          "fluidInputs": [
+            {
+              "fluid": "methanol",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "fluidOutputs": [
+            {
+              "fluid": "water",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "durationTicks": 240,
+          "EUt": 30,
+          "specialValue": 0,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {},
+          "recipeId": "e2fcec673391d7012d4dc6cdcf4c156b0c85fb5d48561f908cf375db356b590e"
+        },
+        {
+          "map": "gt.recipe.chemicalreactor",
+          "inputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 30670,
+              "count": 1,
+              "oreNames": [
+                "cellAceticAcid"
+              ],
+              "tag": null
+            },
+            {
+              "item": "gregtech:gt.integrated_circuit",
+              "damage": 12,
+              "count": 0,
+              "oreNames": [],
+              "tag": null
+            }
+          ],
+          "outputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 30681,
+              "count": 1,
+              "oreNames": [
+                "cellMethylAcetate"
+              ],
+              "tag": null
+            }
+          ],
+          "fluidInputs": [
+            {
+              "fluid": "methanol",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "fluidOutputs": [],
+          "durationTicks": 240,
+          "EUt": 30,
+          "specialValue": 0,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {},
+          "recipeId": "fd122de7a81ed22edeba37a6d535da384719eb73fe0bbd15c80ed367c631e3f6"
+        },
+        {
+          "map": "gt.recipe.chemicalreactor",
+          "inputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 30670,
+              "count": 1,
+              "oreNames": [
+                "cellAceticAcid"
+              ],
+              "tag": null
+            },
+            {
+              "item": "gregtech:gt.integrated_circuit",
+              "damage": 2,
+              "count": 0,
+              "oreNames": [],
+              "tag": null
+            }
+          ],
+          "outputs": [
+            {
+              "item": "IC2:itemCellEmpty",
+              "damage": 0,
+              "count": 1,
+              "oreNames": [
+                "cellEmpty"
+              ],
+              "tag": null
+            }
+          ],
+          "fluidInputs": [
+            {
+              "fluid": "methanol",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "fluidOutputs": [
+            {
+              "fluid": "methylacetate",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "durationTicks": 240,
+          "EUt": 30,
+          "specialValue": 0,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {},
+          "recipeId": "6be451c685f0f741b547cf003fcc12ef15f6ad2e1427172516475b44c12dc1e0"
+        }
+      ],
+      "survivalClosureVerified": false
+    },
+    {
+      "term": "chloroacetic",
+      "fluids": [
+        {
+          "name": "molten.chloroaceticacid",
+          "id": 1114,
+          "densityGame": 1000,
+          "temperatureGameK": 335,
+          "gaseous": false,
+          "relevant": true
+        },
+        {
+          "name": "molten.chloroaceticmixture",
+          "id": 1117,
+          "densityGame": 1000,
+          "temperatureGameK": 315,
+          "gaseous": false,
+          "relevant": true
+        },
+        {
+          "name": "molten.dichloroaceticacid",
+          "id": 1115,
+          "densityGame": 1000,
+          "temperatureGameK": 285,
+          "gaseous": false,
+          "relevant": true
+        },
+        {
+          "name": "molten.trichloroaceticacid",
+          "id": 1116,
+          "densityGame": 1000,
+          "temperatureGameK": 330,
+          "gaseous": false,
+          "relevant": true
+        }
+      ],
+      "itemKeys": [
+        "miscutils:itemCellChloroaceticAcid",
+        "miscutils:itemCellChloroaceticMixture",
+        "miscutils:itemCellDichloroaceticAcid",
+        "miscutils:itemCellTrichloroaceticAcid"
+      ],
+      "oreNames": {
+        "cellChloroaceticAcid": [
+          {
+            "item": "miscutils:itemCellChloroaceticAcid",
+            "damage": 0,
+            "count": 1,
+            "oreNames": [
+              "cellChloroaceticAcid"
+            ],
+            "tag": null
+          }
+        ],
+        "cellChloroaceticMixture": [
+          {
+            "item": "miscutils:itemCellChloroaceticMixture",
+            "damage": 0,
+            "count": 1,
+            "oreNames": [
+              "cellChloroaceticMixture"
+            ],
+            "tag": null
+          }
+        ],
+        "cellDichloroaceticAcid": [
+          {
+            "item": "miscutils:itemCellDichloroaceticAcid",
+            "damage": 0,
+            "count": 1,
+            "oreNames": [
+              "cellDichloroaceticAcid"
+            ],
+            "tag": null
+          }
+        ],
+        "cellTrichloroaceticAcid": [
+          {
+            "item": "miscutils:itemCellTrichloroaceticAcid",
+            "damage": 0,
+            "count": 1,
+            "oreNames": [
+              "cellTrichloroaceticAcid"
+            ],
+            "tag": null
+          }
+        ],
+        "crushedChloroaceticAcid": [],
+        "crushedChloroaceticMixture": [],
+        "crushedDichloroaceticAcid": [],
+        "crushedPurifiedChloroaceticAcid": [],
+        "crushedPurifiedChloroaceticMixture": [],
+        "crushedPurifiedDichloroaceticAcid": [],
+        "crushedPurifiedTrichloroaceticAcid": [],
+        "crushedTrichloroaceticAcid": [],
+        "dustChloroaceticAcid": [],
+        "dustChloroaceticMixture": [],
+        "dustDichloroaceticAcid": [],
+        "dustImpureChloroaceticAcid": [],
+        "dustImpureChloroaceticMixture": [],
+        "dustImpureDichloroaceticAcid": [],
+        "dustImpureTrichloroaceticAcid": [],
+        "dustPureChloroaceticAcid": [],
+        "dustPureChloroaceticMixture": [],
+        "dustPureDichloroaceticAcid": [],
+        "dustPureTrichloroaceticAcid": [],
+        "dustTrichloroaceticAcid": []
+      },
+      "selectedOutputRecipes": 12,
+      "enabledNonFuelRecipes": 4,
+      "examples": [
+        {
+          "map": "gt.recipe.distillationtower",
+          "inputs": [],
+          "outputs": [],
+          "fluidInputs": [
+            {
+              "fluid": "molten.chloroaceticmixture",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "fluidOutputs": [
+            {
+              "fluid": "molten.chloroaceticacid",
+              "mB": 100,
+              "tag": null
+            },
+            {
+              "fluid": "molten.dichloroaceticacid",
+              "mB": 450,
+              "tag": null
+            },
+            {
+              "fluid": "molten.trichloroaceticacid",
+              "mB": 450,
+              "tag": null
+            }
+          ],
+          "durationTicks": 80,
+          "EUt": 7680,
+          "specialValue": 0,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {},
+          "recipeId": "864d4d673823cbb943d6af5ad3551dbf32053f2ee483fd725a96bdb0d21fad5f"
+        },
+        {
+          "map": "gt.recipe.mixer",
+          "inputs": [
+            {
+              "item": "miscutils:itemCellDichloroaceticAcid",
+              "damage": 0,
+              "count": 1,
+              "oreNames": [
+                "cellDichloroaceticAcid"
+              ],
+              "tag": null
+            },
+            {
+              "item": "gregtech:gt.integrated_circuit",
+              "damage": 1,
+              "count": 0,
+              "oreNames": [],
+              "tag": null
+            }
+          ],
+          "outputs": [
+            {
+              "item": "IC2:itemCellEmpty",
+              "damage": 0,
+              "count": 1,
+              "oreNames": [
+                "cellEmpty"
+              ],
+              "tag": null
+            }
+          ],
+          "fluidInputs": [
+            {
+              "fluid": "molten.trichloroaceticacid",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "fluidOutputs": [
+            {
+              "fluid": "molten.chloroaceticmixture",
+              "mB": 2000,
+              "tag": null
+            }
+          ],
+          "durationTicks": 100,
+          "EUt": 100,
+          "specialValue": 0,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {},
+          "recipeId": "5f314302383fc981059712c7944bb41f6bc90a405ca93a40803c1d7a672b7e4d"
+        },
+        {
+          "map": "gtpp.recipe.fluidchemicaleactor",
+          "inputs": [
+            {
+              "item": "gregtech:gt.integrated_circuit",
+              "damage": 18,
+              "count": 0,
+              "oreNames": [],
+              "tag": null
+            }
+          ],
+          "outputs": [],
+          "fluidInputs": [
+            {
+              "fluid": "aceticacid",
+              "mB": 1000,
+              "tag": null
+            },
+            {
+              "fluid": "chlorine",
+              "mB": 1000,
+              "tag": null
+            },
+            {
+              "fluid": "molten.aceticanhydride",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "fluidOutputs": [
+            {
+              "fluid": "molten.chloroaceticmixture",
+              "mB": 1000,
+              "tag": null
+            },
+            {
+              "fluid": "molten.aceticanhydride",
+              "mB": 950,
+              "tag": null
+            }
+          ],
+          "durationTicks": 3000,
+          "EUt": 1000,
+          "specialValue": 4,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {
+            "RecipeMetadataKey{clazz=java.lang.Integer, identifier=chemplant_casing_tier'}": 4
+          },
+          "recipeId": "ee547c9bdc725dd5698531787bd19244a4c86bc8d9f00b488b907df1a5ecc910"
+        },
+        {
+          "map": "gtpp.recipe.multimixer",
+          "inputs": [
+            {
+              "item": "gregtech:gt.integrated_circuit",
+              "damage": 1,
+              "count": 0,
+              "oreNames": [],
+              "tag": null
+            }
+          ],
+          "outputs": [],
+          "fluidInputs": [
+            {
+              "fluid": "molten.dichloroaceticacid",
+              "mB": 1000,
+              "tag": null
+            },
+            {
+              "fluid": "molten.trichloroaceticacid",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "fluidOutputs": [
+            {
+              "fluid": "molten.chloroaceticmixture",
+              "mB": 2000,
+              "tag": null
+            }
+          ],
+          "durationTicks": 100,
+          "EUt": 100,
+          "specialValue": 0,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {},
+          "recipeId": "081f4c8583a8949ae32268b571fffe1f851d6a39469feeffa4e1aa2ced34be72"
+        }
+      ],
+      "survivalClosureVerified": false
+    },
+    {
+      "term": "methoxide",
+      "fluids": [],
+      "itemKeys": [],
+      "oreNames": {
+        "blockSodiumMethoxide": [],
+        "cellSodiumMethoxide": [],
+        "crushedCentrifugedSodiumMethoxide": [],
+        "crushedPurifiedSodiumMethoxide": [],
+        "crushedSodiumMethoxide": [],
+        "crystalSodiumMethoxide": [],
+        "crystallineSodiumMethoxide": [],
+        "dustImpureSodiumMethoxide": [],
+        "dustPureSodiumMethoxide": [],
+        "dustSmallSodiumMethoxide": [
+          {
+            "item": "gregtech:gt.metaitem.01",
+            "damage": 1749,
+            "count": 1,
+            "oreNames": [
+              "dustSmallSodiumMethoxide"
+            ],
+            "tag": null
+          }
+        ],
+        "dustSodiumEthoxide": [
+          {
+            "item": "miscutils:item.BasicGenericChemItem",
+            "damage": 9,
+            "count": 1,
+            "oreNames": [
+              "dustSodiumEthoxide"
+            ],
+            "tag": null
+          }
+        ],
+        "dustSodiumMethoxide": [
+          {
+            "item": "gregtech:gt.metaitem.01",
+            "damage": 2749,
+            "count": 1,
+            "oreNames": [
+              "dustSodiumMethoxide"
+            ],
+            "tag": null
+          }
+        ],
+        "dustTinySodiumMethoxide": [
+          {
+            "item": "gregtech:gt.metaitem.01",
+            "damage": 749,
+            "count": 1,
+            "oreNames": [
+              "dustTinySodiumMethoxide"
+            ],
+            "tag": null
+          }
+        ],
+        "gemSodiumMethoxide": [],
+        "ingotSodiumMethoxide": [],
+        "nuggetSodiumMethoxide": [],
+        "oreSmallSodiumMethoxide": [],
+        "oreSodiumMethoxide": [],
+        "plateSodiumMethoxide": []
+      },
+      "selectedOutputRecipes": 6,
+      "enabledNonFuelRecipes": 6,
+      "examples": [
+        {
+          "map": "gt.recipe.largechemicalreactor",
+          "inputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 2751,
+              "count": 64,
+              "oreNames": [
+                "dustSodiumHydride"
+              ],
+              "tag": null
+            },
+            {
+              "item": "gregtech:gt.integrated_circuit",
+              "damage": 9,
+              "count": 0,
+              "oreNames": [],
+              "tag": null
+            }
+          ],
+          "outputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 2755,
+              "count": 48,
+              "oreNames": [
+                "dustSodiumBorohydride"
+              ],
+              "tag": null
+            },
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 2749,
+              "count": 64,
+              "oreNames": [
+                "dustSodiumMethoxide"
+              ],
+              "tag": null
+            },
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 2749,
+              "count": 64,
+              "oreNames": [
+                "dustSodiumMethoxide"
+              ],
+              "tag": null
+            },
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 2749,
+              "count": 16,
+              "oreNames": [
+                "dustSodiumMethoxide"
+              ],
+              "tag": null
+            }
+          ],
+          "fluidInputs": [
+            {
+              "fluid": "trimethylborate",
+              "mB": 8000,
+              "tag": null
+            }
+          ],
+          "fluidOutputs": [],
+          "durationTicks": 600,
+          "EUt": 1920,
+          "specialValue": 0,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {},
+          "recipeId": "537b59f35efbace7a15b43376d725ce4d1d072e9dec396687185dc8c6807ec42"
+        },
+        {
+          "map": "gt.recipe.largechemicalreactor",
+          "inputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 2751,
+              "count": 8,
+              "oreNames": [
+                "dustSodiumHydride"
+              ],
+              "tag": null
+            },
+            {
+              "item": "gregtech:gt.integrated_circuit",
+              "damage": 1,
+              "count": 0,
+              "oreNames": [],
+              "tag": null
+            }
+          ],
+          "outputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 2755,
+              "count": 6,
+              "oreNames": [
+                "dustSodiumBorohydride"
+              ],
+              "tag": null
+            },
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 2749,
+              "count": 18,
+              "oreNames": [
+                "dustSodiumMethoxide"
+              ],
+              "tag": null
+            }
+          ],
+          "fluidInputs": [
+            {
+              "fluid": "trimethylborate",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "fluidOutputs": [],
+          "durationTicks": 600,
+          "EUt": 1920,
+          "specialValue": 0,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {},
+          "recipeId": "ac0a9cbf877e151c97688b6c8ed0dfdeac9568e7ccaca31ea3399f17451bdd60"
+        },
+        {
+          "map": "gt.recipe.packager",
+          "inputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 1749,
+              "count": 4,
+              "oreNames": [
+                "dustSmallSodiumMethoxide"
+              ],
+              "tag": null
+            },
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 32498,
+              "count": 0,
+              "oreNames": [],
+              "tag": null
+            }
+          ],
+          "outputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 2749,
+              "count": 1,
+              "oreNames": [
+                "dustSodiumMethoxide"
+              ],
+              "tag": null
+            }
+          ],
+          "fluidInputs": [],
+          "fluidOutputs": [],
+          "durationTicks": 20,
+          "EUt": 4,
+          "specialValue": 0,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {},
+          "recipeId": "c82818befec2ecc46a054fb57c4bdfa17d6bc3e55f09b77c055cdcd3b0b001f0"
+        },
+        {
+          "map": "gt.recipe.packager",
+          "inputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 2749,
+              "count": 1,
+              "oreNames": [
+                "dustSodiumMethoxide"
+              ],
+              "tag": null
+            },
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 32492,
+              "count": 0,
+              "oreNames": [],
+              "tag": null
+            }
+          ],
+          "outputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 1749,
+              "count": 4,
+              "oreNames": [
+                "dustSmallSodiumMethoxide"
+              ],
+              "tag": null
+            }
+          ],
+          "fluidInputs": [],
+          "fluidOutputs": [],
+          "durationTicks": 20,
+          "EUt": 4,
+          "specialValue": 0,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {},
+          "recipeId": "f23c0529cfc2cc3b21ec746bc6542d76e6b5c3e6c870b3f8b9e8b4f1b9bef910"
+        }
+      ],
+      "survivalClosureVerified": false
+    },
+    {
+      "term": "acetone",
+      "fluids": [
+        {
+          "name": "acetone",
+          "id": 457,
+          "densityGame": 1000,
+          "temperatureGameK": 295,
+          "gaseous": false,
+          "relevant": true
+        },
+        {
+          "name": "diluted acetone",
+          "id": 1410,
+          "densityGame": 1000,
+          "temperatureGameK": 300,
+          "gaseous": false,
+          "relevant": true
+        }
+      ],
+      "itemKeys": [],
+      "oreNames": {
+        "cellAcetone": [
+          {
+            "item": "gregtech:gt.metaitem.01",
+            "damage": 30672,
+            "count": 1,
+            "oreNames": [
+              "cellAcetone"
+            ],
+            "tag": null
+          }
+        ],
+        "cellDilutedAcetone": [
+          {
+            "item": "bartworks:gt.bwMetaGeneratedcell",
+            "damage": 11316,
+            "count": 1,
+            "oreNames": [
+              "cellDilutedAcetone"
+            ],
+            "tag": null
+          }
+        ],
+        "crushedAcetone": [],
+        "crushedDilutedAcetone": [],
+        "crushedPurifiedAcetone": [],
+        "crushedPurifiedDilutedAcetone": [],
+        "dustAcetone": [],
+        "dustDilutedAcetone": [],
+        "dustImpureAcetone": [],
+        "dustImpureDilutedAcetone": [],
+        "dustPureAcetone": [],
+        "dustPureDilutedAcetone": [],
+        "dustSmallAcetone": [],
+        "dustSmallDilutedAcetone": [],
+        "dustTinyAcetone": [],
+        "dustTinyDilutedAcetone": [],
+        "ingotDilutedAcetone": [],
+        "nuggetAcetone": [],
+        "nuggetDilutedAcetone": [],
+        "oreAcetone": [],
+        "oreSmallAcetone": [],
+        "rawOreAcetone": []
+      },
+      "selectedOutputRecipes": 23,
+      "enabledNonFuelRecipes": 18,
+      "examples": [
+        {
+          "map": "gt.recipe.centrifuge",
+          "inputs": [],
+          "outputs": [
+            {
+              "item": "bartworks:gt.bwMetaGenerateddust",
+              "damage": 11117,
+              "count": 1,
+              "oreNames": [
+                "dustNeodymiumRareEarthConcentrate"
+              ],
+              "tag": null
+            },
+            {
+              "item": "bartworks:gt.bwMetaGenerateddust",
+              "damage": 11116,
+              "count": 1,
+              "oreNames": [
+                "dustSamaricRareEarthConcentrate"
+              ],
+              "tag": null
+            }
+          ],
+          "fluidInputs": [
+            {
+              "fluid": "bastnasite rarer earth oxide suspension",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "fluidOutputs": [
+            {
+              "fluid": "diluted acetone",
+              "mB": 750,
+              "tag": null
+            }
+          ],
+          "durationTicks": 900,
+          "EUt": 480,
+          "specialValue": 0,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {},
+          "recipeId": "cfa8fc66b04d480fbad3b3aec64ef15d2dc8ff26e2a992cfbc7552e753527135"
+        },
+        {
+          "map": "gt.recipe.chemicalreactor",
+          "inputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 30013,
+              "count": 2,
+              "oreNames": [
+                "cellOxygen"
+              ],
+              "tag": null
+            },
+            {
+              "item": "gregtech:gt.integrated_circuit",
+              "damage": 1,
+              "count": 0,
+              "oreNames": [],
+              "tag": null
+            }
+          ],
+          "outputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 30687,
+              "count": 1,
+              "oreNames": [
+                "cellPhenol"
+              ],
+              "tag": null
+            },
+            {
+              "item": "IC2:itemCellEmpty",
+              "damage": 0,
+              "count": 1,
+              "oreNames": [
+                "cellEmpty"
+              ],
+              "tag": null
+            }
+          ],
+          "fluidInputs": [
+            {
+              "fluid": "isopropylbenzene",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "fluidOutputs": [
+            {
+              "fluid": "acetone",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "durationTicks": 160,
+          "EUt": 30,
+          "specialValue": 0,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {},
+          "recipeId": "a1e501a2befa5051a84c6d03c253d93c1fc63cecac21cbbee1603313db19def1"
+        },
+        {
+          "map": "gt.recipe.chemicalreactor",
+          "inputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 30013,
+              "count": 2,
+              "oreNames": [
+                "cellOxygen"
+              ],
+              "tag": null
+            },
+            {
+              "item": "gregtech:gt.integrated_circuit",
+              "damage": 11,
+              "count": 0,
+              "oreNames": [],
+              "tag": null
+            }
+          ],
+          "outputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 30672,
+              "count": 1,
+              "oreNames": [
+                "cellAcetone"
+              ],
+              "tag": null
+            },
+            {
+              "item": "IC2:itemCellEmpty",
+              "damage": 0,
+              "count": 1,
+              "oreNames": [
+                "cellEmpty"
+              ],
+              "tag": null
+            }
+          ],
+          "fluidInputs": [
+            {
+              "fluid": "isopropylbenzene",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "fluidOutputs": [
+            {
+              "fluid": "phenol",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "durationTicks": 160,
+          "EUt": 30,
+          "specialValue": 0,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {},
+          "recipeId": "7e8927c5f676dc17b566b9213f1d43f21be20b1f655b6e2d0bb4348280c9b479"
+        },
+        {
+          "map": "gt.recipe.chemicalreactor",
+          "inputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 30688,
+              "count": 1,
+              "oreNames": [
+                "cellIsopropylbenzene"
+              ],
+              "tag": null
+            },
+            {
+              "item": "gregtech:gt.integrated_circuit",
+              "damage": 1,
+              "count": 0,
+              "oreNames": [],
+              "tag": null
+            }
+          ],
+          "outputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 30687,
+              "count": 1,
+              "oreNames": [
+                "cellPhenol"
+              ],
+              "tag": null
+            }
+          ],
+          "fluidInputs": [
+            {
+              "fluid": "oxygen",
+              "mB": 2000,
+              "tag": null
+            }
+          ],
+          "fluidOutputs": [
+            {
+              "fluid": "acetone",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "durationTicks": 160,
+          "EUt": 30,
+          "specialValue": 0,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {},
+          "recipeId": "430cb7fea73f83645bb32139b8ac0e032fe988836eb0b0c509d4d9de05b12ab3"
+        }
+      ],
+      "survivalClosureVerified": false
+    },
+    {
+      "term": "acetylene",
+      "fluids": [
+        {
+          "name": "acetylene",
+          "id": 782,
+          "densityGame": -100,
+          "temperatureGameK": 295,
+          "gaseous": true,
+          "relevant": true
+        }
+      ],
+      "itemKeys": [],
+      "oreNames": {
+        "cellAcetylene": [
+          {
+            "item": "gregtech:gt.metaitem.01",
+            "damage": 30781,
+            "count": 1,
+            "oreNames": [
+              "cellAcetylene"
+            ],
+            "tag": null
+          }
+        ],
+        "crushedAcetylene": [],
+        "crushedPurifiedAcetylene": [],
+        "dustAcetylene": [],
+        "dustImpureAcetylene": [],
+        "dustPureAcetylene": [],
+        "dustSmallAcetylene": [],
+        "dustTinyAcetylene": [],
+        "nuggetAcetylene": [],
+        "oreAcetylene": [],
+        "oreSmallAcetylene": []
+      },
+      "selectedOutputRecipes": 4,
+      "enabledNonFuelRecipes": 2,
+      "examples": [
+        {
+          "map": "gt.recipe.chemicalreactor",
+          "inputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 2775,
+              "count": 3,
+              "oreNames": [
+                "dustCacliumCarbide"
+              ],
+              "tag": null
+            },
+            {
+              "item": "gregtech:gt.integrated_circuit",
+              "damage": 1,
+              "count": 0,
+              "oreNames": [],
+              "tag": null
+            }
+          ],
+          "outputs": [
+            {
+              "item": "miscutils:itemDustCalciumHydroxide",
+              "damage": 0,
+              "count": 5,
+              "oreNames": [
+                "dustCalciumHydroxide"
+              ],
+              "tag": null
+            }
+          ],
+          "fluidInputs": [
+            {
+              "fluid": "water",
+              "mB": 2000,
+              "tag": null
+            }
+          ],
+          "fluidOutputs": [
+            {
+              "fluid": "acetylene",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "durationTicks": 300,
+          "EUt": 480,
+          "specialValue": 0,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {},
+          "recipeId": "7d93b2a4fe535518ed91a07404522fdb9d5f6b992c0e3e0ac7859d3ae835a389"
+        },
+        {
+          "map": "gt.recipe.largechemicalreactor",
+          "inputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 2775,
+              "count": 3,
+              "oreNames": [
+                "dustCacliumCarbide"
+              ],
+              "tag": null
+            },
+            {
+              "item": "gregtech:gt.integrated_circuit",
+              "damage": 1,
+              "count": 0,
+              "oreNames": [],
+              "tag": null
+            }
+          ],
+          "outputs": [
+            {
+              "item": "miscutils:itemDustCalciumHydroxide",
+              "damage": 0,
+              "count": 5,
+              "oreNames": [
+                "dustCalciumHydroxide"
+              ],
+              "tag": null
+            }
+          ],
+          "fluidInputs": [
+            {
+              "fluid": "water",
+              "mB": 2000,
+              "tag": null
+            }
+          ],
+          "fluidOutputs": [
+            {
+              "fluid": "acetylene",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "durationTicks": 300,
+          "EUt": 480,
+          "specialValue": 0,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {
+            "RecipeMetadataKey{clazz=java.lang.Boolean, identifier=cleanroom'}": false
+          },
+          "recipeId": "cbef3cf795dbc4d2cca815696e93a9d21c9c4243888137060edfb47a40393138"
+        }
+      ],
+      "survivalClosureVerified": false
+    },
+    {
+      "term": "hydrogen",
+      "fluids": [
+        {
+          "name": "fluid.hydrogenperoxide",
+          "id": 1194,
+          "densityGame": 1000,
+          "temperatureGameK": 150,
+          "gaseous": false,
+          "relevant": true
+        },
+        {
+          "name": "fluid.liquidhydrogen",
+          "id": 1203,
+          "densityGame": 1000,
+          "temperatureGameK": 14,
+          "gaseous": false,
+          "relevant": true
+        },
+        {
+          "name": "hydrogen",
+          "id": 112,
+          "densityGame": -100,
+          "temperatureGameK": 295,
+          "gaseous": true,
+          "relevant": true
+        },
+        {
+          "name": "hydrogenchloride",
+          "id": 1220,
+          "densityGame": 1000,
+          "temperatureGameK": 75,
+          "gaseous": false,
+          "relevant": true
+        },
+        {
+          "name": "hydrogencyanide",
+          "id": 1108,
+          "densityGame": -10000,
+          "temperatureGameK": 275,
+          "gaseous": true,
+          "relevant": true
+        },
+        {
+          "name": "molten.hydrogenchloridemix",
+          "id": 1111,
+          "densityGame": 1000,
+          "temperatureGameK": 365,
+          "gaseous": false,
+          "relevant": true
+        },
+        {
+          "name": "plasma.hydrogen",
+          "id": 282,
+          "densityGame": 55536,
+          "temperatureGameK": 10000,
+          "gaseous": true,
+          "relevant": true
+        },
+        {
+          "name": "prismarinecontaminatedhydrogenperoxide",
+          "id": 743,
+          "densityGame": 1000,
+          "temperatureGameK": 295,
+          "gaseous": false,
+          "relevant": true
+        }
+      ],
+      "itemKeys": [
+        "GalacticraftMars:tile.hydrogenPipe",
+        "miscutils:HydrogenPeroxide",
+        "miscutils:LiquidHydrogen",
+        "miscutils:itemCellHydrogenChlorideMix",
+        "miscutils:itemCellHydrogenCyanide"
+      ],
+      "oreNames": {
+        "blockHydrogen": [],
+        "cellHydrogen": [
+          {
+            "item": "gregtech:gt.metaitem.01",
+            "damage": 30001,
+            "count": 1,
+            "oreNames": [
+              "cellHydrogen"
+            ],
+            "tag": null
+          }
+        ],
+        "cellHydrogenChloride": [
+          {
+            "item": "IC2:itemCellEmpty",
+            "damage": 18,
+            "count": 1,
+            "oreNames": [
+              "cellHydrogenChloride"
+            ],
+            "tag": null
+          }
+        ],
+        "cellHydrogenChlorideMix": [
+          {
+            "item": "miscutils:itemCellHydrogenChlorideMix",
+            "damage": 0,
+            "count": 1,
+            "oreNames": [
+              "cellHydrogenChlorideMix"
+            ],
+            "tag": null
+          }
+        ],
+        "cellHydrogenCyanide": [
+          {
+            "item": "miscutils:itemCellHydrogenCyanide",
+            "damage": 0,
+            "count": 1,
+            "oreNames": [
+              "cellHydrogenCyanide"
+            ],
+            "tag": null
+          }
+        ],
+        "cellHydrogenPeroxide": [
+          {
+            "item": "miscutils:HydrogenPeroxide",
+            "damage": 0,
+            "count": 1,
+            "oreNames": [
+              "cellHydrogenPeroxide"
+            ],
+            "tag": null
+          }
+        ],
+        "cellIndustrialStrengthHydrogenChloride": [],
+        "cellLiquidHydrogen": [
+          {
+            "item": "miscutils:LiquidHydrogen",
+            "damage": 0,
+            "count": 1,
+            "oreNames": [
+              "cellLiquidHydrogen"
+            ],
+            "tag": null
+          }
+        ],
+        "cellPlasmaHydrogen": [
+          {
+            "item": "gregtech:gt.metaitem.01",
+            "damage": 31001,
+            "count": 1,
+            "oreNames": [
+              "cellPlasmaHydrogen"
+            ],
+            "tag": null
+          }
+        ],
+        "cellfluid.HydrogenPeroxide": [],
+        "cellfluid.LiquidHydrogen": [],
+        "cellhydrogenChloride": [],
+        "cellprismarinecontaminatedhydrogenperoxide": [
+          {
+            "item": "gregtech:gt.metaitem.01",
+            "damage": 30136,
+            "count": 1,
+            "oreNames": [
+              "cellprismarinecontaminatedhydrogenperoxide"
+            ],
+            "tag": null
+          }
+        ],
+        "crushedHydrogen": [],
+        "crushedHydrogenChlorideMix": [],
+        "crushedHydrogenCyanide": [],
+        "crushedPurifiedHydrogen": [],
+        "crushedPurifiedHydrogenChlorideMix": [],
+        "crushedPurifiedHydrogenCyanide": [],
+        "crushedPurifiedprismarinecontaminatedhydrogenperoxide": [],
+        "crushedprismarinecontaminatedhydrogenperoxide": [],
+        "dustHydrogen": [],
+        "dustHydrogenChlorideMix": [],
+        "dustHydrogenCyanide": [],
+        "dustHydrogenPeroxide": [],
+        "dustImpureHydrogen": [],
+        "dustImpureHydrogenChlorideMix": [],
+        "dustImpureHydrogenCyanide": [],
+        "dustImpureprismarinecontaminatedhydrogenperoxide": [],
+        "dustLiquidHydrogen": [],
+        "dustPureHydrogen": [],
+        "dustPureHydrogenChlorideMix": [],
+        "dustPureHydrogenCyanide": [],
+        "dustPureprismarinecontaminatedhydrogenperoxide": [],
+        "dustSmallHydrogen": [],
+        "dustSmallprismarinecontaminatedhydrogenperoxide": [],
+        "dustTinyHydrogen": [],
+        "dustTinyprismarinecontaminatedhydrogenperoxide": [],
+        "dustprismarinecontaminatedhydrogenperoxide": [],
+        "nuggetHydrogen": [],
+        "nuggetprismarinecontaminatedhydrogenperoxide": [],
+        "oreAnubisAndMaahesHydrogen": [
+          {
+            "item": "gregtech:gt.blockores7",
+            "damage": 1,
+            "count": 1,
+            "oreNames": [
+              "oreAnubisAndMaahesHydrogen"
+            ],
+            "tag": null
+          }
+        ],
+        "oreBlueIceHydrogen": [
+          {
+            "item": "gregtech:gt.blockores7",
+            "damage": 6001,
+            "count": 1,
+            "oreNames": [
+              "oreBlueIceHydrogen"
+            ],
+            "tag": null
+          }
+        ],
+        "oreDeepslateHydrogen": [
+          {
+            "item": "gregtech:gt.blockores7",
+            "damage": 4001,
+            "count": 1,
+            "oreNames": [
+              "oreDeepslateHydrogen"
+            ],
+            "tag": null
+          }
+        ],
+        "oreHydrogen": [],
+        "oreHydrogenSulfide": [],
+        "orePackedIceHydrogen": [
+          {
+            "item": "gregtech:gt.blockores7",
+            "damage": 1001,
+            "count": 1,
+            "oreNames": [
+              "orePackedIceHydrogen"
+            ],
+            "tag": null
+          }
+        ],
+        "oreSethClayHydrogen": [
+          {
+            "item": "gregtech:gt.blockores7",
+            "damage": 3001,
+            "count": 1,
+            "oreNames": [
+              "oreSethClayHydrogen"
+            ],
+            "tag": null
+          }
+        ],
+        "oreSethIceHydrogen": [
+          {
+            "item": "gregtech:gt.blockores7",
+            "damage": 2001,
+            "count": 1,
+            "oreNames": [
+              "oreSethIceHydrogen"
+            ],
+            "tag": null
+          }
+        ],
+        "oreSmallHydrogen": [],
+        "oreSmallprismarinecontaminatedhydrogenperoxide": [],
+        "oreTuffHydrogen": [
+          {
+            "item": "gregtech:gt.blockores7",
+            "damage": 5001,
+            "count": 1,
+            "oreNames": [
+              "oreTuffHydrogen"
+            ],
+            "tag": null
+          }
+        ],
+        "oreprismarinecontaminatedhydrogenperoxide": [],
+        "particleHydrogen": [
+          {
+            "item": "miscutils:particleIon",
+            "damage": 0,
+            "count": 1,
+            "oreNames": [
+              "particleHydrogen"
+            ],
+            "tag": null
+          }
+        ],
+        "rawOreHydrogen": [
+          {
+            "item": "gregtech:gt.metaitem.03",
+            "damage": 5001,
+            "count": 1,
+            "oreNames": [
+              "rawOreHydrogen"
+            ],
+            "tag": null
+          }
+        ],
+        "rawOreHydrogenSulfide": []
+      },
+      "selectedOutputRecipes": 355,
+      "enabledNonFuelRecipes": 339,
+      "examples": [
+        {
+          "map": "gg.recipe.extreme_heat_exchanger",
+          "inputs": [],
+          "outputs": [],
+          "fluidInputs": [
+            {
+              "fluid": "plasma.hydrogen",
+              "mB": 500,
+              "tag": null
+            },
+            {
+              "fluid": "ic2distilledwater",
+              "mB": 57600,
+              "tag": null
+            }
+          ],
+          "fluidOutputs": [
+            {
+              "fluid": "ic2superheatedsteam",
+              "mB": 0,
+              "tag": null
+            },
+            {
+              "fluid": "densesupercriticalsteam",
+              "mB": 9216,
+              "tag": null
+            },
+            {
+              "fluid": "hydrogen",
+              "mB": 500,
+              "tag": null
+            }
+          ],
+          "durationTicks": 0,
+          "EUt": 0,
+          "specialValue": 1,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {},
+          "recipeId": "fe75c606a26461b8eb1f451f6e10db45a05e3f62684ffb633f6c2759fb80f105"
+        },
+        {
+          "map": "gt.recipe.assembler",
+          "inputs": [
+            {
+              "item": "GalacticraftCore:tile.oxygenPipe",
+              "damage": 0,
+              "count": 1,
+              "oreNames": [],
+              "tag": null
+            },
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 28035,
+              "count": 4,
+              "oreNames": [
+                "ringCopper",
+                "ringAnyCopper"
+              ],
+              "tag": null
+            }
+          ],
+          "outputs": [
+            {
+              "item": "GalacticraftMars:tile.hydrogenPipe",
+              "damage": 0,
+              "count": 1,
+              "oreNames": [],
+              "tag": null
+            }
+          ],
+          "fluidInputs": [],
+          "fluidOutputs": [],
+          "durationTicks": 400,
+          "EUt": 15,
+          "specialValue": 0,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {},
+          "recipeId": "05be6239241a36a64a5010cfa8410515b501cbd1dd7b0fbce471c55d5817188e"
+        },
+        {
+          "map": "gt.recipe.autoclave",
+          "inputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 8505,
+              "count": 15,
+              "oreNames": [
+                "gemOlivine"
+              ],
+              "tag": null
+            }
+          ],
+          "outputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 2946,
+              "count": 18,
+              "oreNames": [
+                "dustAsbestos"
+              ],
+              "tag": null
+            },
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 2870,
+              "count": 7,
+              "oreNames": [
+                "dustMagnetite"
+              ],
+              "tag": null
+            }
+          ],
+          "fluidInputs": [
+            {
+              "fluid": "ic2distilledwater",
+              "mB": 9000,
+              "tag": null
+            }
+          ],
+          "fluidOutputs": [
+            {
+              "fluid": "hydrogen",
+              "mB": 14000,
+              "tag": null
+            }
+          ],
+          "durationTicks": 1200,
+          "EUt": 120,
+          "specialValue": 0,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {},
+          "recipeId": "e18e209ecce18bf283f5ee8aea476bfa4cc1d067c4d31d50aef50755bc1f294a"
+        },
+        {
+          "map": "gt.recipe.blastfurnace",
+          "inputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 2797,
+              "count": 3,
+              "oreNames": [
+                "dustCalciumHydride"
+              ],
+              "tag": null
+            },
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 2020,
+              "count": 2,
+              "oreNames": [
+                "dustSilicon"
+              ],
+              "tag": null
+            }
+          ],
+          "outputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 2971,
+              "count": 3,
+              "oreNames": [
+                "dustCalciumDisilicide"
+              ],
+              "tag": null
+            }
+          ],
+          "fluidInputs": [],
+          "fluidOutputs": [
+            {
+              "fluid": "hydrogen",
+              "mB": 2000,
+              "tag": null
+            }
+          ],
+          "durationTicks": 300,
+          "EUt": 120,
+          "specialValue": 1273,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {
+            "RecipeMetadataKey{clazz=java.lang.Integer, identifier=coil_heat'}": 1273
+          },
+          "recipeId": "7070a99b2fddefe7a736b6cc9fe1d773833aeff791719d12c3ef740890b005bd"
+        }
+      ],
+      "survivalClosureVerified": false
+    },
+    {
+      "term": "methanol",
+      "fluids": [
+        {
+          "name": "methanol",
+          "id": 576,
+          "densityGame": 1000,
+          "temperatureGameK": 295,
+          "gaseous": false,
+          "relevant": true
+        }
+      ],
+      "itemKeys": [],
+      "oreNames": {
+        "cellMethanol": [
+          {
+            "item": "gregtech:gt.metaitem.01",
+            "damage": 30673,
+            "count": 1,
+            "oreNames": [
+              "cellMethanol"
+            ],
+            "tag": null
+          }
+        ],
+        "crushedMethanol": [],
+        "crushedPurifiedMethanol": [],
+        "dustImpureMethanol": [],
+        "dustMethanol": [],
+        "dustPureMethanol": [],
+        "dustSmallMethanol": [],
+        "dustTinyMethanol": [],
+        "nuggetMethanol": [],
+        "oreMethanol": [],
+        "oreSmallMethanol": [],
+        "rawOreMethanol": []
+      },
+      "selectedOutputRecipes": 25,
+      "enabledNonFuelRecipes": 23,
+      "examples": [
+        {
+          "map": "gt.recipe.chemicalreactor",
+          "inputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 2749,
+              "count": 6,
+              "oreNames": [
+                "dustSodiumMethoxide"
+              ],
+              "tag": null
+            },
+            {
+              "item": "gregtech:gt.integrated_circuit",
+              "damage": 1,
+              "count": 0,
+              "oreNames": [],
+              "tag": null
+            }
+          ],
+          "outputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 2685,
+              "count": 3,
+              "oreNames": [
+                "dustSodiumHydroxide",
+                "dustSodiumHydroxide_GT5U"
+              ],
+              "tag": null
+            }
+          ],
+          "fluidInputs": [
+            {
+              "fluid": "water",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "fluidOutputs": [
+            {
+              "fluid": "methanol",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "durationTicks": 200,
+          "EUt": 480,
+          "specialValue": 0,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {},
+          "recipeId": "649a0d0fa9afdcc529fb2208b8a68702bede89317bc05157574dc3c1b2ca598c"
+        },
+        {
+          "map": "gt.recipe.chemicalreactor",
+          "inputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 30001,
+              "count": 4,
+              "oreNames": [
+                "cellHydrogen"
+              ],
+              "tag": null
+            },
+            {
+              "item": "gregtech:gt.integrated_circuit",
+              "damage": 1,
+              "count": 0,
+              "oreNames": [],
+              "tag": null
+            }
+          ],
+          "outputs": [
+            {
+              "item": "IC2:itemCellEmpty",
+              "damage": 0,
+              "count": 4,
+              "oreNames": [
+                "cellEmpty"
+              ],
+              "tag": null
+            }
+          ],
+          "fluidInputs": [
+            {
+              "fluid": "carbonmonoxide",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "fluidOutputs": [
+            {
+              "fluid": "methanol",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "durationTicks": 120,
+          "EUt": 96,
+          "specialValue": 0,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {},
+          "recipeId": "01dfd2c556a76aa269ed21e816f7d354d9134d18005a8c5b88d2deae89ecd9ea"
+        },
+        {
+          "map": "gt.recipe.chemicalreactor",
+          "inputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 30001,
+              "count": 4,
+              "oreNames": [
+                "cellHydrogen"
+              ],
+              "tag": null
+            },
+            {
+              "item": "gregtech:gt.integrated_circuit",
+              "damage": 11,
+              "count": 0,
+              "oreNames": [],
+              "tag": null
+            }
+          ],
+          "outputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 30673,
+              "count": 1,
+              "oreNames": [
+                "cellMethanol"
+              ],
+              "tag": null
+            },
+            {
+              "item": "IC2:itemCellEmpty",
+              "damage": 0,
+              "count": 3,
+              "oreNames": [
+                "cellEmpty"
+              ],
+              "tag": null
+            }
+          ],
+          "fluidInputs": [
+            {
+              "fluid": "carbonmonoxide",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "fluidOutputs": [],
+          "durationTicks": 120,
+          "EUt": 96,
+          "specialValue": 0,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {},
+          "recipeId": "70f358f5017c3335c157fa20bd48630b57cf3aa509f3c0e1034676c2a2fa47d3"
+        },
+        {
+          "map": "gt.recipe.chemicalreactor",
+          "inputs": [
+            {
+              "item": "gregtech:gt.metaitem.01",
+              "damage": 30001,
+              "count": 6,
+              "oreNames": [
+                "cellHydrogen"
+              ],
+              "tag": null
+            },
+            {
+              "item": "gregtech:gt.integrated_circuit",
+              "damage": 1,
+              "count": 0,
+              "oreNames": [],
+              "tag": null
+            }
+          ],
+          "outputs": [
+            {
+              "item": "IC2:itemCellEmpty",
+              "damage": 1,
+              "count": 1,
+              "oreNames": [
+                "cellWater"
+              ],
+              "tag": null
+            },
+            {
+              "item": "IC2:itemCellEmpty",
+              "damage": 0,
+              "count": 5,
+              "oreNames": [
+                "cellEmpty"
+              ],
+              "tag": null
+            }
+          ],
+          "fluidInputs": [
+            {
+              "fluid": "carbondioxide",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "fluidOutputs": [
+            {
+              "fluid": "methanol",
+              "mB": 1000,
+              "tag": null
+            }
+          ],
+          "durationTicks": 120,
+          "EUt": 96,
+          "specialValue": 0,
+          "mEnabled": true,
+          "mFakeRecipe": false,
+          "mHidden": false,
+          "mChances": null,
+          "metadata": {},
+          "recipeId": "8652e7a9e9ef2a4a0590724a09478582d4dc9e62621b1ae15b227daa6c71e63c"
+        }
+      ],
+      "survivalClosureVerified": false
+    }
+  ],
+  "decision": "Freeze staged U01-U08 candidate; implement U01/U02 first, develop A01/utility native bridge in parallel within subsequent work, require primary evidence before U03/U04/U06.",
+  "notEstablished": [
+    "No complete native beta-ionone supply verified",
+    "Runtime output search is bounded by the audit selector",
+    "No full survival unlock/crafting/worldgen acceptance",
+    "Organic Syntheses local fetch contains browser challenge, not procedure text"
+  ]
+}

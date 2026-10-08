@@ -1,0 +1,133 @@
+{
+  "schema": "oc-next-line-evidence-1",
+  "status": "candidate-not-implemented",
+  "source": "research/vitamin-a/native-runtime-audit-final.json",
+  "sourceSha256": "d523426e0fa2b69f54d7deec56d4f369b969bd46117999ef03f655b9096960cf",
+  "auditScope": "Loaded Forge registries and all GT RecipeMaps; selected output material families. Presence does not prove survival closure; fake/disabled/special conditions retained.",
+  "ocVersion": "0.4.0-va-slice-alpha1",
+  "recipes": [
+    {
+      "map": "gtpp.recipe.cokeoven",
+      "inputs": [
+        {
+          "item": "minecraft:log",
+          "damage": 32767,
+          "count": 16,
+          "oreNames": [
+            "logWood"
+          ],
+          "tag": null
+        },
+        {
+          "item": "gregtech:gt.integrated_circuit",
+          "damage": 8,
+          "count": 0,
+          "oreNames": [],
+          "tag": null
+        }
+      ],
+      "outputs": [
+        {
+          "item": "minecraft:coal",
+          "damage": 1,
+          "count": 20,
+          "oreNames": [
+            "itemCharcoal",
+            "gemAnyCarbon",
+            "gemCharcoal",
+            "charcoal"
+          ],
+          "tag": null
+        }
+      ],
+      "fluidInputs": [
+        {
+          "fluid": "nitrogen",
+          "mB": 1000,
+          "tag": null
+        }
+      ],
+      "fluidOutputs": [
+        {
+          "fluid": "woodvinegar",
+          "mB": 3000,
+          "tag": null
+        }
+      ],
+      "durationTicks": 256,
+      "EUt": 96,
+      "specialValue": 0,
+      "mEnabled": true,
+      "mFakeRecipe": false,
+      "mHidden": false,
+      "mChances": null,
+      "metadata": {},
+      "recipeId": "378655e9696fe0785291bcf3c06de8e901639b80d89ce9c9a100687d0f4c455f"
+    },
+    {
+      "map": "gt.recipe.distillationtower",
+      "inputs": [
+        {
+          "item": "gregtech:gt.integrated_circuit",
+          "damage": 1,
+          "count": 0,
+          "oreNames": [],
+          "tag": null
+        }
+      ],
+      "outputs": [],
+      "fluidInputs": [
+        {
+          "fluid": "woodvinegar",
+          "mB": 1000,
+          "tag": null
+        }
+      ],
+      "fluidOutputs": [
+        {
+          "fluid": "aceticacid",
+          "mB": 100,
+          "tag": null
+        },
+        {
+          "fluid": "water",
+          "mB": 500,
+          "tag": null
+        },
+        {
+          "fluid": "bioethanol",
+          "mB": 10,
+          "tag": null
+        },
+        {
+          "fluid": "methanol",
+          "mB": 300,
+          "tag": null
+        },
+        {
+          "fluid": "acetone",
+          "mB": 50,
+          "tag": null
+        },
+        {
+          "fluid": "methylacetate",
+          "mB": 10,
+          "tag": null
+        }
+      ],
+      "durationTicks": 40,
+      "EUt": 256,
+      "specialValue": 0,
+      "mEnabled": true,
+      "mFakeRecipe": false,
+      "mHidden": false,
+      "mChances": null,
+      "metadata": {},
+      "recipeId": "56db66766d92f31753437c22f7b4bf1c129acbfa154167ea966f5513d6a73315"
+    }
+  ],
+  "realKinetics": null,
+  "realSeparationHeat": null,
+  "survivalClosureVerified": false,
+  "boundary": "Historical runtime presence only. GT mB, ticks and EU are recipe values, not physical yield/heat/phase equilibrium."
+}

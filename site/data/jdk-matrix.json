@@ -1,0 +1,28 @@
+[
+  {
+    "jdk": 21,
+    "jarSha256": "7db52b295908a4df7d34a9087739cf8a5662402008e6b1cac5030b693952defd",
+    "ready": true,
+    "wallSecondsToReady": 30.03,
+    "exitCode": 0,
+    "log": "jdk21-7db52b295908.log",
+    "evidence": [
+      "[16:39:05] [Server thread/INFO] [gtnhoc]: GTNH-OC toolkit selftest: PASS: CDK 2.9 / oc-identity-v1-cdk2.9-inchi1.06; 20 structures; parse/identity/SMARTS/2D; cold check ms=163",
+      "[16:39:19] [Server thread/INFO]: Done (0.957s)! For help, type \"help\" or \"?\"",
+      "[16:39:21] [Server thread/INFO] [gtnhoc]: GTNH-OC world dictionary: size=20 quarantined=false"
+    ]
+  },
+  {
+    "jdk": 25,
+    "jarSha256": "7db52b295908a4df7d34a9087739cf8a5662402008e6b1cac5030b693952defd",
+    "ready": true,
+    "wallSecondsToReady": 28.03,
+    "exitCode": 0,
+    "log": "jdk25-7db52b295908.log",
+    "evidence": [
+      "[16:39:35] [Server thread/INFO] [gtnhoc]: GTNH-OC toolkit selftest: PASS: CDK 2.9 / oc-identity-v1-cdk2.9-inchi1.06; 20 structures; parse/identity/SMARTS/2D; cold check ms=159",
+      "[16:39:48] [Server thread/INFO]: Done (1.011s)! For help, type \"help\" or \"?\"",
+      "[16:39:50] [Server thread/INFO] [gtnhoc]: GTNH-OC world dictionary: size=20 quarantined=false"
+    ]
+  }
+]

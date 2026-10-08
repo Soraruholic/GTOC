@@ -1,0 +1,202 @@
+{
+  "schema": "oc-compound-extension-coupling-1",
+  "base": "oc-compound-catalog-2.1",
+  "compounds": [
+    {
+      "slug": "ethane",
+      "name": "乙烷",
+      "smiles": "CC",
+      "formula": "C2H6",
+      "kind": "molecular",
+      "charge": 0,
+      "capability": "va-coupling-stoichiometric-teaching",
+      "stereo": "Formal Mg components track equivalents and provenance, not unique covalent structures or solution speciation",
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "elements": {
+        "C": 2,
+        "H": 6
+      },
+      "recordId": "ocv2:4e51ebeba4ebe2c7d2d81a1605b573a6fd9fd57094bd2f4055c40b249b35cb8c"
+    },
+    {
+      "slug": "diethyl-ether",
+      "name": "乙醚",
+      "smiles": "CCOCC",
+      "formula": "C4H10O",
+      "kind": "molecular",
+      "charge": 0,
+      "capability": "va-coupling-stoichiometric-teaching",
+      "stereo": "Formal Mg components track equivalents and provenance, not unique covalent structures or solution speciation",
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "elements": {
+        "C": 4,
+        "H": 10,
+        "O": 1
+      },
+      "recordId": "ocv2:9ed1810a5d42ad6ca4cbb7d7a55fe7ba639905c8f08efc55578b78540ac1da05"
+    },
+    {
+      "slug": "sulfuric-acid",
+      "name": "硫酸形式投料",
+      "smiles": "O=S(=O)(O)O",
+      "formula": "H2O4S",
+      "kind": "molecular",
+      "charge": 0,
+      "capability": "va-coupling-stoichiometric-teaching",
+      "stereo": "Formal Mg components track equivalents and provenance, not unique covalent structures or solution speciation",
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "elements": {
+        "H": 2,
+        "O": 4,
+        "S": 1
+      },
+      "recordId": "ocv2:dee6a1631d5133b166e4f604f4c49e23978726020df2ee1b94d13031851581f9"
+    },
+    {
+      "slug": "ethylmagnesium-bromide",
+      "name": "乙基溴化镁有效组分",
+      "smiles": null,
+      "formula": "C2H5MgBr",
+      "kind": "formal-component",
+      "charge": 0,
+      "capability": "va-coupling-stoichiometric-teaching",
+      "stereo": "Formal Mg components track equivalents and provenance, not unique covalent structures or solution speciation",
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "elements": {
+        "C": 2,
+        "H": 5,
+        "Mg": 1,
+        "Br": 1
+      },
+      "recordId": "ocv2:78ad4d412197cea738792c0004d7b511dc87a80655a1f7d51f1b0031c8ff3195"
+    },
+    {
+      "slug": "c6-mono-magnesium",
+      "name": "C6 羟氧镁化形式组分",
+      "smiles": null,
+      "formula": "C6H7MgBrO",
+      "kind": "formal-component",
+      "charge": 0,
+      "capability": "va-coupling-stoichiometric-teaching",
+      "stereo": "Formal Mg components track equivalents and provenance, not unique covalent structures or solution speciation",
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "elements": {
+        "C": 6,
+        "H": 7,
+        "Mg": 1,
+        "Br": 1,
+        "O": 1
+      },
+      "recordId": "ocv2:95bbf88b8dad6066c49af4ac8c34cfc6ba4e3c2dc50d5e7eff0a3f86407db1bf"
+    },
+    {
+      "slug": "c6-di-magnesium",
+      "name": "C6 双活化形式组分",
+      "smiles": null,
+      "formula": "C6H6Mg2Br2O",
+      "kind": "formal-component",
+      "charge": 0,
+      "capability": "va-coupling-stoichiometric-teaching",
+      "stereo": "Formal Mg components track equivalents and provenance, not unique covalent structures or solution speciation",
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "elements": {
+        "C": 6,
+        "H": 6,
+        "Mg": 2,
+        "Br": 2,
+        "O": 1
+      },
+      "recordId": "ocv2:ceb5476a7ce295b24ab5804574e888ab937211828f044e2aa873339ccaeb043e"
+    },
+    {
+      "slug": "c20-di-magnesium",
+      "name": "C20 双镁醇盐形式组分",
+      "smiles": null,
+      "formula": "C20H28Mg2Br2O2",
+      "kind": "formal-component",
+      "charge": 0,
+      "capability": "va-coupling-stoichiometric-teaching",
+      "stereo": "Formal Mg components track equivalents and provenance, not unique covalent structures or solution speciation",
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "elements": {
+        "C": 20,
+        "H": 28,
+        "Mg": 2,
+        "Br": 2,
+        "O": 2
+      },
+      "recordId": "ocv2:3855f28e4479982910019ef1f0649e14f5260edd20a3cfddbd04cb566af96c66"
+    },
+    {
+      "slug": "magnesium-hydroxy-bromide",
+      "name": "水失活 MgBrOH 形式组分",
+      "smiles": null,
+      "formula": "MgBrOH",
+      "kind": "formal-component",
+      "charge": 0,
+      "capability": "va-coupling-stoichiometric-teaching",
+      "stereo": "Formal Mg components track equivalents and provenance, not unique covalent structures or solution speciation",
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "elements": {
+        "Mg": 1,
+        "Br": 1,
+        "O": 1,
+        "H": 1
+      },
+      "recordId": "ocv2:e2b9911e2dc99966f7efef50e45b40cf66694bcf87f945b239479047ff47825b"
+    },
+    {
+      "slug": "magnesium-sulfate",
+      "name": "硫酸镁形式组分",
+      "smiles": null,
+      "formula": "MgSO4",
+      "kind": "formal-component",
+      "charge": 0,
+      "capability": "va-coupling-stoichiometric-teaching",
+      "stereo": "Formal Mg components track equivalents and provenance, not unique covalent structures or solution speciation",
+      "parameters": {
+        "densityKgM3": null,
+        "heatCapacityJMolK": null,
+        "formationEnthalpyJMol": null
+      },
+      "elements": {
+        "Mg": 1,
+        "S": 1,
+        "O": 4
+      },
+      "recordId": "ocv2:9e511745e7aea45a618f8e6cd2290661f77c76d0ac0bca4cc86c4f6233ea7414"
+    }
+  ]
+}

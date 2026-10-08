@@ -1,0 +1,342 @@
+{
+  "schema": "oc-organic-ai-review-1",
+  "reviewDate": "2026-10-04",
+  "reviewer": {
+    "type": "AI_agent",
+    "role": "organic_chemistry_source_and_structure_review",
+    "independentTaskFromImplementer": true,
+    "humanExpertSignoff": false,
+    "modelErrorIndependenceGuaranteed": false
+  },
+  "verdict": "conditional_educational_release_with_required_corrections_and_boundaries",
+  "humanSignoff": {
+    "status": "not_performed",
+    "reviewer": null,
+    "date": null
+  },
+  "sources": [
+    {
+      "id": "ORG-S1",
+      "title": "PubChem alpha-ionone CID 5282108",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5282108",
+      "kind": "database_record",
+      "readStatus": "read",
+      "locator": "PUG REST Properties: ConnectivitySMILES and IUPACName",
+      "snapshot": "research/industrial-review/alpha-pubchem.raw",
+      "sha256": "cce94e638209580942d14386a40f295f1e8aaacb23b0b3019eba4f7e6f71aebf"
+    },
+    {
+      "id": "ORG-S2",
+      "title": "PubChem beta-ionone CID 638014",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/638014",
+      "kind": "database_record",
+      "readStatus": "read",
+      "locator": "PUG REST Properties: ConnectivitySMILES and IUPACName",
+      "snapshot": "research/industrial-review/beta-pubchem.raw",
+      "sha256": "4ec0c3e8968ca83247004d23a29d2af34cc10e7e1d4b9c76c99761fd9e996d29"
+    },
+    {
+      "id": "ORG-S3",
+      "title": "McMurry / OpenStax Organic Chemistry section 23.3",
+      "url": "https://openstax.org/books/organic-chemistry/pages/23-3-dehydration-of-aldol-products-synthesis-of-enones",
+      "kind": "secondary_textbook",
+      "readStatus": "read",
+      "locator": "Basic aldol dehydration paragraph; E1cB and conjugated enones",
+      "snapshot": "research/industrial-review/openstax-aldol.raw",
+      "sha256": "75dd0722d8954666befde44ba0fbf81aa77f7be005d592026a3c4dbbd229a2f6"
+    },
+    {
+      "id": "ORG-S4",
+      "title": "WO2022104581A1",
+      "url": "https://patents.google.com/patent/WO2022104581A1/zh",
+      "kind": "primary_patent_claim",
+      "readStatus": "read",
+      "locator": "Description: invention, implementation, example 1, comparative examples",
+      "snapshot": "research/industrial-review/WO2022104581A1.raw",
+      "sha256": "e5d872c8143466dd73d97f31f01541465dcc11abe0633635d5f6eb32c8bf0ac0"
+    },
+    {
+      "id": "ORG-S5",
+      "title": "CN111138261A",
+      "url": "https://patents.google.com/patent/CN111138261A/zh",
+      "kind": "primary_patent_claim",
+      "readStatus": "read",
+      "locator": "Description: invention and example 1",
+      "snapshot": "research/industrial-review/CN111138261A.raw",
+      "sha256": "fd7f9206c1abbe29adf5709dd624a9370cd96d699905d419d45e9f9197a15e60"
+    },
+    {
+      "id": "ORG-S6",
+      "title": "CN108329200A",
+      "url": "https://patents.google.com/patent/CN108329200A/zh",
+      "kind": "primary_patent_claim",
+      "readStatus": "read",
+      "locator": "Description: background alpha/beta/gamma, isomerization, examples 1-3",
+      "snapshot": "research/industrial-review/CN108329200A.raw",
+      "sha256": "f8d991dd6b5e1a5147fcf3e36a2615d83289083d869c074960acad98a15e5e07"
+    },
+    {
+      "id": "ORG-S7",
+      "title": "Russell and Kenyon, Pseudoionone, Organic Syntheses 1943",
+      "url": "https://doi.org/10.15227/orgsyn.023.0078",
+      "kind": "primary_procedure",
+      "readStatus": "access_challenge_only",
+      "locator": "Existing local orgsyn-pseudoionone and orgsyn-ionone files only contain Browser check",
+      "snapshot": "research/vitamin-a/orgsyn-pseudoionone.html",
+      "sha256": "7c3697d109efc7a77589a1022a56862b66f437abe29c63b57eaf74cbb25b2b79"
+    },
+    {
+      "id": "ORG-S8",
+      "title": "Noda et al. 1998, Aldol condensation of citral with acetone on basic solid catalysts",
+      "url": "https://doi.org/10.1590/S0104-66321998000200004",
+      "kind": "primary_article",
+      "readStatus": "identified_not_read",
+      "locator": "DOI and SciELO fetch timed out; no numeric claims used"
+    },
+    {
+      "id": "ORG-S9",
+      "title": "CN103524317A",
+      "url": "https://patents.google.com/patent/CN103524317A/zh",
+      "kind": "primary_patent_claim",
+      "readStatus": "read_not_adopted",
+      "locator": "Supercritical acetone conditions differ; qualitative acidity/catalysis assertions not adopted",
+      "snapshot": "research/industrial-review/CN103524317A.raw",
+      "sha256": "d7f6aa44712226bc802718e40f83f0fa0547b1ed0d007f4304a1e4dd9c8bbde3"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C-U07-GRAPH",
+      "claim": "Current six-state U07 electron-pair edits conserve explicit atoms/formula/charge and reach pseudoionone connectivity.",
+      "assessment": "pass_discrete_graph_only",
+      "evidence": [
+        "organic-structure-check.json"
+      ]
+    },
+    {
+      "id": "C-U07-MECHANISM",
+      "claim": "Aldol addition followed by base-mediated E1cB dehydration is a suitable candidate teaching pathway.",
+      "assessment": "supported_teaching_pattern_not_condition_validated",
+      "sources": [
+        "ORG-S3",
+        "ORG-S4"
+      ]
+    },
+    {
+      "id": "C-U08-NET",
+      "claim": "Acid-promoted pseudoionone cyclization has industrial process precedents.",
+      "assessment": "supported_net_operation_not_unique_micro_pathway",
+      "sources": [
+        "ORG-S5",
+        "ORG-S6"
+      ]
+    },
+    {
+      "id": "C-ALPHA-BETA",
+      "claim": "Current alpha/beta SMILES match corresponding PubChem connectivity after removal of stereochemistry.",
+      "assessment": "pass",
+      "sources": [
+        "ORG-S1",
+        "ORG-S2"
+      ],
+      "evidence": [
+        "organic-structure-check.json"
+      ]
+    },
+    {
+      "id": "C-STEREO",
+      "claim": "Alpha/beta positional identity certifies E/Z or all-trans composition.",
+      "assessment": "reject",
+      "reason": "Constitutional identity and stereochemical evidence are distinct."
+    },
+    {
+      "id": "C-YIELD",
+      "claim": "Current model conversion/partition values predict real yields.",
+      "assessment": "reject",
+      "reason": "No calibration under model conditions; patent claims have different conditions."
+    },
+    {
+      "id": "C-GAMMA",
+      "claim": "Alpha and beta are the complete U08 product spectrum.",
+      "assessment": "reject",
+      "sources": [
+        "ORG-S6"
+      ]
+    },
+    {
+      "id": "C-AI",
+      "claim": "AI candidates or endpoint/TS calculations may autonomously create inventory or decide game selectivity.",
+      "assessment": "reject",
+      "reason": "Candidates require explicit reviewed catalog/model promotion and world-service authorization."
+    }
+  ],
+  "findings": [
+    {
+      "id": "ORG-01",
+      "severity": "medium",
+      "kind": "outdated_status",
+      "claim": "U07末帧称U08未实现",
+      "proposedWording": "U08净工序已实现；完整微观箭推与条件依赖选择性未验证。",
+      "locations": [
+        "scripts/build-ionone-lesson.py:27"
+      ],
+      "sources": [
+        "ORG-S4",
+        "ORG-S5"
+      ]
+    },
+    {
+      "id": "ORG-02",
+      "severity": "medium",
+      "kind": "display_mismatch",
+      "claim": "U08主式仅列beta端点，遗漏实际alpha分支与未反应尾料",
+      "proposedWording": "显示alpha/beta竞争支路和未反应物；单一beta式必须明确为端点示意。",
+      "locations": [
+        "docs/handbook/data/learning-catalog.json:reaction-U08",
+        "IononeProcess.act action 17"
+      ],
+      "sources": [
+        "ORG-S5",
+        "ORG-S6"
+      ]
+    },
+    {
+      "id": "ORG-03",
+      "severity": "high",
+      "kind": "required_boundary",
+      "claim": "上游unresolved E/Z不能被下游all-trans名称升级为实测身份",
+      "proposedWording": "质量凭证分别存declaredIdentity和stereochemistryEvidence；证据不足的严格all-trans出口应拒绝。",
+      "locations": [
+        "IononeProcess.GRADE",
+        "quality certificate contract"
+      ],
+      "sources": [
+        "ORG-S1",
+        "ORG-S2"
+      ]
+    },
+    {
+      "id": "ORG-04",
+      "severity": "high",
+      "kind": "required_boundary",
+      "claim": "0.8转化/0.7beta/0.95分配没有标定",
+      "proposedWording": "标注教学假设，区分反应进度、分支分配、分离回收率、收率、分析纯度。",
+      "locations": [
+        "IononeProcess.act actions 15/16/17/19"
+      ],
+      "sources": [
+        "ORG-S4",
+        "ORG-S5",
+        "ORG-S6"
+      ]
+    },
+    {
+      "id": "ORG-05",
+      "severity": "medium",
+      "kind": "source_status",
+      "claim": "OrgSyn存档只有访问检查页，不是已读正文",
+      "proposedWording": "逐条挂接已读来源；OrgSyn保留access_challenge_only。",
+      "locations": [
+        "docs/handbook/data/learning-catalog.json:U07/U08 sources V10",
+        "research/vitamin-a/orgsyn-pseudoionone.html"
+      ],
+      "sources": [
+        "ORG-S7",
+        "ORG-S4",
+        "ORG-S5",
+        "ORG-S6"
+      ]
+    },
+    {
+      "id": "ORG-06",
+      "severity": "medium",
+      "kind": "outdated_comment",
+      "claim": "PseudoiononeTrial已被世界工序调用而注释仍称没有world bridge",
+      "proposedWording": "注明纯净计量函数本身不操作世界，由服务显式落账；downstreamGate限研究旁路。",
+      "locations": [
+        "PseudoiononeTrial.java:8",
+        "PseudoiononeTrial.java:37"
+      ],
+      "sources": []
+    },
+    {
+      "id": "ORG-07",
+      "severity": "high",
+      "kind": "required_boundary",
+      "claim": "573J只覆盖稀水溶液中和参考，不是总热",
+      "proposedWording": "显热、未知反应焓、稀释/混合、分离和夹带水分项unknown，不自动换EU。",
+      "locations": [
+        "IononeProcess.act action16"
+      ],
+      "sources": [
+        "ORG-S4",
+        "ORG-S5"
+      ]
+    },
+    {
+      "id": "ORG-08",
+      "severity": "medium",
+      "kind": "required_boundary",
+      "claim": "U08未包含gamma/其他杂质与真实相分配",
+      "proposedWording": "称模型内alpha/beta支路；理想池零残余不等同测得零。",
+      "locations": [
+        "IononeProcess.act action17/19"
+      ],
+      "sources": [
+        "ORG-S6"
+      ]
+    }
+  ],
+  "remainingUnknowns": [
+    "U07 measured kinetics and microscopic pathway under declared solvent/conditions",
+    "U08 acid activity, temperature, mixing and alpha/beta/gamma selectivity",
+    "Resolved E/Z and alpha enantiomer composition",
+    "Real separation factors, entrained water/solvent and unmodeled impurities",
+    "Reaction/mixing/dilution/separation enthalpy and heat capacity",
+    "Full U08 atom-mapped micro-mechanism animation reviewed beyond this net-operation audit",
+    "Experiment-equivalent all-trans certification for final product"
+  ],
+  "researchBranch": {
+    "candidateQueueOnly": true,
+    "inventoryWriteAllowed": false,
+    "selectivityAuthority": false,
+    "promotionRequires": [
+      "explicit versioned model/catalog change",
+      "sources and review dispositions",
+      "atom/charge/identity checks",
+      "software acceptance and provenance preservation"
+    ]
+  },
+  "auditedFiles": [
+    {
+      "path": "scripts/build-ionone-lesson.py",
+      "sha256": "65556dcb53edc0bd63de46e826bd1cff285e137ad3ebe08cd067f20ea3884a85"
+    },
+    {
+      "path": "scripts/build-ionone-catalog.py",
+      "sha256": "e94c48324c36117238aa621f14e33d58a0b59dc5f325f93d92a946b6e7dcc9aa"
+    },
+    {
+      "path": "mod/src/main/resources/assets/gtnhoc/chem/ionone-compounds-v1.json",
+      "sha256": "d3d6bfd1ce5bd1ba5d49956e3b1901a0c5de78e5555afdf449d3245a6be383fb"
+    },
+    {
+      "path": "mod/src/main/java/org/gtnhoc/chem/process/v2/IononeProcess.java",
+      "sha256": "bcabe3ad338f8ef2f7083258ab21d94af1078e5d5ada7723b7bb5ba926e698e4"
+    },
+    {
+      "path": "mod/src/main/java/org/gtnhoc/chem/process/v2/PseudoiononeTrial.java",
+      "sha256": "d71b6467302c80f10982de7d347edc973ee1490d267d5c4f1000014362fb0e51"
+    },
+    {
+      "path": "docs/handbook/data/vitamin-a/ionone-lesson.json",
+      "sha256": "4acc9638b8292aae6c4e0f05eaba38c2f3e0712f11d237541ab2f57fc3bb874c"
+    },
+    {
+      "path": "docs/handbook/data/learning-catalog.json",
+      "sha256": "832c3025cab7edad1ebe4bbe499eccd3f8cdb295f1f6b41042b57baaee8b10d5"
+    }
+  ],
+  "structuralEvidence": "research/industrial-review/organic-structure-check.json",
+  "report": "research/industrial-review/organic-review.md"
+}

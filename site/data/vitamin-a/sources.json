@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-03",
+  "scope": "Research design; primary full text, patent descriptions, identity records and source-code audit distinguished from metadata-only references",
+  "gtnhSourceTag": "5.09.54.20",
+  "gtnhArchiveSha256": "5023958870f5b8218deff2dc9399130b50ae28f768c1df122a686c551b9a6821",
+  "sources": [
+    {"id":"V01","title":"Coumans 等 · Hydroxenin 选择性乙酰化，ACS Omega (2018)","url":"https://doi.org/10.1021/acsomega.8b02234","readStatus":"已读全文 JATS / PMC6643479","supports":"Roche 路线背景；伯羟基单乙酰化与二乙酰化竞争；吡啶与固体催化剂研究。","boundary":"文中具体温度、用量和循环收率只适用于其试验，不是全线收率或默认游戏参数。"},
+    {"id":"V02","title":"EP2225193B1 · C6 烯炔醇与维生素 A 路线","url":"https://patents.google.com/patent/EP2225193B1/en","readStatus":"已读专利描述全文","supports":"C6 重排与几何异构问题；C14+C6、部分加氢、乙酰化、脱水重排与结晶的路线顺序。","boundary":"专利条件不等于独立测得的通用动力学。"},
+    {"id":"V03","title":"WO2008095724A1 · 烯丙基重排","url":"https://patents.google.com/patent/WO2008095724A1/en","readStatus":"已读专利描述全文","supports":"C6 叔醇经重排得到伯烯炔醇，需处理 E/Z 混合物。","boundary":"所述约 85:15 的比例不能被当作普适平衡常数或实际游戏收率。"},
+    {"id":"V04","title":"CN108929211B · 维生素 A C14 醛的制备","url":"https://patents.google.com/patent/CN108929211B/zh","readStatus":"已读中文专利描述全文","supports":"C14 共轭醛命名与 Darzens / 水解 / 后处理流程。","boundary":"管式工艺参数不能直接当作搅拌釜普适条件；详细立体与微观机制仍待审。"},
+    {"id":"V05","title":"CN105541549B · 另一条维生素 A 工艺变体","url":"https://patents.google.com/patent/CN105541549B/zh","readStatus":"已读中文专利描述全文","supports":"显示 C6 几何异构及还原方案与路线选择相关。","boundary":"用于对比；不将其锌还原变体混入本页的基准部分氢化路线。"},
+    {"id":"V06","title":"PubChem CID 638034 · all-trans retinyl acetate","url":"https://pubchem.ncbi.nlm.nih.gov/compound/638034","readStatus":"PUG REST 身份记录已取得","supports":"C22H32O2、明确立体 SMILES、InChIKey QGNJRVVDBSJHIZ-QHLGVNSISA-N。","boundary":"仅证明目标结构身份；不证明过程选择性或实物样品纯度。"},
+    {"id":"V07","title":"Parker / Smith / Baxendale · 工业维生素 A 合成综述 (2016)","url":"https://doi.org/10.1016/j.tet.2016.02.029","readStatus":"仅核实元数据 · 未读全文","supports":"已核实题名、作者、期刊与 DOI，可作为下一轮综述入口。","boundary":"仓储全文访问受阻，本轮不以未读内容支撑具体工艺断言。"},
+    {"id":"V08","title":"Isler 等 · Synthese des Vitamin A (1947)","url":"https://doi.org/10.1002/hlca.19470300666","readStatus":"V01 参考文献中核实书目信息","supports":"历史原始工作线索。","boundary":"本轮未读原文；US2451739A 同样未成功取得全文。"},
+    {"id":"V09","title":"GT5-Unofficial 5.09.54.20 · 材料与配方源码","url":"https://github.com/GTNewHorizons/GT5-Unofficial/tree/5.09.54.20","readStatus":"固定标签 · 431 个选取的源码文件","supports":"原生材料、部分实际配方、电压/线圈/机壳条件及溴的高阶供给门槛。","boundary":"不是整个整合包运行时导出；存在材料符号不证明生存可达性，仍需实际注册表审计。"},
+    {"id":"V10","title":"Ionone / Meyer–Schuster · 候选前驱检索入口","url":"https://en.wikipedia.org/wiki/Ionone","readStatus":"辅助二手来源已读","supports":"柠檬醛与丙酮经假紫罗兰酮到紫罗兰酮的路线背景；结合重排词条形成候选前驱计划。","boundary":"U01–U06 的工业工况与选择性未冻结；引用的 Organic Syntheses 和重排综述原文尚未核实。"}
+  ],
+  "reactionSources": {
+    "U06":["V10"],"U07":["V10"],"U08":["V10"],
+    "A02":["V04"],"A03":["V04"],"A04":["V04"],
+    "B03":["V02","V03"],"B04":["V02","V03"],
+    "S05":["V02"],"C01":["V02"],"C02":["V02"],"C03":["V02"],
+    "D01":["V01","V02"],"E01":["V01"],"E02":["V01"],"E03":["V01","V02"]
+  }
+}

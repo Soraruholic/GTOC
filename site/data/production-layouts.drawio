@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" agent="GTNH-OC curriculum builder" version="24.7.17">
+  <diagram id="ester" name="乙酸乙酯">
+    <mxGraphModel grid="1" gridSize="10" page="1" pageWidth="1500" pageHeight="1800">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="乙酸乙酯 · 建议俯视布局（+X 向右，+Z 向下）" style="text;html=0;fontSize=22;align=left;" vertex="1" parent="1">
+          <mxGeometry x="50" y="25" width="1250" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="note" value="相对格坐标见网页。每排从玩家 Z+3 沿 +X 放置；工段之间通过 UUID / 库存事务交接，无虚构管道。" style="text;html=0;fontSize=14;align=left;" vertex="1" parent="1">
+          <mxGeometry x="50" y="85" width="1250" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="plant-c" value="C&#10;C · 产线控制器&#10;(0,0,3)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#387b78;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="60" y="275" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="plant-f" value="F&#10;F · 计量进料口&#10;(1,0,3)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#387b78;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="142" y="275" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="plant-r" value="R&#10;R · 酸催化反应釜&#10;(2,0,3)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#387b78;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="224" y="275" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="plant-d" value="D&#10;D · 蒸馏与冷凝&#10;(3,0,3)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#387b78;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="306" y="275" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="plant-w" value="W&#10;W · 水洗与分相&#10;(4,0,3)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#387b78;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="388" y="275" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="plant-a" value="A&#10;A · 有限容量干燥&#10;(5,0,3)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#387b78;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="470" y="275" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="plant-p" value="P&#10;P · 成品收集器&#10;(6,0,3)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#387b78;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="552" y="275" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="plant-t" value="T&#10;T · 釜底与废液&#10;(7,0,3)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#387b78;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="634" y="275" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="tank" value="F 正上方：(1,1,3)&#10;一次一只定量罐；底面 Push" style="rounded=1;html=0;whiteSpace=wrap;fillColor=#f5e3c5;" vertex="1" parent="1">
+          <mxGeometry x="80" y="165" width="260" height="75" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="vitamin-a" name="维生素 A 乙酸酯">
+    <mxGraphModel grid="1" gridSize="10" page="1" pageWidth="1500" pageHeight="1800">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="维生素 A 乙酸酯 · 建议俯视布局（+X 向右，+Z 向下）" style="text;html=0;fontSize=22;align=left;" vertex="1" parent="1">
+          <mxGeometry x="50" y="25" width="1250" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="note" value="相对格坐标见网页。每排从玩家 Z+3 沿 +X 放置；工段之间通过 UUID / 库存事务交接，无虚构管道。" style="text;html=0;fontSize=14;align=left;" vertex="1" parent="1">
+          <mxGeometry x="50" y="85" width="1250" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="coupling-0" value="0&#10;C6 干燥 / 投料&#10;(0,0,3)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#387b78;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="60" y="275" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="coupling-1" value="1&#10;双活化釜&#10;(1,0,3)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#387b78;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="142" y="275" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="coupling-2" value="2&#10;乙烷收集缓冲&#10;(2,0,3)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#387b78;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="224" y="275" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="coupling-3" value="3&#10;C14 计量罐&#10;(3,0,3)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#387b78;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="306" y="275" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="coupling-4" value="4&#10;C14/C6 偶联釜&#10;(4,0,3)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#387b78;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="388" y="275" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="coupling-5" value="5&#10;酸性后处理&#10;(5,0,3)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#387b78;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="470" y="275" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="coupling-6" value="6&#10;C20 中间料分析&#10;(6,0,3)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#387b78;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="552" y="275" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="coupling-7" value="7&#10;废液 / 残余缓冲&#10;(7,0,3)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#387b78;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="634" y="275" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="lines-0" value="0&#10;计量储罐&#10;(0,0,7)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#b77948;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="60" y="435" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="lines-1" value="1&#10;夹套乙酰化釜&#10;(1,0,7)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#b77948;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="142" y="435" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="lines-2" value="2&#10;过滤器 / 滤饼&#10;(2,0,7)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#b77948;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="224" y="435" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="lines-3" value="3&#10;教学分离器&#10;(3,0,7)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#b77948;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="306" y="435" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="lines-4" value="4&#10;中间体分析 / 包装&#10;(4,0,7)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#b77948;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="388" y="435" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="lines-5" value="5&#10;回收 / 废液缓冲&#10;(5,0,7)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#b77948;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="470" y="435" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="chain-0" value="0&#10;工段接收 / 辅料&#10;(0,0,11)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#647aab;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="60" y="595" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="chain-1" value="1&#10;选择性加氢釜&#10;(1,0,11)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#647aab;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="142" y="595" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="chain-2" value="2&#10;催化剂过滤 / 交接&#10;(2,0,11)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#647aab;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="224" y="595" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="chain-3" value="3&#10;脱水重排釜&#10;(3,0,11)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#647aab;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="306" y="595" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="chain-4" value="4&#10;结晶 / 成品分析&#10;(4,0,11)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#647aab;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="388" y="595" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="chain-5" value="5&#10;母液 / 废料 / 催化剂&#10;(5,0,11)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#647aab;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="470" y="595" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="supply-0" value="0&#10;原生单元进料站&#10;(0,0,15)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#968051;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="60" y="755" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="supply-1" value="1&#10;羟醛 / 脱水釜&#10;(1,0,15)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#968051;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="142" y="755" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="supply-2" value="2&#10;乙炔化 / 后处理釜&#10;(2,0,15)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#968051;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="224" y="755" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="supply-3" value="3&#10;C6 烯丙基重排釜&#10;(3,0,15)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#968051;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="306" y="755" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="supply-4" value="4&#10;Z-C6 分离 / 交接&#10;(4,0,15)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#968051;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="388" y="755" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="supply-5" value="5&#10;残余 / 废液 / 气体&#10;(5,0,15)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#968051;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="470" y="755" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="darzens-0" value="0&#10;C14 原料计量&#10;(0,0,19)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#6b9973;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="60" y="915" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="darzens-1" value="1&#10;Darzens 缩合釜&#10;(1,0,19)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#6b9973;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="142" y="915" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="darzens-2" value="2&#10;环氧酯水解釜&#10;(2,0,19)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#6b9973;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="224" y="915" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="darzens-3" value="3&#10;酸化 / 脱羧 / 异构&#10;(3,0,19)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#6b9973;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="306" y="915" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="darzens-4" value="4&#10;C14 分离 / 双支线交接&#10;(4,0,19)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#6b9973;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="388" y="915" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="darzens-5" value="5&#10;分流残余 / 盐 / 气体&#10;(5,0,19)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#6b9973;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="470" y="915" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="upstream-0" value="0&#10;原生原辅料接收&#10;(0,0,23)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#967298;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1075" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="upstream-1" value="1&#10;C5 乙炔化 / 后处理&#10;(1,0,23)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#967298;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="142" y="1075" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="upstream-2" value="2&#10;C5 选择性半加氢&#10;(2,0,23)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#967298;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="224" y="1075" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="upstream-3" value="3&#10;A01 酯化 / 分离&#10;(3,0,23)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#967298;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="306" y="1075" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="upstream-4" value="4&#10;A01 与辅料交接&#10;(4,0,23)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#967298;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="388" y="1075" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="upstream-5" value="5&#10;残余 / 催化剂 / 气体&#10;(5,0,23)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#967298;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="470" y="1075" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="upstream-6" value="6&#10;U03 Claisen / 酸化&#10;(6,0,23)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#967298;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="552" y="1075" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="upstream-7" value="7&#10;U04 Carroll&#10;(7,0,23)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#967298;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="634" y="1075" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="upstream-8" value="8&#10;C8 理想分配&#10;(8,0,23)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#967298;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="716" y="1075" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="upstream-9" value="9&#10;U05 C10 炔醇&#10;(9,0,23)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#967298;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="798" y="1075" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="upstream-10" value="10&#10;U06 柠檬醛候选&#10;(10,0,23)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#967298;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="880" y="1075" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="upstream-11" value="11&#10;碳链残余 / 气体&#10;(11,0,23)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#967298;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="962" y="1075" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="upstream-12" value="12&#10;U06 后处理 / β 资格池&#10;(12,0,23)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#967298;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="1044" y="1075" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="upstream-13" value="13&#10;U07 羟醛 / 中和&#10;(13,0,23)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#967298;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="1126" y="1075" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="upstream-14" value="14&#10;U08 环化 / 中和&#10;(14,0,23)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#967298;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="1208" y="1075" width="78" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="upstream-15" value="15&#10;α / 未反应 / 盐水残余&#10;(15,0,23)" style="rounded=1;whiteSpace=wrap;html=0;fontSize=10;fillColor=#967298;fontColor=#ffffff;strokeColor=#29483c;" vertex="1" parent="1">
+          <mxGeometry x="1290" y="1075" width="78" height="95" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

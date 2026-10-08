@@ -1,0 +1,65 @@
+{
+  "cases": {
+    "0": {
+      "acetone": 1.000000000000000,
+      "citral": 0.333557935200000,
+      "sodium-hydroxide": 0.01
+    },
+    "0.25": {
+      "acetone": 0.91661051620000000,
+      "citral": 0.25016845140000000,
+      "pseudoionone": 0.08338948380000000,
+      "sodium-hydroxide": 0.01,
+      "water": 0.08338948380000000
+    },
+    "0.50": {
+      "acetone": 0.83322103240000000,
+      "citral": 0.16677896760000000,
+      "pseudoionone": 0.16677896760000000,
+      "sodium-hydroxide": 0.01,
+      "water": 0.16677896760000000
+    },
+    "0.75": {
+      "acetone": 0.74983154860000000,
+      "citral": 0.08338948380000000,
+      "pseudoionone": 0.25016845140000000,
+      "sodium-hydroxide": 0.01,
+      "water": 0.25016845140000000
+    },
+    "1": {
+      "acetone": 0.666442064800000,
+      "pseudoionone": 0.333557935200000,
+      "sodium-hydroxide": 0.01,
+      "water": 0.333557935200000
+    }
+  },
+  "conditioning": "Ideal selective citral split, uncalibrated and not implemented in game; acid/catalysts remain in residual",
+  "conditioningResidual": {
+    "dehydrolinalool": 0.222371956800000,
+    "molybdenyl-acetylacetonate": 0.01,
+    "tert-butylbenzoic-acid": 0.2,
+    "toluene": 2,
+    "triphenylphosphine-oxide": 0.2
+  },
+  "elementBalance": true,
+  "externalAdditions": [
+    "1 mol acetone",
+    "0.01 mol sodium-hydroxide"
+  ],
+  "gate": "U08_REQUIRED: acid cyclization, alpha/beta identity, stereochemical qualification and separation pending",
+  "input": {
+    "acetone": 1,
+    "citral": 0.333557935200000,
+    "sodium-hydroxide": 0.01
+  },
+  "mode": "read-only research; no world commit, yield prediction or stereo assignment",
+  "sourceMixture": {
+    "citral": 0.333557935200000,
+    "dehydrolinalool": 0.222371956800000,
+    "molybdenyl-acetylacetonate": 0.01,
+    "tert-butylbenzoic-acid": 0.2,
+    "toluene": 2,
+    "triphenylphosphine-oxide": 0.2
+  },
+  "worldUnchanged": true
+}

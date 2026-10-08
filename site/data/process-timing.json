@@ -1,0 +1,211 @@
+{
+  "scope": "Standalone deployed engine on server host; excludes JVM startup, Minecraft ticks, worker queue and network. First run includes engine class initialization.",
+  "java": "17.0.20.1",
+  "modelReactionSeconds": 600,
+  "stepCount": 11,
+  "runs": [
+    {
+      "run": 1,
+      "seconds": 0.105938241,
+      "stages": [
+        {
+          "stage": "REACTED",
+          "washes": 0,
+          "seconds": 0.015826417
+        },
+        {
+          "stage": "DISTILLED",
+          "washes": 0,
+          "seconds": 0.037048362
+        },
+        {
+          "stage": "WASHING",
+          "washes": 1,
+          "seconds": 0.005965588
+        },
+        {
+          "stage": "WASHING",
+          "washes": 2,
+          "seconds": 0.004131758
+        },
+        {
+          "stage": "WASHING",
+          "washes": 3,
+          "seconds": 0.003171051
+        },
+        {
+          "stage": "WASHING",
+          "washes": 4,
+          "seconds": 0.002626306
+        },
+        {
+          "stage": "WASHING",
+          "washes": 5,
+          "seconds": 0.002296512
+        },
+        {
+          "stage": "WASHING",
+          "washes": 6,
+          "seconds": 0.001953809
+        },
+        {
+          "stage": "WASHING",
+          "washes": 7,
+          "seconds": 0.002296962
+        },
+        {
+          "stage": "WASHED",
+          "washes": 8,
+          "seconds": 0.002174838
+        },
+        {
+          "stage": "FINISHED",
+          "washes": 8,
+          "seconds": 0.000470477
+        }
+      ],
+      "productMol": [
+        0.003071429819946308,
+        0.01243281940551708,
+        0.22019268855419938,
+        0.0
+      ]
+    },
+    {
+      "run": 2,
+      "seconds": 0.061539655,
+      "stages": [
+        {
+          "stage": "REACTED",
+          "washes": 0,
+          "seconds": 0.005801069
+        },
+        {
+          "stage": "DISTILLED",
+          "washes": 0,
+          "seconds": 0.028815944
+        },
+        {
+          "stage": "WASHING",
+          "washes": 1,
+          "seconds": 0.007168004
+        },
+        {
+          "stage": "WASHING",
+          "washes": 2,
+          "seconds": 0.004655743
+        },
+        {
+          "stage": "WASHING",
+          "washes": 3,
+          "seconds": 0.003682821
+        },
+        {
+          "stage": "WASHING",
+          "washes": 4,
+          "seconds": 0.002743255
+        },
+        {
+          "stage": "WASHING",
+          "washes": 5,
+          "seconds": 0.002321825
+        },
+        {
+          "stage": "WASHING",
+          "washes": 6,
+          "seconds": 0.002105005
+        },
+        {
+          "stage": "WASHING",
+          "washes": 7,
+          "seconds": 0.002013216
+        },
+        {
+          "stage": "WASHED",
+          "washes": 8,
+          "seconds": 0.001911631
+        },
+        {
+          "stage": "FINISHED",
+          "washes": 8,
+          "seconds": 0.000312254
+        }
+      ],
+      "productMol": [
+        0.003071429819946308,
+        0.01243281940551708,
+        0.22019268855419938,
+        0.0
+      ]
+    },
+    {
+      "run": 3,
+      "seconds": 0.059128421,
+      "stages": [
+        {
+          "stage": "REACTED",
+          "washes": 0,
+          "seconds": 0.005760775
+        },
+        {
+          "stage": "DISTILLED",
+          "washes": 0,
+          "seconds": 0.028453838
+        },
+        {
+          "stage": "WASHING",
+          "washes": 1,
+          "seconds": 0.006374572
+        },
+        {
+          "stage": "WASHING",
+          "washes": 2,
+          "seconds": 0.004455125
+        },
+        {
+          "stage": "WASHING",
+          "washes": 3,
+          "seconds": 0.003254071
+        },
+        {
+          "stage": "WASHING",
+          "washes": 4,
+          "seconds": 0.002584482
+        },
+        {
+          "stage": "WASHING",
+          "washes": 5,
+          "seconds": 0.002250421
+        },
+        {
+          "stage": "WASHING",
+          "washes": 6,
+          "seconds": 0.002065996
+        },
+        {
+          "stage": "WASHING",
+          "washes": 7,
+          "seconds": 0.001899568
+        },
+        {
+          "stage": "WASHED",
+          "washes": 8,
+          "seconds": 0.00177088
+        },
+        {
+          "stage": "FINISHED",
+          "washes": 8,
+          "seconds": 0.000250463
+        }
+      ],
+      "productMol": [
+        0.003071429819946308,
+        0.01243281940551708,
+        0.22019268855419938,
+        0.0
+      ]
+    }
+  ],
+  "jarSha256": "b1446488e23284bf005f80c1156b71c1cdd85f0c3d7f7b10a5c1522f9083f2ad",
+  "date": "2026-10-03"
+}
