@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='utf8'?>
+<mxfile host="app.diagrams.net" version="24.7.17">
+  <diagram name="ester" id="ester">
+    <mxGraphModel page="1" pageWidth="2450" pageHeight="850">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="feed" value="乙酸 + 乙醇" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e1ece7;strokeColor=#527b70;fontSize=14;">
+          <mxGeometry x="35" y="210" width="150" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="acid" value="催化条件 / 耗材" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e1ece7;strokeColor=#527b70;fontSize=14;">
+          <mxGeometry x="35" y="80" width="150" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="react" value="Fischer 酯化" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e1ece7;strokeColor=#527b70;fontSize=14;">
+          <mxGeometry x="215" y="210" width="150" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="distill" value="蒸馏 + 冷凝" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e1ece7;strokeColor=#527b70;fontSize=14;">
+          <mxGeometry x="395" y="210" width="150" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="wash" value="水洗 + 分相" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e1ece7;strokeColor=#527b70;fontSize=14;">
+          <mxGeometry x="575" y="210" width="150" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="water" value="洗涤水" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e1ece7;strokeColor=#527b70;fontSize=14;">
+          <mxGeometry x="575" y="80" width="150" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="dry" value="干燥 + 质量门" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e1ece7;strokeColor=#527b70;fontSize=14;">
+          <mxGeometry x="755" y="210" width="150" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="product" value="乙酸乙酯批次" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e1ece7;strokeColor=#527b70;fontSize=14;">
+          <mxGeometry x="935" y="210" width="150" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="waste" value="水相 / 有机残余" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#f6ded3;strokeColor=#527b70;fontSize=14;">
+          <mxGeometry x="575" y="340" width="150" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" source="feed" target="react" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=block;strokeColor=#527b70;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" source="acid" target="react" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=block;strokeColor=#527b70;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" source="react" target="distill" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=block;strokeColor=#527b70;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" source="distill" target="wash" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=block;strokeColor=#527b70;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" source="water" target="wash" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=block;strokeColor=#527b70;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" source="wash" target="dry" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=block;strokeColor=#527b70;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" source="dry" target="product" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=block;strokeColor=#527b70;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" source="distill" target="waste" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=block;strokeColor=#527b70;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" source="wash" target="waste" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=block;strokeColor=#527b70;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" source="dry" target="waste" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=block;strokeColor=#527b70;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="vitamin-a" id="vitamin-a">
+    <mxGraphModel page="1" pageWidth="2450" pageHeight="850">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="feed" value="原生碳源与辅料" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e1ece7;strokeColor=#527b70;fontSize=14;">
+          <mxGeometry x="35" y="210" width="150" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" value="C5 炔醇 → 烯醇" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e1ece7;strokeColor=#527b70;fontSize=14;">
+          <mxGeometry x="215" y="210" width="150" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="claisen" value="U03 · β-酮酯" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e1ece7;strokeColor=#527b70;fontSize=14;">
+          <mxGeometry x="215" y="80" width="150" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="carroll" value="U04 · C8 酮" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e1ece7;strokeColor=#527b70;fontSize=14;">
+          <mxGeometry x="395" y="210" width="150" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="c10" value="U05 / U06 · 柠檬醛" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e1ece7;strokeColor=#527b70;fontSize=14;">
+          <mxGeometry x="575" y="210" width="150" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="u07" value="U07 · 假紫罗兰酮" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e1ece7;strokeColor=#527b70;fontSize=14;">
+          <mxGeometry x="755" y="210" width="150" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="u08" value="U08 · α / β 分流" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e1ece7;strokeColor=#527b70;fontSize=14;">
+          <mxGeometry x="935" y="210" width="150" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="haloester" value="A01 · 氯乙酸甲酯" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e1ece7;strokeColor=#527b70;fontSize=14;">
+          <mxGeometry x="935" y="80" width="150" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="c14" value="A02–A04 · C14 醛" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e1ece7;strokeColor=#527b70;fontSize=14;">
+          <mxGeometry x="1115" y="210" width="150" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="c6" value="B01–B04 · C6 支线" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e1ece7;strokeColor=#527b70;fontSize=14;">
+          <mxGeometry x="1115" y="340" width="150" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="couple" value="C14 + C6 · 偶联" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e1ece7;strokeColor=#527b70;fontSize=14;">
+          <mxGeometry x="1115" y="470" width="150" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="hydrogenate" value="部分加氢 / 过滤" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e1ece7;strokeColor=#527b70;fontSize=14;">
+          <mxGeometry x="935" y="470" width="150" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="acetylate" value="选择性乙酰化" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e1ece7;strokeColor=#527b70;fontSize=14;">
+          <mxGeometry x="755" y="470" width="150" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="finish" value="净重排 / 结晶" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e1ece7;strokeColor=#527b70;fontSize=14;">
+          <mxGeometry x="575" y="470" width="150" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="product" value="维生素 A 乙酸酯" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e1ece7;strokeColor=#527b70;fontSize=14;">
+          <mxGeometry x="395" y="470" width="150" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="retinol" value="视黄醇 / 夜视支线" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e1ece7;strokeColor=#527b70;fontSize=14;">
+          <mxGeometry x="215" y="470" width="150" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="waste" value="局部安全 → 分类回收" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#f6ded3;strokeColor=#527b70;fontSize=14;">
+          <mxGeometry x="755" y="600" width="150" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" source="feed" target="c5" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=block;strokeColor=#527b70;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" source="feed" target="claisen" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=block;strokeColor=#527b70;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" source="c5" target="carroll" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=block;strokeColor=#527b70;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" source="claisen" target="carroll" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=block;strokeColor=#527b70;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" source="carroll" target="c10" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=block;strokeColor=#527b70;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" source="c10" target="u07" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=block;strokeColor=#527b70;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" source="u07" target="u08" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=block;strokeColor=#527b70;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" source="u08" target="c14" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=block;strokeColor=#527b70;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" source="haloester" target="c14" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=block;strokeColor=#527b70;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" source="feed" target="haloester" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=block;strokeColor=#527b70;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" source="feed" target="c6" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=block;strokeColor=#527b70;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" source="c14" target="couple" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=block;strokeColor=#527b70;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" source="c6" target="couple" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=block;strokeColor=#527b70;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" source="couple" target="hydrogenate" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=block;strokeColor=#527b70;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" source="hydrogenate" target="acetylate" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=block;strokeColor=#527b70;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" source="acetylate" target="finish" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=block;strokeColor=#527b70;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" source="finish" target="product" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=block;strokeColor=#527b70;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" source="product" target="retinol" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=block;strokeColor=#527b70;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e18" source="u08" target="waste" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=block;strokeColor=#527b70;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e19" source="couple" target="waste" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=block;strokeColor=#527b70;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e20" source="finish" target="waste" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=block;strokeColor=#527b70;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

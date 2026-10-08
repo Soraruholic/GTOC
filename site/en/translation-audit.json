@@ -1,13 +1,13 @@
 {
-  "translatedSourceStrings": 869,
+  "translatedSourceStrings": 870,
   "pendingSourceStrings": 0,
-  "compounds": 102,
+  "compounds": 103,
   "reactions": 37,
   "equipment": 60,
   "lessons": 33,
   "states": 112,
   "scientificFieldsUnchanged": true,
   "independentChemistryReview": false,
-  "catalogSha256": "ba62b09b758b002e6163adf4b20fa47a754fbcab8d1d0f260fafe226f910ba69",
+  "catalogSha256": "2ed78e1515c935f489109af414e1c3b3fabcd014223d69f8a5c828749a258b14",
   "pending": []
 }

@@ -140,23 +140,24 @@
     }
   ],
   "coverage": {
-    "v2Registered": 81,
+    "v2Registered": 84,
     "v1Registered": 20,
-    "uniqueEntries": 102,
-    "researchOnly": 9,
+    "uniqueEntries": 103,
+    "researchOnly": 7,
     "equipment": 60,
     "vaEquipment": 48,
     "esterEquipment": 8,
     "otherDeviceOrConceptRecords": 4,
     "lessons": 33,
     "states": 112,
-    "molecular3d": 70,
+    "molecular3d": 72,
     "sourceHashes": {
       "carbon-compounds-v1.json": "a404be721d12817f8bf2298b803630c16cd2845b34f665e9fbf42b57cf7ca682",
       "chain-compounds-v1.json": "39548b05fb870e1ce93f54c13405739fbd34b05be33bb4e42d119392567db462",
       "coupling-compounds-v1.json": "a416eb12f81f7d31b582f7d39964025515d986e4ec72230de411aef705d753cf",
       "darzens-compounds-v1.json": "7c2477f656c509d8481c8d6e5fda2391dc07b607fde0693b64b8f30b96ab17fd",
       "ionone-compounds-v1.json": "d3d6bfd1ce5bd1ba5d49956e3b1901a0c5de78e5555afdf449d3245a6be383fb",
+      "retinol-compounds-v1.json": "8f0c5f9bd725910ab21585dadada6025de74966efb9bb40bebcd9e66db67ddc3",
       "supply-compounds-v1.json": "afd7dffee7851a02861e3c0831ff489aef404cdbd326c4be945a0a0b39c3a557",
       "upstream-compounds-v1.json": "2a8b324741675959926787cf42a44cb09b94724ce7bff89e67c56b7924fda5d2",
       "va-compounds-v1.json": "ba9dd7b830629927a580043ea17c9e36f24d1cb055699c108e78ec6a8d19f9c6"

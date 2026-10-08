@@ -1,0 +1,1131 @@
+{
+  "schema": "oc-learning-atlas-v1",
+  "liveServer": false,
+  "routes": [
+    {
+      "id": "ester",
+      "nodes": [
+        {
+          "id": "feed",
+          "name": "乙酸 + 乙醇",
+          "nameEn": "Acid + ethanol",
+          "step": "feed",
+          "x": 0,
+          "y": 1,
+          "kind": "source",
+          "input": "三个已经装料的 Ender IO 罐，底面 Push；一次只放一个。",
+          "chemistry": "OC 约定 1 mB=1 mL，n=ρV/M。水进入洗水储备，不会全被一次投进反应釜。",
+          "conditions": "共用 128 mol 进料上限；不接桶倾倒或 OC 成品瓶回注。",
+          "rate": "2–5 秒是外接罐传输和同步等待，不是反应动力学。",
+          "output": "空线累计约 [4.34873400, 4.26023759, 0, 55.34468518] mol（酸/醇/酯/水）。",
+          "check": "同时确认源罐与 F；罐空但 F 不足时先查管内残液，勿补发物料。",
+          "reactions": [],
+          "links": [],
+          "href": "ester-guide.html#step-feed"
+        },
+        {
+          "id": "acid",
+          "name": "催化条件 / 耗材",
+          "nameEn": "Catalyst / consumables",
+          "step": "materials",
+          "x": 0,
+          "y": 0,
+          "kind": "source",
+          "input": "乙酸 250 mB、乙醇 250 mB、水 1000 mB；一枚催化芯、一枚干燥芯和一块煤。多余料留在 F，每批只新取酸、醇各 1 mol。",
+          "chemistry": "乙酸的羧基与乙醇的羟基是反应角色；水是反应副产物，也是后续洗涤介质。",
+          "conditions": "流体必须为 aceticacid、bioethanol、water，不能带额外流体 Tag；容器自己的 tankContents 不是流体 Tag。",
+          "rate": "这是备料步骤，没有化学反应时间。250 mB 不是 0.25 教学 mol；这条线使用 25 °C 标称密度换算。",
+          "output": "原料还在罐/背包中；领取命令不直接增加 OC 库存。",
+          "check": "核对罐内种类、mB 和耗材；切勿把 VA 的单元当量套过来。",
+          "reactions": [],
+          "links": [],
+          "href": "ester-guide.html#step-materials"
+        },
+        {
+          "id": "react",
+          "name": "Fischer 酯化",
+          "nameEn": "Fischer esterification",
+          "step": "react",
+          "x": 1,
+          "y": 1,
+          "kind": "reaction",
+          "input": "新乙酸 1 mol + 新乙醇 1 mol；回流批还需加上整股 returnFeed。",
+          "chemistry": "羰基先活化，乙醇氧进攻；四面体中间体经质子传递、失水再生酸。水积累促进逆向水解。",
+          "conditions": "默认 T=345 K；催化芯为启用条件，未提供真实酸浓度。K(345 K)=4 和 ΔH°=−4 kJ/mol 均为教学设定。",
+          "rate": "dξ/dt = 0.025·n总·(a酸a醇−a酯a水/K)，aᵢ=γᵢxᵢ；600 模型秒，步长 0.25 s。0.025 为教学速率尺度，不是实测常数。无需现实等待 600 秒。",
+          "output": "默认出口酸/醇各 0.489879 mol，酯/水各 0.510121 mol。没有体积模型，不称为 mol/L 浓度。",
+          "check": "读出正逆反应驱动力；两对重合曲线是等摩尔关系，不是缺线。",
+          "reactions": [
+            "Fischer"
+          ],
+          "links": [
+            "process.html",
+            "fischer-lab.html#wiki-reactions",
+            "process-quality.html#heat"
+          ],
+          "href": "ester-guide.html#step-react"
+        },
+        {
+          "id": "distill",
+          "name": "蒸馏 + 冷凝",
+          "nameEn": "Distil + condense",
+          "step": "distill",
+          "x": 2,
+          "y": 1,
+          "kind": "separation",
+          "input": "整股 R 出口；可用教学热量。",
+          "chemistry": "单级 Rayleigh 间歇移走平衡蒸气、298.15 K 冷凝。它不是多塔板带回流精馏，非理想性与共沸使“沸点低就纯”不成立。",
+          "conditions": "默认压力 80 kPa，随组成求泡点；UNIFAC 与物性表仅在已验数值域使用。未处理酸蒸气缔合或全局 VLLE。",
+          "rate": "没有设备加工倒计时；这是阶段求解。温度、压力改变结果，不是加速按钮。",
+          "output": "参考馏出含酯 0.368901 mol；釜底含酯 0.141220 mol。整批加热约 58.523 kJ 是本模型账值，不含真实效率。",
+          "check": "馏出 + 釜底 = 反应出口；不能称馏出为纯酯。",
+          "reactions": [],
+          "links": [
+            "process.html"
+          ],
+          "href": "ester-guide.html#step-distill"
+        },
+        {
+          "id": "wash",
+          "name": "水洗 + 分相",
+          "nameEn": "Wash + settle",
+          "step": "wash",
+          "x": 3,
+          "y": 1,
+          "kind": "separation",
+          "input": "D 馏出物流 + F 中的洗水，默认总洗水约 4.728568 mol。",
+          "chemistry": "水优先带走部分酸/醇，也溶入部分酯；水相必须记入废液。模型以液液平衡寻找较低 Gibbs 能分相。",
+          "conditions": "298.15 K，原始 UNIFAC 数值模型；公开实验校准仍待完成。分相名称与组成要一起读。",
+          "rate": "没有校准混合/沉降时间；一次按钮代表一次求解，不是瞬间现实分层。",
+          "output": "八次后产品路线保留酯约 0.220193 mol；废液累计带走约 0.148708 mol 酯。",
+          "check": "解释为什么提高质量分数可以降低总收率；废液中的酯不删除。",
+          "reactions": [],
+          "links": [
+            "process.html",
+            "process-quality.html#lle-data"
+          ],
+          "href": "ester-guide.html#step-wash"
+        },
+        {
+          "id": "water",
+          "name": "洗涤水",
+          "nameEn": "Wash water",
+          "step": "materials",
+          "x": 3,
+          "y": 0,
+          "kind": "source",
+          "input": "乙酸 250 mB、乙醇 250 mB、水 1000 mB；一枚催化芯、一枚干燥芯和一块煤。多余料留在 F，每批只新取酸、醇各 1 mol。",
+          "chemistry": "乙酸的羧基与乙醇的羟基是反应角色；水是反应副产物，也是后续洗涤介质。",
+          "conditions": "流体必须为 aceticacid、bioethanol、water，不能带额外流体 Tag；容器自己的 tankContents 不是流体 Tag。",
+          "rate": "这是备料步骤，没有化学反应时间。250 mB 不是 0.25 教学 mol；这条线使用 25 °C 标称密度换算。",
+          "output": "原料还在罐/背包中；领取命令不直接增加 OC 库存。",
+          "check": "核对罐内种类、mB 和耗材；切勿把 VA 的单元当量套过来。",
+          "reactions": [],
+          "links": [],
+          "href": "ester-guide.html#step-materials"
+        },
+        {
+          "id": "dry",
+          "name": "干燥 + 质量门",
+          "nameEn": "Dry + quality gate",
+          "step": "dry",
+          "x": 4,
+          "y": 1,
+          "kind": "separation",
+          "input": "水洗后湿有机相；剩余干燥容量至少覆盖本次约 0.0613362 mol 水。",
+          "chemistry": "这里是理想选择性吸附容量模型；水转入芯账，其他组分不被神奇净化。",
+          "conditions": "成品质量门为乙酸乙酯 ≥95 wt%；无吸附等温线、吸附热或实测残水预测。",
+          "rate": "一枚芯不保证无限批次；加芯增加容量，不改变求解速度。",
+          "output": "默认成品 [0.00307143,0.01243282,0.22019269,0] mol，乙酸乙酯约 96.244 wt%。零水仅是理想模型结果。",
+          "check": "质量分数不是收率；以新酸计成品酯收率约 22.02%。",
+          "reactions": [],
+          "links": [],
+          "href": "ester-guide.html#step-dry"
+        },
+        {
+          "id": "product",
+          "name": "乙酸乙酯批次",
+          "nameEn": "Ethyl acetate batch",
+          "step": "product",
+          "x": 5,
+          "y": 1,
+          "kind": "product",
+          "input": "FINISHED 产品库存、釜底、废液与一空背包格。",
+          "chemistry": "回流带回酸、醇、酯和水；杂质可能累积。成品、釜底、废液中的酯之和约 0.510121 mol。",
+          "conditions": "样品不能回注 F，也不是 GT 纯乙酸乙酯；新批带回流后不能沿用第一批的精确数值。",
+          "rate": "run 只自动跑本批 11 个阶段计算；next 只准备，不自动生产。",
+          "output": "第一批有一个样品，T 保留/分配余料；第二批状态可追溯。",
+          "check": "重复取出无复制，失败无丢料；每种组分都有去向。",
+          "reactions": [],
+          "links": [
+            "process-manual.html"
+          ],
+          "href": "ester-guide.html#step-product"
+        },
+        {
+          "id": "waste",
+          "name": "水相 / 有机残余",
+          "nameEn": "Aqueous / organic residues",
+          "step": "product",
+          "x": 3,
+          "y": 2,
+          "kind": "waste",
+          "input": "FINISHED 产品库存、釜底、废液与一空背包格。",
+          "chemistry": "回流带回酸、醇、酯和水；杂质可能累积。成品、釜底、废液中的酯之和约 0.510121 mol。",
+          "conditions": "样品不能回注 F，也不是 GT 纯乙酸乙酯；新批带回流后不能沿用第一批的精确数值。",
+          "rate": "run 只自动跑本批 11 个阶段计算；next 只准备，不自动生产。",
+          "output": "第一批有一个样品，T 保留/分配余料；第二批状态可追溯。",
+          "check": "重复取出无复制，失败无丢料；每种组分都有去向。",
+          "reactions": [],
+          "links": [
+            "process-manual.html"
+          ],
+          "href": "ester-guide.html#step-product"
+        }
+      ],
+      "edges": [
+        [
+          "feed",
+          "react"
+        ],
+        [
+          "acid",
+          "react"
+        ],
+        [
+          "react",
+          "distill"
+        ],
+        [
+          "distill",
+          "wash"
+        ],
+        [
+          "water",
+          "wash"
+        ],
+        [
+          "wash",
+          "dry"
+        ],
+        [
+          "dry",
+          "product"
+        ],
+        [
+          "distill",
+          "waste"
+        ],
+        [
+          "wash",
+          "waste"
+        ],
+        [
+          "dry",
+          "waste"
+        ]
+      ]
+    },
+    {
+      "id": "vitamin-a",
+      "nodes": [
+        {
+          "id": "feed",
+          "name": "原生碳源与辅料",
+          "nameEn": "Native feed + auxiliaries",
+          "step": "materials",
+          "x": 0,
+          "y": 1,
+          "kind": "source",
+          "input": "上游清单见原料表；C6 另用丙酮、甲醛、乙炔各一标准单元。",
+          "chemistry": "这里首先追踪碳来源，酸碱、溶剂和催化剂来源另列。不是所有物料都已实现生存自给。",
+          "conditions": "标准 1000 mB 单元/一整份粉 = 1 教学 mol；无桶、管道或通用容器输入。额外 NBT、小粉、微粉拒绝。",
+          "rate": "导入是持久化库存事务，没有反应时间。",
+          "output": "备料完成，尚未入机；下一步导入缓冲后只按需扣除，不隐式补料。",
+          "check": "缺料拒绝；确认来源是 GT 单元而非改名物品。",
+          "reactions": [],
+          "links": [],
+          "href": "vitamin-a-guide.html#step-materials"
+        },
+        {
+          "id": "c5",
+          "name": "C5 炔醇 → 烯醇",
+          "nameEn": "C5 alkynol → alkenol",
+          "step": "c5",
+          "x": 1,
+          "y": 1,
+          "kind": "reaction",
+          "input": "上游缓冲丙酮、乙炔、氢气、水；显式 NaNH₂ 与 Pd/CaCO₃/Pb 夹具。",
+          "chemistry": "炔碳进攻丙酮羰基生成 C5 炔醇，水后处理释放羟基；加一份 H₂ 得烯醇，再加氢会过还原。",
+          "conditions": "按当前机台阶段和辅料前提操作；现实温度、浓度、溶剂与停留时间尚未标定，不能把默认模型温压当工业条件。",
+          "rate": "一次确认提交净工序，没有校准的秒级速率、活化能或停留时间。mol–工序曲线不能读成 mol/s；给定进度只用于教学物料账。",
+          "output": "参考 0.9 mol C5 炔醇 → 0.82935 mol 烯醇 + 0.02565 mol 过还原醇；其余保留。",
+          "check": "H₂、NH₃、NaOH 和催化剂都有账，不用箭推假冒表面反应轨迹。",
+          "reactions": [
+            "U01",
+            "U02"
+          ],
+          "links": [
+            "campaign-lab.html"
+          ],
+          "href": "vitamin-a-guide.html#step-c5"
+        },
+        {
+          "id": "claisen",
+          "name": "U03 · β-酮酯",
+          "nameEn": "U03 · beta-ketoester",
+          "step": "claisen",
+          "x": 1,
+          "y": 0,
+          "kind": "reaction",
+          "input": "实际乙酸甲酯、甲醇钠、HCl；显式碳链催化包夹具。",
+          "chemistry": "两份酯的缩合建立 β-二羰基体系；产物酸性氢使碱被消耗，必须恢复中性形式再向后交接。",
+          "conditions": "按当前机台阶段和辅料前提操作；现实温度、浓度、溶剂与停留时间尚未标定，不能把默认模型温压当工业条件。",
+          "rate": "一次确认提交净工序，没有校准的秒级速率、活化能或停留时间。mol–工序曲线不能读成 mol/s；给定进度只用于教学物料账。",
+          "output": "参考 0.9 mol 乙酰乙酸甲酯，甲醇与 NaCl 各留账。",
+          "check": "区分产物盐和中性 MAA 身份；剩余碱中和同样消耗酸。",
+          "reactions": [
+            "U03"
+          ],
+          "links": [
+            "carbon-lab.html?branch=0#lesson"
+          ],
+          "href": "vitamin-a-guide.html#step-claisen"
+        },
+        {
+          "id": "carroll",
+          "name": "U04 · C8 酮",
+          "nameEn": "U04 · C8 ketone",
+          "step": "carroll",
+          "x": 2,
+          "y": 1,
+          "kind": "reaction",
+          "input": "本批 C5 烯醇与 U03 中性 β-酮酯；催化/溶剂仍夹具。",
+          "chemistry": "酯交换、[3,3] 重排与脱羧依次解释增碳；CO₂ 与甲醇离开主骨架但不离开总账。",
+          "conditions": "按当前机台阶段和辅料前提操作；现实温度、浓度、溶剂与停留时间尚未标定，不能把默认模型温压当工业条件。",
+          "rate": "一次确认提交净工序，没有校准的秒级速率、活化能或停留时间。mol–工序曲线不能读成 mol/s；给定进度只用于教学物料账。",
+          "output": "C8 酮 0.66348 mol；理想转移 0.630306 mol，7 号留 0.033174 mol。",
+          "check": "95% 转移不是已验证的精馏收率；残余可查。",
+          "reactions": [
+            "U04"
+          ],
+          "links": [
+            "carbon-lab.html?branch=2#lesson"
+          ],
+          "href": "vitamin-a-guide.html#step-carroll"
+        },
+        {
+          "id": "c10",
+          "name": "U05 / U06 · 柠檬醛",
+          "nameEn": "U05 / U06 · citral",
+          "step": "c10",
+          "x": 3,
+          "y": 1,
+          "kind": "reaction",
+          "input": "本批 C8 酮、乙炔、强碱及后处理水；MoO₂(acac)₂/Ph₃PO/4-叔丁基苯甲酸/甲苯催化包。",
+          "chemistry": "乙炔带来两个碳；炔丙醇净重排得到共轭醛。U06 不套用“任意酸都能重排”的规则。",
+          "conditions": "按当前机台阶段和辅料前提操作；现实温度、浓度、溶剂与停留时间尚未标定，不能把默认模型温压当工业条件。",
+          "rate": "一次确认提交净工序，没有校准的秒级速率、活化能或停留时间。mol–工序曲线不能读成 mol/s；给定进度只用于教学物料账。",
+          "output": "0.555929892 mol C10 炔醇进入 10 号，得到 0.3335579352 mol 未定 E/Z 柠檬醛池。",
+          "check": "geranial 与 neral 只作身份对照，不能按猜测比例拆分。",
+          "reactions": [
+            "U05",
+            "U06"
+          ],
+          "links": [
+            "carbon-lab.html?branch=4#lesson"
+          ],
+          "href": "vitamin-a-guide.html#step-c10"
+        },
+        {
+          "id": "u07",
+          "name": "U07 · 假紫罗兰酮",
+          "nameEn": "U07 · pseudoionone",
+          "step": "u07",
+          "x": 4,
+          "y": 1,
+          "kind": "reaction",
+          "input": "U06 完整混合料；缓冲再扣 0.2 mol NaOH，随后 1 mol 丙酮、0.01 mol NaOH、0.01 mol HCl。",
+          "chemistry": "丙酮 α 碳进攻柠檬醛，羟醛加成后沿候选 E1cb 脱水得到 C13 共轭酮；盐、水和未反应物留下。",
+          "conditions": "95% 柠檬醛转移、80% 反应进度、95% 产物转移均是教学设定。573 J 只对应 0.01 mol 稀水强酸强碱中和参考，不给出整厂温升。",
+          "rate": "一次确认提交净工序，没有校准的秒级速率、活化能或停留时间。mol–工序曲线不能读成 mol/s；给定进度只用于教学物料账。",
+          "output": "0.31688003844 mol 柠檬醛进 U07；0.2408288292144 mol 假紫罗兰酮交给 14 号。10/13 号保留催化组分、盐和有机残余。",
+          "check": "先中和再交接；不能把带酸原物流直接冒充纯柠檬醛。",
+          "reactions": [
+            "U06-workup",
+            "U07",
+            "U07-quench"
+          ],
+          "links": [
+            "ionone-lab.html#lesson",
+            "ionone-lab.html#production"
+          ],
+          "href": "vitamin-a-guide.html#step-u07"
+        },
+        {
+          "id": "u08",
+          "name": "U08 · α / β 分流",
+          "nameEn": "U08 · alpha / beta split",
+          "step": "u08",
+          "x": 5,
+          "y": 1,
+          "kind": "reaction",
+          "input": "本批假紫罗兰酮；扣 0.05 mol H₂SO₄ 和后续 0.1 mol NaOH。",
+          "chemistry": "酸催化成环与不同去质子化位置形成 α/β 骨架；尚未完整展开微观动画，不赋予 E/Z，也不指定潜在手性中心的构型。",
+          "conditions": "80% 进度、α:β=30:70、95% β 分配为教学假设；β 摩尔分数 ≥0.98，水/各酸碱 ≤β 的 0.001，允许物种白名单限定。",
+          "rate": "一次确认提交净工序，没有校准的秒级速率、活化能或停留时间。mol–工序曲线不能读成 mol/s；给定进度只用于教学物料账。",
+          "output": "12 号 β=0.1281209371420608 mol；15 号保留 α、未反应假紫罗兰酮、β 尾数、0.05 mol Na₂SO₄ 和 0.1 mol 水。",
+          "check": "合格的是 beta-ionone-unresolved 骨架池，不是 E-β 或全反式认证。",
+          "reactions": [
+            "U08",
+            "U08-alpha",
+            "U08-quench"
+          ],
+          "links": [
+            "ionone-lab.html#production"
+          ],
+          "href": "vitamin-a-guide.html#step-u08"
+        },
+        {
+          "id": "haloester",
+          "name": "A01 · 氯乙酸甲酯",
+          "nameEn": "A01 · methyl chloroacetate",
+          "step": "haloester",
+          "x": 5,
+          "y": 0,
+          "kind": "reaction",
+          "input": "氯乙酸、甲醇与规定酸/水账；均来自实际缓冲。",
+          "chemistry": "Fischer 机理中保留氯取代基；这是氯乙酸甲酯，与入门线乙酸乙酯具有不同底物与物性。",
+          "conditions": "按当前机台阶段和辅料前提操作；现实温度、浓度、溶剂与停留时间尚未标定，不能把默认模型温压当工业条件。",
+          "rate": "一次确认提交净工序，没有校准的秒级速率、活化能或停留时间。mol–工序曲线不能读成 mol/s；给定进度只用于教学物料账。",
+          "output": "0.833 mol 氯乙酸甲酯到 4 号，其他物料留在本段。",
+          "check": "酯已备好，但必须等真实 β 骨架到位才允许 C14 交接。",
+          "reactions": [
+            "A01"
+          ],
+          "links": [
+            "campaign-lab.html?branch=3#lesson"
+          ],
+          "href": "vitamin-a-guide.html#step-haloester"
+        },
+        {
+          "id": "c14",
+          "name": "A02–A04 · C14 醛",
+          "nameEn": "A02–A04 · C14 aldehyde",
+          "step": "c14",
+          "x": 6,
+          "y": 1,
+          "kind": "reaction",
+          "input": "刚交付的 β、卤代酯、甲醇钠、NaOH、HCl 与后处理物料。",
+          "chemistry": "Darzens 的加成/分子内 SN2 生成环氧酯；皂化得到盐，再酸化、脱羧及共轭化。酸化有箭推，后两步保留净端点。",
+          "conditions": "按当前机台阶段和辅料前提操作；现实温度、浓度、溶剂与停留时间尚未标定，不能把默认模型温压当工业条件。",
+          "rate": "一次确认提交净工序，没有校准的秒级速率、活化能或停留时间。mol–工序曲线不能读成 mol/s；给定进度只用于教学物料账。",
+          "output": "C14 合格池与盐、甲醇、CO₂、未转化有机物分开；交付向下取 12 位小数，尾数保留。",
+          "check": "不删除残余；新环氧立体中心和 C14 E/Z 未被自动指定。",
+          "reactions": [
+            "A02",
+            "A03",
+            "A04"
+          ],
+          "links": [
+            "darzens-lab.html"
+          ],
+          "href": "vitamin-a-guide.html#step-c14"
+        },
+        {
+          "id": "c6",
+          "name": "B01–B04 · C6 支线",
+          "nameEn": "B01–B04 · C6 branch",
+          "step": "c6",
+          "x": 6,
+          "y": 2,
+          "kind": "reaction",
+          "input": "C6 的丙酮、甲醛、乙炔各一单元；辅助强碱等按显式夹具提供。",
+          "chemistry": "先做 MVK 受体，再炔负离子 1,2 加成和候选烯丙基重排；1,4 加成、自缩合与异构体分支分别记账。",
+          "conditions": "按当前机台阶段和辅料前提操作；现实温度、浓度、溶剂与停留时间尚未标定，不能把默认模型温压当工业条件。",
+          "rate": "一次确认提交净工序，没有校准的秒级速率、活化能或停留时间。mol–工序曲线不能读成 mol/s；给定进度只用于教学物料账。",
+          "output": "Z-C6 与 E-C6 分开；水、气体、未反应物及副产物在 5 号保留。",
+          "check": "Z 分配是模型假设；不等于现场测得纯异构体。",
+          "reactions": [
+            "B01",
+            "B02",
+            "B03",
+            "B04"
+          ],
+          "links": [
+            "supply-lab.html"
+          ],
+          "href": "vitamin-a-guide.html#step-c6"
+        },
+        {
+          "id": "couple",
+          "name": "C14 + C6 · 偶联",
+          "nameEn": "C14 + C6 · coupling",
+          "step": "couple",
+          "x": 6,
+          "y": 3,
+          "kind": "reaction",
+          "input": "合格 C14 + Z-C6；规定有效 EtMgBr 当量和酸性后处理。",
+          "chemistry": "羟基与端炔两个活性氢分别耗试剂；端炔碳进攻 C14 醛，后处理恢复羟基。水失活和乙基竞争加成也耗当量。",
+          "conditions": "偶联 95% 等为未标定工序进度；不能把形式 MgBr 记账式当溶液中的真实孤立分子。",
+          "rate": "一次确认提交净工序，没有校准的秒级速率、活化能或停留时间。mol–工序曲线不能读成 mol/s；给定进度只用于教学物料账。",
+          "output": "C20 炔二醇中间料；乙烷、形式镁盐、未反应料和竞争产物均保留。",
+          "check": "乙烷不是装饰；它解释试剂被活性氢消耗的去向。",
+          "reactions": [
+            "C01",
+            "C02",
+            "C03",
+            "C04"
+          ],
+          "links": [
+            "coupling-lab.html"
+          ],
+          "href": "vitamin-a-guide.html#step-couple"
+        },
+        {
+          "id": "hydrogenate",
+          "name": "部分加氢 / 过滤",
+          "nameEn": "Partial H2 / filtration",
+          "step": "hydrogenate",
+          "x": 5,
+          "y": 3,
+          "kind": "reaction",
+          "input": "偶联 C20 中间料；后段按进料配氢气、催化剂及其他辅料，仍为显式夹具来源。",
+          "chemistry": "原炔位用一份 H₂ 变烯键；继续还原形成独立过还原二醇。滤饼中催化剂和夹带料仍计入总账。",
+          "conditions": "按当前机台阶段和辅料前提操作；现实温度、浓度、溶剂与停留时间尚未标定，不能把默认模型温压当工业条件。",
+          "rate": "一次确认提交净工序，没有校准的秒级速率、活化能或停留时间。mol–工序曲线不能读成 mol/s；给定进度只用于教学物料账。",
+          "output": "可乙酰化二醇进入乙酰化计量槽；过还原、滤饼与残液留在后段。",
+          "check": "表面概念课不认证新双键的现实全反式选择性。",
+          "reactions": [
+            "D01",
+            "D02"
+          ],
+          "links": [
+            "chain-lab.html?branch=1#lesson"
+          ],
+          "href": "vitamin-a-guide.html#step-hydrogenate"
+        },
+        {
+          "id": "acetylate",
+          "name": "选择性乙酰化",
+          "nameEn": "Selective acetylation",
+          "step": "acetylate",
+          "x": 4,
+          "y": 3,
+          "kind": "reaction",
+          "input": "从后段实际交来的二醇与按量辅料；不再加载乙酰化局部旧夹具。",
+          "chemistry": "伯羟基优先乙酰化与仲羟基继续乙酰化竞争。目标中间体量、转化率、选择性与总收率分别读。",
+          "conditions": "默认入釜设置 303 K；热/速率系数是教学参数。10 L 是此局部模型设定，不能推广到所有机器。",
+          "rate": "此段有模型时间积分与温度效应；3600 模型秒不是现实一小时。60/300 秒推进影响操作速度，不改反应规则；不得跳过落盘。",
+          "output": "单乙酸酯中间料、二乙酸酯、乙酸、残余酸酐与滤饼分别保留。",
+          "check": "看实际峰值与损失；“反应久一点”不必然更好。",
+          "reactions": [
+            "E01",
+            "E02"
+          ],
+          "links": [
+            "va-lab.html",
+            "va-manual.html"
+          ],
+          "href": "vitamin-a-guide.html#step-acetylate"
+        },
+        {
+          "id": "finish",
+          "name": "净重排 / 结晶",
+          "nameEn": "Net rearrangement / crystals",
+          "step": "finish",
+          "x": 3,
+          "y": 3,
+          "kind": "separation",
+          "input": "本批单乙酸酯中间料；显式后段辅料。",
+          "chemistry": "后段净工序包含脱水、共轭化和构型分配，不是一个已验证的基元步骤。结晶留下母液与夹带物。",
+          "conditions": "全反式/单 Z 示范库存由未校准分配给出；不能从原先未定 E/Z 追溯成真实立体选择性证明。",
+          "rate": "一次确认提交净工序，没有校准的秒级速率、活化能或停留时间。mol–工序曲线不能读成 mol/s；给定进度只用于教学物料账。",
+          "output": "参考目标组分约 0.02589196025 mol，单 Z 约 0.00007192211 mol；仅模型样例。",
+          "check": "检查晶体与母液；结构标准、过程假设、实测证书三者不混淆。",
+          "reactions": [
+            "E03"
+          ],
+          "links": [
+            "chain-lab.html"
+          ],
+          "href": "vitamin-a-guide.html#step-finish"
+        },
+        {
+          "id": "product",
+          "name": "维生素 A 乙酸酯",
+          "nameEn": "Retinyl acetate",
+          "step": "product",
+          "x": 2,
+          "y": 3,
+          "kind": "product",
+          "input": "合格成品流和至少一个空背包格。",
+          "chemistry": "封装转移整股含杂质物流；复制/丢弃凭证不增加或删除物料。",
+          "conditions": "最多保留 16 份历史，满则拒绝；归档不代表真实清洗。OC 产品尚无 GT 消耗接口。",
+          "rate": "重复 claim 可重取引用而非第二批物质；恢复先读状态，不靠额外投料修复。",
+          "output": "两批产品与旧母液、气体、催化剂、回执独立可追踪。",
+          "check": "完成人工 UI、满槽、重连/卸载和正常重启清单。",
+          "reactions": [],
+          "links": [
+            "ionone-manual.html#acceptance"
+          ],
+          "href": "vitamin-a-guide.html#step-product"
+        },
+        {
+          "id": "retinol",
+          "name": "视黄醇 / 夜视支线",
+          "nameEn": "Retinol / night vision",
+          "step": null,
+          "x": 1,
+          "y": 3,
+          "kind": "product",
+          "input": "来自上一工段的有来源库存；未审核物流留在隔离区。",
+          "chemistry": "保留所有组分、构型及来源；终端支线详见专页。",
+          "conditions": "保护条件与质量门详见专页；未知热量和回收率仍为 unknown。",
+          "rate": "不从此图推导速率、工艺时长或工业收率。",
+          "output": "完整组成批次；未知物料不得改名为合格成品。",
+          "check": "检查组成、来源、容量与资格；有疑问保持隔离。",
+          "reactions": [],
+          "links": [],
+          "href": "retinol-guide.html"
+        },
+        {
+          "id": "waste",
+          "name": "局部安全 → 分类回收",
+          "nameEn": "Local safety → recovery",
+          "step": null,
+          "x": 4,
+          "y": 4,
+          "kind": "waste",
+          "input": "来自上一工段的有来源库存；未审核物流留在隔离区。",
+          "chemistry": "保留所有组分、构型及来源；终端支线详见专页。",
+          "conditions": "保护条件与质量门详见专页；未知热量和回收率仍为 unknown。",
+          "rate": "不从此图推导速率、工艺时长或工业收率。",
+          "output": "完整组成批次；未知物料不得改名为合格成品。",
+          "check": "检查组成、来源、容量与资格；有疑问保持隔离。",
+          "reactions": [],
+          "links": [],
+          "href": "line-bus.html#waste"
+        }
+      ],
+      "edges": [
+        [
+          "feed",
+          "c5"
+        ],
+        [
+          "feed",
+          "claisen"
+        ],
+        [
+          "c5",
+          "carroll"
+        ],
+        [
+          "claisen",
+          "carroll"
+        ],
+        [
+          "carroll",
+          "c10"
+        ],
+        [
+          "c10",
+          "u07"
+        ],
+        [
+          "u07",
+          "u08"
+        ],
+        [
+          "u08",
+          "c14"
+        ],
+        [
+          "haloester",
+          "c14"
+        ],
+        [
+          "feed",
+          "haloester"
+        ],
+        [
+          "feed",
+          "c6"
+        ],
+        [
+          "c14",
+          "couple"
+        ],
+        [
+          "c6",
+          "couple"
+        ],
+        [
+          "couple",
+          "hydrogenate"
+        ],
+        [
+          "hydrogenate",
+          "acetylate"
+        ],
+        [
+          "acetylate",
+          "finish"
+        ],
+        [
+          "finish",
+          "product"
+        ],
+        [
+          "product",
+          "retinol"
+        ],
+        [
+          "u08",
+          "waste"
+        ],
+        [
+          "couple",
+          "waste"
+        ],
+        [
+          "finish",
+          "waste"
+        ]
+      ]
+    }
+  ],
+  "racks": [
+    {
+      "id": "ester",
+      "nodes": [
+        {
+          "id": "source:aceticacid",
+          "role": "SOURCE",
+          "x": 2,
+          "z": 3,
+          "index": 1
+        },
+        {
+          "id": "source:ethanol",
+          "role": "SOURCE",
+          "x": 4,
+          "z": 3,
+          "index": 2
+        },
+        {
+          "id": "source:water",
+          "role": "SOURCE",
+          "x": 6,
+          "z": 3,
+          "index": 3
+        },
+        {
+          "id": "feed:aceticacid",
+          "role": "FEED_BUFFER",
+          "x": 8,
+          "z": 3,
+          "index": 4
+        },
+        {
+          "id": "feed:ethanol",
+          "role": "FEED_BUFFER",
+          "x": 10,
+          "z": 3,
+          "index": 5
+        },
+        {
+          "id": "feed:water",
+          "role": "FEED_BUFFER",
+          "x": 12,
+          "z": 3,
+          "index": 6
+        },
+        {
+          "id": "buffer:aqueous",
+          "role": "LOCAL_BUFFER",
+          "x": 14,
+          "z": 3,
+          "index": 7
+        },
+        {
+          "id": "buffer:distillate",
+          "role": "LOCAL_BUFFER",
+          "x": 16,
+          "z": 3,
+          "index": 8
+        },
+        {
+          "id": "buffer:organic",
+          "role": "LOCAL_BUFFER",
+          "x": 2,
+          "z": 6,
+          "index": 9
+        },
+        {
+          "id": "buffer:product",
+          "role": "LOCAL_BUFFER",
+          "x": 4,
+          "z": 6,
+          "index": 10
+        },
+        {
+          "id": "buffer:reaction",
+          "role": "LOCAL_BUFFER",
+          "x": 6,
+          "z": 6,
+          "index": 11
+        },
+        {
+          "id": "buffer:residue",
+          "role": "LOCAL_BUFFER",
+          "x": 8,
+          "z": 6,
+          "index": 12
+        },
+        {
+          "id": "buffer:spent-catalyst",
+          "role": "LOCAL_BUFFER",
+          "x": 10,
+          "z": 6,
+          "index": 13
+        },
+        {
+          "id": "buffer:unknown-gas",
+          "role": "LOCAL_BUFFER",
+          "x": 12,
+          "z": 6,
+          "index": 14
+        },
+        {
+          "id": "buffer:unknown-liquid",
+          "role": "LOCAL_BUFFER",
+          "x": 14,
+          "z": 6,
+          "index": 15
+        },
+        {
+          "id": "buffer:unknown-solid",
+          "role": "LOCAL_BUFFER",
+          "x": 16,
+          "z": 6,
+          "index": 16
+        },
+        {
+          "id": "buffer:wastewater",
+          "role": "LOCAL_BUFFER",
+          "x": 2,
+          "z": 9,
+          "index": 17
+        },
+        {
+          "id": "bus:organic",
+          "role": "CENTRAL_HOLD",
+          "x": 4,
+          "z": 9,
+          "index": 18
+        },
+        {
+          "id": "bus:product",
+          "role": "CENTRAL_HOLD",
+          "x": 6,
+          "z": 9,
+          "index": 19
+        },
+        {
+          "id": "bus:residue",
+          "role": "CENTRAL_HOLD",
+          "x": 8,
+          "z": 9,
+          "index": 20
+        },
+        {
+          "id": "bus:spent-catalyst",
+          "role": "CENTRAL_HOLD",
+          "x": 10,
+          "z": 9,
+          "index": 21
+        },
+        {
+          "id": "bus:unknown-gas",
+          "role": "CENTRAL_HOLD",
+          "x": 12,
+          "z": 9,
+          "index": 22
+        },
+        {
+          "id": "bus:unknown-liquid",
+          "role": "CENTRAL_HOLD",
+          "x": 14,
+          "z": 9,
+          "index": 23
+        },
+        {
+          "id": "bus:unknown-solid",
+          "role": "CENTRAL_HOLD",
+          "x": 16,
+          "z": 9,
+          "index": 24
+        },
+        {
+          "id": "bus:wastewater",
+          "role": "CENTRAL_HOLD",
+          "x": 2,
+          "z": 12,
+          "index": 25
+        },
+        {
+          "id": "recovery-purge:organic",
+          "role": "PURGE_HOLD",
+          "x": 4,
+          "z": 12,
+          "index": 26
+        },
+        {
+          "id": "recovery-reuse:organic",
+          "role": "REUSE_HOLD",
+          "x": 6,
+          "z": 12,
+          "index": 27
+        }
+      ]
+    },
+    {
+      "id": "vitamin-a",
+      "nodes": [
+        {
+          "id": "source:acetone",
+          "role": "SOURCE",
+          "x": 2,
+          "z": 3,
+          "index": 1
+        },
+        {
+          "id": "source:formaldehyde",
+          "role": "SOURCE",
+          "x": 4,
+          "z": 3,
+          "index": 2
+        },
+        {
+          "id": "source:acetylene",
+          "role": "SOURCE",
+          "x": 6,
+          "z": 3,
+          "index": 3
+        },
+        {
+          "id": "source:hydrogen",
+          "role": "SOURCE",
+          "x": 8,
+          "z": 3,
+          "index": 4
+        },
+        {
+          "id": "source:acetic-anhydride",
+          "role": "SOURCE",
+          "x": 10,
+          "z": 3,
+          "index": 5
+        },
+        {
+          "id": "source:catalyst-core",
+          "role": "SOURCE",
+          "x": 12,
+          "z": 3,
+          "index": 6
+        },
+        {
+          "id": "feed:acetone",
+          "role": "FEED_BUFFER",
+          "x": 14,
+          "z": 3,
+          "index": 7
+        },
+        {
+          "id": "feed:formaldehyde",
+          "role": "FEED_BUFFER",
+          "x": 16,
+          "z": 3,
+          "index": 8
+        },
+        {
+          "id": "feed:acetylene",
+          "role": "FEED_BUFFER",
+          "x": 2,
+          "z": 6,
+          "index": 9
+        },
+        {
+          "id": "feed:hydrogen",
+          "role": "FEED_BUFFER",
+          "x": 4,
+          "z": 6,
+          "index": 10
+        },
+        {
+          "id": "feed:acetic-anhydride",
+          "role": "FEED_BUFFER",
+          "x": 6,
+          "z": 6,
+          "index": 11
+        },
+        {
+          "id": "feed:catalyst-core",
+          "role": "FEED_BUFFER",
+          "x": 8,
+          "z": 6,
+          "index": 12
+        },
+        {
+          "id": "buffer:product",
+          "role": "LOCAL_BUFFER",
+          "x": 10,
+          "z": 6,
+          "index": 13
+        },
+        {
+          "id": "buffer:quench",
+          "role": "LOCAL_BUFFER",
+          "x": 12,
+          "z": 6,
+          "index": 14
+        },
+        {
+          "id": "buffer:reaction",
+          "role": "LOCAL_BUFFER",
+          "x": 14,
+          "z": 6,
+          "index": 15
+        },
+        {
+          "id": "buffer:residue",
+          "role": "LOCAL_BUFFER",
+          "x": 16,
+          "z": 6,
+          "index": 16
+        },
+        {
+          "id": "buffer:spent-catalyst",
+          "role": "LOCAL_BUFFER",
+          "x": 2,
+          "z": 9,
+          "index": 17
+        },
+        {
+          "id": "buffer:tail-gas",
+          "role": "LOCAL_BUFFER",
+          "x": 4,
+          "z": 9,
+          "index": 18
+        },
+        {
+          "id": "buffer:unknown-gas",
+          "role": "LOCAL_BUFFER",
+          "x": 6,
+          "z": 9,
+          "index": 19
+        },
+        {
+          "id": "buffer:unknown-liquid",
+          "role": "LOCAL_BUFFER",
+          "x": 8,
+          "z": 9,
+          "index": 20
+        },
+        {
+          "id": "buffer:unknown-solid",
+          "role": "LOCAL_BUFFER",
+          "x": 10,
+          "z": 9,
+          "index": 21
+        },
+        {
+          "id": "buffer:waste",
+          "role": "LOCAL_BUFFER",
+          "x": 12,
+          "z": 9,
+          "index": 22
+        },
+        {
+          "id": "bus:product",
+          "role": "CENTRAL_HOLD",
+          "x": 14,
+          "z": 9,
+          "index": 23
+        },
+        {
+          "id": "bus:quench",
+          "role": "CENTRAL_HOLD",
+          "x": 16,
+          "z": 9,
+          "index": 24
+        },
+        {
+          "id": "bus:residue",
+          "role": "CENTRAL_HOLD",
+          "x": 2,
+          "z": 12,
+          "index": 25
+        },
+        {
+          "id": "bus:spent-catalyst",
+          "role": "CENTRAL_HOLD",
+          "x": 4,
+          "z": 12,
+          "index": 26
+        },
+        {
+          "id": "bus:tail-gas",
+          "role": "CENTRAL_HOLD",
+          "x": 6,
+          "z": 12,
+          "index": 27
+        },
+        {
+          "id": "bus:unknown-gas",
+          "role": "CENTRAL_HOLD",
+          "x": 8,
+          "z": 12,
+          "index": 28
+        },
+        {
+          "id": "bus:unknown-liquid",
+          "role": "CENTRAL_HOLD",
+          "x": 10,
+          "z": 12,
+          "index": 29
+        },
+        {
+          "id": "bus:unknown-solid",
+          "role": "CENTRAL_HOLD",
+          "x": 12,
+          "z": 12,
+          "index": 30
+        },
+        {
+          "id": "bus:waste",
+          "role": "CENTRAL_HOLD",
+          "x": 14,
+          "z": 12,
+          "index": 31
+        },
+        {
+          "id": "recovery-purge:residue",
+          "role": "PURGE_HOLD",
+          "x": 16,
+          "z": 12,
+          "index": 32
+        },
+        {
+          "id": "recovery-reuse:residue",
+          "role": "REUSE_HOLD",
+          "x": 2,
+          "z": 15,
+          "index": 33
+        }
+      ]
+    }
+  ]
+}

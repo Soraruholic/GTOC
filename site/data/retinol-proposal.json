@@ -1,6 +1,6 @@
 {
-  "schema": "oc-retinol-proposal-1",
-  "implementedInGame": false,
+  "schema": "oc-retinol-terminal-1",
+  "implementedInGame": true,
   "units": "mol",
   "model": "assumed_extent_and_component_recovery",
   "stoichiometry": {
@@ -42,11 +42,12 @@
     "light_oxidation_rates"
   ],
   "game": {
-    "policy": "oc-nightvision-draft-1",
+    "policy": "oc-nightvision-1",
     "retinolMolPerCartridge": 0.003,
     "potionsPerCartridge": 3,
     "durationTicks": 14400,
     "amplifier": 0,
-    "implemented": false
+    "implemented": true,
+    "clientAcceptance": "pending"
   }
 }

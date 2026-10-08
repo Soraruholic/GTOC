@@ -6,6 +6,8 @@ An interactive chemistry and process-learning handbook for the GTNH-OC project, 
 
 ## Explore
 
+- [Synthesis atlas](https://soraruholic.github.io/GTOC/en/#synthesis): selectable routes from raw feed to product, with parallel branches and side streams.
+- [Line bus and recovery](https://soraruholic.github.io/GTOC/en/line-bus.html): segregated central stores, an executable storage-bus rack, impurity-preserving recovery splits and a build walkthrough.
 - [Build the ester line](https://soraruholic.github.io/GTOC/en/ester-guide.html): 8 steps, feeds, devices, model conditions and material destinations.
 - [Build vitamin A acetate](https://soraruholic.github.io/GTOC/en/vitamin-a-guide.html): 17 steps through parallel branches and finishing.
 - [Mechanism classroom](https://soraruholic.github.io/GTOC/en/mechanisms.html): 33 lessons, 2D electron flow and mapped 3D structures.
@@ -13,7 +15,7 @@ An interactive chemistry and process-learning handbook for the GTNH-OC project, 
 - [Supply and waste dossiers](https://soraruholic.github.io/GTOC/en/factory-services.html).
 - [Retinol and night-vision proposal](https://soraruholic.github.io/GTOC/en/retinol-guide.html).
 
-The main English curriculum has 20 pages. Historical engineering archives and some specialized Chinese simulators remain explicitly linked as Chinese sources. Retinol finishing and the night-vision recipe are design proposals, not installed game features. The potion is fictional game balance; its duration and material cost are not medical claims.
+The main English curriculum has 21 pages. Historical engineering archives and some specialized Chinese simulators remain explicitly linked as Chinese sources. The bus command builds storage and collection ports; full chemical-device adapters, solvent purification and native GT product dispatch are separate acceptance scopes. Recovery splits preserve impurities and hold candidate stock for review. The retinol/night-vision teaching pages describe a proposal rather than verified gameplay. Potion duration and cost are fictional game balance, not medical claims.
 
 ## Publication
 

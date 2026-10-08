@@ -190,7 +190,7 @@ function ready(){
  const link=document.createElement('a');link.lang=english?'zh-Hans':'en';link.hreflang=link.lang;link.textContent=english?'中文':'English';
  control.append(label,link);const header=document.getElementById('site-header');if(header)header.append(control);else{control.classList.add('site-language-floating');document.body.prepend(control);}
  const page=location.pathname.split('/').pop()||'index.html',archive=location.pathname.includes('/archive/');
- const currentPages=['ester-guide','vitamin-a-guide','factory-services','factory-design','storage-logistics','process-quality','gameplay','next-line','ui-acceptance','process-manual','modular-plant','retinol-guide'];
+ const currentPages=['ester-guide','vitamin-a-guide','factory-services','factory-design','storage-logistics','process-quality','gameplay','next-line','ui-acceptance','process-manual','modular-plant','retinol-guide','line-bus'];
  const root=new URL(english||archive?'../':'./',location.href),lessons=window.OC_LANGUAGE_LESSONS||[],toChinese={index:'index',learning:'learning',wiki:'wiki',mechanisms:'mechanisms',plants:'plants',play:'play',glossary:'learning'};
  function update(){
   const hash=location.hash;let destination;
