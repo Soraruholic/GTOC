@@ -7,15 +7,15 @@ An interactive chemistry and process-learning handbook for the GTNH-OC project, 
 ## Explore
 
 - [Synthesis atlas](https://soraruholic.github.io/GTOC/en/#synthesis): selectable routes from raw feed to product, with parallel branches and side streams.
-- [Line bus and recovery](https://soraruholic.github.io/GTOC/en/line-bus.html): segregated central stores, an executable storage-bus rack, impurity-preserving recovery splits and a build walkthrough.
+- [Line bus and recovery](https://soraruholic.github.io/GTOC/en/line-bus.html): segregated central stores, a complete finite integration plant, separate local containment and central custody endpoints.
 - [Build the ester line](https://soraruholic.github.io/GTOC/en/ester-guide.html): 8 steps, feeds, devices, model conditions and material destinations.
-- [Build vitamin A acetate](https://soraruholic.github.io/GTOC/en/vitamin-a-guide.html): 17 steps through parallel branches and finishing.
+- [Build vitamin A through retinol](https://soraruholic.github.io/GTOC/en/vitamin-a-guide.html): 19 chapters through parallel branches, finishing and retinol hydrolysis.
 - [Mechanism classroom](https://soraruholic.github.io/GTOC/en/mechanisms.html): 33 lessons, 2D electron flow and mapped 3D structures.
 - [Complete facilities](https://soraruholic.github.io/GTOC/en/modular-plant.html): located source stores, metering, waste receivers and utilities.
 - [Supply and waste dossiers](https://soraruholic.github.io/GTOC/en/factory-services.html).
 - [Retinol and night-vision proposal](https://soraruholic.github.io/GTOC/en/retinol-guide.html).
 
-The main English curriculum has 21 pages. Historical engineering archives and some specialized Chinese simulators remain explicitly linked as Chinese sources. The bus command builds storage and collection ports; full chemical-device adapters, solvent purification and native GT product dispatch are separate acceptance scopes. Recovery splits preserve impurities and hold candidate stock for review. The retinol/night-vision teaching pages describe a proposal rather than verified gameplay. Potion duration and cost are fictional game balance, not medical claims.
+The main English curriculum has 21 pages. Historical engineering archives and some specialized Chinese simulators remain explicitly linked as Chinese sources. The integration command builds the complete modular test plant, source stores, sealed OC rack and collection ports, then runs one explicitly finite batch automatically. Source debits and chemistry share one durable authority. Native GT pipe ingress, solvent purification, chemical waste treatment and native GT product dispatch are separate acceptance scopes. Recovery splits preserve impurities and hold candidate stock for review. Retinol stock is produced by the integration model; night-vision gameplay remains a separate proposal. Potion duration and cost are fictional game balance, not medical claims.
 
 ## Publication
 
