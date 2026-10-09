@@ -39,7 +39,8 @@
     "ethyl-bromide",
     "acetylacetone",
     "magnesium-chloride",
-    "sodium-chloride"
+    "sodium-chloride",
+    "treatment-service-cartridge"
   ],
   "recipes": [
     {
@@ -565,6 +566,22 @@
       "packetOutputs": {
         "magnesium-chloride": 3
       },
+      "durationTicks": 200,
+      "EUt": 120
+    },
+    {
+      "id": "treatment-service-cartridge",
+      "fluidInputs": {
+        "water": 1000
+      },
+      "oreInputs": {
+        "dustCoal": 1,
+        "dustIron": 1
+      },
+      "packetInputs": {},
+      "output": 1,
+      "fluidOutputs": {},
+      "packetOutputs": {},
       "durationTicks": 200,
       "EUt": 120
     }
