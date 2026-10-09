@@ -7,15 +7,17 @@ An interactive chemistry and process-learning handbook for the GTNH-OC project, 
 ## Explore
 
 - [Synthesis atlas](https://soraruholic.github.io/GTOC/en/#synthesis): selectable routes from raw feed to product, with parallel branches and side streams.
-- [Line bus and recovery](https://soraruholic.github.io/GTOC/en/line-bus.html): segregated central stores, a complete finite integration plant, separate local containment and central custody endpoints.
+- [Line bus and recovery](https://soraruholic.github.io/GTOC/en/line-bus.html): segregated central stores, complete production and integration plants, separate local containment and central custody endpoints.
 - [Build the ester line](https://soraruholic.github.io/GTOC/en/ester-guide.html): 8 steps, feeds, devices, model conditions and material destinations.
 - [Build vitamin A through retinol](https://soraruholic.github.io/GTOC/en/vitamin-a-guide.html): 19 chapters through parallel branches, finishing and retinol hydrolysis.
 - [Mechanism classroom](https://soraruholic.github.io/GTOC/en/mechanisms.html): 33 lessons, 2D electron flow and mapped 3D structures.
 - [Complete facilities](https://soraruholic.github.io/GTOC/en/modular-plant.html): located source stores, metering, waste receivers and utilities.
 - [Supply and waste dossiers](https://soraruholic.github.io/GTOC/en/factory-services.html).
-- [Retinol and night-vision proposal](https://soraruholic.github.io/GTOC/en/retinol-guide.html).
+- [Retinol and night-vision gameplay](https://soraruholic.github.io/GTOC/en/retinol-guide.html).
 
-The main English curriculum has 21 pages. Historical engineering archives and some specialized Chinese simulators remain explicitly linked as Chinese sources. The integration command builds the complete modular test plant, source stores, sealed OC rack and collection ports, then runs one explicitly finite batch automatically. Source debits and chemistry share one durable authority. Native GT pipe ingress, solvent purification, chemical waste treatment and native GT product dispatch are separate acceptance scopes. Recovery splits preserve impurities and hold candidate stock for review. Retinol stock is produced by the integration model; night-vision gameplay remains a separate proposal. Potion duration and cost are fictional game balance, not medical claims.
+The current production guides target 0.4.6-production-alpha1. Production plants start with empty stores. 36 GT Large Chemical Reactor recipes supply every externally charged reagent, with packet transport through a central double chest and hopper. The scheduler debits stocks, runs each chemical operation, and automatically begins the next funded batch. Retinol production issues ledger-backed uses for 12 minutes of fictional night vision. Copies of a reference share the same balance. Both routes passed two-batch server tests through physical chests and hoppers; human client acceptance is tracked separately. Sealed previous-batch residuals remain authoritative inventory and finite storage applies backpressure. The `integration` command remains an explicitly finite test fixture.
+
+Scientific calibration and operating gameplay rules have separate documentation. Full industrial kinetics, hydraulic simulation and waste-treatment qualification are not inferred from the working game routes.
 
 ## Publication
 

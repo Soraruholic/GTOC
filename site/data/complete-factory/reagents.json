@@ -1,0 +1,572 @@
+{
+  "schema": "oc-game-reagent-recipes-1",
+  "unit": "one packet = one game process mole; native conversion is a versioned gameplay rule",
+  "species": [
+    "acetic-acid",
+    "ethanol",
+    "water",
+    "acid-catalyst-cartridge",
+    "dryer-cartridge",
+    "heater-charge",
+    "acetic-anhydride",
+    "acetone",
+    "acetylene",
+    "aluminium-isopropoxide",
+    "calcium-carbonate",
+    "chloroacetic-acid",
+    "diethyl-ether",
+    "ethylene-carbonate",
+    "ethylmagnesium-bromide",
+    "formaldehyde",
+    "hydrogen",
+    "hydrogen-chloride",
+    "lead",
+    "methanol",
+    "methyl-acetate",
+    "molybdenyl-acetylacetonate",
+    "p-xylene",
+    "palladium",
+    "pyridine",
+    "quinoline",
+    "sodium-amide",
+    "sodium-hydroxide",
+    "sodium-methoxide",
+    "sulfuric-acid",
+    "tert-butylbenzoic-acid",
+    "toluene",
+    "triphenylphosphine-oxide",
+    "isopropanol",
+    "ethyl-bromide",
+    "acetylacetone",
+    "magnesium-chloride",
+    "sodium-chloride"
+  ],
+  "recipes": [
+    {
+      "id": "acetic-acid",
+      "fluidInputs": {
+        "aceticacid": 1000
+      },
+      "oreInputs": {},
+      "packetInputs": {},
+      "output": 1,
+      "fluidOutputs": {},
+      "packetOutputs": {},
+      "durationTicks": 200,
+      "EUt": 120
+    },
+    {
+      "id": "ethanol",
+      "fluidInputs": {
+        "bioethanol": 1000
+      },
+      "oreInputs": {},
+      "packetInputs": {},
+      "output": 1,
+      "fluidOutputs": {},
+      "packetOutputs": {},
+      "durationTicks": 200,
+      "EUt": 120
+    },
+    {
+      "id": "water",
+      "fluidInputs": {
+        "water": 1000
+      },
+      "oreInputs": {},
+      "packetInputs": {},
+      "output": 1,
+      "fluidOutputs": {},
+      "packetOutputs": {},
+      "durationTicks": 200,
+      "EUt": 120
+    },
+    {
+      "id": "acetic-anhydride",
+      "fluidInputs": {
+        "molten.aceticanhydride": 1000
+      },
+      "oreInputs": {},
+      "packetInputs": {},
+      "output": 1,
+      "fluidOutputs": {},
+      "packetOutputs": {},
+      "durationTicks": 200,
+      "EUt": 120
+    },
+    {
+      "id": "acetone",
+      "fluidInputs": {
+        "acetone": 1000
+      },
+      "oreInputs": {},
+      "packetInputs": {},
+      "output": 1,
+      "fluidOutputs": {},
+      "packetOutputs": {},
+      "durationTicks": 200,
+      "EUt": 120
+    },
+    {
+      "id": "acetylene",
+      "fluidInputs": {
+        "acetylene": 1000
+      },
+      "oreInputs": {},
+      "packetInputs": {},
+      "output": 1,
+      "fluidOutputs": {},
+      "packetOutputs": {},
+      "durationTicks": 200,
+      "EUt": 120
+    },
+    {
+      "id": "chloroacetic-acid",
+      "fluidInputs": {
+        "molten.chloroaceticacid": 1000
+      },
+      "oreInputs": {},
+      "packetInputs": {},
+      "output": 1,
+      "fluidOutputs": {},
+      "packetOutputs": {},
+      "durationTicks": 200,
+      "EUt": 120
+    },
+    {
+      "id": "diethyl-ether",
+      "fluidInputs": {
+        "ether": 1000
+      },
+      "oreInputs": {},
+      "packetInputs": {},
+      "output": 1,
+      "fluidOutputs": {},
+      "packetOutputs": {},
+      "durationTicks": 200,
+      "EUt": 120
+    },
+    {
+      "id": "formaldehyde",
+      "fluidInputs": {
+        "fluid.formaldehyde": 1000
+      },
+      "oreInputs": {},
+      "packetInputs": {},
+      "output": 1,
+      "fluidOutputs": {},
+      "packetOutputs": {},
+      "durationTicks": 200,
+      "EUt": 120
+    },
+    {
+      "id": "hydrogen",
+      "fluidInputs": {
+        "hydrogen": 1000
+      },
+      "oreInputs": {},
+      "packetInputs": {},
+      "output": 1,
+      "fluidOutputs": {},
+      "packetOutputs": {},
+      "durationTicks": 200,
+      "EUt": 120
+    },
+    {
+      "id": "hydrogen-chloride",
+      "fluidInputs": {
+        "hydrogenchloride": 1000
+      },
+      "oreInputs": {},
+      "packetInputs": {},
+      "output": 1,
+      "fluidOutputs": {},
+      "packetOutputs": {},
+      "durationTicks": 200,
+      "EUt": 120
+    },
+    {
+      "id": "methanol",
+      "fluidInputs": {
+        "methanol": 1000
+      },
+      "oreInputs": {},
+      "packetInputs": {},
+      "output": 1,
+      "fluidOutputs": {},
+      "packetOutputs": {},
+      "durationTicks": 200,
+      "EUt": 120
+    },
+    {
+      "id": "methyl-acetate",
+      "fluidInputs": {
+        "methylacetate": 1000
+      },
+      "oreInputs": {},
+      "packetInputs": {},
+      "output": 1,
+      "fluidOutputs": {},
+      "packetOutputs": {},
+      "durationTicks": 200,
+      "EUt": 120
+    },
+    {
+      "id": "p-xylene",
+      "fluidInputs": {
+        "1,4dimethylbenzene": 1000
+      },
+      "oreInputs": {},
+      "packetInputs": {},
+      "output": 1,
+      "fluidOutputs": {},
+      "packetOutputs": {},
+      "durationTicks": 200,
+      "EUt": 120
+    },
+    {
+      "id": "sulfuric-acid",
+      "fluidInputs": {
+        "sulfuricacid": 1000
+      },
+      "oreInputs": {},
+      "packetInputs": {},
+      "output": 1,
+      "fluidOutputs": {},
+      "packetOutputs": {},
+      "durationTicks": 200,
+      "EUt": 120
+    },
+    {
+      "id": "toluene",
+      "fluidInputs": {
+        "liquid_toluene": 1000
+      },
+      "oreInputs": {},
+      "packetInputs": {},
+      "output": 1,
+      "fluidOutputs": {},
+      "packetOutputs": {},
+      "durationTicks": 200,
+      "EUt": 120
+    },
+    {
+      "id": "calcium-carbonate",
+      "fluidInputs": {},
+      "oreInputs": {
+        "dustCalcite": 1
+      },
+      "packetInputs": {},
+      "output": 1,
+      "fluidOutputs": {},
+      "packetOutputs": {},
+      "durationTicks": 200,
+      "EUt": 120
+    },
+    {
+      "id": "lead",
+      "fluidInputs": {},
+      "oreInputs": {
+        "dustLead": 1
+      },
+      "packetInputs": {},
+      "output": 1,
+      "fluidOutputs": {},
+      "packetOutputs": {},
+      "durationTicks": 200,
+      "EUt": 120
+    },
+    {
+      "id": "palladium",
+      "fluidInputs": {},
+      "oreInputs": {
+        "dustPalladium": 1
+      },
+      "packetInputs": {},
+      "output": 1,
+      "fluidOutputs": {},
+      "packetOutputs": {},
+      "durationTicks": 200,
+      "EUt": 120
+    },
+    {
+      "id": "sodium-hydroxide",
+      "fluidInputs": {},
+      "oreInputs": {
+        "dustSodiumHydroxide": 1
+      },
+      "packetInputs": {},
+      "output": 1,
+      "fluidOutputs": {},
+      "packetOutputs": {},
+      "durationTicks": 200,
+      "EUt": 120
+    },
+    {
+      "id": "acid-catalyst-cartridge",
+      "fluidInputs": {
+        "sulfuricacid": 1000
+      },
+      "oreInputs": {},
+      "packetInputs": {},
+      "output": 1,
+      "fluidOutputs": {},
+      "packetOutputs": {},
+      "durationTicks": 200,
+      "EUt": 120
+    },
+    {
+      "id": "dryer-cartridge",
+      "fluidInputs": {},
+      "oreInputs": {
+        "dustZeolite": 1
+      },
+      "packetInputs": {},
+      "output": 1,
+      "fluidOutputs": {},
+      "packetOutputs": {},
+      "durationTicks": 200,
+      "EUt": 120
+    },
+    {
+      "id": "heater-charge",
+      "fluidInputs": {},
+      "oreInputs": {
+        "dustCoal": 1
+      },
+      "packetInputs": {},
+      "output": 1,
+      "fluidOutputs": {},
+      "packetOutputs": {},
+      "durationTicks": 200,
+      "EUt": 120
+    },
+    {
+      "id": "sodium-amide",
+      "fluidInputs": {
+        "ammonia": 2000
+      },
+      "oreInputs": {
+        "dustSodium": 2
+      },
+      "packetInputs": {},
+      "output": 2,
+      "fluidOutputs": {
+        "hydrogen": 1000
+      },
+      "packetOutputs": {},
+      "durationTicks": 200,
+      "EUt": 120
+    },
+    {
+      "id": "sodium-methoxide",
+      "fluidInputs": {
+        "methanol": 2000
+      },
+      "oreInputs": {
+        "dustSodium": 2
+      },
+      "packetInputs": {},
+      "output": 2,
+      "fluidOutputs": {
+        "hydrogen": 1000
+      },
+      "packetOutputs": {},
+      "durationTicks": 200,
+      "EUt": 120
+    },
+    {
+      "id": "isopropanol",
+      "fluidInputs": {
+        "acetone": 1000,
+        "hydrogen": 1000
+      },
+      "oreInputs": {},
+      "packetInputs": {},
+      "output": 1,
+      "fluidOutputs": {},
+      "packetOutputs": {},
+      "durationTicks": 200,
+      "EUt": 120
+    },
+    {
+      "id": "aluminium-isopropoxide",
+      "fluidInputs": {},
+      "oreInputs": {
+        "dustAluminium": 2
+      },
+      "packetInputs": {
+        "isopropanol": 6
+      },
+      "output": 2,
+      "fluidOutputs": {
+        "hydrogen": 3000
+      },
+      "packetOutputs": {},
+      "durationTicks": 200,
+      "EUt": 120
+    },
+    {
+      "id": "ethylene-carbonate",
+      "fluidInputs": {
+        "ethyleneoxide": 1000,
+        "carbondioxide": 1000
+      },
+      "oreInputs": {},
+      "packetInputs": {},
+      "output": 1,
+      "fluidOutputs": {},
+      "packetOutputs": {},
+      "durationTicks": 200,
+      "EUt": 120
+    },
+    {
+      "id": "ethyl-bromide",
+      "fluidInputs": {
+        "bioethanol": 2000,
+        "molten.bromine": 1000,
+        "hydrogen": 1000
+      },
+      "oreInputs": {},
+      "packetInputs": {},
+      "output": 2,
+      "fluidOutputs": {
+        "water": 2000
+      },
+      "packetOutputs": {},
+      "durationTicks": 200,
+      "EUt": 120
+    },
+    {
+      "id": "ethylmagnesium-bromide",
+      "fluidInputs": {
+        "ether": 1000
+      },
+      "oreInputs": {
+        "dustMagnesium": 1
+      },
+      "packetInputs": {
+        "ethyl-bromide": 1
+      },
+      "output": 1,
+      "fluidOutputs": {
+        "ether": 1000
+      },
+      "packetOutputs": {},
+      "durationTicks": 200,
+      "EUt": 120
+    },
+    {
+      "id": "acetylacetone",
+      "fluidInputs": {
+        "acetone": 1000,
+        "methylacetate": 1000,
+        "hydrogenchloride": 1000
+      },
+      "oreInputs": {},
+      "packetInputs": {
+        "sodium-methoxide": 1
+      },
+      "output": 1,
+      "fluidOutputs": {
+        "methanol": 2000
+      },
+      "packetOutputs": {
+        "sodium-chloride": 1
+      },
+      "durationTicks": 200,
+      "EUt": 120
+    },
+    {
+      "id": "molybdenyl-acetylacetonate",
+      "fluidInputs": {
+        "oxygen": 1500
+      },
+      "oreInputs": {
+        "dustMolybdenum": 1
+      },
+      "packetInputs": {
+        "acetylacetone": 2
+      },
+      "output": 1,
+      "fluidOutputs": {
+        "water": 1000
+      },
+      "packetOutputs": {},
+      "durationTicks": 200,
+      "EUt": 120
+    },
+    {
+      "id": "pyridine",
+      "fluidInputs": {
+        "acetaldehyde": 2000,
+        "fluid.formaldehyde": 1000,
+        "ammonia": 1000
+      },
+      "oreInputs": {},
+      "packetInputs": {},
+      "output": 1,
+      "fluidOutputs": {
+        "water": 3000,
+        "hydrogen": 1000
+      },
+      "packetOutputs": {},
+      "durationTicks": 200,
+      "EUt": 120
+    },
+    {
+      "id": "quinoline",
+      "fluidInputs": {
+        "aniline": 2000,
+        "glycerol": 3000,
+        "nitrobenzene": 1000
+      },
+      "oreInputs": {},
+      "packetInputs": {},
+      "output": 3,
+      "fluidOutputs": {
+        "water": 11000
+      },
+      "packetOutputs": {},
+      "durationTicks": 200,
+      "EUt": 120
+    },
+    {
+      "id": "tert-butylbenzoic-acid",
+      "fluidInputs": {
+        "isobutyraldehyde": 2000,
+        "hydrogen": 2000,
+        "liquid_toluene": 2000,
+        "oxygen": 3000
+      },
+      "oreInputs": {},
+      "packetInputs": {},
+      "output": 2,
+      "fluidOutputs": {
+        "water": 4000
+      },
+      "packetOutputs": {},
+      "durationTicks": 200,
+      "EUt": 120
+    },
+    {
+      "id": "triphenylphosphine-oxide",
+      "fluidInputs": {
+        "chlorobenzene": 3000,
+        "phosphorustrichloride": 1000,
+        "oxygen": 500
+      },
+      "oreInputs": {
+        "dustMagnesium": 3
+      },
+      "packetInputs": {},
+      "output": 1,
+      "fluidOutputs": {},
+      "packetOutputs": {
+        "magnesium-chloride": 3
+      },
+      "durationTicks": 200,
+      "EUt": 120
+    }
+  ]
+}

@@ -633,8 +633,8 @@
       "bytes": 11589
     },
     "darzens-lab.html": {
-      "sha256": "e2632ab0543ce6de8c9df8203973a29ea0611e280a0b6a2c6c4e651905caf73a",
-      "bytes": 1121745
+      "sha256": "2fd1826efc33f1cc245751a9533532acab8caf86c1e246e2c826766e0db4a5a9",
+      "bytes": 1121772
     },
     "darzens-manual.html": {
       "sha256": "1875688288eb00a5c60987e15cddaebb680e251fb76de814c8ed591135a2b282",
@@ -825,8 +825,8 @@
       "bytes": 40124
     },
     "archive/darzens-lab.html": {
-      "sha256": "5ce47315e0453b09350dabc99e33b8eb33bcd3f61b1c20d81244b3c6411b7184",
-      "bytes": 1109938
+      "sha256": "f7ffb4960959ff60de8cfc900b0c30d15ccfc3be566f0b60a85f53d371516090",
+      "bytes": 1109965
     },
     "archive/darzens-manual.html": {
       "sha256": "d0af4db7f6bddab3775b9dbf4bb33504e0c3c8fcaffbb4187f9b82f42c872fe4",
@@ -905,12 +905,12 @@
       "bytes": 74088
     },
     "index.html": {
-      "sha256": "84fd13ffd9f8993b88459f2810d8c4aaa9c5ed3e6596f828888f23aa264c6a79",
-      "bytes": 308030
+      "sha256": "45acc7859e4f2b3a70fefcef605e4ed37b851b70d0d0228fe7de74550f1cb8ca",
+      "bytes": 309767
     },
     "wiki.html": {
-      "sha256": "36d82c4d1625f11122819ed4db73d5e3833ee9433c735511e9a183478af994fe",
-      "bytes": 1327008
+      "sha256": "518cfa77558c18edb906c9e3391aff288de4c9d451b24791ab517ff7ae2e1443",
+      "bytes": 1327323
     },
     "learning.html": {
       "sha256": "0794019d58bd3be4818f74fc864125a5f0a738fd7173e3c39b93dabf03252aa7",
@@ -921,16 +921,16 @@
       "bytes": 779012
     },
     "plants.html": {
-      "sha256": "397e8d530cf161ab6dc40c4c56727894799fc697223a0a8c1341d2aa110c44a6",
-      "bytes": 52881
+      "sha256": "0804dde4ad51b4c93c775192a8697373d632f4ae07d623b7ea1f250b3689bfe3",
+      "bytes": 53196
     },
     "play.html": {
-      "sha256": "2a6b5b3fb45c9a3e5056ce61e82a489ed26b9dd13cb1e700ddd52e86a8777264",
-      "bytes": 57299
+      "sha256": "332a6d330d77af1bb5240e5e7f14130adff35ffb517444f008cea3933fdf5eda",
+      "bytes": 57614
     },
     "developer.html": {
-      "sha256": "2f142376ce52c9220e6b931d2438c677d79f2c058aa2140546cbe3b38ed0abde",
-      "bytes": 64698
+      "sha256": "c30c974453b18ca9131f80f9526e14d784ba1cbfddb3d8c26817678562661976",
+      "bytes": 64796
     },
     "data/site-content-audit.json": {
       "sha256": "b8de4f92e4bf0cfbfb794bdb6f259af07d46bfa4243ee88a6845b0f55dcc5bb1",
@@ -945,16 +945,16 @@
       "bytes": 19338
     },
     "ester-guide.html": {
-      "sha256": "13737ac36f74c4ff8685ab29df3a6e56e4cd7137838f028a04441d5c714e89cc",
-      "bytes": 321447
+      "sha256": "eb66e1ae218445ee760f56fd0ffd9992a5a77ae8cf81c24fb8014cddb10ed9c3",
+      "bytes": 323807
     },
     "vitamin-a-guide.html": {
-      "sha256": "efa961b62c06793c6d65f2ac2fa3b45a25d99ea77751b0ea831ac723465bd76a",
-      "bytes": 340599
+      "sha256": "6ad0951099e7945164162ab6b2fd899585b34a1962c962651da7fddc70028775",
+      "bytes": 342618
     },
     "process-quality.html": {
-      "sha256": "90836f7daa6e0e61aaa07571998a34fb8ac4ae4e58aaf91adfdfae8c1953d584",
-      "bytes": 145260
+      "sha256": "9695896e73c8b18444f0a831d90bd1ce6d63a8ac7a79aa4eb375965787087a98",
+      "bytes": 145575
     },
     "ui-acceptance.html": {
       "sha256": "f4c4475f48c33c33bea19ebe3d25f29363fdd32aa04c505e5b4d884ce84b361d",
@@ -1057,8 +1057,8 @@
       "bytes": 4747
     },
     "modular-plant.html": {
-      "sha256": "cd2af8147b5643fc3ac793aa2311f3e5b0a60c2d6b3a8bec649d15300a32d097",
-      "bytes": 310522
+      "sha256": "a1def73c10b392bda4e9bdee7a67d2b10e69f5378cfd009cc942be646b85a3b3",
+      "bytes": 312259
     },
     "data/modular-plant.json": {
       "sha256": "d2866204656e03aaa6caacec13cbba1ac332038d32ca0c1af57afc75a369494d",
@@ -1097,8 +1097,8 @@
       "bytes": 22449
     },
     "factory-services.html": {
-      "sha256": "080dbe2b8ae457c8cafe32b05b9e00d1c42f4936aa4e5ddb8921836738bf3902",
-      "bytes": 146127
+      "sha256": "7d33b14a288ec20e85dc1be88d3189451aadd7fa72f880b044c49d7c59c4be70",
+      "bytes": 146442
     },
     "data/factory-supplies.json": {
       "sha256": "17368a205fb5d04770509d0a3fe32ef001f9e7fda4bb6c8bac6ed39d4b359e42",
@@ -1109,8 +1109,8 @@
       "bytes": 13675
     },
     "retinol-guide.html": {
-      "sha256": "68be69e6f8863942b93e6cdb4d62612c7198b570b92be75272253c0db009792b",
-      "bytes": 58101
+      "sha256": "aabb30670de5f2b098cee4f686ecc247e5a17bb264ee427c0b5b510fb6677c64",
+      "bytes": 57250
     },
     "data/retinol-proposal.json": {
       "sha256": "f3aded399db1dc91fa4c417b64b90964dc9c9e32833bcbe87be0698627bf75cb",
@@ -1129,8 +1129,8 @@
       "bytes": 14615
     },
     "line-bus.html": {
-      "sha256": "ae8263af313685759ed52cec91825b8a4282385e6d4589682eca8ef670f7d162",
-      "bytes": 308683
+      "sha256": "ef42d4c07fe72f0e28f0edbec7e311caf317a3a8106ae073f2b05d2af14e719c",
+      "bytes": 310420
     },
     "line-atlas.js": {
       "sha256": "3a8f361876627fcea29f3a3ff9ba3ffaf0eaf7562042c345eaa347651b606335",
@@ -1169,16 +1169,16 @@
       "bytes": 7384
     },
     "en/ester-guide.html": {
-      "sha256": "87f7d7ec41b4f97fedcecb9e743d62b433b6e78e292e049a444ac4c756fd711f",
-      "bytes": 322243
+      "sha256": "99c9bc49fc7d1e75e041b1a12eb119394c69f8363bc3f96a89e4cab6d7559c2e",
+      "bytes": 326677
     },
     "en/factory-design.html": {
       "sha256": "a0372e86e673d575f0aad9f74daa5e42d3c7cef6112970eda133816d8e6dc692",
       "bytes": 28932
     },
     "en/factory-services.html": {
-      "sha256": "350e78562235c68bd57b47150c0c9ed04e7d50de2e49ca4c8b1b0720879eabb7",
-      "bytes": 33509
+      "sha256": "da90ae71e535913396b43c74c0b5c9fc77541f4c580631981fe524f41f8ed5c8",
+      "bytes": 33827
     },
     "en/gameplay.html": {
       "sha256": "875b4949fc9661d3c989255b0357c9f740c8ea08eb7fb71a7ef44f8b4ddaec9f",
@@ -1189,8 +1189,8 @@
       "bytes": 35639
     },
     "en/index.html": {
-      "sha256": "5e7656bb7066da29721862c3ce2e639186b5f4fbdb19500b04f35dd120c59ce2",
-      "bytes": 307958
+      "sha256": "e1feeca569ec294c4a0f754cbebca9c53f93cfee2aaed856085aed1f3ff993cc",
+      "bytes": 311610
     },
     "en/learning.html": {
       "sha256": "6d00cc6c228e006d782ad8c91762d6bc1bc58e8d3740e53a220c725b59eccbde",
@@ -1201,16 +1201,16 @@
       "bytes": 28498
     },
     "en/line-bus.html": {
-      "sha256": "d2866eaeaeef5c94bcad0e76c0f5c171996336fae10fb605b3d988c8fcf021dc",
-      "bytes": 308613
+      "sha256": "2adca118ba7ca4823376d696737941a66f903e70b89610756dbfa45973795338",
+      "bytes": 312265
     },
     "en/mechanisms.html": {
       "sha256": "d41942ba8446873855f23a3a6b81c36b7eab8b3dd7f1fbba992a8f8ddb9bf209",
       "bytes": 27059
     },
     "en/modular-plant.html": {
-      "sha256": "3c98956654d6baf031cf3e44176d14e1e87449ee03e9d1f83e4d07716e8dead9",
-      "bytes": 308075
+      "sha256": "d12d12e2049ffe4f2eb071765c5a40d0a742808c69701cab3b0ffda37a99db41",
+      "bytes": 311727
     },
     "en/motion.js": {
       "sha256": "648502ea4571bd2ab7c946b3d98277e54064c73f1ad831bd5dbe8c906e576f0c",
@@ -1221,24 +1221,28 @@
       "bytes": 28573
     },
     "en/plants.html": {
-      "sha256": "b40492ba6413f470209d45e1c4dcdeb5127f1a074871f0e8582171e13a7849a5",
-      "bytes": 30661
+      "sha256": "ed28aaa73b73445b37711789d77c28ac2d2071180366c73006c22c90cb2edccc",
+      "bytes": 30979
     },
     "en/play.html": {
-      "sha256": "d9529b0fa27f280b0caea477b10374e108d49fd5582d2f17bf2d065063671d03",
-      "bytes": 30688
+      "sha256": "579c314e947918d6b01d83cab685fdac1dc0637f1db1f4027b3f4f54b723c859",
+      "bytes": 31006
     },
     "en/process-manual.html": {
       "sha256": "ad5b7925b9ec4905bd141f17caab39244db865191b4f88dc0037af643fd0b9e1",
       "bytes": 28630
     },
     "en/process-quality.html": {
-      "sha256": "ff5e38ba3dddd2106f87ea0f541e1e4b061788e5f665d28e3811e9ac63364200",
-      "bytes": 29104
+      "sha256": "88d1b65bffcacfb157199069631c1bf09a32611856334624c6e1945b99868e42",
+      "bytes": 29422
+    },
+    "en/reagents.html": {
+      "sha256": "1680e4aab7339eb012617c1e42aaf3cb2579f9470e34c9d35fa66994e5fd0ae6",
+      "bytes": 20128
     },
     "en/retinol-guide.html": {
-      "sha256": "a14b21d45209086fdf920878954d5083543adc59115dad31000dca4239b2c374",
-      "bytes": 32931
+      "sha256": "f458b12c5b12c272c1475c6c4c820295a27b6a1e4647880a8eff12012cfcc376",
+      "bytes": 31939
     },
     "en/retinol-guide.js": {
       "sha256": "6078d897d8e66cb1b8ad0cb021a3645fc0f0c6cfdb8f5b0989dd26af07bf679e",
@@ -1257,12 +1261,12 @@
       "bytes": 28705
     },
     "en/vitamin-a-guide.html": {
-      "sha256": "a8a7bcdd98ecc0f6e4acdaa691525db3cd48bb193ff9037f5ce937e75dfb8631",
-      "bytes": 344070
+      "sha256": "74ac7ae41ecaf6e0dec12242f3df847be425b979a642cab020224cf91a530fee",
+      "bytes": 349901
     },
     "en/wiki.html": {
-      "sha256": "fc726a0a3629c98e0f385c16ea9794c21edf4cbdf79b9853219bb79609334e7f",
-      "bytes": 28196
+      "sha256": "8992a36098f30fc44c5e1775de40140e3474ee1f7e32e3049d8851fafa6a24fe",
+      "bytes": 28514
     },
     "site-language.js": {
       "sha256": "f240cfd499a86c8e12521ae6615a8a84a31291b20f05e331c38c1b89eceea612",
@@ -1281,24 +1285,32 @@
       "bytes": 5746
     },
     "complete-factory.css": {
-      "sha256": "55ebe90d4e835eb0f79b46a6a35dc9f4ea9be7b2d55024e5afe0a7980a1dc79d",
-      "bytes": 6388
+      "sha256": "3ed1640348f44a270155a8588d1466d4a8fdf14e5a19fc607b2a703431c4623c",
+      "bytes": 6527
     },
     "complete-factory.js": {
-      "sha256": "49fc7182c2278ec14330a9c8bfbb6782a49d537373936460e080622f9aa85533",
-      "bytes": 14570
+      "sha256": "9a75d25c581950179651a419db7325dcd25da01682c6ac888cf2f782c1fb2c26",
+      "bytes": 15381
     },
     "data/complete-factory/ester.json": {
-      "sha256": "04ed7b353aa1adea4c59eeb0773f2e2e09030c3324c16e187a534e1d3e687ab3",
-      "bytes": 33687
+      "sha256": "50707127ef8f84578942fcf0e70248760d36f6ead02961af86f92805dbb74575",
+      "bytes": 34270
+    },
+    "data/complete-factory/reagents.json": {
+      "sha256": "640d81e0a80c21d8f0927dd8922954fa143170de41b1397cd2226e9831743f45",
+      "bytes": 12369
     },
     "data/complete-factory/vitamin_a.json": {
-      "sha256": "62b634767a798211d0eb2d77883a40066bb8479c47140eeea25fb8a63e996513",
-      "bytes": 216299
+      "sha256": "c5e0b5af7ec89aae75bcae933dc535fd8381e612619c7517b32e0c367ee3a7a7",
+      "bytes": 216780
     },
     "data/complete-factory/routes.drawio": {
       "sha256": "35f696fc943a89c4467adcdf6d2a92b29b1566c53f96e3a7220586dc83667c32",
       "bytes": 10519
+    },
+    "reagents.html": {
+      "sha256": "65b222598a281c62ebdf2f2bda1b3d4a7797d494c0b647e720762e3c7bb8e50f",
+      "bytes": 19511
     },
     "vendor/3Dmol-min.js": {
       "sha256": "bcf422137a34b4e206413a8a83a67c24a1ace84e282bf3b164f6bda6aeb42a20",
@@ -1353,8 +1365,8 @@
       "bytes": 11320
     },
     "darzens-lab.source.html": {
-      "sha256": "267aa18bfe5ed7eb6540bdc64798fe6cbce7a493dbbd71891d86c9a28d595b7a",
-      "bytes": 8874
+      "sha256": "2398268f01fd39840491d0754488198991be0af61cad6c906df7ae43934a9fa6",
+      "bytes": 8941
     },
     "darzens-app.js": {
       "sha256": "a62d1a118b4aea43df13fa5ec66246ec46e1e7d3e2f297f507a71518448ccfca",

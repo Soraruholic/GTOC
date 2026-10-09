@@ -7,18 +7,30 @@ try{if(localStorage.getItem('complete-theme')==='dark')document.body.classList.a
 $('theme').onclick=()=>{document.body.classList.toggle('dark');try{localStorage.setItem('complete-theme',document.body.classList.contains('dark')?'dark':'light');}catch(_){}draw();};
 function makeObjects(){const d=route.data;objects=[];
  for(const m of d.machines)objects.push({...m,anchor:[m.x,m.y+1,m.z],x:m.x-m.width/2+.5,w:m.width,h:m.height,d:m.width,kind:'machine',color:'#4f8876'});
- for(const c of d.cells)if(c.kind==='STORAGE')objects.push({...c,w:1.2,h:1.7,d:1.2,kind:c.id.startsWith('stock:')?'stock':local(c.id)?'local':'receiver',color:c.id.startsWith('stock:')?'#bd8252':local(c.id)?'#ab735f':'#668da8'});
- // Compress actual bus voxels along X. Coordinates still match the exported block plan.
- const groups=new Map();for(const c of d.cells)if(c.kind==='BUS'){const key=c.y+','+c.z;if(!groups.has(key))groups.set(key,[]);groups.get(key).push(c.x);}
- for(const [key,xs]of groups){const[y,z]=key.split(',').map(Number);xs.sort((a,b)=>a-b);let start=xs[0],last=start;for(let i=1;i<=xs.length;i++){if(xs[i]===last+1){last=xs[i];continue;}objects.push({id:'bus',kind:'bus',x:start,y:y+.25,z:z+.25,w:last-start+1,h:.35,d:.35,color:'#748fa6'});start=xs[i];last=start;}}
+ for(const c of d.cells)if(c.kind==='CHEST'||c.kind==='HOPPER')objects.push({...c,w:1,h:c.kind==='HOPPER'?.8:1,d:1,kind:c.kind.toLowerCase(),color:c.kind==='CHEST'?'#b9843f':'#697578'});
+ for(const c of d.cells)if(c.kind==='STORAGE')objects.push({...c,w:1.2,h:1.7,d:1.2,kind:c.id==='bulk'?'bulk':c.id.startsWith('stock:')?'stock':local(c.id)?'local':'receiver',color:c.id.startsWith('stock:')?'#bd8252':local(c.id)?'#ab735f':'#668da8'});
+ // Join adjacent voxel centres on all three axes; each branch includes its junction.
+ const bus=d.cells.filter(c=>c.kind==='BUS'),keys=new Set(bus.map(c=>[c.x,c.y,c.z].join(','))),segments=[];
+ const axes=[['x','w'],['y','h'],['z','d']];
+ for(const [axis,dim]of axes){
+  for(const c of bus){const prev={...c,[axis]:c[axis]-1},next={...c,[axis]:c[axis]+1};
+   if(keys.has([prev.x,prev.y,prev.z].join(','))||!keys.has([next.x,next.y,next.z].join(',')))continue;
+   let length=1;while(keys.has([c.x+(axis==='x'?length:0),c.y+(axis==='y'?length:0),c.z+(axis==='z'?length:0)].join(',')))length++;
+   const seg={id:'bus',kind:'bus',axis,x:c.x+.34,y:c.y+.34,z:c.z+.34,w:.32,h:.32,d:.32,color:axis==='y'?'#4f7990':axis==='z'?'#789888':'#748fa6'};
+   seg[dim]=length-1+.32;segments.push(seg);
+  }
+ }
+ objects.push(...segments);
+ window.__busAxes=Object.fromEntries(axes.map(([a])=>[a,segments.filter(s=>s.axis===a).length]));
+
 }
 function local(id){const k=id.replace('receiver:','');return !k.startsWith('e:')&&!k.startsWith('r:')&&k!=='k:5:liquid'&&k!=='v:5:liquid';}
-function objectName(o){if(o.kind==='machine')return en?o.labelEn:o.labelZh;if(o.kind==='stock'){const id=o.id.slice(6);return en?id.replaceAll('-',' '):(route.data.speciesZh[id]||id);}return t(o.kind==='local'?'局部接收':'中央接收',o.kind==='local'?'Local receiver':'Central receiver')+' · '+o.id.replace('receiver:','');}
+function objectName(o){if(o.kind==='chest')return t('中央收料双箱','Central receiving chest');if(o.kind==='hopper')return t('向下进料漏斗','Downward feed hopper');if(o.kind==='bulk')return t('中央识别与分仓端','Central sorting inlet');if(o.kind==='machine')return en?o.labelEn:o.labelZh;if(o.kind==='stock'){const id=o.id.slice(6);return en?id.replaceAll('-',' '):(route.data.speciesZh[id]||id);}return t(o.kind==='local'?'局部接收':'中央接收',o.kind==='local'?'Local receiver':'Central receiver')+' · '+o.id.replace('receiver:','');}
 function controls(){const opts=objects.filter(o=>o.kind!=='bus');$('unit-select').innerHTML=opts.map(o=>`<option value="${esc(o.id)}">${esc(objectName(o))} · ${esc(o.id)}</option>`).join('');selected=opts[0]?.id||'';$('unit-select').value=selected;detail();}
 function detail(){const o=objects.find(o=>o.id===selected);if(!o)return;const step=route.steps.find(s=>!['build','inventory'].includes(s.id)&&s.units.includes(o.id));
  let html=`<span class="eyebrow">${esc(o.kind.toUpperCase())}</span><h3>${esc(objectName(o))}</h3><p><code>${esc(o.id)}</code></p><p>${t('相对控制锚点','Relative to the anchor')}: (${(o.anchor||[o.x,o.y,o.z]).join(', ')})</p>`;
  if(o.kind==='machine')html+=`<p>${o.w} × ${o.h} × ${o.d} · ${t('独立端口、库存引用与只读状态 UI。','Separate ports, an inventory reference and a read-only status UI.')}</p><p>${esc(step?.title||t('工序的有限缓冲与隔离端','Finite process buffer or containment boundary'))}</p>`;
- if(o.kind==='stock'){const id=o.id.slice(6);html+=`<p>${t('有限测试原料','Finite test supply')}: <strong>${Number(route.data.supplies[id]).toPrecision(6)}</strong></p><p>${t('这是一批预置的教学库存，运行时不补发；真实 GT 进料证明是另一验收边界。','A single explicit teaching charge, never refilled during operation. Native GT ingress proof is a separate acceptance boundary.')}</p>`;}
+ if(o.kind==='stock'){const id=o.id.slice(6);html+=`<p>${t('一批工艺用量','Per-batch process charge')}: <strong>${Number(route.data.supplies[id]).toPrecision(6)}</strong></p><p>${t('从 GT 配方制造原料包，投入中央双箱后自动分仓。生产仓从零开始；分数余量留给下一批。','Craft reagent packets using the GT recipe and feed the central double chest. Stores start empty and retain fractional balances for later batches.')}</p>`;}
  if(o.kind==='local'||o.kind==='receiver')html+=`<p>${o.kind==='local'?t('局部密封保管；不接普通混合废液管。','Local sealed custody; not an ordinary mixed waste header.'):t('中央分类保管。保持原有全部组分；不是纯化产物。','Segregated central custody. All original components remain; collection is not purification.')}</p>`;
  if(step)html+=`<a href="${kind==='ester'?'ester':'vitamin-a'}-guide.html#step-${step.id}">${t('阅读这一步的完整说明 →','Read this step in full →')}</a>`;
  html+=`<p class="caption">${t('布局测试导出 · 非实时遥测','Layout test export · not live telemetry')}</p>`;
@@ -41,7 +53,7 @@ function graph(){const steps=route.steps,by=Object.fromEntries(steps.map(s=>[s.i
  for(const g of $('route-map').querySelectorAll('[data-step]')){const go=()=>{const s=by[g.dataset.step];focus=new Set(s.units);selected=s.units[0];$('unit-select').value=selected;detail();draw();$('route-note').innerHTML=esc(s.title)+' · '+`<a href="${kind==='ester'?'ester':'vitamin-a'}-guide.html#step-${s.id}">${t('阅读完整步骤','Read full step')}</a>`;for(const el of $('route-map').querySelectorAll('.active'))el.classList.remove('active');g.classList.add('active');};g.onclick=go;g.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();go();}};}
  $('route-note').textContent=kind==='ester'?t('从独立计量到可逆酯化，再到分离、干燥与分类收集。点击节点定位设备。','Follow metering, reversible esterification, separation, drying and collection. Select a node to locate its equipment.'):t('C14 与 C6 只在合格交接后汇合。点击任意节点，高亮对应设备。','C14 and C6 join only after qualified handoff. Select a node to highlight its equipment.');
 }
-function bill(){$('bill').innerHTML=Object.entries(route.data.supplies).map(([s,n])=>`<tr><td>${esc(en?s.replaceAll('-',' '):(route.data.speciesZh[s]||s))}<br><code>${esc(s)}</code></td><td>${Number(n).toPrecision(7)} ${s.endsWith('cartridge')||s==='heater-charge'?t('份测试能力','test charge'):t('教学 mol','teaching mol')}</td><td><a href="factory-services.html#supplies">${t('查原生配方 / 制备候选','Native recipes / preparation candidates')}</a><br>${t('整线测试仓显式预置；不等于生存闭合','Explicit finite test stock; not survival closure')}</td></tr>`).join('');}
+function bill(){$('bill').innerHTML=Object.entries(route.data.supplies).map(([s,n])=>`<tr><td>${esc(en?s.replaceAll('-',' '):(route.data.speciesZh[s]||s))}<br><code>${esc(s)}</code></td><td>${Number(n).toPrecision(7)} ${t('工艺单位','process units')}<br><strong>${Math.ceil(n)} ${t('包 / 首批','packets / first batch')}</strong></td><td><a href="reagents.html#reagent-${esc(s)}">${t('查看 GT 制备配方','GT preparation recipe')}</a><br>${t('中央双箱供料 · 余量留仓','Central chest feed · carry-over retained')}</td></tr>`).join('');}
 function draw(){if(!ctx||!objects.length)return;const width=canvas.clientWidth,height=canvas.clientHeight,dpr=Math.min(devicePixelRatio||1,2);canvas.width=width*dpr;canvas.height=height*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,width,height);const dark=document.body.classList.contains('dark');
  const visible=objects.filter(o=>o.kind==='bus'?$('layer-bus').checked:o.kind==='machine'?$('layer-machine').checked:$('layer-storage').checked),bounds=objects.filter(o=>o.kind!=='bus');
  const minX=Math.min(...bounds.map(o=>o.x)),maxX=Math.max(...bounds.map(o=>o.x+o.w)),minZ=Math.min(...bounds.map(o=>o.z)),maxZ=Math.max(...bounds.map(o=>o.z+o.d));const cx=(minX+maxX)/2,cz=(minZ+maxZ)/2;
