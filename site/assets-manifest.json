@@ -189,16 +189,16 @@
       "bytes": 1429
     },
     "process.html": {
-      "sha256": "4b304d5f687a0f4194cb8b3e73b3fd99343b3470eace4a76251cfa230210a44a",
-      "bytes": 727752
+      "sha256": "5a17b852ed003e83b50b1de32697cd6e7fdc1d51961fc2339f30343e6159aaa6",
+      "bytes": 730162
     },
     "process-manual.html": {
-      "sha256": "db5fa36cf2850ff73e114cd287d55eaf80d5d28d861d0a3371ba12f013a84ae8",
-      "bytes": 79454
+      "sha256": "1e8266d461db7e96720c60cb194d561ffe415cb0082d050c186254bf41bd1bbf",
+      "bytes": 81864
     },
     "process-plan.html": {
-      "sha256": "591dab2a2fd14219885db28702bb26dd6262c9aa7f08ad0299406866973d2bdb",
-      "bytes": 50180
+      "sha256": "72680445d262be7e65d3aa3c46a749ad85982d447b1356ea3b2fae3c8189f4fd",
+      "bytes": 52610
     },
     "process-manual.md": {
       "sha256": "60bbe3b454cb8173190852d53d5641e97dcff3b8f5027860fd504bdd0855d54e",
@@ -217,12 +217,12 @@
       "bytes": 358714
     },
     "va-lab.html": {
-      "sha256": "ef5cb4585152c93b53cca711166fe10a0a6808092139f2bb2b18e902e3b14c6e",
-      "bytes": 1436750
+      "sha256": "e80e3ed43ee0cb514d0a905b66738a662564696850c1c9d84d58e00e7392c708",
+      "bytes": 1439160
     },
     "va-manual.html": {
-      "sha256": "d038986f27a557d49c2d6782bee78324e7331e78aec4afcf12cc8b18e4ccc486",
-      "bytes": 55942
+      "sha256": "bb9f86a0e9eee1382a00aca765a77b73e5b21ba565bd8456f92a5656997ec711",
+      "bytes": 58352
     },
     "va-manual.md": {
       "sha256": "a2ed2b77d9f05cbd3ce6f1ae2201f97b0daf556e4a38c223ffb6e7a0e3530fa6",
@@ -257,12 +257,12 @@
       "bytes": 8104
     },
     "coupling-lab.html": {
-      "sha256": "89605293e13ca9b192abc81f2d7aa5312d9a6fd68482eee6d18be73dc9577eca",
-      "bytes": 1032795
+      "sha256": "a5e73ce0ad99c8cbec3f480432776d64269cf9fa367e9987408bc342df0b73a6",
+      "bytes": 1035205
     },
     "coupling-manual.html": {
-      "sha256": "e1d9b54e0f15f81c07ab85b895c6e14e7897d9528f1c81b8c84d5233fa2decd6",
-      "bytes": 53679
+      "sha256": "a03a4b5fc86aff33cae7d9bb6f4b624737d0582c7cd8be8d2ed80f86e23b33bb",
+      "bytes": 56089
     },
     "data/vitamin-a/coupling-catalog.json": {
       "sha256": "a416eb12f81f7d31b582f7d39964025515d986e4ec72230de411aef705d753cf",
@@ -281,12 +281,12 @@
       "bytes": 4780
     },
     "chain-lab.html": {
-      "sha256": "30d3d8d9d73983a7dd71e28179a973e44f1a9c90ffd3aaaf1e0d6edd4aa082b3",
-      "bytes": 1319498
+      "sha256": "a516a05795ddb96696977d7d1b44ced33bae89df6939202113ef02f38f4ce6c1",
+      "bytes": 1321908
     },
     "chain-manual.html": {
-      "sha256": "bb47cbcbbe519fa5ec0abc977a38a6531154d24b5d07664567594a9329fdc637",
-      "bytes": 53779
+      "sha256": "ac68ab55d644393ec0cd31fd2223fdeb9eb4bb3526070c8346aa8f517d9d17bf",
+      "bytes": 56189
     },
     "data/vitamin-a/chain-catalog.json": {
       "sha256": "39548b05fb870e1ce93f54c13405739fbd34b05be33bb4e42d119392567db462",
@@ -305,12 +305,12 @@
       "bytes": 5362
     },
     "supply-lab.html": {
-      "sha256": "c160cfe014f32faed9e38ebea0c841cd558566587c920bfe731637ae166066c2",
-      "bytes": 952765
+      "sha256": "9d1679d0726e5a2f2033df10f6febc3a2ed4f10508b12ac3d51ecabd6aafd7e7",
+      "bytes": 955175
     },
     "supply-manual.html": {
-      "sha256": "c08cb19bf98e3daaf18439cc287ef8fd788253dc89ced02356ccc959ce4fdf03",
-      "bytes": 53687
+      "sha256": "863b6406e5567451832e77dd67fa3e451af8e591f74f0389e66df8ec395f9116",
+      "bytes": 56097
     },
     "data/vitamin-a/supply-catalog.json": {
       "sha256": "afd7dffee7851a02861e3c0831ff489aef404cdbd326c4be945a0a0b39c3a557",
@@ -333,12 +333,12 @@
       "bytes": 21798
     },
     "vitamin-a.html": {
-      "sha256": "7d4a7209438f1aa7547e30ab7747382dd52ccfea29ed1aaa7fb61f27ce725360",
-      "bytes": 804452
+      "sha256": "416988292e1a563a1a8e14629da130bbe8627f7b1c1bb00e9d4d8c44e9566770",
+      "bytes": 806946
     },
     "vitamin-a-spec.html": {
-      "sha256": "f30bbe3e5ff3c65f38a742f7e748b473bbcd5d110970e818e1ff9c0e615ff65c",
-      "bytes": 50200
+      "sha256": "270d057982ade8ed813effad3f4e423206e024610049ecd9405ed75ac122f995",
+      "bytes": 52630
     },
     "vitamin-a-spec.md": {
       "sha256": "33c090f771409d0e5522e8d7f9ad9391443c897c01ea1002e56c52982c45bb6f",
@@ -633,12 +633,12 @@
       "bytes": 11589
     },
     "darzens-lab.html": {
-      "sha256": "2fd1826efc33f1cc245751a9533532acab8caf86c1e246e2c826766e0db4a5a9",
-      "bytes": 1121772
+      "sha256": "a661d2869e8ec64e2b54d398282a4d058a9dae32b38139d9988220cffb4ca5b7",
+      "bytes": 1124182
     },
     "darzens-manual.html": {
-      "sha256": "1875688288eb00a5c60987e15cddaebb680e251fb76de814c8ed591135a2b282",
-      "bytes": 48786
+      "sha256": "1a7facf438a46b70474b0febb3b1eed403212a542dbb4d7710a819c22dfd4a8a",
+      "bytes": 51196
     },
     "data/vitamin-a/darzens-catalog.json": {
       "sha256": "7c2477f656c509d8481c8d6e5fda2391dc07b607fde0693b64b8f30b96ab17fd",
@@ -661,20 +661,20 @@
       "bytes": 60379
     },
     "campaign-lab.html": {
-      "sha256": "97300bdff228f3ec280396d1e712ff1150de702c9f99b165138839a9b6bfca43",
-      "bytes": 1069105
+      "sha256": "0f4c5c7e1d8068a0790ac15cafd58c2cf8a21c41dfd362572f906bca889aa018",
+      "bytes": 1071515
     },
     "campaign-manual.html": {
-      "sha256": "73c5ee56b47163b6ea536f90045369d242a5bd07c591c2c4df95f042a237462b",
-      "bytes": 53031
+      "sha256": "5cea9c8a128839fe7bf7053d4d0efc9a004cb15b6935174807b10e01f6cf50f5",
+      "bytes": 55441
     },
     "campaign-execution.html": {
-      "sha256": "6a8c116ad3e6fd60bd07b9b30d1918970adb1fe9417458684ad2cf54515dfef9",
-      "bytes": 50164
+      "sha256": "13d3e8d160137a84241a7d0fa246b7a4b78bd12360e57e4a73292676820118a6",
+      "bytes": 52594
     },
     "campaign-review.html": {
-      "sha256": "a75ca321978cefb26d3966a43a69f5b755dd98228885244fe71aba4de7d00522",
-      "bytes": 50161
+      "sha256": "1742f0fcd61a2cb2b29340f7a8625311bd124cb279dc71cd5bdbc802fafbfbf3",
+      "bytes": 52591
     },
     "data/vitamin-a/campaign-scenario.json": {
       "sha256": "e362a7f8d5d42b2629020d9b7bc82581e86066169ae29c533b17dd653905abdb",
@@ -701,20 +701,20 @@
       "bytes": 665
     },
     "carbon-lab.html": {
-      "sha256": "1ed175be266db7d7074e6b40336ea2d3c18958899287636641f042ef48eb1c31",
-      "bytes": 1329371
+      "sha256": "f97f678a97967f670af313c354c0b24c0826bbb41e5ee1365f38a292b31fe5f9",
+      "bytes": 1331781
     },
     "carbon-manual.html": {
-      "sha256": "836683bdffae9cc3b1f510509bd4b46aef982b4ddb09843e875c2aa43979f23e",
-      "bytes": 55424
+      "sha256": "5d630514d49ede2bdac41cd7eb9fd2ba9197d2eb803ca50a04fca01a6e75b03a",
+      "bytes": 57834
     },
     "carbon-execution.html": {
-      "sha256": "b451b080129a55eb38dee0ad07fea596cfc29a706f564623878b7f51f3e45de6",
-      "bytes": 50156
+      "sha256": "a05adb4df5a9ab6c04fb932948550d1bf13ea9771bfea7e3e9e2a79c7de27cd8",
+      "bytes": 52586
     },
     "carbon-review.html": {
-      "sha256": "b8940dc49f51d90a4152bc067c40d0a00505e770c7a34c3ac3a746f8a2a043a7",
-      "bytes": 50149
+      "sha256": "6da6546ae856d618431a934272b96dd9ee913505ead75e2feab6a4086915112b",
+      "bytes": 52579
     },
     "data/vitamin-a/carbon-scenario.json": {
       "sha256": "f727cd6b591269a31a83de401b62b513bf0b07135837a97f78feff533b9ef432",
@@ -741,16 +741,16 @@
       "bytes": 591744
     },
     "geometry-quality.html": {
-      "sha256": "2e74e4ffa79aa9fb583f0f368e96506b09559ad6e4e51982a377212814e5d1ba",
-      "bytes": 51884
+      "sha256": "a7ed9ccaf0545a5aea232e4abc562270bd20c1f8d55f996c984a728e39efc1a5",
+      "bytes": 54294
     },
     "data/mechanism-geometry-audit.json": {
       "sha256": "6f9e9d98f062282c60f057d52cfad8f41b3ee7e17b9b225eeb8ddaefc3b458f9",
       "bytes": 50267
     },
     "dosing-lab.html": {
-      "sha256": "23d83f5073d109dcb4b815655b80c06d49efebdbee03394a6f6b35c1ff4178a0",
-      "bytes": 51206
+      "sha256": "6aa84729c22f71969242467a9655c79316bfda72599eafe71c1fc0657a06e9eb",
+      "bytes": 53616
     },
     "data/vitamin-a/dosing-scenarios.json": {
       "sha256": "0680fff77099045cd4f83bfec247ab039eb80ba0431a8ac1554e13933a0140ed",
@@ -765,8 +765,8 @@
       "bytes": 8528
     },
     "data/learning-catalog.json": {
-      "sha256": "2ed78e1515c935f489109af414e1c3b3fabcd014223d69f8a5c828749a258b14",
-      "bytes": 716079
+      "sha256": "4edd4e64ce6aa9bea010dde052f41736aaf6753a9a585c5b65cb02a100cbc1ee",
+      "bytes": 716499
     },
     "data/vitamin-a/ionone-lesson.json": {
       "sha256": "0132f4600c45a9b8aa703544f5feb436e6cb17c35f928d2703466889d3f4e9ed",
@@ -777,160 +777,160 @@
       "bytes": 1917
     },
     "archive/campaign-execution.html": {
-      "sha256": "ab8ba8a54d6fa32ff8d869e86c20588e88cee224fe743afb9335df0d5a1d86e8",
-      "bytes": 33256
+      "sha256": "25c5cf74186e5abd8f25f01a6559f951cb5f1a65b507ff62200c96147bcba272",
+      "bytes": 33370
     },
     "archive/campaign-lab.html": {
-      "sha256": "e2f3462f33d2ed76ace7c0d8118b04b33040ea72f0973425825129ba7b49530b",
-      "bytes": 1056647
+      "sha256": "239aaa3c47fc301bda526e5fe313fea4aa0eb243452b5c46579d422b096e6aab",
+      "bytes": 1056761
     },
     "archive/campaign-manual.html": {
-      "sha256": "eb076c9ad3fee538323fb6e6275e89d23da4004b98f097b5d84ff44fc4480dad",
-      "bytes": 39210
+      "sha256": "1392fa3042c247e0019d3a7f5e2dc32ced4c91781ed3cccc4a3e22aaa464af94",
+      "bytes": 39324
     },
     "archive/campaign-review.html": {
-      "sha256": "a436c781b5d0ceacb1b71b28bbf0f82963d039e6565a383483e615bd25f179d7",
-      "bytes": 33897
+      "sha256": "6cc26edd3723a88ff04c3c780f1f0297abc6ca0fcf2ca3641b71da400cadfc2f",
+      "bytes": 34011
     },
     "archive/carbon-execution.html": {
-      "sha256": "0d93f1b8e8f1bee5b86cb766dedffc50244320c0250195370d6fc01802e7e24d",
-      "bytes": 33743
+      "sha256": "8a8aa54054a1f09f5815b6a2ad4abd60d4bddaa7e234e3c9c5953e58cb74b0e4",
+      "bytes": 33857
     },
     "archive/carbon-lab.html": {
-      "sha256": "feaa23e5384227db804c02ea9038ffd45dcf61e4a7b4ac2676cf4e40361dfe5e",
-      "bytes": 1316336
+      "sha256": "cc3a62f0d273cb1390271fed7df9bfdff843cfca60d06f11c762783ad8b05c12",
+      "bytes": 1316450
     },
     "archive/carbon-manual.html": {
-      "sha256": "10029098e3644b2272837fd5f8424b34e021c06ae87488aafa81a20bbf27e7f8",
-      "bytes": 41584
+      "sha256": "f0101382251222de43a8dfebc78a60c6f54da9a8427a9ee0bf75e01800ac9ddd",
+      "bytes": 41698
     },
     "archive/carbon-review.html": {
-      "sha256": "4ceec98b07d4debd67162474589de10d302e14b5fa4f5d3bb2f05e59b7c9bc1f",
-      "bytes": 33322
+      "sha256": "f25b9cee202254f43692c0fbcb0a642ce995acddb3e80d8016b11250ec661750",
+      "bytes": 33436
     },
     "archive/chain-lab.html": {
-      "sha256": "5465bfb720ef7440bdd9007dbc0dca128d1a4dae833bcaee3adf6674ed083e2a",
-      "bytes": 1308232
+      "sha256": "bac1b5fbd630d301f43227b1777803b60e07633d1400f0aea86a84046424833d",
+      "bytes": 1308346
     },
     "archive/chain-manual.html": {
-      "sha256": "762a555f1f308bc7f3fcd2a46f24bed71ab97781b1d5206053483f06d15bf5f3",
-      "bytes": 39931
+      "sha256": "f6d90f3a1c25ea008d6c276932134edba2531cab6249d3910da69e8ca69a4550",
+      "bytes": 40045
     },
     "archive/coupling-lab.html": {
-      "sha256": "d73f4d629245bf1f2b8f0b4a22bc9c9081f0ae218da1c506a09f32bb07c497d7",
-      "bytes": 1021870
+      "sha256": "096973ab003f2812838cca32c2f3ae20ca8fd5c4d84b12dd22d1206a0d51972f",
+      "bytes": 1021984
     },
     "archive/coupling-manual.html": {
-      "sha256": "0dbb24fb3e3c45a7dee32ff38c6f0bcf1927fca382af5fcf62799484cb64baf3",
-      "bytes": 40124
+      "sha256": "d416a077553740045428784b23ce1659200c4ff485731dd12c47df28dc73a05b",
+      "bytes": 40238
     },
     "archive/darzens-lab.html": {
-      "sha256": "f7ffb4960959ff60de8cfc900b0c30d15ccfc3be566f0b60a85f53d371516090",
-      "bytes": 1109965
+      "sha256": "5151ce88da2d46c067a9c05382cfaf549bbee8e848c160f40b9ab83eb68381ff",
+      "bytes": 1110079
     },
     "archive/darzens-manual.html": {
-      "sha256": "d0af4db7f6bddab3775b9dbf4bb33504e0c3c8fcaffbb4187f9b82f42c872fe4",
-      "bytes": 34946
+      "sha256": "f7969cb9028c20449ea2bfad40ca3d852ec8df6722c7613ac0a1a44e7efe1fd6",
+      "bytes": 35060
     },
     "archive/dosing-lab.html": {
-      "sha256": "a6be0e7a2095966b0b4d44df59375b8d47b9224358d0921a29262aa3c8b69a42",
-      "bytes": 38164
+      "sha256": "56d21d4397fd84380006a49e0bbd5e4875d82e2f564789c03600f1cc54fb0ce6",
+      "bytes": 38278
     },
     "archive/geometry-quality.html": {
-      "sha256": "a7c835a5ae54688216575c333250ceeea12f3e85b397ea269045336bae37448e",
-      "bytes": 38125
+      "sha256": "0e15f6da821396a29d62b8148511eb24dcdbbc1249cf1ca76074fcdf1abb1b9b",
+      "bytes": 38239
     },
     "archive/index.html": {
-      "sha256": "97bf4ecffd625eca3c532b485facb3b5301117b2ee15ee38d26bd7c31942ddce",
-      "bytes": 1155539
+      "sha256": "5d8b9e47312b559051e385843a65b984c7197ff6335d7830bdf4eb84e0e134ad",
+      "bytes": 1155653
     },
     "archive/process-manual.html": {
-      "sha256": "2e8a500886d1abc3f69a211cb5f00cfb74e37905c27e520c06094a60f95b153f",
-      "bytes": 65237
+      "sha256": "9a54b4db32e29ddd7eee53801962b9af1175c1d43e3a64cf6aa5465892e3c7e6",
+      "bytes": 65351
     },
     "archive/process-plan.html": {
-      "sha256": "fc9a6da2c0d7c8a7ada3bab5c563ad2806e4ce5b6cf93325bdecc34c44300c94",
-      "bytes": 26850
+      "sha256": "26c00fde11ae60027c60f717bf09750d6f5b38e47568358f6f75cc8e87280c03",
+      "bytes": 26964
     },
     "archive/process.html": {
-      "sha256": "fb73fc1139078017a1ac985dc5a35a03834458afd8e1116030c27a8aa8910c20",
-      "bytes": 714455
+      "sha256": "46649b0fdbec07ef6fdfe6abcdcfada65f593fdad9e675c81ff02050244c9793",
+      "bytes": 714569
     },
     "archive/supply-lab.html": {
-      "sha256": "a26f7d09a608cc8ce5b7d5a3c879e992c186b1cbc43c067d81c6f22d747e8c7a",
-      "bytes": 941032
+      "sha256": "8287c19b0d08b9e4ca5693bba33d2f952929248970b1d670f2e8f41b0c39e687",
+      "bytes": 941146
     },
     "archive/supply-manual.html": {
-      "sha256": "32428c2d20a604bbcc55ad12b6c8b34144b5a83a4efd917572e46a09c8f8a5d3",
-      "bytes": 39839
+      "sha256": "07debd269ca962820eb9be8df4d1f649cdb252199638d18e8380cb2800597486",
+      "bytes": 39953
     },
     "archive/va-lab.html": {
-      "sha256": "fe401359fdc9adb65aefe53ef1c6e720acdb2f394fe131935406b644fffefd4a",
-      "bytes": 1425645
+      "sha256": "900c7f837de54e65e28d805f518e58005fb6d0e7b5df31cda1ec7ddf353d1aed",
+      "bytes": 1425759
     },
     "archive/va-manual.html": {
-      "sha256": "70701b49a0292dc76838dcb5b24ad25718d89348abf6ee183ba3fbc7c7a0981d",
-      "bytes": 42170
+      "sha256": "5b0c1ccf81bcd5fb4f6c59783faa5eb17e1f6785af199e60f9b66c3f7c740314",
+      "bytes": 42284
     },
     "archive/vitamin-a-spec.html": {
-      "sha256": "96c7fabaef13ec1cffb6b5db5883aa50da444f2386651cf23d9bbd3e2eadb113",
-      "bytes": 81642
+      "sha256": "9ed1e5f27b1aa771579f83d7595e1bb5ba9ae7dffbd022660b36966473778183",
+      "bytes": 81756
     },
     "archive/vitamin-a.html": {
-      "sha256": "78f92621f7b9ea10316de72919dbfec637e635767cbbceff2c76117068a171ea",
-      "bytes": 787115
+      "sha256": "f55f9eb5aa4a3802fbc25c550a7a695d179a3d386f01bf677c276b914adcb9c6",
+      "bytes": 787229
     },
     "archive/wiki.html": {
-      "sha256": "bb8a86c787440173db8ede11a2413dc7393efbd17107571bc6426f6e32afd701",
-      "bytes": 866705
+      "sha256": "9114f1fc2e1b8fe7c7d927a120cc3bb78966659d58eb33982487048d1b66b140",
+      "bytes": 866819
     },
     "foundations.html": {
-      "sha256": "450bb3a2d8ba1d6e80f357e42453769821e3bb686791431216fa1a3c75fcc5cc",
-      "bytes": 693138
+      "sha256": "5f37bd951909923bdcf97d997e3db4f31a900096f8f25960918bacfd0e10264b",
+      "bytes": 695548
     },
     "fischer-lab.html": {
-      "sha256": "88a31ef57294abfa4c9ba36a5debb48e5b8604b9006b5b691a8569d19a63f5b3",
-      "bytes": 852655
+      "sha256": "c366515bedf2a25084d96ae451837b33c2b5f7fe8d45929ee61e95b353362b8a",
+      "bytes": 855065
     },
     "ionone-lab.html": {
-      "sha256": "fed0bc566abc0e35524609198efbeef5bf4a47795f30f73f29fbd0539f7d67de",
-      "bytes": 806309
+      "sha256": "8ffc5bdb576f43aaf37d34b603fe40e4ba43b161017b056b7dbf5073bfd60fbe",
+      "bytes": 808719
     },
     "ionone-manual.html": {
-      "sha256": "ee84eb627dfae447275ee1ebd3393494ff1015e79e0a78112c58269d5d3483f2",
-      "bytes": 63902
+      "sha256": "7c9bcef623ae192ac787f204eedb6bd172ccb5025398dcb198c0d18e7f581bf6",
+      "bytes": 66312
     },
     "storage-logistics.html": {
-      "sha256": "90ebe8bdd8d5ae2a1657f5418093c1f5333d87924ffb86cfd597347bf742e796",
-      "bytes": 74088
+      "sha256": "d94a3315162228684f3c336d698aefd8854dea0ac5f21b9ff3f2126c7cd0afd3",
+      "bytes": 75974
     },
     "index.html": {
-      "sha256": "e1f3a63aaa6b6908441860e99d9ae197cee0bbfa2570cd65e70be973e323d7ec",
-      "bytes": 335434
+      "sha256": "680176583d7325b83ba1d011286e8a9bf97c6d0d80865bed8a45bf5f52b0ca11",
+      "bytes": 354303
     },
     "wiki.html": {
-      "sha256": "cdd6946c349518fac91daddd51b4e675664b07a329129d11409ca5940a27fea2",
-      "bytes": 1327390
+      "sha256": "cfed7c3b3310834d362db598e2276091bb8c2605ed3dcae4b4f09c673ed5f147",
+      "bytes": 1346215
     },
     "learning.html": {
-      "sha256": "0794019d58bd3be4818f74fc864125a5f0a738fd7173e3c39b93dabf03252aa7",
-      "bytes": 55650
+      "sha256": "5cadb8a49ad3a06310aa1a02b8fa54a2a4fa832a1510c3e6aeedfe0efb8b1aa1",
+      "bytes": 58060
     },
     "mechanisms.html": {
-      "sha256": "f775ca6b4d584d9d39b1d0ff47c73c99f8032e196b4f9c9ecb70ac07f8c4d029",
-      "bytes": 779012
+      "sha256": "1c89450e5a5c848833474a5fa57ae01925df6ddb3e6a50e67dce4198e0878e16",
+      "bytes": 781859
     },
     "plants.html": {
-      "sha256": "b34b148d07faaf3405a129b5fd98ff8eec7b51c06d868ec55a91b5a3bdec1bd9",
-      "bytes": 53263
+      "sha256": "76f0b1577e14223052d93b6a4aede4784b1fe79242107a56d89dc0c72e418d26",
+      "bytes": 54429
     },
     "play.html": {
-      "sha256": "ad3721ee1946a57b9642cc6c4322c6416b84d2713968660bc5e6dedbfab8a3eb",
-      "bytes": 57681
+      "sha256": "a17d85f8d25bde25e544cbe2e7dd245d39dfc2276da32b02d8c1020fb66c956f",
+      "bytes": 59312
     },
     "developer.html": {
-      "sha256": "c30c974453b18ca9131f80f9526e14d784ba1cbfddb3d8c26817678562661976",
-      "bytes": 64796
+      "sha256": "7a87da698c48fb73156603943d3fc9a44ef943a849e58bb867442af111878ddb",
+      "bytes": 67226
     },
     "data/site-content-audit.json": {
       "sha256": "b8de4f92e4bf0cfbfb794bdb6f259af07d46bfa4243ee88a6845b0f55dcc5bb1",
@@ -945,20 +945,20 @@
       "bytes": 19338
     },
     "ester-guide.html": {
-      "sha256": "2aae7766bd54cafe39a18b20f95930328fd72c9dcb622728c2cd31542c1f4c30",
-      "bytes": 349817
+      "sha256": "c3cba6198ee6b9742b56ef9a49ed035ffe23b6377233b17a407eed58ddd4f2d8",
+      "bytes": 368680
     },
     "vitamin-a-guide.html": {
-      "sha256": "e0b43e08281a4739bd94d9ff98ea97705fbeb2e015a442e0faa7460f57f5197a",
-      "bytes": 368646
+      "sha256": "32ff234ddf923d95d9d4a7532a1c7dbff178d0436c3e110acb2e4b32da501abc",
+      "bytes": 387505
     },
     "process-quality.html": {
-      "sha256": "f04cb600a04576d7bcb5272ad3cb8200feb74df6fdf648e07bf06336dbee405d",
-      "bytes": 145642
+      "sha256": "c985a682cda5cbf353fa5cd788da5f945cdb5510ab3c86f277fc13bd6eaee680",
+      "bytes": 147509
     },
     "ui-acceptance.html": {
-      "sha256": "f4c4475f48c33c33bea19ebe3d25f29363fdd32aa04c505e5b4d884ce84b361d",
-      "bytes": 96162
+      "sha256": "9da4392e64f76cdee413db00ee48e7948e2747db9106e2b56deb41b7dbac2dd7",
+      "bytes": 98592
     },
     "data/process-contract/actual-quality-certificate.json": {
       "sha256": "4655c9aef6c1acc4373e4b47dddcd159d4ddad3d697d332746d13d1b91025c3c",
@@ -1045,8 +1045,8 @@
       "bytes": 9039
     },
     "gameplay.html": {
-      "sha256": "82c972e0337649f02749bd49e08364185525a910cbd12af4f4beb9cc81151eb9",
-      "bytes": 66389
+      "sha256": "4eb184db49b03e82cbe8722406ed09c269224c1bf315ff58a177a6c8b59a6e60",
+      "bytes": 68470
     },
     "data/gameplay-comparison.json": {
       "sha256": "902ec6d766b7b2b637df734a897f69e3578e54b68dbae76c2241ec0629abb021",
@@ -1057,8 +1057,8 @@
       "bytes": 4747
     },
     "modular-plant.html": {
-      "sha256": "c7bc3ea190bfa33f3ae72a6d2d4d4e31ef64aaf0908033ecabcff0b3e9cf520a",
-      "bytes": 337926
+      "sha256": "231bca65184aa892276fe091604c0aa07adb3a228d0475f8cc69a2fe9eb4641d",
+      "bytes": 356767
     },
     "data/modular-plant.json": {
       "sha256": "d2866204656e03aaa6caacec13cbba1ac332038d32ca0c1af57afc75a369494d",
@@ -1077,12 +1077,12 @@
       "bytes": 384769
     },
     "factory-design.html": {
-      "sha256": "1cdd37283e8a8d0bcb21cfd0f5ac178240ab68c7488f2679d7e25b6adfc505d8",
-      "bytes": 65733
+      "sha256": "ad2116eeac67dfcc3d9b69b39b4f9e5ad7ed8e5213099c418925e9204a6b8ee5",
+      "bytes": 67599
     },
     "next-line.html": {
-      "sha256": "63c949db7530e408b2ab4bbbbf13dea091c7c5091b9792c63e39c78c74a59c7e",
-      "bytes": 63897
+      "sha256": "1987e04628e084cfeb6f0619397904c9ef53f8db7c5383f08f7c26f5c99ccf8c",
+      "bytes": 66160
     },
     "data/next-line-evidence.json": {
       "sha256": "5de1ef08d42216763fb971f4fc8d363c70b3df86b7c9645bb4218caf046a98f5",
@@ -1097,8 +1097,8 @@
       "bytes": 22449
     },
     "factory-services.html": {
-      "sha256": "b837f31eee00a32876246114d2b19fa1ebf52b31631c34cf0de6a4eb35abbcbe",
-      "bytes": 146509
+      "sha256": "650ab149c64b60a142a8a468f10dcb76427422ef801956a608868e55c9dfc57d",
+      "bytes": 147992
     },
     "data/factory-supplies.json": {
       "sha256": "17368a205fb5d04770509d0a3fe32ef001f9e7fda4bb6c8bac6ed39d4b359e42",
@@ -1109,8 +1109,8 @@
       "bytes": 13675
     },
     "retinol-guide.html": {
-      "sha256": "4b00589e5f439303c45f2aa40ef2d6e15fc042dd02a1085c0a5cdbd19b55928e",
-      "bytes": 57317
+      "sha256": "5142e916f9ef54ccde81487fa8b08d1f4c8d1dd77528758450800d206a3a5503",
+      "bytes": 59345
     },
     "data/retinol-proposal.json": {
       "sha256": "f3aded399db1dc91fa4c417b64b90964dc9c9e32833bcbe87be0698627bf75cb",
@@ -1129,8 +1129,8 @@
       "bytes": 14615
     },
     "line-bus.html": {
-      "sha256": "869f27d92465f0cac173a6d2b9c11542119406999f7bf8b2cb94a36488b79a90",
-      "bytes": 336087
+      "sha256": "9facbd02db7fbe59443fb8e53698a082688b0945e7b213cd0747407eae0853db",
+      "bytes": 354933
     },
     "line-atlas.js": {
       "sha256": "3a8f361876627fcea29f3a3ff9ba3ffaf0eaf7562042c345eaa347651b606335",
@@ -1145,8 +1145,8 @@
       "bytes": 524009
     },
     "en/continuous-plant.html": {
-      "sha256": "0fd58d147e47e6c85e305519aa7f8c9b63b4ec99fea6f42c38c7c23d957c6e8e",
-      "bytes": 18374
+      "sha256": "55117ed4dc57fd3133e47e4811c8b6593182a8a5acbc3fd13e00e9c631c4acb0",
+      "bytes": 37783
     },
     "en/current-app.js": {
       "sha256": "4f0e72100b845c09d013c9e8c59f0b1e0cfdddc5ae3deb690a55e5852d4a054e",
@@ -1161,8 +1161,8 @@
       "bytes": 793
     },
     "en/data.js": {
-      "sha256": "cc4fccfd911ee1f7bd620f69a4e97c34e28a1c0c302caa765b46ddaf9db30981",
-      "bytes": 4270228
+      "sha256": "e7644c4ca3351ac2b977a9fa5ea211fe9ba9a1147f2423b88a447594d1425e5c",
+      "bytes": 4270742
     },
     "en/english-app.js": {
       "sha256": "aa5f9d009fee00ce0e16ee0ff9d576bec6e6a7efc7fe83f460e2c3f35bd4d105",
@@ -1173,132 +1173,128 @@
       "bytes": 7384
     },
     "en/ester-guide.html": {
-      "sha256": "2568844782cd5496c9750733486b84fcfc60ead98afc603bc17b8cd8a6423438",
-      "bytes": 353257
+      "sha256": "7e28a033547d949f69357f42e15857a0316b8e6874ae17644f2a94908778e35c",
+      "bytes": 372110
     },
     "en/factory-design.html": {
-      "sha256": "a0372e86e673d575f0aad9f74daa5e42d3c7cef6112970eda133816d8e6dc692",
-      "bytes": 28932
+      "sha256": "eb40ccb250fb7f580b8d3340640d2270fd2d1fc4c6d9c4eeceff1e78ed5302ee",
+      "bytes": 31430
     },
     "en/factory-services.html": {
-      "sha256": "914b71eefe835dcf93d679166dfa176d336b2dee15c52d34ebf4b35a332f785f",
-      "bytes": 33901
+      "sha256": "78bdfb36034ad2697201dde8aa8e160e268f21d08a2d733c9d0026a9ca3d6539",
+      "bytes": 36007
     },
     "en/gameplay.html": {
-      "sha256": "875b4949fc9661d3c989255b0357c9f740c8ea08eb7fb71a7ef44f8b4ddaec9f",
-      "bytes": 28271
+      "sha256": "93b5131176310610dab1ba339846e509a818c2c2b88f7330d34f2b4107449c84",
+      "bytes": 30769
     },
     "en/glossary.html": {
-      "sha256": "e90a23ad1982a8658965aed540fc569ee870f8d171e7e5380a6524a8c9a9b12c",
-      "bytes": 35639
+      "sha256": "0884f5c3dd841b006aff3ca75fd3dec42060039ac246718c87cab8903ebad2c6",
+      "bytes": 38137
     },
     "en/index.html": {
-      "sha256": "db802e3446dbda563f25129af1a1469194dfb2ff8a383494bfc42e9b0f159631",
-      "bytes": 337708
+      "sha256": "18721f5a9655ae50227916ab00581eb2c35adf038fc54395f1208b3cb8a18cf2",
+      "bytes": 356567
     },
     "en/learning.html": {
-      "sha256": "6d00cc6c228e006d782ad8c91762d6bc1bc58e8d3740e53a220c725b59eccbde",
-      "bytes": 29287
+      "sha256": "e01fa70b8a041b6734eafa197f6f210c79ab2005eae33665d6a834242ded6392",
+      "bytes": 31785
     },
     "en/lesson.html": {
-      "sha256": "0d13ebc374ddb7311c1c7aa343387cf205b8616780cc70bc07fc896ce8fde125",
-      "bytes": 28498
+      "sha256": "26b04963e484bf797286912eead0a63a09ec044c8aa9dbfc5d42d4be5bca3346",
+      "bytes": 30996
     },
     "en/line-bus.html": {
-      "sha256": "0bb92585ff0e83a5b2e75faa46bfff0b48f60c450214380b5540211a9fda2924",
-      "bytes": 338363
+      "sha256": "26207ab9f66f43e44a864499c6285cc00c5fb3234695ee6d41f4c383a77f3067",
+      "bytes": 357199
     },
     "en/mechanisms.html": {
-      "sha256": "d41942ba8446873855f23a3a6b81c36b7eab8b3dd7f1fbba992a8f8ddb9bf209",
-      "bytes": 27059
+      "sha256": "76fba2c2b64cdb5f548d72867650a26a664aa0bd6cd5d184387cfae95993fa4a",
+      "bytes": 29577
     },
     "en/modular-plant.html": {
-      "sha256": "2b3df98aa73ba5055b147212d2e529533487f13d6cb0bc9f246fad1c09f871cd",
-      "bytes": 337825
+      "sha256": "7d21c73bf691de4acda3ae23c5070e621e16b4bdeb50ea31c367d88f2c557e0a",
+      "bytes": 356656
     },
     "en/motion.js": {
       "sha256": "648502ea4571bd2ab7c946b3d98277e54064c73f1ad831bd5dbe8c906e576f0c",
       "bytes": 6937
     },
     "en/next-line.html": {
-      "sha256": "0162908016b4173ab20f5d2332b114a07a204db5c3bfe764874f1b7831e96987",
-      "bytes": 28573
+      "sha256": "6507410039423d3e5aa0b8173b92df8536cc54c4bb62e45489a00b4dcccfb54e",
+      "bytes": 31071
     },
     "en/plants.html": {
-      "sha256": "48ae1629835d270c113cd763ed66e61e9c37e19dcded9e03e7ef176d0b7bf117",
-      "bytes": 31053
+      "sha256": "19f36a0df29844af26a9b12d95afcf9d698d1c2da101614bc0ace6ebcc498ca8",
+      "bytes": 33159
     },
     "en/play.html": {
-      "sha256": "1fe77bb58be38b375a43a638b5f9b22888c50b9752143641f21e494ebca66cae",
-      "bytes": 31080
+      "sha256": "1971e5ab99c87cdb35e4136d89e9b04edcb5fc376080390dd6b3ebaeae254d75",
+      "bytes": 33186
     },
     "en/process-manual.html": {
-      "sha256": "ad5b7925b9ec4905bd141f17caab39244db865191b4f88dc0037af643fd0b9e1",
-      "bytes": 28630
+      "sha256": "83c337c4d0657982d3b6d6f339703ada9b34d3fa1f1b4a4e3d79995ab21807c1",
+      "bytes": 31128
     },
     "en/process-quality.html": {
-      "sha256": "fec4708ef43a45ae5e7e834c658e3b5c2f3577e328eacac8320e0332a6dc6426",
-      "bytes": 29496
+      "sha256": "2fdb2f858de618e08b2000d21339a45295152231d6ae5ce5da04e26205f9729d",
+      "bytes": 31602
     },
     "en/reagents.html": {
-      "sha256": "ba36eb5228a82a3923807c3ed7b4b8130c6be96a955d01ac3c69d7e2778826bb",
-      "bytes": 20512
+      "sha256": "d556ab4df75539e9d531e189830498d234cbffe5d27332993f979f10df0f738f",
+      "bytes": 56374
     },
     "en/retinol-guide.html": {
-      "sha256": "dfe123127c5336251c8f573c6dd0707636604543d70f01b74795f567e4984e3c",
-      "bytes": 32013
+      "sha256": "0fa46ca5d34ff2acb6d4f80b318abe6e3b5524b35360fcc2c22cd6aa9770b7a9",
+      "bytes": 34119
     },
     "en/retinol-guide.js": {
       "sha256": "6078d897d8e66cb1b8ad0cb021a3645fc0f0c6cfdb8f5b0989dd26af07bf679e",
       "bytes": 1800
     },
     "en/storage-logistics.html": {
-      "sha256": "c66f6e5bfb3bbe105561150ee21383a0147aa5bff71be6b8846b8268048dfb9e",
-      "bytes": 29217
+      "sha256": "21f64348e7b3f8cedf422075ea2c0114d2ea9a348d2a202af80f9b81b678f840",
+      "bytes": 31715
     },
     "en/translation-audit.json": {
-      "sha256": "5cc7b0f32984e29391183bd922076f49a47e2f91dfa339a39349627fed263447",
+      "sha256": "c060ef56d017070a97e0bc4193317f693ba4e3c890eab7569a663030ebefc12a",
       "bytes": 351
     },
     "en/ui-acceptance.html": {
-      "sha256": "878a191ef6054f95b9561e79ab035be5c0e02e8c10defb04260be0663142c22e",
-      "bytes": 28705
+      "sha256": "6092017d7e98ad99bd4b15ae615b408d2fc52fac2af5612a5322201064112fe9",
+      "bytes": 31203
     },
     "en/vitamin-a-guide.html": {
-      "sha256": "e21d9b709adcba64c5500035d077440f540516508377ae4990ce7c65101019ab",
-      "bytes": 376505
+      "sha256": "0fdd4d460f6d7bfbfa001c89895a2c480a5a21b8a264d1466d8234699dd4dbdd",
+      "bytes": 395354
     },
     "en/wiki.html": {
-      "sha256": "75a8becedc759a0dc056352ef490b28f21768a4fbcc0f9b4423ba9d1fb529f1b",
-      "bytes": 28588
+      "sha256": "6dae90f57d9a72745312650bd5caeaa1a22a1ed91bfe0e7b135b3bf29846c744",
+      "bytes": 48374
     },
     "site-language.js": {
-      "sha256": "f240cfd499a86c8e12521ae6615a8a84a31291b20f05e331c38c1b89eceea612",
-      "bytes": 3699
+      "sha256": "5f797f983e7cae61315b00d6668a77aa829dd854c043db1b728db3035e3ddb49",
+      "bytes": 3729
     },
     "site-language.css": {
       "sha256": "cb886c642be43aebb5f806f743a3a9bb54b882535c1f6fc3ea140e16f866dc04",
       "bytes": 592
-    },
-    "site-theme.css": {
-      "sha256": "36e709a6183e431189724a27627824c3139dfe25778bc93f6d0715c01227ab22",
-      "bytes": 4676
-    },
-    "site-theme.js": {
-      "sha256": "441f93fcbd3e76f508e1bb9793da334af926a3bbd3057a967eea90dffbb2cbb2",
-      "bytes": 5746
     },
     "complete-factory.css": {
       "sha256": "3ed1640348f44a270155a8588d1466d4a8fdf14e5a19fc607b2a703431c4623c",
       "bytes": 6527
     },
     "complete-factory.js": {
-      "sha256": "996036950c418baf59dce21b9703a7bdccd7854989fd4096123cece6b54af073",
-      "bytes": 15950
+      "sha256": "77b9a5f911a62e6ea782acc1d303bb3f071ecd1ce3912edf7ba6aa2de11263f2",
+      "bytes": 15725
     },
     "data/complete-factory/ester.json": {
       "sha256": "459a0875ed5899c81b5858f51ea67a46419e1b4b8b641b98c14a7122f8263168",
       "bytes": 43996
+    },
+    "data/complete-factory/reagent-provenance.json": {
+      "sha256": "548cccba149f813c5d8c5e2bb260f6a4b77144f8ea1d64416dda1bf407a0db8b",
+      "bytes": 20151
     },
     "data/complete-factory/reagents.json": {
       "sha256": "f7976cbb6704ba9d2b5d2d5a2a6f41b51b71dd40885310fdebaae6ac2e696c4b",
@@ -1313,12 +1309,24 @@
       "bytes": 12572
     },
     "reagents.html": {
-      "sha256": "367977c811c80f5e399f53f2c4c0bf39b125c87793934d6f4fc87ddf33de55ea",
-      "bytes": 19866
+      "sha256": "c622338e1104fb36f9199248956e2396202b27ac406c2d1c2b6057a99f18ce7d",
+      "bytes": 54380
     },
     "continuous-plant.html": {
-      "sha256": "95d4b78b00e3149c2d8a099accb48c13c36c24f852aa042f0d251846c8f2790d",
-      "bytes": 17944
+      "sha256": "7a6ce898ea23fe60a853dff0df77d46e1d35ed439085f0e2cf00dcdc7d309158",
+      "bytes": 37330
+    },
+    "site-shell.css": {
+      "sha256": "3bb295e203b97b13ce9611fc5895220a7b78a5288f79c715795417df2c3b23fa",
+      "bytes": 2932
+    },
+    "site-theme.css": {
+      "sha256": "36e709a6183e431189724a27627824c3139dfe25778bc93f6d0715c01227ab22",
+      "bytes": 4676
+    },
+    "site-theme.js": {
+      "sha256": "97eb788cac6ec69276bcccf3a5c902bc871c3cf406989eb99b5aec3668402287",
+      "bytes": 5830
     },
     "vendor/3Dmol-min.js": {
       "sha256": "bcf422137a34b4e206413a8a83a67c24a1ace84e282bf3b164f6bda6aeb42a20",

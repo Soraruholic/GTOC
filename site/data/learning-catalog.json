@@ -1,7 +1,7 @@
 {
   "schema": "oc-learning-catalog-1",
   "date": "2026-10-04",
-  "gameVersion": "0.4.1-process-contract-alpha1",
+  "gameVersion": "0.4.7-continuous-alpha1",
   "compounds": [
     {
       "slug": "acetaldehyde",
@@ -1157,7 +1157,7 @@
       "formula": "C4H10O",
       "kind": "molecular",
       "charge": 0,
-      "stereo": "镁形式组分仅记录当量与来源，不指定唯一共价结构或溶液物种分布。",
+      "stereo": "所示结构没有手性中心或 E/Z 双键。三维图展示一个构象；溶液配位、质子化和解离状态须另行区分。",
       "recordId": "ocv2:9ed1810a5d42ad6ca4cbb7d7a55fe7ba639905c8f08efc55578b78540ac1da05",
       "registries": [
         "v2"
@@ -1229,7 +1229,7 @@
       "formula": "C2H6",
       "kind": "molecular",
       "charge": 0,
-      "stereo": "镁形式组分仅记录当量与来源，不指定唯一共价结构或溶液物种分布。",
+      "stereo": "所示结构没有手性中心或 E/Z 双键。三维图展示一个构象；溶液配位、质子化和解离状态须另行区分。",
       "recordId": "ocv2:4e51ebeba4ebe2c7d2d81a1605b573a6fd9fd57094bd2f4055c40b249b35cb8c",
       "registries": [
         "v2"
@@ -2991,7 +2991,7 @@
         "input"
       ],
       "family": [],
-      "role": "结构 / 规划参考条目；当前未开放独立生产操作。",
+      "role": "可通过 OC 新增配方制成原料包，进入中央供料；独立制备支线见配方目录。",
       "limit": "形式组分只做元素与当量记账，不代表离散分子或已知物态。",
       "visual": null,
       "observe": "先检查元素数、形式电荷和所处的库存分区；不要把化学式当作完整空间结构。"
@@ -3194,7 +3194,7 @@
       "formula": "H2O4S",
       "kind": "molecular",
       "charge": 0,
-      "stereo": "镁形式组分仅记录当量与来源，不指定唯一共价结构或溶液物种分布。",
+      "stereo": "所示结构没有手性中心或 E/Z 双键。三维图展示一个构象；溶液配位、质子化和解离状态须另行区分。",
       "recordId": "ocv2:dee6a1631d5133b166e4f604f4c49e23978726020df2ee1b94d13031851581f9",
       "registries": [
         "v2"
@@ -4288,7 +4288,7 @@
     },
     {
       "id": "F01",
-      "name": "后续视黄醇皂化支线",
+      "name": "视黄醇乙酸酯皂化",
       "reactants": {
         "retinyl-acetate": 1,
         "sodium-hydroxide": 1
@@ -4300,9 +4300,9 @@
       "atomBalanced": true,
       "kinetics": null,
       "question": "先乙酸酯，后视黄醇",
-      "teaching": "未来对视黄醇乙酸酯皂化得到视黄醇；需要独立产品契约。",
-      "limit": "本版未实施。不能把当前乙酸酯命名为视黄醇。",
-      "status": "planned",
+      "teaching": "消耗 NaOH 将视黄醇乙酸酯转为视黄醇与乙酸钠。全反式与单 Z 身份分别保留，随后按教学回收比例分配产物与残余。",
+      "limit": "已实现有限后处理、来源凭证与游戏夜视用途；转化与回收比例是游戏参数，非实测动力学、分配系数或医药纯度。",
+      "status": "implemented",
       "lessons": [],
       "sources": []
     },
@@ -6494,5 +6494,6 @@
       "upstream-compounds-v1.json": "2a8b324741675959926787cf42a44cb09b94724ce7bff89e67c56b7924fda5d2",
       "va-compounds-v1.json": "ba9dd7b830629927a580043ea17c9e36f24d1cb055699c108e78ec6a8d19f9c6"
     }
-  }
+  },
+  "inventoryReference": "Equipment amounts are frozen teaching scenarios, not current server stock."
 }

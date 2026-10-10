@@ -28,7 +28,8 @@ function ready(){
  const header=document.getElementById('site-header');if(header)header.append(control);else{control.classList.add('site-theme-floating');document.body.prepend(control);}control.querySelector('select').addEventListener('change',e=>choose(e.target.value));
  const css=document.createElement('style');css.id='oc-theme-adapted';css.media='screen';css.textContent=Array.from(document.styleSheets).filter(s=>!s.ownerNode?.hasAttribute('data-oc-theme')).map(s=>{try{return adaptRules(s.cssRules);}catch{return '';}}).join('\n');
  // Explicit theme rules follow generated legacy overrides and retain selected-control contrast.
- document.head.insertBefore(css,document.querySelector('style[data-oc-theme]'));
+ const themeStyle=document.querySelector('style[data-oc-theme]');
+ if(themeStyle)themeStyle.parentNode.insertBefore(css,themeStyle);else document.head.append(css);
  inline(document.body);const observer=new MutationObserver(records=>{for(const r of records)for(const n of r.addedNodes)inline(n);});observer.observe(document.body,{childList:true,subtree:true});apply();
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',ready,{once:true});else ready();
@@ -39,7 +40,68 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
 @media(max-width:980px){#site-header{padding:14px 20px;gap:12px}#site-header nav{gap:2px}#site-header nav a{padding:7px 8px}.learning-hero{gap:25px}.learning-grid,.plant-stages{grid-template-columns:repeat(2,minmax(0,1fr))}.knowledge-layout{grid-template-columns:230px minmax(0,1fr)}.learning-main h1{font-size:48px}}
 @media(max-width:700px){html{scroll-padding-top:20px}#site-header{padding:12px 16px}#site-header .site-brand{font-size:18px}#site-header nav{width:100%;justify-content:space-between;font-size:12px}#site-header nav a{padding:6px 5px}.learning-main{padding:22px 18px 0}.learning-main h1{font-size:40px;letter-spacing:-.8px}.learning-main h2{font-size:25px}.learning-hero{grid-template-columns:1fr;padding:10px 0 20px;gap:20px}.learning-cover{padding:25px}.learning-grid,.learning-grid.two,.plant-stages{grid-template-columns:1fr}.learning-main section{padding:22px 0}.knowledge-layout{grid-template-columns:1fr}.knowledge-index{position:relative;top:0;max-height:260px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:0}.knowledge-index button{margin:0;font-size:12px;padding:10px}.knowledge-detail{padding:18px}.knowledge-detail h2{font-size:27px}.knowledge-detail dl{grid-template-columns:65px 1fr}#knowledge-2d svg{height:260px}#knowledge-3d{height:300px}.entry-tabs button{padding:8px 12px;font-size:13px}.search-bar{align-items:stretch}.search-bar select{max-width:100%;font-size:13px}.learning-stats{gap:20px}.lesson-path article{padding:22px 18px 22px 60px}.lesson-path article:before{left:16px;font-size:23px}.u07-result{grid-template-columns:1fr}.site-context{padding:0 18px}.site-chapter-nav{margin:25px 18px;padding:20px}.learning-note{padding:15px}.learning-table{min-width:480px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.001ms!important;transition-duration:.001ms!important}}
-</style><!-- OC_THEME_STYLE --><style data-oc-theme>/* Independent presentation layer: no chemistry state or data changes. */
+</style><!-- OC_SHELL --><style>/* Shared chrome and palette; chemical diagrams and player layouts stay independent. */
+:root{--bg:#f5f3ec;--paper:#fffdf7;--panel:#fffdf7;--ink:#243b34;--muted:#66736c;--line:#d7ded4;--accent:#2a6e58;--green:#2a6e58;--warm:#b76639;--gold:#b76639;--shade:#e6ece2;--pale:#e6ece2}
+html[data-theme=dark]{--bg:#17241f;--paper:#203029;--panel:#203029;--ink:#edf0df;--muted:#bcc9bb;--line:#3c5345;--accent:#9fd6ba;--green:#9fd6ba;--warm:#efaf77;--shade:#2e4236;--pale:#2e4236}
+body,body.learning-site{margin:0;background:var(--bg);color:var(--ink);font:16px/1.8 system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif}
+#site-header.oc-header{position:relative;display:flex;align-items:center;justify-content:flex-start;gap:18px;margin:0;padding:15px 4vw;max-width:none;height:auto;border-bottom:1px solid var(--line);background:var(--paper);flex-wrap:wrap;box-shadow:none}
+#site-header .oc-brand{display:block;color:var(--ink);font-size:25px;line-height:1.3;font-weight:850;letter-spacing:.07em;text-decoration:none;white-space:nowrap}
+#site-header .oc-brand small{display:block;color:var(--muted);font:9px/1.5 system-ui;letter-spacing:.18em}
+#site-header nav{display:flex;align-items:center;justify-content:center;gap:3px;flex:1;flex-wrap:wrap;width:auto;font-size:13px}
+#site-header nav a{font-size:13px;font-weight:500;border-radius:6px;padding:6px 9px;text-decoration:none;color:var(--ink);white-space:nowrap}
+#site-header nav a[aria-current=page]{background:var(--shade);font-weight:750}
+#site-header .site-language-control,#site-header .site-theme-control{display:flex;align-items:center;gap:6px;position:static;width:auto;margin:0;padding:0;flex:none;font-size:12px}
+#site-header .site-language-control span,#site-header .site-theme-control label{display:none}
+#site-header .site-language-control a{font-size:12px;margin:0;padding:6px}
+#site-header .site-theme-control select{max-width:120px;padding:6px;font:12px system-ui}
+main.learning-main{max-width:1370px;margin:auto;padding:30px 5vw 0}
+.learning-main h1{font:600 clamp(36px,4.3vw,67px)/1.25 Georgia,"Noto Serif SC",serif;letter-spacing:-.025em}
+.oc-recipe-note{border-left:3px solid var(--accent);padding:18px 22px;margin-top:24px;background:var(--shade)}
+.oc-recipe-note h3{margin:0 0 10px}.oc-recipe-note p{font-size:14px}.provenance-tag{display:inline-block;margin:8px 0;font-size:12px;padding:3px 10px;border:1px solid var(--line);border-radius:5px;background:var(--shade)}
+.reagent details{font-size:14px;margin-top:15px;max-width:900px}.reagent details p{white-space:normal}
+html[data-theme=dark] body{background:var(--bg)!important}
+@media(max-width:1100px){#site-header nav{order:3;flex-basis:100%;justify-content:flex-start}#site-header .oc-brand{margin-right:auto}}
+@media(max-width:540px){#site-header.oc-header{padding:12px 18px;gap:10px}#site-header nav{gap:2px}#site-header nav a{font-size:12px;padding:5px 7px}main.learning-main{padding:22px 18px 0}}
+</style><script>window.OC_LANGUAGE_LESSONS=[{"id":"Fischer","page":"fischer-lab.html","branch":null},{"id":"E01","page":"va-lab.html","branch":0},{"id":"E02","page":"va-lab.html","branch":1},{"id":"Q01","page":"coupling-lab.html","branch":0},{"id":"C01a","page":"coupling-lab.html","branch":1},{"id":"C01b","page":"coupling-lab.html","branch":2},{"id":"C02","page":"coupling-lab.html","branch":3},{"id":"C03","page":"coupling-lab.html","branch":4},{"id":"C02-side","page":"chain-lab.html","branch":0},{"id":"D01","page":"chain-lab.html","branch":1},{"id":"D02","page":"chain-lab.html","branch":2},{"id":"E03-net","page":"chain-lab.html","branch":3},{"id":"EZ-identity","page":"chain-lab.html","branch":4},{"id":"B01a","page":"supply-lab.html","branch":0},{"id":"B01b","page":"supply-lab.html","branch":1},{"id":"B02","page":"supply-lab.html","branch":2},{"id":"B03","page":"supply-lab.html","branch":3},{"id":"A02","page":"darzens-lab.html","branch":0},{"id":"A03","page":"darzens-lab.html","branch":1},{"id":"A04a","page":"darzens-lab.html","branch":2},{"id":"A04b-net","page":"darzens-lab.html","branch":3},{"id":"A04c-net","page":"darzens-lab.html","branch":4},{"id":"U01","page":"campaign-lab.html","branch":0},{"id":"U02-net","page":"campaign-lab.html","branch":1},{"id":"U02-over-net","page":"campaign-lab.html","branch":2},{"id":"A01","page":"campaign-lab.html","branch":3},{"id":"U03","page":"carbon-lab.html","branch":0},{"id":"U03-acid","page":"carbon-lab.html","branch":1},{"id":"U04","page":"carbon-lab.html","branch":2},{"id":"U05","page":"carbon-lab.html","branch":3},{"id":"U06-net","page":"carbon-lab.html","branch":4},{"id":"C10-EZ","page":"carbon-lab.html","branch":5},{"id":"U07","page":"ionone-lab.html","branch":0}];/* Explicit navigation preserves user context. Preference storage is optional, never required. */
+(()=>{'use strict';
+const KEY='oc-site-language-v1',english=document.documentElement.lang.startsWith('en');
+function ready(){
+ if(document.getElementById('site-language-switch'))return;
+ const control=document.createElement('div');control.className='site-language-control';control.id='site-language-switch';
+ const label=document.createElement('span');label.textContent=english?'Language':'语言';
+ const link=document.createElement('a');link.lang=english?'zh-Hans':'en';link.hreflang=link.lang;link.textContent=english?'中文':'English';
+ control.append(label,link);const header=document.getElementById('site-header');if(header)header.append(control);else{control.classList.add('site-language-floating');document.body.prepend(control);}
+ const page=location.pathname.split('/').pop()||'index.html',archive=location.pathname.includes('/archive/');
+ const currentPages=['ester-guide','vitamin-a-guide','factory-services','factory-design','storage-logistics','process-quality','gameplay','next-line','ui-acceptance','process-manual','modular-plant','retinol-guide','line-bus','reagents','continuous-plant'];
+ const root=new URL(english||archive?'../':'./',location.href),lessons=window.OC_LANGUAGE_LESSONS||[],toChinese={index:'index',learning:'learning',wiki:'wiki',mechanisms:'mechanisms',plants:'plants',play:'play',glossary:'learning'};
+ function update(){
+  const hash=location.hash;let destination;
+  if(english){
+   if(page==='lesson.html'){
+    const l=lessons.find(x=>x.id===new URLSearchParams(location.search).get('id'))||lessons[0];
+    destination=l?l.page+(l.branch===null?'#wiki-reactions':'?branch='+l.branch+'#lesson'):'mechanisms.html';
+   }else if(page==='wiki.html')destination='wiki.html'+hash.replace(/^#compound-/,'#molecule-').replace(/^#sources$/,'');
+   else if(currentPages.includes(page.replace('.html','')))destination=page+hash;
+   else destination=(toChinese[page.replace('.html','')]||'index')+'.html';
+  }else{
+   const branch=document.getElementById('branch')?.value??new URLSearchParams(location.search).get('branch')??'0';
+   const l=lessons.find(x=>x.page===page&&(x.branch===null||String(x.branch)===String(branch)));
+   if(l)destination='en/lesson.html?id='+encodeURIComponent(l.id);
+   else if(page==='wiki.html')destination=hash.startsWith('#mechanism-')?'en/mechanisms.html':'en/wiki.html'+hash.replace(/^#molecule-/,'#compound-');
+   else if(currentPages.includes(page.replace('.html','')))destination='en/'+page+hash;
+   else {const mapping={'index.html':'index','learning.html':'learning','mechanisms.html':'mechanisms','plants.html':'plants','play.html':'play','process-manual.html':'play','process.html':'plants','ionone-manual.html':'plants','ester-guide.html':'plants','vitamin-a-guide.html':'plants'};destination='en/'+(mapping[page]||'index')+'.html';}
+  }
+  link.href=new URL(destination,root).href;
+  link.title=english?'Read the corresponding Chinese content':page==='wiki.html'&&location.hash.startsWith('#mechanism-')?'打开英文机理课程索引':'阅读对应英文内容';
+ }
+ link.addEventListener('click',()=>{try{localStorage.setItem(KEY,english?'zh':'en');}catch{}});
+ // Do not redirect explicit deep links based on preference: a linked original must stay readable.
+ try{control.dataset.preferredLanguage=localStorage.getItem(KEY)||document.documentElement.lang;}catch{}
+ window.addEventListener('hashchange',update);document.addEventListener('change',e=>{if(e.target.id==='branch')update();});update();
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',ready,{once:true});else ready();
+})();
+</script><!-- /OC_SHELL --><!-- OC_THEME_STYLE --><style data-oc-theme>/* Independent presentation layer: no chemistry state or data changes. */
 .site-theme-control{display:flex;align-items:center;gap:8px;font:12px/1.5 system-ui,"Microsoft YaHei",sans-serif;white-space:nowrap;color:var(--muted,#58716b);flex:none}
 .site-theme-control label{font:inherit;margin:0;display:inline;color:inherit}
 .site-theme-control select{width:auto;min-width:0;max-width:155px;padding:7px 26px 7px 10px;margin:0;border:1px solid var(--line,#d7e1d5);border-radius:8px;background:var(--panel,#fffef9);color:var(--ink,#183f39);font:inherit;cursor:pointer}
@@ -78,7 +140,7 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
 @media print{.site-theme-control{display:none!important}html{color-scheme:light!important}body{background:white!important;color:#17352f!important}img{filter:none!important}}
 
 @media screen{html[data-theme="dark"] .lesson-nav [aria-current="step"]{background:#8bd8b7!important;color:#102b23!important;border-color:#8bd8b7!important}}
-</style><!-- /OC_THEME --></head><body class="learning-site"><a class="site-skip" href="#main-content">跳至正文</a><header id="site-header"><a class="site-brand" href="index.html"><span class="site-mark">OC</span><span>有机化学工场<small>GTNH · ORGANIC CHEMISTRY</small></span></a><nav aria-label="全站导航"><a href="index.html">首页 / 总路线</a><a href="learning.html">学习路线</a><a href="wiki.html">Wiki</a><a href="mechanisms.html">机理课堂</a><a href="plants.html">设备与产线</a><a href="line-bus.html">总线与回收</a><a href="play.html" aria-current="page">游戏指南</a></nav></header><main id="main-content" class="learning-main"><section><div class="eyebrow">PLAY / NATIVE CARBON TO PRODUCT</div><h1>从原生碳源，<br>跑通一批维生素 A。</h1><p>适用模组 <code>0.4.1-process-contract-alpha1</code>，GTNH 2.9.0-beta-2，Prism 实例 <strong>GTNH-OC 0.4.1 Process Contract (isolated test)</strong>。这是管理员测试流程。新线共 48 台设备，其中上游 16 台；每台右键打开状态界面。</p><div class="learning-note">碳骨架主线已经闭合：原生碳源 → 柠檬醛 → 假紫罗兰酮 → β 骨架 → C14/C6 → 成品封装。NaNH₂、催化剂、部分溶剂和后段辅料仍显式使用夹具；转化/分配为未标定教学参数。成品是 OC 账本库存及其引用，还不能投入 GT 配方。</div><div class="learning-actions"><a class="learn-button" href="#setup">建线</a><a class="learn-button" href="#feed">原料</a><a class="learn-button" href="#upstream">上游操作</a><a class="learn-button" href="#finish">后段</a><a class="learn-button" href="#acceptance">集中验收</a><a class="learn-button" href="ionone-lab.html#trial">查看物料可视化</a></div></section>
+</style><!-- /OC_THEME --></head><body class="learning-site"><a class="site-skip" href="#main-content">跳至正文</a><header id="site-header" class="oc-header"><a class="oc-brand" href="index.html">GTOC<small>CHEMISTRY WORKSHOP</small></a><nav aria-label="全站导航"><a href="index.html">总路线</a><a href="ester-guide.html">乙酸乙酯</a><a href="vitamin-a-guide.html">维生素 A</a><a href="wiki.html">Wiki</a><a href="mechanisms.html">机理课堂</a><a href="reagents.html">原料与配方</a><a href="continuous-plant.html">回收与交付</a></nav></header><main id="main-content" class="learning-main"><section><div class="eyebrow">PLAY / NATIVE CARBON TO PRODUCT</div><h1>从原生碳源，<br>跑通一批维生素 A。</h1><p>适用模组 <code>0.4.1-process-contract-alpha1</code>，GTNH 2.9.0-beta-2，Prism 实例 <strong>GTNH-OC 0.4.1 Process Contract (isolated test)</strong>。这是管理员测试流程。新线共 48 台设备，其中上游 16 台；每台右键打开状态界面。</p><div class="learning-note">碳骨架主线已经闭合：原生碳源 → 柠檬醛 → 假紫罗兰酮 → β 骨架 → C14/C6 → 成品封装。NaNH₂、催化剂、部分溶剂和后段辅料仍显式使用夹具；转化/分配为未标定教学参数。成品是 OC 账本库存及其引用，还不能投入 GT 配方。</div><div class="learning-actions"><a class="learn-button" href="#setup">建线</a><a class="learn-button" href="#feed">原料</a><a class="learn-button" href="#upstream">上游操作</a><a class="learn-button" href="#finish">后段</a><a class="learn-button" href="#acceptance">集中验收</a><a class="learn-button" href="ionone-lab.html#trial">查看物料可视化</a></div></section>
 <section id="setup"><h2>先建立六个相互绑定的工段</h2><p>选择平坦空地，每排之间至少隔三格；命令在玩家南侧三格生成东西向一排设备。每次执行后等待账本空闲，记下返回 UUID。所有关联设备必须在已加载范围内，不能重叠。</p><ol><li><code>/occouple place</code>：8 台偶联设备，记录偶联 UUID。</li><li>向南移至少三格，<code>/ocva place</code>：6 台乙酰化设备，记录乙酰化 UUID。</li><li>再向南移至少三格，<code>/occhain place &lt;偶联UUID&gt; &lt;乙酰化UUID&gt;</code>：6 台后段设备。</li><li>再向南移至少三格，<code>/ocsupply place &lt;偶联UUID&gt;</code>：6 台 C6 设备，记录 C6 UUID。</li><li>再向南移至少三格，<code>/ocdarzens place &lt;C6 UUID&gt;</code>：6 台 C14 设备，记录 C14 UUID。</li><li>再向南移至少三格，<code>/occampaign place-ionone &lt;C14 UUID&gt;</code>：16 台上游设备。绑定时全部关联线必须为空。</li></ol><p>每排从西到东编号从 0 开始。查看 <code>/occampaign status</code>；丢失设备引用时只在原位执行 <code>/occampaign repair &lt;上游UUID&gt;</code>。旧六机/十二机线仍用原模型，不能在旧批次直接追加新步骤。</p><p>若测试服提示产线上限，请使用已有的新线或另开独立测试世界；不要删除旧账本或旧世界来腾出名额。模组为每类产线保留有限容量。</p></section>
 <section id="feed"><h2>25 件上游物料，加 3 件 C6 碳源</h2><p>背包空出至少 25 格，执行 <code>/occampaign ionone-kit</code>。它给予真实 GT 注册物品，尚未写入 OC 反应库存。每次拆出恰好一件，快捷栏手持 → 右键上游 0 号接收机 → “导入手持原生物料” → 等待确认 → 关闭界面换下一件。单元的空壳回到原槽，粉末消耗后槽清空。</p><div class="table-wrap"><table class="learning-table"><tr><th>物料</th><th>件数</th><th>注册标识</th><th>本批教学当量</th></tr><tr><td>丙酮单元</td><td>2</td><td>acetone</td><td>2 mol</td></tr><tr><td>乙炔单元</td><td>2</td><td>acetylene</td><td>2 mol</td></tr><tr><td>氢气单元</td><td>1</td><td>hydrogen</td><td>1 mol</td></tr><tr><td>氯乙酸单元</td><td>1</td><td>molten.chloroaceticacid</td><td>1 mol</td></tr><tr><td>甲醇单元</td><td>4</td><td>methanol</td><td>4 mol</td></tr><tr><td>水单元</td><td>5</td><td>water</td><td>5 mol</td></tr><tr><td>氯化氢单元</td><td>3</td><td>hydrogenchloride</td><td>3 mol 净 HCl</td></tr><tr><td>硫酸单元</td><td>1</td><td>sulfuricacid</td><td>1 mol 净 H₂SO₄</td></tr><tr><td>整份甲醇钠粉</td><td>3</td><td>dustSodiumMethoxide</td><td>3 mol</td></tr><tr><td>乙酸甲酯单元</td><td>2</td><td>methylacetate</td><td>2 mol</td></tr><tr><td>整份氢氧化钠粉</td><td>1</td><td>dustSodiumHydroxide</td><td>1 mol</td></tr></table></div><p><strong>1000 mB 标准单元或一整份粉末 = 1 教学 mol。</strong>这不是密度、酸浓度或气体状态换算。桶、管道、通用流体容器、小份/微量粉末、改名物品和带额外 NBT 的物料不接受；不能向方块倾倒进料。接收机的“液流”只是账本分类，不说明氢气或粉末真实物态。</p><p>C6 另外需要三件：依次执行 <code>/ocsupply givefeed acetone</code>、<code>/ocsupply givefeed fluid.formaldehyde</code>、<code>/ocsupply givefeed acetylene</code>，每件手持一份导入 C6 的 0 号接收机。先导完原料再开始反应。可以自行制作同一注册身份的物品替代管理员命令。</p></section>
 <section id="upstream"><h2>按这个顺序操作上游，最后才交接 C14</h2><p>右键界面显示角色、阶段、mol 库存、已提交工序曲线和拒绝原因。大部分步骤提交一次净工序；点击后等服务器确认即可，没有现实化学倒计时。曲线横轴为提交工序，纵轴为本工段 mol，不是浓度或秒。被拒绝时悬停按钮读原因，不要用夹具补齐缺料。</p><div class="table-wrap"><table class="learning-table"><tr><th>顺序 / 机器</th><th>点击按钮</th><th>要观察什么</th></tr><tr><td>1 · 0 号</td><td>装载强碱与催化剂夹具</td><td>显式导入 NaNH₂、Pd、CaCO₃、Pb，仅管理员；这些尚非生存供应。</td></tr><tr><td>2 · 1 号</td><td>U01 乙炔化净工序</td><td>0.9 mol C5 炔醇；未反应物、NH₃、NaOH 保留。</td></tr><tr><td>3 · 2 号</td><td>U02 半加氢 / 过还原</td><td>0.82935 mol C5 烯醇，0.02565 mol 过还原醇。</td></tr><tr><td>4 · 3 号</td><td>A01 酯化 / 分离</td><td>0.833 mol 卤代酯到 4 号。此时不要交接，先完成碳链。</td></tr><tr><td>5–7 · 6 号</td><td>装载碳链催化包夹具 → U03 Claisen 生成盐 → U03 酸化 / 盐分离</td><td>从实际原生账扣乙酸甲酯、甲醇钠、HCl；0.9 mol MAA、甲醇与 NaCl 各有去向。</td></tr><tr><td>8 · 7 号</td><td>U04 Carroll 净工序</td><td>0.66348 mol C8 酮；同时留账 CO₂、甲醇与残余。</td></tr><tr><td>9 · 8 号</td><td>C8 理想分配</td><td>0.630306 mol C8 转移；0.033174 mol 留在 7 号。</td></tr><tr><td>10 · 9 号</td><td>U05 乙炔化 / 后处理</td><td>0.555929892 mol C10 炔醇转入 10 号，其余保留。</td></tr><tr><td>11 · 10 号</td><td>U06 条件化净重排</td><td>0.3335579352 mol 柠檬醛；E/Z 未定，仍混有酸、溶剂与催化组分。</td></tr><tr><td>12 · 12 号</td><td>U06 酸中和 / 理想分出</td><td>实际扣 0.2 mol NaOH；催化酸成为盐和水留在 10 号。95% 柠檬醛到 12 号，即 0.31688003844 mol。</td></tr><tr><td>13–14 · 13 号</td><td>U07 羟醛净工序 → U07 中和 / 理想分出</td><td>另扣 1 mol 丙酮与 0.01 mol NaOH；80% 进度生成假紫罗兰酮。再扣 0.01 mol HCl，95% 假紫罗兰酮进 14 号。剩余丙酮、柠檬醛、假紫罗兰酮、NaCl 和水都留在 13 号。</td></tr><tr><td>15–16 · 14 号</td><td>U08 α/β 净分支 → U08 酸中和</td><td>扣 0.05 mol 原生 H₂SO₄；80% 进度，反应部分 α:β=30:70。再扣 0.1 mol NaOH，生成 0.05 mol Na₂SO₄ 和 0.1 mol 水；全股转到 15 号。</td></tr><tr><td>17 · 15 号</td><td>β 教学分配 / 资格检查</td><td>β 池的 95% 转入已清空的 12 号：0.1281209371420608 mol。α、未反应假紫罗兰酮、余 β 和盐水保留在 15 号。</td></tr><tr><td>18 · 4 号</td><td>交接 A01 与原生辅料</td><td>从 12 号真实扣 β，从 4 号扣 A01 酯，从 0 号扣配套辅料，原子地交给空的新 C14。β 不再由夹具生成。</td></tr></table></div><p>5 号与 11 号为只读残余/气体设备；不自动排放、回收或清洗。12 号在前半批暂存柠檬醛，后半批暂存 β，两次用途不同时占料。C14 入料按实际 β 和酯中的限制者缩放，其他辅料不够则整次拒绝；源、目标一起提交，不会先扣一半。</p></section>
@@ -134,45 +196,4 @@ if(choice!==null&&select&&/^\d+$/.test(choice)&&+choice<select.options.length){s
 const legacy={roadmap:'developer.html#next',molecules:'wiki.html',mechanism:'mechanisms.html',reactor:'process.html',plant:'plants.html',play:'play.html',engines:'learning.html#models',sources:'developer.html#sources',contracts:'developer.html'};
 if(/(?:^|\/)index.html$/.test(location.pathname)||location.pathname.endsWith('/')){const target=legacy[location.hash.slice(1)];if(target)location.replace(target);}
 })();
-</script><!-- OC_LANGUAGE --><style>.site-language-control{display:flex;align-items:center;gap:8px;font:12px/1.5 system-ui,sans-serif;white-space:nowrap;flex:none;color:var(--muted,#536b62)}.site-language-control a{display:inline-block;text-decoration:none;padding:7px 11px;border:1px solid var(--line,#d5dfd1);border-radius:8px;background:var(--panel,#fffef8);color:var(--green,#246b54)}.site-language-control a:focus-visible{outline:3px solid var(--gold,#967444);outline-offset:3px}.site-language-floating{margin:12px;position:relative;width:max-content;z-index:10}@media print{.site-language-control{display:none!important}}
-</style><script>window.OC_LANGUAGE_LESSONS=[{"id":"Fischer","page":"fischer-lab.html","branch":null},{"id":"E01","page":"va-lab.html","branch":0},{"id":"E02","page":"va-lab.html","branch":1},{"id":"Q01","page":"coupling-lab.html","branch":0},{"id":"C01a","page":"coupling-lab.html","branch":1},{"id":"C01b","page":"coupling-lab.html","branch":2},{"id":"C02","page":"coupling-lab.html","branch":3},{"id":"C03","page":"coupling-lab.html","branch":4},{"id":"C02-side","page":"chain-lab.html","branch":0},{"id":"D01","page":"chain-lab.html","branch":1},{"id":"D02","page":"chain-lab.html","branch":2},{"id":"E03-net","page":"chain-lab.html","branch":3},{"id":"EZ-identity","page":"chain-lab.html","branch":4},{"id":"B01a","page":"supply-lab.html","branch":0},{"id":"B01b","page":"supply-lab.html","branch":1},{"id":"B02","page":"supply-lab.html","branch":2},{"id":"B03","page":"supply-lab.html","branch":3},{"id":"A02","page":"darzens-lab.html","branch":0},{"id":"A03","page":"darzens-lab.html","branch":1},{"id":"A04a","page":"darzens-lab.html","branch":2},{"id":"A04b-net","page":"darzens-lab.html","branch":3},{"id":"A04c-net","page":"darzens-lab.html","branch":4},{"id":"U01","page":"campaign-lab.html","branch":0},{"id":"U02-net","page":"campaign-lab.html","branch":1},{"id":"U02-over-net","page":"campaign-lab.html","branch":2},{"id":"A01","page":"campaign-lab.html","branch":3},{"id":"U03","page":"carbon-lab.html","branch":0},{"id":"U03-acid","page":"carbon-lab.html","branch":1},{"id":"U04","page":"carbon-lab.html","branch":2},{"id":"U05","page":"carbon-lab.html","branch":3},{"id":"U06-net","page":"carbon-lab.html","branch":4},{"id":"C10-EZ","page":"carbon-lab.html","branch":5},{"id":"U07","page":"ionone-lab.html","branch":0}];
-/* Explicit navigation preserves user context. Preference storage is optional, never required. */
-(()=>{'use strict';
-const KEY='oc-site-language-v1',english=document.documentElement.lang.startsWith('en');
-function ready(){
- if(document.getElementById('site-language-switch'))return;
- const control=document.createElement('div');control.className='site-language-control';control.id='site-language-switch';
- const label=document.createElement('span');label.textContent=english?'Language':'语言';
- const link=document.createElement('a');link.lang=english?'zh-Hans':'en';link.hreflang=link.lang;link.textContent=english?'中文':'English';
- control.append(label,link);const header=document.getElementById('site-header');if(header)header.append(control);else{control.classList.add('site-language-floating');document.body.prepend(control);}
- const page=location.pathname.split('/').pop()||'index.html',archive=location.pathname.includes('/archive/');
- const currentPages=['ester-guide','vitamin-a-guide','factory-services','factory-design','storage-logistics','process-quality','gameplay','next-line','ui-acceptance','process-manual','modular-plant','retinol-guide','line-bus'];
- const root=new URL(english||archive?'../':'./',location.href),lessons=window.OC_LANGUAGE_LESSONS||[],toChinese={index:'index',learning:'learning',wiki:'wiki',mechanisms:'mechanisms',plants:'plants',play:'play',glossary:'learning'};
- function update(){
-  const hash=location.hash;let destination;
-  if(english){
-   if(page==='lesson.html'){
-    const l=lessons.find(x=>x.id===new URLSearchParams(location.search).get('id'))||lessons[0];
-    destination=l?l.page+(l.branch===null?'#wiki-reactions':'?branch='+l.branch+'#lesson'):'mechanisms.html';
-   }else if(page==='wiki.html')destination='wiki.html'+hash.replace(/^#compound-/,'#molecule-').replace(/^#sources$/,'');
-   else if(currentPages.includes(page.replace('.html','')))destination=page+hash;
-   else destination=(toChinese[page.replace('.html','')]||'index')+'.html';
-  }else{
-   const branch=document.getElementById('branch')?.value??new URLSearchParams(location.search).get('branch')??'0';
-   const l=lessons.find(x=>x.page===page&&(x.branch===null||String(x.branch)===String(branch)));
-   if(l)destination='en/lesson.html?id='+encodeURIComponent(l.id);
-   else if(page==='wiki.html')destination=hash.startsWith('#mechanism-')?'en/mechanisms.html':'en/wiki.html'+hash.replace(/^#molecule-/,'#compound-');
-   else if(currentPages.includes(page.replace('.html','')))destination='en/'+page+hash;
-   else {const mapping={'index.html':'index','learning.html':'learning','mechanisms.html':'mechanisms','plants.html':'plants','play.html':'play','process-manual.html':'play','process.html':'plants','ionone-manual.html':'plants','ester-guide.html':'plants','vitamin-a-guide.html':'plants'};destination='en/'+(mapping[page]||'index')+'.html';}
-  }
-  link.href=new URL(destination,root).href;
-  link.title=english?'Read the corresponding Chinese content':page==='wiki.html'&&location.hash.startsWith('#mechanism-')?'打开英文机理课程索引':'阅读对应英文内容';
- }
- link.addEventListener('click',()=>{try{localStorage.setItem(KEY,english?'zh':'en');}catch{}});
- // Do not redirect explicit deep links based on preference: a linked original must stay readable.
- try{control.dataset.preferredLanguage=localStorage.getItem(KEY)||document.documentElement.lang;}catch{}
- window.addEventListener('hashchange',update);document.addEventListener('change',e=>{if(e.target.id==='branch')update();});update();
-}
-if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',ready,{once:true});else ready();
-})();
-</script><!-- /OC_LANGUAGE --></body></html>
+</script></body></html>

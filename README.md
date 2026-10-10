@@ -12,7 +12,7 @@ An interactive chemistry and process-learning handbook for the GTNH-OC project, 
 - [Build vitamin A through retinol](https://soraruholic.github.io/GTOC/en/vitamin-a-guide.html): 19 chapters through parallel branches, finishing and retinol hydrolysis.
 - [Mechanism classroom](https://soraruholic.github.io/GTOC/en/mechanisms.html): 33 lessons, 2D electron flow and mapped 3D structures.
 - [Complete facilities](https://soraruholic.github.io/GTOC/en/modular-plant.html): located source stores, metering, waste receivers and utilities.
-- [Supply and waste dossiers](https://soraruholic.github.io/GTOC/en/factory-services.html).
+- [Recipe ownership and future supply lines](https://soraruholic.github.io/GTOC/en/reagents.html#provenance): 20 packaging conversions, 13 aggregate syntheses and 4 gameplay consumables, all added by OC to GT machinery.
 - [Retinol and night-vision gameplay](https://soraruholic.github.io/GTOC/en/retinol-guide.html).
 
 The production guides target 0.4.7-continuous-alpha1. Empty stores accept packets made with 37 registered GT Large Chemical Reactor recipes. Three additional service modules handle segregated neutralisation, 95% approved single-species reclaim and paid off-site disposal. Each batch consumes a treatment service packet. Whole ester product streams enter the OC dispatch depot with their residual composition; retinol provides ledger-backed night-vision uses. New plants preserve immutable batch history on disk and roll over without the old 8/16-batch limits. The older plants retain their original stocks and behaviour.

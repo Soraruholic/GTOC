@@ -3,8 +3,7 @@ const D=window.COMPLETE_PLANTS,$=id=>document.getElementById(id),en=D.en,t=(a,b)
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let kind=D.initial,route=D.routes[kind],yaw=-.5,pitch=.85,zoom=1,selected='',focus=new Set(),drag=null,objects=[],hits=[];
 const canvas=$('factory-canvas'),ctx=canvas.getContext('2d');
-try{if(localStorage.getItem('complete-theme')==='dark')document.body.classList.add('dark');}catch(_){}
-$('theme').onclick=()=>{document.body.classList.toggle('dark');try{localStorage.setItem('complete-theme',document.body.classList.contains('dark')?'dark':'light');}catch(_){}draw();};
+window.addEventListener('oc-theme-change',()=>draw());
 function makeObjects(){const d=route.data;objects=[];
  for(const m of d.machines)objects.push({...m,anchor:[m.x,m.y+1,m.z],x:m.x-m.width/2+.5,w:m.width,h:m.height,d:m.width,kind:'machine',color:m.id.startsWith('service:')?'#b38148':'#4f8876'});
  for(const c of d.cells)if(c.kind==='CHEST'||c.kind==='HOPPER')objects.push({...c,w:1,h:c.kind==='HOPPER'?.8:1,d:1,kind:c.kind.toLowerCase(),color:c.kind==='CHEST'?'#b9843f':'#697578'});
@@ -55,7 +54,7 @@ function graph(){const steps=route.steps,by=Object.fromEntries(steps.map(s=>[s.i
  $('route-note').textContent=kind==='ester'?t('从独立计量到可逆酯化，再到分离、干燥与分类收集。点击节点定位设备。','Follow metering, reversible esterification, separation, drying and collection. Select a node to locate its equipment.'):t('C14 与 C6 只在合格交接后汇合。点击任意节点，高亮对应设备。','C14 and C6 join only after qualified handoff. Select a node to highlight its equipment.');
 }
 function bill(){$('bill').innerHTML=Object.entries(route.data.supplies).map(([s,n])=>`<tr><td>${esc(en?s.replaceAll('-',' '):(route.data.speciesZh[s]||s))}<br><code>${esc(s)}</code></td><td>${Number(n).toPrecision(7)} ${t('工艺单位','process units')}<br><strong>${Math.ceil(n)} ${t('包 / 首批','packets / first batch')}</strong></td><td><a href="reagents.html#reagent-${esc(s)}">${t('查看 GT 制备配方','GT preparation recipe')}</a><br>${t('中央双箱供料 · 余量留仓','Central chest feed · carry-over retained')}</td></tr>`).join('');}
-function draw(){if(!ctx||!objects.length)return;const width=canvas.clientWidth,height=canvas.clientHeight,dpr=Math.min(devicePixelRatio||1,2);canvas.width=width*dpr;canvas.height=height*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,width,height);const dark=document.body.classList.contains('dark');
+function draw(){if(!ctx||!objects.length)return;const width=canvas.clientWidth,height=canvas.clientHeight,dpr=Math.min(devicePixelRatio||1,2);canvas.width=width*dpr;canvas.height=height*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,width,height);const dark=document.documentElement.dataset.theme==='dark';
  const visible=objects.filter(o=>o.kind==='bus'?$('layer-bus').checked:o.kind==='machine'?$('layer-machine').checked:$('layer-storage').checked),bounds=objects.filter(o=>o.kind!=='bus');
  const minX=Math.min(...bounds.map(o=>o.x)),maxX=Math.max(...bounds.map(o=>o.x+o.w)),minZ=Math.min(...bounds.map(o=>o.z)),maxZ=Math.max(...bounds.map(o=>o.z+o.d));const cx=(minX+maxX)/2,cz=(minZ+maxZ)/2;
  const space=(x,y,z)=>{x-=cx;z-=cz;const u=x*Math.cos(yaw)+z*Math.sin(yaw),v=-x*Math.sin(yaw)+z*Math.cos(yaw);return[u,v*Math.sin(pitch)-y*Math.cos(pitch),v*Math.cos(pitch)+y*Math.sin(pitch)];};

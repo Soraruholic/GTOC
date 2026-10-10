@@ -1,0 +1,345 @@
+{
+  "schema": "oc-recipe-provenance-1",
+  "release": "0.4.7-continuous-alpha1",
+  "records": {
+    "acetic-acid": {
+      "owner": "GTNH-OC",
+      "kind": "packaging",
+      "label": "原生物料 → OC 封装",
+      "labelEn": "Native material → OC packaging",
+      "summary": "输入可对应已注册的 GTNH 物料；把它转为工艺包的配方由 OC 新增。上游原生制取请查看当前整合包 NEI。",
+      "summaryEn": "The input maps to registered GTNH material. OC adds its conversion to a process packet. Consult NEI in this pack for native upstream production.",
+      "line": null
+    },
+    "ethanol": {
+      "owner": "GTNH-OC",
+      "kind": "packaging",
+      "label": "原生物料 → OC 封装",
+      "labelEn": "Native material → OC packaging",
+      "summary": "输入可对应已注册的 GTNH 物料；把它转为工艺包的配方由 OC 新增。上游原生制取请查看当前整合包 NEI。",
+      "summaryEn": "The input maps to registered GTNH material. OC adds its conversion to a process packet. Consult NEI in this pack for native upstream production.",
+      "line": null
+    },
+    "water": {
+      "owner": "GTNH-OC",
+      "kind": "packaging",
+      "label": "原生物料 → OC 封装",
+      "labelEn": "Native material → OC packaging",
+      "summary": "输入可对应已注册的 GTNH 物料；把它转为工艺包的配方由 OC 新增。上游原生制取请查看当前整合包 NEI。",
+      "summaryEn": "The input maps to registered GTNH material. OC adds its conversion to a process packet. Consult NEI in this pack for native upstream production.",
+      "line": null
+    },
+    "acetic-anhydride": {
+      "owner": "GTNH-OC",
+      "kind": "packaging",
+      "label": "原生物料 → OC 封装",
+      "labelEn": "Native material → OC packaging",
+      "summary": "输入可对应已注册的 GTNH 物料；把它转为工艺包的配方由 OC 新增。上游原生制取请查看当前整合包 NEI。",
+      "summaryEn": "The input maps to registered GTNH material. OC adds its conversion to a process packet. Consult NEI in this pack for native upstream production.",
+      "line": null
+    },
+    "acetone": {
+      "owner": "GTNH-OC",
+      "kind": "packaging",
+      "label": "原生物料 → OC 封装",
+      "labelEn": "Native material → OC packaging",
+      "summary": "输入可对应已注册的 GTNH 物料；把它转为工艺包的配方由 OC 新增。上游原生制取请查看当前整合包 NEI。",
+      "summaryEn": "The input maps to registered GTNH material. OC adds its conversion to a process packet. Consult NEI in this pack for native upstream production.",
+      "line": null
+    },
+    "acetylene": {
+      "owner": "GTNH-OC",
+      "kind": "packaging",
+      "label": "原生物料 → OC 封装",
+      "labelEn": "Native material → OC packaging",
+      "summary": "输入可对应已注册的 GTNH 物料；把它转为工艺包的配方由 OC 新增。上游原生制取请查看当前整合包 NEI。",
+      "summaryEn": "The input maps to registered GTNH material. OC adds its conversion to a process packet. Consult NEI in this pack for native upstream production.",
+      "line": null
+    },
+    "chloroacetic-acid": {
+      "owner": "GTNH-OC",
+      "kind": "packaging",
+      "label": "原生物料 → OC 封装",
+      "labelEn": "Native material → OC packaging",
+      "summary": "输入可对应已注册的 GTNH 物料；把它转为工艺包的配方由 OC 新增。上游原生制取请查看当前整合包 NEI。",
+      "summaryEn": "The input maps to registered GTNH material. OC adds its conversion to a process packet. Consult NEI in this pack for native upstream production.",
+      "line": null
+    },
+    "diethyl-ether": {
+      "owner": "GTNH-OC",
+      "kind": "packaging",
+      "label": "原生物料 → OC 封装",
+      "labelEn": "Native material → OC packaging",
+      "summary": "输入可对应已注册的 GTNH 物料；把它转为工艺包的配方由 OC 新增。上游原生制取请查看当前整合包 NEI。",
+      "summaryEn": "The input maps to registered GTNH material. OC adds its conversion to a process packet. Consult NEI in this pack for native upstream production.",
+      "line": null
+    },
+    "formaldehyde": {
+      "owner": "GTNH-OC",
+      "kind": "packaging",
+      "label": "原生物料 → OC 封装",
+      "labelEn": "Native material → OC packaging",
+      "summary": "输入可对应已注册的 GTNH 物料；把它转为工艺包的配方由 OC 新增。上游原生制取请查看当前整合包 NEI。",
+      "summaryEn": "The input maps to registered GTNH material. OC adds its conversion to a process packet. Consult NEI in this pack for native upstream production.",
+      "line": null
+    },
+    "hydrogen": {
+      "owner": "GTNH-OC",
+      "kind": "packaging",
+      "label": "原生物料 → OC 封装",
+      "labelEn": "Native material → OC packaging",
+      "summary": "输入可对应已注册的 GTNH 物料；把它转为工艺包的配方由 OC 新增。上游原生制取请查看当前整合包 NEI。",
+      "summaryEn": "The input maps to registered GTNH material. OC adds its conversion to a process packet. Consult NEI in this pack for native upstream production.",
+      "line": null
+    },
+    "hydrogen-chloride": {
+      "owner": "GTNH-OC",
+      "kind": "packaging",
+      "label": "原生物料 → OC 封装",
+      "labelEn": "Native material → OC packaging",
+      "summary": "输入可对应已注册的 GTNH 物料；把它转为工艺包的配方由 OC 新增。上游原生制取请查看当前整合包 NEI。",
+      "summaryEn": "The input maps to registered GTNH material. OC adds its conversion to a process packet. Consult NEI in this pack for native upstream production.",
+      "line": null
+    },
+    "methanol": {
+      "owner": "GTNH-OC",
+      "kind": "packaging",
+      "label": "原生物料 → OC 封装",
+      "labelEn": "Native material → OC packaging",
+      "summary": "输入可对应已注册的 GTNH 物料；把它转为工艺包的配方由 OC 新增。上游原生制取请查看当前整合包 NEI。",
+      "summaryEn": "The input maps to registered GTNH material. OC adds its conversion to a process packet. Consult NEI in this pack for native upstream production.",
+      "line": null
+    },
+    "methyl-acetate": {
+      "owner": "GTNH-OC",
+      "kind": "packaging",
+      "label": "原生物料 → OC 封装",
+      "labelEn": "Native material → OC packaging",
+      "summary": "输入可对应已注册的 GTNH 物料；把它转为工艺包的配方由 OC 新增。上游原生制取请查看当前整合包 NEI。",
+      "summaryEn": "The input maps to registered GTNH material. OC adds its conversion to a process packet. Consult NEI in this pack for native upstream production.",
+      "line": null
+    },
+    "p-xylene": {
+      "owner": "GTNH-OC",
+      "kind": "packaging",
+      "label": "原生物料 → OC 封装",
+      "labelEn": "Native material → OC packaging",
+      "summary": "输入可对应已注册的 GTNH 物料；把它转为工艺包的配方由 OC 新增。上游原生制取请查看当前整合包 NEI。",
+      "summaryEn": "The input maps to registered GTNH material. OC adds its conversion to a process packet. Consult NEI in this pack for native upstream production.",
+      "line": null
+    },
+    "sulfuric-acid": {
+      "owner": "GTNH-OC",
+      "kind": "packaging",
+      "label": "原生物料 → OC 封装",
+      "labelEn": "Native material → OC packaging",
+      "summary": "输入可对应已注册的 GTNH 物料；把它转为工艺包的配方由 OC 新增。上游原生制取请查看当前整合包 NEI。",
+      "summaryEn": "The input maps to registered GTNH material. OC adds its conversion to a process packet. Consult NEI in this pack for native upstream production.",
+      "line": null
+    },
+    "toluene": {
+      "owner": "GTNH-OC",
+      "kind": "packaging",
+      "label": "原生物料 → OC 封装",
+      "labelEn": "Native material → OC packaging",
+      "summary": "输入可对应已注册的 GTNH 物料；把它转为工艺包的配方由 OC 新增。上游原生制取请查看当前整合包 NEI。",
+      "summaryEn": "The input maps to registered GTNH material. OC adds its conversion to a process packet. Consult NEI in this pack for native upstream production.",
+      "line": null
+    },
+    "calcium-carbonate": {
+      "owner": "GTNH-OC",
+      "kind": "packaging",
+      "label": "原生物料 → OC 封装",
+      "labelEn": "Native material → OC packaging",
+      "summary": "输入可对应已注册的 GTNH 物料；把它转为工艺包的配方由 OC 新增。上游原生制取请查看当前整合包 NEI。",
+      "summaryEn": "The input maps to registered GTNH material. OC adds its conversion to a process packet. Consult NEI in this pack for native upstream production.",
+      "line": null
+    },
+    "lead": {
+      "owner": "GTNH-OC",
+      "kind": "packaging",
+      "label": "原生物料 → OC 封装",
+      "labelEn": "Native material → OC packaging",
+      "summary": "输入可对应已注册的 GTNH 物料；把它转为工艺包的配方由 OC 新增。上游原生制取请查看当前整合包 NEI。",
+      "summaryEn": "The input maps to registered GTNH material. OC adds its conversion to a process packet. Consult NEI in this pack for native upstream production.",
+      "line": null
+    },
+    "palladium": {
+      "owner": "GTNH-OC",
+      "kind": "packaging",
+      "label": "原生物料 → OC 封装",
+      "labelEn": "Native material → OC packaging",
+      "summary": "输入可对应已注册的 GTNH 物料；把它转为工艺包的配方由 OC 新增。上游原生制取请查看当前整合包 NEI。",
+      "summaryEn": "The input maps to registered GTNH material. OC adds its conversion to a process packet. Consult NEI in this pack for native upstream production.",
+      "line": null
+    },
+    "sodium-hydroxide": {
+      "owner": "GTNH-OC",
+      "kind": "packaging",
+      "label": "原生物料 → OC 封装",
+      "labelEn": "Native material → OC packaging",
+      "summary": "输入可对应已注册的 GTNH 物料；把它转为工艺包的配方由 OC 新增。上游原生制取请查看当前整合包 NEI。",
+      "summaryEn": "The input maps to registered GTNH material. OC adds its conversion to a process packet. Consult NEI in this pack for native upstream production.",
+      "line": null
+    },
+    "acid-catalyst-cartridge": {
+      "owner": "GTNH-OC",
+      "kind": "utility",
+      "label": "OC 游戏耗材",
+      "labelEn": "OC gameplay consumable",
+      "summary": "这是 OC 定义的有限游戏耗材。材料与耗电是游戏成本；包本身不是原生 GTNH 物品或现实单一化学物质。",
+      "summaryEn": "This is an OC finite gameplay consumable. Its inputs and EU are game costs; the packet is not a native GTNH item or a single real chemical substance.",
+      "line": null
+    },
+    "dryer-cartridge": {
+      "owner": "GTNH-OC",
+      "kind": "utility",
+      "label": "OC 游戏耗材",
+      "labelEn": "OC gameplay consumable",
+      "summary": "这是 OC 定义的有限游戏耗材。材料与耗电是游戏成本；包本身不是原生 GTNH 物品或现实单一化学物质。",
+      "summaryEn": "This is an OC finite gameplay consumable. Its inputs and EU are game costs; the packet is not a native GTNH item or a single real chemical substance.",
+      "line": null
+    },
+    "heater-charge": {
+      "owner": "GTNH-OC",
+      "kind": "utility",
+      "label": "OC 游戏耗材",
+      "labelEn": "OC gameplay consumable",
+      "summary": "这是 OC 定义的有限游戏耗材。材料与耗电是游戏成本；包本身不是原生 GTNH 物品或现实单一化学物质。",
+      "summaryEn": "This is an OC finite gameplay consumable. Its inputs and EU are game costs; the packet is not a native GTNH item or a single real chemical substance.",
+      "line": null
+    },
+    "sodium-amide": {
+      "owner": "GTNH-OC",
+      "kind": "synthesis",
+      "label": "OC 新增聚合合成",
+      "labelEn": "OC aggregate synthesis",
+      "summary": "这是 OC 新增合成配方，使用原生 GTNH 物料及 / 或 OC 中间体；当前为聚合游戏工艺，将来可拆成独立产线。",
+      "summaryEn": "OC adds this synthesis using native GTNH materials and/or OC intermediates. It is currently an aggregate game process, with a proposed dedicated supply line.",
+      "line": "alkali"
+    },
+    "sodium-methoxide": {
+      "owner": "GTNH-OC",
+      "kind": "synthesis",
+      "label": "OC 新增聚合合成",
+      "labelEn": "OC aggregate synthesis",
+      "summary": "这是 OC 新增合成配方，使用原生 GTNH 物料及 / 或 OC 中间体；当前为聚合游戏工艺，将来可拆成独立产线。",
+      "summaryEn": "OC adds this synthesis using native GTNH materials and/or OC intermediates. It is currently an aggregate game process, with a proposed dedicated supply line.",
+      "line": "alkali"
+    },
+    "isopropanol": {
+      "owner": "GTNH-OC",
+      "kind": "synthesis",
+      "label": "OC 新增聚合合成",
+      "labelEn": "OC aggregate synthesis",
+      "summary": "这是 OC 新增合成配方，使用原生 GTNH 物料及 / 或 OC 中间体；当前为聚合游戏工艺，将来可拆成独立产线。",
+      "summaryEn": "OC adds this synthesis using native GTNH materials and/or OC intermediates. It is currently an aggregate game process, with a proposed dedicated supply line.",
+      "line": "alcohol"
+    },
+    "aluminium-isopropoxide": {
+      "owner": "GTNH-OC",
+      "kind": "synthesis",
+      "label": "OC 新增聚合合成",
+      "labelEn": "OC aggregate synthesis",
+      "summary": "这是 OC 新增合成配方，使用原生 GTNH 物料及 / 或 OC 中间体；当前为聚合游戏工艺，将来可拆成独立产线。",
+      "summaryEn": "OC adds this synthesis using native GTNH materials and/or OC intermediates. It is currently an aggregate game process, with a proposed dedicated supply line.",
+      "line": "alcohol"
+    },
+    "ethylene-carbonate": {
+      "owner": "GTNH-OC",
+      "kind": "synthesis",
+      "label": "OC 新增聚合合成",
+      "labelEn": "OC aggregate synthesis",
+      "summary": "这是 OC 新增合成配方，使用原生 GTNH 物料及 / 或 OC 中间体；当前为聚合游戏工艺，将来可拆成独立产线。",
+      "summaryEn": "OC adds this synthesis using native GTNH materials and/or OC intermediates. It is currently an aggregate game process, with a proposed dedicated supply line.",
+      "line": "carbonate"
+    },
+    "ethyl-bromide": {
+      "owner": "GTNH-OC",
+      "kind": "synthesis",
+      "label": "OC 新增聚合合成",
+      "labelEn": "OC aggregate synthesis",
+      "summary": "这是 OC 新增合成配方，使用原生 GTNH 物料及 / 或 OC 中间体；当前为聚合游戏工艺，将来可拆成独立产线。",
+      "summaryEn": "OC adds this synthesis using native GTNH materials and/or OC intermediates. It is currently an aggregate game process, with a proposed dedicated supply line.",
+      "line": "grignard"
+    },
+    "ethylmagnesium-bromide": {
+      "owner": "GTNH-OC",
+      "kind": "synthesis",
+      "label": "OC 新增聚合合成",
+      "labelEn": "OC aggregate synthesis",
+      "summary": "这是 OC 新增合成配方，使用原生 GTNH 物料及 / 或 OC 中间体；当前为聚合游戏工艺，将来可拆成独立产线。",
+      "summaryEn": "OC adds this synthesis using native GTNH materials and/or OC intermediates. It is currently an aggregate game process, with a proposed dedicated supply line.",
+      "line": "grignard"
+    },
+    "acetylacetone": {
+      "owner": "GTNH-OC",
+      "kind": "synthesis",
+      "label": "OC 新增聚合合成",
+      "labelEn": "OC aggregate synthesis",
+      "summary": "这是 OC 新增合成配方，使用原生 GTNH 物料及 / 或 OC 中间体；当前为聚合游戏工艺，将来可拆成独立产线。",
+      "summaryEn": "OC adds this synthesis using native GTNH materials and/or OC intermediates. It is currently an aggregate game process, with a proposed dedicated supply line.",
+      "line": "ligand"
+    },
+    "molybdenyl-acetylacetonate": {
+      "owner": "GTNH-OC",
+      "kind": "synthesis",
+      "label": "OC 新增聚合合成",
+      "labelEn": "OC aggregate synthesis",
+      "summary": "这是 OC 新增合成配方，使用原生 GTNH 物料及 / 或 OC 中间体；当前为聚合游戏工艺，将来可拆成独立产线。",
+      "summaryEn": "OC adds this synthesis using native GTNH materials and/or OC intermediates. It is currently an aggregate game process, with a proposed dedicated supply line.",
+      "line": "ligand"
+    },
+    "pyridine": {
+      "owner": "GTNH-OC",
+      "kind": "synthesis",
+      "label": "OC 新增聚合合成",
+      "labelEn": "OC aggregate synthesis",
+      "summary": "这是 OC 新增合成配方，使用原生 GTNH 物料及 / 或 OC 中间体；当前为聚合游戏工艺，将来可拆成独立产线。",
+      "summaryEn": "OC adds this synthesis using native GTNH materials and/or OC intermediates. It is currently an aggregate game process, with a proposed dedicated supply line.",
+      "line": "heterocycle"
+    },
+    "quinoline": {
+      "owner": "GTNH-OC",
+      "kind": "synthesis",
+      "label": "OC 新增聚合合成",
+      "labelEn": "OC aggregate synthesis",
+      "summary": "这是 OC 新增合成配方，使用原生 GTNH 物料及 / 或 OC 中间体；当前为聚合游戏工艺，将来可拆成独立产线。",
+      "summaryEn": "OC adds this synthesis using native GTNH materials and/or OC intermediates. It is currently an aggregate game process, with a proposed dedicated supply line.",
+      "line": "heterocycle"
+    },
+    "tert-butylbenzoic-acid": {
+      "owner": "GTNH-OC",
+      "kind": "synthesis",
+      "label": "OC 新增聚合合成",
+      "labelEn": "OC aggregate synthesis",
+      "summary": "这是 OC 新增合成配方，使用原生 GTNH 物料及 / 或 OC 中间体；当前为聚合游戏工艺，将来可拆成独立产线。",
+      "summaryEn": "OC adds this synthesis using native GTNH materials and/or OC intermediates. It is currently an aggregate game process, with a proposed dedicated supply line.",
+      "line": "aromatic"
+    },
+    "triphenylphosphine-oxide": {
+      "owner": "GTNH-OC",
+      "kind": "synthesis",
+      "label": "OC 新增聚合合成",
+      "labelEn": "OC aggregate synthesis",
+      "summary": "这是 OC 新增合成配方，使用原生 GTNH 物料及 / 或 OC 中间体；当前为聚合游戏工艺，将来可拆成独立产线。",
+      "summaryEn": "OC adds this synthesis using native GTNH materials and/or OC intermediates. It is currently an aggregate game process, with a proposed dedicated supply line.",
+      "line": "phosphorus"
+    },
+    "treatment-service-cartridge": {
+      "owner": "GTNH-OC",
+      "kind": "utility",
+      "label": "OC 游戏耗材",
+      "labelEn": "OC gameplay consumable",
+      "summary": "这是 OC 定义的有限游戏耗材。材料与耗电是游戏成本；包本身不是原生 GTNH 物品或现实单一化学物质。",
+      "summaryEn": "This is an OC finite gameplay consumable. Its inputs and EU are game costs; the packet is not a native GTNH item or a single real chemical substance.",
+      "line": null
+    }
+  },
+  "evidence": "FactoryReagentRecipes registration and runtime 37/37 input matching; not a proof of native upstream recipes or player-operated LCR completion.",
+  "counts": {
+    "packaging": 20,
+    "synthesis": 13,
+    "utility": 4
+  }
+}

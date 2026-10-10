@@ -28,7 +28,8 @@ function ready(){
  const header=document.getElementById('site-header');if(header)header.append(control);else{control.classList.add('site-theme-floating');document.body.prepend(control);}control.querySelector('select').addEventListener('change',e=>choose(e.target.value));
  const css=document.createElement('style');css.id='oc-theme-adapted';css.media='screen';css.textContent=Array.from(document.styleSheets).filter(s=>!s.ownerNode?.hasAttribute('data-oc-theme')).map(s=>{try{return adaptRules(s.cssRules);}catch{return '';}}).join('\n');
  // Explicit theme rules follow generated legacy overrides and retain selected-control contrast.
- document.head.insertBefore(css,document.querySelector('style[data-oc-theme]'));
+ const themeStyle=document.querySelector('style[data-oc-theme]');
+ if(themeStyle)themeStyle.parentNode.insertBefore(css,themeStyle);else document.head.append(css);
  inline(document.body);const observer=new MutationObserver(records=>{for(const r of records)for(const n of r.addedNodes)inline(n);});observer.observe(document.body,{childList:true,subtree:true});apply();
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',ready,{once:true});else ready();
