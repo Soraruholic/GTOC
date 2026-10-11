@@ -1,6 +1,6 @@
 (()=>{'use strict';
 const {en,data}=window.DEDICATED_PAGE,$=id=>document.getElementById(id),t=(a,b)=>en?b:a;
-let route=data.ester,selected=0,yaw=-.62,pitch=.75,zoom=1,focusMode=false,drag=null,shapes=[],project;
+let route=data.ester,selected=0,yaw=-.62,pitch=.75,zoom=1,focusMode=false,drag=null,shapes=[],project,currentStage='feed';
 const canvas=$('plant-canvas'),ctx=canvas.getContext('2d');
 const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function choose(){const kind=$('line-kind').value,visible=route.lines.map((l,i)=>({...l,index:i})).filter(l=>kind==='all'||l.kind===kind);if(!visible.length){$('line-kind').value='all';return choose();}selected=visible[0].index;$('pipe-select').innerHTML=visible.map(l=>`<option value="${l.index}">${escape(en?l.material:l.name)} → ${escape(l.target)}</option>`).join('');detail();draw();}
@@ -17,7 +17,8 @@ function draw(){const box=canvas.getBoundingClientRect(),w=box.width,h=box.heigh
  for(let x=0;x<=98;x+=14)pipe([x,-1.95,minZ],[x,-1.95,maxZ],dark?'#3a5145':'#d2dbcf',.6,false);
  for(let z=Math.ceil(minZ/14)*14;z<=maxZ;z+=14)pipe([-7,-1.95,z],[98,-1.95,z],dark?'#3a5145':'#d2dbcf',.6,false);
  const chosen=route.lines[selected];
- route.lines.forEach((l,i)=>{if(i!==selected&&!$('show-all').checked)return;for(let n=1;n<l.points.length;n++)pipe(l.points[n-1],l.points[n],i===selected?'#df873e':dark?'#647f79':'#aabbb5',i===selected?2.6:1,i===selected);});
+ const lineColors={SUPPLY:'#6c9fbc',PROCESS:'#df873e',COLLECT:'#b487a5',RECLAIM:'#70a78c'};
+ route.lines.forEach((l,i)=>{if(i!==selected&&!$('show-all').checked)return;const color=i===selected?(lineColors[l.kind]||'#df873e'):(dark?'#647f79':'#aabbb5');for(let n=1;n<l.points.length;n++)pipe(l.points[n-1],l.points[n],color,i===selected?2.8:1,i===selected);});
  route.machines.forEach(m=>{const highlight=m.id===chosen.target||m.id===chosen.source,color=highlight?'#75b79e':dark?'#7b9290':'#a4b7b5',r=m.family==='D'?1.45:m.w*.34;let x=m.x+.5,z=m.z+m.w/2;
  if(m.family==='M'){for(let a=-1;a<=1;a++)for(let b=-1;b<=1;b++)cylinder(x+a*1.7,m.y+.2,z+b*1.7,.55,m.h*.65,color);}else if(['X','S'].includes(m.family))cylinder(x,m.y+2,z,1.4,m.w*.82,color,'x');else cylinder(x,m.y+.2,z,r,m.h*.85,color);if(['R','H','K'].includes(m.family))cylinder(x,m.y+m.h*.85,z,.5,.7,'#435d60');
  if(['D','F','Y'].includes(m.family))for(let i=1;i<4;i++)cylinder(x,m.y+i*.85,z,r*1.04,.12,'#718b7e');
@@ -29,5 +30,8 @@ function draw(){const box=canvas.getBoundingClientRect(),w=box.width,h=box.heigh
  window.__dedicatedScene={stores:route.stores.length,lines:route.lines.length,selected:chosen.material,source:chosen.source,target:chosen.target,kind:chosen.kind,receivers:route.stores.filter(s=>s.receiver).length,verticalSegments:route.lines.reduce((n,l)=>n+l.points.slice(1).filter((p,i)=>p[1]!==l.points[i][1]).length,0)};
 }
 $('plant-select').onchange=()=>{route=data[$('plant-select').value];zoom=1;choose();};$('line-kind').onchange=choose;$('view-focus').onclick=()=>{focusMode=!focusMode;draw();};$('pipe-select').onchange=()=>{selected=Number($('pipe-select').value);detail();draw();};$('view-reset').onclick=()=>{yaw=-.62;pitch=.75;zoom=1;focusMode=false;draw();};$('view-top').onclick=()=>{pitch=Math.PI/2;yaw=0;draw();};$('show-all').onchange=draw;
-canvas.onpointerdown=e=>{drag=[e.clientX,e.clientY];canvas.setPointerCapture(e.pointerId);};canvas.onpointerup=()=>drag=null;canvas.onpointercancel=()=>drag=null;canvas.onpointermove=e=>{if(!drag)return;yaw+=(e.clientX-drag[0])*.008;pitch=Math.max(.15,Math.min(1.57,pitch+(e.clientY-drag[1])*.006));drag=[e.clientX,e.clientY];draw();};canvas.addEventListener('wheel',e=>{e.preventDefault();zoom=Math.max(.6,Math.min(3,zoom*Math.exp(-e.deltaY*.001)));draw();},{passive:false});new ResizeObserver(draw).observe(canvas);window.addEventListener('oc-theme-change',draw);choose();
+const stageNotes={feed:['SUPPLY','先看蓝色 SUPPLY 线：每条线只有一个物料身份，缺料时整段停下。','Start with blue SUPPLY lines: each line has one material identity, and the segment stops when its store is empty.'],react:['PROCESS','橙色 PROCESS 线承接整股工艺物流；设备负责反应，管道不在途中分拣组分。','Orange PROCESS lines carry a whole process stream; equipment reacts, pipes do not sort it.'],separate:['PROCESS','分离设备把混合物变成新的合格或残余物流，方向仍由专线契约固定。','Separation equipment creates new qualified or residual streams; each direction stays fixed.'],finish:['COLLECT','紫色 COLLECT 线进入固定接收罐，绿色 RECLAIM 线只回送合格单物料。','Purple COLLECT lines enter fixed receivers; green RECLAIM lines return qualified single materials.']};
+function setStage(stage){currentStage=stage;const note=stageNotes[stage]||stageNotes.feed;document.querySelectorAll('.journey-step').forEach(b=>{const active=b.dataset.stage===stage;b.classList.toggle('active',active);});$('journey-note').textContent=en?note[2]:note[1];$('line-kind').value=note[0];choose();}
+document.querySelectorAll('.journey-step').forEach(b=>b.addEventListener('click',()=>setStage(b.dataset.stage)));
+canvas.onpointerdown=e=>{drag=[e.clientX,e.clientY];canvas.setPointerCapture(e.pointerId);};canvas.onpointerup=()=>drag=null;canvas.onpointercancel=()=>drag=null;canvas.onpointermove=e=>{if(!drag)return;yaw+=(e.clientX-drag[0])*.008;pitch=Math.max(.15,Math.min(1.57,pitch+(e.clientY-drag[1])*.006));drag=[e.clientX,e.clientY];draw();};canvas.addEventListener('wheel',e=>{e.preventDefault();zoom=Math.max(.6,Math.min(3,zoom*Math.exp(-e.deltaY*.001)));draw();},{passive:false});new ResizeObserver(draw).observe(canvas);window.addEventListener('oc-theme-change',draw);setStage('feed');
 })();
