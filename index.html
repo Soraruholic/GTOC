@@ -1,0 +1,171 @@
+<!doctype html><html lang="zh-CN"><head><!-- OC_THEME_EARLY --><script data-oc-theme>/* Runs before page styles/players. Theme preferences never change lesson or simulation state. */
+(()=>{'use strict';
+const KEY='oc-site-theme-v1',root=document.documentElement,system=matchMedia('(prefers-color-scheme: dark)'),printing=matchMedia('print'),viewers=new Set();
+const valid=v=>['system','light','dark'].includes(v);let preference='system';
+try{const saved=localStorage.getItem(KEY);if(valid(saved))preference=saved;}catch{}
+const dark=()=>!printing.matches&&(preference==='dark'||preference==='system'&&system.matches);
+function apply(){root.dataset.theme=dark()?'dark':'light';root.dataset.themePreference=preference;const select=document.getElementById('site-theme-select');if(select)select.value=preference;for(const item of viewers){if(!item.host?.isConnected){viewers.delete(item);continue;}item.viewer.setBackgroundColor(dark()?'#b8c7bf':item.background);}window.dispatchEvent(new CustomEvent('oc-theme-change',{detail:{preference,resolved:root.dataset.theme}}));}
+function choose(value){if(!valid(value))return;preference=value;try{localStorage.setItem(KEY,value);}catch{}apply();}
+system.addEventListener('change',apply);printing.addEventListener('change',apply);
+window.addEventListener('storage',e=>{if(e.key===KEY||e.key===null){preference=valid(e.newValue)?e.newValue:'system';apply();}});
+window.OCTheme={choose,getState:()=>({preference,resolved:root.dataset.theme,viewers:viewers.size}),createViewer(element,options={}){
+ const host=typeof element==='string'?document.getElementById(element):element?.nodeType?element:element?.[0],background=options.backgroundColor??'#ffffff';
+ const viewer=window.$3Dmol.createViewer(element,{...options,backgroundColor:dark()?'#b8c7bf':background});viewers.add({viewer,background,host});return viewer;
+}};
+apply();
+// Older classrooms contain literal colours. Derive dark overrides without rewriting their source.
+function rgb(value){if(/^#[\da-f]{3,8}$/i.test(value)){let v=value.slice(1);if(v.length===3)v=v.split('').map(x=>x+x).join('');if(v.length===6)return [0,2,4].map(i=>parseInt(v.slice(i,i+2),16));}if(/^rgba?\(/.test(value)){const p=value.match(/[\d.]+/g)?.map(Number);if(p?.length>=3)return p;}return value==='white'?[255,255,255]:value==='black'?[0,0,0]:null;}
+const luminance=c=>c.slice(0,3).map(x=>{x/=255;return x<=.04045?x/12.92:((x+.055)/1.055)**2.4;}).reduce((s,v,i)=>s+v*[.2126,.7152,.0722][i],0);
+function colour(value,kind){if(kind==='text'&&value.includes('--white'))return '#deebe4';const c=rgb(value.trim());if(!c||c[3]===0)return null;let out;
+ if(kind==='border')out=[68,96,87];
+ else if(kind==='background'){if(luminance(c)<.14)return null;out=luminance(c)>.88?[25,42,48]:[35,57,54];}
+ else{out=c.slice(0,3);while((luminance(out)+.05)/(.035+.05)<5.5&&out.some(x=>x<250))out=out.map(x=>Math.round(x+(255-x)*.12));}
+ return 'rgba('+out.join(',')+','+(c[3]??1)+')';}
+function adaptRules(rules){let css='';for(const rule of rules){if(rule.selectorText&&rule.style){const declarations=[];for(const prop of ['color','background-color','border-top-color','border-right-color','border-bottom-color','border-left-color']){const value=rule.style.getPropertyValue(prop),mapped=colour(value,prop==='color'?'text':prop==='background-color'?'background':'border');if(mapped)declarations.push(prop+':'+mapped+'!important');}if(declarations.length)css+='html[data-theme="dark"] :where('+rule.selectorText+'):not(svg,svg *){'+declarations.join(';')+'}\n';}else if(rule.cssRules&&rule.conditionText&&!/print/.test(rule.conditionText)){css+=(rule.type===4?'@media ':'@supports ')+rule.conditionText+'{'+adaptRules(rule.cssRules)+'}';}}return css;}
+function inline(scope){const nodes=[];if(scope.nodeType!==1||scope.closest('svg')||scope.tagName==='CANVAS')return;if(scope.hasAttribute('style'))nodes.push(scope);nodes.push(...scope.querySelectorAll('[style]'));for(const el of nodes){if(el.closest('svg')||el.tagName==='CANVAS')continue;for(const [prop,kind,attr] of [['color','text','color'],['background-color','background','bg']]){const original=el.style.getPropertyValue(prop),mapped=colour(original,kind);if(mapped){el.style.setProperty('--oc-night-'+attr,mapped);el.setAttribute('data-oc-night-'+attr,'');}}}}
+function ready(){
+ const en=root.lang.startsWith('en'),control=document.createElement('div');control.className='site-theme-control';control.innerHTML='<label for="site-theme-select">◐ '+(en?'Appearance':'外观')+'</label><select id="site-theme-select" aria-label="'+(en?'Website appearance':'网站外观')+'"><option value="system">'+(en?'System':'跟随系统')+'</option><option value="light">'+(en?'Light':'浅色')+'</option><option value="dark">'+(en?'Dark':'深色')+'</option></select>';
+ const header=document.getElementById('site-header');if(header)header.append(control);else{control.classList.add('site-theme-floating');document.body.prepend(control);}control.querySelector('select').addEventListener('change',e=>choose(e.target.value));
+ const css=document.createElement('style');css.id='oc-theme-adapted';css.media='screen';css.textContent=Array.from(document.styleSheets).filter(s=>!s.ownerNode?.hasAttribute('data-oc-theme')).map(s=>{try{return adaptRules(s.cssRules);}catch{return '';}}).join('\n');
+ // Explicit theme rules follow generated legacy overrides and retain selected-control contrast.
+ const themeStyle=document.querySelector('style[data-oc-theme]');
+ if(themeStyle)themeStyle.parentNode.insertBefore(css,themeStyle);else document.head.append(css);
+ inline(document.body);const observer=new MutationObserver(records=>{for(const r of records)for(const n of r.addedNodes)inline(n);});observer.observe(document.body,{childList:true,subtree:true});apply();
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',ready,{once:true});else ready();
+})();
+</script><!-- /OC_THEME --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="先看总路线，再逐步搭建。每一步把化学、设备、进出料和去向放在一起。"><title>从原料到成品，把整座工厂连起来。 · GTOC</title><style>:root{--bg:#f5f3ec;--paper:#fffdf7;--ink:#243b34;--muted:#66736c;--line:#d7ded4;--accent:#2a6e58;--warm:#b76639;--shade:#e6ece2;color-scheme:light}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.8 system-ui,-apple-system,"Segoe UI","Microsoft Yahei",sans-serif}body.dark{--bg:#17241f;--paper:#203029;--ink:#edf0df;--muted:#bcc9bb;--line:#3c5345;--accent:#9fd6ba;--warm:#efaf77;--shade:#2e4236;color-scheme:dark}a{color:var(--accent);text-underline-offset:4px}button,select{font:inherit;color:inherit;background:var(--paper);border:1px solid var(--line);border-radius:7px;padding:7px 12px;cursor:pointer}button:hover,a.button:hover{filter:brightness(.94)}button:focus-visible,a:focus-visible,select:focus-visible,canvas:focus-visible{outline:3px solid var(--warm);outline-offset:3px}header{display:flex;align-items:center;gap:22px;padding:16px 5vw;border-bottom:1px solid var(--line);background:var(--paper);flex-wrap:wrap}.brand{font-size:25px;font-weight:850;letter-spacing:.07em;text-decoration:none}.brand span{display:block;font-size:9px;letter-spacing:.18em;color:var(--muted)}nav{display:flex;gap:24px;flex:1;justify-content:center;flex-wrap:wrap}nav a{font-size:14px;text-decoration:none}.language{font-size:13px}main{max-width:1370px;margin:auto;padding:0 5vw}.hero{padding:70px 0 52px;max-width:1000px}.eyebrow{font-size:12px;font-weight:750;letter-spacing:.16em;color:var(--warm)}h1{font-family:Georgia,"Noto Serif SC",serif;font-size:clamp(36px,4.3vw,67px);line-height:1.25;letter-spacing:-.025em;margin:18px 0 25px;max-width:950px}h2{font-size:clamp(24px,2.5vw,34px);line-height:1.35;margin:10px 0 20px}h3{font-size:22px;line-height:1.5;margin:0 0 15px}.lead{max-width:780px;font-size:20px;color:var(--muted)}.actions{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:30px}.button{display:inline-block;background:var(--accent);color:var(--paper);padding:11px 20px;border-radius:6px;text-decoration:none;font-weight:650}.secondary{background:var(--shade);color:var(--ink)}section{padding:42px 0;border-bottom:1px solid var(--line)}section p{max-width:960px}.section-head{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}.pill{font-size:12px;background:var(--shade);padding:5px 12px;border-radius:30px}.route-map{overflow:auto;background:var(--paper);padding:16px;border:1px solid var(--line);border-radius:12px}.route-map svg{display:block;min-width:1080px;width:100%;height:auto}.route-map rect{fill:var(--shade);stroke:var(--line);stroke-width:1.5}.route-map .active rect{stroke:var(--warm);stroke-width:3}.route-map text{fill:var(--ink);font:12px system-ui}.route-map .edge{stroke:var(--muted);fill:none;stroke-width:1.5}.route-map g[tabindex]{cursor:pointer}.note,.caption{color:var(--muted);font-size:13px}.scene-grid{display:grid;grid-template-columns:minmax(0,1fr) 290px;gap:20px;align-items:stretch}.toolbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:10px;font-size:13px}.toolbar button{font-size:12px}.toolbar label{display:flex;align-items:center;gap:3px}canvas{width:100%;height:530px;display:block;border:1px solid var(--line);border-radius:12px;touch-action:none;background:var(--paper)}.inspector{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:22px;min-width:0}.inspector select{width:100%;font-size:13px;margin:10px 0 20px}.inspector p{font-size:13px;overflow-wrap:anywhere}.inspector h3{font-size:18px;overflow-wrap:anywhere}.legend{display:grid;gap:4px;font-size:12px;margin-top:24px;color:var(--muted)}.legend span:nth-child(1){color:var(--accent)}.legend span:nth-child(2){color:var(--warm)}.callout{border-left:4px solid var(--warm);background:var(--shade);padding:18px 24px;margin:25px 0;font-size:14px}.chapter{display:grid;grid-template-columns:58px 1fr;gap:20px;padding:35px 0;border-top:1px solid var(--line)}.chapter-index{color:var(--warm);font:34px Georgia,serif}.chapter>div:last-child{min-width:0}.chapter dl{display:grid;grid-template-columns:160px minmax(0,1fr);gap:18px 24px;margin-bottom:0}.chapter dt{font-weight:750;color:var(--muted);font-size:14px}.chapter dd{margin:0;font-size:15px;max-width:800px}.chapter dd a{display:inline-block;margin-top:9px}.focus-step{font-size:13px;padding:5px 12px;margin-bottom:20px}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.cards article{padding:24px;border:1px solid var(--line);background:var(--paper);border-radius:10px}.cards p{font-size:14px}.table-scroll{overflow:auto}table{border-collapse:collapse;width:100%;font-size:13px;background:var(--paper)}th,td{padding:12px 16px;border-bottom:1px solid var(--line);text-align:left}th{background:var(--shade)}td:nth-child(2){font-variant-numeric:tabular-nums;white-space:nowrap}td:first-child{overflow-wrap:anywhere}code{font-size:.88em;overflow-wrap:anywhere;white-space:normal}.commands{display:flex;gap:10px;flex-wrap:wrap}.commands code{background:var(--shade);padding:12px;display:block}.acceptance{padding-left:24px;max-width:1030px}.acceptance li{padding:10px 0 10px 12px}.skip{position:absolute;left:-9999px}.skip:focus{left:12px;top:10px;background:var(--paper);z-index:20}footer{display:flex;gap:25px;flex-wrap:wrap;padding:34px 0;font-size:12px;color:var(--muted)}.mini-plot{width:100%;height:145px;margin-top:15px}.plot-key{font-size:11px;color:var(--muted)}@media(max-width:900px){.scene-grid{grid-template-columns:1fr}.inspector{display:grid;grid-template-columns:1fr 1fr;gap:20px}.inspector .legend{display:none}nav{order:2;flex-basis:100%;justify-content:flex-start;gap:15px}.hero{padding-top:38px}.cards{grid-template-columns:1fr}canvas{height:430px}.chapter dl{grid-template-columns:1fr;gap:7px}.chapter dd{margin-bottom:16px}}@media(max-width:540px){header{gap:12px}main{padding:0 18px}.brand{flex:1}.section-head label{width:100%}.section-head select{max-width:100%}.inspector{display:block}.chapter{grid-template-columns:35px 1fr;gap:8px}.chapter-index{font-size:26px}.chapter h3{font-size:20px}canvas{height:350px}.commands{display:block}.commands code{margin:7px 0;font-size:12px}section{padding:30px 0}.lead{font-size:17px}.actions{gap:12px}.hero{padding-bottom:25px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{overflow-wrap:anywhere}.route-map svg{overflow:hidden}
+.reagent[hidden]{display:none} input[type=search]{font:inherit;padding:8px;border:1px solid var(--line);border-radius:6px;max-width:100%}
+
+/* The landing page is a route selector, while detailed engineering stays in the
+   dedicated plant pages. Keep the two routes visually distinct and scannable. */
+.home-hero{padding:76px 0 54px;max-width:1080px}
+.home-hero h1{max-width:880px;margin-bottom:22px}
+.home-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.home-actions .button{box-shadow:0 8px 18px rgba(31,74,57,.12)}
+.home-actions .button.primary{background:var(--warm)}
+.home-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;margin:40px 0 0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--line)}
+.home-stats div{padding:16px 18px;background:var(--paper)}
+.home-stats strong{display:block;font:32px/1.1 Georgia,"Noto Serif SC",serif;color:var(--accent)}
+.home-stats span{display:block;color:var(--muted);font-size:12px;margin-top:5px}
+.home-routes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:24px}
+.home-route{padding:28px;border:1px solid var(--line);border-radius:14px;background:var(--paper);box-shadow:0 12px 28px rgba(35,67,51,.06);position:relative;overflow:hidden}
+.home-route:before{content:"";position:absolute;inset:0 auto 0 0;width:5px;background:var(--accent)}
+.home-route.vitamin:before{background:var(--warm)}
+.home-route h3{font-size:24px;margin:8px 0 12px}
+.home-route p{font-size:14px;color:var(--muted);min-height:68px}
+.home-route ol{margin:18px 0 24px;padding-left:22px;font-size:14px}
+.home-route li{padding:3px 0}
+.home-route li::marker{color:var(--warm);font-weight:700}
+.route-kicker{font-size:11px;letter-spacing:.14em;color:var(--warm);font-weight:750}
+.home-tools{display:flex;gap:14px;flex-wrap:wrap;margin:18px 0 4px;font-size:13px}
+.home-tools a{padding:8px 12px;border:1px solid var(--line);border-radius:999px;text-decoration:none;background:var(--paper)}
+.home-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:22px}
+.home-steps article{padding:22px;border:1px solid var(--line);border-radius:12px;background:var(--shade)}
+.home-steps b{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--accent);color:var(--paper);font-size:13px}
+.home-steps h3{font-size:19px;margin:14px 0 6px}
+.home-steps p{font-size:14px;color:var(--muted);margin:0}
+@media(max-width:760px){.home-routes,.home-steps{grid-template-columns:1fr}.home-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.home-hero{padding-top:46px}.home-route p{min-height:0}}
+@media(max-width:420px){.home-stats strong{font-size:26px}.home-stats div{padding:13px}.home-route{padding:22px 20px}}
+</style><!-- OC_SHELL --><style>/* Shared chrome and palette; chemical diagrams and player layouts stay independent. */
+:root{--bg:#f5f3ec;--paper:#fffdf7;--panel:#fffdf7;--ink:#243b34;--muted:#66736c;--line:#d7ded4;--accent:#2a6e58;--green:#2a6e58;--warm:#b76639;--gold:#b76639;--shade:#e6ece2;--pale:#e6ece2}
+html[data-theme=dark]{--bg:#17241f;--paper:#203029;--panel:#203029;--ink:#edf0df;--muted:#bcc9bb;--line:#3c5345;--accent:#9fd6ba;--green:#9fd6ba;--warm:#efaf77;--shade:#2e4236;--pale:#2e4236}
+body,body.learning-site{margin:0;background:var(--bg);color:var(--ink);font:16px/1.8 system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif}
+#site-header.oc-header{position:relative;display:flex;align-items:center;justify-content:flex-start;gap:18px;margin:0;padding:15px 4vw;max-width:none;height:auto;border-bottom:1px solid var(--line);background:var(--paper);flex-wrap:wrap;box-shadow:none}
+#site-header .oc-brand{display:block;color:var(--ink);font-size:25px;line-height:1.3;font-weight:850;letter-spacing:.07em;text-decoration:none;white-space:nowrap}
+#site-header .oc-brand small{display:block;color:var(--muted);font:9px/1.5 system-ui;letter-spacing:.18em}
+#site-header nav{display:flex;align-items:center;justify-content:center;gap:3px;flex:1;flex-wrap:wrap;width:auto;font-size:13px}
+#site-header nav a{font-size:13px;font-weight:500;border-radius:6px;padding:6px 9px;text-decoration:none;color:var(--ink);white-space:nowrap}
+#site-header nav a[aria-current=page]{background:var(--shade);font-weight:750}
+#site-header .site-language-control,#site-header .site-theme-control{display:flex;align-items:center;gap:6px;position:static;width:auto;margin:0;padding:0;flex:none;font-size:12px}
+#site-header .site-language-control span,#site-header .site-theme-control label{display:none}
+#site-header .site-language-control a{font-size:12px;margin:0;padding:6px}
+#site-header .site-theme-control select{max-width:120px;padding:6px;font:12px system-ui}
+main.learning-main{max-width:1370px;margin:auto;padding:30px 5vw 0}
+.learning-main h1{font:600 clamp(36px,4.3vw,67px)/1.25 Georgia,"Noto Serif SC",serif;letter-spacing:-.025em}
+.oc-recipe-note{border-left:3px solid var(--accent);padding:18px 22px;margin-top:24px;background:var(--shade)}
+.oc-recipe-note h3{margin:0 0 10px}.oc-recipe-note p{font-size:14px}.provenance-tag{display:inline-block;margin:8px 0;font-size:12px;padding:3px 10px;border:1px solid var(--line);border-radius:5px;background:var(--shade)}
+.reagent details{font-size:14px;margin-top:15px;max-width:900px}.reagent details p{white-space:normal}
+html[data-theme=dark] body{background:var(--bg)!important}
+@media(max-width:1100px){#site-header nav{order:3;flex-basis:100%;justify-content:flex-start}#site-header .oc-brand{margin-right:auto}}
+@media(max-width:540px){#site-header.oc-header{padding:12px 18px;gap:10px}#site-header nav{gap:2px}#site-header nav a{font-size:12px;padding:5px 7px}main.learning-main{padding:22px 18px 0}}
+</style><script>window.OC_LANGUAGE_LESSONS=[{"id":"Fischer","page":"fischer-lab.html","branch":null},{"id":"E01","page":"va-lab.html","branch":0},{"id":"E02","page":"va-lab.html","branch":1},{"id":"Q01","page":"coupling-lab.html","branch":0},{"id":"C01a","page":"coupling-lab.html","branch":1},{"id":"C01b","page":"coupling-lab.html","branch":2},{"id":"C02","page":"coupling-lab.html","branch":3},{"id":"C03","page":"coupling-lab.html","branch":4},{"id":"C02-side","page":"chain-lab.html","branch":0},{"id":"D01","page":"chain-lab.html","branch":1},{"id":"D02","page":"chain-lab.html","branch":2},{"id":"E03-net","page":"chain-lab.html","branch":3},{"id":"EZ-identity","page":"chain-lab.html","branch":4},{"id":"B01a","page":"supply-lab.html","branch":0},{"id":"B01b","page":"supply-lab.html","branch":1},{"id":"B02","page":"supply-lab.html","branch":2},{"id":"B03","page":"supply-lab.html","branch":3},{"id":"A02","page":"darzens-lab.html","branch":0},{"id":"A03","page":"darzens-lab.html","branch":1},{"id":"A04a","page":"darzens-lab.html","branch":2},{"id":"A04b-net","page":"darzens-lab.html","branch":3},{"id":"A04c-net","page":"darzens-lab.html","branch":4},{"id":"U01","page":"campaign-lab.html","branch":0},{"id":"U02-net","page":"campaign-lab.html","branch":1},{"id":"U02-over-net","page":"campaign-lab.html","branch":2},{"id":"A01","page":"campaign-lab.html","branch":3},{"id":"U03","page":"carbon-lab.html","branch":0},{"id":"U03-acid","page":"carbon-lab.html","branch":1},{"id":"U04","page":"carbon-lab.html","branch":2},{"id":"U05","page":"carbon-lab.html","branch":3},{"id":"U06-net","page":"carbon-lab.html","branch":4},{"id":"C10-EZ","page":"carbon-lab.html","branch":5},{"id":"U07","page":"ionone-lab.html","branch":0}];/* Explicit navigation preserves user context. Preference storage is optional, never required. */
+(()=>{'use strict';
+const KEY='oc-site-language-v1',english=document.documentElement.lang.startsWith('en');
+function ready(){
+ if(document.getElementById('site-language-switch'))return;
+ const control=document.createElement('div');control.className='site-language-control';control.id='site-language-switch';
+ const label=document.createElement('span');label.textContent=english?'Language':'语言';
+ const link=document.createElement('a');link.lang=english?'zh-Hans':'en';link.hreflang=link.lang;link.textContent=english?'中文':'English';
+ control.append(label,link);const header=document.getElementById('site-header');if(header)header.append(control);else{control.classList.add('site-language-floating');document.body.prepend(control);}
+ const page=location.pathname.split('/').pop()||'index.html',archive=location.pathname.includes('/archive/');
+ const currentPages=['ester-guide','vitamin-a-guide','factory-services','factory-design','storage-logistics','process-quality','gameplay','next-line','ui-acceptance','process-manual','modular-plant','retinol-guide','line-bus','reagents','continuous-plant'];
+ const root=new URL(english||archive?'../':'./',location.href),lessons=window.OC_LANGUAGE_LESSONS||[],toChinese={index:'index',learning:'learning',wiki:'wiki',mechanisms:'mechanisms',plants:'plants',play:'play',glossary:'learning'};
+ function update(){
+  const hash=location.hash;let destination;
+  if(english){
+   if(page==='lesson.html'){
+    const l=lessons.find(x=>x.id===new URLSearchParams(location.search).get('id'))||lessons[0];
+    destination=l?l.page+(l.branch===null?'#wiki-reactions':'?branch='+l.branch+'#lesson'):'mechanisms.html';
+   }else if(page==='wiki.html')destination='wiki.html'+hash.replace(/^#compound-/,'#molecule-').replace(/^#sources$/,'');
+   else if(currentPages.includes(page.replace('.html','')))destination=page+hash;
+   else destination=(toChinese[page.replace('.html','')]||'index')+'.html';
+  }else{
+   const branch=document.getElementById('branch')?.value??new URLSearchParams(location.search).get('branch')??'0';
+   const l=lessons.find(x=>x.page===page&&(x.branch===null||String(x.branch)===String(branch)));
+   if(l)destination='en/lesson.html?id='+encodeURIComponent(l.id);
+   else if(page==='wiki.html')destination=hash.startsWith('#mechanism-')?'en/mechanisms.html':'en/wiki.html'+hash.replace(/^#molecule-/,'#compound-');
+   else if(currentPages.includes(page.replace('.html','')))destination='en/'+page+hash;
+   else {const mapping={'index.html':'index','learning.html':'learning','mechanisms.html':'mechanisms','plants.html':'plants','play.html':'play','process-manual.html':'play','process.html':'plants','ionone-manual.html':'plants','ester-guide.html':'plants','vitamin-a-guide.html':'plants'};destination='en/'+(mapping[page]||'index')+'.html';}
+  }
+  link.href=new URL(destination,root).href;
+  link.title=english?'Read the corresponding Chinese content':page==='wiki.html'&&location.hash.startsWith('#mechanism-')?'打开英文机理课程索引':'阅读对应英文内容';
+ }
+ link.addEventListener('click',()=>{try{localStorage.setItem(KEY,english?'zh':'en');}catch{}});
+ // Do not redirect explicit deep links based on preference: a linked original must stay readable.
+ try{control.dataset.preferredLanguage=localStorage.getItem(KEY)||document.documentElement.lang;}catch{}
+ window.addEventListener('hashchange',update);document.addEventListener('change',e=>{if(e.target.id==='branch')update();});update();
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',ready,{once:true});else ready();
+})();
+</script><!-- /OC_SHELL --><!-- OC_THEME_STYLE --><style data-oc-theme>/* Independent presentation layer: no chemistry state or data changes. */
+.site-theme-control{display:flex;align-items:center;gap:8px;font:12px/1.5 system-ui,"Microsoft YaHei",sans-serif;white-space:nowrap;color:var(--muted,#58716b);flex:none}
+.site-theme-control label{font:inherit;margin:0;display:inline;color:inherit}
+.site-theme-control select{width:auto;min-width:0;max-width:155px;padding:7px 26px 7px 10px;margin:0;border:1px solid var(--line,#d7e1d5);border-radius:8px;background:var(--panel,#fffef9);color:var(--ink,#183f39);font:inherit;cursor:pointer}
+.site-theme-floating{position:fixed;right:15px;top:12px;padding:9px 12px;background:var(--panel,#fffef9);border:1px solid var(--line,#d7e1d5);border-radius:10px;z-index:100}
+@media screen{
+ html[data-theme="dark"]{color-scheme:dark;--ink:#deebe4;--muted:#adbfba;--paper:#101c21;--panel:#192a30;--white:#192a30;--line:#39534f;--green:#8bd8b7;--gold:#e1b77f;--pale:#263c39;--soft:#263c39;--rust:#efa98e;--clay:#e5b38b;--lime:#d5e5aa;background:#101c21}
+ html[data-theme="dark"] body{background:var(--paper)!important;color:var(--ink)!important}
+ html[data-theme="dark"] #site-header{background:#14252a!important;border-color:var(--line)!important}
+ html[data-theme="dark"] :is(h1,h2,h3,h4,th,strong){color:inherit}
+ html[data-theme="dark"] :is(a,.eyebrow){color:var(--green)}
+ html[data-theme="dark"] :is(button,input,select,textarea){color:var(--ink);background-color:var(--panel);border-color:var(--line);accent-color:var(--green)}
+ html[data-theme="dark"] :is(input,textarea)::placeholder{color:#afc2b9;opacity:1}
+ html[data-theme="dark"] :is(button[aria-pressed="true"],.learn-button.primary,.button.primary,.primary,.site-mark,.brand-mark){background:#8bd8b7!important;color:#102b23!important;border-color:#8bd8b7!important}
+ html[data-theme="dark"] :is(button[aria-pressed="true"],.primary,.site-mark,.brand-mark) :is(strong,small,span){color:inherit!important;background-color:transparent!important}
+ html[data-theme="dark"] .learning-cover{background:#173b33!important;color:#e4eee5!important}
+ html[data-theme="dark"] .learning-cover :is(h2,p,small,span){color:inherit}
+ html[data-theme="dark"] :is(pre,code){background-color:#22363b;color:#dbe9dd}
+ html[data-theme="dark"] pre code{background:transparent;color:inherit}
+ html[data-theme="dark"] :is(.site-theme-control select,.site-theme-floating){background:#192a30!important;color:#deebe4!important;border-color:#476660!important}
+ html[data-theme="dark"] :focus-visible{outline:3px solid #edc484!important;outline-offset:4px}
+ html[data-theme="dark"] ::selection{background:#496b61;color:#fff}
+ html[data-theme="dark"]{scrollbar-color:#5c796f #15272c}
+ /* Scientific plates preserve the original sign/element palette. No invert or hue rotation. */
+ html[data-theme="dark"] :is(svg,[data-motion-canvas]){background-color:#cad5ce;color:#183f39;--ink:#183f39;--green:#1d6c58;--muted:#486259;--paper:#cad5ce;--white:#d5dfd7;--line:#869e90;border-radius:6px}
+ html[data-theme="dark"] svg>rect:first-of-type[style*="fill:#FFFFFF"],html[data-theme="dark"] svg>rect:first-of-type[fill="#FFFFFF"],html[data-theme="dark"] svg>rect:first-of-type[fill="white"]{fill:#cad5ce!important}
+ html[data-theme="dark"] :is(.viewer-column,.viewer-wrap,.mech-view-wrap,.orbital-view-wrap,#knowledge-3d,#mechanism-viewer,#mech-3d,#orbital-view,#process-molecule,#molecule-view,#viewer){background-color:#b8c7bf!important;color:#183f39}
+ html[data-theme="dark"] :is(.view-bottom,.mech-frame-foot,.panel-footer,.geometry-note){background:#223831;color:#d3e7d9}
+ html[data-theme="dark"] .viewer-hint{color:#183f39!important}
+ html[data-theme="dark"] :is(#viewer-fallback,#mech-fallback,#webgl-fallback){background:#233936!important;color:#deebe4!important}
+ html[data-theme="dark"] img{filter:brightness(.86);border-radius:5px}
+ html[data-theme="dark"] img:hover{filter:none}
+ html[data-theme="dark"] [data-oc-night-color]{color:var(--oc-night-color)!important}
+ html[data-theme="dark"] [data-oc-night-bg]{background-color:var(--oc-night-bg)!important}
+}
+@media(max-width:700px){#site-header .site-theme-control{margin-left:auto}.site-theme-floating{position:relative;top:auto;right:auto;width:max-content;max-width:100%;margin:12px}.site-theme-control select{min-height:38px}.site-theme-control{gap:6px}}
+@media print{.site-theme-control{display:none!important}html{color-scheme:light!important}body{background:white!important;color:#17352f!important}img{filter:none!important}}
+
+@media screen{html[data-theme="dark"] .lesson-nav [aria-current="step"]{background:#8bd8b7!important;color:#102b23!important;border-color:#8bd8b7!important}}
+</style><!-- /OC_THEME --></head><body><a class="skip" href="#main-content">跳到正文</a><header id="site-header" class="oc-header"><a class="oc-brand" href="index.html">GTOC<small>CHEMISTRY WORKSHOP</small></a><nav aria-label="全站导航"><a href="index.html" aria-current="page">总路线</a><a href="ester-guide.html">乙酸乙酯</a><a href="vitamin-a-guide.html">维生素 A</a><a href="modular-plant.html">设备与专线</a><a href="wiki.html">Wiki</a><a href="mechanisms.html">机理课堂</a><a href="reagents.html">原料与配方</a><a href="continuous-plant.html">回收与交付</a></nav></header><!-- DEDICATED_ENTRY --><aside style="margin:24px 4vw;padding:18px;border-left:4px solid var(--accent)"><strong>设备与固定物流专线 · 0.4.8</strong><p>新工厂采用单物料原料仓、固定物流接收罐、工艺转料与回收专线。下方共享总线示例保留供旧工厂参考。 <a href="modular-plant.html">查看新布局与操作 →</a></p></aside><!-- /DEDICATED_ENTRY --><main id="main-content"><section class="home-hero"><span class="eyebrow">GTNH-OC · PLAYABLE CHEMISTRY</span><h1>把一条反应路线，玩成一座会呼吸的工厂。</h1><p class="lead">先选目标，再沿着原料、反应、分离和回收走完全程。每个箭头都有去向，每台设备都有职责；化学解释和游戏规则并排出现。</p><div class="home-actions"><a class="button primary" href="ester-guide.html#walkthrough">从乙酸乙酯入门线开始 →</a><a class="button" href="vitamin-a-guide.html#walkthrough">进入维生素 A 工业线 →</a><a class="button" href="modular-plant.html#scene">打开全厂 3D 布置 ↗</a></div><div class="home-stats"><div><strong>2</strong><span>可教学产线</span></div><div><strong>4</strong><span>核心工段</span></div><div><strong>1</strong><span>一管一物流</span></div><div><strong>∞</strong><span>可扩展设备族</span></div></div></section><section id="routes"><div class="section-head"><div><span class="eyebrow">01 / CHOOSE A PRODUCT</span><h2>两条路线，共用一套读图方法。</h2></div><span class="pill">按物料流阅读</span></div><div class="home-routes"><article class="home-route ester"><span class="route-kicker">01 / BATCH BASICS</span><h3>乙酸乙酯 · 酸 + 醇 → 酯 + 水</h3><p>中央单物料仓 → 独立计量 → Fischer 酯化 → 蒸馏冷凝 → 洗涤分相 → 有限干燥 → 成品与废液。</p><ol><li><a href="ester-guide.html#step-inventory">备料与计量</a></li><li><a href="ester-guide.html#step-react">可逆 Fischer 酯化</a></li><li><a href="ester-guide.html#step-distill">分离、干燥与质量门</a></li><li><a href="ester-guide.html#step-wash">回收与末端处理</a></li></ol><a class="button" href="ester-guide.html">跟着步骤走 ↗</a></article><article class="home-route vitamin"><span class="route-kicker">02 / FINE-CHEMISTRY CAMPAIGN</span><h3>维生素 A 乙酸酯 · C5 + C14 + C6 → 视黄醇 → 乙酸酯</h3><p>三条碳骨架支线在合格交接后汇合，再完成选择性加氢、乙酰化、结晶、低温干燥和视黄醇用途封装。</p><ol><li><a href="vitamin-a-guide.html#step-c5">C5 / C14 / C6 支线供料</a></li><li><a href="vitamin-a-guide.html#step-couple">偶联与 α/β、E/Z 身份</a></li><li><a href="vitamin-a-guide.html#step-hydrogenate">选择性加氢与催化剂过滤</a></li><li><a href="vitamin-a-guide.html#step-acetylate">乙酰化、精制与用途出口</a></li></ol><a class="button" href="vitamin-a-guide.html">进入完整路线 ↗</a></article></div><div class="home-tools"><a href="wiki.html">查具体反应与物料 Wiki →</a><a href="mechanisms.html">查通用机理课堂 →</a><a href="reagents.html">查 GT 原辅料配方 →</a><a href="continuous-plant.html">看回收与末端处理 →</a></div></section><section id="how-to-read"><span class="eyebrow">02 / HOW TO PLAY</span><h2>三步进入游戏，不先读一面墙的工程字段。</h2><div class="home-steps"><article><b>01</b><h3>看懂</h3><p>点分子、跟电子箭头，确认结构身份和机理边界。</p></article><article><b>02</b><h3>搭建</h3><p>从仓到管再到设备，聚焦一条固定物流，确认来源和去向。</p></article><article><b>03</b><h3>运行</h3><p>观察缺料、满罐、回用和拒绝原因；修复后再恢复批次。</p></article></div><p class="note">网页图是教学和布局证据，不是实时服务器遥测。真实客户端验收仍按手册进行。</p></section><footer><a href="modular-plant.html#scene">三维工厂布局</a><a href="wiki.html">Wiki</a><a href="mechanisms.html">机理课堂</a><span>教学路线 · 可追溯库存 · 有限模型</span></footer></main><span hidden id="${idOf(r)}"></span><span hidden id="atlas-arrow"></span><span hidden id="atlas-detail"></span><span hidden id="atlas-node-select"></span><span hidden id="atlas-svg"></span><span hidden id="knowledge-2d"></span><span hidden id="knowledge-3d"></span><span hidden id="knowledge-atom"></span><span hidden id="knowledge-atoms"></span><span hidden id="knowledge-controls"></span><span hidden id="knowledge-reset"></span><span hidden id="knowledge-turn"></span><span hidden id="learn"></span><span hidden id="show-2d"></span><span hidden id="show-3d"></span><span hidden id="synthesis"></span></body></html>
