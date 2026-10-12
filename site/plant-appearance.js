@@ -5,7 +5,7 @@ const mix=(hex,f)=>'#'+hex.slice(1).match(/../g).map(x=>Math.round(Math.min(255,
 class PlantAppearance {
  constructor(canvas,{t,name,tag,lineTag,onLocate}){
   Object.assign(this,{canvas,t,name,tag,lineTag,onLocate});this.ctx=canvas.getContext('2d');this.base=document.createElement('canvas');
-  this.reduced=matchMedia('(prefers-reduced-motion: reduce)');this.moving=!this.reduced.matches;this.onScreen=false;this.elapsed=0;this.frame=0;this.last=0;this.painted=0;this.labels=[];
+  this.reduced=matchMedia('(prefers-reduced-motion: reduce)');this.moving=!this.reduced.matches;this.onScreen=false;this.elapsed=0;this.frame=0;this.last=0;this.painted=0;this.labels=[];this.demo='FLOW';
   this.button=document.getElementById('flow-motion');this.button.onclick=()=>{this.moving=!this.moving;this.motionState();};
   this.reduced.addEventListener('change',e=>{this.moving=!e.matches;this.motionState();});
   document.addEventListener('visibilitychange',()=>this.motionState());
@@ -14,7 +14,7 @@ class PlantAppearance {
  motionState(){
   this.button.textContent=this.moving?this.t('暂停流向演示','Pause direction demo'):this.t('播放流向演示','Play direction demo');this.button.setAttribute('aria-pressed',String(this.moving));
   cancelAnimationFrame(this.frame);this.frame=0;this.last=0;
-  if(this.moving&&this.onScreen&&!document.hidden&&this.view)this.frame=requestAnimationFrame(now=>this.tick(now));
+  if(this.moving&&this.onScreen&&!document.hidden&&this.view&&this.demo==='FLOW')this.frame=requestAnimationFrame(now=>this.tick(now));
   if(this.view)this.paintMotion();
  }
  tick(now){this.elapsed+=this.last?Math.min(80,now-this.last):0;this.last=now;
@@ -93,6 +93,31 @@ class PlantAppearance {
   this.line(p,neck,'#526d70',Math.max(2,this.scale*.26));this.line(neck,shell,'#526d70',Math.max(2,this.scale*.26));
   this.box(p[0]-.26,p[1]-.26,p[2]-.26,.52,.52,.52,color);
  }
+ accessPart(a){
+  const p=this.project([a.x+.5,a.y+.5,a.z+.5]);if(p[0]<-12||p[0]>this.w+12||p[1]<-12||p[1]>this.h+12)return;
+  const {x,y,z,meta}=a,steel=this.dark?'#617e80':'#7e9695',gold='#cbab5f';
+  if(meta===0){
+   this.face([[x,y+.2,z],[x+1,y+.2,z],[x+1,y+.2,z+1],[x,y+.2,z+1]],steel);
+   if(this.scale>7)for(let i=1;i<4;i++)this.line([x+i/4,y+.21,z+.1],[x+i/4,y+.21,z+.9],this.dark?'#263f3a':'#435f59',.6);
+  }else if(meta===1)this.box(x+.38,y,z+.38,.24,1,.24,steel);
+  else if(meta===2)this.box(x,y+.35,z+.38,1,.3,.24,steel);
+  else if(meta===3)this.box(x+.38,y+.35,z,.24,.3,1,steel);
+  else if(meta===4||meta===5){
+   const a=meta===4?[x,y+1,z+.5]:[x+.5,y+1,z],b=meta===4?[x+1,y+1,z+.5]:[x+.5,y+1,z+1];
+   this.line(a,b,gold,1.6);this.line([a[0],y,a[2]],a,gold,1);if(this.scale>5)this.line([a[0],y+.5,a[2]],[b[0],y+.5,b[2]],gold,1);
+  }else if(meta===6){
+   for(const dx of [.12,.88])this.line([x+dx,y,z+.9],[x+dx,y+1,z+.9],gold,1.4);
+   for(const dy of [.15,.48,.81])this.line([x+.12,y+dy,z+.9],[x+.88,y+dy,z+.9],steel,1.1);
+  }
+ }
+ fitting(f){
+  const [x,y,z]=f.point,color=f.role==='VALVE'?(this.demo==='ISOLATED'?'#c77d62':'#69aa86'):f.role==='REGULATOR'?'#6a9fbb':f.role==='FEEDER'?'#b39a68':'#648e91';
+  this.box(x-.32,y-.28,z-.32,.64,.56,.64,color);
+  if(f.role==='VALVE'){
+   const vertical=this.demo==='ISOLATED';this.line([x-.6,y+.4,z],[x+.6,y+.4,z],vertical?'#ba7755':'#d9b76b',2);
+   if(vertical)this.line([x,y+.4,z-.6],[x,y+.4,z+.6],'#c87962',2);
+  }else this.box(x+.28,y-.2,z-.26,.36,.4,.52,'#a5bcb0');
+ }
  badge(a,priority=false){
   const {w,h}=this,point=this.project([a.x+.5,a.y+(a.h||4)+1.5,a.z+(a.w||5)/2]),text=this.tag(a),c=this.ctx;
   if(point[0]<0||point[0]>w||point[1]<15||point[1]>h-42)return;
@@ -124,18 +149,19 @@ class PlantAppearance {
   for(const [list,color]of [[raw,this.dark?'#334e50':'#cbdfe0'],[receivers,this.dark?'#4b404a':'#e0d4df']])if(list.length){const near=Math.min(...list.map(s=>s.z))-1,far=Math.max(...list.map(s=>s.z))+6;this.face([[-4,-1.99,near],[94,-1.99,near],[94,-1.99,far],[-4,-1.99,far]],color);}
   for(let x=0;x<=98;x+=14)this.line([x,-1.98,minZ],[x,-1.98,maxZ],this.dark?'#456052':'#bdcdbd',.5);
   for(let z=Math.ceil(minZ/14)*14;z<maxZ;z+=14)this.line([-7,-1.98,z],[98,-1.98,z],this.dark?'#456052':'#bdcdbd',.5);this.flush();
+  if(view.access)(route.access||[]).forEach(a=>this.accessPart(a));
   route.lines.forEach((l,i)=>{if(i!==selected&&!view.showAll)return;const active=i===selected,col=active?DUTIES[l.kind]:(this.dark?'#648078':'#95aba2');
    for(let j=1;j<l.points.length;j++){this.line(l.points[j-1],l.points[j],this.dark?'#314c47':'#718d87',active?5:1.7);this.line(l.points[j-1],l.points[j],col,active?3:1,false);}
   });
   route.machines.forEach(m=>this.machine(m,m.id===chosen.source||m.id===chosen.target));route.stores.forEach(s=>this.store(s,s.id===chosen.source||s.id===chosen.target));
-  route.lines.forEach((l,i)=>{if(i!==selected&&!view.showAll)return;this.nozzle(all.find(a=>a.id===l.source),l.points[0],'#6d9fb6');this.nozzle(all.find(a=>a.id===l.target),l.points.at(-1),'#65a38a');});this.flush();
+  route.lines.forEach((l,i)=>{if(i!==selected&&!view.showAll)return;this.nozzle(all.find(a=>a.id===l.source),l.points[0],'#6d9fb6');this.nozzle(all.find(a=>a.id===l.target),l.points.at(-1),'#65a38a');(l.fittings||[]).forEach(f=>this.fitting(f));});this.flush();
   // The selected line is traced above equipment so its direction stays inspectable.
   for(let j=1;j<chosen.points.length;j++)this.line(chosen.points[j-1],chosen.points[j],DUTIES[chosen.kind],1.8,true);this.flush();
   const priority=all.filter(a=>a.id===chosen.source||a.id===chosen.target||a===focusAsset);priority.forEach(a=>this.badge(a,true));
   if(view.labels)all.filter(a=>!priority.includes(a)).sort((a,b)=>this.project([b.x,b.y,b.z])[2]-this.project([a.x,a.y,a.z])[2]).forEach(a=>this.badge(a));
   for(const [p,col]of [[chosen.points[0],'#3c8fbd'],[chosen.points.at(-1),'#39a078']]){const xy=this.project(p);c.beginPath();c.arc(xy[0],xy[1],4,0,2*Math.PI);c.fillStyle=col;c.fill();c.strokeStyle='#fff7e3';c.lineWidth=1.4;c.stroke();}
   c.fillStyle=this.dark?'#192f2dee':'#f4f8eeed';c.fillRect(0,0,w,42);c.fillRect(0,h-36,w,36);
-  c.fillStyle=this.dark?'#ebdfc6':'#345448';c.font='bold 12px ui-monospace,Consolas,monospace';c.fillText(this.lineTag(chosen)+'  /  '+chosen.kind,18,27);
+  c.fillStyle=this.dark?'#ebdfc6':'#345448';c.font='bold 12px ui-monospace,Consolas,monospace';c.fillText(this.lineTag(chosen)+'  /  '+chosen.kind+'  /  DEMO: '+this.demo,18,27);
   c.font='11px system-ui';c.fillStyle=this.dark?'#bdcbc1':'#5b7065';c.fillText(this.t('铭牌可点击 · 拖动旋转 · 滚轮缩放','Click a tag · Drag to orbit · Scroll to zoom'),18,h-18);
   this.base.width=this.canvas.width;this.base.height=this.canvas.height;this.base.getContext('2d').drawImage(this.canvas,0,0);
   this.paintMotion();this.motionState();
@@ -145,8 +171,8 @@ class PlantAppearance {
   return{point:points[0],segment:0};
  }
  paintMotion(){if(!this.view)return;const c=this.ctx;c.setTransform(this.dpr,0,0,this.dpr,0,0);c.drawImage(this.base,0,0,this.w,this.h);const l=this.view.route.lines[this.view.selected];
-  for(let i=0;i<3;i++){const sample=this.sample((this.elapsed/10000+i/3)%1),p=this.project(sample.point),a=this.project(l.points[sample.segment]),b=this.project(l.points[sample.segment+1]);c.beginPath();c.arc(p[0],p[1],5,0,Math.PI*2);c.fillStyle=this.dark?'#213a34':'#fff9e8';c.fill();this.arrow(p,Math.atan2(b[1]-a[1],b[0]-a[0]),DUTIES[l.kind],3.5);}
-  if(window.__dedicatedScene)Object.assign(window.__dedicatedScene,{motionEnabled:this.moving,motionRunning:!!this.frame,elapsed:this.elapsed,labelCount:this.labels.length,assetTags:[...this.view.route.machines,...this.view.route.stores].map(a=>this.tag(a)),selectedLineTag:this.lineTag(l)});
+  if(this.demo==='FLOW')for(let i=0;i<3;i++){const sample=this.sample((this.elapsed/10000+i/3)%1),p=this.project(sample.point),a=this.project(l.points[sample.segment]),b=this.project(l.points[sample.segment+1]);c.beginPath();c.arc(p[0],p[1],5,0,Math.PI*2);c.fillStyle=this.dark?'#213a34':'#fff9e8';c.fill();this.arrow(p,Math.atan2(b[1]-a[1],b[0]-a[0]),DUTIES[l.kind],3.5);}
+  if(window.__dedicatedScene)Object.assign(window.__dedicatedScene,{motionEnabled:this.moving,motionRunning:!!this.frame,elapsed:this.elapsed,labelCount:this.labels.length,assetTags:[...this.view.route.machines,...this.view.route.stores].map(a=>this.tag(a)),selectedLineTag:this.lineTag(l),demo:this.demo,accessParts:this.view.access?(this.view.route.access||[]).length:0,fittings:(l.fittings||[]).map(f=>f.role)});
  }
  hit(x,y){return this.labels.find(a=>x>=a.x&&x<=a.x+a.w&&y>=a.y&&y<=a.y+a.h);}
 }
