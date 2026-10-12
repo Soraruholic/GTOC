@@ -150,11 +150,11 @@ class PlantAppearance {
   for(let x=0;x<=98;x+=14)this.line([x,-1.98,minZ],[x,-1.98,maxZ],this.dark?'#456052':'#bdcdbd',.5);
   for(let z=Math.ceil(minZ/14)*14;z<maxZ;z+=14)this.line([-7,-1.98,z],[98,-1.98,z],this.dark?'#456052':'#bdcdbd',.5);this.flush();
   if(view.access)(route.access||[]).forEach(a=>this.accessPart(a));
-  route.lines.forEach((l,i)=>{if(i!==selected&&!view.showAll)return;const active=i===selected,col=active?DUTIES[l.kind]:(this.dark?'#648078':'#95aba2');
+  route.lines.forEach((l,i)=>{if(i!==selected&&!view.showAll&&l.material!==view.materialFocus)return;const active=i===selected||l.material===view.materialFocus,col=active?DUTIES[l.kind]:(this.dark?'#648078':'#95aba2');
    for(let j=1;j<l.points.length;j++){this.line(l.points[j-1],l.points[j],this.dark?'#314c47':'#718d87',active?5:1.7);this.line(l.points[j-1],l.points[j],col,active?3:1,false);}
   });
   route.machines.forEach(m=>this.machine(m,m.id===chosen.source||m.id===chosen.target));route.stores.forEach(s=>this.store(s,s.id===chosen.source||s.id===chosen.target));
-  route.lines.forEach((l,i)=>{if(i!==selected&&!view.showAll)return;this.nozzle(all.find(a=>a.id===l.source),l.points[0],'#6d9fb6');this.nozzle(all.find(a=>a.id===l.target),l.points.at(-1),'#65a38a');(l.fittings||[]).forEach(f=>this.fitting(f));});this.flush();
+  route.lines.forEach((l,i)=>{if(i!==selected&&!view.showAll&&l.material!==view.materialFocus)return;this.nozzle(all.find(a=>a.id===l.source),l.points[0],'#6d9fb6');this.nozzle(all.find(a=>a.id===l.target),l.points.at(-1),'#65a38a');(l.fittings||[]).forEach(f=>this.fitting(f));});this.flush();
   // The selected line is traced above equipment so its direction stays inspectable.
   for(let j=1;j<chosen.points.length;j++)this.line(chosen.points[j-1],chosen.points[j],DUTIES[chosen.kind],1.8,true);this.flush();
   const priority=all.filter(a=>a.id===chosen.source||a.id===chosen.target||a===focusAsset);priority.forEach(a=>this.badge(a,true));
