@@ -45,16 +45,16 @@ class PlantAppearance {
  flush(){this.shapes.sort((a,b)=>a.depth-b.depth).forEach(s=>s.draw());this.shapes=[];}
  pad(x,z,w,d,color){this.box(x,-1.9,z,w,.25,d,color);}
  machine(m,active){
-  const x=m.x+.5,z=m.z+m.w/2,y=m.y+.2,h=m.h*.8,r=m.family==='D'?1.25:m.w*.29;
+  const x=m.x+.5,z=m.z+m.w/2,y=m.y+.35,h=m.h-1,r=m.family==='D'?1.59:2.4;
   const steel=active?'#91bfb4':this.dark?'#829b9a':'#aabebc',trim=active?'#c8964b':'#587e7b';
   this.pad(x-m.w/2,z-m.w/2,m.w,m.w,active?'#76978c':'#89988d');
   for(const dx of [-1,1])for(const dz of [-1,1])this.box(x+dx*r*.85-.12,-1.6,z+dz*r*.85-.12,.24,1.3,.24,'#596d70');
   if(m.family==='M'){
-   for(let a=-1;a<=1;a++)for(let b=-1;b<=1;b++){this.cylinder(x+a*1.7,y,z+b*1.7,.5,h*.65,steel);this.cylinder(x+a*1.7,y+h*.65,z+b*1.7,.26,.45,trim);}
+   for(let a=-1;a<=1;a++)for(let b=-1;b<=1;b++){this.cylinder(x+a*1.7,y,z+b*1.7,.5,h,steel);this.cylinder(x+a*1.7,y+h,z+b*1.7,.26,.45,trim);}
   }else if(['X','S'].includes(m.family)){
-   this.cylinder(x,y+1.6,z,1.4,m.w*.8,steel,'x');
-   for(const side of [-1,1]){this.cylinder(x+side*m.w*.31,y+1.6,z,1.48,.16,trim,'x');this.box(x+side*1.6-.2,y-1,z-1.1,.4,1.7,2.2,'#5c7376');}
-   if(m.family==='X')for(let k=-2;k<=2;k++)this.cylinder(x+k*.85,y+1.6,z,1.44,.08,'#799c99','x');
+   this.cylinder(x,y+3,z,2.5,m.w*.7,steel,'x');
+   for(const side of [-1,1]){this.cylinder(x+side*m.w*.31,y+3,z,2.55,.16,trim,'x');this.box(x+side*1.6-.2,y-1,z-1.1,.4,1.7,2.2,'#5c7376');}
+   if(m.family==='X')for(let k=-2;k<=2;k++)this.cylinder(x+k*.85,y+3,z,2.52,.08,'#799c99','x');
   }else{
    this.cylinder(x,y,z,r,h,steel);this.cylinder(x,y+h,z,r,.45,steel,'y',r*.65);
    for(const level of [y+.15,y+h-.15])this.cylinder(x,level,z,r*1.04,.13,trim);
@@ -86,12 +86,12 @@ class PlantAppearance {
   if(!a)return;
   // The exported face remains the connection point. A visible neck joins that
   // face to the illustrative vessel within its multiblock envelope.
-  const center=[a.x+.5,Math.min(p[1],a.y+(a.h||4)*.65),a.z+(a.w||5)/2];
-  const neck=[p[0],center[1],p[2]],dx=p[0]-center[0],dz=p[2]-center[2],radius=a.family==='D'?1.25:a.family?(a.w*.29):2;
-  const length=Math.hypot(dx,dz)||1;
-  const shell=[center[0]+dx/length*Math.min(radius,length),center[1],center[2]+dz/length*Math.min(radius,length)];
-  this.line(p,neck,'#526d70',Math.max(2,this.scale*.26));this.line(neck,shell,'#526d70',Math.max(2,this.scale*.26));
-  this.box(p[0]-.26,p[1]-.26,p[2]-.26,.52,.52,.52,color);
+  const center=[a.x+.5,p[1],a.z+(a.w||5)/2],dx=p[0]-center[0],dz=p[2]-center[2];
+  // The game renders an independent neck into the vessel body, with no shared manifold.
+  const length=Math.hypot(dx,dz)||1,radius=['M','X','S'].includes(a.family)?0:a.family==='D'?1.59:a.family?1.8:1.5;
+  const shell=[center[0]+dx/length*Math.min(radius,length),p[1],center[2]+dz/length*Math.min(radius,length)];
+  this.line(p,shell,'#526d70',Math.max(2,this.scale*.3));
+  this.box(p[0]-.25,p[1]-.25,p[2]-.25,.5,.5,.5,color);
  }
  accessPart(a){
   const p=this.project([a.x+.5,a.y+.5,a.z+.5]);if(p[0]<-12||p[0]>this.w+12||p[1]<-12||p[1]>this.h+12)return;

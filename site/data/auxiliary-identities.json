@@ -1,0 +1,65 @@
+{
+  "schema": "oc-auxiliary-identities-1",
+  "specs": {
+    "acid-catalyst-cartridge": {
+      "name": "硫酸催化剂定量包",
+      "nameEn": "Sulfuric-acid catalyst dose",
+      "category": "CHEMICAL_DOSE",
+      "substance": "sulfuric-acid",
+      "formula": "H2SO4",
+      "classification": "化合物；GT 流体的含水量与纯度未编码",
+      "classificationEn": "Compound; the GT fluid does not encode water content or purity",
+      "recipe": "1000 mB sulfuricacid → 1 包；电路 23",
+      "recipeEn": "1000 mB sulfuricacid → 1 dose; circuit 23",
+      "role": "乙酸乙酯酯化催化额度；与硫酸反应物包分别计量，不能互换",
+      "roleEn": "Esterification catalyst allowance; kept separate from the sulfuric-acid reagent dose",
+      "preparation": "现实供应链：含硫原料 → SO2 → 催化氧化 SO3 → 吸收与浓度调整。游戏内 sulfuricacid 原生路线以当前 NEI 为准。",
+      "preparationEn": "Real supply: sulfur feed → SO2 → catalytic SO3 formation → absorption and concentration control. Consult current NEI for native sulfuricacid recipes."
+    },
+    "dryer-cartridge": {
+      "name": "沸石干燥介质包",
+      "nameEn": "Zeolite drying medium",
+      "category": "SOLID_MEDIUM",
+      "substance": "zeolite",
+      "formula": null,
+      "classification": "铝硅酸盐骨架材料；组成、交换阳离子和含水量可变",
+      "classificationEn": "Aluminosilicate framework material with variable composition, cations and hydration",
+      "recipe": "1 dustZeolite → 1 包；电路 24",
+      "recipeEn": "1 dustZeolite → 1 packet; circuit 24",
+      "role": "有限吸水能力；不等同于已活化 3A 分子筛；用后独立收集",
+      "roleEn": "Finite drying allowance; not certified activated 3A molecular sieve; collect spent medium separately",
+      "preparation": "现实可采用沸石矿物加工或铝硅酸盐水热合成，再进行离子交换、成型和活化。再生须收集脱附水；本版使用 GT 沸石粉封装。",
+      "preparationEn": "Real supply uses mineral processing or hydrothermal aluminosilicate synthesis, then ion exchange, forming and activation. Regeneration needs a desorbed-water outlet. This release packages GT zeolite dust."
+    },
+    "heater-charge": {
+      "name": "煤粉燃料定量包",
+      "nameEn": "Coal-dust fuel charge",
+      "category": "FUEL_ALLOWANCE",
+      "substance": "coal",
+      "formula": null,
+      "classification": "多组分固体燃料；不是纯碳，也不是热量物质",
+      "classificationEn": "Multicomponent solid fuel, neither pure carbon nor a substance called heat",
+      "recipe": "1 dustCoal → 1 包；电路 24",
+      "recipeEn": "1 dustCoal → 1 charge; circuit 24",
+      "role": "游戏供热成本；不作为反应试剂，也不由此推算燃烧热",
+      "roleEn": "Game heating cost, not a reagent or a calibrated combustion enthalpy",
+      "preparation": "游戏先取得煤并按 NEI 粉碎成煤粉。后续锅炉公用工程应拆出燃料、空气、烟气、灰渣与蒸汽供回管。",
+      "preparationEn": "Obtain coal and use NEI to grind it to dust. A boiler utility expansion needs fuel, air, flue gas, ash, steam supply and return."
+    },
+    "treatment-service-cartridge": {
+      "name": "委外处置凭证",
+      "nameEn": "Contracted-disposal voucher",
+      "category": "SERVICE_CREDIT",
+      "substance": null,
+      "formula": null,
+      "classification": "非物质服务凭证；不是化合物、单质或混合物",
+      "classificationEn": "Non-material service credit; not a compound, element or mixture",
+      "recipe": "1000 mB water + 1 dustCoal + 1 dustIron → 1 凭证；电路 24",
+      "recipeEn": "1000 mB water + 1 dustCoal + 1 dustIron → 1 voucher; circuit 24",
+      "role": "每批后处理扣 1 张；支付委外服务，残余组成与去向仍留账",
+      "roleEn": "One voucher per batch workup; pays disposal while composition and destination remain recorded",
+      "preparation": "由 OC 在 GT 大型化学反应釜中注册的游戏成本配方；不是水、煤和铁发生了真实合成。单独存放在凭证仓，专用供料通道代表凭证交接。",
+      "preparationEn": "An OC game-cost recipe registered in the GT Large Chemical Reactor, not a real synthesis of water, coal and iron. Its separate store and channel represent voucher custody."
+    }
+  }
+}

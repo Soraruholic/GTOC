@@ -33,7 +33,7 @@
         "packets": "2",
         "location": "箱 8,82,-15",
         "missingNow": true,
-        "label": "酸催化包"
+        "label": "硫酸催化剂定量包"
       },
       {
         "species": "dryer-cartridge",
@@ -44,7 +44,7 @@
         "packets": "2",
         "location": "箱 16,82,-15",
         "missingNow": true,
-        "label": "干燥介质包"
+        "label": "沸石干燥介质包"
       },
       {
         "species": "ethanol",
@@ -66,7 +66,7 @@
         "packets": "2",
         "location": "箱 32,82,-15",
         "missingNow": true,
-        "label": "热源包"
+        "label": "煤粉燃料定量包"
       },
       {
         "species": "water",
@@ -88,7 +88,7 @@
         "packets": "2",
         "location": "箱 48,82,-15",
         "missingNow": false,
-        "label": "处理服务包"
+        "label": "委外处置凭证"
       }
     ]
   },
@@ -412,7 +412,7 @@
         "packets": "2",
         "location": "箱 32,82,-31",
         "missingNow": false,
-        "label": "处理服务包"
+        "label": "委外处置凭证"
       },
       {
         "species": "triphenylphosphine-oxide",
