@@ -12,12 +12,13 @@ class PlantAppearance {
   this.observer=new IntersectionObserver(es=>{this.onScreen=es[0].isIntersecting;this.motionState();});this.observer.observe(canvas);this.motionState();
  }
  motionState(){
+  if(!this.moving&&this.tour){this.tour.playing=false;this.tour.update();}
   this.button.textContent=this.moving?this.t('暂停流向演示','Pause direction demo'):this.t('播放流向演示','Play direction demo');this.button.setAttribute('aria-pressed',String(this.moving));
   cancelAnimationFrame(this.frame);this.frame=0;this.last=0;
   if(this.moving&&this.onScreen&&!document.hidden&&this.view&&this.demo==='FLOW')this.frame=requestAnimationFrame(now=>this.tick(now));
   if(this.view)this.paintMotion();
  }
- tick(now){this.elapsed+=this.last?Math.min(80,now-this.last):0;this.last=now;
+ tick(now){const dt=this.last?Math.min(80,now-this.last):0;this.elapsed+=dt;this.last=now;this.tour?.advance(dt);
   if(now-this.painted>=1000/30){this.paintMotion();this.painted=now;}
   this.frame=requestAnimationFrame(t=>this.tick(t));
  }
@@ -133,6 +134,7 @@ class PlantAppearance {
  }
  draw(view){
   this.view=view;const {route,selected,yaw,pitch,zoom,focusMode,focusAsset}=view,chosen=route.lines[selected];
+  this.tour?.sync(view);
   const rect=this.canvas.getBoundingClientRect(),w=this.w=rect.width,h=this.h=rect.height,dpr=this.dpr=Math.min(2,devicePixelRatio||1),c=this.ctx;
   this.canvas.width=Math.round(w*dpr);this.canvas.height=Math.round(h*dpr);c.setTransform(dpr,0,0,dpr,0,0);this.shapes=[];this.labels=[];
   this.dark=document.documentElement.dataset.theme==='dark';const gradient=c.createLinearGradient(0,0,w,h);gradient.addColorStop(0,this.dark?'#152c2d':'#e9f0e9');gradient.addColorStop(1,this.dark?'#23352e':'#fcf7e9');c.fillStyle=gradient;c.fillRect(0,0,w,h);
@@ -172,7 +174,39 @@ class PlantAppearance {
  }
  paintMotion(){if(!this.view)return;const c=this.ctx;c.setTransform(this.dpr,0,0,this.dpr,0,0);c.drawImage(this.base,0,0,this.w,this.h);const l=this.view.route.lines[this.view.selected];
   if(this.demo==='FLOW')for(let i=0;i<3;i++){const sample=this.sample((this.elapsed/10000+i/3)%1),p=this.project(sample.point),a=this.project(l.points[sample.segment]),b=this.project(l.points[sample.segment+1]);c.beginPath();c.arc(p[0],p[1],5,0,Math.PI*2);c.fillStyle=this.dark?'#213a34':'#fff9e8';c.fill();this.arrow(p,Math.atan2(b[1]-a[1],b[0]-a[0]),DUTIES[l.kind],3.5);}
+  this.instrumentOverlay(l);
   if(window.__dedicatedScene)Object.assign(window.__dedicatedScene,{motionEnabled:this.moving,motionRunning:!!this.frame,elapsed:this.elapsed,labelCount:this.labels.length,assetTags:[...this.view.route.machines,...this.view.route.stores].map(a=>this.tag(a)),selectedLineTag:this.lineTag(l),demo:this.demo,accessParts:this.view.access?(this.view.route.access||[]).length:0,fittings:(l.fittings||[]).map(f=>f.role)});
+ }
+ instrumentOverlay(l){
+  const c=this.ctx,assets=[...this.view.route.machines,...this.view.route.stores],color=this.demo==='FLOW'?'#52b596':this.demo==='COMMITTING'?'#caa05f':this.demo==='PAUSED'?'#8daca4':'#d28a69';
+  // Original panel lamps and mechanical silhouettes. Web state is a local lesson.
+  for(const a of assets.filter(a=>a.id===l.source||a.id===l.target)){
+   const p=this.project([a.x+.5,a.y+.55,a.z-.3]);
+   c.fillStyle=this.dark?'#142a27':'#eaf3e8';c.fillRect(p[0]-8,p[1]-5,16,10);c.fillStyle=color;c.fillRect(p[0]-5,p[1]-2,10,4);
+   if(['R','H','K'].includes(a.family)){
+    const center=[a.x+.5,a.y+a.h+.5,a.z+a.w/2],angle=this.demo==='FLOW'?this.elapsed/700:0;
+    c.strokeStyle=this.dark?'#e6c890':'#b28442';c.lineWidth=2;
+    for(let k=0;k<2;k++){const t=angle+k*Math.PI/2,dx=Math.cos(t)*.7,dz=Math.sin(t)*.7,u=this.project([center[0]-dx,center[1],center[2]-dz]),v=this.project([center[0]+dx,center[1],center[2]+dz]);c.beginPath();c.moveTo(u[0],u[1]);c.lineTo(v[0],v[1]);c.stroke();}
+   }
+  }
+  if(this.scale>2)for(const f of l.fittings||[]){
+   if(!['PUMP','FEEDER'].includes(f.role))continue;
+   // Local end-on motor face follows the outgoing axis, including vertical runs.
+   const i=l.points.findIndex((p,i)=>i<l.points.length-1&&p.every((v,j)=>Math.abs(v-f.point[j])<1e-6));
+   const next=i>=0?l.points[i+1]:null,axis=next?next.findIndex((v,j)=>Math.abs(v-f.point[j])>1e-6):1;
+   const u=axis===0?1:0,v=axis===2?1:2,angle=this.demo==='FLOW'?this.elapsed/260:0;
+   c.lineWidth=1.5;c.strokeStyle=this.dark?'#e6c890':'#b28442';
+   for(let n=0;n<2;n++){const a=[...f.point],b=[...f.point],t=angle+n*Math.PI/2;
+    a[u]-=.35*Math.cos(t);a[v]-=.35*Math.sin(t);b[u]+=.35*Math.cos(t);b[v]+=.35*Math.sin(t);
+    const p=this.project(a),q=this.project(b);c.beginPath();c.moveTo(p[0],p[1]);c.lineTo(q[0],q[1]);c.stroke();
+   }
+  }
+  if(!this.tour?.enabled)return;
+  const sample=this.sample(this.tour.position),p=this.project(sample.point),pulse=7+(this.tour.playing?Math.sin(this.elapsed/260)*1.5:0);
+  c.save();c.strokeStyle=this.dark?'#fff1bf':'#986a23';c.lineWidth=2;c.beginPath();c.arc(p[0],p[1],pulse+5,0,Math.PI*2);c.stroke();c.fillStyle=this.dark?'#ffdda1':'#b18038';c.beginPath();c.arc(p[0],p[1],3,0,Math.PI*2);c.fill();
+  c.font='bold 11px ui-monospace,Consolas,monospace';const text=this.t('交接导览 ','HANDOFF ')+Math.round(this.tour.position*100)+'%',width=c.measureText(text).width+18;
+  const bx=Math.max(8,Math.min(this.w-width-8,p[0]+14)),by=Math.max(49,Math.min(this.h-66,p[1]-25));
+  c.fillStyle=this.dark?'#263d35f5':'#fff9e9f5';c.fillRect(bx,by,width,24);c.strokeStyle=this.dark?'#ad975f':'#c4a66b';c.strokeRect(bx,by,width,24);c.fillStyle=this.dark?'#f1d8a3':'#665127';c.fillText(text,bx+9,by+16);c.restore();
  }
  hit(x,y){return this.labels.find(a=>x>=a.x&&x<=a.x+a.w&&y>=a.y&&y<=a.y+a.h);}
 }

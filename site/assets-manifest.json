@@ -945,12 +945,12 @@
       "bytes": 19338
     },
     "ester-guide.html": {
-      "sha256": "533573320ab0f407bd435a869f7ecdeb20e71b215132851009d0417ed726f967",
-      "bytes": 660755
+      "sha256": "825ab01bc36990faff4ce46a91b29d3d659d68cd535116bf2e92c3b797c84e2b",
+      "bytes": 662009
     },
     "vitamin-a-guide.html": {
-      "sha256": "c3c52cf74abe4db20ddab2d48291c991992d517fc2111191e18eb5482b5e36e6",
-      "bytes": 679588
+      "sha256": "806db648861c39d831e9daf7c6bbd553522a6ba205c38e6a1784aba376cebd20",
+      "bytes": 680842
     },
     "process-quality.html": {
       "sha256": "06c4f040b8ba88e95ac69f836082e18b12dc7c2958846276d6a7148e7fa4e884",
@@ -1057,8 +1057,8 @@
       "bytes": 4747
     },
     "modular-plant.html": {
-      "sha256": "2e15343554fe1358a1585f61166faa618d3a79875edd2b2c126ce3b8b808a4fb",
-      "bytes": 333675
+      "sha256": "bb659d67ae6f6b9e07e6cad13acf7f457ad5757d14fed9dc45e91fdd7d36f89a",
+      "bytes": 334947
     },
     "data/modular-plant.json": {
       "sha256": "d2866204656e03aaa6caacec13cbba1ac332038d32ca0c1af57afc75a369494d",
@@ -1129,8 +1129,8 @@
       "bytes": 14615
     },
     "line-bus.html": {
-      "sha256": "d1a32092ee944a1bc97de70d24b74c694e3cff10346bccd7b8ec7ea0c5ffa5fa",
-      "bytes": 646611
+      "sha256": "77d4bec2171776a0cb0a1d780d7c41e7c434950a2c886de1136b4751ff667a68",
+      "bytes": 647865
     },
     "line-atlas.js": {
       "sha256": "3a8f361876627fcea29f3a3ff9ba3ffaf0eaf7562042c345eaa347651b606335",
@@ -1173,8 +1173,8 @@
       "bytes": 8008
     },
     "en/ester-guide.html": {
-      "sha256": "da61ca6e4173dab4fe619e4c78b51961f85d66d6e4c3fbc852c47372a7f32192",
-      "bytes": 664844
+      "sha256": "cc2059ab731dc221b9dde0f9c23c958f6176c2d823cc9ec63d2c17fe016c0365",
+      "bytes": 666114
     },
     "en/factory-design.html": {
       "sha256": "a03daf5e49f9e736e351b3af75debd224846db303122f4bfc8cc76855dc6d441",
@@ -1205,16 +1205,16 @@
       "bytes": 31973
     },
     "en/line-bus.html": {
-      "sha256": "74871d43650dd8d982f693137e2fa91828e8c23b0c8e898983a72d048cb411b1",
-      "bytes": 649589
+      "sha256": "ac380c727c8aa1f5c296f652675912d6b6e75a49d156e6422b627794bbc67455",
+      "bytes": 650859
     },
     "en/mechanisms.html": {
       "sha256": "530c10a62f35cf6fdf9db3a8057e8450d71906ad0b4e77edcfadeb68763b63b7",
       "bytes": 30554
     },
     "en/modular-plant.html": {
-      "sha256": "ac092fa140512b9f85db01301fc371908819f0af87db7b3826a38c5bdca1b2ed",
-      "bytes": 334728
+      "sha256": "512bfa26ac3916493945fa31c5eed7b2f44ff5695adf060922e30df7568138c2",
+      "bytes": 336017
     },
     "en/motion.js": {
       "sha256": "648502ea4571bd2ab7c946b3d98277e54064c73f1ad831bd5dbe8c906e576f0c",
@@ -1225,8 +1225,8 @@
       "bytes": 32048
     },
     "en/operations-guide.html": {
-      "sha256": "d78673016fec4ef238f27dce949140cd353d440aa2e376b5c824d6d5ba4bed16",
-      "bytes": 34214
+      "sha256": "43fa51199e2964172d1e65fdb596bb8c61120e0c7c295fbde2bdef5367b830b3",
+      "bytes": 34465
     },
     "en/plants.html": {
       "sha256": "61d08c9cca3bb11369673d613a16c0398a06fe520ab8e1d4ce437ab259fcd8f2",
@@ -1269,8 +1269,8 @@
       "bytes": 32180
     },
     "en/vitamin-a-guide.html": {
-      "sha256": "4cee891a3331ce610000f4d17bdee6be40a6eee91e0aa35e062acb3b069d8e46",
-      "bytes": 688096
+      "sha256": "1ad832dd6c3082610ee419e4a4410c467e37dd660cced0187cc673629377538f",
+      "bytes": 689366
     },
     "en/wiki.html": {
       "sha256": "64d44be1879bbf6ed67ca52fbbe952c8c75591e095c15d667c7a811360a3163d",
@@ -1333,16 +1333,20 @@
       "bytes": 4926
     },
     "dedicated-plant.js": {
-      "sha256": "33e31bee1823ee9828ba1a28841c57056fc1bdcfe093b124d6ca6048f931fc8f",
-      "bytes": 21314
+      "sha256": "857ccd653dd6d7ace459014b976cd3d2e6ca3438a06db56ff1dc0fb7d1d5c37c",
+      "bytes": 21431
     },
     "dedicated-plant.css": {
-      "sha256": "0bc27ef74751ba53f938663e264aa3ba7d3a3b522925f4b3b7ecd63d1d827d55",
-      "bytes": 12539
+      "sha256": "b10515cf5e45a93631904eb2da4343def489cd47dd8b4a0363fedbf3643385be",
+      "bytes": 14750
     },
     "plant-appearance.js": {
-      "sha256": "471e4f8211b7ce7bada5e6f333165689bf74b710f65bb40002816890ca5840df",
-      "bytes": 15986
+      "sha256": "9aa22e0ea346f63de4f0119a9f1e35464277024b8e7ee1106f088b92e1f2f160",
+      "bytes": 18939
+    },
+    "plant-tour.js": {
+      "sha256": "70b1416964d51d0b46c48eb295d8e79553d2ea8360327efd01f25abedeffa403",
+      "bytes": 6812
     },
     "data/operations-lessons.json": {
       "sha256": "bea7cbe73cc8e5d1ac7e766f9cdeccf832c08e9abfe7fcc66b03047e2a21aac9",
@@ -1357,8 +1361,8 @@
       "bytes": 2989
     },
     "operations-guide.html": {
-      "sha256": "d6e458be2bedd4e6654316458d8f0e4195b605e6bbd3d3b9088b8cce863b5a7b",
-      "bytes": 34002
+      "sha256": "1f517e2fa979e1fd2c5807b0f356d52db9da303dcc4768ced35c7b54edf69240",
+      "bytes": 34247
     },
     "site-shell.css": {
       "sha256": "660a477cdeeebb4fb21f657313ed6fded022f2f48dc97ff7643840856be33423",
